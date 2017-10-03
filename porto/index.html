@@ -13,8 +13,8 @@
 		<meta name="author" content="okler.net">
 
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="http://preview.oklerthemes.com/porto/5.7.2/img/favicon.ico" type="image/x-icon">
-		<link rel="apple-touch-icon" href="http://preview.oklerthemes.com/porto/5.7.2/img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="./assets/img/png/cloud.png" type="image/x-icon">
+		<link rel="apple-touch-icon" href="./assets/img/png/cloud.png">
 
 		<!-- Mobile Metas -->
 		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -75,49 +75,55 @@
 											<nav class="wrapper-spy">
 												<ul class="nav" id="mainNav">
 													<li class="active">
-														<a data-hash="" href="#about-me" class="text-color-dark background-color-primary">
+														<a data-hash="" href="#about-me" class="font-color">
 															<i class="icon-home icons"></i>
-															<span class="custom-tooltip">About Me</span>
+															<span class="custom-tooltip"> About Me</span>
 														</a>
 													</li>
 													<li>
-														<a data-hash="" href="#experience" class="text-color-dark background-color-primary">
+														<a data-hash="" href="#experience" class="font-color">
 															<i class="icon-eye icons"></i>
 															<span class="custom-tooltip">Experience</span>
 														</a>
 													</li>
 													<li>
-														<a data-hash="" href="#education" class="text-color-dark background-color-primary">
+														<a data-hash="" href="#education" class="font-color">
 															<i class="icon-briefcase icons"></i>
 															<span class="custom-tooltip">Education</span>
 														</a>
 													</li>
 													<li>
-														<a data-hash="" href="#skills" class="text-color-dark background-color-primary">
-															<i class="icon-graduation icons"></i>
+														<a data-hash="" href="#course" class="font-color">
+															<i class="fa fa-edit icons"></i>
+															<span class="custom-tooltip">Course</span>
+														</a>
+													</li>
+													<li>
+														<a data-hash="" href="#skills" class="font-color">
+															<i class="icon-graduation icons" class="font-color"></i>
 															<span class="custom-tooltip">Skills</span>
 														</a>
 													</li>
 													<li>
-														<a data-hash="" href="#portfolio" class="text-color-dark background-color-primary">
+														<a data-hash="" href="#portfolio" class="font-color">
 															<i class="icon-diamond icons"></i>
 															<span class="custom-tooltip">Portfolio</span>
 														</a>
 													</li>
 													<li>
-														<a data-hash="" href="#recommendations" class="text-color-dark background-color-primary">
+														<a data-hash="" href="#recommendations" class="font-color">
 															<i class="icon-pencil icons"></i>
 															<span class="custom-tooltip">Recommendations</span>
 														</a>
 													</li>
 													<li>
-														<a data-hash="" href="#blog" class="text-color-dark background-color-primary">
+														<a data-hash="" href="#blog" class="font-color">
 															<i class="icon-bubbles icons"></i>
 															<span class="custom-tooltip">Blog</span>
 														</a>
 													</li>
 													<li>
-														<a data-hash="" href="#say-hello" class="text-color-dark background-color-primary">
+														<a data-hash="" href="#say-hello" class="font-color">
 															<i class="icon-envelope-open icons"></i>
 															<span class="custom-tooltip">Say Hello</span>
 														</a>
@@ -136,8 +142,8 @@
 			<div role="main" class="main">
 				<div style="background: #999;">
 				</div>
-				<section id="about-me" class="section section-no-border section-parallax custom-section-padding-1 custom-position-1 custom-xs-bg-size-cover m-none" data-plugin-parallax="" data-plugin-options="{&#39;speed&#39;: 1.5}" data-image-src="./assets/img/jpg/about-me-bg-1.jpg" style="position: relative; overflow: hidden;">
-					<div class="parallax-background" style="background-image: url(&quot;./assets/img/jpg/about-me-bg-1.jpg&quot;); background-size: cover; position: absolute; top: 0px; left: 0px; width: 100%; height: 180%; transform: translate3d(0px, 28.5714px, 0px); background-position-x: 50%;"></div>
+				<section id="about-me" class="section section-no-border section-parallax custom-section-padding-1 custom-position-1 custom-xs-bg-size-cover m-none" data-plugin-parallax="" >
+					<div class="parallax-background img-background"></div>
 					<div id="particles-js" class="particle-cloud"></div>
 					<div class="container">
 						<div class="row">
@@ -145,7 +151,7 @@
 							<div class="col-md-4 col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1 custom-sm-margin-bottom-1">
 								<img src="./assets/img/jpg/me.jpg" class="img-responsive custom-border custom-image-position-2 custom-box-shadow-4 img-about" alt="">
 							</div>
-							<div class="col-md-8 col-sm-8">
+							<div class="col-md-5 col-sm-8">
 													
 								<h1 class="text-color-primary custom-font-size-1">Adam Doe</h1>
 								<p class="text-color-light font-weight-normal custom-font-size-2 custom-margin-bottom-1">Chief Product Officer at Okler Themes</p>
@@ -163,6 +169,9 @@
 										<a data-hash="" href="#education" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>
 									</span>
 								</span>
+							</div>
+							<div class="col-md-3 col-sm-8">
+								<img src="./assets/img/png/cloud.png" class="img-responsive img-cloud">
 							</div>							
 						</div>
 						</div>
@@ -356,12 +365,77 @@
 					</div>
 				</div>
 			</section>
-
+			
 			<section id="education" class="section section-no-border custom-background-color-1 m-none">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-12">
 							<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Education</h2>
+							<div class="owl-carousel nav-bottom custom-carousel-style-1 custom-item-padding custom-dots-style-1 owl-theme owl-loaded owl-drag owl-carousel-init" data-plugin-options="{&#39;items&#39;: 1, &#39;loop&#39;: false, &#39;dots&#39;: true, &#39;nav&#39;: false}">
+								
+								
+								
+							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 3180px;"><div class="owl-item active" style="width: 1060px;"><div>
+									<div class="col-md-6 col-sm-6">
+										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
+											<i class="icon-graduation icons text-color-primary"></i>
+											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
+											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
+											<strong class="text-color-primary">2001-2015</strong>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
+											<i class="icon-graduation icons text-color-primary"></i>
+											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
+											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
+											<strong class="text-color-primary">2001-2015</strong>
+										</div>
+									</div>
+								</div></div><div class="owl-item" style="width: 1060px;"><div>
+									<div class="col-md-6 col-sm-6">
+										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
+											<i class="icon-graduation icons text-color-primary"></i>
+											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
+											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
+											<strong class="text-color-primary">2001-2015</strong>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
+											<i class="icon-graduation icons text-color-primary"></i>
+											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
+											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
+											<strong class="text-color-primary">2001-2015</strong>
+										</div>
+									</div>
+								</div></div><div class="owl-item" style="width: 1060px;"><div>
+									<div class="col-md-6 col-sm-6">
+										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
+											<i class="icon-graduation icons text-color-primary"></i>
+											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
+											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
+											<strong class="text-color-primary">2001-2015</strong>
+										</div>
+									</div>
+									<div class="col-md-6 col-sm-6">
+										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
+											<i class="icon-graduation icons text-color-primary"></i>
+											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
+											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
+											<strong class="text-color-primary">2001-2015</strong>
+										</div>
+									</div>
+								</div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="course" class="section section-no-border custom-background-color-1 m-none">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Course</h2>
 							<div class="owl-carousel nav-bottom custom-carousel-style-1 custom-item-padding custom-dots-style-1 owl-theme owl-loaded owl-drag owl-carousel-init" data-plugin-options="{&#39;items&#39;: 1, &#39;loop&#39;: false, &#39;dots&#39;: true, &#39;nav&#39;: false}">
 								
 								
