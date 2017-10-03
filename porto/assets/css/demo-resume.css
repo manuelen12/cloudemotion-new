@@ -70,8 +70,8 @@ section.section {
 
 @media (min-width: 992px) {
   .custom-section-padding-1 {
-    padding-top: 150px !important;
-    padding-bottom: 70px !important;
+    /*padding-top: 150px !important;
+    padding-bottom: 70px !important;*/
   }
 
   .custom-md-margin-top-1 {

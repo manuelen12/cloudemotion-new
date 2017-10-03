@@ -4072,3 +4072,7 @@ section.custom-timeline .timeline-box.right:after {
     height: 100%;
     top: 0px;
 }
+.img-about{
+  width: 75%;
+  margin: 35px;
+}
