@@ -1533,7 +1533,7 @@ window.theme.fn = {
 
 						_isScrolling = true;
 
-						if ($(window).scrollTop() > self.options.offset) {
+						if ($(window).scrollTop() > self.options.offset){
 
 							self.$el.stop(true, true).addClass('visible');
 							_isScrolling = false;
@@ -1542,18 +1542,12 @@ window.theme.fn = {
 
 							self.$el.stop(true, true).removeClass('visible');
 							_isScrolling = false;
-
 						}
-
 					}
-
 				});
-
 				return this;
 			}
-
 		}
-
 	});
 
 }).apply(this, [window.theme, jQuery]);
