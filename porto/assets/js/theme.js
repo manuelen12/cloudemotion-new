@@ -208,62 +208,7 @@ window.theme.fn = {
 			return this;
 		},
 
-		build: function() {
-			if (!($.isFunction($.fn.owlCarousel))) {
-				return this;
-			}
-
-			var self = this,
-				$el = this.options.wrapper;
-
-			// Add Theme Class
-			$el.addClass('owl-theme');
-
-			// Force RTL according to HTML dir attribute
-			if ($('html').attr('dir') == 'rtl') {
-				this.options = $.extend(true, {}, this.options, {
-					rtl: true
-				});
-			}
-
-			if (this.options.items == 1) {
-				this.options.responsive = {}
-			}
-
-			if (this.options.items > 4) {
-				this.options = $.extend(true, {}, this.options, {
-					responsive: {
-						1199: {
-							items: this.options.items
-						}
-					}
-				});
-			}
-
-			// Auto Height Fixes
-			if (this.options.autoHeight) {
-				var itemsHeight = [];
-
-				$el.find('.owl-item').each(function(){
-					if( $(this).hasClass('active') ) {
-						itemsHeight.push( $(this).height() );
-					}
-				});
-
-				$(window).afterResize(function() {
-					$el.find('.owl-stage-outer').height( Math.max.apply(null, itemsHeight) );
-				});
-
-				$(window).on('load', function() {
-					$el.find('.owl-stage-outer').height( Math.max.apply(null, itemsHeight) );
-				});
-			}
-
-			// Initialize OwlCarousel
-			$el.owlCarousel(this.options).addClass('owl-carousel-init');
-
-			return this;
-		}
+		build: function() {}
 	};
 
 	// expose to scope

@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <!-- saved from url=(0068)http://preview.oklerthemes.com/porto/5.7.2/demo-resume.html#about-me -->
-<html data-style-switcher-options="{&#39;changeLogo&#39;: false, &#39;borderRadius&#39;: 0, &#39;colorPrimary&#39;: &#39;#ffd93e&#39;, &#39;colorSecondary&#39;: &#39;#ecf1f7&#39;, &#39;colorTertiary&#39;: &#39;#403f3d&#39;, &#39;colorQuaternary&#39;: &#39;#1f1e1c&#39;}" class="js no-touch history boxshadow csstransforms3d csstransitions video svg webkit chrome linux js" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html ng-app="mainapp">
+<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
 		<!-- Basic -->
-		
+
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
-
-		<title>CloudEmotionTeam</title>	
-
+		<title>CloudEmotionTeam</title>
 		<meta name="keywords" content="HTML5 Template">
 		<meta name="description" content="Porto - Responsive HTML5 Template">
 		<meta name="author" content="okler.net">
@@ -45,20 +44,21 @@
 		<!-- Skin CSS -->
 		<link rel="stylesheet" href="./assets/css/skin-resume.css">		
 		<link rel="stylesheet" href="./assets/css/style.css">		
-    <script async="" src="./assets/js/analytics.js"></script><script src="./assets/js/style.switcher.localstorage.js"></script> 
+    	<script async="" src="./assets/js/analytics.js"></script>
+    	
 
 		<!-- Demo CSS -->		
-    <link rel="stylesheet" href="./assets/css/demo-resume.css">
+	    <link rel="stylesheet" href="./assets/css/demo-resume.css">
 
-    <!-- Theme Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/custom.css">
+	    <!-- Theme Custom CSS -->
+	    <link rel="stylesheet" href="./assets/css/custom.css">
 
-    <!-- Head Libs -->
-    <script src="./assets/js/modernizr.min.js"></script>
+	    <!-- Head Libs -->
+	    <script src="./assets/js/modernizr.min.js"></script>
 
   
   </head>
-	<body data-spy="scroll" data-target=".wrapper-spy">
+	<body data-spy="scroll" data-target=".wrapper-spy" ng-controller="MainCtrl as vm">
 
 		<div class="body">
 			<header id="header" class="header-floating " data-plugin-options="{&#39;stickyEnabled&#39;: false, &#39;stickyEnableOnBoxed&#39;: false, &#39;stickyEnableOnMobile&#39;: false, &#39;stickyStartAt&#39;: 0, &#39;stickySetTop&#39;: &#39;60px&#39;, &#39;stickyChangeLogo&#39;: false}">
@@ -364,70 +364,26 @@
 						</div>
 					</div>
 				</div>
-			</section>
-			
+			</section>			
 			<section id="education" class="section section-no-border custom-background-color-1 m-none">
 				<div class="container">
 					<div class="row">
-						<div class="col-md-12">
-							<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Education</h2>
-							<div class="owl-carousel nav-bottom custom-carousel-style-1 custom-item-padding custom-dots-style-1 owl-theme owl-loaded owl-drag owl-carousel-init" data-plugin-options="{&#39;items&#39;: 1, &#39;loop&#39;: false, &#39;dots&#39;: true, &#39;nav&#39;: false}">
-								
-								
-								
-							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 3180px;"><div class="owl-item active" style="width: 1060px;"><div>
-									<div class="col-md-6 col-sm-6">
-										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-											<i class="icon-graduation icons text-color-primary"></i>
-											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-											<strong class="text-color-primary">2001-2015</strong>
-										</div>
+					<div class="col-md-12">
+						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Education</h2>
+						<div class="owl-carousel owl-theme row" style="padding:40px;">
+							<div class="item" style="width: 420px;" ng-repeat="e in vm.education">
+								<div class="panel panel-default item-box">
+									<div class="panel-body">
+										<p><i class="icon-graduation icons text-color-primary"></i><br>
+											<span ng-bind="e.title" class="title"></span><br>
+											<span ng-bind="e.institute"></span><br>
+											<span class="years" ng-bind="e.years">2015 - 2017</span>
+										</p>
 									</div>
-									<div class="col-md-6 col-sm-6">
-										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-											<i class="icon-graduation icons text-color-primary"></i>
-											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-											<strong class="text-color-primary">2001-2015</strong>
-										</div>
-									</div>
-								</div></div><div class="owl-item" style="width: 1060px;"><div>
-									<div class="col-md-6 col-sm-6">
-										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-											<i class="icon-graduation icons text-color-primary"></i>
-											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-											<strong class="text-color-primary">2001-2015</strong>
-										</div>
-									</div>
-									<div class="col-md-6 col-sm-6">
-										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-											<i class="icon-graduation icons text-color-primary"></i>
-											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-											<strong class="text-color-primary">2001-2015</strong>
-										</div>
-									</div>
-								</div></div><div class="owl-item" style="width: 1060px;"><div>
-									<div class="col-md-6 col-sm-6">
-										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-											<i class="icon-graduation icons text-color-primary"></i>
-											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-											<strong class="text-color-primary">2001-2015</strong>
-										</div>
-									</div>
-									<div class="col-md-6 col-sm-6">
-										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-											<i class="icon-graduation icons text-color-primary"></i>
-											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-											<strong class="text-color-primary">2001-2015</strong>
-										</div>
-									</div>
-								</div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+								</div>		    	
+							</div>												
 						</div>
+					</div>
 					</div>
 				</div>
 			</section>
@@ -436,62 +392,20 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Course</h2>
-							<div class="owl-carousel nav-bottom custom-carousel-style-1 custom-item-padding custom-dots-style-1 owl-theme owl-loaded owl-drag owl-carousel-init" data-plugin-options="{&#39;items&#39;: 1, &#39;loop&#39;: false, &#39;dots&#39;: true, &#39;nav&#39;: false}">
-								
-								
-								
-							<div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(0px, 0px, 0px); transition: 0s; width: 3180px;"><div class="owl-item active" style="width: 1060px;"><div>
-									<div class="col-md-6 col-sm-6">
-										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-											<i class="icon-graduation icons text-color-primary"></i>
-											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-											<strong class="text-color-primary">2001-2015</strong>
-										</div>
+							<div class="owl-items owl-theme row" style="padding:40px;">
+							<div class="item" style="width: 420px;" ng-repeat="c in vm.courses">
+								<div class="panel panel-default item-box">
+									<div class="panel-body">
+										<p><i class="icon-graduation icons text-color-primary"></i><br>
+											<span ng-bind="c.title" class="title"></span><br>
+											<span ng-bind="c.institute"></span><br>
+											<span class="years" ng-bind="c.years">2015 - 2017</span>
+										</p>
 									</div>
-									<div class="col-md-6 col-sm-6">
-										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-											<i class="icon-graduation icons text-color-primary"></i>
-											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-											<strong class="text-color-primary">2001-2015</strong>
-										</div>
-									</div>
-								</div></div><div class="owl-item" style="width: 1060px;"><div>
-									<div class="col-md-6 col-sm-6">
-										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-											<i class="icon-graduation icons text-color-primary"></i>
-											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-											<strong class="text-color-primary">2001-2015</strong>
-										</div>
-									</div>
-									<div class="col-md-6 col-sm-6">
-										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-											<i class="icon-graduation icons text-color-primary"></i>
-											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-											<strong class="text-color-primary">2001-2015</strong>
-										</div>
-									</div>
-								</div></div><div class="owl-item" style="width: 1060px;"><div>
-									<div class="col-md-6 col-sm-6">
-										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-											<i class="icon-graduation icons text-color-primary"></i>
-											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-											<strong class="text-color-primary">2001-2015</strong>
-										</div>
-									</div>
-									<div class="col-md-6 col-sm-6">
-										<div class="custom-box-details-2 background-color-light custom-box-shadow-3">
-											<i class="icon-graduation icons text-color-primary"></i>
-											<h4 class="font-weight-semibold text-color-dark m-none">Porto University</h4>
-											<p class="custom-text-color-2 mb-xs">Master of Information Technology</p>
-											<strong class="text-color-primary">2001-2015</strong>
-										</div>
-									</div>
-								</div></div></div></div><div class="owl-nav disabled"><div class="owl-prev"></div><div class="owl-next"></div></div><div class="owl-dots"><div class="owl-dot active"><span></span></div><div class="owl-dot"><span></span></div><div class="owl-dot"><span></span></div></div></div>
+								</div>		    	
+							</div>												
+						</div>
+							
 						</div>
 					</div>
 				</div>
@@ -931,7 +845,6 @@
 		<script src="./assets/js/jquery.appear.min.js"></script>
 		<script src="./assets/js/jquery.easing.min.js"></script>
 		<script src="./assets/js/jquery-cookie.min.js"></script>
-		<script src="./assets/js/style.switcher.js" id="styleSwitcherScript" data-base-path="" data-skin-src="master/less/skin-resume.less"></script>
 		<script src="./assets/js/bootstrap.min.js"></script>
 		<script src="./assets/js/common.min.js"></script>
 		<script src="./assets/js/jquery.validation.min.js"></script>
@@ -947,7 +860,8 @@
 		<script src="./assets/js/theme.js"></script>
 		
 		<!-- Current Page Vendor and Views -->
-		<script src="./assets/js/jquery.themepunch.tools.min.js"></script>		<script src="./assets/js/jquery.themepunch.revolution.min.js"></script>
+		<script src="./assets/js/jquery.themepunch.tools.min.js"></script>		
+		<script src="./assets/js/jquery.themepunch.revolution.min.js"></script>
 
 		<!-- Current Page Vendor and Views -->
 		<script src="./assets/js/view.contact.js"></script>
@@ -961,7 +875,6 @@
 		<!-- Theme Initialization Files -->
 		<script src="./assets/js/theme.init.js"></script>
 
-
 		<script>
 			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -974,13 +887,19 @@
 		<script src="./assets/js/analytics(1).js"></script>	
 </div><!-- Style Switcher - Start -->
 
-
 <!-- scripts -->
 <script src="./assets/js/particles.js"></script>
 <script src="./assets/js/app.js"></script>
 
 <!-- stats.js -->
 <script src="./assets/js/lib/stats.js"></script>
+
+<!-- Script -->
+<script src="./assets/js/angular.min.js"></script>
+<script src="./assets/js/core/app.js"></script>
+<script src="./assets/js/core/main.controller.js"></script>
+
+
 <script>
   var count_particles, stats, update;
   /*stats = new Stats;
@@ -999,5 +918,9 @@
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
+
+
+
 </script>
-</body></html>
+</body>
+</html>

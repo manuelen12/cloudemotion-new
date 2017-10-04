@@ -4101,3 +4101,30 @@ section.custom-timeline .timeline-box.right:after {
 }
 
 @keyframes pulse{0%{transform:scaleX(1)}50%{transform:scale3d(1.05,1.05,1.05)}to{transform:scaleX(1)}}
+
+.item-box{
+  border:1px solid #fff;
+  min-height: 80px;
+  box-shadow: 3px 5px 15px #999;
+  padding: 40px;    
+  margin:10px;
+}
+.item-box p i{
+  font-size:30px;
+  color:#25cbf5;
+}
+.item-box .title{
+  font-weight: bold;
+  font-size:20px;
+  color:#000;
+}
+.item-box p{
+  line-height: 20px;
+  font-size:15px;     
+  margin-left:15px;
+  color:#999;
+}
+.item-box .years{
+  font-size:12px;
+  color:#25cbf5;      
+}
