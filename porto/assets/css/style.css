@@ -4128,3 +4128,6 @@ section.custom-timeline .timeline-box.right:after {
   font-size:12px;
   color:#25cbf5;      
 }
+.owl-carousel .owl-dots .owl-dot.active span, .owl-carousel .owl-dots .owl-dot:hover span{
+  background: #25cbf5;
+}

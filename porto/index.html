@@ -61,84 +61,7 @@
 	<body data-spy="scroll" data-target=".wrapper-spy" ng-controller="MainCtrl as vm">
 
 		<div class="body">
-			<header id="header" class="header-floating " data-plugin-options="{&#39;stickyEnabled&#39;: false, &#39;stickyEnableOnBoxed&#39;: false, &#39;stickyEnableOnMobile&#39;: false, &#39;stickyStartAt&#39;: 0, &#39;stickySetTop&#39;: &#39;60px&#39;, &#39;stickyChangeLogo&#39;: false}">
-				<div class="header-body">
-					<div class="header-container container">
-						<div class="header-row">
-							<div class="header-column">
-								<div class="header-row">
-									<div class="header-nav pt-xs">
-										<button class="btn header-btn-collapse-nav" data-toggle="collapse" data-target=".header-nav-main">
-											<i class="fa fa-bars"></i>
-										</button>
-										<div class="header-nav-main collapse">
-											<nav class="wrapper-spy">
-												<ul class="nav" id="mainNav">
-													<li class="active">
-														<a data-hash="" href="#about-me" class="font-color">
-															<i class="icon-home icons"></i>
-															<span class="custom-tooltip"> About Me</span>
-														</a>
-													</li>
-													<li>
-														<a data-hash="" href="#experience" class="font-color">
-															<i class="icon-eye icons"></i>
-															<span class="custom-tooltip">Experience</span>
-														</a>
-													</li>
-													<li>
-														<a data-hash="" href="#education" class="font-color">
-															<i class="icon-briefcase icons"></i>
-															<span class="custom-tooltip">Education</span>
-														</a>
-													</li>
-													<li>
-														<a data-hash="" href="#course" class="font-color">
-															<i class="fa fa-edit icons"></i>
-															<span class="custom-tooltip">Course</span>
-														</a>
-													</li>
-													<li>
-														<a data-hash="" href="#skills" class="font-color">
-															<i class="icon-graduation icons" class="font-color"></i>
-															<span class="custom-tooltip">Skills</span>
-														</a>
-													</li>
-													<li>
-														<a data-hash="" href="#portfolio" class="font-color">
-															<i class="icon-diamond icons"></i>
-															<span class="custom-tooltip">Portfolio</span>
-														</a>
-													</li>
-													<li>
-														<a data-hash="" href="#recommendations" class="font-color">
-															<i class="icon-pencil icons"></i>
-															<span class="custom-tooltip">Recommendations</span>
-														</a>
-													</li>
-													<li>
-														<a data-hash="" href="#blog" class="font-color">
-															<i class="icon-bubbles icons"></i>
-															<span class="custom-tooltip">Blog</span>
-														</a>
-													</li>
-													<li>
-														<a data-hash="" href="#say-hello" class="font-color">
-															<i class="icon-envelope-open icons"></i>
-															<span class="custom-tooltip">Say Hello</span>
-														</a>
-													</li>
-												</ul>
-											</nav>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
-
+			<header-custom></header-custom>
 			<div role="main" class="main">
 				<div style="background: #999;">
 				</div>
@@ -295,69 +218,28 @@
 							<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold">Experience</h2>
 							<section class="timeline custom-timeline" id="timeline">
 								<div class="timeline-body">
-									<article class="timeline-box right custom-box-shadow-2">
+									
+									<!-- EXP -->
+									<article class="timeline-box right custom-box-shadow-2" ng-repeat="ex in vm.experience">
 										<div class="experience-info col-md-3 col-sm-5 match-height background-color-primary" style="height: 244px;">
 											<span class="from text-color-dark text-uppercase">
 												From
-												<span class="font-weight-semibold">Sep 2012</span>
+												<span class="font-weight-semibold" ng-bind="ex.from">Sep 2012</span>
 											</span>
 											<span class="to text-color-dark text-uppercase">
 												To
-												<span class="font-weight-semibold">Present</span>
+												<span class="font-weight-semibold" ng-bind="ex.to">Present</span>
 											</span>
-											<p class="text-color-dark">(3 Years 9 Months)</p>
-											<span class="company text-color-dark font-weight-semibold">
-												Okler Themes
-												<span class="company-location text-color-dark font-weight-normal text-uppercase">Greater New York</span>
-											</span>
-										</div>
-										<div class="experience-description col-md-9 col-sm-7 match-height background-color-light" style="height: 244px;">
-											<h4 class="text-color-dark font-weight-semibold">Chief Product Officer</h4>
-											<p class="custom-text-color-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu.</p>
-										</div>
-									</article>
-									<article class="timeline-box right custom-box-shadow-2">
-										<div class="experience-info col-md-3 col-sm-5 match-height background-color-primary" style="height: 244px;">
-											<span class="from text-color-dark text-uppercase">
-												From
-												<span class="font-weight-semibold">Sep 2012</span>
-											</span>
-											<span class="to text-color-dark text-uppercase">
-												To
-												<span class="font-weight-semibold">Present</span>
-											</span>
-											<p class="text-color-dark">(3 Years 9 Months)</p>
-											<span class="company text-color-dark font-weight-semibold">
-												Okler Themes
-												<span class="company-location text-color-dark font-weight-normal text-uppercase">Greater New York</span>
+											<p class="text-color-dark" ng-bind="ex.time"></p>
+											<span class="company text-color-dark font-weight-semibold">{{ex.company}}									
+												<span class="company-location text-color-dark font-weight-normal text-uppercase">{{ex.city}}</span>
 											</span>
 										</div>
 										<div class="experience-description col-md-9 col-sm-7 match-height background-color-light" style="height: 244px;">
-											<h4 class="text-color-dark font-weight-semibold">Chief Product Officer</h4>
-											<p class="custom-text-color-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu.</p>
+											<h4 class="text-color-dark font-weight-semibold" ng-bind="ex.position"></h4>
+											<p class="custom-text-color-2" ng-bind="ex.description"></p>
 										</div>
-									</article>
-									<article class="timeline-box right custom-box-shadow-2">
-										<div class="experience-info col-md-3 col-sm-5 match-height background-color-primary" style="height: 244px;">
-											<span class="from text-color-dark text-uppercase">
-												From
-												<span class="font-weight-semibold">Sep 2012</span>
-											</span>
-											<span class="to text-color-dark text-uppercase">
-												To
-												<span class="font-weight-semibold">Present</span>
-											</span>
-											<p class="text-color-dark">(3 Years 9 Months)</p>
-											<span class="company text-color-dark font-weight-semibold">
-												Okler Themes
-												<span class="company-location text-color-dark font-weight-normal text-uppercase">Greater New York</span>
-											</span>
-										</div>
-										<div class="experience-description col-md-9 col-sm-7 match-height background-color-light" style="height: 244px;">
-											<h4 class="text-color-dark font-weight-semibold">Chief Product Officer</h4>
-											<p class="custom-text-color-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu.</p>
-										</div>
-									</article>
+									</article>									
 									<div class="timeline-bar" style="top: 137px; bottom: 137px;"></div>
 								</div>
 							</section>
@@ -392,7 +274,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Course</h2>
-							<div class="owl-items owl-theme row" style="padding:40px;">
+							<div class="owl-carousel owl-theme row owl-course" style="padding:40px;">
 							<div class="item" style="width: 420px;" ng-repeat="c in vm.courses">
 								<div class="panel panel-default item-box">
 									<div class="panel-body">
@@ -611,7 +493,7 @@
 					</div>
 				</div>
 			</section>
-
+<!--
 			<section id="recommendations" class="section section-no-border background-color-primary m-none">
 				<div class="container">
 					<div class="row">
@@ -649,7 +531,7 @@
 					</div>
 				</div>
 			</section>
-			
+			-->
 			<section id="blog" class="section section-no-border background-color-light m-none">
 				<div class="container">
 					<div class="row">
@@ -875,16 +757,7 @@
 		<!-- Theme Initialization Files -->
 		<script src="./assets/js/theme.init.js"></script>
 
-		<script>
-			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 		
-			ga('create', 'UA-42715764-5', 'auto');
-			ga('send', 'pageview');
-		</script>
-		<script src="./assets/js/analytics(1).js"></script>	
 </div><!-- Style Switcher - Start -->
 
 <!-- scripts -->
@@ -894,10 +767,6 @@
 <!-- stats.js -->
 <script src="./assets/js/lib/stats.js"></script>
 
-<!-- Script -->
-<script src="./assets/js/angular.min.js"></script>
-<script src="./assets/js/core/app.js"></script>
-<script src="./assets/js/core/main.controller.js"></script>
 
 
 <script>
@@ -918,9 +787,17 @@
     requestAnimationFrame(update);
   };
   requestAnimationFrame(update);
-
-
-
 </script>
+
+<!-- ANGULAR FILES -->
+<script src="./assets/js/angular.min.js"></script>
+<script src="./assets/js/core/app.js"></script>
+
+<!-- DIRECTIVE -->
+<script src="./components/commons/directives/header.directive.js"></script>
+
+<!-- CONTROLLER -->
+<script src="./assets/js/core/main.controller.js"></script>
+
 </body>
 </html>
