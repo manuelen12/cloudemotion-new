@@ -10,5 +10,4 @@ function FooterCustom($http) {
 			
 		}
 	};
-
 }
