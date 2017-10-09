@@ -1,0 +1,214 @@
+/*
+Theme Name: Startit
+Theme URI: http://startit.select-themes.com/
+Description: A Fresh Startup Business Theme
+Author: Select Themes
+Author URI:  http://themeforest.net/user/select-themes
+Version: 2.0
+License: GNU General Public License
+License URI: licence/GPL.txt
+
+CSS changes can be made in files in the /css/ folder. This is a placeholder file required by WordPress, so do not delete it.
+
+*/
+
+
+
+.qodef-landing-custom .qodef-ptf-category-holder{
+	display:none !important;
+}
+
+.qodef-landing-custom .qodef-portfolio-list-holder-outer.qodef-ptf-standard article .qodef-item-image-holder{
+	border-radius: 3px 3px 0 0;
+	backface-visibility: hidden;
+}
+
+.qodef-landing-custom .qodef-item-title{
+	text-align:center !important;
+	padding: 28px 0 37px 0 !important;
+}
+
+.qodef-landing-custom .qodef-item-icons-holder .qodef-like,
+.qodef-landing-custom .qodef-item-icons-holder .qodef-portfolio-lightbox{
+	display:none !important;
+}
+.qodef-landing-custom .qodef-portfolio-item .qodef-portfolio-shader{
+	display:none !important;
+}
+
+.qodef-landing-custom .qodef-portfolio-list-holder-outer.qodef-ptf-standard article .qodef-item-icons-holder {
+	width: 100%;
+	top: -25%;
+	left: 0;
+	bottom: 0;
+	height: 100%;
+	padding: 0;
+	-webkit-transform: translateY(0) scale(0);
+	-ms-transform: translateY(0) scale(0);
+	transform: translateY(0) scale(0);
+	background-color: rgba(0, 0, 0, 0.15);
+	border-radius: 100%;
+	padding: 50% 0;
+	display: block;
+	-webkit-transition: -webkit-transform .5s cubic-bezier(.4,0,.2,1),opacity .2s;
+	transition: transform .5s cubic-bezier(.4,0,.2,1),opacity .2s;
+}
+
+.qodef-landing-custom .qodef-portfolio-list-holder-outer.qodef-ptf-standard article:hover .qodef-item-icons-holder {
+	opacity: 1;
+	-webkit-transform: translateY(0) scale(1.2);
+	-ms-transform: translateY(0) scale(1.2);
+	transform: translateY(0) scale(1.2);
+	-webkit-transition: -webkit-transform .35s cubic-bezier(.4,0,.2,1),opacity .35s;
+	transition: transform .35s cubic-bezier(.4,0,.2,1),opacity .35s;
+	
+}
+
+.qodef-landing-custom .qodef-item-icons-holder .qodef-preview{
+	position: absolute;
+	top: 0;
+	left:0;
+	width:100%;
+	height:100%;
+	background-color: transparent !important;
+	border:none !important;
+	-ms-transform: translateY(0) rotate(0);
+	-webkit-transform: translateY(0) rotate(0);
+	transform: translateY(0) rotate(0);
+}
+
+.qodef-landing-custom .qodef-portfolio-list-holder article .qodef-item-icons-holder a:hover{
+	-ms-transform: translateY(0) rotate(0);
+	-webkit-transform: translateY(0) rotate(0);
+	transform: translateY(0) rotate(0);
+}
+
+.qodef-landing-custom .qodef-item-icons-holder .qodef-preview:before{
+	content: "\f002" !important;
+	font-size: 22px;
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-65%) translateX(-50%);
+	-ms-transform: translateY(-75%) translateX(-50%);
+	transform: translateY(-75%) translateX(-50%);
+	width: 60px;
+	height: 60px;
+	display: block;
+	background: #b2dd4c;
+	border-radius: 100%;
+	text-align: center;
+	line-height: 60px;
+	left: 50%;
+}
+.page-id-2689 .qodef-page-header .qodef-position-right,
+.page-id-2689  .qodef-sticky-holder,
+.page-id-2689  footer,
+.page-id-2689 #qodef-back-to-top{
+	display: none !important;
+}
+.page-id-2689  #qodef-particles .qodef-p-content{
+	width:auto;
+}
+
+.qodef-va-fix {
+	vertical-align: middle;
+}
+
+@media only screen and (max-width: 1284px) {
+	.page-id-3520.qodef-header-vertical  footer .qodef-four-columns .qodef-column {
+		width: 49.5%;
+		min-height: initial !important;
+	}
+}
+
+@media only screen and (max-width: 1024px) {
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(1) .qodef-slider-content,
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(3) .qodef-slider-content{
+		padding-right: 80px;
+	}
+
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(1) .qodef-graphic-content,
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(3) .qodef-graphic-content {
+		padding-right: 0;
+	}
+	
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(2) .qodef-graphic-content,
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(4) .qodef-graphic-content {
+		display: none;
+	}
+	
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(2) .qodef-slider-content,
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(4) .qodef-slider-content{
+		padding-left: 80px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(1) .qodef-slider-content,
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(3) .qodef-slider-content{
+		padding-left: 80px;
+	}
+
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(1) .qodef-graphic-content,
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(3) .qodef-graphic-content {
+		display: none;
+	}
+
+	.page-id-3520.qodef-header-vertical  footer .qodef-four-columns .qodef-column {
+		width: 100%;
+		min-height: initial !important;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(1) .qodef-slider-content,
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(2) .qodef-slider-content,
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(3) .qodef-slider-content,
+	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(4) .qodef-slider-content {
+		padding-left: 20px;
+	}
+}
+
+
+.landing-new-custom .qodef-portfolio-item .qodef-portfolio-shader{
+	background-color: rgba(34, 34, 34, 0.8);
+	-webkit-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	border-radius:0;
+	top:0;
+	left:0;
+	padding:0;
+	border-radius: 15px;
+}
+
+.landing-new-custom  .qodef-portfolio-list-holder-outer .qodef-item-title{
+	font-size:22px;
+	color:#fff;
+	font-weight:700;
+}
+
+.landing-new-custom  .qodef-portfolio-list-holder-outer .qodef-item-text-holder .qodef-ptf-category-holder{
+	display:none;
+}
+
+.landing-new-custom  .qodef-portfolio-list-holder-outer article{
+	border-radius: 15px;
+	overflow:hidden;
+	box-shadow: 4px 4px 15px #c3c3c3;
+	transform: translateZ(0px);
+}
+.landing-new-custom  .qodef-portfolio-filter-holder .qodef-portfolio-filter-holder-inner ul li span{
+	font-size:16px;
+	color: #686868;
+}
+.landing-new-custom  .qodef-portfolio-filter-holder .qodef-portfolio-filter-holder-inner ul li span:hover{
+	color:#b2dd4c;
+}
+
+.landing-new-custom  .qodef-portfolio-filter-holder{
+	margin-bottom: 86px;
+}
+.qodef-vertical-align-containers .qodef-position-center:before, .qodef-vertical-align-containers .qodef-position-left:before, .qodef-vertical-align-containers .qodef-position-right:before {
+	margin-right: 0;
+}
+.vc_custom_1447693588968{padding-top: 86px !important;padding-bottom: 46px !important;background-color: #ffffff !important;}.vc_custom_1445345084553{padding-top: 73px !important;padding-bottom: 89px !important;}.vc_custom_1445420473166{padding-top: 90px !important;padding-bottom: 70px !important;background-image: url(http://startit.select-themes.com/wp-content/uploads/2015/10/background-3-home-main.png?id=168) !important;}.vc_custom_1446108194203{background-image: url(http://startit.select-themes.com/wp-content/uploads/2015/10/call-to-action-home-main.png?id=174) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1445414169321{padding-top: 78px !important;padding-bottom: 80px !important;}.vc_custom_1445414638610{padding-bottom: 28px !important;}.vc_custom_1447693994418{padding-top: 93px !important;padding-bottom: 107px !important;}.vc_custom_1462539692373{padding-top: 91px !important;padding-bottom: 76px !important;background-color: #f8f8f8 !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1446732069941{padding-top: 157px !important;padding-bottom: 155px !important;}.vc_custom_1445413182400{margin-bottom: -51px !important;}.vc_custom_1445414812892{padding-right: 12% !important;padding-left: 12% !important;}.vc_custom_1446567667184{padding-right: 6% !important;}.vc_custom_1445414812892{padding-right: 12% !important;padding-left: 12% !important;}
