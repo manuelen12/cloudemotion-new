@@ -195,9 +195,7 @@
 
 								<p>Morbi tincidunt nunc non diam porta, at fermentum orci bibendum. Donec arcu nisi, ornare nec commodo vitae, sollicitudin sed magna. Cras sit amet justo et nulla pulvinar laoreet. Phasellus scelerisque, metus id posuere vulputate, diam tellus iaculis sapien, eget scelerisque ipsum libero convallis velit. Duis lorem ligula, faucibus quis tellus nec, fringilla ultricies leo. Etiam tempus congue magna. Suspendisse porta dictum tortor, eu volutpat ipsum eleifend nec. Aliquam dapibus lorem luctus, cursus libero imperdiet, mattis nunc. Sed in ipsum diam. Quisque efficitur metus purus, vitae fermentum lacus venenatis id.</p>
 							</div>
-
-							<a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs">View More</a>
-
+							<a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs" ng-click="vm.show=!vm.show">View More</a>
 						</div>
 					</div>
 				</div>
@@ -245,7 +243,7 @@
 					<div class="col-md-12">
 						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Education</h2>
 						<div class="owl-carousel owl-theme row" style="padding:40px;">
-							<div class="item" style="width: 420px;" ng-repeat="e in vm.education">
+							<div class="item col-sm-12" style="width: 420px;" ng-repeat="e in vm.education">
 								<div class="panel panel-default item-box">
 									<div class="panel-body">
 										<p><i class="icon-graduation icons text-color-primary"></i><br>
@@ -266,7 +264,7 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Course</h2>
-							<div class="owl-carousel owl-theme row owl-course" style="padding:40px;">
+							<div class="owl-carousel owl-theme row owl-course">
 							<div class="item" style="width: 420px;" ng-repeat="c in vm.courses">
 								<div class="panel panel-default item-box">
 									<div class="panel-body">
@@ -717,21 +715,24 @@
 		<!-- Vendor -->
 		<script src="./assets/js/jquery.min.js"></script>
 		<script src="./assets/js/jquery.appear.min.js"></script>
-		<script src="./assets/js/bootstrap.min.js"></script>			
+		<script src="./assets/js/jquery.easing.min.js"></script>
+		<script src="./assets/js/jquery-cookie.min.js"></script>
+		<script src="./assets/js/bootstrap.min.js"></script>
+		<script src="./assets/js/common.min.js"></script>
 		<script src="./assets/js/jquery.validation.min.js"></script>
+		<script src="./assets/js/jquery.easy-pie-chart.min.js"></script>
+		<script src="./assets/js/jquery.gmap.min.js"></script>
 		<script src="./assets/js/jquery.isotope.min.js"></script>
-		<script src="./assets/js/owl.carousel.min.js"></script>		
+		<script src="./assets/js/owl.carousel.min.js"></script>
+		<script src="./assets/js/jquery.magnific-popup.min.js"></script>
+		<script src="./assets/js/vide.min.js"></script>
 		
 		<!-- Theme Base, Components and Settings -->
 		<script src="./assets/js/theme.js"></script>
-		
-		<!-- Current Page Vendor and Views -->
-		<script src="./assets/js/jquery.themepunch.tools.min.js"></script>	
-		<script src="./assets/js/jquery.themepunch.revolution.min.js"></script>
 
 		<!-- Current Page Vendor and Views -->
 		<script src="./assets/js/view.contact.js"></script>
-		
+
 		<!-- Demo -->
 		<script src="./assets/js/demo-resume.js"></script>
 		
@@ -739,7 +740,8 @@
 		<script src="./assets/js/custom.js"></script>
 		
 		<!-- Theme Initialization Files -->
-		<script src="./assets/js/theme.init.js"></script>		
+		<script src="./assets/js/theme.init.js"></script>
+		
 </div><!-- Style Switcher - Start -->
 
 <!-- scripts -->

@@ -51,6 +51,14 @@
   padding: 40px;    
   margin:10px;
 }
+@media only screen and (max-width: 500px){
+  .item-box{
+    border:1px solid #fff;
+    min-height: 80px;
+    box-shadow: 3px 5px 15px #999;    
+  }
+}
+
 .item-box p i{
   font-size:30px;
   color:#25cbf5;
