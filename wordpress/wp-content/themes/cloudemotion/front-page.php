@@ -2716,7 +2716,7 @@ Bruce Holt </span>
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/office-management-systems/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-800*600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
@@ -2737,7 +2737,7 @@ Office Management Systems
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-trends-in-seo-analytics/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
@@ -2758,7 +2758,7 @@ New Trends In SEO &#038; Analytics
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/app-update-rebrand/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
@@ -2779,7 +2779,7 @@ App Update &#038; Rebrand
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/the-tablet-app-of-the-future/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
@@ -2800,7 +2800,7 @@ The Tablet App Of The Future
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/big-data-goes-global/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
@@ -2821,7 +2821,7 @@ Big Data Goes Global
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-findings-in-responsive-testing/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
@@ -2842,7 +2842,7 @@ New Findings In Testing
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/millenials-research-2015/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
@@ -2863,7 +2863,7 @@ Millenials Research 2015
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-trends-in-social-media/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
