@@ -76,12 +76,12 @@
 									<span class="custom-text-color-1 text-uppercase">
 										<strong class="custom-text-color-1">Previous: </strong>
 										Front-End Developer at Porto
-										<a data-hash="" href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm" ng-click="vm.click('#experience')">View More</a>
+										<a data-hash="" href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>
 									</span>
 									<span class="custom-text-color-1 text-uppercase">
 										<strong class="custom-text-color-1">Education: </strong>
 										Porto School
-										<a data-hash="" href="#education" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm" ng-click="vm.click('#education')">View More</a>
+										<a data-hash="" href="#education" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>
 									</span>
 								</span>
 							</div>
@@ -188,7 +188,7 @@
 
 							<p class="custom-text-color-2">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
 
-							<div ng-hide="vm.show">
+							<div class="about-me-more" id="aboutMeMore">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu. Praesent aliquam velit vel libero dictum, non sollicitudin lectus mollis. Morbi sollicitudin auctor gravida. Vivamus vitae dui non lorem euismod pretium. Morbi congue sem sed ex iaculis, nec mattis felis pretium. Nullam molestie libero id odio blandit sodales. Suspendisse non mauris et felis molestie placerat aliquet a risus. Aliquam ac leo tempus, hendrerit eros mollis, gravida est.</p>
 
 								<p>Proin euismod ipsum a tellus condimentum dapibus. Integer porttitor felis elit, eget rutrum ligula commodo quis. Praesent ultricies neque eu mi congue blandit. Nulla feugiat feugiat aliquet. Morbi sed mattis erat. Nullam scelerisque molestie eros, id tristique felis iaculis non. Duis pellentesque neque eget iaculis varius. Donec at nisl semper, aliquam est id, tincidunt lacus. Donec at erat purus.</p>
@@ -196,7 +196,7 @@
 								<p>Morbi tincidunt nunc non diam porta, at fermentum orci bibendum. Donec arcu nisi, ornare nec commodo vitae, sollicitudin sed magna. Cras sit amet justo et nulla pulvinar laoreet. Phasellus scelerisque, metus id posuere vulputate, diam tellus iaculis sapien, eget scelerisque ipsum libero convallis velit. Duis lorem ligula, faucibus quis tellus nec, fringilla ultricies leo. Etiam tempus congue magna. Suspendisse porta dictum tortor, eu volutpat ipsum eleifend nec. Aliquam dapibus lorem luctus, cursus libero imperdiet, mattis nunc. Sed in ipsum diam. Quisque efficitur metus purus, vitae fermentum lacus venenatis id.</p>
 							</div>
 
-							<a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs" ng-click="vm.show=!vm.show">View More</a>
+							<a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs">View More</a>
 
 						</div>
 					</div>
@@ -716,30 +716,32 @@
 
 		<!-- Vendor -->
 		<script src="./assets/js/jquery.min.js"></script>
-		<script src="./assets/js/bootstrap.min.js"></script>
-			
 		<script src="./assets/js/jquery.appear.min.js"></script>
-<script src="./assets/js/jquery.easing.min.js"></script>
-<script src="./assets/js/jquery-cookie.min.js"></script>
-<script src="./assets/js/common.min.js"></script>
-<script src="./assets/js/jquery.validation.min.js"></script>
-<script src="./assets/js/jquery.easy-pie-chart.min.js"></script>
-<script src="./assets/js/jquery.gmap.min.js"></script>
-<script src="./assets/js/jquery.lazyload.min.js"></script>
-<script src="./assets/js/jquery.isotope.min.js"></script>
-<script src="./assets/js/jquery.magnific-popup.min.js"></script>
-<script src="./assets/js/vide.min.js"></script>
-
-
-		<script src="./assets/js/owl.carousel.min.js"></script>
-			
+		<script src="./assets/js/bootstrap.min.js"></script>			
+		<script src="./assets/js/jquery.validation.min.js"></script>
 		<script src="./assets/js/jquery.isotope.min.js"></script>
+		<script src="./assets/js/owl.carousel.min.js"></script>		
+		
 		<!-- Theme Base, Components and Settings -->
 		<script src="./assets/js/theme.js"></script>
 		
+		<!-- Current Page Vendor and Views -->
+		<script src="./assets/js/jquery.themepunch.tools.min.js"></script>	
+		<script src="./assets/js/jquery.themepunch.revolution.min.js"></script>
+
+		<!-- Current Page Vendor and Views -->
+		<script src="./assets/js/view.contact.js"></script>
+		
+		<!-- Demo -->
+		<script src="./assets/js/demo-resume.js"></script>
+		
 		<!-- Theme Custom -->
-		<script src="./assets/js/custom.js"></script>		
+		<script src="./assets/js/custom.js"></script>
+		
+		<!-- Theme Initialization Files -->
+		<script src="./assets/js/theme.init.js"></script>		
 </div><!-- Style Switcher - Start -->
+
 <!-- scripts -->
 <script src="./assets/js/particles.js"></script>
 <script src="./assets/js/app.js"></script>

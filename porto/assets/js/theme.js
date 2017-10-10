@@ -435,8 +435,8 @@ window.theme.fn = {
 	};
 
 	// expose to scope
-	$.extend(theme,{
-		PluginCounter:PluginCounter
+	$.extend(theme, {
+		PluginCounter: PluginCounter
 	});
 
 	// jquery plugin
@@ -456,7 +456,7 @@ window.theme.fn = {
 }).apply(this, [window.theme, jQuery]);
 
 // Lazy Load
-(function(theme, $){
+(function(theme, $) {
 
 	theme = theme || {};
 
@@ -535,6 +535,7 @@ window.theme.fn = {
 			} else {
 				return new PluginLazyLoad($this, opts);
 			}
+
 		});
 	}
 
