@@ -2019,7 +2019,7 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<h5>Pixel-Perfect Design</h5>
+<h5>Desarrollo Web de Alta Calidad</h5>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 19px" >
@@ -2027,7 +2027,7 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
+<p>Desarrollamos aplicaciones profesionales para diferentes entornos: web, móvil o de escritorio usando la más moderna tecnología y asegurando un producto de alta calidad</p>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 50px" >
@@ -2049,7 +2049,7 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<h5>Free Plugins Included</h5>
+<h5>Consultoría y Servicios IT</h5>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 19px" >
@@ -2057,7 +2057,7 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
+<p>Asesorías, Capacitación y Gestión de Proyectos IT que responden a las necesidades de los clientes y se adaptan a sus necesidades de información</p>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 50px" >
@@ -2079,7 +2079,7 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<h5>Extensive Documentation</h5>
+<h5>Diversidad de Plataformas</h5>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 19px" >
@@ -2087,7 +2087,7 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
+<p>Gestionamos todos tus requerimientos de hardware y software que permitirán soportar tus aplicaciones y servicios de IT en plataformas de software libre (Linux) o privativa (Windows)</p>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 50px" >
@@ -2109,7 +2109,7 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<h5>WooCommerce</h5>
+<h5>Portafolio de Proyectos</h5>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 19px" >
@@ -2117,7 +2117,7 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut</p>
+<p>Conoce la alta calidad de nuestro trabajo pensado y diseñado al modelo de tu negocio y se parte de nuestros clientes satisfechos.</p>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 50px" >
@@ -2175,7 +2175,7 @@ padding: 90px 0px 50px 0px !important;
 </style>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<h2>Create A Beautiful Presentation For The World To See</h2>
+<h2>Te Ayudamos a Crear tu Imagen Corporativa en la Web</h2>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 20px" >
@@ -2183,14 +2183,14 @@ padding: 90px 0px 50px 0px !important;
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</h4>
+<h4>Usamos tecnología de punta para asegurarnos que el diseño de tu web corporativo sea una experiencia extraordinaria, innovadora y atractiva que permita potenciar tu marca en Internet</h4>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 43px" >
 <span class="vc_empty_space_inner"></span>
 </div>
 <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-<span class="qodef-btn-text">View Features</span>
+<span class="qodef-btn-text">Conoce más</span>
 <span class="qodef-btn-text-icon">
 <i class="qodef-icon-simple-line-icon icon-rocket " ></i>
 </span>
@@ -2227,7 +2227,7 @@ padding: 90px 0px 50px 0px !important;
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
 <h2 style="text-align: center;">
-<span style="color: #ffffff;">A Startup Theme Like No Other</span>
+<span style="color: #ffffff;">Innovamos y Garantizamos un Producto de Calidad Profesional</span>
 </h2>
 </div>
 </div>
@@ -2237,7 +2237,7 @@ padding: 90px 0px 50px 0px !important;
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
 <h4 style="text-align: center;">
-<span style="color: #dbdbdb;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</span>
+<span style="color: #dbdbdb;"> Conoce algunas de las opiniones de nuestros clientes satisfechos</span>
 </h4>
 </div>
 </div>
@@ -2252,9 +2252,9 @@ padding: 90px 0px 50px 0px !important;
 <div class="qodef-testimonial-text-holder">
 <div class="qodef-testimonial-text-inner">
 <p class="qodef-testimonial-title">
-&quot;Super support!&quot;             
+&quot;Soporte Permanente&quot;             
 </p>
-<p class="qodef-testimonial-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+<p class="qodef-testimonial-text">Siempre están presentes cuando los he necesitado, su trato familiar y amable facilita la interacción con su extraordinario equipo de trabajo</p>
 </div>
 </div>
 <div class="qodef-testimonial-info-holder">
@@ -2264,7 +2264,7 @@ padding: 90px 0px 50px 0px !important;
 <div class = "qodef-testimonial-author">
 <p class="qodef-testimonial-author-text">
 <span>
-Jack Jones                 </span>
+Gustavo Ovalles </span>
 <span class="qodef-testimonials-job">Manager at TechDream</span>
 </p>
 </div>
@@ -2276,9 +2276,9 @@ Jack Jones                 </span>
 <div class="qodef-testimonial-text-holder">
 <div class="qodef-testimonial-text-inner">
 <p class="qodef-testimonial-title">
-&quot;Awesome design.&quot;               
+&quot;Diseño Asombroso.&quot;               
 </p>
-<p class="qodef-testimonial-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+<p class="qodef-testimonial-text">Se lucieron con el diseño y entendieron a la perfección el modelo de negocios de mi empresa. Gracias a su ingenio hoy me siento más que satisfecho!.</p>
 </div>
 </div>
 <div class="qodef-testimonial-info-holder">
@@ -2288,7 +2288,7 @@ Jack Jones                 </span>
 <div class = "qodef-testimonial-author">
 <p class="qodef-testimonial-author-text">
 <span>
-Melissa James                 </span>
+Scarlett Johansson  </span>
 <span class="qodef-testimonials-job">CEO at SNAP</span>
 </p>
 </div>
@@ -2300,9 +2300,9 @@ Melissa James                 </span>
 <div class="qodef-testimonial-text-holder">
 <div class="qodef-testimonial-text-inner">
 <p class="qodef-testimonial-title">
-&quot;Great flexibility.&quot;               
+&quot;Flexibilidad Total&quot;               
 </p>
-<p class="qodef-testimonial-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+<p class="qodef-testimonial-text">Nuestra aplicación se adapta a cualquier dispositivo: Teléfono Móvil, Tablet o PC lo que sin distorcionar su contenido y manteniendo una impecable interfaz para los usuarios</p>
 </div>
 </div>
 <div class="qodef-testimonial-info-holder">
@@ -2312,7 +2312,7 @@ Melissa James                 </span>
 <div class = "qodef-testimonial-author">
 <p class="qodef-testimonial-author-text">
 <span>
-Mark Levine                </span>
+Melvin Mora </span>
 <span class="qodef-testimonials-job">PR at CTA</span>
 </p>
 </div>
@@ -2326,9 +2326,9 @@ Mark Levine                </span>
 <div class="qodef-testimonial-text-holder">
 <div class="qodef-testimonial-text-inner">
 <p class="qodef-testimonial-title">
-&quot;Remarkable Style.&quot;             
+&quot;Capacitación Profesional.&quot;             
 </p>
-<p class="qodef-testimonial-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+<p class="qodef-testimonial-text"> Es muy gratificante encontrar instructores con tanto dominio del tema y con tanta facilidad para transmitir sus conocimientos, de verdad son extraordinarios, los Felicito.</p>
 </div>
 </div>
 <div class="qodef-testimonial-info-holder">
@@ -2338,7 +2338,7 @@ Mark Levine                </span>
 <div class = "qodef-testimonial-author">
 <p class="qodef-testimonial-author-text">
 <span>
-Bert   Baldwin                </span>
+Albert Einstein </span>
 <span class="qodef-testimonials-job">PR at CTA</span>
 </p>
 </div>
@@ -2350,9 +2350,9 @@ Bert   Baldwin                </span>
 <div class="qodef-testimonial-text-holder">
 <div class="qodef-testimonial-text-inner">
 <p class="qodef-testimonial-title">
-&quot;Easy &amp; Fun.&quot;               
+&quot;Excelentes &amp; Rápidos.&quot;               
 </p>
-<p class="qodef-testimonial-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+<p class="qodef-testimonial-text">Gracias a las metodologías ágiles que utilizan, el desarrollo se realiza de manera rápida y sin sacrificar la calidad de la aplicación</p>
 </div>
 </div>
 <div class="qodef-testimonial-info-holder">
@@ -2362,7 +2362,7 @@ Bert   Baldwin                </span>
 <div class = "qodef-testimonial-author">
 <p class="qodef-testimonial-author-text">
 <span>
-Angela Roy                 </span>
+Katniss Everdeen </span>
 <span class="qodef-testimonials-job">Architect at CUBE</span>
 </p>
 </div>
@@ -2374,9 +2374,9 @@ Angela Roy                 </span>
 <div class="qodef-testimonial-text-holder">
 <div class="qodef-testimonial-text-inner">
 <p class="qodef-testimonial-title">
-&quot;Satisfied Clients!&quot;               
+&quot;Todo en un solo lugar!&quot;               
 </p>
-<p class="qodef-testimonial-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad</p>
+<p class="qodef-testimonial-text"> Me asesoraron, diseñaron mi Sitio Web y se encargaron hasta del Hospedaje, tienen todo lo que se pueda necesitar en IT, lo que les da un valor agregado a sus servicios</p>
 </div>
 </div>
 <div class="qodef-testimonial-info-holder">
@@ -2386,7 +2386,7 @@ Angela Roy                 </span>
 <div class = "qodef-testimonial-author">
 <p class="qodef-testimonial-author-text">
 <span>
-Bruce Holt                 </span>
+Bruce Holt </span>
 <span class="qodef-testimonials-job">Manager at TechDream</span>
 </p>
 </div>
@@ -2425,7 +2425,7 @@ Bruce Holt                 </span>
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<h2>Create Your Own Genuine Web Masterpiece</h2>
+<h2>Más que un Diseño es una Obra de Arte</h2>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 20px" >
@@ -2433,14 +2433,14 @@ Bruce Holt                 </span>
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</h4>
+<h4>Para nosotros es importante resaltar tu estilo y dejar en claro tu esencia en el diseño, es por esto que tenemos un equipo de profesionales especialistas en dotar a tu sitio web de una interfaz genuina y atractiva que te haga destacar!</h4>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 43px" >
 <span class="vc_empty_space_inner"></span>
 </div>
 <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-<span class="qodef-btn-text">Find Out More</span>
+<span class="qodef-btn-text">Ver más</span>
 <span class="qodef-btn-text-icon">
 <i class="qodef-icon-simple-line-icon icon-rocket " ></i>
 </span>
@@ -2473,17 +2473,17 @@ Bruce Holt                 </span>
 <div class="qodef-fullwidth-slider-item-wrapper-inner">
 <div class="qodef-fullwidth-slider-item-elements-holder">
 <div class="qodef-fullwidth-slider-item-title">
-<h2>What Are You Waiting For? StartIt Today!</h2>
+<h2>Consultoría IT</h2>
 </div>
 <div class="qodef-fullwidth-slider-item-subtitle">
-<h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h4>
+<h4>Las empresas de hoy están revisando y adaptando la forma en que gestionan y prestan los servicios de IT</h4>
 </div>
 <div class="qodef-fullwidth-slider-item-text">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo</p>
+<p>Los nuevos paradigmas y retos del futuro asociados a la prestación de servicios están siendo condicionados por cambios tecnológicos, aumento del flujo de datos disponibles y sin duda alguna temas como la seguridad. Por tal razón, te ofrecemos un equipo de excelentes profesionales para gestionar su información y afrontar sus retos empresariales, proporcionando orientación, mejores prácticas y un extenso repertorio de conocimientos tecnológicos</p>
 </div>
 <div class="qodef-fullwidth-slider-item-button">
 <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-<span class="qodef-btn-text">Buy The Theme</span>
+<span class="qodef-btn-text">Solicitar Consultoría</span>
 <span class="qodef-btn-text-icon">
 <i class="qodef-icon-simple-line-icon icon-basket " ></i>
 </span>
@@ -2507,17 +2507,17 @@ Bruce Holt                 </span>
 <div class="qodef-fullwidth-slider-item-wrapper-inner">
 <div class="qodef-fullwidth-slider-item-elements-holder">
 <div class="qodef-fullwidth-slider-item-title">
-<h2>Let Them Know Why You’re the Best</h2>
+<h2>Capacitación Tecnológica</h2>
 </div>
 <div class="qodef-fullwidth-slider-item-subtitle">
-<h4>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</h4>
+<h4>Actualiza los conocimientos de tu recurso humano en el manejo de nuevas tecnologías</h4>
 </div>
 <div class="qodef-fullwidth-slider-item-text">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo</p>
+<p>Nos enorgullece presentar un amplio repertorio de opciones para tu mejoramiento profesional en herramientas tecnológicas como: Phyton – PHP-  HTML5 – CSS3 – JQuery – Angular – Android – Visual Studio – SQL Server – My SQL – Postgret SQL – NodeJS – Git – Google Maps – Asterik – RequireJs -  Bootstrap – GitHub – Fedora – API Development – Nginx – oAuth – SSH – Celery – Mercadopago - Mailchimp – Mailrelay – Facebook Ads – Google Adwords – Hootsuite – SocialGuets – Wordpress – SEO</p>
 </div>
 <div class="qodef-fullwidth-slider-item-button">
 <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-<span class="qodef-btn-text">Buy The Theme</span>
+<span class="qodef-btn-text">Quiero Capacitarme</span>
 <span class="qodef-btn-text-icon">
 <i class="qodef-icon-simple-line-icon icon-basket " ></i>
 </span>
@@ -2541,17 +2541,17 @@ Bruce Holt                 </span>
 <div class="qodef-fullwidth-slider-item-wrapper-inner">
 <div class="qodef-fullwidth-slider-item-elements-holder">
 <div class="qodef-fullwidth-slider-item-title">
-<h2>What Are You Waiting For? StartIt Today!</h2>
+<h2>Gestión de Proyectos Tecnológicos</h2>
 </div>
 <div class="qodef-fullwidth-slider-item-subtitle">
-<h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h4>
+<h4>Si quieres asegurar el éxito de tu proyecto dejalo en manos de profesionales!</h4>
 </div>
 <div class="qodef-fullwidth-slider-item-text">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo</p>
+<p>Usamos las más modernas y ágiles metodologías como SCRUM y Increasing Marketing para la administración de proyectos tecnológicos de cualquier tamaño. Ahorrate los dolores de cabeza, costos de personal y pérdida de tiempo que puede implicar la gestión de proyectos y dejalo en manos del equipo Clouemotion para garantizar su éxito</p>
 </div>
 <div class="qodef-fullwidth-slider-item-button">
 <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-<span class="qodef-btn-text">Buy The Theme</span>
+<span class="qodef-btn-text">Gestiona mi Proyecto</span>
 <span class="qodef-btn-text-icon">
 <i class="qodef-icon-simple-line-icon icon-basket " ></i>
 </span>
@@ -2575,17 +2575,17 @@ Bruce Holt                 </span>
 <div class="qodef-fullwidth-slider-item-wrapper-inner">
 <div class="qodef-fullwidth-slider-item-elements-holder">
 <div class="qodef-fullwidth-slider-item-title">
-<h2>Let Them Know Why You’re the Best</h2>
+<h2>Marketing Digital</h2>
 </div>
 <div class="qodef-fullwidth-slider-item-subtitle">
-<h4>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat</h4>
+<h4>Combina y utiliza estrategias de comercialización en tus medios digitales</h4>
 </div>
 <div class="qodef-fullwidth-slider-item-text">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo</p>
+<p>Si estás buscando un servicio que te permita crear o potenciar la Marca de tu empresa aplicando las más modernas técnicas digitales, has llegado al sitio adecuado. El equipo Clouemotion emplea para ello técnicas de CEO, SMO, SEM, manejo de redes sociales, diseño de infografías, Métricas y estrategias de email Marketing, entre otras que permitan generar contenidos atractivos que capten completamente la atención de los usuarios</p>
 </div>
 <div class="qodef-fullwidth-slider-item-button">
 <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-<span class="qodef-btn-text">Buy The Theme</span>
+<span class="qodef-btn-text">Dirige mi Campaña</span>
 <span class="qodef-btn-text-icon">
 <i class="qodef-icon-simple-line-icon icon-basket " ></i>
 </span>
@@ -2716,7 +2716,7 @@ Bruce Holt                 </span>
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/office-management-systems/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-800*600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
@@ -2737,7 +2737,7 @@ Office Management Systems
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-trends-in-seo-analytics/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
@@ -2758,7 +2758,7 @@ New Trends In SEO &#038; Analytics
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/app-update-rebrand/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
@@ -2779,7 +2779,7 @@ App Update &#038; Rebrand
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/the-tablet-app-of-the-future/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
@@ -2800,7 +2800,7 @@ The Tablet App Of The Future
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/big-data-goes-global/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
@@ -2821,7 +2821,7 @@ Big Data Goes Global
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-findings-in-responsive-testing/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
@@ -2842,7 +2842,7 @@ New Findings In Testing
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/millenials-research-2015/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">
@@ -2863,7 +2863,7 @@ Millenials Research 2015
 <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-trends-in-social-media/" target="_self"></a>
 <div class = "qodef-item-image-holder">
 <div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-768x575.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
+<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
 </div>
 <div class="qodef-item-text-overlay">
 <div class="qodef-item-text-overlay-inner">

@@ -4,7 +4,15 @@ function MainCtrl($scope) {
     var vm = this;
     angular.extend(vm,{
         prueba:"hola mundo2",
+        click:click,
+        show:true,
     });
+
+    function click(link) {
+        var body =  $("html, body");
+        var top  =  $(link).offset().top;
+        body.stop().animate({scrollTop:top},800,'swing',function(){});
+    }
 
     vm.experience = [{
         from:'Sep 2012',
