@@ -63,36 +63,39 @@ function MainCtrl($scope) {
     console.log("Funciono");
     this.$onInit=function() { 
           $(function(){
-            $('.owl-carousel').owlCarousel({
+            $('.owl-education').owlCarousel({
                 loop:false,
-                margin:30,
+                margin:0,
                 nav:false,    
                 responsive:{
                     0:{
-                        items:1,                                                                    
-                    },
-                    400:{
-                        items:2,
-
+                      items:1,                                                                    
+                    },500:{
+                       items:2,
                     }
-
                 }
             });
-            $('.owl-course').owlCarousel({
-                loop:true,
-                margin:30,
-                nav:true,    
-                responsive:{
-                    0:{
-                        items:1,
-                    },
-                    520:{
-                        items:2,
-                    }
+            $('.owl-carousel1').owlCarousel({
+              loop: true,
+              margin: 3,
+              nav: true,
+              navText: [
+                "<i class='fa fa-left'></i>",
+                "<i class='fa fa-right'></i>"
+              ],              
+              responsive: {
+                0: {
+                  items: 1
+                },
+                600: {
+                  items: 3
+                },
+                1000: {
+                  items: 3
                 }
-
-            }) 
-        })        
+              }
+            })
+        })     
     }
 
 }

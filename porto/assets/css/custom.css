@@ -47,18 +47,8 @@
 .item-box{
   border:1px solid #fff;
   min-height: 80px;
-  box-shadow: 3px 5px 15px #999;
-  padding: 40px;    
-  margin:10px;
+  box-shadow: 3px 3px 9px #999;  
 }
-@media only screen and (max-width: 500px){
-  .item-box{
-    border:1px solid #fff;
-    min-height: 80px;
-    box-shadow: 3px 5px 15px #999;    
-  }
-}
-
 .item-box p i{
   font-size:30px;
   color:#25cbf5;
@@ -78,7 +68,34 @@
   font-size:12px;
   color:#25cbf5;      
 }
-.owl-carousel .owl-dots .owl-dot.active span, .owl-carousel .owl-dots .owl-dot:hover span{
+.item.item-course{
+  
+  min-height: 200px;  
+
+}
+.item.item-course span{
+  font-weight: bold;
+  font-size: 18px;
+  color:#FFF;
+  text-shadow: 1px 1px #000;
+}
+.item.item-course i{
+  font-size: 30px;
+  color:#FFF;
+}
+.item.item-course p{
+   margin:2%;
+}
+.item.item-course .years{
+   color:#000;;
+   font-weight: bold;
+}
+.sha{
+  box-shadow: 1px 3px 9px #999;
+}
+
+/*CAROUSEL*/
+.owl-carousel1 .owl-dots1 .owl-dot.active1 span, .owl-carousel1 .owl-dots1 .owl-dot1:hover span{
   background:#25cbf5;
 }
 .custom-text-color-1{
@@ -87,4 +104,69 @@
 .custom-text{
   color:#000;
   font-size:22px;
+}
+.carousel-wrap1 {
+  margin: 90px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel1 .item1 {
+  position: relative;
+  z-index: 100; 
+  -webkit-backface-visibility: hidden; 
+}
+
+/* end fix */
+.owl-nav1 > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav1 i {
+  font-size: 52px;
+}
+
+.owl-nav1 .owl-prev1 {
+  left: -30px;
+}
+
+.owl-nav1 .owl-next1 {
+  right: -30px;
+}
+.owl-carousel .owl-nav [class*="owl-"]{
+  background: #fff;
+  color:#25cbf5; 
+  border:1px solid #25cbf5; 
+}
+.owl-carousel .owl-nav [class*="owl-"]:hover{
+  background: #25cbf5;
+  color:#fff;
+  border:1px solid #fff;
+}
+.owl-carousel .owl-nav [class*="owl-"]:visited{
+  background: red;
+  color:#fff;
+}
+.owl-carousel .owl-nav:active{
+  background: red;
+  color:#fff;
+}
+.owl-carousel .owl-nav [class*="owl-"]:link{
+  background: red;
+  color:#fff;
+}
+.owl-next{
+    border: 1px solid;
+    margin-right: -20px;
+    padding: 3px 0px 3px 8px;
+}
+.owl-prev{
+    border: 1px solid;
+    margin-left: -20px;
+    padding: 3px 0px 3px 8px;
 }
