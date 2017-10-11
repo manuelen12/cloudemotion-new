@@ -101,7 +101,7 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 <span class="menu_icon_wrapper">
 <i class="menu_icon null fa"></i>
 </span>
-<span class="item_text">Home</span>
+<span class="item_text">Inicio</span>
 </span>
 <span class="plus"></span>
 </span>
@@ -2612,7 +2612,7 @@ Bruce Holt </span>
 <div class="wpb_wrapper">
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<h2 style="text-align: center;">Design the Web in Your Image</h2>
+<h2 style="text-align: center;">Cuatro Pasos para un Desarrollo Web o Móvil</h2>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 22px" >
@@ -2620,7 +2620,7 @@ Bruce Holt </span>
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<h4 style="text-align: center;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</h4>
+<h4 style="text-align: center;">Porque planificamos y somos metódicos en nuestro trabajo! 
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 47px" >
@@ -2653,43 +2653,43 @@ Bruce Holt </span>
 <div class="qodef-tabs qodef-horizontal qodef-tab-text clearfix">
 <ul class="qodef-tabs-nav">
 <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==1}">
-<a ng-click="vm.tabs=1">Tab Example 1</a>
+<a ng-click="vm.tabs=1">Definición y Requisitos</a>
 </li>
 <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==2}">
-<a ng-click="vm.tabs=2">Tab Example 2</a>
+<a ng-click="vm.tabs=2">Flujo de Trabajo</a>
 </li>
 <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==3}">
-<a ng-click="vm.tabs=3">Tab Example 3</a>
+<a ng-click="vm.tabs=3">Diseño Gráfico</a>
 </li>
 <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==4}">
-<a ng-click="vm.tabs=4">Tab Example 4</a>
+<a ng-click="vm.tabs=4">Desarrollo</a>
 </li>
 </ul>
 <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==1" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent</p>
+<p>Durante esta fase, el modelo de negocios, la funcionalidad y usabilidad de la aplicación se establecen, dando como resultado el concepto y las expectativas que deberá satisfacer el diseño de acuerdo a los requerimientos del cliente.</p>
 </div>
 </div>
 </div>
 <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==2" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<p>Claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+<p>Definimos los flujos de trabajo, una correcta arquitectura de la información y el contenido que se desea compartir, así como las interacciones que tendrá la aplicación de acuerdo a la lógica del tipo de usuario final, dando como resultado el Wireframe o estructura formal que tendrá nuestra aplicación.</p>
 </div>
 </div>
 </div>
 <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==3" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent</p>
+<p>En esta etapa, los wireframes se entregan al diseñador gráfico, que es responsable de la creación de cada activo de diseño individual que define la tipografía, colores y los gráficos que se usarán, dando como resultado los activos de imagen y guías de estilo del diseño visual.</p>
 </div>
 </div>
 </div>
 <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==4" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<p>Claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</p>
+<p>Durante este paso, la guía de estilo se le da a los programadores Frondend para que desarrollen la interfaz de usuario que se adapte a todas las formas posibles de visualización disponibles (Responsive Web Design) y también a los desarrolladores Backend para que permitan su interacción con el servidor, con bases de datos u otras aplicaciones.</p>
 </div>
 </div>
 </div>
@@ -2925,7 +2925,7 @@ New Trends In Social Media
 <div class="wpb_wrapper">
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<h2>Let Them Know Why you’re the Best</h2>
+<h2>Conoce Nuestro Equipo de Trabajo</h2>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 22px" >
@@ -2933,7 +2933,7 @@ New Trends In Social Media
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam</h4>
+<h4>Somos una red de jóvenes profesionales que con estrategias innovadoras que damos respaldo a tus proyectos digitales.<br>Estamos apasionados por el espíritu tecnológico y empresarial de nuestros clientes, por eso, siempre estamos en constante capacitación.</h4>
 </div>
 </div>
 </div>
@@ -3123,7 +3123,7 @@ Bernard Smith
 <div class="vc_column-inner ">
 <div class="wpb_wrapper">
 <div class="qodef-custom-font-holder" style="font-family: Raleway;font-size: 52px;line-height: 60px;font-weight: 700;letter-spacing: 0px;text-transform: Capitalize;text-align: center;color: #ffffff" data-font-size= 52 data-line-height= 60>
-Easy &amp; Simple - No Coding Required!
+Desarrollo Web &amp; Móvil Profesional
 </div>
 <div class="vc_empty_space"  style="height: 18px" >
 <span class="vc_empty_space_inner"></span>
@@ -3131,7 +3131,7 @@ Easy &amp; Simple - No Coding Required!
 <div class="wpb_text_column wpb_content_element  vc_custom_1445414812892">
 <div class="wpb_wrapper">
 <h4>
-<span style="color: #ffffff;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</span>
+<span style="color: #ffffff;">No esperes más y aprovecha nuestros desarrollos personalizados, con diseños interactivos de última generación que se benefician de la integración con otras plataformas y se adaptan a cualquier dispositivo</span>
 </h4>
 </div>
 </div>
@@ -3140,12 +3140,12 @@ Easy &amp; Simple - No Coding Required!
 </div>
 <a href="#" target="_self" style="margin: 10px 7px" class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-custom-hover-bg qodef-btn-custom-border-hover qodef-btn-custom-hover-color qodef-btn-hover-animation" data-hover-color="#212121" data-hover-border-color="#ffffff" >
 <span  style="background-color: #ffffff"  class="qodef-animation-overlay"></span>
-<span class="qodef-btn-text">Learn More</span>
+<span class="qodef-btn-text">Conocer Más</span>
 <span class="qodef-btn-text-icon"></span>
 </a>
 <a href="#" target="_self" style="color: #ffffff;border-color: rgba(255,255,255,0.5);margin: 10px 7px" class="qodef-btn qodef-btn-medium qodef-btn-default qodef-btn-hover-animation"  >
 <span    class="qodef-animation-overlay"></span>
-<span class="qodef-btn-text">Buy The Theme</span>
+<span class="qodef-btn-text">Contratar</span>
 <span class="qodef-btn-text-icon"></span>
 </a>
 </div>
@@ -3198,7 +3198,7 @@ padding: 60px 20px 60px 30px !important;
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
 <h3>
-<span style="color: #ffffff;">No Coding Required</span>
+<span style="color: #ffffff;">Gerencia IT</span>
 </h3>
 </div>
 </div>
@@ -3206,13 +3206,13 @@ padding: 60px 20px 60px 30px !important;
 <span class="vc_empty_space_inner"></span>
 </div>
 <div class="qodef-custom-font-holder" style="font-family: Raleway;font-size: 15px;line-height: 23px;font-weight: 400;color: #ffffff" data-font-size= 15 data-line-height= 23>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam
+  	Identificamos y evaluamos los servicios informáticos para que fortalezcan su continuidad y seguridad operacional y hacemos propuestas inteligentes que permitan optimizarlos con el empleo de las nuevas tecnologías
 </div>
 <div class="vc_empty_space"  style="height: 60px" >
 <span class="vc_empty_space_inner"></span>
 </div>
 <a href="#" target="_self" style="color: #ffffff;border-color: rgba(255,255,255,0.5)" class="qodef-btn qodef-btn-medium qodef-btn-outline qodef-btn-custom-border-hover qodef-btn-custom-hover-color qodef-btn-icon" data-hover-color="#ffffff" data-hover-border-color="rgba(255,255,255,0.5)" >
-<span class="qodef-btn-text">Learn More</span>
+<span class="qodef-btn-text">Contratar</span>
 <span class="qodef-btn-text-icon">
 <i class="qodef-icon-simple-line-icon icon-bulb " ></i>
 </span>
@@ -3257,20 +3257,20 @@ padding: 60px 20px 60px 30px !important;
 </style>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<h3>Beautiful Design</h3>
+<h3>Marketing y Diseño</h3>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 18px" >
 <span class="vc_empty_space_inner"></span>
 </div>
 <div class="qodef-custom-font-holder" style="font-family: Raleway;font-size: 15px;line-height: 23px;font-weight: 400;color: #797979" data-font-size= 15 data-line-height= 23>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam
+	El Posicionamiento Web, SEO, SMO, estrategias de atracción y las infografías de alto impacto son solo parte de los recursos que usamos para que te destaques!  
 </div>
 <div class="vc_empty_space"  style="height: 60px" >
 <span class="vc_empty_space_inner"></span>
 </div>
 <a href="#" target="_self" style="color: #212121;border-color: rgba(33,33,33,0.5)" class="qodef-btn qodef-btn-medium qodef-btn-outline qodef-btn-custom-border-hover qodef-btn-custom-hover-color qodef-btn-icon" data-hover-color="#212121" data-hover-border-color="rgba(33,33,33,0.5)" >
-<span class="qodef-btn-text">View All Pages</span>
+<span class="qodef-btn-text">Contratar</span>
 <span class="qodef-btn-text-icon">
 <i class="qodef-icon-simple-line-icon icon-layers " ></i>
 </span>
@@ -3316,7 +3316,7 @@ padding: 60px 20px 60px 30px !important;
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
 <h3>
-<span style="color: #ffffff;">Easy Drag And Drop </span>
+<span style="color: #ffffff;">Asesorías en Tecnologías</span>
 </h3>
 </div>
 </div>
@@ -3324,13 +3324,13 @@ padding: 60px 20px 60px 30px !important;
 <span class="vc_empty_space_inner"></span>
 </div>
 <div class="qodef-custom-font-holder" style="font-family: Raleway;font-size: 15px;line-height: 23px;font-weight: 400;color: #ffffff" data-font-size= 15 data-line-height= 23>
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam
+	Te brindamos asistencia presencial o remota para el control y manejo de proyectos tecnológicos y la Capacitación del Recurso Humano.
 </div>
 <div class="vc_empty_space"  style="height: 60px" >
 <span class="vc_empty_space_inner"></span>
 </div>
 <a href="#" target="_self" style="color: #ffffff;border-color: rgba(255,255,255,0.5)" class="qodef-btn qodef-btn-medium qodef-btn-outline qodef-btn-custom-border-hover qodef-btn-custom-hover-color qodef-btn-icon" data-hover-color="#ffffff" data-hover-border-color="rgba(255,255,255,0.5)" >
-<span class="qodef-btn-text">Check It Out</span>
+<span class="qodef-btn-text">Contratar</span>
 <span class="qodef-btn-text-icon">
 <i class="qodef-icon-simple-line-icon icon-settings " ></i>
 </span>
@@ -3355,7 +3355,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 </div>
 <div class="wpb_text_column wpb_content_element  vc_custom_1446567667184">
 <div class="wpb_wrapper">
-<h2>What Are You Waiting For? StartIt Today!</h2>
+<h2>¿Por qué contratar nuestros servicios?</h2>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 18px" >
@@ -3363,7 +3363,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sediam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat</h4>
+<h4>Porque somos un equipo genial de profesionales, entusiastas e innovadores que sabemos transformar tus sueños en realidad utilizando las últimas herramientas tecnológicas y tenemos:</h4>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 29px" >
@@ -3380,7 +3380,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#b2dd4c;font-size:14px" ></i>
 </div>
 </div>
-<p class="qodef-icon-list-text"  > Make a difference</p>
+<p class="qodef-icon-list-text"  > Conocimiento</p>
 </div>
 <div class="qodef-icon-list-item">
 <div class="qodef-icon-list-icon-holder">
@@ -3388,7 +3388,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#b2dd4c;font-size:14px" ></i>
 </div>
 </div>
-<p class="qodef-icon-list-text"  > Unmatched power</p>
+<p class="qodef-icon-list-text"  > Creatividad</p>
 </div>
 <div class="qodef-icon-list-item">
 <div class="qodef-icon-list-icon-holder">
@@ -3396,7 +3396,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#b2dd4c;font-size:14px" ></i>
 </div>
 </div>
-<p class="qodef-icon-list-text"  > Retina ready</p>
+<p class="qodef-icon-list-text"  > Liderazgo</p>
 </div>
 </div>
 </div>
@@ -3410,7 +3410,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#b2dd4c;font-size:14px" ></i>
 </div>
 </div>
-<p class="qodef-icon-list-text"  > Satisfied clients</p>
+<p class="qodef-icon-list-text"  > Motivación</p>
 </div>
 <div class="qodef-icon-list-item">
 <div class="qodef-icon-list-icon-holder">
@@ -3418,7 +3418,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#b2dd4c;font-size:14px" ></i>
 </div>
 </div>
-<p class="qodef-icon-list-text"  > Control the design</p>
+<p class="qodef-icon-list-text"  > Organización</p>
 </div>
 <div class="qodef-icon-list-item">
 <div class="qodef-icon-list-icon-holder">
@@ -3426,7 +3426,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#b2dd4c;font-size:14px" ></i>
 </div>
 </div>
-<p class="qodef-icon-list-text"  > Imagine and create</p>
+<p class="qodef-icon-list-text"  > Responsabilidad</p>
 </div>
 </div>
 </div>
@@ -3481,10 +3481,10 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 </div>
 <div class="qodef-process-item-content-holder">
 <div class="qodef-process-item-title-holder">
-<h5>Sketch</h5>
+<h5>Diseño</h5>
 </div>
 <div class="qodef-process-item-text-holder">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
+<p> 100% Responsive, interactivo y con la más alta usabilidad para cautivar al usuario final, por lo que diseñamos en nuestros proyectos respetando los estándares y usando los principales framewares </p>
 </div>
 </div>
 </div>
@@ -3500,10 +3500,10 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 </div>
 <div class="qodef-process-item-content-holder">
 <div class="qodef-process-item-title-holder">
-<h5>Design</h5>
+<h5>Recursos IT</h5>
 </div>
 <div class="qodef-process-item-text-holder">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
+<p> Ofrecemos el mejor hospedaje, administración del sitio web, gestión de bases de datos y métricas como parte de nuestros servicios integrales y puedas encontrarlo todo en un mismo sitio.</p>
 </div>
 </div>
 </div>
@@ -3519,10 +3519,10 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 </div>
 <div class="qodef-process-item-content-holder">
 <div class="qodef-process-item-title-holder">
-<h5>Test</h5>
+<h5>Herramientas</h5>
 </div>
 <div class="qodef-process-item-text-holder">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
+<p>Usamos las más novedosas herramientas tecnológicas para que tus proyectos cobren vida evitando una desactualización prematura, es por esto que nuestras librerías, CMS y plantillas están realizadas con tecnología de punta. </p>
 </div>
 </div>
 </div>
@@ -3538,10 +3538,10 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 </div>
 <div class="qodef-process-item-content-holder">
 <div class="qodef-process-item-title-holder">
-<h5>Develop</h5>
+<h5>Web 3.0</h5>
 </div>
 <div class="qodef-process-item-text-holder">
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut </p>
+<p>No te quedes en el pasado y actualiza tu imagen corporativa en la web mediante elegantes aplicaciones integradas con Socialmedia y las principales APIs de Google, Facebook y Twitter entre otras.</p>
 </div>
 </div>
 </div>
@@ -3561,7 +3561,7 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh 
 <div class="vc_column-inner ">
 <div class="wpb_wrapper">
 <div class="qodef-custom-font-holder" style="font-family: Raleway;font-size: 52px;line-height: 60px;font-weight: 700;letter-spacing: 0px;text-transform: Capitalize;text-align: center;color: #ffffff" data-font-size= 52 data-line-height= 60>
-Easy &amp; Simple - No Coding Required!
+Sé Parte Ya de Nuestro <br> Selecto Grupo de Clientes
 </div>
 <div class="vc_empty_space"  style="height: 26px" >
 <span class="vc_empty_space_inner"></span>
@@ -3569,7 +3569,7 @@ Easy &amp; Simple - No Coding Required!
 <div class="wpb_text_column wpb_content_element  vc_custom_1445414812892">
 <div class="wpb_wrapper">
 <h4>
-<span style="color: #ffffff;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam</span>
+<span style="color: #ffffff;"> Contáctanos y describenos tus requerimientos tecnológicos y en tiempo record te presentaremos las opciones más novedosas del mercado</span>
 </h4>
 </div>
 </div>
@@ -3578,7 +3578,7 @@ Easy &amp; Simple - No Coding Required!
 </div>
 <a href="#" target="_self" style="margin: 10px 7px" class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-custom-hover-bg qodef-btn-custom-border-hover qodef-btn-custom-hover-color qodef-btn-hover-animation" data-hover-color="#212121" data-hover-border-color="#ffffff" >
 <span  style="background-color: #ffffff"  class="qodef-animation-overlay"></span>
-<span class="qodef-btn-text">Learn More</span>
+<span class="qodef-btn-text">Contactar</span>
 <span class="qodef-btn-text-icon"></span>
 </a>
 <a href="#" target="_self" style="color: #ffffff;border-color: rgba(255,255,255,0.5);margin: 10px 7px" class="qodef-btn qodef-btn-medium qodef-btn-default qodef-btn-hover-animation"  >
@@ -3617,11 +3617,9 @@ Easy &amp; Simple - No Coding Required!
 <div class="vc_empty_space"  style="height: 24px" >
 <span class="vc_empty_space_inner"></span>
 </div>
-<p>198 West 21th Street, Suite 721, New York NY</p>
-<p>5109 Pacific Coast Highway, Los Angeles CA</p>
-<p>Email: youremail@yourdomain.com</p>
-<p>Phone: +88 (0) 101 0000 000 </p>
-<p>Fax: +88 (0) 202 0000 001</p>
+<p>Ubanización Valle lindo,  Turmero Estado Aragua, Venezuela Sector 3, Calle 3, Casa 7</p>
+<p>Email: Cloudemotioninfo@gmail.com</p>
+<p>Phone: +58 (0) 414 053 95 99 </p>
 <div class="vc_empty_space"  style="height: 28px" >
 <span class="vc_empty_space_inner"></span>
 </div>
@@ -3822,12 +3820,12 @@ Tech Conference 2017          </a>
 <span class="vc_empty_space_inner"></span>
 </div>
 <div class="qodef-custom-font-holder" style="font-family: Raleway;font-size: 22px;line-height: 22px;font-weight: 700;letter-spacing: 0px;text-align: left;color: #ffffff" data-font-size= 22 data-line-height= 22>
-Newsletter
+Recibe Noticias
 </div>
 <div class="vc_empty_space"  style="height: 7px" >
 <span class="vc_empty_space_inner"></span>
 </div>
-Lorem ipsum dolor sit amet
+Te escribiremos pronto
 
 <div class="vc_empty_space"  style="height: 20px" >
 <span class="vc_empty_space_inner"></span>
@@ -3863,7 +3861,7 @@ Lorem ipsum dolor sit amet
 <div class="qodef-footer-bottom-holder-inner">
 <div class="qodef-column-inner">
 <div id="text-5" class="widget qodef-footer-text widget_text">
-<div class="textwidget">Copyright © Select Themes</div>
+<div class="textwidget">© Copyright 2017 by Cloudemotion. All Rights Reserved.</div>
 </div>
 </div>
 </div>
