@@ -64,16 +64,33 @@ function MainCtrl($scope) {
     this.$onInit=function() { 
           $(function(){
             $('.owl-carousel').owlCarousel({
-                loop:true,
+                loop:false,
                 margin:30,
                 nav:false,    
-                items:2,
+                responsive:{
+                    0:{
+                        items:1,                                                                    
+                    },
+                    400:{
+                        items:2,
+
+                    }
+
+                }
             });
             $('.owl-course').owlCarousel({
                 loop:true,
                 margin:30,
                 nav:true,    
-                items:3,
+                responsive:{
+                    0:{
+                        items:1,
+                    },
+                    520:{
+                        items:2,
+                    }
+                }
+
             }) 
         })        
     }
