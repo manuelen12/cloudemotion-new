@@ -4,7 +4,15 @@ function MainCtrl($scope) {
     var vm = this;
     angular.extend(vm,{
         prueba:"hola mundo2",
+        click:click,
+        show:true,
     });
+
+    function click(link) {
+        var body =  $("html, body");
+        var top  =  $(link).offset().top;
+        body.stop().animate({scrollTop:top},800,'swing',function(){});
+    }
 
     vm.experience = [{
         from:'Sep 2012',
@@ -56,16 +64,33 @@ function MainCtrl($scope) {
     this.$onInit=function() { 
           $(function(){
             $('.owl-carousel').owlCarousel({
-                loop:true,
+                loop:false,
                 margin:30,
                 nav:false,    
-                items:2,
+                responsive:{
+                    0:{
+                        items:1,                                                                    
+                    },
+                    400:{
+                        items:2,
+
+                    }
+
+                }
             });
             $('.owl-course').owlCarousel({
                 loop:true,
                 margin:30,
                 nav:true,    
-                items:3,
+                responsive:{
+                    0:{
+                        items:1,
+                    },
+                    520:{
+                        items:2,
+                    }
+                }
+
             }) 
         })        
     }
