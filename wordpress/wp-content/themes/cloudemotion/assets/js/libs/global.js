@@ -275,17 +275,12 @@
         600:{
             items:3,
             nav:false
-        },
-        1000:{
-            items:5,
-            nav:true,
-            loop:false
         }
     }
 }
 
 	setCarousel(".qodef-fullwidth-slider-slides");
-	setCarousel(".qodef-testimonials",null,arrows);
+	setCarousel(".qodef-testimonials",optionArticle,arrows);
 
 })( jQuery );
 
