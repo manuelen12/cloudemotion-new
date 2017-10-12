@@ -82,9 +82,9 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 <div class="qodef-position-left">
 <div class="qodef-position-left-inner">
 <div class="qodef-logo-wrapper">
-<a href="http://startit.select-themes.com/" style="height: 90px;">
-<img class="qodef-normal-logo" src="http://startit.select-themes.com/wp-content/themes/startit/assets/img/logo.png" alt="logo"/>
-<img class="qodef-dark-logo" src="http://startit.select-themes.com/wp-content/themes/startit/assets/img/logo.png" alt="dark logo"/>
+<a href="http://cloudemotion.com.ve/" style="height: 90px;">
+<img class="qodef-normal-logo" src="./wp-content/themes/cloudemotion/assets/img/logo-light.png" alt="logo"/>
+<img class="qodef-dark-logo" src="./wp-content/themes/cloudemotion/assets/img/logo-light.png" alt="dark logo"/>
 <img class="qodef-light-logo" src="./wp-content/themes/cloudemotion/assets/img/logo-light.png" alt="light logo"/>
 </a>
 </div>
@@ -483,7 +483,7 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 <span class="menu_icon_wrapper">
 <i class="menu_icon null fa"></i>
 </span>
-<span class="item_text">Pages</span>
+<span class="item_text">Páginas</span>
 </span>
 <span class="plus"></span>
 </span>
@@ -1140,7 +1140,7 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 <span class="menu_icon_wrapper">
 <i class="menu_icon null fa"></i>
 </span>
-<span class="item_text">Shop</span>
+<span class="item_text">Paquetes</span>
 </span>
 <span class="plus"></span>
 </span>
@@ -1263,7 +1263,7 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 <span class="menu_icon_wrapper">
 <i class="menu_icon null fa"></i>
 </span>
-<span class="item_text">Elements</span>
+<span class="item_text">Tecnologías</span>
 </span>
 <span class="plus"></span>
 </span>
@@ -2027,7 +2027,7 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<p>Desarrollamos aplicaciones profesionales para diferentes entornos: web, móvil o de escritorio usando la más moderna tecnología y asegurando un producto de alta calidad</p>
+<p>Desarrollamos aplicaciones profesionales para diferentes entornos: web, móvil o de escritorio usando la más moderna tecnología y asegurando un excelente producto</p>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 50px" >
@@ -2117,7 +2117,7 @@ Populate the sidearea with useful widgets. It’s simple to add images, categori
 </div>
 <div class="wpb_text_column wpb_content_element ">
 <div class="wpb_wrapper">
-<p>Conoce la alta calidad de nuestro trabajo pensado y diseñado al modelo de tu negocio y se parte de nuestros clientes satisfechos.</p>
+<p>Conoce nuestra forma de trabajo que se adaptada por completo al modelo de tu negocio y se parte de nuestros clientes satisfechos.</p>
 </div>
 </div>
 <div class="vc_empty_space"  style="height: 50px" >
@@ -2898,13 +2898,13 @@ New Trends In Social Media
 <div class="qodef-text-wrapper qodef-call-to-action-column1 qodef-call-to-action-cell">
 <div class="qodef-call-to-action-text" >
 <h4>
-<span style="color: #ffffff;">StarIt is filled with a variety of shortcodes and elements, made especially for you.</span>
+<span style="color: #ffffff;">Trabajamos con la Tecnologia Más Potente y Confiable de la Industria del Software Libre y Privativo</span>
 </h4>
 </div>
 </div>
 <div class="qodef-button-wrapper qodef-call-to-action-column2 qodef-call-to-action-cell" style ="text-align: right ;">
 <a href="#" target="_self" style="color: #ffffff;border-color: rgba(255,255,255,0.5)" class="qodef-btn qodef-btn-medium qodef-btn-outline qodef-btn-custom-border-hover qodef-btn-custom-hover-color qodef-btn-icon" data-hover-color="#ffffff" data-hover-border-color="rgba(255,255,255,0.5)" >
-<span class="qodef-btn-text">Check It Out Now</span>
+<span class="qodef-btn-text">Conocer más</span>
 <span class="qodef-btn-text-icon">
 <i class="qodef-icon-simple-line-icon icon-arrow-right-circle " ></i>
 </span>
@@ -2958,19 +2958,19 @@ New Trends In Social Media
 <i class="qodef-icon-simple-line-icon icon-settings qodef-icon-element" style="" ></i>
 </span>
 </div>
-<h6 class="q_team_position">Developer</h6>
+<h6 class="q_team_position">Programador Front-End</h6>
 </div>
 </div>
 <div class="qodef-team-info">
 <div class="qodef-team-title-holder">
 <h5 class="qodef-team-name">
-Dexter Collier                   
+Luis Garcia                   
 </h5>
 </div>
 <div class='qodef-team-text'>
 <div class='qodef-team-text-inner'>
 <div class='qodef-team-description'>
-<p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed diam nonummy</p>
+<p>Responsable por convertir el diseño visual e interactivo en el código de FrontEnd.Aunque es un perfil muy cercano al diseñador, el desarrollador FrontEnd traduce las interfaces visuales, es decir, las trabaja en código. Tiene habilidades técnicas y de programación de interfaz para cumplir con estas tareas.</p>
 </div>
 </div>
 </div>
@@ -2994,22 +2994,22 @@ Dexter Collier
 <div class="qodef-circle-animate"></div>
 <div class="qodef-team-position-icon">
 <span class="qodef-icon-shortcode circle "  >
-<i class="qodef-icon-simple-line-icon icon-pencil qodef-icon-element" style="" ></i>
+<i class="qodef-icon-simple-line-icon icon-settings qodef-icon-element" style="" ></i>
 </span>
 </div>
-<h6 class="q_team_position">Graphic Designer</h6>
+<h6 class="q_team_position">Programador Back-End</h6>
 </div>
 </div>
 <div class="qodef-team-info">
 <div class="qodef-team-title-holder">
 <h5 class="qodef-team-name">
-Bill Gilbert                     
+Manuel Sotomayor                    
 </h5>
 </div>
 <div class='qodef-team-text'>
 <div class='qodef-team-text-inner'>
 <div class='qodef-team-description'>
-<p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed diam nonummy</p>
+<p>Responsable por la programación del sitio en todos sus componentes dinámicas. La programación de los diferentes componentes del sitio (páginas, formularios, funcionalidades, bases de datos) y la estructuración de documentos, que deberá enmarcarse a diferentes estándares</p>
 </div>
 </div>
 </div>
@@ -3033,22 +3033,22 @@ Bill Gilbert
 <div class="qodef-circle-animate"></div>
 <div class="qodef-team-position-icon">
 <span class="qodef-icon-shortcode circle "  >
-<i class="qodef-icon-simple-line-icon icon-notebook qodef-icon-element" style="" ></i>
+<i class="qodef-icon-simple-line-icon icon-settings qodef-icon-element" style="" ></i>
 </span>
 </div>
-<h6 class="q_team_position">Accountant</h6>
+<h6 class="q_team_position">Programador Back-End</h6>
 </div>
 </div>
 <div class="qodef-team-info">
 <div class="qodef-team-title-holder">
 <h5 class="qodef-team-name">
-Patty Morrison                   
+Yubeitdy Cástro                   
 </h5>
 </div>
 <div class='qodef-team-text'>
 <div class='qodef-team-text-inner'>
 <div class='qodef-team-description'>
-<p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed diam nonummy</p>
+<p>Responsable por convertir el diseño visual e interactivo en el código de FrontEnd.Aunque es un perfil muy cercano al diseñador, el desarrollador FrontEnd traduce las interfaces visuales, es decir, las trabaja en código. Tiene habilidades técnicas y de programación de interfaz para cumplir con estas tareas.</p>
 </div>
 </div>
 </div>
@@ -3072,22 +3072,22 @@ Patty Morrison
 <div class="qodef-circle-animate"></div>
 <div class="qodef-team-position-icon">
 <span class="qodef-icon-shortcode circle "  >
-<i class="qodef-icon-simple-line-icon icon-wrench qodef-icon-element" style="" ></i>
+<i class="qodef-icon-simple-line-icon icon-settings qodef-icon-element" style="" ></i>
 </span>
 </div>
-<h6 class="q_team_position">Engineer</h6>
+<h6 class="q_team_position">Programador Back-End Móvil</h6>
 </div>
 </div>
 <div class="qodef-team-info">
 <div class="qodef-team-title-holder">
 <h5 class="qodef-team-name">
-Bernard Smith                    
+Christian Linares                    
 </h5>
 </div>
 <div class='qodef-team-text'>
 <div class='qodef-team-text-inner'>
 <div class='qodef-team-description'>
-<p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed diam nonummy</p>
+<p>Responsable por la programación del sitio en todos sus componentes dinámicas. La programación de los diferentes componentes del sitio (páginas, formularios, funcionalidades, bases de datos) y la estructuración de documentos, que deberá enmarcarse a diferentes estándares (Dispositivos Moviles)</p>
 </div>
 </div>
 </div>
@@ -3583,7 +3583,7 @@ Sé Parte Ya de Nuestro <br> Selecto Grupo de Clientes
 </a>
 <a href="#" target="_self" style="color: #ffffff;border-color: rgba(255,255,255,0.5);margin: 10px 7px" class="qodef-btn qodef-btn-medium qodef-btn-default qodef-btn-hover-animation"  >
 <span    class="qodef-animation-overlay"></span>
-<span class="qodef-btn-text">Buy The Theme</span>
+<span class="qodef-btn-text">Contratar</span>
 <span class="qodef-btn-text-icon"></span>
 </a>
 </div>
@@ -3611,7 +3611,7 @@ Sé Parte Ya de Nuestro <br> Selecto Grupo de Clientes
 <div class="vc_empty_space"  style="height: 24px" >
 <span class="vc_empty_space_inner"></span>
 </div>
-<a href="http://startit.select-themes.com/">
+<a href="http://cloudemotion.com.ve/">
 <img src="./wp-content/themes/cloudemotion/assets/img/logo-footer.png" alt="logo">
 </a>
 <div class="vc_empty_space"  style="height: 24px" >
@@ -3657,7 +3657,7 @@ Sé Parte Ya de Nuestro <br> Selecto Grupo de Clientes
 <div class="qodef-column">
 <div class="qodef-column-inner">
 <div id="recent-posts-2" class="widget qodef-footer-column-2 widget_recent_entries">
-<h4 class="qodef-footer-widget-title">Latest Posts</h4>
+<h4 class="qodef-footer-widget-title">Ultimas Publicaciones</h4>
 <ul>
 <li>
 <a href="http://startit.select-themes.com/schools-to-hold-programming-courses-in-2016/">Schools to Hold Programming Courses In 2016</a>
@@ -3684,7 +3684,7 @@ Sé Parte Ya de Nuestro <br> Selecto Grupo de Clientes
 <div class="qodef-column">
 <div class="qodef-column-inner">
 <div id="qodef_twitter_widget-3" class="widget qodef-footer-column-3 widget_qodef_twitter_widget">
-<h4 class="qodef-footer-widget-title">Latest Tweets</h4>
+<h4 class="qodef-footer-widget-title">Ultimos Tweets</h4>
 <ul class="qodef_twitter_widget">
 <li>
 <div class="tweet_icon_holder">
@@ -3725,7 +3725,7 @@ Don't forget to check out Capri - The Hot New
 <div class="qodef-column">
 <div class="qodef-column-inner">
 <div id="text-3" class="widget qodef-footer-column-4 widget_text">
-<h4 class="qodef-footer-widget-title">Latest Posts</h4>
+<h4 class="qodef-footer-widget-title">Ultimas Publicaciones</h4>
 <div class="textwidget"></div>
 </div>
 <div class="widget qodef-latest-posts-widget">
