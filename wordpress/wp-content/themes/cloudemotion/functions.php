@@ -1,11 +1,7 @@
 <?php
-
-
-
 	if(!is_admin()){
 	/*echo "<script>alert('".is_admin()."asd');</script>";
 */
-
 		// wp_deregister_script('jquery');
 		// wp_deregister_script('jquery-migrate');
 			$routecss="/assets/css/";
@@ -53,7 +49,6 @@
 				'wp-emoji-release.min',
 				'analytics',
 				'underscore.min',
-				'daves-wordpress-live-search.min',
 				'excanvas.compiled',
 				'spinners.min',
 				'jquery.form.min',
@@ -73,15 +68,11 @@
 				'third-party.min',
 				'isotope.pkgd.min',
 				'smoothPageScroll',
-				'modules.min',
 				'comment-reply.min',
 				'js_composer_front.min',
-				//'toolbar',
 				'like.min',
 				'wp-embed.min',
 				'waypoints.min',
-				//'util',
-				//'stats',
 				'global',
 				'angular.min',
 				'html5',
@@ -90,8 +81,6 @@
 				'moment',
 				'../angular/app',
 				'../angular/controller/MainCtrl',
-				'common',
-				'navigation',
 				);
 
 			foreach($styles as $key => $style){
