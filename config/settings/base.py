@@ -55,6 +55,8 @@ THIRD_PARTY_APPS = [
 LOCAL_APPS = [
     # custom users app
     'cloudemotion.users.apps.UsersConfig',
+    'cloudemotion.curriculum.apps.CurriculumConfig',
+    'cloudemotion.common.apps.CommonConfig',
     # Your stuff: custom apps go here
 ]
 

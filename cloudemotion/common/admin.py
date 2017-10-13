@@ -1,10 +1,13 @@
 from django.contrib import admin
-from gaver.common.models import *
+from cloudemotion.common.models import *
 # # Register your models here.
 
 # admin.site.register(Profile)
 
-admin.site.register(Country)
-admin.site.register(State)
-admin.site.register(City)
-admin.site.register(Position)
+admin.site.register(Countries)
+admin.site.register(States)
+admin.site.register(Cities)
+admin.site.register(Positions)
+admin.site.register(Nationalities)
+admin.site.register(Professions)
+admin.site.register(Languajes)

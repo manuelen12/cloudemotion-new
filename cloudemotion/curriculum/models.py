@@ -26,12 +26,13 @@ class Experiences(models.Model):
     user = models.ForeignKey(
        settings.AUTH_USER_MODEL,
        on_delete=models.CASCADE,
-       related_name='roon_u')
+       related_name='ex_user')
     company = models.ForeignKey(
         Companies, related_name='company_experience')
-    position = models.ForeignKey("common.Position")
+    position = models.ForeignKey('common.Positions')
     start_date = models.DateField()
     ending_date = models.DateField()
+    title = models.TextField()
     description = models.TextField()
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
@@ -44,62 +45,8 @@ class Experiences(models.Model):
         return self.name
 
 
-class CompaniesExperiences(models.Model):
-    education = models.ForeignKey(Experiences, blank=True)
-    institute = models.ForeignKey(Companies, blank=True)
-
-    class Meta:
-        app_label = 'curriculum'
-        db_table = 'companies_experiences'
-
-    def __str__(self):
-        return self.name
-
-
-class Educations(models.Model):
-    user = models.ForeignKey(
-       settings.AUTH_USER_MODEL,
-       on_delete=models.CASCADE,
-       related_name='roon_u')
-    start_date = models.DateField()
-    ending_date = models.DateField()
-    title = models.CharField(max_length=50)
-    status = models.BooleanField(default=True)
-    create_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        app_label = 'curriculum'
-        db_table = 'educations'
-
-    def __str__(self):
-        return self.name
-
-
-class Courses(models.Model):
-    user = models.ForeignKey(
-       settings.AUTH_USER_MODEL,
-       on_delete=models.CASCADE,
-       related_name='roon_u')
-    start_date = models.DateField()
-    ending_date = models.DateField()
-    course_name = models.CharField(max_length=50)
-    status = models.BooleanField(default=True)
-    create_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        app_label = 'curriculum'
-        db_table = 'courses'
-
-    def __str__(self):
-        return self.name
-
-
 class Institutes(models.Model):
-    education = models.ForeignKey(
-        Educations, related_name='education_institute')
-    course = models.ForeignKey(
-        Courses, related_name='course_institute')
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=100)
     address = models.TextField()
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
@@ -112,36 +59,82 @@ class Institutes(models.Model):
         return self.name
 
 
-class InstitutesEducations(models.Model):
-    education = models.ForeignKey(Educations, blank=True)
-    institute = models.ForeignKey(Institutes, blank=True)
+class Educations(models.Model):
+    name = models.CharField(max_length=100)
+    status = models.BooleanField(default=True)
+    create_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         app_label = 'curriculum'
-        db_table = 'institutes_educations'
+        db_table = 'educations'
 
     def __str__(self):
         return self.name
 
 
-class InstitutesCourses(models.Model):
-    course = models.ForeignKey(Courses, blank=True)
-    institute = models.ForeignKey(Institutes, blank=True)
+class EducationsUser(models.Model):
+    __types = (
+       (1, "Basic"),
+       (2, "diversified"),
+       (3, "Academic"),
+    )
+    user = models.ForeignKey(
+       settings.AUTH_USER_MODEL,
+       on_delete=models.CASCADE,
+       related_name='e_user')
+    type_educations = models.SmallIntegerField(
+       default=1, choices=__types)
+    institute = models.ForeignKey(Institutes)
+    education = models.ForeignKey(Educations)
+    start_date = models.DateField()
+    ending_date = models.DateField()
+    title = models.CharField(max_length=50)
+    status = models.BooleanField(default=True)
+    create_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         app_label = 'curriculum'
-        db_table = 'institutes_courses'
+        db_table = 'educations_user'
+
+    def __str__(self):
+        return self.name
+
+
+class Courses(models.Model):
+    name = models.CharField(max_length=100)
+    status = models.BooleanField(default=True)
+    create_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        app_label = 'curriculum'
+        db_table = 'courses'
+
+    def __str__(self):
+        return self.name
+
+
+class CoursesUser(models.Model):
+    user = models.ForeignKey(
+       settings.AUTH_USER_MODEL,
+       on_delete=models.CASCADE,
+       related_name='c_user')
+    institute = models.ForeignKey(Institutes)
+    course = models.ForeignKey(Courses)
+    start_date = models.DateField()
+    ending_date = models.DateField()
+    status = models.BooleanField(default=True)
+    create_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        app_label = 'curriculum'
+        db_table = 'courses_user'
 
     def __str__(self):
         return self.name
 
 
 class Skills(models.Model):
-    user = models.ForeignKey(
-       settings.AUTH_USER_MODEL,
-       on_delete=models.CASCADE,
-       related_name='roon_u')
-    name = models.CharField(max_length=50)
+    name = models.CharField(max_length=100)
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
@@ -153,7 +146,33 @@ class Skills(models.Model):
         return self.name
 
 
-class Languajes(models.Model):
+class SkillsUser(models.Model):
+    __types = (
+       (1, 1),
+       (2, 2),
+       (3, 3),
+       (4, 4),
+       (5, 5),
+    )
+    user = models.ForeignKey(
+       settings.AUTH_USER_MODEL,
+       on_delete=models.CASCADE,
+       related_name='s_user')
+    level = models.SmallIntegerField(
+       default=1, choices=__types)
+    skill = models.ForeignKey(Skills)
+    status = models.BooleanField(default=True)
+    create_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        app_label = 'curriculum'
+        db_table = 'skills_user'
+
+    def __str__(self):
+        return self.name
+
+
+class LanguajesUser(models.Model):
     __types = (
        (1, "Basic"),
        (2, "Medium"),
@@ -162,45 +181,23 @@ class Languajes(models.Model):
     user = models.ForeignKey(
        settings.AUTH_USER_MODEL,
        on_delete=models.CASCADE,
-       related_name='roon_u')
-    type_languajes = models.SmallIntegerField(
+       related_name='l_user')
+    level = models.SmallIntegerField(
        default=1, choices=__types)
-    name = models.CharField(max_length=50)
+    languaje = models.ForeignKey('common.Languajes')
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         app_label = 'curriculum'
-        db_table = 'languajes'
-
-    def __str__(self):
-        return self.name
-
-
-class Portfolios(models.Model):
-    user = models.ForeignKey(
-       settings.AUTH_USER_MODEL,
-       on_delete=models.CASCADE,
-       related_name='roon_u')
-    name = models.CharField(max_length=50)
-    status = models.BooleanField(default=True)
-    create_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        app_label = 'curriculum'
-        db_table = 'portfolios'
+        db_table = 'languajes_user'
 
     def __str__(self):
         return self.name
 
 
 class Classifications(models.Model):
-    user = models.ForeignKey(
-       settings.AUTH_USER_MODEL,
-       on_delete=models.CASCADE,
-       related_name='roon_u')
     name = models.CharField(max_length=50)
-    image = models.CharField(max_length=250, blank=True, null=True)
     category = models.CharField(max_length=50)
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
@@ -213,13 +210,21 @@ class Classifications(models.Model):
         return self.name
 
 
-class PortfoliosClassifications(models.Model):
-    portfolio = models.ForeignKey(Portfolios, blank=True)
-    classification = models.ForeignKey(Classifications, blank=True)
+class Portfolios(models.Model):
+    user = models.ForeignKey(
+       settings.AUTH_USER_MODEL,
+       on_delete=models.CASCADE,
+       related_name='p_user')
+    classification = models.ForeignKey(
+        Classifications, related_name='classification_portfolio')
+    name = models.CharField(max_length=50)
+    image = models.CharField(max_length=250, blank=True, null=True)
+    status = models.BooleanField(default=True)
+    create_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         app_label = 'curriculum'
-        db_table = 'portfolios_classifications'
+        db_table = 'portfolios'
 
     def __str__(self):
         return self.name
