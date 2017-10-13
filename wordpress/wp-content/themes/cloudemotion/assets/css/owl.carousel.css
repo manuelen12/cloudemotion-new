@@ -23,8 +23,8 @@
 
 .qodef-fullwidth-slider-holder .owl-theme .owl-dots .owl-dot.active span:before{
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 8px;
+  height: 8px;
   position: relative;
   border: 2px solid #fff;
   display: inline-block;

@@ -32,7 +32,6 @@
 				'toolbar',
 				'owl.carousel',
 				'animate.min',
-				'bootstrap.min',
 				'js_composer.min',
 				);
 
