@@ -6,7 +6,11 @@ from django.conf import settings
 
 class Companies(models.Model):
     name = models.CharField(max_length=50)
+    phone = models.CharField(max_length=50)
+    email = models.EmailField(max_length=50)
     address = models.TextField()
+    responsable = models.CharField(max_length=100)
+    responsible_phone = models.CharField(max_length=50)
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
@@ -150,12 +154,18 @@ class Skills(models.Model):
 
 
 class Languajes(models.Model):
+    __types = (
+       (1, "Basic"),
+       (2, "Medium"),
+       (3, "Advanced"),
+    )
     user = models.ForeignKey(
        settings.AUTH_USER_MODEL,
        on_delete=models.CASCADE,
        related_name='roon_u')
+    type_languajes = models.SmallIntegerField(
+       default=1, choices=__types)
     name = models.CharField(max_length=50)
-    category = models.CharField(max_length=50)
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
