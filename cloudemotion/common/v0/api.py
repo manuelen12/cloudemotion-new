@@ -26,7 +26,7 @@ class Controller(Base):
         self.result = []
         self.url_api = "http://"+self.request.META['HTTP_HOST']+"/api/v0/"
 
-    def get_country(self, pk=None):
+    def get_positions(self, pk=None):
         __filters = loads(self.request.GET.get('filters', "{}"))
         __paginator = loads(self.request.GET.get('paginator', "{}"))
         __ordening = loads(self.request.GET.get('ordening', "[]"))

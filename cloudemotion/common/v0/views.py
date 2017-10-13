@@ -1,17 +1,11 @@
 # Third-party app imports
 from rest_framework import viewsets
 # Imports from your apps
-from common.utils import default_responses, UploadFile, UserDispensor2
+from common.utils import default_responses, UploadFile
 from .api import Controller
 from rest_framework import permissions
-from .serializers import (PositionSerializers, UploadSerializers,
-                          CountrySerializers, StateSerializers,
-                          CitySerializers)
-from gaver.common.models import (Position,
-                                 Country,
-                                 City,
-                                 State
-                                 )
+from .serializers import (PositionSerializers, UploadSerializers)
+from cloudemotion.common.models import (Positions)
 # from login.models import Profile
 
 # from common.pagination import LinkHeaderPagination
@@ -37,16 +31,16 @@ class UploadView(viewsets.ViewSet):
         return default_responses(200, serializer.result)
 
 
-class CountryView(viewsets.ModelViewSet):
+class PositionsView(viewsets.ModelViewSet):
     permission_classes = (permissions.AllowAny,)
-    serializer_class = CountrySerializers
+    serializer_class = PositionSerializers
     """
-    Get Country
+    Get Positions
     """
 
     def list(self, request, *args, **kwargs):
         serializer = Controller(request)
-        serializer.get_country()
+        serializer.get_positions()
 
         if serializer.error:
             return default_responses(404, serializer.error)
@@ -54,7 +48,7 @@ class CountryView(viewsets.ModelViewSet):
         return default_responses(200, serializer.result)
 
     def get_queryset(self):
-        return Country.objects.filter(status=True)
+        return Positions.objects.filter(status=True)
 
 
 class StateView(viewsets.ModelViewSet):
@@ -104,7 +98,7 @@ class PositionViewsets(viewsets.ModelViewSet):
     # permission_classes = [IsAccountAdminOrReadOnly]
 
     def get_queryset(self):
-        return Position.objects.filter(status=True)
+        return Positions.objects.filter(status=True)
 
 
 class CountriesView(viewsets.ModelViewSet):
