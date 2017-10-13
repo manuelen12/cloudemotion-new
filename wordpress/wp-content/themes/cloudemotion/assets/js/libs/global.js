@@ -54,6 +54,11 @@
 		navIsNotTooTall       = navigationHeight <= idealNavHeight;
 	}
 
+	function setTestimonial() {
+		if (($(document).width())<769) {$(".qodef-testimonials-slider-item").css("width","100%"); console.log("mierda");}
+		console.log("2paso");
+	}
+
 	// Make navigation 'stick'.
 	function adjustScrollClass() {
 
@@ -222,17 +227,20 @@
 		});
 
 		// Also want to make sure the navigation is where it should be on resize.
-		$( window ).resize( function() {
+		$( window ).on("resize", function() {
+			console.log("culo ps sirve");
 			setNavProps();
 			setTimeout( adjustScrollClass, 500 );
 		});
 	}
 
-	$( window ).resize( function() {
+	$( window ).on("resize", function() {
+		console.log("culo ps sirve");
 		clearTimeout( resizeTimer );
 		resizeTimer = setTimeout( function() {
 			belowEntryMetaClass( 'blockquote.alignleft, blockquote.alignright' );
 		}, 300 );
+		setTestimonial();
 		setTimeout( adjustHeaderHeight, 1000 );
 	});
 
@@ -254,35 +262,15 @@
 				animateIn: 'fadeIn',
 
 			}
-
 			if (add) {
 				options=Object.assign(options,add);
 			}
+			console.log(options);
 			$(parentElement).owlCarousel(options)
 
 		},1000)
 	}	
-	var arrows={navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]},
-	optionArticle={
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:5,
-            nav:true,
-            loop:false
-        }
-    }
-}
+	var arrows={navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]};
 
 	setCarousel(".qodef-fullwidth-slider-slides");
 	setCarousel(".qodef-testimonials",null,arrows);
