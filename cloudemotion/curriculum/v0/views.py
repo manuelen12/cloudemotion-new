@@ -10,7 +10,6 @@ from common.utils import default_responses
 from .api import API
 from .serializers import (
     CategorySerializer,
-    PlacesSerializers,
     CommentarySerializers,
     CommentaryUpdateSerializers,
     PlacesImageSerializers,
