@@ -1,42 +1,34 @@
 from django.db import models
+from django.conf import settings
 
 # Create your models here.
 
 
-class Person(models.Model):
-    first_name = models.CharField(max_length=50, blank=True)
-    last_name = models.CharField(max_length=50, blank=True)
-    birthday = models.DateField()
-    nationality = models.CharField(max_length=20, blank=True)
-    profession = models.CharField(max_length=20, blank=True)
-    phone = models.CharField(max_length=20, blank=True)
-    email = models.CharField(max_length=50, blank=True)
-    skype = models.CharField(max_length=50, blank=True)
-    facebook = models.CharField(max_length=50, blank=True)
-    twitter = models.CharField(max_length=50, blank=True)
-    linkedin = models.CharField(max_length=50, blank=True)
-    about_me = models.TextField()
-    position = models.CharField(max_length=20, blank=True)
-    # code = models.CharField(max_length=3)
+class Companies(models.Model):
+    name = models.CharField(max_length=50)
+    address = models.TextField()
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         app_label = 'curriculum'
-        db_table = 'persons'
+        db_table = 'companies'
 
     def __str__(self):
         return self.name
 
 
-class Experience(models.Model):
+class Experiences(models.Model):
+    user = models.ForeignKey(
+       settings.AUTH_USER_MODEL,
+       on_delete=models.CASCADE,
+       related_name='roon_u')
+    company = models.ForeignKey(
+        Companies, related_name='company_experience')
+    position = models.ForeignKey("common.Position")
     start_date = models.DateField()
     ending_date = models.DateField()
-    company = models.CharField(max_length=50)
-    address = models.TextField()
-    position = models.CharField(max_length=50)
     description = models.TextField()
-    person = models.ForeignKey(Person, related_name='person_experience')
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
@@ -48,13 +40,26 @@ class Experience(models.Model):
         return self.name
 
 
-class Education(models.Model):
+class CompaniesExperiences(models.Model):
+    education = models.ForeignKey(Experiences, blank=True)
+    institute = models.ForeignKey(Companies, blank=True)
+
+    class Meta:
+        app_label = 'curriculum'
+        db_table = 'companies_experiences'
+
+    def __str__(self):
+        return self.name
+
+
+class Educations(models.Model):
+    user = models.ForeignKey(
+       settings.AUTH_USER_MODEL,
+       on_delete=models.CASCADE,
+       related_name='roon_u')
     start_date = models.DateField()
     ending_date = models.DateField()
-    institute = models.CharField(max_length=50)
-    address = models.TextField()
     title = models.CharField(max_length=50)
-    person = models.ForeignKey(Person, related_name='person_education')
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
@@ -66,13 +71,14 @@ class Education(models.Model):
         return self.name
 
 
-class Course(models.Model):
+class Courses(models.Model):
+    user = models.ForeignKey(
+       settings.AUTH_USER_MODEL,
+       on_delete=models.CASCADE,
+       related_name='roon_u')
     start_date = models.DateField()
     ending_date = models.DateField()
-    institute = models.CharField(max_length=50)
-    address = models.TextField()
     course_name = models.CharField(max_length=50)
-    person = models.ForeignKey(Person, related_name='person_course')
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
@@ -84,10 +90,54 @@ class Course(models.Model):
         return self.name
 
 
-class Skill(models.Model):
+class Institutes(models.Model):
+    education = models.ForeignKey(
+        Educations, related_name='education_institute')
+    course = models.ForeignKey(
+        Courses, related_name='course_institute')
     name = models.CharField(max_length=50)
-    category = models.CharField(max_length=50)
-    person = models.ForeignKey(Person, related_name='person_skill')
+    address = models.TextField()
+    status = models.BooleanField(default=True)
+    create_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        app_label = 'curriculum'
+        db_table = 'institutes'
+
+    def __str__(self):
+        return self.name
+
+
+class InstitutesEducations(models.Model):
+    education = models.ForeignKey(Educations, blank=True)
+    institute = models.ForeignKey(Institutes, blank=True)
+
+    class Meta:
+        app_label = 'curriculum'
+        db_table = 'institutes_educations'
+
+    def __str__(self):
+        return self.name
+
+
+class InstitutesCourses(models.Model):
+    course = models.ForeignKey(Courses, blank=True)
+    institute = models.ForeignKey(Institutes, blank=True)
+
+    class Meta:
+        app_label = 'curriculum'
+        db_table = 'institutes_courses'
+
+    def __str__(self):
+        return self.name
+
+
+class Skills(models.Model):
+    user = models.ForeignKey(
+       settings.AUTH_USER_MODEL,
+       on_delete=models.CASCADE,
+       related_name='roon_u')
+    name = models.CharField(max_length=50)
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
@@ -99,10 +149,13 @@ class Skill(models.Model):
         return self.name
 
 
-class Languaje(models.Model):
+class Languajes(models.Model):
+    user = models.ForeignKey(
+       settings.AUTH_USER_MODEL,
+       on_delete=models.CASCADE,
+       related_name='roon_u')
     name = models.CharField(max_length=50)
     category = models.CharField(max_length=50)
-    person = models.ForeignKey(Person, related_name='person_languaje')
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
@@ -114,9 +167,12 @@ class Languaje(models.Model):
         return self.name
 
 
-class Portfolio(models.Model):
+class Portfolios(models.Model):
+    user = models.ForeignKey(
+       settings.AUTH_USER_MODEL,
+       on_delete=models.CASCADE,
+       related_name='roon_u')
     name = models.CharField(max_length=50)
-    person = models.ForeignKey(Person, related_name='person_portfolio')
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
@@ -128,18 +184,32 @@ class Portfolio(models.Model):
         return self.name
 
 
-class Classification(models.Model):
+class Classifications(models.Model):
+    user = models.ForeignKey(
+       settings.AUTH_USER_MODEL,
+       on_delete=models.CASCADE,
+       related_name='roon_u')
     name = models.CharField(max_length=50)
     image = models.CharField(max_length=250, blank=True, null=True)
     category = models.CharField(max_length=50)
-    person = models.ForeignKey(Person, related_name='person_classification')
-    portfolio = models.ManyToManyField(Portfolio, null=True, blank=True)
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         app_label = 'curriculum'
         db_table = 'classifications'
+
+    def __str__(self):
+        return self.name
+
+
+class PortfoliosClassifications(models.Model):
+    portfolio = models.ForeignKey(Portfolios, blank=True)
+    classification = models.ForeignKey(Classifications, blank=True)
+
+    class Meta:
+        app_label = 'curriculum'
+        db_table = 'portfolios_classifications'
 
     def __str__(self):
         return self.name

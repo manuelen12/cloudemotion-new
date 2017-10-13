@@ -1,26 +1,27 @@
 from django.db import models
+from django.conf import settings
 
 # Create your models here.
 
 
-class Country(models.Model):
+class Countries(models.Model):
     name = models.CharField(max_length=200, blank=True)
-    # code = models.CharField(max_length=3)
-    # phone_code = models.CharField(max_length=200, null=True)
-    # tz = models.CharField(max_length=200, null=True)
+    code = models.CharField(max_length=3)
+    phone_code = models.CharField(max_length=200, null=True)
+    tz = models.CharField(max_length=200, null=True)
     status = models.BooleanField(default=True)
 
     class Meta:
         app_label = 'common'
-        db_table = 'country'
+        db_table = 'countries'
 
     def __str__(self):
         return self.name
 
 
-class State(models.Model):
+class States(models.Model):
     name = models.CharField(max_length=100)
-    country = models.ForeignKey(Country, related_name='country_state')
+    country = models.ForeignKey(Countries, related_name='country_state')
     status = models.BooleanField(default=True)
 
     class Meta:
@@ -31,27 +32,53 @@ class State(models.Model):
         return self.name
 
 
-class City(models.Model):
+class Cities(models.Model):
     name = models.CharField(max_length=100)
-    state = models.ForeignKey(State, related_name="state_city")
+    state = models.ForeignKey(States, related_name="state_city")
     status = models.BooleanField(default=True)
 
     class Meta:
         app_label = 'common'
-        db_table = 'city'
+        db_table = 'cities'
 
     def __str__(self):
         return self.name
 
 
-class Position(models.Model):
-
+class Positions(models.Model):
     name = models.CharField(max_length=100, unique=True, null=False)
     status = models.BooleanField(default=True)
+    create_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         app_label = 'common'
-        db_table = 'position'
+        db_table = 'positions'
+
+    def __str__(self):
+        return self.name
+
+
+class Nationalities(models.Model):
+    name = models.CharField(max_length=100, unique=True, null=False)
+    status = models.BooleanField(default=True)
+    create_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        app_label = 'common'
+        db_table = 'nationalities'
+
+    def __str__(self):
+        return self.name
+
+
+class Professions(models.Model):
+    name = models.CharField(max_length=100, unique=True, null=False)
+    status = models.BooleanField(default=True)
+    create_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        app_label = 'common'
+        db_table = 'professions'
 
     def __str__(self):
         return self.name
