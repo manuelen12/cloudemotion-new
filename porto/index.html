@@ -47,6 +47,7 @@
 
 	    <!-- Theme Custom CSS -->
 	    <link rel="stylesheet" href="./assets/css/custom.css">
+	    <link rel="stylesheet" href="./assets/css/flags/flag-icon.css">
 
 	    <!-- Head Libs -->
 	    <script src="./assets/js/modernizr.min.js"></script>
@@ -227,7 +228,7 @@
 										</div>
 										<div class="experience-description col-md-9 col-sm-7 match-height background-color-light" style="height: 244px;">
 											<h4 class="text-color-dark font-weight-semibold" ng-bind="ex.position"></h4>
-											<p class="custom-text-color-2" ng-bind="ex.description"></p>
+											<p class="custom-text-color-2" ng-bind="ex.description" style="word-wrap:break-word;"></p>
 										</div>
 									</article>									
 									<div class="timeline-bar" style="top: 137px; bottom: 137px;"></div>
@@ -242,8 +243,8 @@
 					<div class="row">
 					<div class="col-md-12">
 						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Education</h2>
-						<div class="owl-carousel owl-theme row" style="padding:40px;">
-							<div class="item col-sm-12" style="width: 420px;" ng-repeat="e in vm.education">
+						<div class="owl-carousel row owl-education" style="padding:40px;">
+							<div class="item" style="width: 420px;" ng-repeat="e in vm.education">
 								<div class="panel panel-default item-box">
 									<div class="panel-body">
 										<p><i class="icon-graduation icons text-color-primary"></i><br>
@@ -264,20 +265,21 @@
 					<div class="row">
 						<div class="col-md-12">
 							<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Course</h2>
-							<div class="owl-carousel owl-theme row owl-course">
-							<div class="item" style="width: 420px;" ng-repeat="c in vm.courses">
-								<div class="panel panel-default item-box">
-									<div class="panel-body">
-										<p><i class="icon-graduation icons text-color-primary"></i><br>
-											<span ng-bind="c.title" class="title"></span><br>
-											<span ng-bind="c.institute"></span><br>
-											<span class="years" ng-bind="c.years">2015 - 2017</span>
-										</p>
-									</div>
-								</div>		    	
+							<div class="carousel-wrap">
+							<div class="owl-carousel owl-carousel1">
+								<div class="item item-course" ng-repeat="c in vm.courses">
+									<div class="panel panel-primary sha">
+										<div class="panel-heading">
+											<i class="fa fa-book"></i><span ng-bind="c.title"></span>
+										</div>
+										<div class="panel-body" style="min-height:150px;">
+											<p ng-bind="c.institute"></p>	
+											<p ng-bind="c.years" class="pull-right years"></p>			
+										</div>
+									</div>									
+								</div>									
+							</div>
 							</div>												
-						</div>
-							
 						</div>
 					</div>
 				</div>
@@ -348,15 +350,16 @@
 								<h4 class="text-color-dark">Languages</h4>
 								<ul class="custom-list-style-1 p-none">
 									<li>
-										<span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="./assets/img/gif/blank.gif" class="flag flag-us mr-xs" alt="English">English:</span>
+										<span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="./assets/img/gif/blank.gif" class="flag-icon flag-icon-us" alt="English">English:</span>
+										<span class="custom-text-color-2">Advanced</span>
+										<span class="flag-icon-us"></span>
+									</li>
+									<li>
+										<span class="font-weight-semibold custom-max-width-1 text-color-dark "><img src="./assets/img/gif/blank.gif" class="flag-icon flag-icon-es" alt="Spanish">Spanish:</span>
 										<span class="custom-text-color-2">Advanced</span>
 									</li>
 									<li>
-										<span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="./assets/img/gif/blank.gif" class="flag flag-es mr-xs" alt="Spanish">Spanish:</span>
-										<span class="custom-text-color-2">Advanced</span>
-									</li>
-									<li>
-										<span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="./assets/img/gif/blank.gif" class="flag flag-fr mr-xs" alt="Française">French:</span>
+										<span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="./assets/img/gif/blank.gif" class="flag-icon flag-icon-fr" alt="Française">French:</span>
 										<span class="custom-text-color-2">Basic</span>
 									</li>
 								</ul>
@@ -727,6 +730,8 @@
 		<script src="./assets/js/jquery.magnific-popup.min.js"></script>
 		<script src="./assets/js/vide.min.js"></script>
 		
+		<!-- Theme Custom -->
+		<script src="./assets/js/custom.js"></script>
 		<!-- Theme Base, Components and Settings -->
 		<script src="./assets/js/theme.js"></script>
 
@@ -736,8 +741,6 @@
 		<!-- Demo -->
 		<script src="./assets/js/demo-resume.js"></script>
 		
-		<!-- Theme Custom -->
-		<script src="./assets/js/custom.js"></script>
 		
 		<!-- Theme Initialization Files -->
 		<script src="./assets/js/theme.init.js"></script>
