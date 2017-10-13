@@ -32,6 +32,7 @@ class Experiences(models.Model):
     position = models.ForeignKey("common.Position")
     start_date = models.DateField()
     ending_date = models.DateField()
+    title = models.TextField()
     description = models.TextField()
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
@@ -44,13 +45,15 @@ class Experiences(models.Model):
         return self.name
 
 
-class CompaniesExperiences(models.Model):
-    education = models.ForeignKey(Experiences, blank=True)
-    institute = models.ForeignKey(Companies, blank=True)
+class Institutes(models.Model):
+    name = models.CharField(max_length=50)
+    address = models.TextField()
+    status = models.BooleanField(default=True)
+    create_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         app_label = 'curriculum'
-        db_table = 'companies_experiences'
+        db_table = 'institutes'
 
     def __str__(self):
         return self.name
@@ -61,6 +64,7 @@ class Educations(models.Model):
        settings.AUTH_USER_MODEL,
        on_delete=models.CASCADE,
        related_name='roon_u')
+    Institutes = models.ForeignKey(Institutes)
     start_date = models.DateField()
     ending_date = models.DateField()
     title = models.CharField(max_length=50)
@@ -80,6 +84,7 @@ class Courses(models.Model):
        settings.AUTH_USER_MODEL,
        on_delete=models.CASCADE,
        related_name='roon_u')
+    Institutes = models.ForeignKey(Institutes)
     start_date = models.DateField()
     ending_date = models.DateField()
     course_name = models.CharField(max_length=50)
@@ -89,36 +94,6 @@ class Courses(models.Model):
     class Meta:
         app_label = 'curriculum'
         db_table = 'courses'
-
-    def __str__(self):
-        return self.name
-
-
-class Institutes(models.Model):
-    education = models.ForeignKey(
-        Educations, related_name='education_institute')
-    course = models.ForeignKey(
-        Courses, related_name='course_institute')
-    name = models.CharField(max_length=50)
-    address = models.TextField()
-    status = models.BooleanField(default=True)
-    create_at = models.DateTimeField(auto_now_add=True)
-
-    class Meta:
-        app_label = 'curriculum'
-        db_table = 'institutes'
-
-    def __str__(self):
-        return self.name
-
-
-class InstitutesEducations(models.Model):
-    education = models.ForeignKey(Educations, blank=True)
-    institute = models.ForeignKey(Institutes, blank=True)
-
-    class Meta:
-        app_label = 'curriculum'
-        db_table = 'institutes_educations'
 
     def __str__(self):
         return self.name
