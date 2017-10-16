@@ -4,8 +4,11 @@ from rest_framework import viewsets
 from common.utils import default_responses, UploadFile
 from .api import Controller
 from rest_framework import permissions
-from .serializers import (PositionSerializers, UploadSerializers)
-from cloudemotion.common.models import (Positions)
+from .serializers import (UploadSerializers,
+                        PositionSerializers,
+                        )
+from cloudemotion.common.models import (Positions,
+                                        )
 # from login.models import Profile
 
 # from common.pagination import LinkHeaderPagination

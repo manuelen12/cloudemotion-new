@@ -35,7 +35,7 @@ class User(AbstractUser):
 
 
 class UsersNationalities(models.Model):
-    user = models.ForeignKey(User, blank=True)
+    user = models.ForeignKey(User, blank=True, related_name='user_nat')
     nationality = models.ForeignKey("common.Nationalities", blank=True)
 
     class Meta:
@@ -43,11 +43,11 @@ class UsersNationalities(models.Model):
         db_table = 'user_nationalities'
 
     def __str__(self):
-        return self.id
+        return str(self.id)
 
 
 class UsersProfessions(models.Model):
-    user = models.ForeignKey(User, blank=True)
+    user = models.ForeignKey(User, blank=True, related_name='user_prof')
     profession = models.ForeignKey("common.Professions", blank=True)
 
     class Meta:
@@ -55,4 +55,4 @@ class UsersProfessions(models.Model):
         db_table = 'user_professions'
 
     def __str__(self):
-        return self.id
+        return str(self.id)

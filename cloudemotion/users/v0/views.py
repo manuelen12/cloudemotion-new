@@ -7,15 +7,15 @@ from rest_framework import permissions
 
 # Imports from your apps
 from common.utils import default_responses
-from .api import Controller
+#from .api import Controller
 from .api import API
 from .serializers import (
         UsersSerializers
 )
-from cloudemotion.users.models import (Users)
+from cloudemotion.users.models import (User)
 from django.contrib.auth import get_user_model
 # from rest_framework.viewsets import GenericViewSet
-User = get_user_model()
+# User = get_user_model()
 
 
 class UserAdminViews(viewsets.ViewSet):
@@ -40,7 +40,7 @@ class UserAdminViews(viewsets.ViewSet):
 
     def list(self, request, *args, **kwargs):
         serializer = API(request)
-        serializer.get_users_admin()
+        serializer.get_user()
         if serializer.error:
             print(serializer.error)
             return default_responses(400, serializer.error)
@@ -50,7 +50,7 @@ class UserAdminViews(viewsets.ViewSet):
     def retrieve(self, request, pk, *args, **kwargs):
         # self.serializer_class = CreateUSerAdminSerializers
         serializer = API(request)
-        serializer.get_users_admin(pk)
+        serializer.get_user(pk)
         if serializer.error:
             return default_responses(400, serializer.error)
 
@@ -72,22 +72,3 @@ class UserAdminViews(viewsets.ViewSet):
             return default_responses(404, serializer.error)
 
         return default_responses(200, serializer.result)
-
-
-class UsersViews(viewsets.ModelViewSet):
-    serializer_class = UsersSerializers
-    """
-    Get Users
-    """
-
-    def list(self, request, *args, **kwargs):
-        serializer = Controller(request)
-        serializer.get_user()
-
-        if serializer.error:
-            return default_responses(404, serializer.error)
-
-        return default_responses(200, serializer.result)
-
-    def get_queryset(self):
-        return Users.objects.filter(status=True)

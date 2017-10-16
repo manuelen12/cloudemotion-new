@@ -78,15 +78,14 @@ class Professions(models.Model):
 
     class Meta:
         app_label = 'common'
-        db_table = 'professions'
+        db_table = 'profession'
 
     def __str__(self):
         return self.name
 
 
 class Languajes(models.Model):
-
-    name = models.CharField(max_length=100)
+    name = models.CharField(max_length=100, unique=True, null=False)
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 

@@ -1,6 +1,6 @@
 from rest_framework import routers
 from cloudemotion.common.v0.views import (
-    UploadView, PositionsView,
+    UploadView, PositionsView
     )
 
 router = routers.DefaultRouter()

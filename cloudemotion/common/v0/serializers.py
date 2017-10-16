@@ -6,8 +6,11 @@ from rest_framework import serializers
 # from json import dumps
 # from django.contrib.auth.models import User
 from cloudemotion.common.models import (
-    Positions, Countries, Cities, States
-)
+                                        Positions,
+                                        Countries,
+                                        Cities,
+                                        States,
+                                        )
 
 
 class PositionSerializers(serializers.ModelSerializer):
