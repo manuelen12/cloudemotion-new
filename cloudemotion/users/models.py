@@ -2,7 +2,7 @@ from django.contrib.auth.models import AbstractUser
 from django.core.urlresolvers import reverse
 from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
-from django.utils.translation import ugettext_lazy as _
+#from django.utils.translation import ugettext_lazy as _
 
 
 @python_2_unicode_compatible
@@ -10,17 +10,18 @@ class User(AbstractUser):
 
     # First Name and Last Name do not cover name patterns
     # around the globe.
-    position = models.ForeignKey("common.Positions")
-    city = models.ForeignKey("common.Cities")
-    birthday = models.DateField()
-    phone = models.CharField(max_length=20, blank=True)
-    address = models.TextField()
+    position = models.ForeignKey("common.Positions", null=True)
+    city = models.ForeignKey("common.Cities", null=True)
+    image = models.CharField(max_length=250, blank=True, null=True)
+    birthday = models.DateField(null=True)
+    phone = models.CharField(max_length=20, null=True, blank=True)
+    address = models.TextField(null=True)
     gender = models.BooleanField(default=False)
-    skype = models.CharField(max_length=200, blank=True)
+    skype = models.CharField(max_length=200, null=True, blank=True)
     # facebook = models.CharField(max_length=200, blank=True)
-    twitter = models.CharField(max_length=200, blank=True)
-    linkedin = models.CharField(max_length=200, blank=True)
-    youtube = models.CharField(max_length=200, blank=True)
+    twitter = models.CharField(max_length=200, null=True, blank=True)
+    linkedin = models.CharField(max_length=200, null=True, blank=True)
+    youtube = models.CharField(max_length=200, null=True, blank=True)
     about_me = models.TextField(null=True)
     # code = models.CharField(max_length=3)
     status = models.BooleanField(default=True)

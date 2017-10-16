@@ -16,25 +16,8 @@ from django.db.models import Count
 # from django.core.files.base import ContentFile
 # from heapq import merge
 # Imports from your apps
-from gaver.users.models import (Fetishes,
-                                Preference,
-                                PhysicalConflections,
-                                Hobbies,
-                                Professions,
-                                Roles,
-                                Ethnicities,
-                                HobbiesUser,
-                                FetishesUser,
-                                PreferenceUser,
-                                Sickness,
-                                FavouriteUser,
-                                Folder,
-                                FolderImageUser,
-                                SicknessUser)
-from gaver.places.models import (PlacesFavouriteUser)
-from gaver.chat.models import (Message)
-from gaver.common.models import (City)
-from gaver.places.models import (Places)
+from cloudemotion.users.models import (User)
+from cloudemotion.common.models import (City)
 from common.utils import Base
 # from users.models import Peers
 from common.utils import ThreadDef
@@ -99,43 +82,7 @@ class API(Base):
             "last_login": user.last_login
         }
 
-    def list_sickness(self, pk=None):
-        __filters = loads(self.request.GET.get('filters', "{}"))
-        __paginator = loads(self.request.GET.get('paginator', "{}"))
-        __ordening = loads(self.request.GET.get('ordening', "[]"))
-        if pk:
-            __filters.update({"pk": pk})
-        __search = self.request.GET.get('search')
-        self.list_sicknesss(__filters, __paginator, __ordening, __search)
-
-    def list_sicknesss(self, filters={}, paginator={}, ordening=(), search=None):
-        __dict = {}
-        sik = Sickness.objects.filter(**filters)
-        __p = SicknessUser.objects.filter().values(
-            "sickness__name",
-            "sickness_id").annotate(Count("sickness_id"))
-
-        [__dict.update({i.get('sickness_id'): i.get("sickness_id__count")}) for i in __p]
-        __array = []
-        for s in sik:
-            __dict2 = {
-               "id": s.id,
-               "name": s.name,
-               "total_user": __dict.get((s.id), 0)
-            }
-            __array.append(__dict2)
-        print(__dict)
-        if not filters.get('pk'):
-            self.paginator(__array, paginator)
-            print(self.result)
-        else:
-            if not __array:
-                self.result = {"result": "empty"}
-                return
-            self.result = __array[0]
-        return __array
-
-    def list_roles(self, pk=None):
+    def get_user(self, pk=None):
         __filters = loads(self.request.GET.get('filters', "{}"))
         __paginator = loads(self.request.GET.get('paginator', "{}"))
         __ordening = loads(self.request.GET.get('ordening', "[]"))
@@ -143,147 +90,39 @@ class API(Base):
             __filters.update({"pk": pk})
         __search = self.request.GET.get('search')
 
-        self.list_roless(__filters, __paginator, __search, __ordening)
+        self.get_users(__filters, __paginator, __ordening, __search)
 
-    def list_roless(self, filters={}, paginator={}, ordening=(), search=None):
-        __dict = {}
-        general = Roles.objects.filter(**filters)
-        __general = User.objects.filter(
-            **filters).values(
-                "rol_sexual__name",
-                "rol_sexual_id").annotate(Count("rol_sexual_id"))
-
-        [__dict.update({i.get('rol_sexual_id'): i.get("rol_sexual_id__count")}) for i in __general]
+    def get_users(self, filters={}, paginator={}, ordening=(), search=None):
         __array = []
-        for s in general:
-            __dict2 = {
-               "id": s.id,
-               "name": s.name,
-               "total_user": __dict.get((s.id), 0)
+        user = Users.objects.filter(
+            **filters).order_by(*ordening)
+        for i in user:
+            __dict = {
+                "position": i.position,
+                "city": i.city,
+                "image": i.image,
+                "birthday": i.birthday,
+                "phone": i.phone,
+                "address": i.address,
+                "gender": i.gender,
+                "skype": i.skype,
+                "twitter": i.twitter,
+                "linkedin": i.linkedin,
+                "youtube": i.youtube,
+                "about_me": i.about_me,
+                "status": i.status,
+                "create_at": i.create_at,
             }
-            __array.append(__dict2)
-        print(__dict)
+            __array.append(__dict)
+
         if not filters.get('pk'):
             self.paginator(__array, paginator)
-            print(self.result)
         else:
             if not __array:
                 self.result = {"result": "empty"}
                 return
             self.result = __array[0]
-        return __array
 
-    def list_ethnicities(self, pk=None):
-        __filters = loads(self.request.GET.get('filters', "{}"))
-        __paginator = loads(self.request.GET.get('paginator', "{}"))
-        __ordening = loads(self.request.GET.get('ordening', "[]"))
-        if pk:
-            __filters.update({"pk": pk})
-        __search = self.request.GET.get('search')
-
-        self.list_ethnicitiess(__filters, __paginator, __ordening, __search)
-
-    def list_ethnicitiess(self, filters={}, paginator={}, ordening=(), search=None):
-        __dict = {}
-        general = Ethnicities.objects.filter(**filters)
-        __general = User.objects.filter(
-            **filters).values(
-                "ethnicities__name",
-                "ethnicities_id").annotate(Count("ethnicities_id"))
-
-        [__dict.update({i.get('ethnicities_id'): i.get("ethnicities_id__count")}) for i in __general]
-        __array = []
-        for s in general:
-            __dict2 = {
-               "id": s.id,
-               "name": s.name,
-               "total_user": __dict.get((s.id), 0)
-            }
-            __array.append(__dict2)
-        print(__dict)
-        if not filters.get('pk'):
-            self.paginator(__array, paginator)
-            print(self.result)
-        else:
-            if not __array:
-                self.result = {"result": "empty"}
-                return
-            self.result = __array[0]
-        return __array
-
-    def list_fetishes(self, pk=None):
-        __filters = loads(self.request.GET.get('filters', "{}"))
-        __paginator = loads(self.request.GET.get('paginator', "{}"))
-        __ordening = loads(self.request.GET.get('ordening', "[]"))
-        if pk:
-            __filters.update({"pk": pk})
-        __search = self.request.GET.get('search')
-
-        self.list_fetishess(__filters, __paginator, __ordening, __search)
-
-    def list_fetishess(self, filters={}, paginator={}, ordening=(), search=None):
-        __dict = {}
-        general = Fetishes.objects.filter(**filters)
-        __general = FetishesUser.objects.filter(
-            ).values(
-            "fetishes__name",
-            "fetishes_id").annotate(Count("fetishes_id"))
-
-        [__dict.update({i.get('fetishes_id'): i.get("fetishes_id__count")}) for i in __general]
-        __array = []
-        for s in general:
-            __dict2 = {
-               "id": s.id,
-               "name": s.name,
-               "total_user": __dict.get((s.id), 0)
-            }
-            __array.append(__dict2)
-        print(__dict)
-        if not filters.get('pk'):
-            self.paginator(__array, paginator)
-            print(self.result)
-        else:
-            if not __array:
-                self.result = {"result": "empty"}
-                return
-            self.result = __array[0]
-        return __array
-
-    def list_preference(self, pk=None):
-        __filters = loads(self.request.GET.get('filters', "{}"))
-        __paginator = loads(self.request.GET.get('paginator', "{}"))
-        __ordening = loads(self.request.GET.get('ordening', "[]"))
-        if pk:
-            __filters.update({"pk": pk})
-        __search = self.request.GET.get('search')
-        self.list_preferences(__filters, __paginator, __ordening, __search)
-
-    def list_preferences(self, filters={}, paginator={}, ordening=(), search=None):
-        __dict = {}
-        general = Preference.objects.filter(**filters)
-        __general = PreferenceUser.objects.filter().values(
-            "preference__name",
-            "preference_id").annotate(Count("preference_id"))
-
-        [__dict.update({i.get('preference_id'): i.get("preference_id__count")}) for i in __general]
-        __array = []
-        for s in general:
-            __dict2 = {
-               "id": s.id,
-               "name": s.name,
-               "total_user": __dict.get((s.id), 0)
-            }
-            __array.append(__dict2)
-        print(__dict)
-        if not filters.get('pk'):
-            self.paginator(__array, paginator)
-            print(self.result)
-        else:
-            if not __array:
-                self.result = {"result": "empty"}
-                return
-            self.result = __array[0]
-        return __array
 
     def list_professions(self, pk=None):
         __filters = loads(self.request.GET.get('filters', "{}"))
@@ -321,78 +160,6 @@ class API(Base):
             self.result = __array[0]
         return __array
 
-    def list_physical(self, pk=None):
-        __filters = loads(self.request.GET.get('filters', "{}"))
-        __paginator = loads(self.request.GET.get('paginator', "{}"))
-        __ordening = loads(self.request.GET.get('ordening', "[]"))
-        if pk:
-            __filters.update({"pk": pk})
-        __search = self.request.GET.get('search')
-        self.list_physicals(__filters, __paginator, __ordening, __search)
-
-    def list_physicals(self, filters={}, paginator={}, ordening=(), search=None):
-        __dict = {}
-        general = PhysicalConflections.objects.filter(**filters)
-        __general = User.objects.filter(
-            **filters).values(
-                "physical_conflections__name",
-                "physical_conflections_id").annotate(Count("physical_conflections_id"))
-        [__dict.update({i.get('physical_conflections_id'): i.get("physical_conflections_id__count")}) for i in __general]
-        __array = []
-        for s in general:
-            __dict2 = {
-               "id": s.id,
-               "name": s.name,
-               "total_user": __dict.get((s.id), 0)
-            }
-            __array.append(__dict2)
-        print(__dict)
-        if not filters.get('pk'):
-            self.paginator(__array, paginator)
-            print(self.result)
-        else:
-            if not __array:
-                self.result = {"result": "empty"}
-                return
-            self.result = __array[0]
-        # return __array
-
-    def list_hobbies(self, pk=None):
-        __filters = loads(self.request.GET.get('filters', "{}"))
-        __paginator = loads(self.request.GET.get('paginator', "{}"))
-        __ordening = loads(self.request.GET.get('ordening', "[]"))
-        if pk:
-            __filters.update({"pk": pk})
-        __search = self.request.GET.get('search')
-        self.list_hobbiess(__filters, __paginator, __ordening, __search)
-
-    def list_hobbiess(self, filters={}, paginator={}, ordening=(), search=None):
-        __dict = {}
-        general = Hobbies.objects.filter(**filters)
-        __general = HobbiesUser.objects.filter(
-            **filters).values(
-            "hobbies__name",
-            "hobbies_id").annotate(Count("hobbies_id"))
-
-        [__dict.update({i.get('hobbies_id'): i.get("hobbies_id__count")}) for i in __general]
-        __array = []
-        for s in general:
-            __dict2 = {
-               "id": s.id,
-               "name": s.name,
-               "total_user": __dict.get((s.id), 0)
-            }
-            __array.append(__dict2)
-        print(__dict)
-        if not filters.get('pk'):
-            self.paginator(__array, paginator)
-            print(self.result)
-        else:
-            if not __array:
-                self.result = {"result": "empty"}
-                return
-            self.result = __array[0]
-        return __array
 
     def valid_register_admin(self, kwargs):
         __valid = [

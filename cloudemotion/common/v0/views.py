@@ -1,17 +1,11 @@
 # Third-party app imports
 from rest_framework import viewsets
 # Imports from your apps
-from common.utils import default_responses, UploadFile, UserDispensor2
+from common.utils import default_responses, UploadFile
 from .api import Controller
 from rest_framework import permissions
-from .serializers import (PositionSerializers, UploadSerializers,
-                          CountrySerializers, StateSerializers,
-                          CitySerializers)
-from gaver.common.models import (Position,
-                                 Country,
-                                 City,
-                                 State
-                                 )
+from .serializers import (PositionSerializers, UploadSerializers)
+from cloudemotion.common.models import (Positions)
 # from login.models import Profile
 
 # from common.pagination import LinkHeaderPagination
@@ -37,86 +31,15 @@ class UploadView(viewsets.ViewSet):
         return default_responses(200, serializer.result)
 
 
-class CountryView(viewsets.ModelViewSet):
-    permission_classes = (permissions.AllowAny,)
-    serializer_class = CountrySerializers
-    """
-    Get Country
-    """
-
-    def list(self, request, *args, **kwargs):
-        serializer = Controller(request)
-        serializer.get_country()
-
-        if serializer.error:
-            return default_responses(404, serializer.error)
-
-        return default_responses(200, serializer.result)
-
-    def get_queryset(self):
-        return Country.objects.filter(status=True)
-
-
-class StateView(viewsets.ModelViewSet):
-    permission_classes = (permissions.AllowAny,)
-    serializer_class = StateSerializers
-    """
-    Get Country
-    """
-
-    def list(self, request, *args, **kwargs):
-        serializer = Controller(request)
-        serializer.get_state()
-
-        if serializer.error:
-            return default_responses(404, serializer.error)
-
-        return default_responses(200, serializer.result)
-
-    def get_queryset(self):
-        return State.objects.filter(status=True)
-
-
-class CityView(viewsets.ModelViewSet):
-    permission_classes = (permissions.AllowAny,)
-    serializer_class = CitySerializers
-    """
-    Get Country
-    """
-
-    def list(self, request, *args, **kwargs):
-        serializer = Controller(request)
-        serializer.get_city()
-
-        if serializer.error:
-            return default_responses(404, serializer.error)
-
-        return default_responses(200, serializer.result)
-
-    def get_queryset(self):
-        return City.objects.filter(status=True)
-
-
-class PositionViewsets(viewsets.ModelViewSet):
-    # permission_classes = (permissions.AllowAny,)
-    permission_classes = (UserDispensor2,)
+class PositionsView(viewsets.ModelViewSet):
     serializer_class = PositionSerializers
-    # permission_classes = [IsAccountAdminOrReadOnly]
-
-    def get_queryset(self):
-        return Position.objects.filter(status=True)
-
-
-class CountriesView(viewsets.ModelViewSet):
-    permission_classes = (permissions.AllowAny,)
-    serializer_class = CountrySerializers
     """
-    Get Country
+    Get Positions
     """
 
     def list(self, request, *args, **kwargs):
         serializer = Controller(request)
-        serializer.get_countries()
+        serializer.get_position()
 
         if serializer.error:
             return default_responses(404, serializer.error)
@@ -124,44 +47,4 @@ class CountriesView(viewsets.ModelViewSet):
         return default_responses(200, serializer.result)
 
     def get_queryset(self):
-        return Country.objects.filter(status=True)
-
-
-class StatesView(viewsets.ModelViewSet):
-    permission_classes = (permissions.AllowAny,)
-    serializer_class = StateSerializers
-    """
-    Get Country
-    """
-
-    def list(self, request, *args, **kwargs):
-        serializer = Controller(request)
-        serializer.get_states_app()
-
-        if serializer.error:
-            return default_responses(404, serializer.error)
-
-        return default_responses(200, serializer.result)
-
-    def get_queryset(self):
-        return State.objects.filter(status=True)
-
-
-class CitysView(viewsets.ModelViewSet):
-    permission_classes = (permissions.AllowAny,)
-    serializer_class = CitySerializers
-    """
-    Get Country
-    """
-
-    def list(self, request, *args, **kwargs):
-        serializer = Controller(request)
-        serializer.get_cities()
-
-        if serializer.error:
-            return default_responses(404, serializer.error)
-
-        return default_responses(200, serializer.result)
-
-    def get_queryset(self):
-        return City.objects.filter(status=True)
+        return Positions.objects.filter(status=True)

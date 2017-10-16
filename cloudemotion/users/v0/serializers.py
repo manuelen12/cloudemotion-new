@@ -3,15 +3,8 @@
 # Core Django imports
 # Third-party app imports
 from rest_framework import serializers
-from gaver.common.models import City
-from gaver.users.models import (Roles, Professions, Ethnicities,
-                                PhysicalConflections,
-                                Sickness,
-                                Fetishes,
-                                Folder,
-                                FolderImageUser,
-                                Preference,
-                                Hobbies)
+from cloudemotion.common.models import City
+from cloudemotion.users.models import (Users)
 from json import dumps
 # from django import forms
 # Imports from your apps
@@ -19,7 +12,7 @@ from django.contrib.auth import get_user_model
 User = get_user_model()
 
 
-class SicknessSerializer(serializers.ModelSerializer):
+class UsersSerializers(serializers):
     class Meta:
         model = Sickness
         fields = ('id', 'name')

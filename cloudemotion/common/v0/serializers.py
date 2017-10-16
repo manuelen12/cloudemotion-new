@@ -5,34 +5,32 @@ from rest_framework import serializers
 # Imports from your apps
 # from json import dumps
 # from django.contrib.auth.models import User
-from gaver.common.models import (Position,
-                                 Country,
-                                 City,
-                                 State
-                                 )
+from cloudemotion.common.models import (
+    Positions, Countries, Cities, States
+)
 
 
 class PositionSerializers(serializers.ModelSerializer):
     class Meta:
-        model = Position
+        model = Positions
         fields = '__all__'
 
 
 class CountrySerializers(serializers.ModelSerializer):
     class Meta:
-        model = Country
+        model = Countries
         fields = ('id', 'name')
 
 
 class StateSerializers(serializers.ModelSerializer):
     class Meta:
-        model = State
+        model = States
         fields = ('id', 'name', 'country')
 
 
 class CitySerializers(serializers.ModelSerializer):
     class Meta:
-        model = City
+        model = Cities
         fields = ('id', 'name', 'state')
 
 

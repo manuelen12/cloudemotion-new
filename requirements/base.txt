@@ -46,6 +46,17 @@ redis>=2.10.5
 
 celery==3.1.25
 
+# Django Rest Framework
+djangorestframework==3.7.0
+
+#Django REST Swagger
+django-rest-swagger==2.1.2
+
+#cors headers
+django-cors-headers==2.1.0
+
+#REST framework JWT Auth
+djangorestframework-jwt==1.11.0
 
 
 

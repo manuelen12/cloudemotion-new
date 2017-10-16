@@ -56,7 +56,6 @@
 
 	function setTestimonial() {
 		if (($(document).width())<769) {$(".qodef-testimonials-slider-item").css("width","100%"); console.log("mierda");}
-		console.log("2paso");
 	}
 
 	// Make navigation 'stick'.
@@ -176,9 +175,29 @@
 	 	}
 	 }
 
+
+	 function triggerParallaxCl(target) {
+	 	console.log();
+
+	 	$target=$(target);
+	 	if ($target.length) {	
+	 			$('html,body').animate({
+					scrollTop: ($target.offset().top-170)
+				}, 2000, 'swing');
+	 	}
+	 }
+
+
+	 $("div[parallax-cl]").on("click",function(e) {
+	 	var id=this.attr(id);
+	 	triggerParallaxCl("#"+id);
+	 })
+
 	// Fire on document ready.
 	$( document ).ready( function() {
 
+		$(".loader").removeClass("in");
+		triggerParallaxCl(window.location.hash)
 		// If navigation menu is present on page, setNavProps and adjustScrollClass.
 		if ( $navigation.length ) {
 			setNavProps();
@@ -228,14 +247,12 @@
 
 		// Also want to make sure the navigation is where it should be on resize.
 		$( window ).on("resize", function() {
-			console.log("culo ps sirve");
 			setNavProps();
 			setTimeout( adjustScrollClass, 500 );
 		});
 	}
 
 	$( window ).on("resize", function() {
-		console.log("culo ps sirve");
 		clearTimeout( resizeTimer );
 		resizeTimer = setTimeout( function() {
 			belowEntryMetaClass( 'blockquote.alignleft, blockquote.alignright' );
