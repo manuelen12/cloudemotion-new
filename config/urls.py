@@ -4,11 +4,28 @@ from django.conf.urls.static import static
 from django.contrib import admin
 from django.views.generic import TemplateView
 from django.views import defaults as default_views
+from common.utils import DefaultRouter
+from common.v0.urls import router as common
+from users.v0.urls import router as users
+from rest_framework_jwt.views import (
+    refresh_jwt_token, obtain_jwt_token, verify_jwt_token)
+
+router = DefaultRouter()
+# router.extend(upload)
+router.extend(common)
+router.extend(users)
+
 
 urlpatterns = [
     url(r'^$', TemplateView.as_view(template_name='pages/home.html'), name='home'),
     url(r'^about/$', TemplateView.as_view(template_name='pages/about.html'), name='about'),
-
+    url(r'^api/api-token-auth/', obtain_jwt_token),
+    url(r'^api/api-token-verify/', verify_jwt_token),
+    url(r'^api/api-token-auth/', obtain_jwt_token),
+    url(r'^api/api-token-refresh/', refresh_jwt_token),
+    url(r'^api/v0/', include(router.urls, namespace='api')),
+    url(r'^api/api-auth/',
+        include('rest_framework.urls', namespace='rest_framework')),
     # Django Admin, use {% url 'admin:index' %}
     url(settings.ADMIN_URL, admin.site.urls),
 
