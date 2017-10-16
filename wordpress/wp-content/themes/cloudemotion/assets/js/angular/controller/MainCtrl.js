@@ -11,10 +11,7 @@ function MainCtrl($scope,$http,particles) {
 
 	this.$onInit=function() {
 		particlesJS("qodef-p-particles-container",particles)
-		console.log(particles);
-		console.log(particlesJS);
-		console.log("#qodef-p-particles-container");
-		console.log(jQuery("#qodef-p-particles-container"));
+		
 	}
 }
 
