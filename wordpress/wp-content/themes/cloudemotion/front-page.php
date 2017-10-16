@@ -1,7 +1,7 @@
 <?php
 get_header();
 ?>
-<body ng-controller="MainCtrl as vm" >
+<body ng-controller="MainCtrl as vm">
     <div class="loader in"></div>
     <div class="qodef-wrapper">
         <div class="qodef-wrapper-inner">
@@ -26,9 +26,7 @@ get_header();
                             <div class="qodef-position-left-inner">
                                 <div class="qodef-logo-wrapper">
                                     <a href="http://startit.select-themes.com/" style="height: 90px;">
-                                        <img class="qodef-normal-logo" src="./wp-content/themes/cloudemotion/assets/img/logo_header.jpg" alt="logo"/>
-                                        <img class="qodef-dark-logo" src="./wp-content/themes/cloudemotion/assets/img/logo_header.jpg" alt="dark logo"/>
-                                        <img class="qodef-light-logo" src="./wp-content/themes/cloudemotion/assets/img/logo-light.png" alt="light logo"/>
+                                        <img width="250" class="qodef-normal-logo" src="./wp-content/themes/cloudemotion/assets/img/logo_header.jpg" alt="logo"/>
                                     </a>
                                 </div>
                             </div>

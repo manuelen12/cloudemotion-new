@@ -7,6 +7,8 @@
 			$routecss="/assets/css/";
 			$routejs="/assets/js/libs/";
 			$styles = array(
+				'style',
+				'style.min',
 				'estilo',
 				'blog-responsive.min',
 				'dripicons',
@@ -21,8 +23,6 @@
 				'owl.carousel',
 				'animate.min',
 				'simple-line-icons',
-				'style',
-				'style.min',
 				'style_dynamic',
 				'style_dynamic_responsive',
 				'styles',
@@ -33,7 +33,7 @@
 				);
 
 			$scripts = array(
-				'jquery-3.2.1.min',
+				'jquery',
 				//'jquery',
 				'jquery-migrate.min',
 				'scrolltoplugin.min',
@@ -42,11 +42,7 @@
 				'layerslider.transitions',
 				'jquery.themepunch.tools.min',
 				'jquery.themepunch.revolution.min',
-				'add-to-cart.min',
 				'particles.min',
-				'woocommerce-add-to-cart',
-				'revolution.addon.whiteboard.min',
-				'wp-emoji-release.min',
 				'analytics',
 				'underscore.min',
 				'excanvas.compiled',
@@ -54,7 +50,6 @@
 				'jquery.form.min',
 				'scripts',
 				'jquery.blockUI.min',
-				'woocommerce.min',
 				'jquery.cookie.min',
 				'cart-fragments.min',
 				'core.min',
