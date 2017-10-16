@@ -8,6 +8,8 @@ from json import loads, dumps
 from django.contrib.auth import get_user_model
 # from django.core.cache import cache
 from rest_framework_jwt.settings import api_settings
+from cloudemotion.users.models import UsersNationalities, UsersProfessions
+from cloudemotion.curriculum.models import CoursesUser
 # from django.core.cache import cache
 # from datetime import datetime
 # from django.db.models import Q
@@ -25,7 +27,6 @@ from common.utils import Base
 from django.db.models import Prefetch
 jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
 jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
-from cloudemotion.users.models import UsersNationalities, UsersProfessions
 Users = get_user_model()
 
 
@@ -65,13 +66,18 @@ class API(Base):
         __nationality = UsersNationalities.objects.select_related(
             "nationality")
         __profession = UsersProfessions.objects.select_related("profession")
+
+        __course = CoursesUser.objects.select_related("institute", "course")
+
         user = Users.objects.select_related(
             "city", "city__state", "city__state__country",
             "position").prefetch_related(
                 Prefetch(
                     "user_nat", queryset=__nationality, to_attr="user_nat2"),
                 Prefetch(
-                    "user_prof", queryset=__profession, to_attr="user_prof2")
+                    "user_prof", queryset=__profession, to_attr="user_prof2"),
+                Prefetch(
+                    "c_user", queryset=__course, to_attr="c_user2")
             ).filter(
             **filters).order_by(*ordening)
         for i in user:
@@ -108,13 +114,35 @@ class API(Base):
                 "about_me": i.about_me,
                 "status": i.status,
                 "create_at": i.create_at,
-                "user_nationality": []
+                "user_nationality": [],
+                "user_profession": [],
+                "user_course": []
             }
             for e in i.user_nat2:
                 __dict2 = {
                     "name": e.nationality.name
                 }
                 __dict["user_nationality"].append(__dict2)
+
+            for e in i.user_prof2:
+                __dict2 = {
+                    "name": e.profession.name
+                }
+                __dict["user_profession"].append(__dict2)
+
+            for e in i.c_user2:
+                __dict2 = {
+                    "institute": {
+                        "name": e.institute.name,
+                        "address": e.institute.address,
+                    },
+                    "course": {
+                        "name": e.course.name,
+                    },
+                    "start_date": e.start_date,
+                    "ending_date": e.ending_date,
+                }
+                __dict["user_course"].append(__dict2)
 
             print(__dict)
             __array.append(__dict)

@@ -130,7 +130,7 @@ class CoursesUser(models.Model):
         db_table = 'courses_user'
 
     def __str__(self):
-        return self.name
+        return self.course.name+ "/" +self.institute.name
 
 
 class Skills(models.Model):
