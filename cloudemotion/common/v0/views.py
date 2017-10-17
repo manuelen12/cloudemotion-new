@@ -6,8 +6,10 @@ from .api import Controller
 from rest_framework import permissions
 from .serializers import (UploadSerializers,
                         PositionSerializers,
+                        LanguajeSerializers,
                         )
 from cloudemotion.common.models import (Positions,
+                                        Languajes,
                                         )
 # from login.models import Profile
 
@@ -51,3 +53,22 @@ class PositionsView(viewsets.ModelViewSet):
 
     def get_queryset(self):
         return Positions.objects.filter(status=True)
+
+
+class LanguajesView(viewsets.ModelViewSet):
+    serializer_class = LanguajeSerializers
+    """
+    Get Languajes
+    """
+
+    def list(self, request, *args, **kwargs):
+        serializer = Controller(request)
+        serializer.get_languaje()
+
+        if serializer.error:
+            return default_responses(404, serializer.error)
+
+        return default_responses(200, serializer.result)
+
+    def get_queryset(self):
+        return Languajes.objects.filter(status=True)
