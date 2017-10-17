@@ -42,7 +42,7 @@ class Experiences(models.Model):
         db_table = 'experiences'
 
     def __str__(self):
-        return self.name
+        return self.company.name+ "/" +self.position.name
 
 
 class Institutes(models.Model):
@@ -81,7 +81,7 @@ class EducationsUser(models.Model):
     user = models.ForeignKey(
        settings.AUTH_USER_MODEL,
        on_delete=models.CASCADE,
-       related_name='e_user')
+       related_name='edu_user')
     type_educations = models.SmallIntegerField(
        default=1, choices=__types)
     institute = models.ForeignKey(Institutes)
@@ -97,7 +97,7 @@ class EducationsUser(models.Model):
         db_table = 'educations_user'
 
     def __str__(self):
-        return self.name
+        return self.education.name+ "/" +self.institute.name
 
 
 class Courses(models.Model):
@@ -169,7 +169,7 @@ class SkillsUser(models.Model):
         db_table = 'skills_user'
 
     def __str__(self):
-        return self.name
+        return self.skill.name
 
 
 class LanguajesUser(models.Model):
@@ -193,7 +193,7 @@ class LanguajesUser(models.Model):
         db_table = 'languajes_user'
 
     def __str__(self):
-        return self.name
+        return self.languaje.name
 
 
 class Classifications(models.Model):
@@ -216,6 +216,7 @@ class Portfolios(models.Model):
        on_delete=models.CASCADE,
        related_name='p_user')
     classification = models.ForeignKey(
+        # Classifications, related_name='classification')
         Classifications, related_name='classification_portfolio')
     name = models.CharField(max_length=50)
     image = models.CharField(max_length=250, blank=True, null=True)

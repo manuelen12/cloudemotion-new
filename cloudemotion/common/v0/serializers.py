@@ -10,6 +10,7 @@ from cloudemotion.common.models import (
                                         Countries,
                                         Cities,
                                         States,
+                                        Languajes,
                                         )
 
 
@@ -17,6 +18,12 @@ class PositionSerializers(serializers.ModelSerializer):
     class Meta:
         model = Positions
         fields = '__all__'
+
+
+class LanguajeSerializers(serializers.ModelSerializer):
+    class Meta:
+        model = Languajes
+        fields = ('__all__')
 
 
 class CountrySerializers(serializers.ModelSerializer):
