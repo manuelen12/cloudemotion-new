@@ -9,7 +9,7 @@ from django.contrib.auth import get_user_model
 # from django.core.cache import cache
 from rest_framework_jwt.settings import api_settings
 from cloudemotion.users.models import UsersNationalities, UsersProfessions
-from cloudemotion.curriculum.models import CoursesUser, EducationsUser, LanguajesUser, Experiences
+from cloudemotion.curriculum.models import CoursesUser, EducationsUser, LanguajesUser, Experiences, SkillsUser
 #from cloudemotion.common.models import Nationalities, Languajes
 # from django.core.cache import cache
 # from datetime import datetime
@@ -76,6 +76,15 @@ class API(Base):
         __languaje = LanguajesUser.objects.select_related(
             "languaje")
 
+        __experience = Experiences.objects.select_related(
+            "company", "position")
+
+        __skill = SkillsUser.objects.select_related(
+            "skill")
+
+        # __portfolio = Portfolios.objects.select_related(
+        #     "portfolio")
+
         user = Users.objects.select_related(
             "city", "city__state", "city__state__country",
             "position").prefetch_related(
@@ -88,7 +97,13 @@ class API(Base):
                 Prefetch(
                     "edu_user", queryset=__education, to_attr="edu_user2"),
                 Prefetch(
-                    "l_user", queryset=__languaje, to_attr="l_user2")
+                    "l_user", queryset=__languaje, to_attr="l_user2"),
+                Prefetch(
+                    "ex_user", queryset=__experience, to_attr="ex_user2"),
+                Prefetch(
+                    "s_user", queryset=__skill, to_attr="s_user2"),
+                # Prefetch(
+                #     "p_user", queryset=__portfolio, to_attr="p_user2")
             ).filter(
             **filters).order_by(*ordening)
         for i in user:
@@ -129,7 +144,10 @@ class API(Base):
                 "user_profession": [],
                 "user_course": [],
                 "user_education": [],
-                "user_languaje": []
+                "user_languaje": [],
+                "user_experience": [],
+                "user_skill": [],
+                # "user_portfolio": [],
             }
             for e in i.user_nat2:
                 __dict2 = {
@@ -180,6 +198,40 @@ class API(Base):
                     "name": e.languaje.name
                 }
                 __dict["user_languaje"].append(__dict2)
+
+            for e in i.ex_user2:
+                __dict2 = {
+                    "company": {
+                        "name": e.company.name,
+                        "address": e.company.address,
+                    },
+                    "position": {
+                        "name": e.position.name,
+                    },
+                    "start_date": e.start_date,
+                    "ending_date": e.ending_date,
+                }
+                __dict["user_experience"].append(__dict2)
+
+            for e in i.s_user2:
+                __dict2 = {
+                    "level": {
+                        "id": e.level,
+                        "name": e.get_level_display()
+                    },
+                    "name": e.skill.name
+                }
+                __dict["user_skill"].append(__dict2)
+
+            # for e in i.p_user:
+            #     __dict2 = {
+            #         "classification": {
+            #             "name": e.classification.name,
+            #             "category": e.classification.category,
+            #         },
+            #         "name": e.portfolio.name,
+            #     }
+            #     __dict["user_portfolio"].append(__dict2)
 
             print(__dict)
             __array.append(__dict)
