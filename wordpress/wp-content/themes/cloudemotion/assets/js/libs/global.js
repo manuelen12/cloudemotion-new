@@ -177,20 +177,21 @@
 
 
 	 function triggerParallaxCl(target) {
-	 	console.log();
+	 	console.log(target);
 
 	 	$target=$(target);
 	 	if ($target.length) {	
-	 			$('html,body').animate({
-					scrollTop: ($target.offset().top-170)
-				}, 2000, 'swing');
+	 		$('html,body').animate({
+	 			scrollTop: ($target.offset().top)+"px"
+	 		}, 2000);
 	 	}
 	 }
 
 
-	 $("div[parallax-cl]").on("click",function(e) {
-	 	var id=this.attr(id);
-	 	triggerParallaxCl("#"+id);
+	 $("*[parallax-cl]").on("click",function(e) {
+	 	var id=$(this).attr("href");
+	 	event.preventDefault();
+	 	triggerParallaxCl(id);
 	 })
 
 	// Fire on document ready.

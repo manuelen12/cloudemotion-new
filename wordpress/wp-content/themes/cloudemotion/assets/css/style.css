@@ -1,20 +1,10 @@
-/*
-Theme Name: Startit
-Theme URI: https:http://cloudemotion.com.ve;
-Author: Select Themes
-Author URI:  http://themeforest.net/user/select-themes
-Version: 2.0
-License: GNU General Public License
-License URI: licence/GPL.txt
-
-CSS changes can be made in files in the /css/ folder. This is a placeholder file required by WordPress, so do not delete it.
-
-*/
 
 
 
-
+.qodef-custom-font-holder-blog,
 .qodef-custom-font-holder{
+
+
 	font-family: Raleway;
 	font-size: 52px;
 	line-height: 60px;
@@ -24,6 +14,15 @@ CSS changes can be made in files in the /css/ folder. This is a placeholder file
 	text-align: center;
 	color: #ffffff;
 }
+.qodef-custom-font-holder-blog{
+	font-family: Raleway;font-size: 15px;line-height: 23px;font-weight: 400;color: #ffffff
+}
+
+.qodef-ptf-category-holder{
+	height: 150px;
+	overflow: hidden;
+}
+
 .qodef-landing-custom .qodef-ptf-category-holder{
 	display:none !important;
 }
