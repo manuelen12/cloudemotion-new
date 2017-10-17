@@ -9,7 +9,7 @@ from django.contrib.auth import get_user_model
 # from django.core.cache import cache
 from rest_framework_jwt.settings import api_settings
 from cloudemotion.users.models import UsersNationalities, UsersProfessions
-from cloudemotion.curriculum.models import CoursesUser, EducationsUser, LanguajesUser, Experiences, SkillsUser
+from cloudemotion.curriculum.models import CoursesUser, EducationsUser, LanguajesUser, Experiences, SkillsUser, Portfolios
 #from cloudemotion.common.models import Nationalities, Languajes
 # from django.core.cache import cache
 # from datetime import datetime
@@ -82,8 +82,8 @@ class API(Base):
         __skill = SkillsUser.objects.select_related(
             "skill")
 
-        # __portfolio = Portfolios.objects.select_related(
-        #     "portfolio")
+        __portfolio = Portfolios.objects.select_related(
+            "classification")
 
         user = Users.objects.select_related(
             "city", "city__state", "city__state__country",
@@ -102,8 +102,8 @@ class API(Base):
                     "ex_user", queryset=__experience, to_attr="ex_user2"),
                 Prefetch(
                     "s_user", queryset=__skill, to_attr="s_user2"),
-                # Prefetch(
-                #     "p_user", queryset=__portfolio, to_attr="p_user2")
+                Prefetch(
+                    "p_user", queryset=__portfolio, to_attr="p_user2")
             ).filter(
             **filters).order_by(*ordening)
         for i in user:
@@ -147,7 +147,7 @@ class API(Base):
                 "user_languaje": [],
                 "user_experience": [],
                 "user_skill": [],
-                # "user_portfolio": [],
+                "user_portfolio": [],
             }
             for e in i.user_nat2:
                 __dict2 = {
@@ -223,15 +223,15 @@ class API(Base):
                 }
                 __dict["user_skill"].append(__dict2)
 
-            # for e in i.p_user:
-            #     __dict2 = {
-            #         "classification": {
-            #             "name": e.classification.name,
-            #             "category": e.classification.category,
-            #         },
-            #         "name": e.portfolio.name,
-            #     }
-            #     __dict["user_portfolio"].append(__dict2)
+            for e in i.p_user2:
+                __dict2 = {
+                    "classification": {
+                        "name": e.classification.name,
+                        "category": e.classification.category,
+                    },
+                    "name": e.name,
+                }
+                __dict["user_portfolio"].append(__dict2)
 
             print(__dict)
             __array.append(__dict)

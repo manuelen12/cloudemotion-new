@@ -216,6 +216,7 @@ class Portfolios(models.Model):
        on_delete=models.CASCADE,
        related_name='p_user')
     classification = models.ForeignKey(
+        # Classifications, related_name='classification')
         Classifications, related_name='classification_portfolio')
     name = models.CharField(max_length=50)
     image = models.CharField(max_length=250, blank=True, null=True)
