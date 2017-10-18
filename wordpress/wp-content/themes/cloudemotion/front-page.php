@@ -152,7 +152,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h5>Desarrollo Web de Alta Calidad</h5>
+                                                            <h5>High quality on web develop</h5>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 19px" >
@@ -160,7 +160,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <p>Desarrollamos aplicaciones profesionales para diferentes entornos: web, móvil o de escritorio usando la más moderna tecnología y asegurando un producto de alta calidad</p>
+                                                            <p>We develop <strong>Pro Apps</strong> for various platform: web, mobile or desktop; we use the newest technology and you can <strong>trust</strong> on our quality.</p>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 50px" >
@@ -182,7 +182,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h5>Consultoría y Servicios IT</h5><br>
+                                                            <h5>Supporting and Services IT</h5><br>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 19px" >
@@ -190,7 +190,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <p>Asesorías, Capacitación y Gestión de Proyectos IT que responden a las necesidades de los clientes y se adaptan a sus requerimientos de información</p>
+                                                            <p>IT training, tutorials and project management which help the clients according to their needs and suit to their information requirements.</p>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 50px" >
@@ -212,7 +212,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h5>Diversidad de Plataformas</h5><br>
+                                                            <h5>Variety Platforms</h5><br>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 19px" >
@@ -220,7 +220,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <p>Gestionamos todos tus requerimientos de hardware y software que permitirán soportar tus aplicaciones y servicios de IT en plataformas de software libre (Linux) o privativa (Windows)</p>
+                                                            <p>We manage all of your hardware and software requirements what help you support your IT apps and services on free (linux) or private (windows) platform</p>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 50px" >
@@ -242,7 +242,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h5>Portafolio de Proyectos</h5><br>
+                                                            <h5>Projects Portfolio</h5><br>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 19px" >
@@ -250,7 +250,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <p>Conoce la alta calidad de nuestro trabajo adaptándose y diseñado a diversos modelos de negocios y forma parte de la lista de nuestros clientes satisfechos.</p>
+                                                            <p>Meet our adaptable works' high quality, made for various bussiness models. Be part of our pleased customers list.</p>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 50px" >
@@ -277,7 +277,7 @@ get_header();
 
                                                                         <div class="wpb_text_column wpb_content_element ">
                                                                             <div class="wpb_wrapper">
-                                                                                <h2>Te Ayudamos a Crear tu Imagen Corporativa en la Web</h2>
+                                                                                <h2>We help you to design your business image on web</h2>
                                                                             </div>
                                                                         </div>
                                                                         <div class="vc_empty_space"  style="height: 20px" >
@@ -285,14 +285,14 @@ get_header();
                                                                         </div>
                                                                         <div class="wpb_text_column wpb_content_element ">
                                                                             <div class="wpb_wrapper">
-                                                                                <h4>Usamos tecnología y herramientas de punta para asegurarnos que el diseño de tu web corporativa sea una experiencia extraordinaria, innovadora y atractiva que permita impulsar tu marca en Internet.</h4>
+                                                                                <h4>We use the newest technology and tools while your business page is designed. Thus we guarantee you an extraordinary, innovative and catching experience. This one will give you the oportunity to boots your brand on internet.</h4>
                                                                             </div>
                                                                         </div>
                                                                         <div class="vc_empty_space"  style="height: 43px" >
                                                                             <span class="vc_empty_space_inner"></span>
                                                                         </div>
                                                                         <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-                                                                            <span class="qodef-btn-text">Conoce más</span>
+                                                                            <span class="qodef-btn-text">Know More</span>
                                                                             <span class="qodef-btn-text-icon">
                                                                                 <i class="qodef-icon-simple-line-icon icon-rocket " ></i>
                                                                             </span>
@@ -327,7 +327,7 @@ get_header();
                                 <div class="wpb_wrapper">
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
-                                            <h2>Trabajar con nosotros es tan simple como...</h2>
+                                            <h2>Working with us is as simple as...</h2>
                                         </div>
                                     </div>
                                     <div class="vc_empty_space" style="height: 22px">
@@ -358,7 +358,7 @@ get_header();
                                                                     </div>
                                                                     <div class="qodef-process-item-content-holder">
                                                                         <div class="qodef-process-item-title-holder">
-                                                                            <h5>Planificar</h5>
+                                                                            <h5>Plane</h5>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
                                                                             <p>Te haremos llegar un cuestionario con el cual identificaremos cuales son tus prioridades, modelo de negocios y objetivos y asi agilizar el proceso</p>
@@ -377,7 +377,7 @@ get_header();
                                                                     </div>
                                                                     <div class="qodef-process-item-content-holder">
                                                                         <div class="qodef-process-item-title-holder">
-                                                                            <h5>Diseñar</h5>
+                                                                            <h5>Design</h5>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
                                                                             <p>Te haremos llegar un listado de posibles diseños bajo los estandares actuales, para que seas participe en el proceso en todo momento</p>
@@ -396,7 +396,7 @@ get_header();
                                                                     </div>
                                                                     <div class="qodef-process-item-content-holder">
                                                                         <div class="qodef-process-item-title-holder">
-                                                                            <h5>Probar</h5>
+                                                                            <h5>Test</h5>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
                                                                             <p>Existen tres estapas principales de prueba(Etapa de diseño, Etapa Alfa y Etapa beta) en la cual podras ver el avance progresivo de tu Producto</p>
@@ -415,7 +415,7 @@ get_header();
                                                                     </div>
                                                                     <div class="qodef-process-item-content-holder">
                                                                         <div class="qodef-process-item-title-holder">
-                                                                            <h5>Desarrollar</h5>
+                                                                            <h5>Develop</h5>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
                                                                             <p>
