@@ -1,6 +1,6 @@
 mainApp.controller('MainCtrl', MainCtrl)
-MainCtrl.$inject=["$scope"]
-function MainCtrl($scope) {
+MainCtrl.$inject=["$scope","PortfolioService"]
+function MainCtrl($scope,PortfolioService) {
     var vm = this;
     angular.extend(vm,{
         prueba:"hola mundo2",
@@ -11,9 +11,15 @@ function MainCtrl($scope) {
     function click(link) {
         var body =  $("html, body");
         var top  =  $(link).offset().top;
-        body.stop().animate({scrollTop:top},800,'swing',function(){});
+        body.stop().animate({scrollTop:top},1000,'swing',function(){});
     }
 
+    PortfolioService.getCv().then(function(response){
+      console.log(response);
+    },function(error){
+      console.log(error);
+    })
+   
     vm.experience = [{
         from:'Sep 2012',
         to:'Present',

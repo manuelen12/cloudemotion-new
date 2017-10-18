@@ -5,7 +5,7 @@ function PortfolioService($http,$state,urlHelpers) {
 		getCv:getCv,
 	}
 	function getCv(params) {
-		return urlHelpers.get("/",params);
+		return urlHelpers.get("users/",params);
 	}
 	return methods;
 }

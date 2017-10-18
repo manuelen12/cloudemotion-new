@@ -15,7 +15,7 @@ var jsFiles = [
 './assets/js/mainfiles/jquery.easing.min.js',
 './assets/js/mainfiles/jquery-cookie.min.js',
 './assets/js/mainfiles/common.min.js',
-'./assets/js/mainfiles/jquery.validation.min.2.7.js',
+'./assets/js/mainfiles/jquery.validation.min.js',
 './assets/js/mainfiles/jquery.easy-pie-chart.min.js',
 './assets/js/mainfiles/jquery.gmap.min.js',
 './assets/js/mainfiles/jquery.isotope.min.js',
@@ -23,8 +23,6 @@ var jsFiles = [
 './assets/js/mainfiles/jquery.magnific-popup.min.js',
 './assets/js/mainfiles/vide.min.js',
 
-'./assets/js/mainfiles/jquery.nicescroll.js',
-'./assets/js/mainfiles/jquery.sparkline.js',
 './assets/js/mainfiles/moment.js',
 './assets/js/mainfiles/angular.min.js',
 './assets/js/mainfiles/angular-resource.min.js',
@@ -43,8 +41,9 @@ var jsFiles = [
 './assets/js/mainfiles/ui-bootstrap-tpls.min.js',
 './assets/js/mainfiles/fullcalendar.min.js',
 './assets/js/mainfiles/Chart.js',
-'./assets/js/mainfiles/particles.js',
 './assets/js/mainfiles/custom.js',
+'./assets/js/mainfiles/theme.js',
+'./assets/js/mainfiles/particles.js',
 './assets/js/libs/**/*.js',
 ],
 cssFile = [
