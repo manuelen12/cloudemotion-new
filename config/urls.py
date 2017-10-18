@@ -30,7 +30,7 @@ urlpatterns = [
         serve,
         {'document_root': "cloudemotion/templates/porto/assets/", 'show_indexes': True}),
 
-    url(r'^curriculum/(?P<path>.*)$', TemplateView.as_view(
+    url(r'^curriculum/(?P<id>.*)$', TemplateView.as_view(
         template_name='porto/index.html'), name='home'),
 
     url(r'^about/$', TemplateView.as_view(
