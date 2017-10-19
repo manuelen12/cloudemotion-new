@@ -269,28 +269,24 @@ class Walker_Comment extends Walker {
 ?>
 		<<?php echo $tag; ?> <?php comment_class( $this->has_children ? 'parent' : '', $comment ); ?> id="comment-<?php comment_ID(); ?>">
 		<?php if ( 'div' != $args['style'] ) : ?>
-		<div id="div-comment-<?php comment_ID(); ?>" class="comment-body">
+		<div id="div-comment-<?php comment_ID(); ?>" class="qodef-comment clearfix">
 		<?php endif; ?>
-		<div class="comment-author vcard">
+		<div class="qodef-comment-image">
 			<?php if ( 0 != $args['avatar_size'] ) echo get_avatar( $comment, $args['avatar_size'] ); ?>
-			<?php
-				/* translators: %s: comment author link */
-				printf( __( '%s <span class="says">says:</span>' ),
-					sprintf( '<cite class="fn">%s</cite>', get_comment_author_link( $comment ) )
-				);
-			?>
 		</div>
 		<?php if ( '0' == $comment->comment_approved ) : ?>
 		<em class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.' ) ?></em>
 		<br />
 		<?php endif; ?>
 
-		<div class="comment-meta commentmetadata"><a href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>">
+		<div class="qodef-comment-text">
+		<a href="<?php echo esc_url( get_comment_link( $comment, $args ) ); ?>">
 			<?php
 				/* translators: 1: comment date, 2: comment time */
-				printf( __( '%1$s at %2$s' ), get_comment_date( '', $comment ),  get_comment_time() ); ?></a><?php edit_comment_link( __( '(Edit)' ), '&nbsp;&nbsp;', '' );
+				printf( __( '%1$s at %2$s' ), get_comment_date( '', $comment ),  get_comment_time() ); ?>
+				</a>
+				<?php edit_comment_link( __( '(Edit)' ), '&nbsp;&nbsp;', '' );
 			?>
-		</div>
 
 		<?php comment_text( $comment, array_merge( $args, array( 'add_below' => $add_below, 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 
@@ -303,6 +299,7 @@ class Walker_Comment extends Walker {
 			'after'     => '</div>'
 		) ) );
 		?>
+		</div>
 
 		<?php if ( 'div' != $args['style'] ) : ?>
 		</div>
