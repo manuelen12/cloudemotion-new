@@ -182,14 +182,18 @@
 	 	$target=$(target);
 	 	if ($target.length) {	
 	 		$('html,body').animate({
-	 			scrollTop: ($target.offset().top)+"px"
+	 			scrollTop: ($target.offset().top-100)+"px"
 	 		}, 2000);
 	 	}
 	 }
 
 
 	 $("*[parallax-cl]").on("click",function(e) {
-	 	var id=$(this).attr("href");
+	 	var id=$(this).attr("href"),
+	 	parentTarget=$(this).parent();
+	 	$(".menu-item").removeClass("qodef-active-item");
+	 	parentTarget.addClass("qodef-active-item");
+	 	console.log(parentTarget);
 	 	event.preventDefault();
 	 	triggerParallaxCl(id);
 	 })

@@ -19,7 +19,8 @@ from django.contrib.auth import get_user_model
 
 
 class UserAdminViews(viewsets.ViewSet):
-    permission_classes = (permissions.AllowAny,)
+    permission_classes = ()
+    # permission_classes = (permissions.AllowAlways,)
     """
         POST To Login with some user
         GET All local files

@@ -37,6 +37,5 @@
         </div>
     </article>
     <?php  
-    get_template_part( 'template-parts/comments/comment-list', null );
     get_template_part( 'template-parts/comments/comment-box', null );
     ?>

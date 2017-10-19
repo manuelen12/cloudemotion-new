@@ -1,6 +1,9 @@
 
 
-
+.qodef-logo-wrapper a{
+	height: 83px;
+	display: inline !important;
+}
 .qodef-custom-font-holder-blog,
 .qodef-custom-font-holder{
 

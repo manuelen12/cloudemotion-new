@@ -135,11 +135,10 @@ while ( have_posts() ) : the_post();
                                         );
                                     $comments = get_comments($args);
                                     foreach($comments as $comment) :
-                                        echo array_keys($comment);
                                     ?>
                                     <li class="recentcomments">
-                                        <span class="comment-author-link"><?php echo $comment["comment_author"] ?></span> on 
-                                        <a href="http://startit.select-themes.com/product/limited-edition-headphones/#comment-56">Limited Edition Headphones</a>
+                                        <span class="comment-author-link"><?php echo $comment->comment_author; ?></span> on 
+                                        <a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo $comment->post_name; ?></a>
                                     </li>
                                     <?php 
                                     endforeach;
@@ -151,14 +150,7 @@ while ( have_posts() ) : the_post();
                             <div class="widget widget_archive">
                                 <h4>Archive</h4>
                                 <ul>
-                                    <li><a href="http://startit.select-themes.com/2016/07/">July 2016</a>&nbsp;(12)</li>
-                                    <li><a href="http://startit.select-themes.com/2015/10/">October 2015</a>&nbsp;(6)</li>
-                                    <li><a href="http://startit.select-themes.com/2015/09/">September 2015</a>&nbsp;(4)</li>
-                                    <li><a href="http://startit.select-themes.com/2015/08/">August 2015</a>&nbsp;(5)</li>
-                                    <li><a href="http://startit.select-themes.com/2015/07/">July 2015</a>&nbsp;(3)</li>
-                                    <li><a href="http://startit.select-themes.com/2015/06/">June 2015</a>&nbsp;(3)</li>
-                                    <li><a href="http://startit.select-themes.com/2015/05/">May 2015</a>&nbsp;(3)</li>
-                                    <li><a href="http://startit.select-themes.com/2015/04/">April 2015</a>&nbsp;(4)</li>
+                                    <?php wp_get_archives('type=monthly'); ?>
                                 </ul>
                             </div>    
                         </aside>

@@ -5,134 +5,14 @@ get_header();
     <div class="loader in"></div>
     <div class="qodef-wrapper">
         <div class="qodef-wrapper-inner">
-            <header class="qodef-page-header">
-                <div class="qodef-menu-area" style="background-color:rgba(255, 255, 255, 0)">
-                    <form role="search" action="" class="qodef-search-cover" method="get">
-                        <div class="qodef-form-holder-outer">
-                            <div class="qodef-form-holder">
-                                <div class="qodef-form-holder-inner">
-                                    <input type="text" placeholder="Search" name="s" class="qode_search_field" autocomplete="off" />
-                                    <div class="qodef-search-close">
-                                        <a href="#">
-                                            <i class="qodef-icon-ion-icon ion-close " ></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                    <div class="qodef-vertical-align-containers">
-                        <div class="qodef-position-left">
-                            <div class="qodef-position-left-inner">
-                                <div class="qodef-logo-wrapper">
-                                    <a href="http://www.cloudemotionteam.com" style="height: 90px;">
-                                        <img width="250" class="qodef-normal-logo" src="./wp-content/themes/cloudemotion/assets/img/logo_header.jpg" alt="logo"/>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="qodef-position-right">
-                            <div class="qodef-position-right-inner">
-                                <nav class="qodef-main-menu qodef-drop-down qodef-default-nav">
-                                    <ul id="menu-main-menu" class="clearfix">
-                                        <li id="nav-menu-item-634" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item current-menu-ancestor current_page_ancestor menu-item-has-children qodef-active-item has_sub wide wide_background">
-                                            <a href="#general" parallax-cl class=" current ">
-                                                <span class="item_outer">
-                                                    <span class="item_inner">
-                                                        <span class="menu_icon_wrapper">
-                                                            <i class="menu_icon null fa"></i>
-                                                        </span>
-                                                        <span class="item_text">Inicio</span>
-                                                    </span>
-                                                    <span class="plus"></span>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li id="nav-menu-item-314" class="menu-item">
-                                            <a href="#creative" parallax-cl class="">
-                                                <span class="item_outer">
-                                                    <span class="item_inner">
-                                                        <span class="menu_icon_wrapper">
-                                                            <i class="menu_icon null fa"></i>
-                                                        </span>
-                                                        <span class="item_text">Creativo</span>
-                                                    </span>
-                                                    <span class="plus"></span>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li id="nav-menu-item-629" class="menu-item">
-                                            <a href="#portfolios" parallax-cl class="">
-                                                <span class="item_outer">
-                                                    <span class="item_inner">
-                                                        <span class="menu_icon_wrapper">
-                                                            <i class="menu_icon null fa"></i>
-                                                        </span>
-                                                        <span class="item_text">Portafolio</span>
-                                                    </span>
-                                                    <span class="plus"></span>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li id="nav-menu-item-1211" class="menu-item">
-                                            <a href="#planing" parallax-cl class=" no_link">
-                                                <span class="item_outer">
-                                                    <span class="item_inner">
-                                                        <span class="menu_icon_wrapper">
-                                                            <i class="menu_icon null fa"></i>
-                                                        </span>
-                                                        <span class="item_text">Planificacion</span>
-                                                    </span>
-                                                    <span class="plus"></span>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li id="nav-menu-item-630" class="menu-item">
-                                            <a href="#teamWork" parallax-cl class="">
-                                                <span class="item_outer">
-                                                    <span class="item_inner">
-                                                        <span class="menu_icon_wrapper">
-                                                            <i class="menu_icon null fa"></i>
-                                                        </span>
-                                                        <span class="item_text">Diseño&Marketing</span>
-                                                    </span>
-                                                    <span class="plus"></span>
-                                                </span>
-                                            </a>
-                                        </li>
-                                        <li id="nav-menu-item-632" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub wide icons wide_background">
-                                            <a href="#team" parallax-cl class="">
-                                                <span class="item_outer">
-                                                    <span class="item_inner">
-                                                        <span class="menu_icon_wrapper">
-                                                            <i class="menu_icon null fa"></i>
-                                                        </span>
-                                                        <span class="item_text">Equipo</span>
-                                                    </span>
-                                                    <span class="plus"></span>
-                                                </span>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </nav>
-                                <a        data-icon-close-same-position="yes"                        class="qodef-search-opener" href="javascript:void(0)">
-                                    <i class="qodef-icon-ion-icon ion-ios-search-strong " ></i>
-                                </a>
-                                <a class="qodef-side-menu-button-opener "  href="javascript:void(0)">
-                                    <span aria-hidden="true" class="qodef-icon-font-elegant icon_menu " ></span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </header>
+            <?php     get_template_part( 'template-parts/navigation/navigation-top', null ); ?>
             <!-- close .qodef-mobile-header -->
             <a id='qodef-back-to-top'  href='#'>
                 <span class="qodef-icon-stack">
                     <i class="qodef-icon-font-awesome fa fa-chevron-up " ></i>
                 </span>
             </a>
-            <div class="qodef-content" style="margin-top: -100px">
+            <div class="qodef-content">
                 <div class="qodef-content-inner">
                     <div class="qodef-full-width">
                         <div class="qodef-full-width-inner">
@@ -1512,7 +1392,7 @@ get_header();
                                             <div class="qodef-elements-holder qodef-three-columns qodef-responsive-mode-1024 qodef-one-column-alignment-left" >
 
                                                 <div class = "qodef-portfolio-list-holder clearfix" >
-
+                                                    <?php $count=wp_count_posts(); echo  $count->publish;?>
 
                                                     <?php
                                                     if ( have_posts() ) :
