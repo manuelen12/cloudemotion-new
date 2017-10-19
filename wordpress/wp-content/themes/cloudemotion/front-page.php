@@ -7,7 +7,7 @@ get_header();
         <div class="qodef-wrapper-inner">
             <header class="qodef-page-header">
                 <div class="qodef-menu-area" style="background-color:rgba(255, 255, 255, 0)">
-                    <form role="search" action="http://startit.select-themes.com/" class="qodef-search-cover" method="get">
+                    <form role="search" action="" class="qodef-search-cover" method="get">
                         <div class="qodef-form-holder-outer">
                             <div class="qodef-form-holder">
                                 <div class="qodef-form-holder-inner">
@@ -25,7 +25,7 @@ get_header();
                         <div class="qodef-position-left">
                             <div class="qodef-position-left-inner">
                                 <div class="qodef-logo-wrapper">
-                                    <a href="http://startit.select-themes.com/" style="height: 90px;">
+                                    <a href="http://www.cloudemotionteam.com" style="height: 90px;">
                                         <img width="250" class="qodef-normal-logo" src="./wp-content/themes/cloudemotion/assets/img/logo_header.jpg" alt="logo"/>
                                     </a>
                                 </div>
@@ -739,7 +739,7 @@ get_header();
 
 
                                                     <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-                                                        <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-trends-in-seo-analytics/" target="_self"></a>
+                                                        <a class ="qodef-portfolio-link" href="" target="_self"></a>
                                                         <div class = "qodef-item-image-holder">
                                                             <div class="qodef-portfolio-shader"></div>
                                                             <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" />
@@ -760,7 +760,7 @@ get_header();
                                                         </div>
                                                     </article>
                                                     <article class="qodef-portfolio-item mix portfolio_category_8 portfolio_category_9" >
-                                                        <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/app-update-rebrand/" target="_self"></a>
+                                                        <a class ="qodef-portfolio-link" href="" target="_self"></a>
                                                         <div class = "qodef-item-image-holder">
                                                             <div class="qodef-portfolio-shader"></div>
                                                             <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
@@ -781,7 +781,7 @@ get_header();
                                                         </div>
                                                     </article>
                                                     <article class="qodef-portfolio-item mix portfolio_category_10 portfolio_category_7" >
-                                                        <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/the-tablet-app-of-the-future/" target="_self"></a>
+                                                        <a class ="qodef-portfolio-link" href="" target="_self"></a>
                                                         <div class = "qodef-item-image-holder">
                                                             <div class="qodef-portfolio-shader"></div>
                                                             <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
@@ -802,7 +802,7 @@ get_header();
                                                         </div>
                                                     </article>
                                                     <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-                                                        <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/big-data-goes-global/" target="_self"></a>
+                                                        <a class ="qodef-portfolio-link" href="" target="_self"></a>
                                                         <div class = "qodef-item-image-holder">
                                                             <div class="qodef-portfolio-shader"></div>
                                                             <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
@@ -823,7 +823,7 @@ get_header();
                                                         </div>
                                                     </article>
                                                     <article class="qodef-portfolio-item mix portfolio_category_10 portfolio_category_7" >
-                                                        <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-findings-in-responsive-testing/" target="_self"></a>
+                                                        <a class ="qodef-portfolio-link" href="" target="_self"></a>
                                                         <div class = "qodef-item-image-holder">
                                                             <div class="qodef-portfolio-shader"></div>
                                                             <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image"/>
@@ -844,7 +844,7 @@ get_header();
                                                         </div>
                                                     </article>
                                                     <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-                                                        <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/millenials-research-2015/" target="_self"></a>
+                                                        <a class ="qodef-portfolio-link" href="" target="_self"></a>
                                                         <div class = "qodef-item-image-holder">
                                                             <div class="qodef-portfolio-shader"></div>
                                                             <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
@@ -865,7 +865,7 @@ get_header();
                                                         </div>
                                                     </article>
                                                     <article class="qodef-portfolio-item mix portfolio_category_8 portfolio_category_9" >
-                                                        <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-trends-in-social-media/" target="_self"></a>
+                                                        <a class ="qodef-portfolio-link" href="" target="_self"></a>
                                                         <div class = "qodef-item-image-holder">
                                                             <div class="qodef-portfolio-shader"></div>
                                                             <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
@@ -1072,7 +1072,7 @@ get_header();
                                                                         <p class="qodef-testimonial-title">
                                                                             Diseño Asombroso.               
                                                                         </p>
-                                                                        <p class="qodef-testimonial-text">Se lucieron con el diseño y entendieron a la perfección el modelo de negocios de mi empresa. Gracias a su ingenio hoy me siento más que satisfecho!.</p>
+                                                                        <p class="qodef-testimonial-text">Se lucieron con el diseño y entendieron a la perfección el modelo de negocios de mi empresa. Gracias a su ingenio hoy sigo satisfecho del producto que desarrollamos!.</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="qodef-testimonial-info-holder">
@@ -1095,7 +1095,7 @@ get_header();
                                                                         <p class="qodef-testimonial-title">
                                                                             Flexibilidad Total               
                                                                         </p>
-                                                                        <p class="qodef-testimonial-text">Nuestra aplicación se adapta a cualquier dispositivo: Teléfono Móvil, Tablet o PC lo que sin distorcionar su contenido y manteniendo una impecable interfaz para los usuarios</p>
+                                                                        <p class="qodef-testimonial-text">Nuestra aplicación se adapta a cualquier dispositivo: Teléfono Móvil, Tablet o PC lo que sin distorcionar su contenido y manteniendo una impecable interfaz para los usuarios ¡100% Recomendados!</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="qodef-testimonial-info-holder">
@@ -1118,9 +1118,9 @@ get_header();
                                                                 <div class="qodef-testimonial-text-holder">
                                                                     <div class="qodef-testimonial-text-inner">
                                                                         <p class="qodef-testimonial-title">
-                                                                            Capacitación Profesional.             
+                                                                            Capacitación Profesional             
                                                                         </p>
-                                                                        <p class="qodef-testimonial-text"> Es muy gratificante encontrar instructores con tanto dominio del tema y con tanta facilidad para transmitir sus conocimientos, de verdad son extraordinarios, los Felicito.</p>
+                                                                        <p class="qodef-testimonial-text"> Es muy gratificante encontrar instructores con tanto dominio del tema y con tanta facilidad para transmitir sus conocimientos, de verdad son extraordinarios, Los Felicito.</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="qodef-testimonial-info-holder">
@@ -1214,7 +1214,7 @@ get_header();
                                                 </div>
                                                 <div class="wpb_text_column wpb_content_element ">
                                                     <div class="wpb_wrapper">
-                                                        <h2>Más que un Diseño es una Obra de Arte</h2>
+                                                        <h2>More than a Design. It is an Artwork</h2>
                                                     </div>
                                                 </div>
                                                 <div class="vc_empty_space"  style="height: 20px" >
@@ -1222,14 +1222,14 @@ get_header();
                                                 </div>
                                                 <div class="wpb_text_column wpb_content_element ">
                                                     <div class="wpb_wrapper">
-                                                        <h4>Para nosotros es importante resaltar tu estilo y dejar en claro tu esencia en el diseño, es por esto que tenemos un equipo de profesionales especialistas en dotar a tu sitio web de una interfaz genuina y atractiva que te haga destacar!</h4>
+                                                        <h4>We care about highlighting your style keeping your being in the design . We have a  specialized professionals team to achieve this goal. We will give an unique and catching interface to your website to make it stands out!</h4>
                                                     </div>
                                                 </div>
                                                 <div class="vc_empty_space"  style="height: 43px" >
                                                     <span class="vc_empty_space_inner"></span>
                                                 </div>
                                                 <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-                                                    <span class="qodef-btn-text">Ver más</span>
+                                                    <span class="qodef-btn-text">See More</span>
                                                     <span class="qodef-btn-text-icon">
                                                         <i class="qodef-icon-simple-line-icon icon-rocket " ></i>
                                                     </span>
@@ -1481,7 +1481,7 @@ get_header();
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
                                                 <div class="qodef-custom-font-holder" data-font-size= 52 data-line-height= 60>
-                                                    En Cloudemotion apostamos por la educacion de calidad y las nuevas tendencias tecnologicas
+                                                   Cloudemotion Bets On Quality Education and New Technological Trends
                                                 </div>
                                                 <div class="vc_empty_space"  style="height: 18px" >
                                                     <span class="vc_empty_space_inner"></span>
@@ -1490,7 +1490,7 @@ get_header();
                                                     <div class="wpb_wrapper">
                                                         <h4>
                                                             <span style="color: #ffffff;">
-                                                                Nuestros profesionales tendran la oportunidad de gestionar contenidos que ayuden a nuestros seguidores a mantenerce actualizados...
+                                                                Our professionals will have the opportunity to manage the information that will help our followers to be up to date...
                                                             </span>
                                                         </h4>
                                                     </div>
@@ -1556,46 +1556,33 @@ get_header();
                                                     <div class="vc_empty_space"  style="height: 24px" >
                                                         <span class="vc_empty_space_inner"></span>
                                                     </div>
-                                                    <a href="http://startit.select-themes.com/">
+                                                    <a href="">
                                                         <img src="./wp-content/themes/cloudemotion/assets/img/logo-footer.png" alt="logo">
                                                     </a>
                                                     <div class="vc_empty_space"  style="height: 24px" >
                                                         <span class="vc_empty_space_inner"></span>
                                                     </div>
-                                                    <p>198 West 21th Street, Suite 721, New York NY</p>
-                                                    <p>5109 Pacific Coast Highway, Los Angeles CA</p>
-                                                    <p>Email: youremail@yourdomain.com</p>
-                                                    <p>Phone: +88 (0) 101 0000 000 </p>
-                                                    <p>Fax: +88 (0) 202 0000 001</p>
+                                                    <p>Valle Lindo - Turmero. Aragua, Venezuela</p>
+                                                    
+
+                                                    <p><strong>Email:</strong> cloudemotioninfo@gmail.com</p>
+                                                    <p><strong>Phone:</strong> +54 (424) 0539 599 </p>
+                                                    <p><strong>"Talento 100% Latino"</strong></p>
                                                     <div class="vc_empty_space"  style="height: 28px" >
                                                         <span class="vc_empty_space_inner"></span>
                                                     </div>
                                                     <div class="custom-color-row-changer">
                                                         <span class="qodef-icon-shortcode square" style="margin: 0px -5px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#25cbf5" data-hover-background-color="#25cbf5" data-hover-color="#ffffff" data-color="#ffffff">
-                                                            <a class=""  href="https://www.facebook.com/" target="_blank">
+                                                            <a class=""  href="https://www.facebook.com/CloudEmotion-1608492516114619/" target="_blank">
                                                                 <i class="qodef-icon-font-awesome fa fa-facebook qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
                                                             </a>
                                                         </span>
                                                         <span class="qodef-icon-shortcode square" style="margin: 0px -4px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#25cbf5" data-hover-background-color="#25cbf5" data-hover-color="#ffffff" data-color="#ffffff">
-                                                            <a class=""  href="https://twitter.com/" target="_blank">
-                                                                <i class="qodef-icon-font-awesome fa fa-twitter qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-                                                            </a>
-                                                        </span>
-                                                        <span class="qodef-icon-shortcode square" style="margin: 0px -5px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#25cbf5" data-hover-background-color="#25cbf5" data-hover-color="#ffffff" data-color="#ffffff">
-                                                            <a class=""  href="https://vine.co/" target="_blank">
-                                                                <i class="qodef-icon-font-awesome fa fa-vine qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-                                                            </a>
-                                                        </span>
-                                                        <span class="qodef-icon-shortcode square" style="margin: 0px -4px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#25cbf5" data-hover-background-color="#25cbf5" data-hover-color="#ffffff" data-color="#ffffff">
-                                                            <a class=""  href="https://www.linkedin.com/" target="_blank">
+                                                            <a class=""  href="https://www.linkedin.com/organization/18029443/" target="_blank">
                                                                 <i class="qodef-icon-font-awesome fa fa-linkedin qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
                                                             </a>
                                                         </span>
-                                                        <span class="qodef-icon-shortcode square" style="margin: 0px -4px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#25cbf5" data-hover-background-color="#25cbf5" data-hover-color="#ffffff" data-color="#ffffff">
-                                                            <a class=""  href="https://instagram.com/" target="_blank">
-                                                                <i class="qodef-icon-font-awesome fa fa-instagram qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-                                                            </a>
-                                                        </span>
+                                                       
                                                     </div>
                                                 </div>
                                             </div>
@@ -1612,7 +1599,7 @@ get_header();
                                                     <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
                                                         <li>
-                                                            <a href="http://startit.select-themes.com/schools-to-hold-programming-courses-in-2016/">Schools to Hold Programming Courses In 2016</a>
+                                                            <a href="">Schools to Hold Programming Courses In 2016</a>
                                                         </li>
                                                     <?php endwhile; endif; ?>
 
@@ -1634,31 +1621,17 @@ get_header();
                                                         <div class="tweet_content_holder">
                                                             <div class="qodef_tweet_text">
                                                                 Don't forget to check out Capri - The Hot New 
-                                                                <a target="_blank" href="http://twitter.com/search?q=WordPress">#WordPress</a> Theme You've Been Waiting For ;) 
-                                                                <a target="_blank" href="http://t.co/RrBK5W8VsN">http://t.co/RrBK5W8VsN</a>
-                                                                <a target="_blank" href="http://t.co/OGnBMeczUI">http://t.co/OGnBMeczUI</a>
+                                                                <a target="_blank" href="">#WordPress</a> Theme You've Been Waiting For ;) 
+                                                                <a target="_blank" href=""></a>
+                                                                <a target="_blank" href=""></a>
                                                             </div>
                                                             <div class="qodef_tweet_time">
-                                                                <a target="_blank" href="https://twitter.com/SelectThemes/statuses/609347124896120832">
+                                                                <a target="_blank" href="">
                                                                     2 years ago                                            </a>
                                                                 </div>
                                                             </div>
                                                         </li>
-                                                        <li>
-                                                            <div class="tweet_icon_holder">
-                                                                <span class="social_twitter"></span>
-                                                            </div>
-                                                            <div class="tweet_content_holder">
-                                                                <div class="qodef_tweet_text">
-                                                                    <a target="_blank" href="http://twitter.com/ggserge">@ggserge</a> Please send us your ticket ID, so we can forward your ticket to our support team. Thanks.                                    
-
-                                                                </div>
-                                                                <div class="qodef_tweet_time">
-                                                                    <a target="_blank" href="https://twitter.com/SelectThemes/statuses/609293800289251330">
-                                                                        2 years ago                                            </a>
-                                                                    </div>
-                                                                </div>
-                                                            </li>
+                                                      
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -1684,7 +1657,7 @@ get_header();
                                                                         </div>
                                                                         <div class="qodef-item-text-holder">
                                                                             <h6 class="qodef-item-title ">
-                                                                                <a href="http://startit.select-themes.com/managing-office-culture-2/" >
+                                                                                <a href="" >
                                                                                     Managing Office Culture          </a>
                                                                                 </h6>
                                                                                 <div class="qodef-item-info-section">
@@ -1747,7 +1720,7 @@ get_header();
                                 <div class="qodef-footer-bottom-holder-inner">
                                     <div class="qodef-column-inner">
                                         <div id="text-5" class="widget qodef-footer-text widget_text">
-                                            <div class="textwidget">Copyright © Select Themes</div>
+                                            <div class="textwidget">CloudEmotion © 2017 | Una Red Un Universo</div>
                                         </div>
                                     </div>
                                 </div>
