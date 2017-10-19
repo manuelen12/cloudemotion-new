@@ -53,7 +53,7 @@
                                             </a>
                                         </li>
                                         <li id="nav-menu-item-630" class="menu-item">
-                                            <a href="#teamWork" parallax-cl class="">
+                                            <a href="#design" parallax-cl class="">
                                                 <span class="item_outer">
                                                     <span class="item_inner">
                                                         <span class="menu_icon_wrapper">
