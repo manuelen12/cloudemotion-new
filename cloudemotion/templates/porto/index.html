@@ -1,27 +1,25 @@
 <!DOCTYPE html>
-<!-- saved from url=(0068)http://preview.oklerthemes.com/porto/5.7.2/demo-resume.html#about-me -->
 <html ng-app="mainapp">
 <head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
-		<!-- Basic -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">	
-		<title>CloudEmotionTeam</title>
-		<meta name="keywords" content="HTML5 Template">
-		<meta name="description" content="Porto - Responsive HTML5 Template">
-		<meta name="author" content="okler.net">
-		<!-- Favicon -->
-		<link rel="shortcut icon" href="./assets/img/png/cloud.png" type="image/x-icon">
-		<link rel="apple-touch-icon" href="./assets/img/png/cloud.png">
-		<!-- Mobile Metas -->
-		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<!-- Web Fonts  -->
-		<link href="./assets/css/css" rel="stylesheet" type="text/css">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+	<!-- Basic -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+	<title>CloudEmotionTeam</title>
+	<meta name="keywords" content="HTML5 Template">
+	<meta name="description" content="Porto - Responsive HTML5 Template">
+	<meta name="author" content="okler.net">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="./assets/img/png/cloud.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="./assets/img/png/cloud.png">
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Web Fonts  -->
+	<link href="./assets/css/css" rel="stylesheet" type="text/css">
 
-		<link href="./assets/production/dev_css/main.min.css" rel="stylesheet">
-	    <!-- Head Libs -->
-	    <script src="./assets/js/modernizr.min.js"></script>
-  
-  </head>
+	<link href="./assets/production/dev_css/main.min.css" rel="stylesheet">
+    <!-- Head Libs -->
+    <script src="./assets/js/modernizr.min.js"></script>  
+</head>
 	<body data-spy="scroll" data-target=".wrapper-spy" ng-controller="MainCtrl as vm">
 		<div class="body">
 			<menu-custom></menu-custom>
@@ -38,19 +36,19 @@
 								<img src="./assets/img/jpg/me.jpg" class="img-responsive custom-border custom-image-position-2 custom-box-shadow-4 img-about" alt="">
 							</div>
 							<div class="col-md-5 col-sm-8">
-								<h1 class="text-color-primary custom-font-size-1">Adam Doe</h1>
-								<p class="custom-text">Chief Product Officer at Okler Themes</p>
+								<h1 class="text-color-primary custom-font-size-1" ng-bind="vm.users.first_name+' '+vm.users.last_name"></h1>
+								<p class="custom-text" ng-bind="vm.users.position.specialty"></p>
 								<span class="custom-about-me-infos">
-									<span class="custom-text-color-1 text-uppercase">Greater New York area</span>
-									<span class="custom-text-color-1 text-uppercase mb-md">Information Technology &amp; Services</span>
+									<span class="custom-text-color-1 text-uppercase" ng-bind="vm.users.position.sities"></span>
+									<span class="custom-text-color-1 text-uppercase mb-md" ng-bind="vm.users.position.resumen"></span>
 									<span class="custom-text-color-1 text-uppercase">
 										<strong class="custom-text-color-1">Previous: </strong>
-										Front-End Developer at Porto
+											<text ng-bind="vm.user_exp.company.name+' '+vm.user_exp.position.name"></text>
 										<a data-hash="" href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>
 									</span>
 									<span class="custom-text-color-1 text-uppercase">
 										<strong class="custom-text-color-1">Education: </strong>
-										Porto School
+											<text ng-bind="vm.education.education.name+' '+vm.education.institute.name"></text>
 										<a data-hash="" href="#education" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>
 									</span>
 								</span>
@@ -78,7 +76,6 @@
 							</a>
 						</li>
 					</ul>
-
 				</section>
 				
 
@@ -124,7 +121,7 @@
 									<ul class="custom-list-style-1 p-none">
 										<li>
 											<span class="text-color-dark">Birthday:</span>
-											<span class="custom-text-color-2">1990 October 2</span>
+											<span class="custom-text-color-2" ng-bind="vm.users.birthday"></span>
 										</li>
 										<li>
 											<span class="text-color-dark">Marital:</span>
@@ -132,7 +129,7 @@
 										</li>
 										<li>
 											<span class="text-color-dark">Nationality:</span>
-											<span class="custom-text-color-2">American</span>
+											<span class="custom-text-color-2" ng-bind="vm.users.user_nationality[0]"></span>
 										</li>
 									</ul>
 								</div>
@@ -140,15 +137,19 @@
 									<ul class="custom-list-style-1 p-none">
 										<li>
 											<span class="text-color-dark">Skype:</span>
-											<span class="custom-text-color-2"><a class="custom-text-color-2" href="skype:yourskype?chat">yourskype</a></span>
+											<span class="custom-text-color-2"><a class="custom-text-color-2"><label ng-bind="vm.users.skype"></label></a></span>
 										</li>
 										<li>
 											<span class="text-color-dark">PHONE:</span>
-											<span class="custom-text-color-2"><a class="custom-text-color-2" href="tel:123456789">123-456-789</a></span>
-										</li>
+											<span class="custom-text-color-2" ng-bind="vm.users.phone"></span>
+										</li>										
+									</ul>
+								</div>
+								<div class="col-md-12 col-sm-12 p-none">
+									<ul class="custom-list-style-1 p-none">
 										<li>
 											<span class="text-color-dark">EMAIL:</span>
-											<span class="custom-text-color-2"><a class="custom-text-color-2" href="mailto:info@domain.com">info@domain.com</a></span>
+											<span class="custom-text-color-2"><a class="custom-text-color-2"><label ng-bind="vm.users.email"></label></a></span>
 										</li>
 									</ul>
 								</div>
@@ -156,7 +157,7 @@
 
 							<h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">About Me</h2>
 
-							<p class="custom-text-color-2">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+								<p class="custom-text-color-2" ng-bind="vm.users.about_me"></p>
 
 							<div class="about-me-more" id="aboutMeMore">
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu. Praesent aliquam velit vel libero dictum, non sollicitudin lectus mollis. Morbi sollicitudin auctor gravida. Vivamus vitae dui non lorem euismod pretium. Morbi congue sem sed ex iaculis, nec mattis felis pretium. Nullam molestie libero id odio blandit sodales. Suspendisse non mauris et felis molestie placerat aliquet a risus. Aliquam ac leo tempus, hendrerit eros mollis, gravida est.</p>
@@ -180,23 +181,23 @@
 								<div class="timeline-body">
 									
 									<!-- EXP -->
-									<article class="timeline-box right custom-box-shadow-2" ng-repeat="ex in vm.experience">
+									<article class="timeline-box right custom-box-shadow-2" ng-repeat="ex in vm.users.user_experience">
 										<div class="experience-info col-md-3 col-sm-5 background-color-primary" >
 											<span class="from text-color-dark text-uppercase">
 												From
-												<span class="font-weight-semibold" ng-bind="ex.from">Sep 2012</span>
+												<span class="font-weight-semibold" ng-bind="ex.start_date | date">Sep 2012</span>
 											</span>
 											<span class="to text-color-dark text-uppercase">
 												To
-												<span class="font-weight-semibold" ng-bind="ex.to">Present</span>
+												<span class="font-weight-semibold" ng-bind="ex.ending_date | date">Present</span>
 											</span>
 											<p class="text-color-dark" ng-bind="ex.time"></p>
-											<span class="company text-color-dark font-weight-semibold"><label ng-bind="ex.company"></label>		
-												<span class="company-location text-color-dark font-weight-normal text-uppercase" ng-bind="ex.city"></span>
+											<span class="company text-color-dark font-weight-semibold"><label ng-bind="ex.company.name"></label>		
+												<span class="company-location text-color-dark font-weight-normal text-uppercase" ng-bind="ex.company.address"></span>
 											</span>
 										</div>
 										<div class="experience-description col-md-9 col-sm-7 match-height background-color-light" style="height: 244px;">
-											<h4 class="text-color-dark font-weight-semibold" ng-bind="ex.position"></h4>
+											<h4 class="text-color-dark font-weight-semibold" ng-bind="ex.position.name"></h4>
 											<p class="custom-text-color-2" ng-bind="ex.description" style="word-wrap:break-word;"></p>
 										</div>
 									</article>									
@@ -213,13 +214,13 @@
 					<div class="col-md-12">
 						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Education</h2>
 						<div class="owl-carousel row owl-education" style="padding:40px;">
-							<div class="item" style="width: 420px;" ng-repeat="e in vm.education">
+							<div class="item" style="width: 420px;" ng-repeat="e in vm.users.user_education">
 								<div class="panel panel-default item-box">
 									<div class="panel-body">
 										<p><i class="icon-graduation icons text-color-primary"></i><br>
-											<span ng-bind="e.title" class="title"></span><br>
-											<span ng-bind="e.institute"></span><br>
-											<span class="years" ng-bind="e.years">2015 - 2017</span>
+											<span ng-bind="e.education.name" class="title"></span><br>
+											<span ng-bind="e.institute.name"></span><br>
+											<span class="years" ng-bind="e.start_date | date"></span> - <span class="years" ng-bind="e.ending_date | date"></span>
 										</p>
 									</div>
 								</div>		    	
