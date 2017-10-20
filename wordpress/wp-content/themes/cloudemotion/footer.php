@@ -7,52 +7,41 @@
                     <div class="qodef-column">
                         <div class="qodef-column-inner">
                             <div id="text-2" class="widget qodef-footer-column-1 widget_text">
-                                <div class="textwidget">
-                                    <div class="vc_empty_space"  style="height: 24px" >
-                                        <span class="vc_empty_space_inner"></span>
-                                    </div>
-                                    <a href="http://startit.select-themes.com/">
-                                        <img src="./wp-content/themes/cloudemotion/assets/img/logo-footer.png" alt="logo">
-                                    </a>
-                                    <div class="vc_empty_space"  style="height: 24px" >
-                                        <span class="vc_empty_space_inner"></span>
-                                    </div>
-                                    <p>198 West 21th Street, Suite 721, New York NY</p>
-                                    <p>5109 Pacific Coast Highway, Los Angeles CA</p>
-                                    <p>Email: youremail@yourdomain.com</p>
-                                    <p>Phone: +88 (0) 101 0000 000 </p>
-                                    <p>Fax: +88 (0) 202 0000 001</p>
-                                    <div class="vc_empty_space"  style="height: 28px" >
-                                        <span class="vc_empty_space_inner"></span>
-                                    </div>
-                                    <div class="custom-color-row-changer">
-                                        <span class="qodef-icon-shortcode square" style="margin: 0px -5px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#25cbf5" data-hover-background-color="#25cbf5" data-hover-color="#ffffff" data-color="#ffffff">
-                                            <a class=""  href="https://www.facebook.com/" target="_blank">
-                                                <i class="qodef-icon-font-awesome fa fa-facebook qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-                                            </a>
-                                        </span>
-                                        <span class="qodef-icon-shortcode square" style="margin: 0px -4px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#25cbf5" data-hover-background-color="#25cbf5" data-hover-color="#ffffff" data-color="#ffffff">
-                                            <a class=""  href="https://twitter.com/" target="_blank">
-                                                <i class="qodef-icon-font-awesome fa fa-twitter qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-                                            </a>
-                                        </span>
-                                        <span class="qodef-icon-shortcode square" style="margin: 0px -5px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#25cbf5" data-hover-background-color="#25cbf5" data-hover-color="#ffffff" data-color="#ffffff">
-                                            <a class=""  href="https://vine.co/" target="_blank">
-                                                <i class="qodef-icon-font-awesome fa fa-vine qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-                                            </a>
-                                        </span>
-                                        <span class="qodef-icon-shortcode square" style="margin: 0px -4px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#25cbf5" data-hover-background-color="#25cbf5" data-hover-color="#ffffff" data-color="#ffffff">
-                                            <a class=""  href="https://www.linkedin.com/" target="_blank">
-                                                <i class="qodef-icon-font-awesome fa fa-linkedin qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-                                            </a>
-                                        </span>
-                                        <span class="qodef-icon-shortcode square" style="margin: 0px -4px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#25cbf5" data-hover-background-color="#25cbf5" data-hover-color="#ffffff" data-color="#ffffff">
-                                            <a class=""  href="https://instagram.com/" target="_blank">
-                                                <i class="qodef-icon-font-awesome fa fa-instagram qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-                                            </a>
-                                        </span>
-                                    </div>
-                                </div>
+
+                                                <div class="textwidget">
+                                                    <div class="vc_empty_space"  style="height: 24px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <a href="">
+                                                        <img src="./wp-content/themes/cloudemotion/assets/img/logo-footer.png" alt="logo">
+                                                    </a>
+                                                    <div class="vc_empty_space"  style="height: 24px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <p>Valle Lindo - Turmero. Aragua, Venezuela</p>
+                                                    
+
+                                                    <p><strong>Email:</strong> cloudemotioninfo@gmail.com</p>
+                                                    <p><strong>Phone:</strong> +54 (424) 0539 599 </p>
+                                                    <p><strong>"Talento 100% Latino"</strong></p>
+                                                    <div class="vc_empty_space"  style="height: 28px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="custom-color-row-changer">
+                                                        <span class="qodef-icon-shortcode square" style="margin: 0px -5px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#25cbf5" data-hover-background-color="#25cbf5" data-hover-color="#ffffff" data-color="#ffffff">
+                                                            <a class=""  href="https://www.facebook.com/CloudEmotion-1608492516114619/" target="_blank">
+                                                                <i class="qodef-icon-font-awesome fa fa-facebook qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
+                                                            </a>
+                                                        </span>
+                                                        <span class="qodef-icon-shortcode square" style="margin: 0px -4px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#25cbf5" data-hover-background-color="#25cbf5" data-hover-color="#ffffff" data-color="#ffffff">
+                                                            <a class=""  href="https://www.linkedin.com/organization/18029443/" target="_blank">
+                                                                <i class="qodef-icon-font-awesome fa fa-linkedin qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
+                                                            </a>
+                                                        </span>
+                                                       
+                                                    </div>
+                                                </div>
+                                            
                             </div>
                         </div>
                     </div>
