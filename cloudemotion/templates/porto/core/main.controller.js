@@ -1,19 +1,15 @@
 mainApp.controller('MainCtrl', MainCtrl)
-MainCtrl.$inject=["$scope","PortfolioService"]
-function MainCtrl($scope,PortfolioService) {
+MainCtrl.$inject=["$scope","PortfolioService","$stateParams"]
+function MainCtrl($scope,PortfolioService,$stateParams) {
     var vm = this;
     angular.extend(vm,{
         prueba:"hola mundo2",
-        click:click,
         show:true,
     });
 
-    function click(link) {
-        var body =  $("html, body");
-        var top  =  $(link).offset().top;
-        body.stop().animate({scrollTop:top},1000,'swing',function(){});
-    }
-    vm.users = {
+
+
+   /* vm.users = {
         first_name : 'Gerardo José',
         last_name  : 'Filitto Guerrero',
         email      : 'gerardofilitto@gmail.com',
@@ -75,19 +71,14 @@ function MainCtrl($scope,PortfolioService) {
             }
         ],
         
-    }
+    }*/
        
     
     //vm.user_exp  = vm.users.user_experience;
     //vm.user_exp  = vm.user_exp.pop();
     //vm.education = vm.users.user_education.pop();
     
-   /* PortfolioService.getCv().then(function(response){
-      console.log(response);
-      vm.users = response.data;
-    },function(error){
-      console.log(error);
-    })*/
+   
    
     vm.experience = [{
         from:'Sep 2012',
@@ -136,41 +127,6 @@ function MainCtrl($scope,PortfolioService) {
     }];
 
     console.log("Funciono");
-    this.$onInit=function() { 
-          $(function(){
-            $('.owl-education').owlCarousel({
-                loop:false,
-                margin:0,
-                nav:false,    
-                responsive:{
-                    0:{
-                      items:1,                                                                    
-                    },500:{
-                       items:2,
-                    }
-                }
-            });
-            $('.owl-carousel1').owlCarousel({
-              loop: true,
-              margin: 3,
-              nav: true,
-              navText: [
-                "<i class='fa fa-left'></i>",
-                "<i class='fa fa-right'></i>"
-              ],              
-              responsive: {
-                0: {
-                  items: 1
-                },
-                600: {
-                  items: 3
-                },
-                1000: {
-                  items: 3
-                }
-              }
-            })
-        })     
-    }
+    
 
 }

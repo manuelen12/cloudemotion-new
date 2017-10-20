@@ -15,14 +15,14 @@ function urlHelpers($http,$q,$state, ENDPOINT,ValidatorHelper) {
 
 
 	function evalError(error) {
-		console.log(error);
+		/*console.log(error);
 		if (error && error.status==401) {
 			if (!unauthorize) ValidatorHelper.message("No estas autorizado para entrar al sistema - Por favor Inicia Sesion","error");
 			localStorage.setItem("token", "");
 			unauthorize=true;
 			$state.go("login");
 		}else{
-			/*if(error.data && error.data.errors)
+			if(error.data && error.data.errors)
 			{
 				var field=translate[Object.keys(error.data.errors)[0]]?translate[Object.keys(error.data.errors)[0]]:Object.keys(error.data.errors)[0];
 				ValidatorHelper.message(field +" - "+ error.data.errors[(Object.keys(error.data.errors)[0])],"error");
@@ -39,8 +39,8 @@ function urlHelpers($http,$q,$state, ENDPOINT,ValidatorHelper) {
 			{
 				console.log(4);
 				ValidatorHelper.message("Ha ocurrido un error - Intentelo de nuevo mas tarde","error");
-			}*/
-		}
+			}
+		}*/
 	}
 
 	
@@ -100,9 +100,6 @@ function urlHelpers($http,$q,$state, ENDPOINT,ValidatorHelper) {
 		var options={
 			url:(id ? ENDPOINT+url+id+"/" : ENDPOINT+url),
 			method:"GET",
-			headers:{
-				"Authorization":"JWT "+localStorage.getItem("token")
-			},
 			withCredentials: true,
 		};
 		if (params) {
