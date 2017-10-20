@@ -177,11 +177,9 @@
 
 
 	 function triggerParallaxCl(target) {
-	 	console.log(target);
-
-	 	$target=$(target);
-	 	if ($target.length) {	
-	 		$('html,body').animate({
+		 	$target=$(target);
+		 	if ($target.length) {	
+		 		$('html,body').animate({
 	 			scrollTop: ($target.offset().top-100)+"px"
 	 		}, 2000);
 	 	}

@@ -15,7 +15,7 @@
                 <span class="vc_empty_space_inner"></span>
             </div>
             <div class="qodef-custom-font-holder-blog" >
-                <?php the_content(); ?>
+                <?php echo wp_trim_words( get_the_content(), 40, '...' );?>
             </div>
             <div class="vc_empty_space"  style="height: 60px" >
                 <span class="vc_empty_space_inner"></span>
@@ -30,3 +30,4 @@
         </div>
     </div>
 </div>
+
