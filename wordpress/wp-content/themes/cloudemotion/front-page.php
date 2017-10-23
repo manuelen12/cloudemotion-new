@@ -40,7 +40,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h3><strong>High quality on web develop</strong></h3>
+                                                            <h3><strong ng-bind="'High quality on web develop' | translate"></strong></h3>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 19px" >
@@ -70,8 +70,11 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h3><strong>Supporting and Services IT</strong></h3><br>
+                                                            <h3><strong ng-bind="'Supporting and Services IT'|translate"></strong></h3>
                                                         </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 19px" >
+                                                        <span class="vc_empty_space_inner"></span>
                                                     </div>
                                                     
                                                     <div class="wpb_text_column wpb_content_element ">
@@ -79,6 +82,7 @@ get_header();
                                                             <p align="justify"><strong>IT training, tutorials and project management</strong> which help the clients according to their needs and suit to their information requirements.</p>
                                                         </div>
                                                     </div>
+
                                                     <div class="vc_empty_space"  style="height: 50px" >
                                                         <span class="vc_empty_space_inner"></span>
                                                     </div>

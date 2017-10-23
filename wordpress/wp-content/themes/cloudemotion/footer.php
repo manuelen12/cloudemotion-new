@@ -206,7 +206,7 @@
                 <div class="qodef-footer-bottom-holder-inner">
                     <div class="qodef-column-inner">
                         <div id="text-5" class="widget qodef-footer-text widget_text">
-                            <div class="textwidget">Copyright © Select Themes</div>
+                            <div class="textwidget">CloudEmotion © Una Red Un Universo| 2017 </div>
                         </div>
                     </div>
                 </div>
