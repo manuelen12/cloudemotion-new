@@ -1,7 +1,15 @@
 <?php
 get_header();
 ?>
+
+
+
 <body ng-controller="MainCtrl as vm">
+<script type="text/javascript">
+    (function(a,b,c,d){a=b.createElement(c);b=b.getElementsByTagName(c)[0];a.async=1;a.src=d;b.parentNode.insertBefore(a,b);a.onerror=function(){console.log("Ha ocurrido un error"+this)}})(window,document,"script","https://admin.koomper.com/assets/js/pixel/koomper-pixel.min.js"); window.onload=function() { if (typeof KoomperPixel==="function"){ window.koomperP=new KoomperPixel(1300823);koomperP.conversion();} else{console.log("Error al cargar el script");} }
+
+</script>
+
     <div class="loader in"></div>
     <div class="qodef-wrapper">
         <div class="qodef-wrapper-inner">
@@ -202,7 +210,7 @@ get_header();
                                 </div>
                             </div>
 
-                            <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1462539692373 qodef-content-aligment-center qodef-grid-section" id="workWithUs">
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1462539692373 qodef-content-aligment-center qodef-grid-section" id="portfolios">
 
                                 <div class="wpb_wrapper">
                                     <div class="wpb_text_column wpb_content_element ">
@@ -214,7 +222,7 @@ get_header();
                                         <span class="vc_empty_space_inner"></span>
                                     </div>
                                 </div>
-                                <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1462539692373 qodef-content-aligment-center qodef-grid-section" style="">
+                                <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1462539692373 qodef-content-aligment-center qodef-grid-section" style="padding: 0;">
                                     <div class="clearfix qodef-section-inner">
                                         <div class="qodef-section-inner-margin clearfix">
                                             <div class="wpb_column vc_column_container vc_col-sm-12">
@@ -228,7 +236,7 @@ get_header();
                                                             <div class="qodef-process-holder-inner">
                                                                 <div class="qodef-process-item">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
-                                                                        <div class="qodef-process-item-icon-holder">
+                                                                        <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/planing.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
                                                                                 <span class="qodef-icon-shortcode circle ">
                                                                                     <i class="qodef-icon-simple-line-icon icon-pencil qodef-icon-element" style=""></i>
@@ -238,7 +246,7 @@ get_header();
                                                                     </div>
                                                                     <div class="qodef-process-item-content-holder">
                                                                         <div class="qodef-process-item-title-holder">
-                                                                            <h5>Plane</h5>
+                                                                            <h4>Plane</h4>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
                                                                             <p>Te haremos llegar un cuestionario con el cual identificaremos cuales son tus prioridades, modelo de negocios y objetivos y asi agilizar el proceso</p>
@@ -247,7 +255,7 @@ get_header();
                                                                 </div>
                                                                 <div class="qodef-process-item">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
-                                                                        <div class="qodef-process-item-icon-holder">
+                                                                        <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/design.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
                                                                                 <span class="qodef-icon-shortcode circle ">
                                                                                     <i class="qodef-icon-simple-line-icon icon-screen-desktop qodef-icon-element" style=""></i>
@@ -257,7 +265,7 @@ get_header();
                                                                     </div>
                                                                     <div class="qodef-process-item-content-holder">
                                                                         <div class="qodef-process-item-title-holder">
-                                                                            <h5>Design</h5>
+                                                                            <h4>Design</h4>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
                                                                             <p>Te haremos llegar un listado de posibles diseños bajo los estandares actuales, para que seas participe en el proceso en todo momento</p>
@@ -266,26 +274,7 @@ get_header();
                                                                 </div>
                                                                 <div class="qodef-process-item">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
-                                                                        <div class="qodef-process-item-icon-holder">
-                                                                            <span class="qodef-process-item-background-holder">
-                                                                                <span class="qodef-icon-shortcode circle ">
-                                                                                    <i class="qodef-icon-simple-line-icon icon-wrench qodef-icon-element" style=""></i>
-                                                                                </span>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="qodef-process-item-content-holder">
-                                                                        <div class="qodef-process-item-title-holder">
-                                                                            <h5>Test</h5>
-                                                                        </div>
-                                                                        <div class="qodef-process-item-text-holder">
-                                                                            <p>Existen tres estapas principales de prueba(Etapa de diseño, Etapa Alfa y Etapa beta) en la cual podras ver el avance progresivo de tu Producto</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="qodef-process-item">
-                                                                    <div class="qodef-process-item-icon-holder-wrapper">
-                                                                        <div class="qodef-process-item-icon-holder">
+                                                                        <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/backlog.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
                                                                                 <span class="qodef-icon-shortcode circle ">
                                                                                     <i class="qodef-icon-simple-line-icon icon-settings qodef-icon-element" style=""></i>
@@ -295,12 +284,31 @@ get_header();
                                                                     </div>
                                                                     <div class="qodef-process-item-content-holder">
                                                                         <div class="qodef-process-item-title-holder">
-                                                                            <h5>Develop</h5>
+                                                                            <h4>Develop</h4>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
                                                                             <p>
                                                                                 Etapa en la cual se realizaran pruebas de stress para determinar la funcionalidad del producto en cualquier ambito antes de la entrega final
                                                                             </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="qodef-process-item">
+                                                                    <div class="qodef-process-item-icon-holder-wrapper">
+                                                                        <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/testing.jpg)">
+                                                                            <span class="qodef-process-item-background-holder">
+                                                                                <span class="qodef-icon-shortcode circle ">
+                                                                                    <i class="qodef-icon-simple-line-icon icon-wrench qodef-icon-element" style=""></i>
+                                                                                </span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qodef-process-item-content-holder">
+                                                                        <div class="qodef-process-item-title-holder">
+                                                                            <h4>Test</h4>
+                                                                        </div>
+                                                                        <div class="qodef-process-item-text-holder">
+                                                                            <p>Existen tres estapas principales de prueba(Etapa de diseño, Etapa Alfa y Etapa beta) en la cual podras ver el avance progresivo de tu Producto</p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -313,6 +321,290 @@ get_header();
                                     </div>
                                 </div>
                             </div>
+                            
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left">
+                                <div class="clearfix qodef-full-section-inner">
+                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class = "qodef-portfolio-list-holder-outer qodef-ptf-gallery qodef-ptf-four-columns" data-next-page= 2 data-type= gallery data-columns= four data-order-by= date data-order= ASC data-number= 8 data-filter= no data-filter-order-by= name data-category= all data-show-load-more= no data-title-tag= h5 data-max-num-pages = 3>
+                                                    <div class = "qodef-portfolio-list-holder clearfix" >
+
+
+
+
+
+
+
+                                                        <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
+                                                            <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-trends-in-seo-analytics/" target="_self"></a>
+                                                            <div class = "qodef-item-image-holder">
+                                                                <div class="qodef-portfolio-shader"></div>
+                                                                <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" />
+                                                            </div>
+                                                            <div class="qodef-item-text-overlay">
+                                                                <div class="qodef-item-text-overlay-inner">
+                                                                    <div class="qodef-item-text-holder">
+                                                                        <h5 class="qodef-item-title">
+                                                                            New Trends In SEO &#038; Analytics           
+                                                                        </h5>
+                                                                        <div class="qodef-ptf-category-holder">
+                                                                            <span>Media</span>
+                                                                            <span>/</span>
+                                                                            <span>Platform</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </article>
+                                                        <article class="qodef-portfolio-item mix portfolio_category_8 portfolio_category_9" >
+                                                            <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/app-update-rebrand/" target="_self"></a>
+                                                            <div class = "qodef-item-image-holder">
+                                                                <div class="qodef-portfolio-shader"></div>
+                                                                <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
+                                                            </div>
+                                                            <div class="qodef-item-text-overlay">
+                                                                <div class="qodef-item-text-overlay-inner">
+                                                                    <div class="qodef-item-text-holder">
+                                                                        <h5 class="qodef-item-title">
+                                                                            App Update &#038; Rebrand           
+                                                                        </h5>
+                                                                        <div class="qodef-ptf-category-holder">
+                                                                            <span>Research</span>
+                                                                            <span>/</span>
+                                                                            <span>Startup</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </article>
+                                                        <article class="qodef-portfolio-item mix portfolio_category_10 portfolio_category_7" >
+                                                            <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/the-tablet-app-of-the-future/" target="_self"></a>
+                                                            <div class = "qodef-item-image-holder">
+                                                                <div class="qodef-portfolio-shader"></div>
+                                                                <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
+                                                            </div>
+                                                            <div class="qodef-item-text-overlay">
+                                                                <div class="qodef-item-text-overlay-inner">
+                                                                    <div class="qodef-item-text-holder">
+                                                                        <h5 class="qodef-item-title">
+                                                                            The Tablet App Of The Future           
+                                                                        </h5>
+                                                                        <div class="qodef-ptf-category-holder">
+                                                                            <span>Business</span>
+                                                                            <span>/</span>
+                                                                            <span>Marketing</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </article>
+                                                        <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
+                                                            <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/big-data-goes-global/" target="_self"></a>
+                                                            <div class = "qodef-item-image-holder">
+                                                                <div class="qodef-portfolio-shader"></div>
+                                                                <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
+                                                            </div>
+                                                            <div class="qodef-item-text-overlay">
+                                                                <div class="qodef-item-text-overlay-inner">
+                                                                    <div class="qodef-item-text-holder">
+                                                                        <h5 class="qodef-item-title">
+                                                                            Big Data Goes Global          
+                                                                        </h5>
+                                                                        <div class="qodef-ptf-category-holder">
+                                                                            <span>Media</span>
+                                                                            <span>/</span>
+                                                                            <span>Platform</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </article>
+                                                        <article class="qodef-portfolio-item mix portfolio_category_10 portfolio_category_7" >
+                                                            <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-findings-in-responsive-testing/" target="_self"></a>
+                                                            <div class = "qodef-item-image-holder">
+                                                                <div class="qodef-portfolio-shader"></div>
+                                                                <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image"/>
+                                                            </div>
+                                                            <div class="qodef-item-text-overlay">
+                                                                <div class="qodef-item-text-overlay-inner">
+                                                                    <div class="qodef-item-text-holder">
+                                                                        <h5 class="qodef-item-title">
+                                                                            New Findings In Testing          
+                                                                        </h5>
+                                                                        <div class="qodef-ptf-category-holder">
+                                                                            <span>Business</span>
+                                                                            <span>/</span>
+                                                                            <span>Marketing</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </article>
+                                                        <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
+                                                            <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/millenials-research-2015/" target="_self"></a>
+                                                            <div class = "qodef-item-image-holder">
+                                                                <div class="qodef-portfolio-shader"></div>
+                                                                <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
+                                                            </div>
+                                                            <div class="qodef-item-text-overlay">
+                                                                <div class="qodef-item-text-overlay-inner">
+                                                                    <div class="qodef-item-text-holder">
+                                                                        <h5 class="qodef-item-title">
+                                                                            Millenials Research 2015            
+                                                                        </h5>
+                                                                        <div class="qodef-ptf-category-holder">
+                                                                            <span>Media</span>
+                                                                            <span>/</span>
+                                                                            <span>Platform</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </article>
+                                                        <article class="qodef-portfolio-item mix portfolio_category_8 portfolio_category_9" >
+                                                            <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-trends-in-social-media/" target="_self"></a>
+                                                            <div class = "qodef-item-image-holder">
+                                                                <div class="qodef-portfolio-shader"></div>
+                                                                <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
+                                                            </div>
+                                                            <div class="qodef-item-text-overlay">
+                                                                <div class="qodef-item-text-overlay-inner">
+                                                                    <div class="qodef-item-text-holder">
+                                                                        <h5 class="qodef-item-title">
+                                                                            New Trends In Social Media          
+                                                                        </h5>
+                                                                        <div class="qodef-ptf-category-holder">
+                                                                            <span>Research</span>
+                                                                            <span>/</span>
+                                                                            <span>Startup</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </article>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445420473166 qodef-content-aligment-left qodef-grid-section" >
+                                <div class="clearfix qodef-section-inner">
+                                    <div class="qodef-section-inner-margin clearfix">
+                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h2 style="text-align: center;">En la Unión esta la Fuerza</h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 22px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h4 style="text-align: center;">La Planificación de Proyectos, El Desarrollo del mismo y el Marketing no son puntos a tratar por separado...</h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 47px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="vc_row wpb_row vc_inner vc_row-fluid qodef-section qodef-content-aligment-left" style="">
+                                                        <div class="qodef-full-section-inner">
+                                                            <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-12">
+                                                                <div class="vc_column-inner ">
+                                                                    <div class="wpb_wrapper">
+                                                                        <div class="mobilec wpb_single_image wpb_content_element vc_align_left">
+                                                                            <figure class="wpb_wrapper vc_figure">
+                                                                                <div class="vc_single_image-wrapper   vc_box_border_grey">
+                                                                                    <img width="288" height="272" src="./wp-content/themes/cloudemotion/assets/img/graphic-2-home-main.png" class="vc_single_image-img attachment-full" alt="a" />
+                                                                                </div>
+                                                                            </figure>
+                                                                        </div>
+                                                                        <div class="vc_empty_space"  style="height: 30px" >
+                                                                            <span class="vc_empty_space_inner"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-8 vc_col-md-12">
+                                                                <div class="vc_column-inner ">
+                                                                    <div class="wpb_wrapper">
+                                                                        <div class="vc_empty_space"  style="height: 34px" >
+                                                                            <span class="vc_empty_space_inner"></span>
+                                                                        </div>
+                                                                        <div class="qodef-tabs qodef-horizontal qodef-tab-text clearfix">
+                                                                            <ul class="qodef-tabs-nav">
+                                                                                <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==1}">
+                                                                                    <a ng-click="vm.tabs=1">Inicio del proyecto</a>
+                                                                                </li>
+                                                                                <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==2}">
+                                                                                    <a ng-click="vm.tabs=2">Gestión de proyecto</a>
+                                                                                </li>
+                                                                                <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==3}">
+                                                                                    <a ng-click="vm.tabs=3">Marketing</a>
+                                                                                </li>
+                                                                                <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==4}">
+                                                                                    <a ng-click="vm.tabs=4">Desarrollo</a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==1" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
+                                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                                    <div class="wpb_wrapper">
+                                                                                        <p align="justify">Al iniciar un una Solución Tecnólogica suelen proponerte trabajar primero la plataforma de forma progresiva antes de entrar en los siguientes puntos. En Cloudemotion tenemos una concepción del modelo de negocios diferente. La cual te explicaremos a continuación...</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==2" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
+                                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                                    <div class="wpb_wrapper">
+                                                                                        <p align="justify">Al iniciar un proyecto  es de gran importancia saber cual es tu público objetivo, que tan fuerte es la competencia y que tan factible será la propuesta en términos de tiempo y costos. Lo que se traduce en obtener el mejor resultado para poder <strong>Conectar</strong> y <strong>Planificar</strong> las siguientes estrategias para alcanzar sus objetivos.</p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==3" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
+                                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                                    <div class="wpb_wrapper">
+                                                                                        <p align="justify">Una vez determinado el <strong>Publico Objetivo</strong> y las <strong>Metas</strong> podemos empezar a trabajar las redes sociales o las publicidades. Debido a que "Lo que no se exibe, no se vende", es momento de introducir tu producto al mercado ya
+                                                                                            que con nuestros análisis podremos comenzar a aplicar las estrategias para promocionar tu
+                                                                                            proyecto en los medios digitales que desees. Gestionando tus redes sociales para aumentar la
+
+                                                                                            visibilidad de tu negocio, hacer publicidad en <strong>Facebook Ads</strong> y <strong>Google Adwords</strong> para atraer
+                                                                                            clientes potenciales a su negocio desde antes de culminar el proyecto.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==4" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
+                                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                                    <div class="wpb_wrapper">
+                                                                                        <p align="justify">
+                                                                                            El éxito de un proyecto se basa en la comunicación <strong> Cliente - Desarrollador</strong>. A medida que mostramos
+                                                                                            avances semanales, logramos crear
+                                                                                            productos de calidad en el menor tiempo de entrega logrando así
+                                                                                            tener un margen de exito superior a la competencia y si a esto le incorporamos una salida al mercado impactante obtendremos un <strong>Proyecto exitoso</strong>. 
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
                             <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left" id="howWeWorks">
                                 <div class="clearfix qodef-full-section-inner">
                                     <div class="wpb_column vc_column_container vc_col-sm-12">
@@ -485,286 +777,6 @@ get_header();
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445420473166 qodef-content-aligment-left qodef-grid-section" id="teamWork" >
-                            <div class="clearfix qodef-section-inner">
-                                <div class="qodef-section-inner-margin clearfix">
-                                    <div class="wpb_column vc_column_container vc_col-sm-12">
-                                        <div class="vc_column-inner ">
-                                            <div class="wpb_wrapper">
-                                                <div class="wpb_text_column wpb_content_element ">
-                                                    <div class="wpb_wrapper">
-                                                        <h2 style="text-align: center;">En la Unión esta la Fuerza</h2>
-                                                    </div>
-                                                </div>
-                                                <div class="vc_empty_space"  style="height: 22px" >
-                                                    <span class="vc_empty_space_inner"></span>
-                                                </div>
-                                                <div class="wpb_text_column wpb_content_element ">
-                                                    <div class="wpb_wrapper">
-                                                        <h4 style="text-align: center;">La Planificación de Proyectos, El Desarrollo del mismo y el Marketing no son puntos a tratar por separado...</h4>
-                                                    </div>
-                                                </div>
-                                                <div class="vc_empty_space"  style="height: 47px" >
-                                                    <span class="vc_empty_space_inner"></span>
-                                                </div>
-                                                <div class="vc_row wpb_row vc_inner vc_row-fluid qodef-section qodef-content-aligment-left" style="">
-                                                    <div class="qodef-full-section-inner">
-                                                        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-12">
-                                                            <div class="vc_column-inner ">
-                                                                <div class="wpb_wrapper">
-                                                                    <div class="mobilec wpb_single_image wpb_content_element vc_align_left">
-                                                                        <figure class="wpb_wrapper vc_figure">
-                                                                            <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                                                <img width="288" height="272" src="./wp-content/themes/cloudemotion/assets/img/graphic-2-home-main.png" class="vc_single_image-img attachment-full" alt="a" />
-                                                                            </div>
-                                                                        </figure>
-                                                                    </div>
-                                                                    <div class="vc_empty_space"  style="height: 30px" >
-                                                                        <span class="vc_empty_space_inner"></span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-8 vc_col-md-12">
-                                                            <div class="vc_column-inner ">
-                                                                <div class="wpb_wrapper">
-                                                                    <div class="vc_empty_space"  style="height: 34px" >
-                                                                        <span class="vc_empty_space_inner"></span>
-                                                                    </div>
-                                                                    <div class="qodef-tabs qodef-horizontal qodef-tab-text clearfix">
-                                                                        <ul class="qodef-tabs-nav">
-                                                                            <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==1}">
-                                                                                <a ng-click="vm.tabs=1">Inicio del proyecto</a>
-                                                                            </li>
-                                                                            <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==2}">
-                                                                                <a ng-click="vm.tabs=2">Gestión de proyecto</a>
-                                                                            </li>
-                                                                            <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==3}">
-                                                                                <a ng-click="vm.tabs=3">Marketing</a>
-                                                                            </li>
-                                                                            <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==4}">
-                                                                                <a ng-click="vm.tabs=4">Desarrollo</a>
-                                                                            </li>
-                                                                        </ul>
-                                                                        <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==1" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
-                                                                            <div class="wpb_text_column wpb_content_element ">
-                                                                                <div class="wpb_wrapper">
-                                                                                    <p align="justify">Al iniciar un una Solución Tecnólogica suelen proponerte trabajar primero la plataforma de forma progresiva antes de entrar en los siguientes puntos. En Cloudemotion tenemos una concepción del modelo de negocios diferente. La cual te explicaremos a continuación...</p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==2" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
-                                                                            <div class="wpb_text_column wpb_content_element ">
-                                                                                <div class="wpb_wrapper">
-                                                                                    <p align="justify">Al iniciar un proyecto  es de gran importancia saber cual es tu público objetivo, que tan fuerte es la competencia y que tan factible será la propuesta en términos de tiempo y costos. Lo que se traduce en obtener el mejor resultado para poder <strong>Conectar</strong> y <strong>Planificar</strong> las siguientes estrategias para alcanzar sus objetivos.</p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==3" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
-                                                                            <div class="wpb_text_column wpb_content_element ">
-                                                                                <div class="wpb_wrapper">
-                                                                                    <p align="justify">Una vez determinado el <strong>Publico Objetivo</strong> y las <strong>Metas</strong> podemos empezar a trabajar las redes sociales o las publicidades. Debido a que "Lo que no se exibe, no se vende", es momento de introducir tu producto al mercado ya
-                                                                                        que con nuestros análisis podremos comenzar a aplicar las estrategias para promocionar tu
-                                                                                        proyecto en los medios digitales que desees. Gestionando tus redes sociales para aumentar la
-
-                                                                                        visibilidad de tu negocio, hacer publicidad en <strong>Facebook Ads</strong> y <strong>Google Adwords</strong> para atraer
-                                                                                        clientes potenciales a su negocio desde antes de culminar el proyecto.
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==4" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
-                                                                            <div class="wpb_text_column wpb_content_element ">
-                                                                                <div class="wpb_wrapper">
-                                                                                    <p align="justify">
-                                                                                        El éxito de un proyecto se basa en la comunicación <strong> Cliente - Desarrollador</strong>. A medida que mostramos
-                                                                                        avances semanales, logramos crear
-                                                                                        productos de calidad en el menor tiempo de entrega logrando así
-                                                                                        tener un margen de exito superior a la competencia y si a esto le incorporamos una salida al mercado impactante obtendremos un <strong>Proyecto exitoso</strong>. 
-                                                                                    </p>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left" id="portfolios">
-                            <div class="clearfix qodef-full-section-inner">
-                                <div class="wpb_column vc_column_container vc_col-sm-12">
-                                    <div class="vc_column-inner ">
-                                        <div class="wpb_wrapper">
-                                            <div class = "qodef-portfolio-list-holder-outer qodef-ptf-gallery qodef-ptf-four-columns" data-next-page= 2 data-type= gallery data-columns= four data-order-by= date data-order= ASC data-number= 8 data-filter= no data-filter-order-by= name data-category= all data-show-load-more= no data-title-tag= h5 data-max-num-pages = 3>
-                                                <div class = "qodef-portfolio-list-holder clearfix" >
-
-
-
-
-
-
-
-                                                    <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-                                                        <a class ="qodef-portfolio-link" href="" target="_self"></a>
-                                                        <div class = "qodef-item-image-holder">
-                                                            <div class="qodef-portfolio-shader"></div>
-                                                            <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" />
-                                                        </div>
-                                                        <div class="qodef-item-text-overlay">
-                                                            <div class="qodef-item-text-overlay-inner">
-                                                                <div class="qodef-item-text-holder">
-                                                                    <h5 class="qodef-item-title">
-                                                                        New Trends In SEO &#038; Analytics           
-                                                                    </h5>
-                                                                    <div class="qodef-ptf-category-holder">
-                                                                        <span>Media</span>
-                                                                        <span>/</span>
-                                                                        <span>Platform</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                    <article class="qodef-portfolio-item mix portfolio_category_8 portfolio_category_9" >
-                                                        <a class ="qodef-portfolio-link" href="" target="_self"></a>
-                                                        <div class = "qodef-item-image-holder">
-                                                            <div class="qodef-portfolio-shader"></div>
-                                                            <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
-                                                        </div>
-                                                        <div class="qodef-item-text-overlay">
-                                                            <div class="qodef-item-text-overlay-inner">
-                                                                <div class="qodef-item-text-holder">
-                                                                    <h5 class="qodef-item-title">
-                                                                        App Update &#038; Rebrand           
-                                                                    </h5>
-                                                                    <div class="qodef-ptf-category-holder">
-                                                                        <span>Research</span>
-                                                                        <span>/</span>
-                                                                        <span>Startup</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                    <article class="qodef-portfolio-item mix portfolio_category_10 portfolio_category_7" >
-                                                        <a class ="qodef-portfolio-link" href="" target="_self"></a>
-                                                        <div class = "qodef-item-image-holder">
-                                                            <div class="qodef-portfolio-shader"></div>
-                                                            <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
-                                                        </div>
-                                                        <div class="qodef-item-text-overlay">
-                                                            <div class="qodef-item-text-overlay-inner">
-                                                                <div class="qodef-item-text-holder">
-                                                                    <h5 class="qodef-item-title">
-                                                                        The Tablet App Of The Future           
-                                                                    </h5>
-                                                                    <div class="qodef-ptf-category-holder">
-                                                                        <span>Business</span>
-                                                                        <span>/</span>
-                                                                        <span>Marketing</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                    <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-                                                        <a class ="qodef-portfolio-link" href="" target="_self"></a>
-                                                        <div class = "qodef-item-image-holder">
-                                                            <div class="qodef-portfolio-shader"></div>
-                                                            <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
-                                                        </div>
-                                                        <div class="qodef-item-text-overlay">
-                                                            <div class="qodef-item-text-overlay-inner">
-                                                                <div class="qodef-item-text-holder">
-                                                                    <h5 class="qodef-item-title">
-                                                                        Big Data Goes Global          
-                                                                    </h5>
-                                                                    <div class="qodef-ptf-category-holder">
-                                                                        <span>Media</span>
-                                                                        <span>/</span>
-                                                                        <span>Platform</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                    <article class="qodef-portfolio-item mix portfolio_category_10 portfolio_category_7" >
-                                                        <a class ="qodef-portfolio-link" href="" target="_self"></a>
-                                                        <div class = "qodef-item-image-holder">
-                                                            <div class="qodef-portfolio-shader"></div>
-                                                            <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image"/>
-                                                        </div>
-                                                        <div class="qodef-item-text-overlay">
-                                                            <div class="qodef-item-text-overlay-inner">
-                                                                <div class="qodef-item-text-holder">
-                                                                    <h5 class="qodef-item-title">
-                                                                        New Findings In Testing          
-                                                                    </h5>
-                                                                    <div class="qodef-ptf-category-holder">
-                                                                        <span>Business</span>
-                                                                        <span>/</span>
-                                                                        <span>Marketing</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                    <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-                                                        <a class ="qodef-portfolio-link" href="" target="_self"></a>
-                                                        <div class = "qodef-item-image-holder">
-                                                            <div class="qodef-portfolio-shader"></div>
-                                                            <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
-                                                        </div>
-                                                        <div class="qodef-item-text-overlay">
-                                                            <div class="qodef-item-text-overlay-inner">
-                                                                <div class="qodef-item-text-holder">
-                                                                    <h5 class="qodef-item-title">
-                                                                        Millenials Research 2015            
-                                                                    </h5>
-                                                                    <div class="qodef-ptf-category-holder">
-                                                                        <span>Media</span>
-                                                                        <span>/</span>
-                                                                        <span>Platform</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                    <article class="qodef-portfolio-item mix portfolio_category_8 portfolio_category_9" >
-                                                        <a class ="qodef-portfolio-link" href="" target="_self"></a>
-                                                        <div class = "qodef-item-image-holder">
-                                                            <div class="qodef-portfolio-shader"></div>
-                                                            <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
-                                                        </div>
-                                                        <div class="qodef-item-text-overlay">
-                                                            <div class="qodef-item-text-overlay-inner">
-                                                                <div class="qodef-item-text-holder">
-                                                                    <h5 class="qodef-item-title">
-                                                                        New Trends In Social Media          
-                                                                    </h5>
-                                                                    <div class="qodef-ptf-category-holder">
-                                                                        <span>Research</span>
-                                                                        <span>/</span>
-                                                                        <span>Startup</span>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
                                                 </div>
                                             </div>
                                         </div>
@@ -952,7 +964,7 @@ get_header();
                                                                         <p class="qodef-testimonial-title">
                                                                             Diseño Asombroso.               
                                                                         </p>
-                                                                        <p class="qodef-testimonial-text">Se lucieron con el diseño y entendieron a la perfección el modelo de negocios de mi empresa. Gracias a su ingenio hoy sigo satisfecho del producto que desarrollamos!.</p>
+                                                                        <p class="qodef-testimonial-text">Se lucieron con el diseño y entendieron a la perfección el modelo de negocios de mi empresa. Gracias a su ingenio hoy me siento más que satisfecho!.</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="qodef-testimonial-info-holder">
@@ -975,7 +987,7 @@ get_header();
                                                                         <p class="qodef-testimonial-title">
                                                                             Flexibilidad Total               
                                                                         </p>
-                                                                        <p class="qodef-testimonial-text">Nuestra aplicación se adapta a cualquier dispositivo: Teléfono Móvil, Tablet o PC lo que sin distorcionar su contenido y manteniendo una impecable interfaz para los usuarios ¡100% Recomendados!</p>
+                                                                        <p class="qodef-testimonial-text">Nuestra aplicación se adapta a cualquier dispositivo: Teléfono Móvil, Tablet o PC lo que sin distorcionar su contenido y manteniendo una impecable interfaz para los usuarios</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="qodef-testimonial-info-holder">
@@ -998,9 +1010,9 @@ get_header();
                                                                 <div class="qodef-testimonial-text-holder">
                                                                     <div class="qodef-testimonial-text-inner">
                                                                         <p class="qodef-testimonial-title">
-                                                                            Capacitación Profesional             
+                                                                            Capacitación Profesional.             
                                                                         </p>
-                                                                        <p class="qodef-testimonial-text"> Es muy gratificante encontrar instructores con tanto dominio del tema y con tanta facilidad para transmitir sus conocimientos, de verdad son extraordinarios, Los Felicito.</p>
+                                                                        <p class="qodef-testimonial-text"> Es muy gratificante encontrar instructores con tanto dominio del tema y con tanta facilidad para transmitir sus conocimientos, de verdad son extraordinarios, los Felicito.</p>
                                                                     </div>
                                                                 </div>
                                                                 <div class="qodef-testimonial-info-holder">
@@ -1070,7 +1082,7 @@ get_header();
                                 </div>
                             </div>
                         </div>
-                        <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-grid-section" style="">
+                        <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-grid-section" id="design">
                             <div class="clearfix qodef-section-inner">
                                 <div class="qodef-section-inner-margin clearfix">
                                     <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6">
@@ -1094,7 +1106,7 @@ get_header();
                                                 </div>
                                                 <div class="wpb_text_column wpb_content_element ">
                                                     <div class="wpb_wrapper">
-                                                        <h2>More than a Design. It is an Artwork</h2>
+                                                        <h2>Más que un Diseño es una Obra de Arte</h2>
                                                     </div>
                                                 </div>
                                                 <div class="vc_empty_space"  style="height: 20px" >
@@ -1102,14 +1114,14 @@ get_header();
                                                 </div>
                                                 <div class="wpb_text_column wpb_content_element ">
                                                     <div class="wpb_wrapper">
-                                                        <h4>We care about highlighting your style keeping your being in the design . We have a  specialized professionals team to achieve this goal. We will give an unique and catching interface to your website to make it stands out!</h4>
+                                                        <h4>Para nosotros es importante resaltar tu estilo y dejar en claro tu esencia en el diseño, es por esto que tenemos un equipo de profesionales especialistas en dotar a tu sitio web de una interfaz genuina y atractiva que te haga destacar!</h4>
                                                     </div>
                                                 </div>
                                                 <div class="vc_empty_space"  style="height: 43px" >
                                                     <span class="vc_empty_space_inner"></span>
                                                 </div>
                                                 <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-                                                    <span class="qodef-btn-text">See More</span>
+                                                    <span class="qodef-btn-text">Ver más</span>
                                                     <span class="qodef-btn-text-icon">
                                                         <i class="qodef-icon-simple-line-icon icon-rocket " ></i>
                                                     </span>
@@ -1156,6 +1168,9 @@ get_header();
                                 </div>
                             </div>
                         </div>
+
+
+
                         <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="team">
                             <div class="clearfix qodef-full-section-inner">
                                 <div class="wpb_column vc_column_container vc_col-sm-12">
@@ -1179,165 +1194,117 @@ get_header();
                                 </div>
                             </div>
                         </div>
+
                         <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414638610 qodef-content-aligment-center qodef-grid-section" style="">
                             <div class="clearfix qodef-section-inner">
                                 <div class="qodef-section-inner-margin clearfix">
-                                    <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
-                                        <div class="vc_column-inner ">
-                                            <div class="wpb_wrapper">
-                                                <div class="qodef-team main-info-below-image">
-                                                    <div class="qodef-team-inner">
-                                                        <div class="qodef-team-image">
-                                                            <img src="./wp-content/themes/cloudemotion/assets/img/team-1-home-main.jpg" alt="qodef-team-image"/>
-                                                            <div class="qodef-team-position-holder">
-                                                                <div class="qodef-circle-animate"></div>
-                                                                <div class="qodef-team-position-icon">
-                                                                    <span class="qodef-icon-shortcode circle "  >
-                                                                        <i class="qodef-icon-simple-line-icon icon-settings qodef-icon-element" style="" ></i>
-                                                                    </span>
-                                                                </div>
-                                                                <h6 class="q_team_position">Developer</h6>
+                                    
+
+
+                                                    <div class="item col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-5 col-sm-offset-1  col-lg-3 text-center ng-scope" style="margin-top:1em;margin-bottom:1em;">
+                                                        <div class="contenido">
+                                                            <div class="team-box box-4">
+                                                                <div class="team-img main-bg">
+                                                                <img ng-src="http://cloudemotion.com.ve/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="http://cloudemotion.com.ve/static/img/luis.png">
                                                             </div>
-                                                        </div>
-                                                        <div class="qodef-team-info">
-                                                            <div class="qodef-team-title-holder">
-                                                                <h5 class="qodef-team-name">
-                                                                    Dexter Collier                   
-                                                                </h5>
-                                                            </div>
-                                                            <div class='qodef-team-text'>
-                                                                <div class='qodef-team-text-inner'>
-                                                                    <div class='qodef-team-description'>
-                                                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed diam nonummy</p>
-                                                                    </div>
+                                                            <div class="team-details main-bg">
+                                                                <h3 class="team-name ng-binding">Luis García</h3>
+                                                                <h5 class="team-pos white ng-binding">Programador Front-End</h5>
+                                                                <strong>Especialidades</strong>
+
+                                                                <div class="social-buttons">
+                                                                    <a ng-href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110" target="_blank" class="social-button google" href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110">
+                                                                    <i class="fa fa-linkedin"></i>    
+                                                                    </a>
+                                                                    <a ng-click="copylink('@rexuzsystems')" class="social-button skype">
+                                                                        <i class="fa fa-skype"></i>
+                                                                    </a>
+                                                                
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div></div>
+
+
                                                     </div>
-                                                </div>
-                                                <div class="vc_empty_space"  style="height: 40px" >
-                                                    <span class="vc_empty_space_inner"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
-                                        <div class="vc_column-inner ">
-                                            <div class="wpb_wrapper">
-                                                <div class="qodef-team main-info-below-image">
-                                                    <div class="qodef-team-inner">
-                                                        <div class="qodef-team-image">
-                                                            <img src="./wp-content/themes/cloudemotion/assets/img/team-2-home-main.jpg" alt="qodef-team-image"/>
-                                                            <div class="qodef-team-position-holder">
-                                                                <div class="qodef-circle-animate"></div>
-                                                                <div class="qodef-team-position-icon">
-                                                                    <span class="qodef-icon-shortcode circle "  >
-                                                                        <i class="qodef-icon-simple-line-icon icon-pencil qodef-icon-element" style="" ></i>
-                                                                    </span>
-                                                                </div>
-                                                                <h6 class="q_team_position">Graphic Designer</h6>
+                                    
+                                                    <div class="item col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-5 col-sm-offset-1  col-lg-3 text-center ng-scope" style="margin-top:1em;margin-bottom:1em;">
+                                                        <div class="contenido">
+                                                            <div class="team-box box-4">
+                                                                <div class="team-img main-bg">
+                                                                <img ng-src="http://cloudemotion.com.ve/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="http://cloudemotion.com.ve/static/img/luis.png">
                                                             </div>
-                                                        </div>
-                                                        <div class="qodef-team-info">
-                                                            <div class="qodef-team-title-holder">
-                                                                <h5 class="qodef-team-name">
-                                                                    Bill Gilbert                     
-                                                                </h5>
-                                                            </div>
-                                                            <div class='qodef-team-text'>
-                                                                <div class='qodef-team-text-inner'>
-                                                                    <div class='qodef-team-description'>
-                                                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed diam nonummy</p>
-                                                                    </div>
+                                                            <div class="team-details main-bg">
+                                                                <h3 class="team-name ng-binding">Luis García</h3>
+                                                                <h5 class="team-pos white ng-binding">Programador Front-End</h5>
+                                                                <strong>Especialidades</strong>
+
+                                                                <div class="social-buttons">
+                                                                    <a ng-href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110" target="_blank" class="social-button google" href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110">
+                                                                    <i class="fa fa-linkedin"></i>    
+                                                                    </a>
+                                                                    <a ng-click="copylink('@rexuzsystems')" class="social-button skype">
+                                                                        <i class="fa fa-skype"></i>
+                                                                    </a>
+                                                                
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div></div>
+
+
                                                     </div>
-                                                </div>
-                                                <div class="vc_empty_space"  style="height: 40px" >
-                                                    <span class="vc_empty_space_inner"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
-                                        <div class="vc_column-inner ">
-                                            <div class="wpb_wrapper">
-                                                <div class="qodef-team main-info-below-image">
-                                                    <div class="qodef-team-inner">
-                                                        <div class="qodef-team-image">
-                                                            <img src="./wp-content/themes/cloudemotion/assets/img/team-3-home-main.jpg" alt="qodef-team-image"/>
-                                                            <div class="qodef-team-position-holder">
-                                                                <div class="qodef-circle-animate"></div>
-                                                                <div class="qodef-team-position-icon">
-                                                                    <span class="qodef-icon-shortcode circle "  >
-                                                                        <i class="qodef-icon-simple-line-icon icon-notebook qodef-icon-element" style="" ></i>
-                                                                    </span>
-                                                                </div>
-                                                                <h6 class="q_team_position">Accountant</h6>
+                                    
+                                                    <div class="item col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-5 col-sm-offset-1  col-lg-3 text-center ng-scope" style="margin-top:1em;margin-bottom:1em;">
+                                                        <div class="contenido">
+                                                            <div class="team-box box-4">
+                                                                <div class="team-img main-bg">
+                                                                <img ng-src="http://cloudemotion.com.ve/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="http://cloudemotion.com.ve/static/img/luis.png">
                                                             </div>
-                                                        </div>
-                                                        <div class="qodef-team-info">
-                                                            <div class="qodef-team-title-holder">
-                                                                <h5 class="qodef-team-name">
-                                                                    Patty Morrison                   
-                                                                </h5>
-                                                            </div>
-                                                            <div class='qodef-team-text'>
-                                                                <div class='qodef-team-text-inner'>
-                                                                    <div class='qodef-team-description'>
-                                                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed diam nonummy</p>
-                                                                    </div>
+                                                            <div class="team-details main-bg">
+                                                                <h3 class="team-name ng-binding">Luis García</h3>
+                                                                <h5 class="team-pos white ng-binding">Programador Front-End</h5>
+                                                                <strong>Especialidades</strong>
+
+                                                                <div class="social-buttons">
+                                                                    <a ng-href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110" target="_blank" class="social-button google" href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110">
+                                                                    <i class="fa fa-linkedin"></i>    
+                                                                    </a>
+                                                                    <a ng-click="copylink('@rexuzsystems')" class="social-button skype">
+                                                                        <i class="fa fa-skype"></i>
+                                                                    </a>
+                                                                
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div></div>
+
+
                                                     </div>
-                                                </div>
-                                                <div class="vc_empty_space"  style="height: 40px" >
-                                                    <span class="vc_empty_space_inner"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
-                                        <div class="vc_column-inner ">
-                                            <div class="wpb_wrapper">
-                                                <div class="qodef-team main-info-below-image">
-                                                    <div class="qodef-team-inner">
-                                                        <div class="qodef-team-image">
-                                                            <img src="./wp-content/themes/cloudemotion/assets/img/team-4-home-main.jpg" alt="qodef-team-image"/>
-                                                            <div class="qodef-team-position-holder">
-                                                                <div class="qodef-circle-animate"></div>
-                                                                <div class="qodef-team-position-icon">
-                                                                    <span class="qodef-icon-shortcode circle "  >
-                                                                        <i class="qodef-icon-simple-line-icon icon-wrench qodef-icon-element" style="" ></i>
-                                                                    </span>
-                                                                </div>
-                                                                <h6 class="q_team_position">Engineer</h6>
+                                    
+                                                    <div class="item col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-5 col-sm-offset-1  col-lg-3 text-center ng-scope" style="margin-top:1em;margin-bottom:1em;">
+                                                        <div class="contenido">
+                                                            <div class="team-box box-4">
+                                                                <div class="team-img main-bg">
+                                                                <img ng-src="http://cloudemotion.com.ve/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="http://cloudemotion.com.ve/static/img/luis.png">
                                                             </div>
-                                                        </div>
-                                                        <div class="qodef-team-info">
-                                                            <div class="qodef-team-title-holder">
-                                                                <h5 class="qodef-team-name">
-                                                                    Bernard Smith                    
-                                                                </h5>
-                                                            </div>
-                                                            <div class='qodef-team-text'>
-                                                                <div class='qodef-team-text-inner'>
-                                                                    <div class='qodef-team-description'>
-                                                                        <p>Lorem ipsum dolor sit amet, consect adipiscing elit, sed diam nonummy</p>
-                                                                    </div>
+                                                            <div class="team-details main-bg">
+                                                                <h3 class="team-name ng-binding">Luis García</h3>
+                                                                <h5 class="team-pos white ng-binding">Programador Front-End</h5>
+                                                                <strong>Especialidades</strong>
+
+                                                                <div class="social-buttons">
+                                                                    <a ng-href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110" target="_blank" class="social-button google" href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110">
+                                                                    <i class="fa fa-linkedin"></i>    
+                                                                    </a>
+                                                                    <a ng-click="copylink('@rexuzsystems')" class="social-button skype">
+                                                                        <i class="fa fa-skype"></i>
+                                                                    </a>
+                                                                
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div></div>
+
+
                                                     </div>
-                                                </div>
-                                                <div class="vc_empty_space"  style="height: 40px" >
-                                                    <span class="vc_empty_space_inner"></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -1361,7 +1328,7 @@ get_header();
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
                                                 <div class="qodef-custom-font-holder" data-font-size= 52 data-line-height= 60>
-                                                   Cloudemotion Bets On Quality Education and New Technological Trends
+                                                    En Cloudemotion apostamos por la educacion de calidad y las nuevas tendencias tecnologicas
                                                 </div>
                                                 <div class="vc_empty_space"  style="height: 18px" >
                                                     <span class="vc_empty_space_inner"></span>
@@ -1370,7 +1337,7 @@ get_header();
                                                     <div class="wpb_wrapper">
                                                         <h4>
                                                             <span style="color: #ffffff;">
-                                                                Our professionals will have the opportunity to manage the information that will help our followers to be up to date...
+                                                                Nuestros profesionales tendran la oportunidad de gestionar contenidos que ayuden a nuestros seguidores a mantenerce actualizados...
                                                             </span>
                                                         </h4>
                                                     </div>
@@ -1384,15 +1351,17 @@ get_header();
                                 </div>
                             </div>
                         </div>
+                        <?php $count=wp_count_posts(); 
+                        if ($count->publish>2) :
+                            ?>
                         <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left" style="">
                             <div class="clearfix qodef-full-section-inner">
-                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                <div class="wpb_column vc_column_container vc_col-sm-4">
                                     <div class="vc_column-inner ">
                                         <div class="wpb_wrapper">
                                             <div class="qodef-elements-holder qodef-three-columns qodef-responsive-mode-1024 qodef-one-column-alignment-left" >
 
                                                 <div class = "qodef-portfolio-list-holder clearfix" >
-                                                    <?php $count=wp_count_posts(); echo  $count->publish;?>
 
                                                     <?php
                                                     if ( have_posts() ) :
@@ -1418,199 +1387,20 @@ get_header();
                             </div>
 
                         </div>
+                        <?php 
+                        endif;
+                        ?>
                     </div>
                 </div>
                 <!-- close div.content_inner -->
             </div>
             <!-- close div.content -->
             <footer >
-                <div class="qodef-footer-inner clearfix">
-                    <div class="qodef-footer-top-holder">
-                        <div class="qodef-footer-top  qodef-footer-top-full">
-                            <div class="qodef-four-columns clearfix">
-                                <div class="qodef-four-columns-inner">
-                                    <div class="qodef-column">
-                                        <div class="qodef-column-inner">
-                                            <div id="text-2" class="widget qodef-footer-column-1 widget_text">
-                                                <div class="textwidget">
-                                                    <div class="vc_empty_space"  style="height: 24px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <a href="">
-                                                        <img src="./wp-content/themes/cloudemotion/assets/img/logo-footer.png" alt="logo">
-                                                    </a>
-                                                    <div class="vc_empty_space"  style="height: 24px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <p>Valle Lindo - Turmero. Aragua, Venezuela</p>
-                                                    
-
-                                                    <p><strong>Email:</strong> cloudemotioninfo@gmail.com</p>
-                                                    <p><strong>Phone:</strong> +54 (424) 0539 599 </p>
-                                                    <p><strong>"Talento 100% Latino"</strong></p>
-                                                    <div class="vc_empty_space"  style="height: 28px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="custom-color-row-changer">
-                                                        <span class="qodef-icon-shortcode square" style="margin: 0px -5px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#25cbf5" data-hover-background-color="#25cbf5" data-hover-color="#ffffff" data-color="#ffffff">
-                                                            <a class=""  href="https://www.facebook.com/CloudEmotion-1608492516114619/" target="_blank">
-                                                                <i class="qodef-icon-font-awesome fa fa-facebook qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-                                                            </a>
-                                                        </span>
-                                                        <span class="qodef-icon-shortcode square" style="margin: 0px -4px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#25cbf5" data-hover-background-color="#25cbf5" data-hover-color="#ffffff" data-color="#ffffff">
-                                                            <a class=""  href="https://www.linkedin.com/organization/18029443/" target="_blank">
-                                                                <i class="qodef-icon-font-awesome fa fa-linkedin qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-                                                            </a>
-                                                        </span>
-                                                       
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="qodef-column">
-                                        <div class="qodef-column-inner">
-                                            <div id="recent-posts-2" class="widget qodef-footer-column-2 widget_recent_entries">
-                                                <h4 class="qodef-footer-widget-title">Latest Posts</h4>
-                                                <ul>
-
-
-
-                                                    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-                                                        <li>
-                                                            <a href="">Schools to Hold Programming Courses In 2016</a>
-                                                        </li>
-                                                    <?php endwhile; endif; ?>
-
-
-
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="qodef-column">
-                                        <div class="qodef-column-inner">
-                                            <div id="qodef_twitter_widget-3" class="widget qodef-footer-column-3 widget_qodef_twitter_widget">
-                                                <h4 class="qodef-footer-widget-title">Latest Tweets</h4>
-                                                <ul class="qodef_twitter_widget">
-                                                    <li>
-                                                        <div class="tweet_icon_holder">
-                                                            <span class="social_twitter"></span>
-                                                        </div>
-                                                        <div class="tweet_content_holder">
-                                                            <div class="qodef_tweet_text">
-                                                                Don't forget to check out Capri - The Hot New 
-                                                                <a target="_blank" href="">#WordPress</a> Theme You've Been Waiting For ;) 
-                                                                <a target="_blank" href=""></a>
-                                                                <a target="_blank" href=""></a>
-                                                            </div>
-                                                            <div class="qodef_tweet_time">
-                                                                <a target="_blank" href="">
-                                                                    2 years ago                                            </a>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                      
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="qodef-column">
-                                                <div class="qodef-column-inner">
-                                                    <div id="text-3" class="widget qodef-footer-column-4 widget_text">
-                                                        <h4 class="qodef-footer-widget-title">Latest Posts</h4>
-                                                        <div class="textwidget"></div>
-                                                    </div>
-                                                    <div class="widget qodef-latest-posts-widget">
-                                                        <div class="qodef-blog-list-holder qodef-image-in-box ">
-                                                            <ul class="qodef-blog-list">
-
-                                                                <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-
-                                                                 <li class="qodef-blog-list-item clearfix">
-                                                                    <div class="qodef-blog-list-item-inner">
-                                                                        <div class="qodef-item-image clearfix">
-                                                                            <a href="http://startit.select-themes.com/managing-office-culture-2/">
-                                                                                <img width="150" height="150" src="./wp-content/themes/cloudemotion/assets/img/b-image-1a.jpg" class="attachment-full size-full wp-post-image" alt="b-image-1a" />
-                                                                            </a>
-                                                                        </div>
-                                                                        <div class="qodef-item-text-holder">
-                                                                            <h6 class="qodef-item-title ">
-                                                                                <a href="" >
-                                                                                    Managing Office Culture          </a>
-                                                                                </h6>
-                                                                                <div class="qodef-item-info-section">
-                                                                                    <div class="qodef-post-info-date">
-                                                                                        29th April 2015
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </li>
-                                                                <?php endwhile; endif; ?>
-
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <div id="text-4" class="widget qodef-footer-column-4 widget_text">
-                                                        <div class="textwidget">
-                                                            <div class="vc_empty_space"  style="height: 12px" >
-                                                                <span class="vc_empty_space_inner"></span>
-                                                            </div>
-                                                            <div class="qodef-custom-font-holder" style="font-family: Raleway;font-size: 22px;line-height: 22px;font-weight: 700;letter-spacing: 0px;text-align: left;color: #ffffff" data-font-size= 22 data-line-height= 22>
-                                                                Newsletter
-                                                            </div>
-                                                            <div class="vc_empty_space"  style="height: 7px" >
-                                                                <span class="vc_empty_space_inner"></span>
-                                                            </div>
-                                                            Lorem ipsum dolor sit amet
-
-                                                            <div class="vc_empty_space"  style="height: 20px" >
-                                                                <span class="vc_empty_space_inner"></span>
-                                                            </div>
-                                                            <div role="form" class="wpcf7" id="wpcf7-f1334-o1" lang="en-US" dir="ltr">
-                                                                <div class="screen-reader-response"></div>
-                                                                <form action="/#wpcf7-f1334-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-                                                                    <div style="display: none;">
-                                                                        <input type="hidden" name="_wpcf7" value="1334" />
-                                                                        <input type="hidden" name="_wpcf7_version" value="4.4.2" />
-                                                                        <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                                                                        <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1334-o1" />
-                                                                        <input type="hidden" name="_wpnonce" value="b1b2b2e095" />
-                                                                    </div>
-                                                                    <div class="qodef-subscription-form">
-                                                                        <span class="wpcf7-form-control-wrap your-email">
-                                                                            <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your E-Mail" />
-                                                                        </span>
-                                                                        <input type="submit" value="&#xe079;" class="wpcf7-form-control wpcf7-submit" />
-                                                                    </div>
-                                                                    <div class="wpcf7-response-output wpcf7-display-none"></div>
-                                                                </form>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="qodef-footer-bottom-holder">
-                                <div class="qodef-footer-bottom-holder-inner">
-                                    <div class="qodef-column-inner">
-                                        <div id="text-5" class="widget qodef-footer-text widget_text">
-                                            <div class="textwidget">CloudEmotion © 2017 | Una Red Un Universo</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-                </div>
-                <!-- close div.qodef-wrapper-inner  -->
-            </div>
-            <!-- close div.qodef-wrapper -->
-        </body>
-        </html>
-        <?php wp_footer();
+                <?php get_footer();?>
+            </footer>
+        </div>
+        <!-- close div.qodef-wrapper-inner  -->
+    </div>
+    <!-- close div.qodef-wrapper -->
+</body>
+</html>

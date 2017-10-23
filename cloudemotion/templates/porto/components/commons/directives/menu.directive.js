@@ -12,6 +12,11 @@ function MenuCustom($http) {
 			$scope.click = function(link){
 				var body =  $("html, body");
 				var top  =  $(link).offset().top;
+				var active = $('.nav')
+				console.log($(this));
+				active.find("li").removeClass("active");
+				
+
 				body.stop().animate({scrollTop:top},800,'swing',function(){});
 			}
 		}

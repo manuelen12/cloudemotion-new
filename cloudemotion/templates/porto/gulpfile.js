@@ -43,7 +43,9 @@ var jsFiles = [
 './assets/js/mainfiles/Chart.js',
 './assets/js/mainfiles/custom.js',
 './assets/js/mainfiles/theme.js',
+/*'./assets/js/mainfiles/functions.js',*/
 './assets/js/mainfiles/particles.js',
+'./assets/js/mainfiles/sweetalert2.min.js',
 './assets/js/libs/**/*.js',
 ],
 cssFile = [
