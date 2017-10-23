@@ -29,10 +29,27 @@ window.theme.fn = {
 			return {};
 
 		}
-
 	}
-
 };
+//new progress bar
+function InitProgressBar(selector) {
+	var $el = $(selector);
+	setTimeout(function(){
+	$el = $(selector);
+		
+		$el.each(function(index){
+			var totalWidth = ($(this).attr('data-width-animation')/5)*100;
+			$(this).animate({
+				width: totalWidth
+			}, 1500, 'easeOutQuad', function(){
+				$(this).find('.myBar').animate({
+					opacity: 1
+				}, 500, 'easeOutQuad');
+			});
+		})
+	}, 1000);             
+	return $el;
+}
 //animation
 function initAnimation(theme, jQuery) {
 
