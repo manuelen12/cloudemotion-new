@@ -40,7 +40,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h5>High quality on web develop</h5>
+                                                            <h3><strong>High quality on web develop</strong></h3>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 19px" >
@@ -48,7 +48,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <p>We develop <strong>Pro Apps</strong> for various platform: web, mobile or desktop; we use the newest technology and you can <strong>trust</strong> on our quality.</p>
+                                                            <p align="justify">We develop <strong>Pro Apps</strong> for various platform: web, mobile or desktop; we use the newest technology and you can <strong>trust</strong> on our quality.</p>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 50px" >
@@ -70,15 +70,13 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h5>Supporting and Services IT</h5><br>
+                                                            <h3><strong>Supporting and Services IT</strong></h3><br>
                                                         </div>
                                                     </div>
-                                                    <div class="vc_empty_space"  style="height: 19px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
+                                                    
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <p>IT training, tutorials and project management which help the clients according to their needs and suit to their information requirements.</p>
+                                                            <p align="justify"><strong>IT training, tutorials and project management</strong> which help the clients according to their needs and suit to their information requirements.</p>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 50px" >
@@ -100,7 +98,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h5>Variety Platforms</h5><br>
+                                                            <h3><strong>Variety Platforms</strong></h3><br>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 19px" >
@@ -108,7 +106,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <p>We manage all of your hardware and software requirements what help you support your IT apps and services on free (linux) or private (windows) platform</p>
+                                                            <p align="justify">We manage all of your hardware and software requirements what help you support your <strong>IT apps and services on free (Linux &reg;) or private (Windows &reg;) platform</strong></p>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 50px" >
@@ -130,7 +128,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h5>Projects Portfolio</h5><br>
+                                                            <h3><strong>Projects Portfolio</strong></h3><br>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 19px" >
@@ -138,7 +136,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <p>Meet our adaptable works' high quality, made for various bussiness models. Be part of our pleased customers list.</p>
+                                                            <p align="justify">Meet our adaptable works' <strong>high quality</strong>, made for various bussiness models. Be part of our pleased customers list.</p>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 50px" >
@@ -165,7 +163,7 @@ get_header();
 
                                                                         <div class="wpb_text_column wpb_content_element ">
                                                                             <div class="wpb_wrapper">
-                                                                                <h2>We help you to design your business image on web</h2>
+                                                                                <h2><strong>We help you to design your business image on web</strong></h2>
                                                                             </div>
                                                                         </div>
                                                                         <div class="vc_empty_space"  style="height: 20px" >
@@ -173,7 +171,7 @@ get_header();
                                                                         </div>
                                                                         <div class="wpb_text_column wpb_content_element ">
                                                                             <div class="wpb_wrapper">
-                                                                                <h4>We use the newest technology and tools while your business page is designed. Thus we guarantee you an extraordinary, innovative and catching experience. This one will give you the oportunity to boots your brand on internet.</h4>
+                                                                                <h4>We use <strong>the newest technology and tools</strong> while your business page is designed. Thus we guarantee you an extraordinary, innovative and catching experience. This one will give you the oportunity to boots your brand on internet.</h4>
                                                                             </div>
                                                                         </div>
                                                                         <div class="vc_empty_space"  style="height: 43px" >
@@ -215,7 +213,7 @@ get_header();
                                 <div class="wpb_wrapper">
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
-                                            <h2>Working with us is as simple as...</h2>
+                                            <h2><strong>Working with us is as simple as...</strong></h2>
                                         </div>
                                     </div>
                                     <div class="vc_empty_space" style="height: 22px">
@@ -320,6 +318,19 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <h2 style="text-align: center;"><strong>Our Portfolio</strong></h2>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <h4 style="text-align: center;">Conoce nuestros trabajos y descubre la calidad con la que trabajamos</h4>
+                                </div>
+                            </div>
+                            <div class="vc_empty_space"  style="height: 22px" >
+                                <span class="vc_empty_space_inner"></span>
                             </div>
                             
                             <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left">
@@ -499,12 +510,10 @@ get_header();
                                                 <div class="wpb_wrapper">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h2 style="text-align: center;">En la Unión esta la Fuerza</h2>
+                                                            <h2 style="text-align: center;"><strong>En la Unión esta la Fuerza</strong></h2>
                                                         </div>
                                                     </div>
-                                                    <div class="vc_empty_space"  style="height: 22px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
+                                                    
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
                                                             <h4 style="text-align: center;">La Planificación de Proyectos, El Desarrollo del mismo y el Marketing no son puntos a tratar por separado...</h4>
@@ -803,7 +812,7 @@ get_header();
                                                 </div>
                                                 <div class="wpb_text_column wpb_content_element ">
                                                     <div class="wpb_wrapper">
-                                                        <h4>Siempre contempla todos tus requerimientos, gestionalos en un documento, discutelos con tu personal y planifica un modelo con el cual te sientas cómodo para que nos puedas transmitir tus ideas. haciendo que <strong>tú proyecto</strong> sea exitoso desde el inicio</h4>
+                                                        <h4 align="justify">Siempre contempla todos tus requerimientos, gestionalos en un documento, discutelos con tu personal y planifica un modelo con el cual te sientas cómodo para que nos puedas transmitir tus ideas. haciendo que <strong>tú proyecto</strong> sea exitoso desde el inicio</h4>
                                                         <br>
                                                         <h4>Ten en cuenta los siguientes puntos a la hora de planificar:</h4>
                                                     </div>
@@ -1114,7 +1123,7 @@ get_header();
                                                 </div>
                                                 <div class="wpb_text_column wpb_content_element ">
                                                     <div class="wpb_wrapper">
-                                                        <h4>Para nosotros es importante resaltar tu estilo y dejar en claro tu esencia en el diseño, es por esto que tenemos un equipo de profesionales especialistas en dotar a tu sitio web de una interfaz genuina y atractiva que te haga destacar!</h4>
+                                                        <h4 align="justify">Para nosotros es importante resaltar tu estilo y dejar en claro tu esencia en el diseño, es por esto que tenemos un equipo de profesionales especialistas en dotar a tu sitio web de una interfaz genuina y atractiva que te haga destacar!</h4>
                                                     </div>
                                                 </div>
                                                 <div class="vc_empty_space"  style="height: 43px" >
@@ -1337,7 +1346,7 @@ get_header();
                                                     <div class="wpb_wrapper">
                                                         <h4>
                                                             <span style="color: #ffffff;">
-                                                                Nuestros profesionales tendran la oportunidad de gestionar contenidos que ayuden a nuestros seguidores a mantenerce actualizados...
+                                                                Nuestros profesionales tendran la oportunidad de gestionar contenidos que ayuden a nuestros seguidores a mantenerse actualizados...
                                                             </span>
                                                         </h4>
                                                     </div>
