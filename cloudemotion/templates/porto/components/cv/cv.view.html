@@ -3,6 +3,7 @@
 	<div role="main" class="main">
 		<div style="background: #999;">
 		</div>
+			<div class="index" style="color:white;position:fixed;">a</div>
 		<section id="about-me" class="section section-no-border section-parallax custom-section-padding-1 custom-position-1 custom-xs-bg-size-cover m-none" data-plugin-parallax="" >
 			<div class="parallax-background"></div>
 			<div id="particles-js" class="particle-cloud"></div>
@@ -235,80 +236,23 @@
 		<section id="skills" class="section section-no-border background-color-light m-none">
 			<div class="container">
 				<div class="row custom-sm-flex-order">
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold">Skills &amp; Language</h2>
-						<div class="progress-bars custom-progress-bars">
-							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-								<span>Start Up</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" data-appear-progress-animation="60%"></div>
-							</div>
-							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-								<span>Innovation</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" data-appear-progress-animation="80%" data-appear-animation-delay="300"></div>
-							</div>
-							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-								<span>Products</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" data-appear-progress-animation="70%" data-appear-animation-delay="600"></div>
-							</div>
-							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-								<span>CSS</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" data-appear-progress-animation="90%" data-appear-animation-delay="900"></div>
-							</div>
+					<div class="col-md-6 col-sm-6 col-xs-12">
+					<div class="col-md-6" ng-repeat="skill in vm.users.user_skill">
+						<label ng-bind="skill.name"></label>
+						<div class="myProgress">
+							<div class="myBar" data="{{skill.level.name}}"></div>
 						</div>
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12">
-						<div class="progress-bars custom-progress-bars custom-md-margin-top-1">
-							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-								<span>Javascript</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" data-appear-progress-animation="60%"></div>
-							</div>
-							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-								<span>Business</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" data-appear-progress-animation="80%" data-appear-animation-delay="300"></div>
-							</div>
-							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-								<span>E-commerce</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" data-appear-progress-animation="70%" data-appear-animation-delay="600"></div>
-							</div>
-							<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-								<span>Creative</span>
-							</div>
-							<div class="progress">
-								<div class="progress-bar" data-appear-progress-animation="90%" data-appear-animation-delay="900"></div>
-							</div>
-						</div>
+					</div>		
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="custom-box-details background-color-light custom-box-shadow-1">
 							<h4 class="text-color-dark">Languages</h4>
 							<ul class="custom-list-style-1 p-none">
-								<li>
-									<span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="./assets/img/gif/blank.gif" class="flag-icon flag-icon-us" alt="English">English:</span>
-									<span class="custom-text-color-2">Advanced</span>
+								<li ng-repeat="lan in vm.users.user_languaje">
+									<span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="./assets/img/gif/blank.gif" class="flag-icon flag-icon-us" alt="English" ><label ng-bind="lan.name"></label></span>
+									<span class="custom-text-color-2" ng-bind="lan.level.name"></span>
 									<span class="flag-icon-us"></span>
-								</li>
-								<li>
-									<span class="font-weight-semibold custom-max-width-1 text-color-dark "><img src="./assets/img/gif/blank.gif" class="flag-icon flag-icon-es" alt="Spanish">Spanish:</span>
-									<span class="custom-text-color-2">Advanced</span>
-								</li>
-								<li>
-									<span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="./assets/img/gif/blank.gif" class="flag-icon flag-icon-fr" alt="Française">French:</span>
-									<span class="custom-text-color-2">Basic</span>
-								</li>
+								</li>								
 							</ul>
 						</div>
 					</div>

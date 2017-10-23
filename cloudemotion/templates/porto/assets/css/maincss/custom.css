@@ -170,3 +170,17 @@
     margin-left: -20px;
     padding: 3px 0px 3px 8px;
 }
+.myProgress {
+    width: 100%;
+    background-color: #efefef;
+    border-radius: 40px;
+}
+.myBar {
+    width: 0%;
+    height: 3px;
+    background-color: #25cbf5;
+    text-align: center; /* To center it horizontally (if you want) */
+    line-height: 30px; /* To center it vertically */
+    color: white; 
+    border-radius: 40px;
+}

@@ -244,8 +244,6 @@ function initProgressBar(theme,jQuery) {
 
 		});
 	}
-
-
 }
 
 
@@ -485,6 +483,7 @@ function initMasonry(theme,jQuery) {
 		});
 	}
 }
+/*
 // Parallax
 function initParallax(theme,jQuery) {
 	// body...
@@ -732,4 +731,4 @@ function initValidation(theme,jQuery) {
 		}
 
 	});
-}
+}*/
