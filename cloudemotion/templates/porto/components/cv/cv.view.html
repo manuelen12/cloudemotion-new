@@ -237,11 +237,18 @@
 			<div class="container">
 				<div class="row custom-sm-flex-order">
 					<div class="col-md-6 col-sm-6 col-xs-12">
-					<div class="col-md-6" ng-repeat="skill in vm.users.user_skill">
+					<div class="progress-bars custom-progress-bars" ng-repeat="skill in vm.users.user_skill" data-appear-top-offset="1400">
+						<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
+							<span ng-bind="skill.name"></span>
+						</div>
+						<div class="progress">
+							<div class="myBar" data-width-animation="{{skill.level.name}}"></div>
+						</div>
+					<!--  <div class="col-md-6" ng-repeat="skill in vm.users.user_skill">
 						<label ng-bind="skill.name"></label>
 						<div class="myProgress">
-							<div class="myBar" data="{{skill.level.name}}"></div>
-						</div>
+							<div class="myBar progress-bar-tooltip" data-width-animation="{{skill.level.name}}" data="{{skill.level.name}}" style="width:{{skill.level.name}}%"></div>
+						</div> -->
 					</div>		
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12">
@@ -259,7 +266,6 @@
 				</div>
 			</div>
 		</section>
-
 		<section id="portfolio" class="section section-no-border background-color-secondary m-none">
 			<div class="container">
 				<div class="row">

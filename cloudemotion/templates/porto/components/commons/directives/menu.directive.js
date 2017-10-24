@@ -7,13 +7,13 @@ function MenuCustom($http) {
 		restrict: 'E', // E = Element, A = Attribute, C = Class, M = Comment
 		templateUrl: './components/commons/directives/views/menu.view.directive.html',
 		link: function($scope, iElm, iAttrs, controller) {
-			console.log('menu');
+			
 			
 			$scope.click = function(link){
 				var body =  $("html, body");
 				var top  =  $(link).offset().top;
 				var active = $('.nav')
-				console.log($(this));
+				
 				active.find("li").removeClass("active");
 				
 
