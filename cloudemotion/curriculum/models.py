@@ -229,3 +229,33 @@ class Portfolios(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Idioms(models.Model):
+    name = models.CharField(max_length=50)
+    status = models.BooleanField(default=True)
+    create_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        app_label = 'curriculum'
+        db_table = 'idioms'
+
+    def __str__(self):
+        return self.name
+
+
+class Profiles(models.Model):
+    user = models.ForeignKey(
+       settings.AUTH_USER_MODEL,
+       on_delete=models.CASCADE,
+       related_name='pro_user')
+    idiom = models.ForeignKey(
+        Idioms, related_name='idiom_profile')
+    idiom = models.CharField(max_length=50)
+
+    class Meta:
+        app_label = "curriculum"
+        db_table = "profiles"
+
+    def __str__(self):
+        return self.name

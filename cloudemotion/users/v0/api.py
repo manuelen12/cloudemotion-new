@@ -208,6 +208,7 @@ class API(Base):
                     "position": {
                         "name": e.position.name,
                     },
+                    "description": e.description,
                     "start_date": e.start_date,
                     "ending_date": e.ending_date,
                 }
@@ -230,6 +231,7 @@ class API(Base):
                         "category": e.classification.category,
                     },
                     "name": e.name,
+                    "image": e.image,
                 }
                 __dict["user_portfolio"].append(__dict2)
 
