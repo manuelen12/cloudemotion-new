@@ -7,14 +7,18 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
     params: '',
     show:true,
     click1:click1,
+    test:true,
   });
 
   $rootScope.$on('$viewContentLoaded', function(event, toState, toParams, fromState, fromParams) {
     console.log("cargo");
     /*$('.progress').on('appear',function(){*/
         console.log('asldl');
-        InitProgressBar('.myBar');     
+        InitProgressBar('.myBar'); 
     /*});*/    
+        initOwl('.owl-education');
+        initOwlCourse('.owl-carousel1');
+        initSort('.image-gallery-item');     
   });
   
   console.log($stateParams);
@@ -29,13 +33,20 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
   PortfolioService.getCv(vm.params,id).then(function(response){
     console.log(response);
     vm.users = response.data;
-    $.map(vm.users.user_skill,function(val,ind){
-     console.log(val.level.name);
+    $.map(vm.users.user_education,function(val,ind){
+      vm.last_education = val.education.name;
+      vm.last_institute = val.institute.name;
    });
+    $.map(vm.users.user_experience,function(val,ind){
+      vm.last_exp_name = val.position.name
+      vm.last_exp_comp = val.company.name
+    })
     console.log(vm.users);
   },function(error){
     console.log(error);
   })
+
+
 
   this.$onInit=function(){ 
 
@@ -44,43 +55,7 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
       initMasonry(window.theme,$);
       initParallax(window.theme,$);
       initValidation(window.theme,$);*/
-      /* initMatch(window.theme,$);*/
-
-
-      $(function(){
-        $('.owl-education').owlCarousel({
-          loop:false,
-          margin:0,
-          nav:false,    
-          responsive:{
-            0:{
-              items:1,                                                                    
-            },500:{
-             items:2,
-           }
-         }
-       });
-        $('.owl-carousel1').owlCarousel({
-          loop: true,
-          margin: 3,
-          nav: true,
-          navText: [
-          "<i class='fa fa-left'></i>",
-          "<i class='fa fa-right'></i>"
-          ],              
-          responsive: {
-            0: {
-              items: 1
-            },
-            600: {
-              items: 3
-            },
-            1000: {
-              items: 3
-            }
-          }
-        })
-      })
+      /* initMatch(window.theme,$);*/      
       particlesJS("particles-js",particles);       
       var element = 1;
         /*$(window).on('scroll',function(){

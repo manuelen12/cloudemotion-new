@@ -40,7 +40,7 @@ function InitProgressBar(selector) {
 		$el.each(function(index){
 			var totalWidth = ($(this).attr('data-width-animation')/5)*100;
 			$(this).animate({
-				width: totalWidth
+				width: totalWidth+'%'
 			}, 1500, 'easeOutQuad', function(){
 				$(this).find('.myBar').animate({
 					opacity: 1
@@ -50,6 +50,52 @@ function InitProgressBar(selector) {
 	}, 1000);             
 	return $el;
 }
+//Owl-
+function initOwl(selector) {
+	setTimeout(function() {
+		$(selector).owlCarousel({
+          loop:false,
+          margin:0,
+          nav:false,    
+          responsive:{
+            0:{
+              items:1,                                                                    
+            },500:{
+             items:2,
+           }
+         }
+   		});
+   	},1000);
+}
+function initOwlCourse(selector) {
+	setTimeout(function() {
+		$(selector).owlCarousel({
+	          loop: true,
+	          margin: 3,
+	          nav: true,
+	          navText: [
+	          "<i class='fa fa-left'></i>",
+	          "<i class='fa fa-right'></i>"
+	          ],              
+	          responsive: {
+	            0: {
+	              items: 1
+	            },
+	            600: {
+	              items: 3
+	            },
+	            1000: {
+	              items: 3
+	            }
+	          }
+	        })
+	},1000);
+}
+//sort
+function initSort(selector){
+	
+}
+
 //animation
 function initAnimation(theme, jQuery) {
 
@@ -139,7 +185,6 @@ function initAnimation(theme, jQuery) {
 			return this;
 		}
 	};
-
 	// expose to scope
 	$.extend(theme, {
 		PluginAnimate: PluginAnimate
