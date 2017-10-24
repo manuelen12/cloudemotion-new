@@ -208,6 +208,7 @@ class API(Base):
                     "position": {
                         "name": e.position.name,
                     },
+                    "description": e.description,
                     "start_date": e.start_date,
                     "ending_date": e.ending_date,
                 }
