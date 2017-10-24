@@ -2,6 +2,7 @@
 from json import loads
 # from requests import get
 # Core Django imports
+from django.utils import translation
 # from django.contrib.auth import get_user_model
 # from django.core.cache import cache
 # Third-party app imports
@@ -18,6 +19,7 @@ class Controller(Base):
     def __init__(self, request):
         Base.__init__(self)
         self.request = request
+        self.data = self.valid_data()
         self.error = {}
         self.result = []
         self.url_api = "http://"+self.request.META['HTTP_HOST']+"/api/v0/"
@@ -84,3 +86,22 @@ class Controller(Base):
                 self.result = {"result": "empty"}
                 return
             self.result = __array[0]
+
+
+    def change_idiom(self):
+        if not self._list_basic_info(self.data, ['idiom']):
+            return
+
+        user_language = self.data.get('idiom')
+        translation.activate(user_language)
+        self.request.session[translation.LANGUAGE_SESSION_KEY] = user_language
+
+    def current_idiom(self):
+        # import ipdb; ipdb.set_trace()
+        try:
+            self.result = self.request.session[translation.LANGUAGE_SESSION_KEY]
+        except:
+            user_language = "en"
+            translation.activate(user_language)
+            self.request.session[translation.LANGUAGE_SESSION_KEY] = user_language
+            self.result = self.request.session[translation.LANGUAGE_SESSION_KEY]

@@ -7,6 +7,7 @@ from rest_framework import permissions
 from .serializers import (UploadSerializers,
                         PositionSerializers,
                         LanguajeSerializers,
+                        ChangeIdiomSerializers,
                         )
 from cloudemotion.common.models import (Positions,
                                         Languajes,
@@ -72,3 +73,29 @@ class LanguajesView(viewsets.ModelViewSet):
 
     def get_queryset(self):
         return Languajes.objects.filter(status=True)
+
+class ChangeIdiomView(viewsets.ViewSet):
+    permission_classes = (permissions.AllowAny,)
+    serializer_class = ChangeIdiomSerializers
+
+    """
+    Change Language
+    """
+
+    def list(self, request, *args, **kwargs):
+        serializer = Controller(request)
+        serializer.current_idiom()
+
+        if serializer.error:
+            return default_responses(404, serializer.error)
+
+        return default_responses(200, serializer.result)
+
+    def create(self, request, *args, **kwargs):
+        serializer = Controller(request)
+        serializer.change_idiom()
+
+        if serializer.error:
+            return default_responses(404, serializer.error)
+
+        return default_responses(200, serializer.result)

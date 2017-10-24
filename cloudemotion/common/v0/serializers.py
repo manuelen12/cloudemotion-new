@@ -47,3 +47,11 @@ class CitySerializers(serializers.ModelSerializer):
 class UploadSerializers(serializers.Serializer):
 
     file = serializers.FileField(required=True)
+
+class ChangeIdiomSerializers(serializers.Serializer):
+
+    idiom = serializers.ChoiceField(
+        choices=[
+            ('en', 'English'),
+            ('es', 'Espanol')]
+    )

@@ -230,6 +230,7 @@ class API(Base):
                         "category": e.classification.category,
                     },
                     "name": e.name,
+                    "image": e.image,
                 }
                 __dict["user_portfolio"].append(__dict2)
 
