@@ -83,44 +83,8 @@
                     </div>
                     <div class="qodef-column">
                         <div class="qodef-column-inner">
-                            <div id="qodef_twitter_widget-3" class="widget qodef-footer-column-3 widget_qodef_twitter_widget">
-                                <h4 class="qodef-footer-widget-title">Latest Tweets</h4>
-                                <ul class="qodef_twitter_widget">
-                                    <li>
-                                        <div class="tweet_icon_holder">
-                                            <span class="social_twitter"></span>
-                                        </div>
-                                        <div class="tweet_content_holder">
-                                            <div class="qodef_tweet_text">
-                                                Don't forget to check out Capri - The Hot New 
-                                                <a target="_blank" href="http://twitter.com/search?q=WordPress">#WordPress</a> Theme You've Been Waiting For ;) 
-                                                <a target="_blank" href="http://t.co/RrBK5W8VsN">http://t.co/RrBK5W8VsN</a>
-                                                <a target="_blank" href="http://t.co/OGnBMeczUI">http://t.co/OGnBMeczUI</a>
-                                            </div>
-                                            <div class="qodef_tweet_time">
-                                                <a target="_blank" href="https://twitter.com/SelectThemes/statuses/609347124896120832">
-                                                    2 years ago                                            </a>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div class="tweet_icon_holder">
-                                                <span class="social_twitter"></span>
-                                            </div>
-                                            <div class="tweet_content_holder">
-                                                <div class="qodef_tweet_text">
-                                                    <a target="_blank" href="http://twitter.com/ggserge">@ggserge</a> Please send us your ticket ID, so we can forward your ticket to our support team. Thanks.                                    
-
-                                                </div>
-                                                <div class="qodef_tweet_time">
-                                                    <a target="_blank" href="https://twitter.com/SelectThemes/statuses/609293800289251330">
-                                                        2 years ago                                            </a>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <?php echo do_shortcode("[custom-facebook-feed]"); ?>
+                        </div>
                             </div>
                             <div class="qodef-column">
                                 <div class="qodef-column-inner">
