@@ -1,3 +1,4 @@
+
 """
 Django settings for cloudemotion project.
 
@@ -9,6 +10,7 @@ https://docs.djangoproject.com/en/dev/ref/settings/
 """
 import environ
 import datetime
+from django.utils.translation import ugettext_lazy as _
 
 ROOT_DIR = environ.Path(__file__) - 3  # (cloudemotion/config/settings/base.py - 3 = cloudemotion/)
 APPS_DIR = ROOT_DIR.path('cloudemotion')
@@ -28,7 +30,6 @@ if READ_DOT_ENV_FILE:
     env.read_env(env_file)
     print('The .env file has been loaded. See base.py for more information')
 
-
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_HEADERS = (
@@ -41,6 +42,7 @@ CORS_ALLOW_HEADERS = (
     'x-language',
     'X-Frame-Options'
 )
+
 # APP CONFIGURATION
 # ------------------------------------------------------------------------------
 DJANGO_APPS = [
@@ -144,8 +146,18 @@ DATABASES['default']['ATOMIC_REQUESTS'] = True
 # In a Windows environment this must be set to your system time zone.
 TIME_ZONE = 'UTC'
 
+
+LANGUAGES = (
+    ('en', _('English')),
+    ('es', _('Spanish')),
+)
+LOCALE_PATHS = (
+    'cloudemotion/locale/',
+)
+
+
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#language-code
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#site-id
 SITE_ID = 1
@@ -302,6 +314,7 @@ ADMIN_URL = r'^admin/'
 
 # Your common stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------
+
 REST_FRAMEWORK = {
    'DEFAULT_RENDERER_CLASSES': (
        'rest_framework.renderers.JSONRenderer',
@@ -337,5 +350,7 @@ SWAGGER_SETTINGS = {
     },
     'USE_SESSION_AUTH': False
 }
+
+LANGUAGE_COOKIE_NAME = "language"
 
 HTTP = "http://"

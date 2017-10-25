@@ -86,6 +86,7 @@ class Professions(models.Model):
 
 class Languajes(models.Model):
     name = models.CharField(max_length=100, unique=True, null=False)
+    short = models.CharField(max_length=4, unique=True, null=False)
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
