@@ -19,7 +19,7 @@ function Config($stateProvider, $urlRouterProvider, $locationProvider, $httpProv
   /*###################################*/
 
   .state("home", {
-      url: "/curriculum/:id",
+      url: "/curriculum/:id/:lang",
       templateUrl: './components/cv/cv.view.html',
       controller: 'CurriculumCtrl',
       controllerAs: 'vm',

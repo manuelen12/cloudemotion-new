@@ -184,3 +184,6 @@
     color: white; 
     border-radius: 40px;
 }
+.animation-portf{
+  animation:fadeIn 1s ease-in-out;
+}
