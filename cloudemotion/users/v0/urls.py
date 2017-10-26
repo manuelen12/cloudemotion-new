@@ -20,4 +20,5 @@ from .views import (UserAdminViews
 # from rest_framework.urlpatterns import format_suffix_patterns
 
 router = routers.SimpleRouter()
+
 router.register(r'users', UserAdminViews, base_name='users')
