@@ -9,7 +9,16 @@ from django.contrib.auth import get_user_model
 # from django.core.cache import cache
 from rest_framework_jwt.settings import api_settings
 from cloudemotion.users.models import UsersNationalities, UsersProfessions
-from cloudemotion.curriculum.models import CoursesUser, EducationsUser, LanguajesUser, Experiences, SkillsUser, Portfolios
+from cloudemotion.curriculum.models import (CoursesUser,
+                                            EducationsUser,
+                                            LanguajesUser,
+                                            Experiences,
+                                            SkillsUser,
+                                            Portfolios,
+                                            UserLanguage,
+                                            ExperienceLanguage,
+                                            PortfolioLanguage)
+from django.utils import translation
 #from cloudemotion.common.models import Nationalities, Languajes
 # from django.core.cache import cache
 # from datetime import datetime
@@ -63,7 +72,19 @@ class API(Base):
         self.get_users(__filters, __paginator, __ordening, __search)
 
     def get_users(self, filters={}, paginator={}, ordening=(), search=None):
+        # language de la cokkie
+        short = self.request.session[translation.LANGUAGE_SESSION_KEY]
         __array = []
+        # consulta a la base de datos
+        __about = UserLanguage.objects.select_related(
+            "language").filter(language__short=short)
+
+        __observatione = ExperienceLanguage.objects.select_related(
+            "language").filter(language__short=short)
+
+        __observationp = PortfolioLanguage.objects.select_related(
+            "language").filter(language__short=short)
+
         __nationality = UsersNationalities.objects.select_related(
             "nationality")
         __profession = UsersProfessions.objects.select_related("profession")
@@ -77,17 +98,20 @@ class API(Base):
             "languaje")
 
         __experience = Experiences.objects.select_related(
-            "company", "position")
+            "company", "position").prefetch_related(Prefetch(
+                    "l_exp", queryset=__observatione, to_attr="l_exp2"))
 
         __skill = SkillsUser.objects.select_related(
             "skill")
 
         __portfolio = Portfolios.objects.select_related(
-            "classification")
+            "classification").prefetch_related(Prefetch(
+                    "l_por", queryset=__observationp, to_attr="l_por2"))
 
         user = Users.objects.select_related(
             "city", "city__state", "city__state__country",
             "position").prefetch_related(
+            #filtro de la consulta
                 Prefetch(
                     "user_nat", queryset=__nationality, to_attr="user_nat2"),
                 Prefetch(
@@ -103,7 +127,9 @@ class API(Base):
                 Prefetch(
                     "s_user", queryset=__skill, to_attr="s_user2"),
                 Prefetch(
-                    "p_user", queryset=__portfolio, to_attr="p_user2")
+                    "p_user", queryset=__portfolio, to_attr="p_user2"),
+                Prefetch(
+                    "lan_user", queryset=__about, to_attr="about2"),
             ).filter(
             **filters).order_by(*ordening)
         for i in user:
@@ -137,17 +163,18 @@ class API(Base):
                 "twitter": i.twitter,
                 "linkedin": i.linkedin,
                 "youtube": i.youtube,
-                "about_me": i.about_me,
+                "about_me": i.about2[0] if i.about2 else "",
                 "status": i.status,
                 "create_at": i.create_at,
                 "user_nationality": [],
                 "user_profession": [],
                 "user_course": [],
                 "user_education": [],
-                "user_languaje": [],
+                "user_language": [],
                 "user_experience": [],
                 "user_skill": [],
                 "user_portfolio": [],
+                "idiom": short,
             }
             for e in i.user_nat2:
                 __dict2 = {
@@ -197,7 +224,7 @@ class API(Base):
                     },
                     "name": e.languaje.name
                 }
-                __dict["user_languaje"].append(__dict2)
+                __dict["user_language"].append(__dict2)
 
             for e in i.ex_user2:
                 __dict2 = {
@@ -208,7 +235,7 @@ class API(Base):
                     "position": {
                         "name": e.position.name,
                     },
-                    "description": e.description,
+                    "description": e.l_exp2[0].description if e.l_exp2 else "",
                     "start_date": e.start_date,
                     "ending_date": e.ending_date,
                 }
@@ -232,6 +259,7 @@ class API(Base):
                     },
                     "name": e.name,
                     "image": e.image,
+                    "description": e.l_por2[0].description if e.l_por2 else "",
                 }
                 __dict["user_portfolio"].append(__dict2)
 
