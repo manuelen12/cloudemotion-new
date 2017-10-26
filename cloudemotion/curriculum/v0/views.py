@@ -77,6 +77,7 @@ class UserAdminViews(viewsets.ViewSet):
 
 
 class ClassificationsViewsets(viewsets.ModelViewSet):
+    permission_classes = ()
     # permission_classes = (permissions.AllowAny,)
     # permission_classes = (UserDispensor2,)
     """
