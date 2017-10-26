@@ -220,7 +220,8 @@ class Portfolios(models.Model):
         Classifications, related_name='classification_portfolio')
     name = models.CharField(max_length=50)
     description = models.TextField()
-    image = models.CharField(max_length=250, blank=True, null=True)
+    image = models.ImageField(null=True)
+    url = models.TextField()
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
