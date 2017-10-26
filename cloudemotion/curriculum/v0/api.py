@@ -10,13 +10,13 @@ from django.contrib.auth import get_user_model
 from rest_framework_jwt.settings import api_settings
 # from django.core.cache import cache
 # from datetime import datetime
-from django.db.models import Q
-from django.db.models import Count
+# from django.db.models import Q
+# from django.db.models import Count
 # from django.db.models import Count
 # Imports from your apps
 # from gaver.users.models import (Fetishes)
 # from gaver.common.models import (City)
-from cloudemotion.curriculum.models import (Classifications)
+from cloudemotion.curriculum.models import (Classifications, Portfolios)
 from common.utils import Base
 # from users.models import Peers
 # from common.utils import ThreadDef
@@ -66,6 +66,42 @@ class API(Base):
         for i in __classification:
             __dict = {
                 "name": i.name,
+                "status": i.status,
+                "create_at": i.create_at,
+            }
+            __array.append(__dict)
+
+        if not filters.get('pk'):
+            self.paginator(__array, paginator)
+        else:
+            if not __array:
+                self.result = {"result": "empty"}
+                return
+            self.result = __array[0]
+
+    def get_portfolio(self, pk=None):
+        __filters = loads(self.request.GET.get('filters', "{}"))
+        __paginator = loads(self.request.GET.get('paginator', "{}"))
+        __ordening = loads(self.request.GET.get('ordening', "[]"))
+        if pk:
+            __filters.update({"pk": pk})
+        # __filters.update({"user_id": self.request.user.id})
+        __search = self.request.GET.get('search')
+        self.get_portfolios(__filters, __paginator, __ordening, __search)
+
+
+    def get_portfolios(self, filters={}, paginator={}, ordening=(), search=None):
+
+        __array = []
+        __portfolio = Portfolios.objects.filter(
+            **filters).order_by(*ordening)
+        for i in __portfolio:
+            __dict = {
+                "name": i.name,
+                "company": i.company,
+                "url": i.url,
+                "image": i.image,
+                "year": i.year,
                 "status": i.status,
                 "create_at": i.create_at,
             }

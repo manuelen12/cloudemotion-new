@@ -215,6 +215,8 @@ class Portfolios(models.Model):
        settings.AUTH_USER_MODEL,
        on_delete=models.CASCADE,
        related_name='p_user')
+    company = models.ForeignKey(
+        Companies, related_name='company_portfolio')
     classification = models.ForeignKey(
         # Classifications, related_name='classification')
         Classifications, related_name='classification_portfolio')
@@ -222,6 +224,7 @@ class Portfolios(models.Model):
     description = models.TextField()
     image = models.CharField(max_length=250, blank=True, null=True)
     url = models.TextField()
+    year = models.IntegerField()
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
@@ -230,7 +233,7 @@ class Portfolios(models.Model):
         db_table = 'portfolios'
 
     def __str__(self):
-        return self.name
+        return self.name+ "/" +self.company.name
 
 
 class UserLanguage(models.Model):
