@@ -273,19 +273,23 @@
 						<h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">Portfolio</h2>
 						<ul class="nav nav-pills sort-source custom-nav-sort mb-xlg" data-sort-id="portfolio" data-option-key="filter">
 							<li data-option-value="*" class=""><a href="">Show All</a></li>
-							<li data-option-value=".websites" ng-click="vm.test =! vm.test"><a href="">Websites</a></li>
+							<li ng-repeat="c in vm.classi" ng-click="vm.test =! vm.test"><a href="" ng-bind="c.name"></a></li>
+							
+							<!--<li data-option-value=".websites" ng-click="vm.test =! vm.test"><a href="">Websites</a></li>
 							<li data-option-value=".logos"><a href="">Logos</a></li>
-							<li data-option-value=".brands"><a href="">Brands</a></li>
+							<li data-option-value=".brands"><a href="">Brands</a></li> -->
 						</ul>
 						<div class="row">
 							<div class="sort-destination-loader sort-destination-loader-loaded">
-								<div class="col-md-4">
-									<div class="image-gallery-item animation-portf" ng-show="vm.test">
-										<a href="./assets/img/jpg/portfolio-1.jpg" class="lightbox-portfolio">
+								<div class="col-md-4" ng-repeat="port in vm.users.user_portfolio">
+								<div class="image-gallery-item animation-portf" ng-show="vm.test">
+										<a class="lightbox-portfolio" style="height: 240px;">
 											<span class="thumb-info custom-thumb-info-1">
 												<span class="thumb-info-wrapper">
-													<span class="word-portfolio">Hola Mundo</span>
-													<img src="./assets/img/jpg/portfolio-1.jpg" class="img-responsive" alt="">
+													<span class="word-portfolio">
+														<p class="text-portfolio" ng-bind="port.name"></p>
+													</span>
+													<img src="{{port.image}}" class="img-responsive" alt="">
 												</span>
 											</span>
 										</a>

@@ -4,10 +4,10 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
   var vm = this;
   angular.extend(vm,{
     prueba:"hola mundo2",
-    params: '',
     show:true,
     click1:click1,
     test:true,
+    params:'',
   });
 
   $rootScope.$on('$viewContentLoaded', function(event, toState, toParams, fromState, fromParams) {
@@ -18,21 +18,22 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
       /*});*/    
       initOwl('.owl-education');
       initOwlCourse('.owl-carousel1');
-
-
+      })
       console.log($stateParams);
       var id = $stateParams.id;
+      //var params = {filters:{language:$stateParams.lang}};
       function click1(link) {
         var body =   $("html, body");
         var top  =   $(link).offset().top;
         active.find("li").removeClass('active');
         body.stop().animate({scrollTop:top},1000,'swing',function(){});
       }
+      
       //GET CLASS THE PORTFOLIO
-      PortfolioService.getClass().then(function(response){
-
-      })
-
+      PortfolioService.getClass().then(function(response){ 
+        vm.classi = response.data
+      });
+      
       //GET CV FOR USER
       PortfolioService.getCv(vm.params,id).then(function(response){
         console.log(response);

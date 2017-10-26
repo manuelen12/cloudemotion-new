@@ -193,7 +193,8 @@
 .word-portfolio{
     opacity: 0;
     position: absolute;
-    width: 10%;
+    width: 100%;
+    height: 100%;
     top: 50%;
     left: 50%;
     z-index: 2;
@@ -205,12 +206,14 @@
     -webkit-transition: ease all .3s;
     -moz-transition: ease all .3s;
     transition: ease all .3s;
-    
+    font-weight: bold;
+    font-style: italic;
 }
 .word-portfolio:hover{
     opacity: 1;
     position: absolute;
-    width: 10%;
+    width: 100%;
+    height: 100%;
     top: 50%;
     left: 50%;
     z-index: 2;
@@ -222,5 +225,10 @@
     -webkit-transition: ease all .3s;
     -moz-transition: ease all .3s;
     transition: ease all .3s;
-    color:#000;
+}
+.text-portfolio{
+  position:absolute;
+  color:#000;
+  top:35%;
+  left:35%;
 }
