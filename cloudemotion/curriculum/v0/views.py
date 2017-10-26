@@ -8,10 +8,13 @@ from rest_framework import permissions
 # Imports from your apps
 from common.utils import default_responses
 from .api import API
+# from .api import Controller
 from .serializers import (
-        EthnicitiesSerializer
+        ClassificationSerializer
 )
-from cloudemotion.users.models import (Ethnicities)
+from cloudemotion.curriculum.models import (
+        Classifications
+    )
 from django.contrib.auth import get_user_model
 # from rest_framework.viewsets import GenericViewSet
 User = get_user_model()
@@ -73,19 +76,20 @@ class UserAdminViews(viewsets.ViewSet):
         return default_responses(200, serializer.result)
 
 
-class EthnicitiesViewsets(viewsets.ModelViewSet):
+class ClassificationsViewsets(viewsets.ModelViewSet):
+    permission_classes = ()
     # permission_classes = (permissions.AllowAny,)
     # permission_classes = (UserDispensor2,)
     """
     A simple ViewSet for viewing and editing the accounts
     associated with the user.
     """
-    serializer_class = EthnicitiesSerializer
+    serializer_class = ClassificationSerializer
     # permission_classes = [IsAccountAdminOrReadOnly]
 
     def list(self, request, *args, **kwargs):
         serializer = API(request)
-        serializer.list_ethnicities()
+        serializer.get_classification()
         if serializer.error:
             print(serializer.error)
             return default_responses(400, serializer.error)
@@ -93,4 +97,4 @@ class EthnicitiesViewsets(viewsets.ModelViewSet):
         return default_responses(200, serializer.result)
 
     def get_queryset(self):
-        return Ethnicities.objects.filter(status=True)
+        return Classifications.objects.filter(status=True)

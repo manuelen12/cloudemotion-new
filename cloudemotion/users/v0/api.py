@@ -259,6 +259,7 @@ class API(Base):
                     },
                     "name": e.name,
                     "image": e.image,
+                    "url": e.url,
                     "description": e.l_por2[0].description if e.l_por2 else "",
                 }
                 __dict["user_portfolio"].append(__dict2)
