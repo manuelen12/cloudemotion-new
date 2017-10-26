@@ -11,22 +11,22 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="col-md-4 col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1 custom-sm-margin-bottom-1">
-							<img src="./assets/img/jpg/me.jpg" class="img-responsive custom-border custom-image-position-2 custom-box-shadow-4 img-about" alt="">
+							<img src="{{vm.users.image}}" class="img-responsive custom-border custom-image-position-2 custom-box-shadow-4 img-about" style="height:300px;">
 						</div>
 						<div class="col-md-5 col-sm-8">
 							<h1 class="text-color-primary custom-font-size-1" ng-bind="vm.users.first_name+' '+vm.users.last_name"></h1>
 							<p class="custom-text" ng-bind="vm.users.position.name"></p>
 							<span class="custom-about-me-infos">
-							<span class="custom-text-color-1 text-uppercase" ng-bind="vm.users.position.name"></span>
+							<span class="custom-text-color-1 text-uppercase" ng-bind="vm.users.city.name+' '+vm.users.city.state.name+' '+vm.users.city.state.country.name"></span>
 								<span class="custom-text-color-1 text-uppercase mb-md" ng-bind="vm.users.position.resumen"></span>
 								<span class="custom-text-color-1 text-uppercase">
 									<strong class="custom-text-color-1">Previous: </strong>
-									<text ng-bind="vm.user_exp.company.name+' '+vm.user_exp.position.name"></text>
+									<text ng-bind="vm.last_exp_name+' '+vm.last_exp_comp "></text>
 									<a data-hash="" href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>
 								</span>
 								<span class="custom-text-color-1 text-uppercase">
 									<strong class="custom-text-color-1">Education: </strong>
-									<text ng-bind="vm.last_edu+' '+vm.education.institute.name"></text>
+									<text ng-bind="vm.last_education+' '+vm.last_institute"></text>
 									<a data-hash="" href="#education" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>
 								</span>
 							</span>
@@ -272,112 +272,25 @@
 					<div class="col-md-12">
 						<h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">Portfolio</h2>
 						<ul class="nav nav-pills sort-source custom-nav-sort mb-xlg" data-sort-id="portfolio" data-option-key="filter">
-							<li data-option-value="*" class=""><a href="http://preview.oklerthemes.com/porto/5.7.2/demo-resume.html#">Show All</a></li>
-							<li data-option-value=".websites"><a href="http://preview.oklerthemes.com/porto/5.7.2/demo-resume.html#">Websites</a></li>
-							<li data-option-value=".logos"><a href="http://preview.oklerthemes.com/porto/5.7.2/demo-resume.html#">Logos</a></li>
-							<li data-option-value=".brands"><a href="http://preview.oklerthemes.com/porto/5.7.2/demo-resume.html#">Brands</a></li>
+							<li data-option-value="*" class=""><a href="">Show All</a></li>
+							<li data-option-value=".websites" ng-click="vm.test =! vm.test"><a href="">Websites</a></li>
+							<li data-option-value=".logos"><a href="">Logos</a></li>
+							<li data-option-value=".brands"><a href="">Brands</a></li>
 						</ul>
 						<div class="row">
 							<div class="sort-destination-loader sort-destination-loader-loaded">
-								<ul class="image-gallery sort-destination lightbox" data-sort-id="portfolio" data-plugin-options="{&#39;delegate&#39;: &#39;a.lightbox-portfolio&#39;, &#39;type&#39;: &#39;image&#39;, &#39;gallery&#39;: {&#39;enabled&#39;: true}}" data-filter=".about-me" style="position: relative; height: 0px;">
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites" style="position: absolute; left: 0px; top: 0px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-1.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-1.jpg" class="img-responsive" alt="">
-													</span>
+								<div class="col-md-4">
+									<div class="image-gallery-item animation-portf" ng-show="vm.test">
+										<a href="./assets/img/jpg/portfolio-1.jpg" class="lightbox-portfolio">
+											<span class="thumb-info custom-thumb-info-1">
+												<span class="thumb-info-wrapper">
+													<span class="word-portfolio">Hola Mundo</span>
+													<img src="./assets/img/jpg/portfolio-1.jpg" class="img-responsive" alt="">
 												</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item logos" style="position: absolute; left: 242px; top: 0px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-2.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-2.jpg" class="img-responsive" alt="">
-													</span>
-												</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item brands" style="position: absolute; left: 485px; top: 0px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-3.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-3.jpg" class="img-responsive" alt="">
-													</span>
-												</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites" style="position: absolute; left: 727px; top: 0px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-4.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-4.jpg" class="img-responsive" alt="">
-													</span>
-												</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites" style="position: absolute; left: 727px; top: 186px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-5.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-5.jpg" class="img-responsive" alt="">
-													</span>
-												</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites" style="position: absolute; left: 0px; top: 198px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-6.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-6.jpg" class="img-responsive" alt="">
-													</span>
-												</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites" style="position: absolute; left: 242px; top: 247px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-7.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-7.jpg" class="img-responsive" alt="">
-													</span>
-												</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites" style="position: absolute; left: 485px; top: 247px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-8.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-8.jpg" class="img-responsive" alt="">
-													</span>
-												</span>
-											</a>
-										</div>
-									</li>
-								</ul>
-								<div class="bounce-loader"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div>
+											</span>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
