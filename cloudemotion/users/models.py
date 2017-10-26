@@ -12,7 +12,7 @@ class User(AbstractUser):
     # around the globe.
     position = models.ForeignKey("common.Positions", null=True)
     city = models.ForeignKey("common.Cities", null=True)
-    image = models.ImageField()
+    image = models.CharField(max_length=250, blank=True, null=True)
     birthday = models.DateField(null=True)
     phone = models.CharField(max_length=20, null=True, blank=True)
     address = models.TextField(null=True)
