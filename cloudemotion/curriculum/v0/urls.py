@@ -15,17 +15,13 @@ Including another URLconf
 """
 # from django.conf.urls import url, include
 from rest_framework import routers
-from .views import (CategoryViewsets,
-                    PlacesViews,
-                    CommentaryViews,
-                    PlacesImageViews,
-                    PlacesFavoriteUserViewSet
-                    )
+from cloudemotion.curriculum.v0.views import (
+    ClassificationsViewsets,
+    PortfoliosViewsets,
+    )
 # from rest_framework.urlpatterns import format_suffix_patterns
 
-router = routers.SimpleRouter()
-router.register(r'category', CategoryViewsets, base_name='category')
-router.register(r'places', PlacesViews, base_name='places')
-router.register(r'commentary', CommentaryViews, base_name='commentary')
-router.register(r'places_file', PlacesImageViews, base_name='places_file')
-router.register(r'favorite_places', PlacesFavoriteUserViewSet, base_name='favorite_places')
+router = routers.DefaultRouter()
+
+router.register(r'classifications', ClassificationsViewsets,base_name='classifications')
+router.register(r'portfolios', PortfoliosViewsets, base_name='portfolios')

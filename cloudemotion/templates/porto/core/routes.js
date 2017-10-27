@@ -5,12 +5,21 @@ mainApp
 Run.$inject=['$rootScope','$state','$stateParams','$timeout','$window']
 
 function Run($rootScope, $state, $stateParams, $timeout, $window) {
-  
+  var lang = $stateParams.lang
 }
 
-Config.$inject=["$stateProvider", "$urlRouterProvider", "$locationProvider", "$httpProvider"];
-function Config($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider) {
+Config.$inject=["$stateProvider", "$urlRouterProvider", "$locationProvider", "$httpProvider","$translateProvider"];
+function Config($stateProvider, $urlRouterProvider, $locationProvider, $httpProvider,$translateProvider) {
 
+  /*Language*/
+  $translateProvider.useStaticFilesLoader({
+    prefix: 'translations/locale-',
+    suffix: '.json'
+  });
+  $translateProvider.useSanitizeValueStrategy('escape');
+  $translateProvider.preferredLanguage('es'); 
+  /*Language*/
+  
   $urlRouterProvider.otherwise('/status');
   $stateProvider
 
@@ -19,7 +28,7 @@ function Config($stateProvider, $urlRouterProvider, $locationProvider, $httpProv
   /*###################################*/
 
   .state("home", {
-      url: "/curriculum/:id",
+      url: "/curriculum/:id/:lang",
       templateUrl: './components/cv/cv.view.html',
       controller: 'CurriculumCtrl',
       controllerAs: 'vm',

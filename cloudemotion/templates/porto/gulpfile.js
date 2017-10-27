@@ -51,7 +51,7 @@ var jsFiles = [
 cssFile = [
 "./assets/css/maincss/bootstrap.min.css",
 "./assets/css/maincss/font-awesome.min.css",
-"./assets/css/maincss/animate.min.css",
+"./assets/css/maincss/animate.css",
 "./assets/css/maincss/simple-line-icons.min.css",
 "./assets/css/maincss/owl.carousel.min.css",
 "./assets/css/maincss/owl.theme.default.min.css",

@@ -1,0 +1,391 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-20 23:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: config/settings/base.py:163
+msgid "Ingles"
+msgstr ""
+
+#: config/settings/base.py:164
+msgid "Espanol"
+msgstr ""
+
+#: koomper/common/views.py:41
+msgid "No Encontrado."
+msgstr ""
+
+#: koomper/common/views.py:48
+msgid "Permiso Denegado."
+msgstr ""
+
+#: koomper/rotator/models.py:8 koomper/rotator/v0/serializers.py:60
+msgid "randow"
+msgstr "Randon"
+
+#: koomper/rotator/models.py:9 koomper/rotator/v0/serializers.py:61
+msgid "porcent"
+msgstr "Porcentaje"
+
+#: koomper/rotator/models.py:10 koomper/rotator/v0/serializers.py:62
+msgid "CTR"
+msgstr "RPC"
+
+#: koomper/templates/account/account_inactive.html:5
+#: koomper/templates/account/account_inactive.html:8
+msgid "Account Inactive"
+msgstr ""
+
+#: koomper/templates/account/account_inactive.html:10
+msgid "This account is inactive."
+msgstr ""
+
+#: koomper/templates/account/email.html:7
+msgid "Account"
+msgstr ""
+
+#: koomper/templates/account/email.html:10
+msgid "E-mail Addresses"
+msgstr ""
+
+#: koomper/templates/account/email.html:13
+msgid "The following e-mail addresses are associated with your account:"
+msgstr ""
+
+#: koomper/templates/account/email.html:27
+msgid "Verified"
+msgstr ""
+
+#: koomper/templates/account/email.html:29
+msgid "Unverified"
+msgstr ""
+
+#: koomper/templates/account/email.html:31
+msgid "Primary"
+msgstr ""
+
+#: koomper/templates/account/email.html:37
+msgid "Make Primary"
+msgstr ""
+
+#: koomper/templates/account/email.html:38
+msgid "Re-send Verification"
+msgstr ""
+
+#: koomper/templates/account/email.html:39
+msgid "Remove"
+msgstr ""
+
+#: koomper/templates/account/email.html:46
+msgid "Warning:"
+msgstr ""
+
+#: koomper/templates/account/email.html:46
+msgid ""
+"You currently do not have any e-mail address set up. You should really add "
+"an e-mail address so you can receive notifications, reset your password, etc."
+msgstr ""
+
+#: koomper/templates/account/email.html:51
+msgid "Add E-mail Address"
+msgstr ""
+
+#: koomper/templates/account/email.html:56
+msgid "Add E-mail"
+msgstr ""
+
+#: koomper/templates/account/email.html:66
+msgid "Do you really want to remove the selected e-mail address?"
+msgstr ""
+
+#: koomper/templates/account/email_confirm.html:6
+#: koomper/templates/account/email_confirm.html:10
+msgid "Confirm E-mail Address"
+msgstr ""
+
+#: koomper/templates/account/email_confirm.html:16
+#, python-format
+msgid ""
+"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
+"address for user %(user_display)s."
+msgstr ""
+
+#: koomper/templates/account/email_confirm.html:20
+msgid "Confirm"
+msgstr ""
+
+#: koomper/templates/account/email_confirm.html:27
+#, python-format
+msgid ""
+"This e-mail confirmation link expired or is invalid. Please <a href="
+"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
+msgstr ""
+
+#: koomper/templates/account/login.html:7
+#: koomper/templates/account/login.html:11
+#: koomper/templates/account/login.html:44 koomper/templates/base.html:62
+msgid "Sign In"
+msgstr ""
+
+#: koomper/templates/account/login.html:16
+#, python-format
+msgid ""
+"Please sign in with one\n"
+"of your existing third party accounts. Or, <a href=\"%(signup_url)s\">sign "
+"up</a>\n"
+"for a %(site_name)s account and sign in below:"
+msgstr ""
+
+#: koomper/templates/account/login.html:26
+msgid "or"
+msgstr ""
+
+#: koomper/templates/account/login.html:33
+#, python-format
+msgid ""
+"If you have not created an account yet, then please\n"
+"<a href=\"%(signup_url)s\">sign up</a> first."
+msgstr ""
+
+#: koomper/templates/account/login.html:43
+msgid "Forgot Password?"
+msgstr ""
+
+#: koomper/templates/account/logout.html:5
+#: koomper/templates/account/logout.html:8
+#: koomper/templates/account/logout.html:17 koomper/templates/base.html:53
+msgid "Sign Out"
+msgstr ""
+
+#: koomper/templates/account/logout.html:10
+msgid "Are you sure you want to sign out?"
+msgstr ""
+
+#: koomper/templates/account/password_change.html:6
+#: koomper/templates/account/password_change.html:9
+#: koomper/templates/account/password_change.html:14
+#: koomper/templates/account/password_reset_from_key.html:5
+#: koomper/templates/account/password_reset_from_key.html:8
+#: koomper/templates/account/password_reset_from_key_done.html:4
+#: koomper/templates/account/password_reset_from_key_done.html:7
+msgid "Change Password"
+msgstr ""
+
+#: koomper/templates/account/password_reset.html:7
+#: koomper/templates/account/password_reset.html:11
+#: koomper/templates/account/password_reset_done.html:6
+#: koomper/templates/account/password_reset_done.html:9
+msgid "Password Reset"
+msgstr ""
+
+#: koomper/templates/account/password_reset.html:16
+msgid ""
+"Forgotten your password? Enter your e-mail address below, and we'll send you "
+"an e-mail allowing you to reset it."
+msgstr ""
+
+#: koomper/templates/account/password_reset.html:21
+msgid "Reset My Password"
+msgstr ""
+
+#: koomper/templates/account/password_reset.html:24
+msgid "Please contact us if you have any trouble resetting your password."
+msgstr ""
+
+#: koomper/templates/account/password_reset_done.html:15
+msgid ""
+"We have sent you an e-mail. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: koomper/templates/account/password_reset_from_key.html:8
+msgid "Bad Token"
+msgstr ""
+
+#: koomper/templates/account/password_reset_from_key.html:12
+#, python-format
+msgid ""
+"The password reset link was invalid, possibly because it has already been "
+"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
+"a>."
+msgstr ""
+
+#: koomper/templates/account/password_reset_from_key.html:18
+msgid "change password"
+msgstr ""
+
+#: koomper/templates/account/password_reset_from_key.html:21
+#: koomper/templates/account/password_reset_from_key_done.html:8
+msgid "Your password is now changed."
+msgstr ""
+
+#: koomper/templates/account/password_set.html:6
+#: koomper/templates/account/password_set.html:9
+#: koomper/templates/account/password_set.html:14
+msgid "Set Password"
+msgstr ""
+
+#: koomper/templates/account/signup.html:6
+msgid "Signup"
+msgstr ""
+
+#: koomper/templates/account/signup.html:9
+#: koomper/templates/account/signup.html:19 koomper/templates/base.html:58
+msgid "Sign Up"
+msgstr ""
+
+#: koomper/templates/account/signup.html:11
+#, python-format
+msgid ""
+"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
+msgstr ""
+
+#: koomper/templates/account/signup_closed.html:5
+#: koomper/templates/account/signup_closed.html:8
+msgid "Sign Up Closed"
+msgstr ""
+
+#: koomper/templates/account/signup_closed.html:10
+msgid "We are sorry, but the sign up is currently closed."
+msgstr ""
+
+#: koomper/templates/account/verification_sent.html:5
+#: koomper/templates/account/verification_sent.html:8
+#: koomper/templates/account/verified_email_required.html:5
+#: koomper/templates/account/verified_email_required.html:8
+msgid "Verify Your E-mail Address"
+msgstr ""
+
+#: koomper/templates/account/verification_sent.html:10
+msgid ""
+"We have sent an e-mail to you for verification. Follow the link provided to "
+"finalize the signup process. Please contact us if you do not receive it "
+"within a few minutes."
+msgstr ""
+
+#: koomper/templates/account/verified_email_required.html:12
+msgid ""
+"This part of the site requires us to verify that\n"
+"you are who you claim to be. For this purpose, we require that you\n"
+"verify ownership of your e-mail address. "
+msgstr ""
+
+#: koomper/templates/account/verified_email_required.html:16
+msgid ""
+"We have sent an e-mail to you for\n"
+"verification. Please click on the link inside this e-mail. Please\n"
+"contact us if you do not receive it within a few minutes."
+msgstr ""
+
+#: koomper/templates/account/verified_email_required.html:20
+#, python-format
+msgid ""
+"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
+"mail address</a>."
+msgstr ""
+
+#: koomper/templates/base.html:49
+msgid "My Profile"
+msgstr ""
+
+#: koomper/users/models.py:17
+msgid "Name of User"
+msgstr ""
+
+#~ msgid "is not valid"
+#~ msgstr "No es valido"
+
+#~ msgid "it is not exists"
+#~ msgstr "no Existe"
+
+#~ msgid "cant change this entry"
+#~ msgstr "no puede cambiar esta entrada"
+
+#~ msgid "must be less than Inventory quantity"
+#~ msgstr "debe ser menor que la cantidad del inventario"
+
+#~ msgid "quantity"
+#~ msgstr "La Cantidad"
+
+#~ msgid "address"
+#~ msgstr "La direccion"
+
+#~ msgid "is required"
+#~ msgstr "es requerido"
+
+#~ msgid "patient"
+#~ msgstr "Paciente"
+
+msgid "ID Banner"
+msgstr "Pancarta"
+
+msgid "ID Rotator"
+msgstr "ID de Rotador"
+
+msgid "Rotator"
+msgstr "Rotador"
+
+msgid "ID Library"
+msgstr "ID de Libreria"
+
+msgid "not exit"
+msgstr "no existe"
+
+msgid "it is not a Dict"
+msgstr "No tiene un directorio"
+
+msgid "must be equal 100"
+msgstr "Deberia ser igual a 100"
+
+msgid "must be in cycle"
+msgstr "Deberia ser un ciclo"
+
+msgid "ID Plan"
+msgstr "ID del Plan"
+
+msgid "already have a plan"
+msgstr "actualmente posee un plan"
+
+msgid "I"
+msgstr "Yo"
+
+msgid "Plans"
+msgstr "Planes"
+
+msgid "paid out"
+msgstr "Pagado"
+
+msgid "do not has plans"
+msgstr "No poseo plan"
+
+msgid "Error while creating payment:"
+msgstr "Error miestras realizaba su pago:"
+
+msgid "must be equals"
+msgstr "Deberian ser iguales"
+
+
+msgid "ID user"
+msgstr "ID de usuario"
+
+
+msgid "An email has been sent to restore your password"
+msgstr "Se ha enviado un correo para restaurar su clave"
+
+msgid "invalid token"
+msgstr "token invalido"

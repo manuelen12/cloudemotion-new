@@ -6,6 +6,7 @@ from django.views.generic import TemplateView
 from django.views import defaults as default_views
 from common.utils import DefaultRouter
 from common.v0.urls import router as common
+from curriculum.v0.urls import router as curriculum
 from users.v0.urls import router as users
 from rest_framework_jwt.views import (
     refresh_jwt_token, obtain_jwt_token, verify_jwt_token)
@@ -13,6 +14,7 @@ from django.views.static import serve
 router = DefaultRouter()
 # router.extend(upload)
 router.extend(common)
+router.extend(curriculum)
 router.extend(users)
 
 

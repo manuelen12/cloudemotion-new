@@ -11,22 +11,22 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="col-md-4 col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1 custom-sm-margin-bottom-1">
-							<img src="./assets/img/jpg/me.jpg" class="img-responsive custom-border custom-image-position-2 custom-box-shadow-4 img-about" alt="">
+							<img src="{{vm.users.image}}" class="img-responsive custom-border custom-image-position-2 custom-box-shadow-4 img-about" style="height:300px;">
 						</div>
 						<div class="col-md-5 col-sm-8">
 							<h1 class="text-color-primary custom-font-size-1" ng-bind="vm.users.first_name+' '+vm.users.last_name"></h1>
 							<p class="custom-text" ng-bind="vm.users.position.name"></p>
 							<span class="custom-about-me-infos">
-							<span class="custom-text-color-1 text-uppercase" ng-bind="vm.users.position.name"></span>
+							<span class="custom-text-color-1 text-uppercase" ng-bind="vm.users.city.name+' '+vm.users.city.state.name+' '+vm.users.city.state.country.name"></span>
 								<span class="custom-text-color-1 text-uppercase mb-md" ng-bind="vm.users.position.resumen"></span>
 								<span class="custom-text-color-1 text-uppercase">
-									<strong class="custom-text-color-1">Previous: </strong>
-									<text ng-bind="vm.user_exp.company.name+' '+vm.user_exp.position.name"></text>
-									<a data-hash="" href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>
+									<strong class="custom-text-color-1" ng-bind="'Previous' | translate ">Previous: </strong>
+									<text ng-bind="vm.last_exp_name+' '+vm.last_exp_comp "></text>
+									<a data-hash="" href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm" ng-bind="'View More' | translate"></a>
 								</span>
 								<span class="custom-text-color-1 text-uppercase">
-									<strong class="custom-text-color-1">Education: </strong>
-									<text ng-bind="vm.last_edu+' '+vm.education.institute.name"></text>
+									<strong class="custom-text-color-1" ng-bind="'Education' | translate ">Education: </strong>
+									<text ng-bind="vm.last_education+' '+vm.last_institute"></text>
 									<a data-hash="" href="#education" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>
 								</span>
 							</span>
@@ -64,7 +64,7 @@
 						<a data-hash="" href="#say-hello" class="text-decoration-none">
 							<span class="custom-nav-button text-color-dark">
 								<i class="icon-earphones-alt icons text-color-primary"></i>
-								Contact Information	
+								<text ng-bind="'Contact Information' | translate"></text>
 							</span>
 						</a>
 					</div>
@@ -72,7 +72,7 @@
 						<a data-hash="" href="#say-hello" class="text-decoration-none">
 							<span class="custom-nav-button custom-divisors text-color-dark">
 								<i class="icon-envelope-open icons text-color-primary"></i>
-								Send Message	
+								<text ng-bind="'Send Message' | translate"></text>
 							</span>
 						</a>
 					</div>
@@ -80,7 +80,7 @@
 						<a href="http://preview.oklerthemes.com/porto/5.7.2/demo-resume.html#" class="text-decoration-none">
 							<span class="custom-nav-button text-color-dark">
 								<i class="icon-cloud-download icons text-color-primary"></i>
-								Download Resume	
+								<text ng-bind="'Download Resume' | translate"></text>
 							</span>
 						</a>
 					</div>
@@ -133,7 +133,7 @@
 							</div>
 						</div>
 
-						<h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">About Me</h2>
+						<h2 class="text-color-quaternary font-weight-extra-bold text-uppercase" ng-bind="'about me' | translate"></h2>
 
 						<p class="custom-text-color-2" ng-bind="vm.users.about_me"></p>
 
@@ -272,112 +272,29 @@
 					<div class="col-md-12">
 						<h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">Portfolio</h2>
 						<ul class="nav nav-pills sort-source custom-nav-sort mb-xlg" data-sort-id="portfolio" data-option-key="filter">
-							<li data-option-value="*" class=""><a href="http://preview.oklerthemes.com/porto/5.7.2/demo-resume.html#">Show All</a></li>
-							<li data-option-value=".websites"><a href="http://preview.oklerthemes.com/porto/5.7.2/demo-resume.html#">Websites</a></li>
-							<li data-option-value=".logos"><a href="http://preview.oklerthemes.com/porto/5.7.2/demo-resume.html#">Logos</a></li>
-							<li data-option-value=".brands"><a href="http://preview.oklerthemes.com/porto/5.7.2/demo-resume.html#">Brands</a></li>
+							<li data-option-value="*" class=""><a href="" ng-click="vm.label=$">Show All</a></li>
+							<li ng-repeat="c in vm.classi" ng-click="vm.label=c.name"><a href="" ng-bind="c.name"></a></li>
+							
+							<!--<li data-option-value=".websites" ng-click="vm.test =! vm.test"><a href="">Websites</a></li>
+							<li data-option-value=".logos"><a href="">Logos</a></li>
+							<li data-option-value=".brands"><a href="">Brands</a></li> -->
 						</ul>
 						<div class="row">
 							<div class="sort-destination-loader sort-destination-loader-loaded">
-								<ul class="image-gallery sort-destination lightbox" data-sort-id="portfolio" data-plugin-options="{&#39;delegate&#39;: &#39;a.lightbox-portfolio&#39;, &#39;type&#39;: &#39;image&#39;, &#39;gallery&#39;: {&#39;enabled&#39;: true}}" data-filter=".about-me" style="position: relative; height: 0px;">
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites" style="position: absolute; left: 0px; top: 0px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-1.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-1.jpg" class="img-responsive" alt="">
+								<div class="col-md-4" ng-repeat="port in vm.users.user_portfolio | filter:vm.label ">
+								<div class="image-gallery-item animation-portf" >
+										<a class="lightbox-portfolio" style="height: 240px;">
+											<span class="thumb-info custom-thumb-info-1">
+												<span class="thumb-info-wrapper">
+													<span class="word-portfolio">
+														<p class="text-portfolio" ng-bind="port.name"></p>
 													</span>
+													<img src="{{port.image}}" class="img-responsive" alt="">
 												</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item logos" style="position: absolute; left: 242px; top: 0px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-2.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-2.jpg" class="img-responsive" alt="">
-													</span>
-												</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item brands" style="position: absolute; left: 485px; top: 0px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-3.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-3.jpg" class="img-responsive" alt="">
-													</span>
-												</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites" style="position: absolute; left: 727px; top: 0px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-4.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-4.jpg" class="img-responsive" alt="">
-													</span>
-												</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites" style="position: absolute; left: 727px; top: 186px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-5.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-5.jpg" class="img-responsive" alt="">
-													</span>
-												</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites" style="position: absolute; left: 0px; top: 198px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-6.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-6.jpg" class="img-responsive" alt="">
-													</span>
-												</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites" style="position: absolute; left: 242px; top: 247px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-7.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-7.jpg" class="img-responsive" alt="">
-													</span>
-												</span>
-											</a>
-										</div>
-									</li>
-									<li class="col-md-3 col-sm-6 col-xs-12 isotope-item websites" style="position: absolute; left: 485px; top: 247px; display: none;">
-										<div class="image-gallery-item">
-											<a href="./assets/img/jpg/portfolio-8.jpg" class="lightbox-portfolio">
-												<span class="thumb-info custom-thumb-info-1">
-													<span class="thumb-info-wrapper">
-														<span class="thumb-info-plus"></span>
-														<img src="./assets/img/jpg/portfolio-8.jpg" class="img-responsive" alt="">
-													</span>
-												</span>
-											</a>
-										</div>
-									</li>
-								</ul>
-								<div class="bounce-loader"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div></div>
+											</span>
+										</a>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -516,18 +433,18 @@
 						<div class="row m-none">
 							<div class="col-half-section col-half-section-right mr-md">
 								<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold">Say Hello</h2>
-								<form id="callSendMessage" class="custom-form-style" action="http://preview.oklerthemes.com/porto/5.7.2/demo-resume.html#" method="POST" novalidate="novalidate">
+								<form id="callSendMessage" class="custom-form-style" novalidate="novalidate">
 									<div class="form-content">
 										<div class="form-control-custom">
-											<input type="text" class="form-control" name="callName" placeholder="Your Name *" data-msg-required="This field is required." id="callName" required="" aria-required="true">
+											<input type="text" class="form-control contact-name" name="callName" placeholder="Your Name *" data-msg-required="This field is required." id="callName" required="" aria-required="true" ng-model="vm.contact.name">
 										</div>
 										<div class="form-control-custom">
-											<input type="text" class="form-control" name="callSubject" placeholder="Subject *" data-msg-required="This field is required." id="callSubject" required="" aria-required="true">
+											<input type="text" class="form-control contact-subject" name="callSubject" placeholder="Subject *" data-msg-required="This field is required." id="callSubject" required="" aria-required="true" ng-model="vm.contact.subject">
 										</div>
 										<div class="form-control-custom">
-											<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control" name="message" placeholder="Message*" id="message" required="" aria-required="true"></textarea>
+											<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control contact-message" name="message" placeholder="Message*" id="message" required="" aria-required="true" ng-model="vm.contact.message"></textarea>
 										</div>
-										<input type="submit" class="btn btn-quaternary text-color-light text-uppercase font-weight-semibold outline-none custom-btn-style-2 custom-border-radius-1" value="Submit">
+										<button class="btn btn-quaternary text-color-light text-uppercase font-weight-semibold outline-none custom-btn-style-2 custom-border-radius-1" ng-click="vm.sendMessage()">Subtmit</button>
 									</div>
 								</form>
 							</div>
@@ -545,7 +462,7 @@
 										</span>
 										<span class="feature-box-info">
 											<label class="font-weight-semibold text-uppercase custom-text-color-1">Email</label>
-											<strong class="font-weight-light text-color-light custom-opacity-effect-1">you@domain.com</strong>
+											<strong class="font-weight-light text-color-light custom-opacity-effect-1" ng-bind="vm.users.email"></strong>
 										</span>
 									</span>
 								</a>
@@ -556,7 +473,7 @@
 										</span>
 										<span class="feature-box-info">
 											<label class="font-weight-semibold text-uppercase custom-text-color-1">Phone</label>
-											<strong class="font-weight-light text-color-light custom-opacity-effect-1">123-456-7890</strong>
+											<strong class="font-weight-light text-color-light custom-opacity-effect-1" ng-bind="vm.users.phone"></strong>
 										</span>
 									</span>
 								</a>
@@ -567,7 +484,7 @@
 										</span>
 										<span class="feature-box-info">
 											<label class="font-weight-semibold text-uppercase custom-text-color-1">Skype</label>
-											<strong class="font-weight-light text-color-light custom-opacity-effect-1">yourskype</strong>
+											<strong class="font-weight-light text-color-light custom-opacity-effect-1" ng-bind="vm.users.skype"></strong>
 										</span>
 									</span>
 								</a>
@@ -575,18 +492,18 @@
 									<span class="custom-feature-box-icon">
 										<i class="icon-share icons text-color-light"></i>
 									</span>
-									<a href="http://www.facebook.com/" class="text-decoration-none">
+									<a href="{{vm.users.facebook}}" class="text-decoration-none">
 										<span class="feature-box-info">
 											<label class="font-weight-semibold text-uppercase custom-text-color-1">Follow me</label>
 											<strong class="font-weight-light text-color-light custom-opacity-effect-1">Facebook</strong>
 										</span>
 									</a>
-									<a href="http://www.twitter.com/" class="text-decoration-none">
+									<a href="{{vm.users.twitter}}" class="text-decoration-none">
 										<span class="feature-box-info custom-both-side-border">
 											<strong class="font-weight-light text-color-light custom-opacity-effect-1">Twitter</strong>
 										</span>
 									</a>
-									<a href="http://www.linkedin.com/" class="text-decoration-none">
+									<a href="{{vm.users.linkedin}}" class="text-decoration-none">
 										<span class="feature-box-info p-none">
 											<strong class="font-weight-light text-color-light custom-opacity-effect-1">Linkedin</strong>
 										</span>
