@@ -8,6 +8,9 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
     click1:click1,
     test:true,
     params:'',
+    sendMessage:sendMessage,
+    label:'ejemplo',
+    contact:{},
   });
 
   $rootScope.$on('$viewContentLoaded', function(event, toState, toParams, fromState, fromParams) {
@@ -28,6 +31,9 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
         active.find("li").removeClass('active');
         body.stop().animate({scrollTop:top},1000,'swing',function(){});
       }
+      //GET LANG
+      
+      
       
       //GET CLASS THE PORTFOLIO
       PortfolioService.getClass().then(function(response){ 
@@ -51,10 +57,27 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
         console.log(error);
       })
 
-
-
+      function sendMessage() {
+        if(!vm.contact.name){
+          console.log('error name');
+          $('.contact-name').css('border-bottom','1px solid #d81313');
+          return false;
+        }
+        if(!vm.contact.subject){
+          $('.contact-subject').css('border-bottom','1px solid #d81313');
+          return false; 
+        }
+        if(!vm.contact.message){
+          $('.contact-message').css('border-bottom','1px solid #d81313');
+          return false; 
+        }
+        $('.form-control').css('border-bottom','1px solid #d8b113');
+        console.log(vm.contact);
+      }
+      
       this.$onInit=function(){ 
         particlesJS("particles-js",particles);       
+
 
       }
     }
