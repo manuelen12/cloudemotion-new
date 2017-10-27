@@ -10,17 +10,18 @@ from django.contrib.auth import get_user_model
 from rest_framework_jwt.settings import api_settings
 # from django.core.cache import cache
 # from datetime import datetime
-from django.db.models import Q
-from django.db.models import Count
+# from django.db.models import Q
+# from django.db.models import Count
 # from django.db.models import Count
 # Imports from your apps
 # from gaver.users.models import (Fetishes)
 # from gaver.common.models import (City)
-from cloudemotion.curriculum.models import (Classifications)
+from cloudemotion.curriculum.models import (Classifications, Portfolios, PortfolioSkill, Skills)
 from common.utils import Base
 # from users.models import Peers
 # from common.utils import ThreadDef
 # from django.template.loader import render_to_string
+from django.db.models import Prefetch
 jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
 jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
 
@@ -69,6 +70,62 @@ class API(Base):
                 "status": i.status,
                 "create_at": i.create_at,
             }
+            __array.append(__dict)
+
+        if not filters.get('pk'):
+            self.paginator(__array, paginator)
+        else:
+            if not __array:
+                self.result = {"result": "empty"}
+                return
+            self.result = __array[0]
+
+    def get_portfolio(self, pk=None):
+        __filters = loads(self.request.GET.get('filters', "{}"))
+        __paginator = loads(self.request.GET.get('paginator', "{}"))
+        __ordening = loads(self.request.GET.get('ordening', "[]"))
+        if pk:
+            __filters.update({"pk": pk})
+        # __filters.update({"user_id": self.request.user.id})
+        __search = self.request.GET.get('search')
+        self.get_portfolios(__filters, __paginator, __ordening, __search)
+
+
+    def get_portfolios(self, filters={}, paginator={}, ordening=(), search=None):
+
+        __array = []
+        __skill = PortfolioSkill.objects.select_related(
+            "skill", "portfolio")
+
+        __portfolio = Portfolios.objects.select_related(
+            "company"
+            ).prefetch_related(
+             #filtro de la consulta
+             Prefetch(
+                    "s_por", queryset=__skill, to_attr="s_por2"),
+            ).filter(
+            **filters).order_by(*ordening)
+        for i in __portfolio:
+            __dict = {
+                "name": i.name,
+                "company": {
+                    "id": i.company.id,
+                    "name": i.company.name,
+                    "responsable": i.company.responsable,
+                },
+                "image": i.image,
+                "url": i.url,
+                "year": i.year,
+                "portfolio_skill": [],
+                "status": i.status,
+                "create_at": i.create_at,
+            }
+            for e in i.s_por2:
+                __dict2 = {
+                    "name": e.skill.name
+                }
+                __dict["portfolio_skill"].append(__dict2)
+            print(__dict)
             __array.append(__dict)
 
         if not filters.get('pk'):

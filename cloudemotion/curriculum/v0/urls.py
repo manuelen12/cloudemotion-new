@@ -16,10 +16,12 @@ Including another URLconf
 # from django.conf.urls import url, include
 from rest_framework import routers
 from cloudemotion.curriculum.v0.views import (
-    ClassificationsViewsets
+    ClassificationsViewsets,
+    PortfoliosViewsets,
     )
 # from rest_framework.urlpatterns import format_suffix_patterns
 
 router = routers.DefaultRouter()
 
-router.register(r'classifications', ClassificationsViewsets, base_name='classifications')
+router.register(r'classifications', ClassificationsViewsets,base_name='classifications')
+router.register(r'portfolios', PortfoliosViewsets, base_name='portfolios')
