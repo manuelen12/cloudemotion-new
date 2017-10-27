@@ -19,7 +19,6 @@ from cloudemotion.curriculum.models import (CoursesUser,
                                             ExperienceLanguage,
                                             PortfolioLanguage)
 from django.utils import translation
-#from cloudemotion.common.models import Nationalities, Languajes
 # from django.core.cache import cache
 # from datetime import datetime
 # from django.db.models import Q
@@ -105,13 +104,17 @@ class API(Base):
             "skill")
 
         __portfolio = Portfolios.objects.select_related(
-            "classification").prefetch_related(Prefetch(
-                    "l_por", queryset=__observationp, to_attr="l_por2"))
+            "classification", "company").prefetch_related(Prefetch(
+                    "l_por", queryset=__observationp, to_attr="l_por2"),
+                    "s_por"
+            )
 
+        # x = __portfolio
+        # import ipdb; ipdb.set_trace()
         user = Users.objects.select_related(
             "city", "city__state", "city__state__country",
             "position").prefetch_related(
-            #filtro de la consulta
+
                 Prefetch(
                     "user_nat", queryset=__nationality, to_attr="user_nat2"),
                 Prefetch(
@@ -253,6 +256,7 @@ class API(Base):
 
             for e in i.p_user2:
                 __dict2 = {
+                    "id": e.id,
                     "name": e.name,
                     "image": e.image,
                     "url": e.url,
@@ -270,6 +274,14 @@ class API(Base):
                         "responsable": e.company.responsable,
                     },
                 }
+                # import ipdb; ipdb.set_trace()
+                # import ipdb; ipdb.set_trace()
+                for z in e.s_por.all():
+                    __dict3 = {
+                        "id": z.skill.id,
+                        "name": z.skill.name,
+                    }
+                    __dict2["developed"].append(__dict3)
                 __dict["user_portfolio"].append(__dict2)
 
             print(__dict)
