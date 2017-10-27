@@ -24,7 +24,7 @@ SECRET_KEY = env('DJANGO_SECRET_KEY', default='N=/.1!T9o1dxz)ff^xDn9&KJe}4vmJtFT
 
 # Mail settings
 # ------------------------------------------------------------------------------
-ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['127.0.0.1', '192.168.0.106', '192.168.1.102', 'localhost', 'cloudemotion.com.ve', '186.92.128.81', "186.92.61.127"])
+ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['127.0.0.1', '192.168.0.106', '192.168.1.102', 'localhost', 'cloudemotion.com.ve', '186.92.128.81', "186.92.61.127", "cloudemotionteam.com"])
 EMAIL_PORT = 1025
 
 EMAIL_HOST = 'localhost'
