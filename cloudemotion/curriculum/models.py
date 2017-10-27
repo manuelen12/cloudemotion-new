@@ -220,7 +220,6 @@ class Portfolios(models.Model):
     classification = models.ForeignKey(
         # Classifications, related_name='classification')
         Classifications, related_name='classification_portfolio')
-    skill = models.ForeignKey(Skills, related_name='skill_portfolio')
     name = models.CharField(max_length=50)
     description = models.TextField()
     image = models.CharField(max_length=250, blank=True, null=True)
@@ -289,4 +288,4 @@ class PortfolioSkill(models.Model):
         db_table = "portfolio_skill"
 
     def __str__(self):
-        return self.portfolio
+        return self.description

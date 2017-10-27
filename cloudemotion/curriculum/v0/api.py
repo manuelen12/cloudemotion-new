@@ -16,12 +16,12 @@ from rest_framework_jwt.settings import api_settings
 # Imports from your apps
 # from gaver.users.models import (Fetishes)
 # from gaver.common.models import (City)
-from django.db.models import Prefetch
-from cloudemotion.curriculum.models import (Classifications, Portfolios, PortfolioSkill)
+from cloudemotion.curriculum.models import (Classifications, Portfolios, PortfolioSkill, Skills)
 from common.utils import Base
 # from users.models import Peers
 # from common.utils import ThreadDef
 # from django.template.loader import render_to_string
+from django.db.models import Prefetch
 jwt_payload_handler = api_settings.JWT_PAYLOAD_HANDLER
 jwt_encode_handler = api_settings.JWT_ENCODE_HANDLER
 
@@ -95,13 +95,14 @@ class API(Base):
 
         __array = []
         __skill = PortfolioSkill.objects.select_related(
-            "skill")
+            "skill", "portfolio")
+
         __portfolio = Portfolios.objects.select_related(
             "company"
             ).prefetch_related(
              #filtro de la consulta
              Prefetch(
-                    "skill_portfolio", queryset=__skill, to_attr="skill_portfolio2"),
+                    "s_por", queryset=__skill, to_attr="s_por2"),
             ).filter(
             **filters).order_by(*ordening)
         for i in __portfolio:
@@ -119,15 +120,12 @@ class API(Base):
                 "status": i.status,
                 "create_at": i.create_at,
             }
-            for e in i.skill_portfolio2:
+            for e in i.s_por2:
                 __dict2 = {
-                    "level": {
-                        "id": e.level,
-                        "name": e.get_level_display()
-                    },
                     "name": e.skill.name
                 }
                 __dict["portfolio_skill"].append(__dict2)
+            print(__dict)
             __array.append(__dict)
 
         if not filters.get('pk'):
