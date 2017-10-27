@@ -94,7 +94,7 @@ class API(Base):
     def get_portfolios(self, filters={}, paginator={}, ordening=(), search=None):
 
         __array = []
-        __skill = PortfolioSkill.objects.select_related(
+        __developed = PortfolioSkill.objects.select_related(
             "skill", "portfolio")
 
         __portfolio = Portfolios.objects.select_related(
@@ -102,7 +102,7 @@ class API(Base):
             ).prefetch_related(
              #filtro de la consulta
              Prefetch(
-                    "s_por", queryset=__skill, to_attr="s_por2"),
+                    "s_por", queryset=__developed, to_attr="s_por2"),
             ).filter(
             **filters).order_by(*ordening)
         for i in __portfolio:
@@ -116,7 +116,7 @@ class API(Base):
                 "image": i.image,
                 "url": i.url,
                 "year": i.year,
-                "portfolio_skill": [],
+                "developed": [],
                 "status": i.status,
                 "create_at": i.create_at,
             }
@@ -124,7 +124,7 @@ class API(Base):
                 __dict2 = {
                     "name": e.skill.name
                 }
-                __dict["portfolio_skill"].append(__dict2)
+                __dict["developed"].append(__dict2)
             print(__dict)
             __array.append(__dict)
 

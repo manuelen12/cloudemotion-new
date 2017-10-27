@@ -253,14 +253,22 @@ class API(Base):
 
             for e in i.p_user2:
                 __dict2 = {
-                    "classification": {
-                        "name": e.classification.name,
-                        "category": e.classification.category,
-                    },
                     "name": e.name,
                     "image": e.image,
                     "url": e.url,
                     "description": e.l_por2[0].description if e.l_por2 else "",
+                    "year": e.year,
+                    "developed": [],
+                    "classification": {
+                        "id": e.classification.id,
+                        "name": e.classification.name,
+                        "category": e.classification.category,
+                    },
+                    "company": {
+                        "id": e.company.id,
+                        "name": e.company.name,
+                        "responsable": e.company.responsable,
+                    },
                 }
                 __dict["user_portfolio"].append(__dict2)
 
