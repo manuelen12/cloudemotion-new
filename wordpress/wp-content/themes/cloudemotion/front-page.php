@@ -102,7 +102,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h3><strong>Variety Platforms</strong></h3><br>
+                                                            <h3><strong ng-bind="'Variety Platforms' | translate"></strong></h3><br>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 19px" >
@@ -132,7 +132,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h3><strong>Projects Portfolio</strong></h3><br>
+                                                            <h3><strong ng-bind="'Projects Portfolio'| translate"></strong></h3><br>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 19px" >
@@ -167,7 +167,7 @@ get_header();
 
                                                                         <div class="wpb_text_column wpb_content_element ">
                                                                             <div class="wpb_wrapper">
-                                                                                <h2><strong>We help you to design your business image on web</strong></h2>
+                                                                                <h2><strong ng-bind="'We help you to design your business image on web' | translate"></strong></h2>
                                                                             </div>
                                                                         </div>
                                                                         <div class="vc_empty_space"  style="height: 20px" >
@@ -182,7 +182,7 @@ get_header();
                                                                             <span class="vc_empty_space_inner"></span>
                                                                         </div>
                                                                         <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-                                                                            <span class="qodef-btn-text">Know More</span>
+                                                                            <span class="qodef-btn-text" ng-bind="'Know More' | translate"></span>
                                                                             <span class="qodef-btn-text-icon">
                                                                                 <i class="qodef-icon-simple-line-icon icon-rocket " ></i>
                                                                             </span>
@@ -217,7 +217,7 @@ get_header();
                                 <div class="wpb_wrapper">
                                     <div class="wpb_text_column wpb_content_element ">
                                         <div class="wpb_wrapper">
-                                            <h2><strong>Working with us is as simple as...</strong></h2>
+                                            <h2><strong ng-bind="'Working with us is as simple as...' | translate"></strong></h2>
                                         </div>
                                     </div>
                                     <div class="vc_empty_space" style="height: 22px">
@@ -248,7 +248,7 @@ get_header();
                                                                     </div>
                                                                     <div class="qodef-process-item-content-holder">
                                                                         <div class="qodef-process-item-title-holder">
-                                                                            <h4>Plane</h4>
+                                                                            <h4 ng-bind="'Plane' | translate"></h4>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
                                                                             <p>Te haremos llegar un cuestionario con el cual identificaremos cuales son tus prioridades, modelo de negocios y objetivos y asi agilizar el proceso</p>
@@ -267,7 +267,7 @@ get_header();
                                                                     </div>
                                                                     <div class="qodef-process-item-content-holder">
                                                                         <div class="qodef-process-item-title-holder">
-                                                                            <h4>Design</h4>
+                                                                            <h4 ng-bind="'Design' | translate"></h4>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
                                                                             <p>Te haremos llegar un listado de posibles diseños bajo los estandares actuales, para que seas participe en el proceso en todo momento</p>
@@ -286,7 +286,7 @@ get_header();
                                                                     </div>
                                                                     <div class="qodef-process-item-content-holder">
                                                                         <div class="qodef-process-item-title-holder">
-                                                                            <h4>Develop</h4>
+                                                                            <h4 ng-bind="'Develop' | translate"></h4>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
                                                                             <p>
@@ -307,7 +307,7 @@ get_header();
                                                                     </div>
                                                                     <div class="qodef-process-item-content-holder">
                                                                         <div class="qodef-process-item-title-holder">
-                                                                            <h4>Test</h4>
+                                                                            <h4 ng-bind="'Test' | translate"></h4>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
                                                                             <p>Existen tres estapas principales de prueba(Etapa de diseño, Etapa Alfa y Etapa beta) en la cual podras ver el avance progresivo de tu Producto</p>
@@ -325,12 +325,12 @@ get_header();
                             </div>
                             <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
-                                    <h2 style="text-align: center;"><strong>Our Portfolio</strong></h2>
+                                    <h2 style="text-align: center;"><strong ng-bind="'Our Portfolio' | translate"></strong></h2>
                                 </div>
                             </div>
                             <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
-                                    <h4 style="text-align: center;">Conoce nuestros trabajos y descubre la calidad con la que trabajamos</h4>
+                                    <h4 style="text-align: center;" >Conoce nuestros trabajos y descubre la calidad con la que trabajamos</h4>
                                 </div>
                             </div>
                             <div class="vc_empty_space"  style="height: 22px" >
@@ -514,13 +514,13 @@ get_header();
                                                 <div class="wpb_wrapper">
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h2 style="text-align: center;"><strong>En la Unión esta la Fuerza</strong></h2>
+                                                            <h2 style="text-align: center;"><strong ng-bind="'Unity gives strength' | translate "></strong></h2>
                                                         </div>
                                                     </div>
                                                     
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <h4 style="text-align: center;">La Planificación de Proyectos, El Desarrollo del mismo y el Marketing no son puntos a tratar por separado...</h4>
+                                                            <h4 style="text-align: center;" ng-bind="'Planning, developing  projects and Marketing cannot be boarded separately...' | translate"></h4>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 47px" >
@@ -553,22 +553,22 @@ get_header();
                                                                         <div class="qodef-tabs qodef-horizontal qodef-tab-text clearfix">
                                                                             <ul class="qodef-tabs-nav">
                                                                                 <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==1}">
-                                                                                    <a ng-click="vm.tabs=1">Inicio del proyecto</a>
+                                                                                    <a ng-click="vm.tabs=1" ng-bind="'Project\'s Start' | translate"></a>
                                                                                 </li>
                                                                                 <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==2}">
-                                                                                    <a ng-click="vm.tabs=2">Gestión de proyecto</a>
+                                                                                    <a ng-click="vm.tabs=2" ng-bind="'Project\'s Management' | translate"></a>
                                                                                 </li>
                                                                                 <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==3}">
-                                                                                    <a ng-click="vm.tabs=3">Marketing</a>
+                                                                                    <a ng-click="vm.tabs=3" ng-bind="'Marketing' | translate"></a>
                                                                                 </li>
                                                                                 <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==4}">
-                                                                                    <a ng-click="vm.tabs=4">Desarrollo</a>
+                                                                                    <a ng-click="vm.tabs=4" ng-bind="'Development' | translate"></a>
                                                                                 </li>
                                                                             </ul>
                                                                             <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==1" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
                                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                                     <div class="wpb_wrapper">
-                                                                                        <p align="justify">Al iniciar un una Solución Tecnólogica suelen proponerte trabajar primero la plataforma de forma progresiva antes de entrar en los siguientes puntos. En Cloudemotion tenemos una concepción del modelo de negocios diferente. La cual te explicaremos a continuación...</p>
+                                                                                        <p align="justify" ng-bind="'The key for a successful project is the Client - Developer communication. While we show weekly progresses, we can develop quality products and delivery them in less time. That is how we have a larger chance to success than our competition, and additionally to a stunning start  on the mart we will earn a Successful Project.' | translate"></p>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -808,7 +808,7 @@ get_header();
                                                 </div>
                                                 <div class="wpb_text_column wpb_content_element  vc_custom_1446567667184">
                                                     <div class="wpb_wrapper">
-                                                        <h2>La Planificación lo es Todo...</h2>
+                                                        <h2 ng-bind="'Planning is everything...'|translate"></h2>
                                                     </div>
                                                 </div>
                                                 <div class="vc_empty_space"  style="height: 18px" >
@@ -816,9 +816,9 @@ get_header();
                                                 </div>
                                                 <div class="wpb_text_column wpb_content_element ">
                                                     <div class="wpb_wrapper">
-                                                        <h4 align="justify">Siempre contempla todos tus requerimientos, gestionalos en un documento, discutelos con tu personal y planifica un modelo con el cual te sientas cómodo para que nos puedas transmitir tus ideas. haciendo que <strong>tú proyecto</strong> sea exitoso desde el inicio</h4>
+                                                        <h4 align="justify" ng-bind="'Check out your requirements, manage them into a document, discuss about them with your crew and plan a comfortable model so that you can tell us about your ideas. This way your project will be successful from the beginning.' | translate"></h4>
                                                         <br>
-                                                        <h4>Ten en cuenta los siguientes puntos a la hora de planificar:</h4>
+                                                        <h4 ng-bind="'Be aware of this when you\'re planning:' | translate"></h4>
                                                     </div>
                                                 </div>
                                                 <div class="vc_empty_space"  style="height: 29px" >
@@ -835,7 +835,7 @@ get_header();
                                                                                 <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
                                                                             </div>
                                                                         </div>
-                                                                        <p class="qodef-icon-list-text">¿Cuantas soluciones parecidas a la tuya existen?</p>
+                                                                        <p class="qodef-icon-list-text" ng-bind="'How many ideas like yours are there?' | translate"></p>
                                                                     </div>
                                                                     <div class="qodef-icon-list-item">
                                                                         <div class="qodef-icon-list-icon-holder">
@@ -843,7 +843,7 @@ get_header();
                                                                                 <i class="qodef-iczc-nfont-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
                                                                             </div>
                                                                         </div>
-                                                                        <p class="qodef-icon-list-text"  >¿Esta solución tiene debilidades?</p>
+                                                                        <p class="qodef-icon-list-text" ng-bind="'Does that solution have weakness?' | translate"></p>
                                                                     </div>
                                                                     <div class="qodef-icon-list-item">
                                                                         <div class="qodef-icon-list-icon-holder">
@@ -851,7 +851,7 @@ get_header();
                                                                                 <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
                                                                             </div>
                                                                         </div>
-                                                                        <p class="qodef-icon-list-text">De ser un Startup, ¿has planificado el posible impacto del mismo?</p>
+                                                                        <p class="qodef-icon-list-text" ng-bind="'If you are a Startup: Have you anticipated to the possible impact your idea would have?' | translate"></p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -865,7 +865,7 @@ get_header();
                                                                                 <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
                                                                             </div>
                                                                         </div>
-                                                                        <p class="qodef-icon-list-text">¿Conoces bien el ambito en que se desenvuelve tu solucion?</p>
+                                                                        <p class="qodef-icon-list-text" ng-bind="'Do you know well where is your idea helpful?' | translate"></p>
                                                                     </div>
                                                                     <div class="qodef-icon-list-item">
                                                                         <div class="qodef-icon-list-icon-holder">
@@ -873,7 +873,7 @@ get_header();
                                                                                 <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
                                                                             </div>
                                                                         </div>
-                                                                        <p class="qodef-icon-list-text">¿Tienes algun bosquejo de como quieres que luzca esta solucion?</p>
+                                                                        <p class="qodef-icon-list-text" ng-bind="'Do you have any sketch about how you want your solution looks?' | translate"></p>
                                                                     </div>
                                                                     <div class="qodef-icon-list-item">
                                                                         <div class="qodef-icon-list-icon-holder">
@@ -881,8 +881,7 @@ get_header();
                                                                                 <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
                                                                             </div>
                                                                         </div>
-                                                                        <p class="qodef-icon-list-text">
-                                                                            ¿Existen algunas debilidades en la competencia que puedas abordar?
+                                                                        <p class="qodef-icon-list-text" ng-bind="'Does your competition have any weakness you can take advantage of?'| translate">
                                                                         </p>
                                                                     </div>
                                                                 </div>
@@ -895,7 +894,7 @@ get_header();
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <h5 style="margin-top: 1em">Recuerda que no se trata de la cantidad si no de la calidad de tu servicio...</h5>
+                                                <h5 style="margin-top: 1em" ng-bind="'Remember: It\'s not about your service\'s quantity, but your service\'s quality.' | translate"></h5>
                                                 <div class="vc_empty_space"  style="height: 50px" >
                                                     <span class="vc_empty_space_inner"></span>
                                                 </div>
@@ -927,7 +926,7 @@ get_header();
                                             <div class="wpb_text_column wpb_content_element ">
                                                 <div class="wpb_wrapper">
                                                     <h2 style="text-align: center;">
-                                                        <span style="color: #ffffff;">Innovamos y Garantizamos un Producto de Calidad Profesional</span>
+                                                        <span style="color: #ffffff;" ng-bind="'We Innovate and Guarantee a Professional Quality Product' | translate"></span>
                                                     </h2>
                                                 </div>
                                             </div>
@@ -1119,7 +1118,7 @@ get_header();
                                                 </div>
                                                 <div class="wpb_text_column wpb_content_element ">
                                                     <div class="wpb_wrapper">
-                                                        <h2>Más que un Diseño es una Obra de Arte</h2>
+                                                        <h2 ng-bind="'More than a Design. It is an Artwork' | translate"></h2>
                                                     </div>
                                                 </div>
                                                 <div class="vc_empty_space"  style="height: 20px" >
@@ -1127,7 +1126,7 @@ get_header();
                                                 </div>
                                                 <div class="wpb_text_column wpb_content_element ">
                                                     <div class="wpb_wrapper">
-                                                        <h4 align="justify">Para nosotros es importante resaltar tu estilo y dejar en claro tu esencia en el diseño, es por esto que tenemos un equipo de profesionales especialistas en dotar a tu sitio web de una interfaz genuina y atractiva que te haga destacar!</h4>
+                                                        <h4 align="justify" ng-bind="'We care about highlighting your style keeping your being in the design . We have a  specialized professionals team to achieve this goal. We will give an unique and catching interface to your website to make it stands out.'|translate"></h4>
                                                     </div>
                                                 </div>
                                                 <div class="vc_empty_space"  style="height: 43px" >
@@ -1340,8 +1339,7 @@ get_header();
                                     <div class="wpb_column vc_column_container vc_col-sm-12">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
-                                                <div class="qodef-custom-font-holder" data-font-size= 52 data-line-height= 60>
-                                                    En Cloudemotion apostamos por la educacion de calidad y las nuevas tendencias tecnologicas
+                                                <div class="qodef-custom-font-holder" data-font-size= 52 data-line-height= 60 ng-bind="'Cloudemotion bets on quality education and new technological trends'| translate">
                                                 </div>
                                                 <div class="vc_empty_space"  style="height: 18px" >
                                                     <span class="vc_empty_space_inner"></span>
@@ -1349,8 +1347,8 @@ get_header();
                                                 <div class="wpb_text_column wpb_content_element  vc_custom_1445414812892">
                                                     <div class="wpb_wrapper">
                                                         <h4>
-                                                            <span style="color: #ffffff;">
-                                                                Nuestros profesionales tendran la oportunidad de gestionar contenidos que ayuden a nuestros seguidores a mantenerse actualizados...
+                                                            <span style="color: #ffffff;" ng-bind="'Our professionals will have the opportunity to manage the information that will help our followers to be up to date...'|translate">
+                                                                
                                                             </span>
                                                         </h4>
                                                     </div>

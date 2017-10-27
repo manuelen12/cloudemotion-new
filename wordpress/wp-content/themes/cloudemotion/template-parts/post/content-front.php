@@ -26,7 +26,12 @@
                         </div>
                     </div>
                     <p class="qodef-post-excerpt">
-                        <?php the_content(); ?>
+                        <?php
+                            if ($home) {
+                                echo wp_trim_words( get_the_content(), 40, '...' );
+                            }else the_content(); 
+
+                         ?>
                     </p>
                     <a href="http://startit.select-themes.com/news-app-deliveres-fresh-ideas/" target="_self" class="qodef-btn qodef-btn-small qodef-btn-default">
                         <span class="qodef-btn-text">Read More</span>    
@@ -37,5 +42,8 @@
         </div>
     </article>
     <?php  
+    echo var_dump($home);
+    if (!isset($home)) {
     get_template_part( 'template-parts/comments/comment-box', null );
+    }
     ?>
