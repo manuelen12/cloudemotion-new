@@ -16,7 +16,9 @@ from rest_framework_jwt.settings import api_settings
 # Imports from your apps
 # from gaver.users.models import (Fetishes)
 # from gaver.common.models import (City)
-from cloudemotion.curriculum.models import (Classifications, Portfolios, PortfolioSkill, Skills)
+from cloudemotion.curriculum.models import (Classifications,
+                                            Portfolios,
+                                            PortfolioSkill)
 from common.utils import Base
 # from users.models import Peers
 # from common.utils import ThreadDef
@@ -100,13 +102,14 @@ class API(Base):
         __portfolio = Portfolios.objects.select_related(
             "company"
             ).prefetch_related(
-             #filtro de la consulta
+
              Prefetch(
                     "s_por", queryset=__developed, to_attr="s_por2"),
             ).filter(
             **filters).order_by(*ordening)
         for i in __portfolio:
             __dict = {
+                "id": i.id,
                 "name": i.name,
                 "company": {
                     "id": i.company.id,
