@@ -15,10 +15,13 @@ Including another URLconf
 """
 # from django.conf.urls import url, include
 from rest_framework import routers
-from .views import (UserAdminViews
+from django.contrib import admin
+from .views import (UserAdminViews,
+					ContactsViewsets,
                     )
 # from rest_framework.urlpatterns import format_suffix_patterns
 
 router = routers.SimpleRouter()
 
 router.register(r'users', UserAdminViews, base_name='users')
+router.register(r'contacts', ContactsViewsets, base_name='contacts')
