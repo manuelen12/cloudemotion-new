@@ -5,12 +5,12 @@ from django.conf import settings
 
 
 class Companies(models.Model):
-    name = models.CharField(max_length=50, null=True, blank=False)
-    phone = models.CharField(max_length=50, null=True, blank=False)
-    email = models.EmailField(max_length=50, null=True, blank=False)
-    address = models.TextField(null=True, blank=False)
-    responsable = models.CharField(max_length=100, null=True, blank=False)
-    responsible_phone = models.CharField(max_length=50, null=True, blank=False)
+    name = models.CharField(max_length=50)
+    phone = models.CharField(max_length=50, null=True, blank=True)
+    email = models.EmailField(max_length=50, null=True, blank=True)
+    address = models.TextField(null=True, blank=True)
+    responsable = models.CharField(max_length=100, null=True, blank=True)
+    responsible_phone = models.CharField(max_length=50, null=True, blank=True)
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
