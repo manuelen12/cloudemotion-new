@@ -140,7 +140,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <p align="justify" ng-bind="'Meet our adaptable works' high quality, made for various business models. Be part of our pleased customers list'|translate"></p>
+                                                            <p align="justify" ng-bind="'Meet our adaptable works high quality, made for various business models. Be part of our pleased customers list'|translate"></p>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 50px" >
@@ -553,10 +553,10 @@ get_header();
                                                                         <div class="qodef-tabs qodef-horizontal qodef-tab-text clearfix">
                                                                             <ul class="qodef-tabs-nav">
                                                                                 <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==1}">
-                                                                                    <a ng-click="vm.tabs=1" ng-bind="'Project's Start' | translate"></a>
+                                                                                    <a ng-click="vm.tabs=1" ng-bind="'Project\'s Start' | translate"></a>
                                                                                 </li>
                                                                                 <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==2}">
-                                                                                    <a ng-click="vm.tabs=2" ng-bind="'Project's Management' | translate"></a>
+                                                                                    <a ng-click="vm.tabs=2" ng-bind="'Project\'s Management' | translate"></a>
                                                                                 </li>
                                                                                 <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==3}">
                                                                                     <a ng-click="vm.tabs=3" ng-bind="'Marketing' | translate"></a>
@@ -583,7 +583,7 @@ get_header();
                                                                             <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==3" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
                                                                                 <div class="wpb_text_column wpb_content_element ">
                                                                                     <div class="wpb_wrapper">
-                                                                                    <p align="justify" ng-bind="'Once the Target Public and the Goals can be determined, we can start working on social networks or advertising. Because 'What is not displayed, not sold', it is time to introduce your product to the market and with our analysis we can begin to apply the strategies to promote your project in the digital media you want. Managing your social networks to increase the visibility of your business, advertise on Facebook Ads and Google Adwords to attract potential customers to your business from before the project culminates.'| translate">
+                                                                                    <p align="justify" ng-bind="'Once the Target Public and the Goals can be determined, we can start working on social networks or advertising. Because What is not displayed, not sold, it is time to introduce your product to the market and with our analysis we can begin to apply the strategies to promote your project in the digital media you want. Managing your social networks to increase the visibility of your business, advertise on Facebook Ads and Google Adwords to attract potential customers to your business from before the project culminates.'| translate">
                                                                                         </p>
                                                                                     </div>
                                                                                 </div>
@@ -660,7 +660,7 @@ get_header();
                                                                                 <h2 ng-bind="'IT Consulting'| translate"></h2>
                                                                             </div>
                                                                             <div class="qodef-fullwidth-slider-item-subtitle">
-                                                                                <h4 ng-bind="'Today's businesses are reviewing and adapting how they manage and deliver IT services' | translate"></h4>
+                                                                                <h4 ng-bind="'Today\'s businesses are reviewing and adapting how they manage and deliver IT services' | translate"></h4>
                                                                             </div>
                                                                             <div class="qodef-fullwidth-slider-item-text">
                                                                                 <p align="justify" ng-bind="'The new paradigms and future challenges associated with the provision of services are being conditioned by technological changes, increasing the flow of available data and certainly issues such as security. For this reason, we offer you a team of excellent professionals to manage your information and meet your business challenges, providing guidance, best practices and an extensive repertoire of technological knowledge'| translate"></p>
@@ -765,7 +765,7 @@ get_header();
                                                                                 <h4 ng-bind="'Combines and uses marketing strategies in your digital media' | translate"></h4>
                                                                             </div>
                                                                             <div class="qodef-fullwidth-slider-item-text">
-                                                                                <p align="justify" ng-bind="'If you are looking for a service that allows you to create or enhance the brand of your company using the latest digital technologies, you have arrived at the right site. The Cloudemotion team uses SEO, SMO, SEM, SMM, PPC techniques, as well as social network management, infographics design and email Marketing strategies that will allow the generation of attractive content that fully captures users' attention.' | translate"></p>
+                                                                                <p align="justify" ng-bind="'If you are looking for a service that allows you to create or enhance the brand of your company using the latest digital technologies, you have arrived at the right site. The Cloudemotion team uses SEO, SMO, SEM, SMM, PPC techniques, as well as social network management, infographics design and email Marketing strategies that will allow the generation of attractive content that fully captures users\' attention.' | translate"></p>
                                                                             </div>
                                                                             <div class="qodef-fullwidth-slider-item-button">
                                                                                 <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >

@@ -1,6 +1,6 @@
 mainApp.controller('CurriculumCtrl', CurriculumCtrl)
-CurriculumCtrl.$inject=["$rootScope","$scope","PortfolioService","$stateParams","particles"]
-function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particles) {
+CurriculumCtrl.$inject=["$rootScope","$scope","PortfolioService","$stateParams","particles","$translate"]
+function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particles,$translate) {
   var vm = this;
   angular.extend(vm,{
     prueba:"hola mundo2",
@@ -33,8 +33,8 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
       }
       //GET LANG
       
-      
-      
+      $translate.use($stateParams.lang);
+        
       //GET CLASS THE PORTFOLIO
       PortfolioService.getClass().then(function(response){ 
         vm.classi = response.data

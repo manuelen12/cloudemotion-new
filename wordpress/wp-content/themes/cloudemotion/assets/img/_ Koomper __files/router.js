@@ -65,7 +65,6 @@ function Config($stateProvider, $urlRouterProvider, $locationProvider, $httpProv
     suffix: '.json'
   });
   $translateProvider.useSanitizeValueStrategy('escape');
-  
   /*Language*/
 
   $urlRouterProvider.otherwise('/');

@@ -1,5 +1,7 @@
 
-var cloudemotion = angular.module("mainApp",[]).constant('particles',{
+var cloudemotion = angular.module("mainApp",["pascalprecht.translate"])
+.constant('ENDPOINT', 'http://cloudemotionteam.com/api/v0/')
+.constant('particles',{
 	
 	"particles": {
 		"number": {
