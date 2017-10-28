@@ -16,6 +16,7 @@ from rest_framework_jwt.settings import api_settings
 # Imports from your apps
 # from gaver.users.models import (Fetishes)
 # from gaver.common.models import (City)
+from django.utils.translation import ugettext_lazy as _
 from cloudemotion.curriculum.models import (Classifications,
                                             Portfolios,
                                             PortfolioSkill)
@@ -125,7 +126,7 @@ class API(Base):
             }
             for e in i.s_por2:
                 __dict2 = {
-                    "name": e.skill.name
+                    "name": _(e.skill.name)
                 }
                 __dict["developed"].append(__dict2)
             print(__dict)

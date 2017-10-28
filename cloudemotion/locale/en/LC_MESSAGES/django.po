@@ -17,368 +17,58 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: config/settings/base.py:157
+#: cloudemotion/users/v0/api.py:233
+#: config/settings/base.py:175
 msgid "English"
 msgstr ""
 
-#: config/settings/base.py:158
+#: cloudemotion/users/v0/api.py:233
+#: config/settings/base.py:176
 msgid "Spanish"
 msgstr ""
 
-#: doctor_amigo/common/views.py:41
+#: cloudemotion/users/v0/api.py:233
+#: config/settings/base.py:176
+msgid "Portuguese"
+msgstr ""
+
+#: cloudemotion/users/v0/api.py:233
+#: config/settings/base.py:176
+msgid "French"
+msgstr ""
+
+#: cloudemotion/common/views.py:41
 msgid "Not found."
 msgstr ""
 
-#: doctor_amigo/common/views.py:48
+#: cloudemotion/common/views.py:48
 msgid "Permission denied."
 msgstr ""
 
-#: doctor_amigo/templates/account/account_inactive.html:5
-#: doctor_amigo/templates/account/account_inactive.html:8
-msgid "Account Inactive"
+#: cloudemotion/users/v0/api.py:189
+msgid "Venezuelan."
 msgstr ""
 
-#: doctor_amigo/templates/account/account_inactive.html:10
-msgid "This account is inactive."
+#: cloudemotion/users/v0/api.py:195
+msgid "Informatics Engineer."
 msgstr ""
 
-#: doctor_amigo/templates/account/email.html:7
-msgid "Account"
+#: cloudemotion/users/v0/api.py:195
+msgid "Mechanical Engineer."
 msgstr ""
 
-#: doctor_amigo/templates/account/email.html:10
-msgid "E-mail Addresses"
-msgstr ""
-
-#: doctor_amigo/templates/account/email.html:13
-msgid "The following e-mail addresses are associated with your account:"
-msgstr ""
-
-#: doctor_amigo/templates/account/email.html:27
-msgid "Verified"
-msgstr ""
-
-#: doctor_amigo/templates/account/email.html:29
-msgid "Unverified"
-msgstr ""
-
-#: doctor_amigo/templates/account/email.html:31
-msgid "Primary"
-msgstr ""
-
-#: doctor_amigo/templates/account/email.html:37
-msgid "Make Primary"
-msgstr ""
-
-#: doctor_amigo/templates/account/email.html:38
-msgid "Re-send Verification"
-msgstr ""
-
-#: doctor_amigo/templates/account/email.html:39
-msgid "Remove"
-msgstr ""
-
-#: doctor_amigo/templates/account/email.html:46
-msgid "Warning:"
-msgstr ""
-
-#: doctor_amigo/templates/account/email.html:46
+#: cloudemotion/users/v0/api.py:195
+msgid "Telecommunications Engineer."
 msgid ""
-"You currently do not have any e-mail address set up. You should really add "
-"an e-mail address so you can receive notifications, reset your password, etc."
-msgstr ""
 
-#: doctor_amigo/templates/account/email.html:51
-msgid "Add E-mail Address"
-msgstr ""
-
-#: doctor_amigo/templates/account/email.html:56
-msgid "Add E-mail"
-msgstr ""
-
-#: doctor_amigo/templates/account/email.html:66
-msgid "Do you really want to remove the selected e-mail address?"
-msgstr ""
-
-#: doctor_amigo/templates/account/email_confirm.html:6
-#: doctor_amigo/templates/account/email_confirm.html:10
-msgid "Confirm E-mail Address"
-msgstr ""
-
-#: doctor_amigo/templates/account/email_confirm.html:16
-#, python-format
+#: cloudemotion/users/v0/api.py:195
+msgid "Electronics Engineer."
 msgid ""
-"Please confirm that <a href=\"mailto:%(email)s\">%(email)s</a> is an e-mail "
-"address for user %(user_display)s."
-msgstr ""
 
-#: doctor_amigo/templates/account/email_confirm.html:20
-msgid "Confirm"
-msgstr ""
-
-#: doctor_amigo/templates/account/email_confirm.html:27
-#, python-format
+#: cloudemotion/users/v0/api.py:195
+msgid "Student."
 msgid ""
-"This e-mail confirmation link expired or is invalid. Please <a href="
-"\"%(email_url)s\">issue a new e-mail confirmation request</a>."
-msgstr ""
 
-#: doctor_amigo/templates/account/login.html:7
-#: doctor_amigo/templates/account/login.html:11
-#: doctor_amigo/templates/account/login.html:44
-#: doctor_amigo/templates/base.html:62
-msgid "Sign In"
-msgstr ""
-
-#: doctor_amigo/templates/account/login.html:16
-#, python-format
+#: cloudemotion/users/v0/api.py:273
+msgid "Development."
 msgid ""
-"Please sign in with one\n"
-"of your existing third party accounts. Or, <a href=\"%(signup_url)s\">sign "
-"up</a>\n"
-"for a %(site_name)s account and sign in below:"
-msgstr ""
-
-#: doctor_amigo/templates/account/login.html:26
-msgid "or"
-msgstr ""
-
-#: doctor_amigo/templates/account/login.html:33
-#, python-format
-msgid ""
-"If you have not created an account yet, then please\n"
-"<a href=\"%(signup_url)s\">sign up</a> first."
-msgstr ""
-
-#: doctor_amigo/templates/account/login.html:43
-msgid "Forgot Password?"
-msgstr ""
-
-#: doctor_amigo/templates/account/logout.html:5
-#: doctor_amigo/templates/account/logout.html:8
-#: doctor_amigo/templates/account/logout.html:17
-#: doctor_amigo/templates/base.html:53
-msgid "Sign Out"
-msgstr ""
-
-#: doctor_amigo/templates/account/logout.html:10
-msgid "Are you sure you want to sign out?"
-msgstr ""
-
-#: doctor_amigo/templates/account/password_change.html:6
-#: doctor_amigo/templates/account/password_change.html:9
-#: doctor_amigo/templates/account/password_change.html:14
-#: doctor_amigo/templates/account/password_reset_from_key.html:5
-#: doctor_amigo/templates/account/password_reset_from_key.html:8
-#: doctor_amigo/templates/account/password_reset_from_key_done.html:4
-#: doctor_amigo/templates/account/password_reset_from_key_done.html:7
-msgid "Change Password"
-msgstr ""
-
-#: doctor_amigo/templates/account/password_reset.html:7
-#: doctor_amigo/templates/account/password_reset.html:11
-#: doctor_amigo/templates/account/password_reset_done.html:6
-#: doctor_amigo/templates/account/password_reset_done.html:9
-msgid "Password Reset"
-msgstr ""
-
-#: doctor_amigo/templates/account/password_reset.html:16
-msgid ""
-"Forgotten your password? Enter your e-mail address below, and we'll send you "
-"an e-mail allowing you to reset it."
-msgstr ""
-
-#: doctor_amigo/templates/account/password_reset.html:21
-msgid "Reset My Password"
-msgstr ""
-
-#: doctor_amigo/templates/account/password_reset.html:24
-msgid "Please contact us if you have any trouble resetting your password."
-msgstr ""
-
-#: doctor_amigo/templates/account/password_reset_done.html:15
-msgid ""
-"We have sent you an e-mail. Please contact us if you do not receive it "
-"within a few minutes."
-msgstr ""
-
-#: doctor_amigo/templates/account/password_reset_from_key.html:8
-msgid "Bad Token"
-msgstr ""
-
-#: doctor_amigo/templates/account/password_reset_from_key.html:12
-#, python-format
-msgid ""
-"The password reset link was invalid, possibly because it has already been "
-"used.  Please request a <a href=\"%(passwd_reset_url)s\">new password reset</"
-"a>."
-msgstr ""
-
-#: doctor_amigo/templates/account/password_reset_from_key.html:18
-msgid "change password"
-msgstr ""
-
-#: doctor_amigo/templates/account/password_reset_from_key.html:21
-#: doctor_amigo/templates/account/password_reset_from_key_done.html:8
-msgid "Your password is now changed."
-msgstr ""
-
-#: doctor_amigo/templates/account/password_set.html:6
-#: doctor_amigo/templates/account/password_set.html:9
-#: doctor_amigo/templates/account/password_set.html:14
-msgid "Set Password"
-msgstr ""
-
-#: doctor_amigo/templates/account/signup.html:6
-msgid "Signup"
-msgstr ""
-
-#: doctor_amigo/templates/account/signup.html:9
-#: doctor_amigo/templates/account/signup.html:19
-#: doctor_amigo/templates/base.html:58
-msgid "Sign Up"
-msgstr ""
-
-#: doctor_amigo/templates/account/signup.html:11
-#, python-format
-msgid ""
-"Already have an account? Then please <a href=\"%(login_url)s\">sign in</a>."
-msgstr ""
-
-#: doctor_amigo/templates/account/signup_closed.html:5
-#: doctor_amigo/templates/account/signup_closed.html:8
-msgid "Sign Up Closed"
-msgstr ""
-
-#: doctor_amigo/templates/account/signup_closed.html:10
-msgid "We are sorry, but the sign up is currently closed."
-msgstr ""
-
-#: doctor_amigo/templates/account/verification_sent.html:5
-#: doctor_amigo/templates/account/verification_sent.html:8
-#: doctor_amigo/templates/account/verified_email_required.html:5
-#: doctor_amigo/templates/account/verified_email_required.html:8
-msgid "Verify Your E-mail Address"
-msgstr ""
-
-#: doctor_amigo/templates/account/verification_sent.html:10
-msgid ""
-"We have sent an e-mail to you for verification. Follow the link provided to "
-"finalize the signup process. Please contact us if you do not receive it "
-"within a few minutes."
-msgstr ""
-
-#: doctor_amigo/templates/account/verified_email_required.html:12
-msgid ""
-"This part of the site requires us to verify that\n"
-"you are who you claim to be. For this purpose, we require that you\n"
-"verify ownership of your e-mail address. "
-msgstr ""
-
-#: doctor_amigo/templates/account/verified_email_required.html:16
-msgid ""
-"We have sent an e-mail to you for\n"
-"verification. Please click on the link inside this e-mail. Please\n"
-"contact us if you do not receive it within a few minutes."
-msgstr ""
-
-#: doctor_amigo/templates/account/verified_email_required.html:20
-#, python-format
-msgid ""
-"<strong>Note:</strong> you can still <a href=\"%(email_url)s\">change your e-"
-"mail address</a>."
-msgstr ""
-
-#: doctor_amigo/templates/base.html:49
-msgid "My Profile"
-msgstr ""
-
-#: doctor_amigo/users/models.py:22
-msgid "Name of User"
-msgstr ""
-
-#: doctor_amigo/users/models.py:23
-msgid "Name of First Name"
-msgstr ""
-
-#: doctor_amigo/users/models.py:25
-msgid "Name of Address"
-msgstr ""
-
-#: doctor_amigo/users/models.py:27
-msgid "Name of Phone"
-msgstr ""
-
-#: doctor_amigo/users/models.py:28
-msgid "Name of CC"
-msgstr ""
-
-
-msgid "randow"
-msgstr "Randon"
-
-msgid "porcent"
-msgstr "Porcent"
-
-msgid "CTR"
-msgstr "CTR"
-
-msgid "ID Banner"
-msgstr "ID Banner"
-
-msgid "ID Rotator"
-msgstr "ID Rotator"
-
-msgid "Rotator"
-msgstr "Rotator"
-
-msgid "ID Library"
-msgstr "ID Library"
-
-msgid "not exit"
-msgstr "not exist"
-
-msgid "it is not a Dict"
-msgstr "it is not a Dict"
-
-msgid "must be equal 100"
-msgstr "must be equal 100"
-
-msgid "must be in cycle"
-msgstr "must be in cycle"
-
-msgid "ID Plan"
-msgstr "ID Plan"
-
-msgid "already have a plan"
-msgstr "already have a plan"
-
-msgid "I"
-msgstr "I"
-
-msgid "Plans"
-msgstr "Plans"
-
-msgid "paid out"
-msgstr "paid out"
-
-msgid "do not has plans"
-msgstr "do not has plans"
-
-msgid "Error while creating payment:"
-msgstr "Error while creating payment:"
-
-msgid "is not valid"
-msgstr "is not valid"
-
-msgid "must be equals"
-msgstr "must be equals"
-
-msgid "ID user"
-msgstr "ID user"
-
-msgid "An email has been sent to restore your password"
-msgstr "An email has been sent to restore your password"
-
-msgid "invalid token"
-msgstr "invalid token"

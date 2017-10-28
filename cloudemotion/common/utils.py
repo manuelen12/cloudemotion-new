@@ -17,9 +17,9 @@ from rest_framework import routers
 from math import radians, cos, sin, asin, sqrt
 from threading import Thread
 from django.conf import settings
-import smtplib
+# import smtplib
 from email.mime.text import MIMEText
-from csv import reader
+# from csv import reader
 # from pyexcel_xlsx import XLSXBook
 from rest_framework import permissions
 from django.core.mail import send_mail
@@ -152,9 +152,9 @@ class Base():
     #     sender = settings.EMAIL_HOST_USER
     #     #import ipdb; ipdb.set_trace()
     #     # if pdf == None:
-    #     # print(MIMEText)
+        # print(MIMEText)
     #     # msg = MIMEMultipart()
-    #     # msg.attach(MIMEText(pdf))
+        # msg.attach(MIMEText(pdf))
     #     session = smtplib.SMTP(
     #         settings.EMAIL_HOST,
     #         int(settings.EMAIL_PORT)
@@ -163,7 +163,7 @@ class Base():
     #     session.starttls()
     #     session.ehlo()
     #     session.login(sender, settings.EMAIL_HOST_PASSWORD)
-    #     message = MIMEText(message, "html", _charset="utf-8")
+        message = MIMEText(message, "html", _charset="utf-8")
     #     message["Subject"] = subject
     #     session.sendmail(sender, email, message.as_string())
     #     session.quit()

@@ -1,5 +1,6 @@
 from django.db import models
 from django.conf import settings
+from django.utils.translation import ugettext_lazy as _
 
 # Create your models here.
 
@@ -74,9 +75,9 @@ class Educations(models.Model):
 
 class EducationsUser(models.Model):
     __types = (
-       (1, "Basic"),
-       (2, "diversified"),
-       (3, "Academic"),
+       (1, _("Basic")),
+       (2, _("diversified")),
+       (3, _("Academic")),
     )
     user = models.ForeignKey(
        settings.AUTH_USER_MODEL,
@@ -174,9 +175,9 @@ class SkillsUser(models.Model):
 
 class LanguajesUser(models.Model):
     __types = (
-       (1, "Basic"),
-       (2, "Medium"),
-       (3, "Advanced"),
+       (1, _("Basic")),
+       (2, _("Medium")),
+       (3, _("Advanced")),
     )
     user = models.ForeignKey(
        settings.AUTH_USER_MODEL,

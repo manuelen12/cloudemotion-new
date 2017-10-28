@@ -5,6 +5,7 @@ from json import loads, dumps
 
 # Core Django imports
 # from django.contrib.auth import authenticate
+from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth import get_user_model
 from common.utils import ThreadDef
 from django.template.loader import render_to_string
@@ -185,13 +186,13 @@ class API(Base):
             }
             for e in i.user_nat2:
                 __dict2 = {
-                    "name": e.nationality.name
+                    "name": _(e.nationality.name)
                 }
                 __dict["user_nationality"].append(__dict2)
 
             for e in i.user_prof2:
                 __dict2 = {
-                    "name": e.profession.name
+                    "name": _(e.profession.name)
                 }
                 __dict["user_profession"].append(__dict2)
 
@@ -202,7 +203,7 @@ class API(Base):
                         "address": e.institute.address,
                     },
                     "course": {
-                        "name": e.course.name,
+                        "name": _(e.course.name)
                     },
                     "start_date": e.start_date,
                     "ending_date": e.ending_date,
@@ -216,7 +217,7 @@ class API(Base):
                         "address": e.institute.address,
                     },
                     "education": {
-                        "name": e.education.name,
+                        "name": _(e.education.name),
                     },
                     "start_date": e.start_date,
                     "ending_date": e.ending_date,
@@ -229,7 +230,7 @@ class API(Base):
                         "id": e.level,
                         "name": e.get_level_display()
                     },
-                    "name": e.languaje.name
+                    "name": _(e.languaje.name)
                 }
                 __dict["user_language"].append(__dict2)
 
@@ -254,7 +255,7 @@ class API(Base):
                         "id": e.level,
                         "name": e.get_level_display()
                     },
-                    "name": e.skill.name
+                    "name": _(e.skill.name)
                 }
                 __dict["user_skill"].append(__dict2)
 
@@ -269,12 +270,12 @@ class API(Base):
                     "developed": [],
                     "classification": {
                         "id": e.classification.id,
-                        "name": e.classification.name,
+                        "name": _(e.classification.name),
                         "category": e.classification.category,
                     },
                     "company": {
                         "id": e.company.id,
-                        "name": e.company.name,
+                        "name": _(e.company.name),
                         "responsable": e.company.responsable,
                     },
                 }
@@ -283,7 +284,7 @@ class API(Base):
                 for z in e.s_por.all():
                     __dict3 = {
                         "id": z.skill.id,
-                        "name": z.skill.name,
+                        "name": _(z.skill.name),
                     }
                     __dict2["developed"].append(__dict3)
                 __dict["user_portfolio"].append(__dict2)

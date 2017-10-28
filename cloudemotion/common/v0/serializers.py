@@ -2,6 +2,7 @@
 # Core Django imports
 # Third-party app imports
 from rest_framework import serializers
+from django.utils.translation import ugettext_lazy as _
 # Imports from your apps
 # from json import dumps
 # from django.contrib.auth.models import User
@@ -48,10 +49,11 @@ class UploadSerializers(serializers.Serializer):
 
     file = serializers.FileField(required=True)
 
+
 class ChangeIdiomSerializers(serializers.Serializer):
 
     idiom = serializers.ChoiceField(
         choices=[
-            ('en', 'English'),
-            ('es', 'Espanol')]
+            ('en', _('English')),
+            ('es', _('Espanol'))]
     )
