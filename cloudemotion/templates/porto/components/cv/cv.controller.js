@@ -52,6 +52,12 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
           vm.last_exp_name = val.position.name
           vm.last_exp_comp = val.company.name
         })
+        if(vm.users.user_education.length == 0){ vm.showEdu=true; }
+        if(vm.users.user_course.length == 0){ vm.showCou=true; }
+        //if(vm.users.user_skill.length == 0){ vm.showSki=true; }
+        if(vm.users.user_portfolio.length == 0){ vm.showPort=true; }
+        if(vm.users.user_experience.length == 0){ vm.showExp=true; }
+
         console.log(vm.users);
       },function(error){
         console.log(error);

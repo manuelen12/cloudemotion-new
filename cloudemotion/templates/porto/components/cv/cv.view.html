@@ -20,14 +20,22 @@
 							<span class="custom-text-color-1 text-uppercase" ng-bind="vm.users.city.name+' '+vm.users.city.state.name+' '+vm.users.city.state.country.name"></span>
 								<span class="custom-text-color-1 text-uppercase mb-md" ng-bind="vm.users.position.resumen"></span>
 								<span class="custom-text-color-1 text-uppercase">
-									<strong class="custom-text-color-1" ng-bind="'Previous' | translate ">Previous: </strong>
-									<text ng-bind="vm.last_exp_name+' '+vm.last_exp_comp "></text>
-									<a data-hash="" href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm" ng-bind="'View More' | translate"></a>
+									<div class="col-md-9">
+										<strong class="custom-text-color-1" ng-bind="'Previous' | translate ">Previous: </strong>
+										<text ng-bind="vm.last_exp_name+' '+vm.last_exp_comp "></text>										
+									</div>
+									<div class="col-md-3">
+										<a data-hash="" href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm" ng-bind="'View More' | translate"></a>
+									</div>
 								</span>
 								<span class="custom-text-color-1 text-uppercase">
-									<strong class="custom-text-color-1" ng-bind="'Education' | translate ">Education: </strong>
-									<text ng-bind="vm.last_education+' '+vm.last_institute"></text>
-									<a data-hash="" href="#education" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>
+									<div class="col-md-9">
+										<strong class="custom-text-color-1" ng-bind="'Education' | translate">Education: </strong>
+										<text ng-bind="vm.last_education+' '+vm.last_institute"></text>							
+									</div>
+									<div class="col-md-3">
+										<a data-hash="" href="#education" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>						
+									</div>
 								</span>
 							</span>
 						</div>
@@ -133,7 +141,7 @@
 							</div>
 						</div>
 
-						<h2 class="text-color-quaternary font-weight-extra-bold text-uppercase" ng-bind="'about me' | translate"></h2>
+						<h2 class="text-color-quaternary font-weight-extra-bold text-uppercase" ng-bind="'about me' | translate" ng-hide="!vm.users.about_me"></h2>
 
 						<p class="custom-text-color-2" ng-bind="vm.users.about_me"></p>
 
@@ -144,13 +152,13 @@
 
 							<p>Morbi tincidunt nunc non diam porta, at fermentum orci bibendum. Donec arcu nisi, ornare nec commodo vitae, sollicitudin sed magna. Cras sit amet justo et nulla pulvinar laoreet. Phasellus scelerisque, metus id posuere vulputate, diam tellus iaculis sapien, eget scelerisque ipsum libero convallis velit. Duis lorem ligula, faucibus quis tellus nec, fringilla ultricies leo. Etiam tempus congue magna. Suspendisse porta dictum tortor, eu volutpat ipsum eleifend nec. Aliquam dapibus lorem luctus, cursus libero imperdiet, mattis nunc. Sed in ipsum diam. Quisque efficitur metus purus, vitae fermentum lacus venenatis id.</p>
 						</div>
-						<a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs" ng-click="vm.show=!vm.show">View More</a>
+						<!-- <a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs" ng-click="vm.show=!vm.show">View More</a> -->
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="experience" class="section section-secondary section-no-border m-none">
+		<section id="experience" class="section section-secondary section-no-border m-none" ng-hide="vm.showExp">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -160,7 +168,7 @@
 
 								<!-- EXP -->
 								<article class="timeline-box right custom-box-shadow-2" ng-repeat="ex in vm.users.user_experience">
-									<div class="experience-info col-md-3 col-sm-5 background-color-primary" >
+									<div class="experience-info col-md-3 col-sm-5 background-color-primary">
 										<span class="from text-color-dark text-uppercase">
 											<text ng-bind="'From' | translate"></text>
 											<span class="font-weight-semibold" ng-bind="ex.start_date | date">Sep 2012</span>
@@ -186,7 +194,7 @@
 				</div>
 			</div>
 		</section>			
-		<section id="education" class="section section-no-border custom-background-color-1 m-none">
+		<section id="education" class="section section-no-border custom-background-color-1 m-none" ng-hide="vm.showEdu">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -208,7 +216,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="course" class="section section-no-border custom-background-color-1 m-none">
+		<section id="course" class="section section-no-border custom-background-color-1 m-none" ng-hide="vm.showCou">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -233,7 +241,7 @@
 			</div>
 		</section>
 
-		<section id="skills" class="section section-no-border background-color-light m-none">
+		<section id="skills" class="section section-no-border background-color-light m-none" ng-hide="vm.showSki">
 			<div class="container">
 				<div class="row custom-sm-flex-order">
 					<div class="col-md-6 col-sm-6 col-xs-12">
@@ -255,7 +263,7 @@
 						<div class="custom-box-details background-color-light custom-box-shadow-1">
 							<h4 class="text-color-dark" ng-bind="'Languages' | translate"></h4>
 							<ul class="custom-list-style-1 p-none">
-								<li ng-repeat="lan in vm.users.user_languaje">
+								<li ng-repeat="lan in vm.users.user_language">
 									<span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="./assets/img/gif/blank.gif" class="flag-icon flag-icon-us" alt="English" ><label ng-bind="lan.name"></label></span>
 									<span class="custom-text-color-2" ng-bind="lan.level.name"></span>
 									<span class="flag-icon-us"></span>
@@ -266,7 +274,7 @@
 				</div>
 			</div>
 		</section>
-		<section id="portfolio" class="section section-no-border background-color-secondary m-none">
+		<section id="portfolio" class="section section-no-border background-color-secondary m-none" ng-hide="vm.showPort">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
