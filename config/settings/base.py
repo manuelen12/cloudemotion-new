@@ -118,7 +118,28 @@ FIXTURE_DIRS = (
 
 # EMAIL CONFIGURATION
 # ------------------------------------------------------------------------------
-EMAIL_BACKEND = env('DJANGO_EMAIL_BACKEND', default='django.core.mail.backends.smtp.EmailBackend')
+
+EMAIL_PORT = 1025
+
+EMAIL_HOST = 'localhost'
+EMAIL_BACKEND = env('DJANGO_EMAIL_BACKEND',
+                    default='django.core.mail.backends.smtp.EmailBackend')
+
+# django-debug-toolbar
+# ------------------------------------------------------------------------------
+INTERNAL_IPS = ['127.0.0.1', '10.0.2.2', '192.168.0.106', '192.168.1.108']
+ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['127.0.0.1', '192.168.0.106', '192.168.1.102', 'localhost', 'cloudemotion.com.ve', '186.92.128.81', "186.92.61.127"])
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'manuelen12@gmail.com'
+EMAIL_HOST_PASSWORD = '214650434.aA'
+EMAIL_PORT = 587
+DEBUG_TOOLBAR_CONFIG = {
+    'DISABLE_PANELS': [
+        'debug_toolbar.panels.redirects.RedirectsPanel',
+    ],
+    'SHOW_TEMPLATE_CONTEXT': True,
+}
 
 # MANAGER CONFIGURATION
 # ------------------------------------------------------------------------------

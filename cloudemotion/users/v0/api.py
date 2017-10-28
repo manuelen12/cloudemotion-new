@@ -6,9 +6,13 @@ from json import loads, dumps
 # Core Django imports
 # from django.contrib.auth import authenticate
 from django.contrib.auth import get_user_model
+from common.utils import ThreadDef
+from django.template.loader import render_to_string
 # from django.core.cache import cache
 from rest_framework_jwt.settings import api_settings
-from cloudemotion.users.models import UsersNationalities, UsersProfessions
+from cloudemotion.users.models import (UsersNationalities,
+                                       UsersProfessions,
+                                       )
 from cloudemotion.curriculum.models import (CoursesUser,
                                             EducationsUser,
                                             LanguajesUser,
@@ -294,3 +298,69 @@ class API(Base):
                 self.result = {"result": "empty"}
                 return
             self.result = __array[0]
+
+
+    # def valid_send_contacts(self, kwargs):
+    #     __valid = ['name', 'email', 'message']
+    #     if not self._list_basic_info(kwargs, __valid):
+    #         return
+
+    #     return True
+
+    # def client_to_contacts(self):
+    #     self.data = self.request.data
+    #     print(self.data)
+    #     if not self.valid_send_contacts(self.data):
+    #         return
+    #     self.export_attr(Contacts, self.data)
+    #     create = Contacts.objects.create(**self.values)
+    #     # self.get_contacts(create.id)
+    #     rendered_client = render_to_string(
+    #         'message.html', {
+    #             "name": self.data.get('name'),
+    #             "numero": create.id})
+
+    #     __start = ThreadDef(
+    #         self.send_mail, *[self.data.get('email'),
+    #                           "Autorespuesta CloudEmotion", rendered_client])
+    #     # self.result = ('Su mensaje se enviado con exito!')
+    #     __start.start()
+    #     rendered_company = render_to_string(
+    #         'autorequest_company.html', {
+    #             "name": self.data.get('name'),
+    #             "email": self.data.get('email'),
+    #             "mensaje": self.data.get('message'),
+    #             "numero": create.id})
+    #     __start = ThreadDef(
+    #         self.send_mail, *['cloudemotioninfo@gmail.com',
+    #                           "Recepcion de Falla CloudEmotion", rendered_company])
+    #     __start.start()
+    #     self.result = create.id
+
+    def valid_send_contact(self, kwargs):
+        if not self._list_basic_info(kwargs, ["name", "email", "user_id", "message"]):
+            return
+
+        if not self.list_only_string(kwargs, ["name"]):
+            return
+
+        if not self._email(kwargs["email"]):
+            return
+        return True
+
+    def send_contact(self):
+        if not self.valid_send_contact(self.data):
+            return
+
+        html = render_to_string(
+            'message.html', {
+                "name": self.data.get('name'),
+                "email": self.data.get('email'),
+                "user_id": self.data.get('user_id'),
+                "message": self.data.get('message')})
+
+        __start = ThreadDef(
+            self.send_mail, *["email",
+                              "Contactanos de CloudEmotion", html])
+        __start.start()
+        self.result = {"result": "good"}
