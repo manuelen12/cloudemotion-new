@@ -32,8 +32,8 @@ class Experiences(models.Model):
     position = models.ForeignKey('common.Positions')
     start_date = models.DateField()
     ending_date = models.DateField()
-    title = models.TextField()
-    description = models.TextField()
+    # title = models.CharField(max_length=200)
+    # description = models.TextField()
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
 
@@ -255,6 +255,7 @@ class UserLanguage(models.Model):
 class ExperienceLanguage(models.Model):
     language = models.ForeignKey('common.Languajes', related_name="e_lan")
     experience = models.ForeignKey(Experiences, related_name="l_exp")
+    title = models.CharField(max_length=200)
     description = models.TextField()
 
     class Meta:
