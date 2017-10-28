@@ -94,20 +94,20 @@
 					<div class="col-md-12">
 
 						<div class="custom-box-details background-color-light custom-box-shadow-1 col-md-6 ml-xlg mb-xlg pull-right clearfix">
-							<h4>Personal Details</h4>
+							<h4 ng-bind="'Personal Details' | translate">Personal Details</h4>
 							<div class="col-md-6 col-sm-6 p-none">
 								<ul class="custom-list-style-1 p-none">
 									<li>
-										<span class="text-color-dark">Birthday:</span>
+										<span class="text-color-dark" ng-bind="'Birthday' | translate" ></span>
 										<span class="custom-text-color-2" ng-bind="vm.users.birthday"></span>
 									</li>
 									<li>
-										<span class="text-color-dark">Marital:</span>
-										<span class="custom-text-color-2">Single</span>
+										<span class="text-color-dark" ng-bind="'Marital' |  translate"></span>
+										<span class="custom-text-color-2" ng-bind="'Single' | translate"></span>
 									</li>
 									<li>
-										<span class="text-color-dark">Nationality:</span>
-										<span class="custom-text-color-2" ng-bind="vm.users.user_nationality[0]"></span>
+										<span class="text-color-dark" ng-bind="'Nationality' | translate"></span>
+										<span class="custom-text-color-2" ng-repeat="nat in vm.users.user_nationality"><text ng-bind="nat.name"></text></span>
 									</li>
 								</ul>
 							</div>
@@ -118,7 +118,7 @@
 										<span class="custom-text-color-2"><a class="custom-text-color-2"><label ng-bind="vm.users.skype"></label></a></span>
 									</li>
 									<li>
-										<span class="text-color-dark">PHONE:</span>
+										<span class="text-color-dark" ng-bind="'Phone' | translate"></span>
 										<span class="custom-text-color-2" ng-bind="vm.users.phone"></span>
 									</li>										
 								</ul>
@@ -126,7 +126,7 @@
 							<div class="col-md-12 col-sm-12 p-none">
 								<ul class="custom-list-style-1 p-none">
 									<li>
-										<span class="text-color-dark">EMAIL:</span>
+										<span class="text-color-dark" ng-bind="'Email' | translate"></span>
 										<span class="custom-text-color-2"><a class="custom-text-color-2"><label ng-bind="vm.users.email"></label></a></span>
 									</li>
 								</ul>
@@ -154,7 +154,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold">Experience</h2>
+						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold" ng-bind="'Experience' | translate"></h2>
 						<section class="timeline custom-timeline" id="timeline">
 							<div class="timeline-body">
 
@@ -162,11 +162,11 @@
 								<article class="timeline-box right custom-box-shadow-2" ng-repeat="ex in vm.users.user_experience">
 									<div class="experience-info col-md-3 col-sm-5 background-color-primary" >
 										<span class="from text-color-dark text-uppercase">
-											From
+											<text ng-bind="'From' | translate"></text>
 											<span class="font-weight-semibold" ng-bind="ex.start_date | date">Sep 2012</span>
 										</span>
 										<span class="to text-color-dark text-uppercase">
-											To
+											<text ng-bind="'To' | translate"></text>
 											<span class="font-weight-semibold" ng-bind="ex.ending_date | date">Present</span>
 										</span>
 										<p class="text-color-dark" ng-bind="ex.time"></p>
@@ -190,7 +190,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Education</h2>
+						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none" ng-bind="'Education' | translate">Education</h2>
 						<div class="owl-carousel row owl-education" style="padding:40px;">
 							<div class="item" style="width: 420px;" ng-repeat="e in vm.users.user_education">
 								<div class="panel panel-default item-box">
@@ -212,7 +212,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none">Course</h2>
+						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none" ng-bind="'Course' | translate">Course</h2>
 						<div class="carousel-wrap">
 							<div class="owl-carousel owl-carousel1">
 								<div class="item item-course" ng-repeat="c in vm.users.user_course">
@@ -253,7 +253,7 @@
 					</div>
 					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="custom-box-details background-color-light custom-box-shadow-1">
-							<h4 class="text-color-dark">Languages</h4>
+							<h4 class="text-color-dark" ng-bind="'Languages' | translate"></h4>
 							<ul class="custom-list-style-1 p-none">
 								<li ng-repeat="lan in vm.users.user_languaje">
 									<span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="./assets/img/gif/blank.gif" class="flag-icon flag-icon-us" alt="English" ><label ng-bind="lan.name"></label></span>
@@ -270,9 +270,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
-						<h2 class="text-color-quaternary font-weight-extra-bold text-uppercase">Portfolio</h2>
+						<h2 class="text-color-quaternary font-weight-extra-bold text-uppercase" ng-bind="'Portfolio' | translate"></h2>
 						<ul class="nav nav-pills sort-source custom-nav-sort mb-xlg" data-sort-id="portfolio" data-option-key="filter">
-							<li data-option-value="*" class=""><a href="" ng-click="vm.label=$">Show All</a></li>
+							<li data-option-value="*" class=""><a href="" ng-click="vm.label=$" ng-bind="'Show All' | translate"></a></li>
 							<li ng-repeat="c in vm.classi" ng-click="vm.label=c.name"><a href="" ng-bind="c.name"></a></li>
 							
 							<!--<li data-option-value=".websites" ng-click="vm.test =! vm.test"><a href="">Websites</a></li>
@@ -432,19 +432,19 @@
 					<section class="section section-no-border match-height background-color-primary m-none" style="height: 434px;">
 						<div class="row m-none">
 							<div class="col-half-section col-half-section-right mr-md">
-								<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold">Say Hello</h2>
+								<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold" ng-bind="'Say Hello' | translate"></h2>
 								<form id="callSendMessage" class="custom-form-style" novalidate="novalidate">
 									<div class="form-content">
 										<div class="form-control-custom">
-											<input type="text" class="form-control contact-name" name="callName" placeholder="Your Name *" data-msg-required="This field is required." id="callName" required="" aria-required="true" ng-model="vm.contact.name">
+											<input type="text" class="form-control contact-name" name="callName" placeholder="{{ 'Your Name' | translate }} *" data-msg-required="This field is required." id="callName" required="" aria-required="true" ng-model="vm.contact.name">
 										</div>
 										<div class="form-control-custom">
-											<input type="text" class="form-control contact-subject" name="callSubject" placeholder="Subject *" data-msg-required="This field is required." id="callSubject" required="" aria-required="true" ng-model="vm.contact.subject">
+											<input type="text" class="form-control contact-subject" name="callSubject" placeholder="{{'Subject'|translate}} *" data-msg-required="This field is required." id="callSubject" required="" aria-required="true" ng-model="vm.contact.subject">
 										</div>
 										<div class="form-control-custom">
-											<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control contact-message" name="message" placeholder="Message*" id="message" required="" aria-required="true" ng-model="vm.contact.message"></textarea>
+											<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control contact-message" name="message" placeholder="{{'Message' | translate}} *" id="message" required="" aria-required="true" ng-model="vm.contact.message"></textarea>
 										</div>
-										<button class="btn btn-quaternary text-color-light text-uppercase font-weight-semibold outline-none custom-btn-style-2 custom-border-radius-1" ng-click="vm.sendMessage()">Subtmit</button>
+										<button class="btn btn-quaternary text-color-light text-uppercase font-weight-semibold outline-none custom-btn-style-2 custom-border-radius-1" ng-click="vm.sendMessage()" ng-bind="'Submit' | translate"></button>
 									</div>
 								</form>
 							</div>
@@ -461,7 +461,7 @@
 											<i class="icon-envelope icons text-color-light"></i>
 										</span>
 										<span class="feature-box-info">
-											<label class="font-weight-semibold text-uppercase custom-text-color-1">Email</label>
+											<label class="font-weight-semibold text-uppercase custom-text-color-1" ng-bind="'Email' | translate"></label>
 											<strong class="font-weight-light text-color-light custom-opacity-effect-1" ng-bind="vm.users.email"></strong>
 										</span>
 									</span>
@@ -472,7 +472,7 @@
 											<i class="icon-phone icons text-color-light"></i>
 										</span>
 										<span class="feature-box-info">
-											<label class="font-weight-semibold text-uppercase custom-text-color-1">Phone</label>
+											<label class="font-weight-semibold text-uppercase custom-text-color-1" ng-bind="'Phone' | translate"></label>
 											<strong class="font-weight-light text-color-light custom-opacity-effect-1" ng-bind="vm.users.phone"></strong>
 										</span>
 									</span>
@@ -494,7 +494,7 @@
 									</span>
 									<a href="{{vm.users.facebook}}" class="text-decoration-none">
 										<span class="feature-box-info">
-											<label class="font-weight-semibold text-uppercase custom-text-color-1">Follow me</label>
+											<label class="font-weight-semibold text-uppercase custom-text-color-1" ng-bind="'Follow me' | translate"></label>
 											<strong class="font-weight-light text-color-light custom-opacity-effect-1">Facebook</strong>
 										</span>
 									</a>

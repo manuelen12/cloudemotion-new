@@ -7,7 +7,7 @@
                                                         <span class="menu_icon_wrapper">
                                                             <i class="menu_icon null fa"></i>
                                                         </span>
-                                                        <span class="item_text">Inicio</span>
+                                                        <span class="item_text" ng-bind="'Home' | translate">Inicio</span>
                                                     </span>
                                                     <span class="plus"></span>
                                                 </span>
@@ -20,7 +20,7 @@
                                                         <span class="menu_icon_wrapper">
                                                             <i class="menu_icon null fa"></i>
                                                         </span>
-                                                        <span class="item_text">Creativo</span>
+                                                        <span class="item_text" ng-bind="'Creative' | translate">Creativo</span>
                                                     </span>
                                                     <span class="plus"></span>
                                                 </span>
@@ -33,7 +33,7 @@
                                                         <span class="menu_icon_wrapper">
                                                             <i class="menu_icon null fa"></i>
                                                         </span>
-                                                        <span class="item_text">Portafolio</span>
+                                                        <span class="item_text" ng-bind="'Portfolio' | translate">Portafolio</span>
                                                     </span>
                                                     <span class="plus"></span>
                                                 </span>
@@ -46,7 +46,7 @@
                                                         <span class="menu_icon_wrapper">
                                                             <i class="menu_icon null fa"></i>
                                                         </span>
-                                                        <span class="item_text">Planificacion</span>
+                                                        <span class="item_text" ng-bind="'Planning' | translate">Planificacion</span>
                                                     </span>
                                                     <span class="plus"></span>
                                                 </span>
@@ -59,7 +59,7 @@
                                                         <span class="menu_icon_wrapper">
                                                             <i class="menu_icon null fa"></i>
                                                         </span>
-                                                        <span class="item_text">Diseño&Marketing</span>
+                                                        <span class="item_text" ng-bind="'Desing/Marketing' | translate ">Diseño&Marketing</span>
                                                     </span>
                                                     <span class="plus"></span>
                                                 </span>
@@ -72,10 +72,24 @@
                                                         <span class="menu_icon_wrapper">
                                                             <i class="menu_icon null fa"></i>
                                                         </span>
-                                                        <span class="item_text">Equipo</span>
+                                                        <span class="item_text" ng-bind="'Team' | translate">Equipo</span>
                                                     </span>
                                                     <span class="plus"></span>
                                                 </span>
                                             </a>
                                         </li>
+                                        <li id="nav-menu-item-632" class="menu-item">
+                                            <a parallax-cl class="" ng-click="vm.changeLanguage(vm.country)">
+                                                <span class="item_outer">
+                                                    <span class="item_inner">
+                                                        <span class="menu_icon_wrapper">
+                                                            <i class="menu_icon null fa"></i>
+                                                        </span>
+                                                        <flag country="vm.country"  size="32"></flag>
+                                                    </span>
+                                                    <span class="plus"></span>
+                                                </span>
+                                            </a>
+                                        </li>                            
+
                                     </ul>

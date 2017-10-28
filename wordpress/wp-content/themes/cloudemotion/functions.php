@@ -24,10 +24,11 @@ if(!is_admin()){
 		'style_dynamic',
 		'style_dynamic_responsive',
 		'styles',
-				//'toolbar',
+		//'toolbar',
 		'bootstrap.min',
 		'woocommerce-responsive.min',
 		'woocommerce.min',
+		'flag'
 		);
 
 	$scripts = array(
@@ -67,6 +68,8 @@ if(!is_admin()){
 		'waypoints.min',
 		'global',
 		'angular.min',
+		'angular-translate',
+		'ng-flag',
 		'html5',
 		'owl-carousel.min',
 		'moment',
