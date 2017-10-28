@@ -11,8 +11,8 @@ class Companies(models.Model):
     address = models.TextField(null=True, blank=False)
     responsable = models.CharField(max_length=100, null=True, blank=False)
     responsible_phone = models.CharField(max_length=50, null=True, blank=False)
-    status = models.BooleanField(default=True, null=True, blank=False)
-    create_at = models.DateTimeField(auto_now_add=True, null=True, blank=False)
+    status = models.BooleanField(default=True)
+    create_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
         app_label = 'curriculum'
