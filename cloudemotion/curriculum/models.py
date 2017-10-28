@@ -5,14 +5,14 @@ from django.conf import settings
 
 
 class Companies(models.Model):
-    name = models.CharField(max_length=50)
-    phone = models.CharField(max_length=50)
-    email = models.EmailField(max_length=50)
-    address = models.TextField()
-    responsable = models.CharField(max_length=100)
-    responsible_phone = models.CharField(max_length=50)
-    status = models.BooleanField(default=True)
-    create_at = models.DateTimeField(auto_now_add=True)
+    name = models.CharField(max_length=50, null=True, blank=False)
+    phone = models.CharField(max_length=50, null=True, blank=False)
+    email = models.EmailField(max_length=50, null=True, blank=False)
+    address = models.TextField(null=True, blank=False)
+    responsable = models.CharField(max_length=100, null=True, blank=False)
+    responsible_phone = models.CharField(max_length=50, null=True, blank=False)
+    status = models.BooleanField(default=True, null=True, blank=False)
+    create_at = models.DateTimeField(auto_now_add=True, null=True, blank=False)
 
     class Meta:
         app_label = 'curriculum'
