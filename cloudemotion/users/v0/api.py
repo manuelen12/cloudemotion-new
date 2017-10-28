@@ -170,7 +170,7 @@ class API(Base):
                 "twitter": i.twitter,
                 "linkedin": i.linkedin,
                 "youtube": i.youtube,
-                "about_me": i.about2[0] if i.about2 else "",
+                "about_me": i.about2[0].about_me if i.about2 else "",
                 "status": i.status,
                 "create_at": i.create_at,
                 "user_nationality": [],
