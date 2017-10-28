@@ -79,7 +79,7 @@ get_header();
                                                     
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <p align="justify" ng-bind="'IT training, tutorials and project management which help the clients according to their needs and suit to their information requirements'| translate"><</p>
+                                                            <p align="justify" ng-bind="'IT training, tutorials and project management which help the clients according to their needs and suit to their information requirements'| translate"></p>
                                                         </div>
                                                     </div>
 
@@ -809,7 +809,7 @@ get_header();
                                                     <div class="wpb_wrapper">
                                                         <h4 align="justify" ng-bind="'Check out your requirements, manage them into a document, discuss about them with your crew and plan a comfortable model so that you can tell us about your ideas. This way your project will be successful from the beginning.' | translate"></h4>
                                                         <br>
-                                                        <h4 ng-bind="'Be aware of this when you're planning:' | translate"></h4>
+                                                        <h4 ng-bind="'Be aware of this when you\'re planning:' | translate"></h4>
                                                     </div>
                                                 </div>
                                                 <div class="vc_empty_space"  style="height: 29px" >
@@ -885,7 +885,7 @@ get_header();
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <h5 style="margin-top: 1em" ng-bind="'Remember: It's not about your service's quantity, but your service's quality.' | translate"></h5>
+                                                <h5 style="margin-top: 1em" ng-bind="'Remember: It\'s not about your service\'s quantity, but your service\'s quality.' | translate"></h5>
                                                 <div class="vc_empty_space"  style="height: 50px" >
                                                     <span class="vc_empty_space_inner"></span>
                                                 </div>
@@ -1201,6 +1201,16 @@ get_header();
                                 <div class="qodef-section-inner-margin clearfix">
 
 
+                                                    <div class="item col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-5 col-sm-offset-1  col-lg-3 text-center ng-scope" style="margin-top:1em;margin-bottom:1em;">
+                                                        <div class="contenido">
+                                                            <div class="team-box box-4">
+                                                                <div class="team-img main-bg">
+                                                                <img ng-src="http://cloudemotion.com.ve/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="http://cloudemotion.com.ve/static/img/luis.png">
+                                                            </div>
+                                                            <div class="team-details main-bg">
+                                                                <h3 class="team-name ng-binding">Luis García</h3>
+                                                                <h5 class="team-pos white ng-binding">Programador Front-End</h5>
+                                                                <strong>Especialidades</strong>
 
                                     <div class="item col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-5 col-sm-offset-1  col-lg-3 text-center ng-scope" style="margin-top:1em;margin-bottom:1em;">
                                         <div class="contenido">
@@ -1385,7 +1395,6 @@ get_header();
                                                     </div>
                                                 </div>
                                             </div>
-
                                         </div>
                                         <?php 
                                         endif;
@@ -1402,5 +1411,5 @@ get_header();
                         <!-- close div.qodef-wrapper-inner  -->
                     </div>
                     <!-- close div.qodef-wrapper -->
-                </body>
-                </html>
+        </body>
+</html>
