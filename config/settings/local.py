@@ -42,8 +42,7 @@ CACHES = {
 
 # django-debug-toolbar
 # ------------------------------------------------------------------------------
-INTERNAL_IPS = ['127.0.0.1', '10.0.2.2', '192.168.0.106', '192.168.1.108']
-ALLOWED_HOSTS = env.list('DJANGO_ALLOWED_HOSTS', default=['127.0.0.1', '192.168.0.106', '192.168.1.102', 'localhost', 'cloudemotion.com.ve', '186.92.128.81', "186.92.61.127"])
+
 EMAIL_USE_TLS = True
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'manuelen12@gmail.com'
