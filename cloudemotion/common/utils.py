@@ -22,6 +22,7 @@ from email.mime.text import MIMEText
 from csv import reader
 # from pyexcel_xlsx import XLSXBook
 from rest_framework import permissions
+from django.core.mail import send_mail
 
 # from rest_framework import permissions
 # import base64
@@ -147,25 +148,32 @@ class Base():
             obj.save()
         return obj
 
+    # def send_mail(self, email, subject, message):
+    #     sender = settings.EMAIL_HOST_USER
+    #     #import ipdb; ipdb.set_trace()
+    #     # if pdf == None:
+    #     # print(MIMEText)
+    #     # msg = MIMEMultipart()
+    #     # msg.attach(MIMEText(pdf))
+    #     session = smtplib.SMTP(
+    #         settings.EMAIL_HOST,
+    #         int(settings.EMAIL_PORT)
+    #     )
+    #     session.ehlo()
+    #     session.starttls()
+    #     session.ehlo()
+    #     session.login(sender, settings.EMAIL_HOST_PASSWORD)
+    #     message = MIMEText(message, "html", _charset="utf-8")
+    #     message["Subject"] = subject
+    #     session.sendmail(sender, email, message.as_string())
+    #     session.quit()
+
     def send_mail(self, email, subject, message):
-        sender = settings.EMAIL_HOST_USER
-        #import ipdb; ipdb.set_trace()
-        # if pdf == None:
-        # print(MIMEText)
-        # msg = MIMEMultipart()
-        # msg.attach(MIMEText(pdf))
-        session = smtplib.SMTP(
-            settings.EMAIL_HOST,
-            int(settings.EMAIL_PORT)
-        )
-        session.ehlo()
-        session.starttls()
-        session.ehlo()
-        session.login(sender, settings.EMAIL_HOST_PASSWORD)
-        message = MIMEText(message, "html", _charset="utf-8")
-        message["Subject"] = subject
-        session.sendmail(sender, email, message.as_string())
-        session.quit()
+
+        send_mail(
+            subject, 'body of the message',
+            settings.EMAIL_HOST_USER,
+            [email], html_message=message)
 
     def valid_post(self):
         # import ipdb; ipdb.set_trace()
