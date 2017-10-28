@@ -110,7 +110,7 @@ get_header();
                                                     </div>
                                                     <div class="wpb_text_column wpb_content_element ">
                                                         <div class="wpb_wrapper">
-                                                            <p align="justify" ng-bind="'We manage all of your hardware and software requirements what help you support your IT apps and services on free (Linux &reg;) or private (Windows &reg;) platform'| translate"></p>
+                                                            <p align="justify" ng-bind="'We manage all of your hardware and software requirements what help you support your IT apps and services on free (Linux) or private (Windows) platform'| translate"></p>
                                                         </div>
                                                     </div>
                                                     <div class="vc_empty_space"  style="height: 50px" >

@@ -22,7 +22,7 @@ class User(AbstractUser):
     twitter = models.CharField(max_length=200, null=True, blank=True)
     linkedin = models.CharField(max_length=200, null=True, blank=True)
     youtube = models.CharField(max_length=200, null=True, blank=True)
-    about_me = models.TextField(null=True)
+    # about_me = models.TextField(null=True)
     # code = models.CharField(max_length=3)
     status = models.BooleanField(default=True)
     create_at = models.DateTimeField(auto_now_add=True)
