@@ -67,6 +67,14 @@ msgid "Electronics Engineer"
 msgstr "Electronics Engineer"
 
 #: cloudemotion/users/v0/api.py:195
+msgid "Civil Engineer"
+msgstr "Civil Engineer"
+
+#: cloudemotion/users/v0/api.py:195
+msgid "Designer"
+msgstr "Designer"
+
+#: cloudemotion/users/v0/api.py:195
 msgid "Student"
 msgstr "Student"
 
