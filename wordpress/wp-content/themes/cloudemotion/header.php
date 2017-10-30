@@ -10,9 +10,10 @@
 	</script>
  	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title><?php wp_title(''); echo ' | ';  bloginfo( 'name' ); ?></title>
+	<title><?php wp_title(); echo ' | ';  bloginfo( 'name' ); ?></title>
 	<meta name='robots' content='noindex,follow' />
 	<noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+	<?php wp_head(); ?>
 </head>
 <style type="text/css">
 	.loader.in{
