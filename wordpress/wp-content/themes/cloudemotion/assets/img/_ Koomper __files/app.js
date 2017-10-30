@@ -1,6 +1,7 @@
 var mainApp = angular.module("mainapp",[
 	'ui.router',
-	'pascalprecht.translate',
+    'pascalprecht.translate',
+	'pnotify',
 	
 	
 	.constant('ENDPOINT', 'https://admin.koomper.com/api/v0/')

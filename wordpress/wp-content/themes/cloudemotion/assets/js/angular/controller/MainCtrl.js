@@ -11,11 +11,10 @@ function Config($translateProvider) {
 }
 cloudemotion.controller("MainCtrl", MainCtrl)
 
-MainCtrl.$inject = ["$scope","$http","particles","$translate"];
-function MainCtrl($scope,$http,particles,$translate) {
+MainCtrl.$inject = ["$scope","$http","particles","$translate","ValidatorHelper"];
+function MainCtrl($scope,$http,particles,$translate,ValidatorHelper) {
 	console.log("maincontroller");
 	var vm=this;
-
 	angular.extend(vm,{
 		tabs:1,
 		country:'es',
@@ -27,8 +26,9 @@ function MainCtrl($scope,$http,particles,$translate) {
 	}
 	this.$onInit=function() {
 		particlesJS("qodef-p-particles-container",particles)
-		
+		changeLanguage();
 	}
+
 }
 
 angular.element(function() {

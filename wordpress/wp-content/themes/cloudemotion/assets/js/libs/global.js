@@ -110,7 +110,6 @@
 	// Add 'below-entry-meta' class to elements.
 	function belowEntryMetaClass( param ) {
 		var sidebarPos, sidebarPosBottom;
-
 		if ( ! $body.hasClass( 'has-sidebar' ) || (
 			$body.hasClass( 'search' ) ||
 			$body.hasClass( 'single-attachment' ) ||
@@ -189,7 +188,8 @@
 	 $("*[parallax-cl]").on("click",function(e) {
 	 	var id=$(this).attr("href"),
 	 	parentTarget=$(this).parent();
-	 	$(".menu-item").removeClass("qodef-active-item");
+	 	if (parentTarget.is(':last-child')) return false;
+	 	$(".menu-item").removeClass("qodef-active-item");	
 	 	parentTarget.addClass("qodef-active-item");
 	 	console.log(parentTarget);
 	 	event.preventDefault();

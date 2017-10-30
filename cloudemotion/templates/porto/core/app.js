@@ -4,7 +4,8 @@ var mainApp= angular.module('mainapp', [
 /*
     'ngStorage',
 */])
-.constant('ENDPOINT', 'http://cloudemotionteam.com/api/v0/')
+//.constant('ENDPOINT', 'http://cloudemotion.com.ve:8561/api/v0/')
+.constant('ENDPOINT', 'https://cloudemotionteam.com/api/v0/')
 .constant('particles',{
     "particles": {
       "number": {

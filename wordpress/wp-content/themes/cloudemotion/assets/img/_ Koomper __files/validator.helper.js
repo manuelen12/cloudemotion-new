@@ -1,4 +1,4 @@
-koomper.factory('ValidatorHelper', ValidatorHelper)
+cloudemotion.factory('ValidatorHelper', ValidatorHelper)
 ValidatorHelper.$inject=["$http","$rootScope","$q","$state","ENDPOINT", "$filter", "notificationService"]
 function ValidatorHelper($http,$rootScope,$q,$state, ENDPOINT,$filter,notificationService) {
     var listFunc= {

@@ -58,13 +58,13 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
         if(vm.users.user_portfolio.length == 0){ vm.showPort=true; }
         if(vm.users.user_nationality.length == 0){ vm.showNat=true; }
         if(vm.users.user_experience.length == 0){ vm.showExp=true; }
-
         console.log(vm.users);
       },function(error){
         console.log(error);
       })
 
       function sendMessage() {
+        vm.contact.user_id = $stateParams.id;
         if(!vm.contact.name){
           console.log('error name');
           $('.contact-name').css('border-bottom','1px solid #d81313');
@@ -74,13 +74,17 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
           $('.contact-subject').css('border-bottom','1px solid #d81313');
           return false; 
         }
+        if(!vm.contact.email){
+          $('.contact-email').css('border-bottom','1px solid #d81313');
+          return false; 
+        }        
         if(!vm.contact.message){
           $('.contact-message').css('border-bottom','1px solid #d81313');
           return false; 
         }
         
-        PortfolioService.postContact(params).then(function(response){
-          $('.form-control').css('border-bottom','1px solid #d8b113');
+        PortfolioService.postContact(vm.contact).then(function(response){
+            $('.form-control').css('border-bottom','1px solid #d8b113');
             console.log(response);
           })
       }

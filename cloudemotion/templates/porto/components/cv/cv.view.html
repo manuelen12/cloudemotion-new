@@ -31,7 +31,7 @@
 								<span class="custom-text-color-1 text-uppercase" ng-hide="!vm.last_education">
 									<div class="col-md-9">
 										<strong class="custom-text-color-1" ng-bind="'Education' | translate">Education: </strong>
-										<text ng-bind="vm.last_education+' '+vm.last_institute"></text>							
+										<text ng-bind="vm.last_education+' '+vm.last_institute"></text>						
 									</div>
 									<div class="col-md-3">
 										<a data-hash="" ng-click="vm.click1('#education')" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>						
@@ -449,6 +449,9 @@
 										<div class="form-control-custom">
 											<input type="text" class="form-control contact-subject" name="callSubject" placeholder="{{'Subject'|translate}} *" data-msg-required="This field is required." id="callSubject" required="" aria-required="true" ng-model="vm.contact.subject">
 										</div>
+										<div class="form-control-custom">
+											<input type="text" class="form-control contact-email" name="callEmail" placeholder="{{'Email'|translate}} *" data-msg-required="This field is required." id="callSubject" required="" aria-required="true" ng-model="vm.contact.email">
+										</div>										
 										<div class="form-control-custom">
 											<textarea maxlength="5000" data-msg-required="Please enter your message." rows="10" class="form-control contact-message" name="message" placeholder="{{'Message' | translate}} *" id="message" required="" aria-required="true" ng-model="vm.contact.message"></textarea>
 										</div>
