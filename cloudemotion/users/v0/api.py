@@ -228,7 +228,7 @@ class API(Base):
                 __dict2 = {
                     "level": {
                         "id": e.level,
-                        "name": e.get_level_display()
+                        "name": _(e.get_level_display())
                     },
                     "name": _(e.languaje.name)
                 }

@@ -29,10 +29,12 @@ msgid "Spanish"
 msgstr "Español"
 
 #: cloudemotion/users/v0/api.py:233
+#: config/settings/base.py:176
 msgid "Portuguese"
 msgstr "Portugués"
 
 #: cloudemotion/users/v0/api.py:233
+#: config/settings/base.py:176
 msgid "French"
 msgstr "Francés"
 
@@ -75,20 +77,20 @@ msgstr "Desarrollo"
 #: cloudemotion/curriculum/models.py:78
 #: cloudemotion/curriculum/models.py:148
 msgid "Basic"
-msgid "Básico"
+msgstr "Básico"
 
 #: cloudemotion/curriculum/models.py:79
 msgid "Diversified"
-msgid "Diversificado"
+msgstr "Diversificado"
 
 #: cloudemotion/curriculum/models.py:80
 msgid "Academic"
-msgid "Universitario"
+msgstr "Universitario"
 
 #: cloudemotion/curriculum/models.py:80
 msgid "Medium"
-msgid "Medio"
+msgstr "Medio"
 
 #: cloudemotion/curriculum/models.py:80
 msgid "Advanced"
-msgid "Advanzado"
+msgstr "Advanzado"
