@@ -13,10 +13,7 @@ function MenuCustom($http) {
 				var body =  $("html, body");
 				var top  =  $(link).offset().top;
 				var active = $('.nav')
-				
 				active.find("li").removeClass("active");
-				
-
 				body.stop().animate({scrollTop:top},800,'swing',function(){});
 			}
 		}

@@ -11,5 +11,8 @@ function PortfolioService($http,$state,urlHelpers) {
 	function getClass(params) {
 		return urlHelpers.get("classifications/",params);
 	}
+	function postContact(params) {
+		return urlHelpers.post("contacts/",params);
+	}
 	return methods;
 }
