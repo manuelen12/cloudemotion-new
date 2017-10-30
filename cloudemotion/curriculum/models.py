@@ -76,7 +76,7 @@ class Educations(models.Model):
 class EducationsUser(models.Model):
     __types = (
        (1, _("Basic")),
-       (2, _("diversified")),
+       (2, _("Diversified")),
        (3, _("Academic")),
     )
     user = models.ForeignKey(

@@ -17,58 +17,80 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+
 #: cloudemotion/users/v0/api.py:233
 #: config/settings/base.py:175
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: cloudemotion/users/v0/api.py:233
 #: config/settings/base.py:176
 msgid "Spanish"
-msgstr ""
+msgstr "Spanish"
 
 #: cloudemotion/users/v0/api.py:233
 #: config/settings/base.py:176
 msgid "Portuguese"
-msgstr ""
+msgstr "Portuguese"
 
 #: cloudemotion/users/v0/api.py:233
 #: config/settings/base.py:176
 msgid "French"
-msgstr ""
+msgstr "French"
 
 #: cloudemotion/common/views.py:41
-msgid "Not found."
-msgstr ""
+msgid "Not found"
+msgstr "Not found"
 
 #: cloudemotion/common/views.py:48
-msgid "Permission denied."
-msgstr ""
+msgid "Permission denied"
+msgstr "Permission denied"
 
 #: cloudemotion/users/v0/api.py:189
-msgid "Venezuelan."
-msgstr ""
+msgid "Venezuelan"
+msgstr "Venezuelan"
 
 #: cloudemotion/users/v0/api.py:195
-msgid "Informatics Engineer."
-msgstr ""
+msgid "Computing Engineer"
+msgstr "Computing Engineer"
 
 #: cloudemotion/users/v0/api.py:195
-msgid "Mechanical Engineer."
-msgstr ""
+msgid "Mechanical Engineer"
+msgstr "Mechanical Engineer"
 
 #: cloudemotion/users/v0/api.py:195
-msgid "Telecommunications Engineer."
-msgid ""
+msgid "Telecommunications Engineer"
+msgid "Telecommunications Engineer"
 
 #: cloudemotion/users/v0/api.py:195
-msgid "Electronics Engineer."
-msgid ""
+msgid "Electronics Engineer"
+msgid "Electronics Engineer"
 
 #: cloudemotion/users/v0/api.py:195
-msgid "Student."
-msgid ""
+msgid "Student"
+msgid "Student"
 
 #: cloudemotion/users/v0/api.py:273
-msgid "Development."
-msgid ""
+msgid "Development"
+msgid "Development"
+
+#: cloudemotion/curriculum/models.py:78
+#: cloudemotion/curriculum/models.py:148
+msgid "Basic"
+msgid "Basic"
+
+#: cloudemotion/curriculum/models.py:79
+msgid "Diversified"
+msgid "Diversified"
+
+#: cloudemotion/curriculum/models.py:80
+msgid "Academic"
+msgid "Academic"
+
+#: cloudemotion/curriculum/models.py:80
+msgid "Medium"
+msgid "Medium"
+
+#: cloudemotion/curriculum/models.py:80
+msgid "Advanced"
+msgid "Advanced"
