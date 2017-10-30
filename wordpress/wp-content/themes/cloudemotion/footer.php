@@ -176,6 +176,7 @@
                 </div>
             </div>
         </div>
+        <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=ht8IzQr9MxAYkUG5PcoGQyueY3byXGPbsnPxvyVh1QnislLE9xmKediaTUXP"></script></span>
         <?php 
         wp_footer();
         ?>

@@ -5,10 +5,6 @@ get_header();
 
 
 <body ng-controller="MainCtrl as vm">
-    <script type="text/javascript">
-        (function(a,b,c,d){a=b.createElement(c);b=b.getElementsByTagName(c)[0];a.async=1;a.src=d;b.parentNode.insertBefore(a,b);a.onerror=function(){console.log("Ha ocurrido un error"+this)}})(window,document,"script","https://admin.koomper.com/assets/js/pixel/koomper-pixel.min.js"); window.onload=function() { if (typeof KoomperPixel==="function"){ window.koomperP=new KoomperPixel(1300823);koomperP.conversion();} else{console.log("Error al cargar el script");} }
-
-    </script>
 
     <div class="loader in"></div>
     <div class="qodef-wrapper">
@@ -1305,7 +1301,7 @@ get_header();
                                                             <a ng-click="copylink('@rexuzsystems')" class="social-button skype">
                                                                 <i class="fa fa-skype"></i>
                                                             </a>
-                                                            
+
                                                         </div>
                                                     </div>
                                                 </div>
