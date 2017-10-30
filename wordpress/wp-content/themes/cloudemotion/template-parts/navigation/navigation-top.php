@@ -14,20 +14,6 @@
 
             <header class="qodef-page-header">
                 <div class="qodef-menu-area" style="background-color:rgba(255, 255, 255, 0)">
-                    <form role="search" action="http://startit.select-themes.com/" class="qodef-search-cover" method="get">
-                        <div class="qodef-form-holder-outer">
-                            <div class="qodef-form-holder">
-                                <div class="qodef-form-holder-inner">
-                                    <input type="text" placeholder="Search" name="s" class="qode_search_field" autocomplete="off" />
-                                    <div class="qodef-search-close">
-                                        <a href="#">
-                                            <i class="qodef-icon-ion-icon ion-close " ></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
                     <div class="qodef-vertical-align-containers">
                         <div class="qodef-position-left">
                             <div class="qodef-position-left-inner">
