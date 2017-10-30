@@ -78,7 +78,7 @@
                                                 </span>
                                             </a>
                                         </li>
-                                        <li id="nav-menu-item-632" class="menu-item">
+                                        <li>
                                             <a parallax-cl class="" ng-click="vm.changeLanguage(vm.country)">
                                                 <span class="item_outer">
                                                     <span class="item_inner">

@@ -33,7 +33,6 @@ if(!is_admin()){
 
 	$scripts = array(
 		'jquery',
-				//'jquery',
 		'jquery-migrate.min',
 		'scrolltoplugin.min',
 		'greensock',
@@ -69,11 +68,16 @@ if(!is_admin()){
 		'global',
 		'angular.min',
 		'angular-translate',
-		'ng-flag',
+		'angular/ng-flag',
 		'html5',
 		'owl-carousel.min',
 		'moment',
+		'pnotify.min',
+		'../angular/services/pnotify.service',
 		'../angular/app',
+		'../angular/helper/validator.helper',
+		'../angular/helper/method.helper',
+		'../angular/services/employee.service',
 		'../angular/controller/MainCtrl',
 		);
 
