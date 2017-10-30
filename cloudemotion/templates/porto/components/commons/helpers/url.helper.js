@@ -45,14 +45,10 @@ function urlHelpers($http,$q,$state, ENDPOINT,ValidatorHelper) {
 
 	
 	function post(url,data,bol) {
-
 		var q=$q.defer();
 		var options={
 			url:ENDPOINT+url,
 			method:"POST",
-			headers:{
-				"Authorization":"JWT "+localStorage.getItem("token")
-			},
 			data:JSON.stringify(data)
 		}
 		if(bol){delete options.headers}
