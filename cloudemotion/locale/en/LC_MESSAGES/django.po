@@ -60,37 +60,37 @@ msgstr "Mechanical Engineer"
 
 #: cloudemotion/users/v0/api.py:195
 msgid "Telecommunications Engineer"
-msgid "Telecommunications Engineer"
+msgstr "Telecommunications Engineer"
 
 #: cloudemotion/users/v0/api.py:195
 msgid "Electronics Engineer"
-msgid "Electronics Engineer"
+msgstr "Electronics Engineer"
 
 #: cloudemotion/users/v0/api.py:195
 msgid "Student"
-msgid "Student"
+msgstr "Student"
 
 #: cloudemotion/users/v0/api.py:273
 msgid "Development"
-msgid "Development"
+msgstr "Development"
 
 #: cloudemotion/curriculum/models.py:78
 #: cloudemotion/curriculum/models.py:148
 msgid "Basic"
-msgid "Basic"
+msgstr "Basic"
 
 #: cloudemotion/curriculum/models.py:79
 msgid "Diversified"
-msgid "Diversified"
+msgstr "Diversified"
 
 #: cloudemotion/curriculum/models.py:80
 msgid "Academic"
-msgid "Academic"
+msgstr "Academic"
 
 #: cloudemotion/curriculum/models.py:80
 msgid "Medium"
-msgid "Medium"
+msgstr "Medium"
 
 #: cloudemotion/curriculum/models.py:80
 msgid "Advanced"
-msgid "Advanced"
+msgstr "Advanced"
