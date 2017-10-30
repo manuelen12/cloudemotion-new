@@ -1,6 +1,6 @@
 mainApp.controller('CurriculumCtrl', CurriculumCtrl)
-CurriculumCtrl.$inject=["$rootScope","$scope","PortfolioService","$stateParams","particles","$translate"]
-function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particles,$translate) {
+CurriculumCtrl.$inject=["$rootScope","$scope","PortfolioService","$stateParams","particles","$translate","$filter","ValidatorHelper"]
+function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particles,$translate,$filter,ValidatorHelper) {
   var vm = this;
   angular.extend(vm,{
     prueba:"hola mundo2",
@@ -10,7 +10,7 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
     params:'',
     sendMessage:sendMessage,
     label:'ejemplo',
-    contact:{},
+    contact:{},    
   });
 
   $rootScope.$on('$viewContentLoaded', function(event, toState, toParams, fromState, fromParams) {
@@ -21,7 +21,16 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
       /*});*/    
       initOwl('.owl-education');
       initOwlCourse('.owl-carousel1');
+  })
+  function message(message,type,title) {
+    return swal({
+      title: (title?title:'¡Lo sentimos!'),
+      text: message,
+      type: type,
+      confirmButtonColor: '#3085d6',
+      confirmButtonText: 'Aceptar'
     })
+  }
   console.log($stateParams);
   var id = $stateParams.id;
       //var params = {filters:{language:$stateParams.lang}};
@@ -65,29 +74,14 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
 
       function sendMessage() {
         vm.contact.user_id = $stateParams.id;
-        if(!vm.contact.name){
-          console.log('error name');
-          $('.contact-name').css('border-bottom','1px solid #d81313');
-          return false;
-        }
-        if(!vm.contact.subject){
-          $('.contact-subject').css('border-bottom','1px solid #d81313');
-          return false; 
-        }
-        if(!vm.contact.email){
-          $('.contact-email').css('border-bottom','1px solid #d81313');
-          return false; 
-        }        
-        if(!vm.contact.message){
-          $('.contact-message').css('border-bottom','1px solid #d81313');
-          return false; 
-        }
-        
-        PortfolioService.postContact(vm.contact).then(function(response){
+       if(ValidatorHelper.validContact(vm.contact)){
+          PortfolioService.postContact(vm.contact).then(function(response){
             $('.form-control').css('border-bottom','1px solid #d8b113');
-            console.log(response);
-          })
-      }
+              console.log(response);
+              vm.contact = {};
+            })
+          }        
+       }
       
       this.$onInit=function(){ 
         particlesJS("particles-js",particles);       
