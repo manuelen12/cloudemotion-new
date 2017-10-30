@@ -348,7 +348,7 @@ get_header();
 
 
                                                         <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-                                                            <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-trends-in-seo-analytics/" target="_self"></a>
+                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
                                                             <div class = "qodef-item-image-holder">
                                                                 <div class="qodef-portfolio-shader"></div>
                                                                 <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" />
@@ -369,7 +369,7 @@ get_header();
                                                             </div>
                                                         </article>
                                                         <article class="qodef-portfolio-item mix portfolio_category_8 portfolio_category_9" >
-                                                            <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/app-update-rebrand/" target="_self"></a>
+                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
                                                             <div class = "qodef-item-image-holder">
                                                                 <div class="qodef-portfolio-shader"></div>
                                                                 <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
@@ -390,7 +390,7 @@ get_header();
                                                             </div>
                                                         </article>
                                                         <article class="qodef-portfolio-item mix portfolio_category_10 portfolio_category_7" >
-                                                            <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/the-tablet-app-of-the-future/" target="_self"></a>
+                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
                                                             <div class = "qodef-item-image-holder">
                                                                 <div class="qodef-portfolio-shader"></div>
                                                                 <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
@@ -411,7 +411,7 @@ get_header();
                                                             </div>
                                                         </article>
                                                         <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-                                                            <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/big-data-goes-global/" target="_self"></a>
+                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
                                                             <div class = "qodef-item-image-holder">
                                                                 <div class="qodef-portfolio-shader"></div>
                                                                 <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
@@ -432,7 +432,7 @@ get_header();
                                                             </div>
                                                         </article>
                                                         <article class="qodef-portfolio-item mix portfolio_category_10 portfolio_category_7" >
-                                                            <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-findings-in-responsive-testing/" target="_self"></a>
+                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
                                                             <div class = "qodef-item-image-holder">
                                                                 <div class="qodef-portfolio-shader"></div>
                                                                 <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image"/>
@@ -453,7 +453,7 @@ get_header();
                                                             </div>
                                                         </article>
                                                         <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-                                                            <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/millenials-research-2015/" target="_self"></a>
+                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
                                                             <div class = "qodef-item-image-holder">
                                                                 <div class="qodef-portfolio-shader"></div>
                                                                 <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
@@ -474,7 +474,7 @@ get_header();
                                                             </div>
                                                         </article>
                                                         <article class="qodef-portfolio-item mix portfolio_category_8 portfolio_category_9" >
-                                                            <a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-trends-in-social-media/" target="_self"></a>
+                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com/" target="_self"></a>
                                                             <div class = "qodef-item-image-holder">
                                                                 <div class="qodef-portfolio-shader"></div>
                                                                 <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
@@ -1200,7 +1200,7 @@ get_header();
                                             <div class="contenido">
                                                 <div class="team-box box-4">
                                                     <div class="team-img main-bg">
-                                                        <img ng-src="http://cloudemotion.com.ve/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="http://cloudemotion.com.ve/static/img/luis.png">
+                                                        <img ng-src="https://cloudemotionteam.com/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="https://cloudemotionteam.com/static/img/luis.png">
                                                     </div>
                                                     <div class="team-details main-bg">
                                                         <h3 class="team-name ng-binding">Luis García</h3>
@@ -1229,7 +1229,7 @@ get_header();
                                             <div class="contenido">
                                                 <div class="team-box box-4">
                                                     <div class="team-img main-bg">
-                                                        <img ng-src="http://cloudemotion.com.ve/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="http://cloudemotion.com.ve/static/img/luis.png">
+                                                        <img ng-src="https://cloudemotionteam.com/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="https://cloudemotionteam.com/static/img/luis.png">
                                                     </div>
                                                     <div class="team-details main-bg">
                                                         <h3 class="team-name ng-binding">Luis García</h3>
@@ -1258,7 +1258,7 @@ get_header();
                                             <div class="contenido">
                                                 <div class="team-box box-4">
                                                     <div class="team-img main-bg">
-                                                        <img ng-src="http://cloudemotion.com.ve/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="http://cloudemotion.com.ve/static/img/luis.png">
+                                                        <img ng-src="https://cloudemotionteam.com/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="https://cloudemotionteam.com/static/img/luis.png">
                                                     </div>
                                                     <div class="team-details main-bg">
                                                         <h3 class="team-name ng-binding">Luis García</h3>
@@ -1287,7 +1287,7 @@ get_header();
                                             <div class="contenido">
                                                 <div class="team-box box-4">
                                                     <div class="team-img main-bg">
-                                                        <img ng-src="http://cloudemotion.com.ve/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="http://cloudemotion.com.ve/static/img/luis.png">
+                                                        <img ng-src="https://cloudemotionteam.com/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="https://cloudemotionteam.com/static/img/luis.png">
                                                     </div>
                                                     <div class="team-details main-bg">
                                                         <h3 class="team-name ng-binding">Luis García</h3>
