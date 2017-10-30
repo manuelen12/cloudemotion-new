@@ -45,6 +45,7 @@
 	}
 
 </style>
+<?php wp_head(); ?>
 <noscript>
 	<style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style>
 </noscript>
