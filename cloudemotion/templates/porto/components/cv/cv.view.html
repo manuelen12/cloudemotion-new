@@ -11,7 +11,7 @@
 				<div class="row">
 					<div class="col-md-12">
 						<div class="col-md-4 col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1 custom-sm-margin-bottom-1">
-							<img src="{{vm.users.image}}" class="img-responsive custom-border custom-image-position-2 custom-box-shadow-4 img-about" style="height:300px;">
+							<img src="{{(vm.users.image) ? vm.users.image : './assets/img/jpg/profile.jpg'}}" class="img-responsive custom-border custom-image-position-2 custom-box-shadow-4 img-about" style="height:300px;">
 						</div>
 						<div class="col-md-5 col-sm-8">
 							<h1 class="text-color-primary custom-font-size-1" ng-bind="vm.users.first_name+' '+vm.users.last_name"></h1>
@@ -19,22 +19,22 @@
 							<span class="custom-about-me-infos">
 							<span class="custom-text-color-1 text-uppercase" ng-bind="vm.users.city.name+' '+vm.users.city.state.name+' '+vm.users.city.state.country.name"></span>
 								<span class="custom-text-color-1 text-uppercase mb-md" ng-bind="vm.users.position.resumen"></span>
-								<span class="custom-text-color-1 text-uppercase">
+								<span class="custom-text-color-1 text-uppercase" ng-hide="!vm.last_exp_name">
 									<div class="col-md-9">
 										<strong class="custom-text-color-1" ng-bind="'Previous' | translate ">Previous: </strong>
-										<text ng-bind="vm.last_exp_name+' '+vm.last_exp_comp "></text>										
+										<text ng-bind="vm.last_exp_name+' '+vm.last_exp_comp "></text>				
 									</div>
 									<div class="col-md-3">
-										<a data-hash="" href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm" ng-bind="'View More' | translate"></a>
+										<a data-hash="" href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm" ng-bind="'View More' | translate" ng-click="vm.click1('#experience')"></a>
 									</div>
 								</span>
-								<span class="custom-text-color-1 text-uppercase">
+								<span class="custom-text-color-1 text-uppercase" ng-hide="!vm.last_education">
 									<div class="col-md-9">
 										<strong class="custom-text-color-1" ng-bind="'Education' | translate">Education: </strong>
 										<text ng-bind="vm.last_education+' '+vm.last_institute"></text>							
 									</div>
 									<div class="col-md-3">
-										<a data-hash="" href="#education" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>						
+										<a data-hash="" ng-click="vm.click1('#education')" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>						
 									</div>
 								</span>
 							</span>
@@ -105,8 +105,8 @@
 							<h4 ng-bind="'Personal Details' | translate">Personal Details</h4>
 							<div class="col-md-6 col-sm-6 p-none">
 								<ul class="custom-list-style-1 p-none">
-									<li>
-										<span class="text-color-dark" ng-bind="'Birthday' | translate" ></span>
+									<li ng-hide="!vm.users.birthday">
+										<span class="text-color-dark"  ng-bind="'Birthday' | translate" ></span>
 										<span class="custom-text-color-2" ng-bind="vm.users.birthday"></span>
 									</li>
 									<li>
@@ -121,11 +121,11 @@
 							</div>
 							<div class="col-md-6 col-sm-6 p-none">
 								<ul class="custom-list-style-1 p-none">
-									<li>
+									<li ng-hide="!vm.users.skype">
 										<span class="text-color-dark">Skype:</span>
 										<span class="custom-text-color-2"><a class="custom-text-color-2"><label ng-bind="vm.users.skype"></label></a></span>
 									</li>
-									<li>
+									<li ng-hide="!vm.users.phone">
 										<span class="text-color-dark" ng-bind="'Phone' | translate"></span>
 										<span class="custom-text-color-2" ng-bind="vm.users.phone"></span>
 									</li>										
@@ -133,7 +133,7 @@
 							</div>
 							<div class="col-md-12 col-sm-12 p-none">
 								<ul class="custom-list-style-1 p-none">
-									<li>
+									<li ng-hide="!vm.users.email">
 										<span class="text-color-dark" ng-bind="'Email' | translate"></span>
 										<span class="custom-text-color-2"><a class="custom-text-color-2"><label ng-bind="vm.users.email"></label></a></span>
 									</li>

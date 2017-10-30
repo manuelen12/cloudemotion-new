@@ -21,20 +21,20 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
       /*});*/    
       initOwl('.owl-education');
       initOwlCourse('.owl-carousel1');
-      })
-      console.log($stateParams);
-      var id = $stateParams.id;
+    })
+  console.log($stateParams);
+  var id = $stateParams.id;
       //var params = {filters:{language:$stateParams.lang}};
       function click1(link) {
         var body =   $("html, body");
         var top  =   $(link).offset().top;
-        active.find("li").removeClass('active');
+        
         body.stop().animate({scrollTop:top},1000,'swing',function(){});
       }
       //GET LANG
       
       $translate.use($stateParams.lang);
-        
+
       //GET CLASS THE PORTFOLIO
       PortfolioService.getClass().then(function(response){ 
         vm.classi = response.data
@@ -56,6 +56,7 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
         if(vm.users.user_course.length == 0){ vm.showCou=true; }
         //if(vm.users.user_skill.length == 0){ vm.showSki=true; }
         if(vm.users.user_portfolio.length == 0){ vm.showPort=true; }
+        if(vm.users.user_nationality.length == 0){ vm.showNat=true; }
         if(vm.users.user_experience.length == 0){ vm.showExp=true; }
 
         console.log(vm.users);
@@ -77,8 +78,11 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
           $('.contact-message').css('border-bottom','1px solid #d81313');
           return false; 
         }
-        $('.form-control').css('border-bottom','1px solid #d8b113');
-        console.log(vm.contact);
+        
+        PortfolioService.postContact(params).then(function(response){
+          $('.form-control').css('border-bottom','1px solid #d8b113');
+            console.log(response);
+          })
       }
       
       this.$onInit=function(){ 
