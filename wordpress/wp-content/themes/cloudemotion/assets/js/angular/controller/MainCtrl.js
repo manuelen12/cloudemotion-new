@@ -30,18 +30,25 @@ function MainCtrl($scope,$http,particles,$translate,ValidatorHelper,urlHelpers) 
 	this.$onInit=function() {
 		particlesJS("qodef-p-particles-container",particles)
 		changeLanguage();
-/*		console.log(vm.getTeam);
-		vm.getTeam().then(function(response) {
+		console.log(vm.getTeam);
+		vm.getTeam.then(function(response) {
 			console.log(response);
+			vm.team=response.data;
+			$.map(vm.team,function(val,ind) {
+				if (!val.image) {
+					vm.team[ind].image="./assets/img/default_p.png";
+				}
+			})
 		},function(error) {
 			console.log(error);
 		})
-		vm.getPorfolios().then(function(response) {
+		vm.getPorfolios.then(function(response) {
 			console.log(response);
+			vm.portfolios=response.data;
 		},function(error) {
 			console.log(error);
 		})
-*/
+
 	}
 
 }

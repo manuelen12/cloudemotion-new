@@ -5,7 +5,6 @@ get_header();
 
 
 <body ng-controller="MainCtrl as vm">
-
     <div class="loader in"></div>
     <div class="qodef-wrapper">
         <div class="qodef-wrapper-inner">
@@ -1196,102 +1195,15 @@ get_header();
                                 <div class="clearfix qodef-section-inner">
                                     <div class="qodef-section-inner-margin clearfix">
 
-                                        <div class="col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-6 col-sm-offset-1  col-lg-3 text-center ng-scope" style="margin-top:1em;margin-bottom:1em;">
+                                        <div ng-repeat="team in vm.team" class="col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-6 col-sm-offset-1  col-lg-3 text-center ng-scope" style="margin-top:1em;margin-bottom:1em;">
                                             <div class="contenido">
                                                 <div class="team-box box-4">
                                                     <div class="team-img main-bg">
                                                         <img ng-src="http://cloudemotion.com.ve/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="http://cloudemotion.com.ve/static/img/luis.png">
                                                     </div>
                                                     <div class="team-details main-bg">
-                                                        <h3 class="team-name ng-binding">Luis García</h3>
-                                                        <h5 class="team-pos white ng-binding">Programador Front-End</h5>
-                                                        <strong>Especialidades</strong>
-
-                                                        <div class="social-buttons">
-                                                            <a ng-href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110" target="_blank" class="social-button google" href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110">
-                                                                <i class="fa fa-linkedin"></i>    
-                                                            </a>
-                                                            <a ng-click="copylink('@rexuzsystems')" class="social-button skype">
-                                                                <i class="fa fa-skype"></i>
-                                                            </a>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-
-                                    
-
-                                        <div class="col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-6 col-sm-offset-1  col-lg-3 text-center ng-scope" style="margin-top:1em;margin-bottom:1em;">
-                                            <div class="contenido">
-                                                <div class="team-box box-4">
-                                                    <div class="team-img main-bg">
-                                                        <img ng-src="http://cloudemotion.com.ve/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="http://cloudemotion.com.ve/static/img/luis.png">
-                                                    </div>
-                                                    <div class="team-details main-bg">
-                                                        <h3 class="team-name ng-binding">Luis García</h3>
-                                                        <h5 class="team-pos white ng-binding">Programador Front-End</h5>
-                                                        <strong>Especialidades</strong>
-
-                                                        <div class="social-buttons">
-                                                            <a ng-href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110" target="_blank" class="social-button google" href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110">
-                                                                <i class="fa fa-linkedin"></i>    
-                                                            </a>
-                                                            <a ng-click="copylink('@rexuzsystems')" class="social-button skype">
-                                                                <i class="fa fa-skype"></i>
-                                                            </a>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-
-                                    
-
-                                        <div class="col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-6 col-sm-offset-1  col-lg-3 text-center ng-scope" style="margin-top:1em;margin-bottom:1em;">
-                                            <div class="contenido">
-                                                <div class="team-box box-4">
-                                                    <div class="team-img main-bg">
-                                                        <img ng-src="http://cloudemotion.com.ve/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="http://cloudemotion.com.ve/static/img/luis.png">
-                                                    </div>
-                                                    <div class="team-details main-bg">
-                                                        <h3 class="team-name ng-binding">Luis García</h3>
-                                                        <h5 class="team-pos white ng-binding">Programador Front-End</h5>
-                                                        <strong>Especialidades</strong>
-
-                                                        <div class="social-buttons">
-                                                            <a ng-href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110" target="_blank" class="social-button google" href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110">
-                                                                <i class="fa fa-linkedin"></i>    
-                                                            </a>
-                                                            <a ng-click="copylink('@rexuzsystems')" class="social-button skype">
-                                                                <i class="fa fa-skype"></i>
-                                                            </a>
-                                                            
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-
-                                    
-
-                                        <div class="col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-6 col-sm-offset-1  col-lg-3 text-center ng-scope" style="margin-top:1em;margin-bottom:1em;">
-                                            <div class="contenido">
-                                                <div class="team-box box-4">
-                                                    <div class="team-img main-bg">
-                                                        <img ng-src="http://cloudemotion.com.ve/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="http://cloudemotion.com.ve/static/img/luis.png">
-                                                    </div>
-                                                    <div class="team-details main-bg">
-                                                        <h3 class="team-name ng-binding">Luis García</h3>
-                                                        <h5 class="team-pos white ng-binding">Programador Front-End</h5>
+                                                        <h3 class="team-name" ng-bind="team.first_name+' '+team.last_name">Luis García</h3>
+                                                        <h5 class="team-pos white" ng-bind="team.position.name">Programador Front-End</h5>
                                                         <strong>Especialidades</strong>
 
                                                         <div class="social-buttons">
@@ -1314,10 +1226,10 @@ get_header();
                                     <!-- close div.content_inner -->
                                 </div>
                                 <!-- close div.content -->
-                            </div>
                                 <footer >
                                     <?php get_footer();?>
                                 </footer>
+                            </div>
                             <!-- close div.qodef-wrapper-inner  -->
                         </div>
                         <!-- close div.qodef-wrapper -->
