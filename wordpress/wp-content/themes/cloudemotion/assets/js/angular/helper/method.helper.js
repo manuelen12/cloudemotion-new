@@ -1,6 +1,6 @@
 cloudemotion.factory('urlHelpers', urlHelpers)
-urlHelpers.$inject=["$http","$q","$state","ENDPOINT","ValidatorHelper"]
-function urlHelpers($http,$q,$state, ENDPOINT,ValidatorHelper) {
+urlHelpers.$inject=["$http","$q","ENDPOINT","ValidatorHelper"]
+function urlHelpers($http,$q, ENDPOINT,ValidatorHelper) {
 
     var listFunc= {
         post:post,
@@ -8,8 +8,6 @@ function urlHelpers($http,$q,$state, ENDPOINT,ValidatorHelper) {
         put:put,
         del:del
     }
-
-
     
     function post(url,data,bol) {
 

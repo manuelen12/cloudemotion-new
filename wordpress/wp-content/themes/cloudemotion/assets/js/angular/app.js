@@ -4,7 +4,7 @@ var cloudemotion = angular.module("mainApp",[
 	"pnotify",
 	"ngFlag"
 	])
-.constant('ENDPOINT', 'http://cloudemotionteam.com/api/v0/')
+.constant('ENDPOINT', 'https://cloudemotionteam.com/api/v0/')
 .constant('particles',{
 	
 	"particles": {
