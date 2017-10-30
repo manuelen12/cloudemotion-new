@@ -3,7 +3,8 @@
 <!DOCTYPE html>
 <html lang="en-GB" >
 <head>       
-
+	<link rel="shortcut icon" href="./assets/img/png/cloud.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="./assets/img/png/cloud.png">
 	<script id="getdata">
 		window.static="<?php echo get_template_directory_uri(); ?>";
 	</script>
