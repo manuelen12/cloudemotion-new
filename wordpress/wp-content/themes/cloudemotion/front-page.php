@@ -1200,7 +1200,7 @@ get_header();
                                             <div class="contenido">
                                                 <div class="team-box box-4">
                                                     <div class="team-img main-bg">
-                                                        <img ng-src="http://cloudemotion.com.ve/static/img/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="http://cloudemotion.com.ve/static/img/luis.png">
+                                                        <img ng-src="https://cloudemotionteam.com/api/v0/tmp_media/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="https://cloudemotionteam.com/api/v0/tmp_media/luis.png">
                                                     </div>
                                                     <div class="team-details main-bg">
                                                         <h3 class="team-name" ng-bind="team.first_name+' '+team.last_name">Luis García</h3>
