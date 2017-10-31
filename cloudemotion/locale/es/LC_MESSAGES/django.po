@@ -111,3 +111,6 @@ msgstr "Desarrollador Frontend"
 
 msgid "Department Manager"
 msgstr "Gerente de departamento"
+
+msgid "Product Manager"
+msgstr "Gerente de producto"
