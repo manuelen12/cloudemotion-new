@@ -284,7 +284,7 @@
 	function setCarousel(parentElement,options,add) {
 		setTimeout(function() {
 			var options=options?options:{
-				loop:true,
+				loop:false,
 				margin:10,
 				nav:true,
 				autoplay:true,

@@ -24,7 +24,7 @@ get_header();
                                 <div class="container">
                                     <div class="qodef-section-inner-margin clearfix">
                                         <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
-                                            <div class="vc_column-inner ">
+                                            <div class="vc_column-inner-350 ">
                                                 <div class="wpb_wrapper">
                                                     <span class="qodef-icon-animation-holder" >
                                                         <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-color="#25cbf5">
@@ -150,7 +150,7 @@ get_header();
                             </div>
                             <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left"  id="creative">
                                 <div class="clearfix qodef-full-section-inner">
-                                    <div class="wpb_column vc_column_container col-sm-12">
+                                    <div class="wpb_column vc_column_container">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
                                                 <div id="qodef-particles" class="auto" style="background-color: #f8f8f8;" >
@@ -335,7 +335,7 @@ get_header();
                             
                             <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left">
                                 <div class="clearfix qodef-full-section-inner">
-                                    <div class="wpb_column vc_column_container col-sm-12">
+                                    <div class="wpb_column vc_column_container">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
                                                 <div class = "qodef-portfolio-list-holder-outer qodef-ptf-gallery qodef-ptf-four-columns" data-next-page= 2 data-type= gallery data-columns= four data-order-by= date data-order= ASC data-number= 8 data-filter= no data-filter-order-by= name data-category= all data-show-load-more= no data-title-tag= h5 data-max-num-pages = 3>
@@ -373,7 +373,7 @@ get_header();
                             <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445420473166 qodef-content-aligment-left qodef-grid-section" >
                                 <div class="container">
                                     <div class="qodef-section-inner-margin clearfix">
-                                        <div class="wpb_column vc_column_container col-sm-12">
+                                        <div class="wpb_column vc_column_container">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <div class="wpb_text_column wpb_content_element ">
@@ -392,7 +392,7 @@ get_header();
                                                     </div>
                                                     <div class="vc_row wpb_row vc_inner vc_row-fluid qodef-section qodef-content-aligment-left" style="">
                                                         <div class="qodef-full-section-inner">
-                                                            <div class="wpb_column vc_column_container col-sm-12 col-lg-4 col-md-12">
+                                                            <div class="wpb_column vc_column_container col-lg-4 col-md-12">
                                                                 <div class="vc_column-inner ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="mobilec wpb_single_image wpb_content_element vc_align_left">
@@ -408,7 +408,7 @@ get_header();
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="wpb_column vc_column_container col-sm-12 col-lg-8 col-md-12">
+                                                            <div class="wpb_column vc_column_container col-lg-8 col-md-12">
                                                                 <div class="vc_column-inner ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="vc_empty_space"  style="height: 34px" >
@@ -475,7 +475,7 @@ get_header();
 
                                 <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left" id="howWeWorks">
                                     <div class="clearfix qodef-full-section-inner">
-                                        <div class="wpb_column vc_column_container col-sm-12">
+                                        <div class="wpb_column vc_column_container">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <div class="qodef-fullwidth-slider-holder">
@@ -561,7 +561,7 @@ get_header();
                                                                                     <h4 ng-bind="'Updates the knowledge of your human resource in the management of new technologies' | translate"></h4>
                                                                                 </div>
                                                                                 <div class="qodef-fullwidth-slider-item-text">
-                                                                                    <p align="justify" ng-bind="'We are proud to present a wide repertoire of options for your professional improvement in technological tools like: Phyton - PHP - HTML5 - CSS3 - JQuery - Angular - Android - Visual Studio - SQL Server - My SQL - Postgret SQL - NodeJS - Git - Google Maps - Asterik - RequireJs - Bootstrap - GitHub - Fedora - API Development - Nginx - oAuth - SSH - Api - MercadoPago - Mailchimp - Mailrelay - Facebook Ads - Google Adwords - Hootsuite - SocialGuets - Wordpress - SEO'  | translate"></p>
+                                                                                    <p align="justify" ng-bind="'We are proud to present a wide repertoire of options for your professional improvement in technological tools like'  | translate"></p>
                                                                                 </div>
                                                                                 <div class="qodef-fullwidth-slider-item-button">
                                                                                     <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
@@ -655,7 +655,7 @@ get_header();
                             <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-grid-section" id="planing">
                                 <div class="container">
                                     <div class="qodef-section-inner-margin clearfix">
-                                        <div class="wpb_column vc_column_container col-sm-12 col-lg-6 col-md-12">
+                                        <div class="wpb_column vc_column_container col-lg-6 col-md-12">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <div class="vc_empty_space"  style="height: 78px" >
@@ -756,7 +756,7 @@ get_header();
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="wpb_column vc_column_container col-sm-12 col-lg-6 col-md-12">
+                                        <div class="wpb_column vc_column_container col-lg-6 col-md-12">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <div class="wpb_single_image wpb_content_element vc_align_left">
@@ -775,7 +775,7 @@ get_header();
 
                             <div data-qodef-parallax-speed="0.5" class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445345084553 qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(./wp-content/themes/cloudemotion/assets/img/parallax-2-home-main.jpg);">
                                 <div class="clearfix qodef-full-section-inner">
-                                    <div class="wpb_column vc_column_container col-sm-12">
+                                    <div class="wpb_column vc_column_container">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
                                                 <div class="wpb_text_column wpb_content_element ">
@@ -948,9 +948,9 @@ get_header();
                                 </div>
                             </div>
                             <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-grid-section" id="design">
-                                <div class="container">
+                                <div class="container" >
                                     <div class="qodef-section-inner-margin clearfix">
-                                        <div class="wpb_column vc_column_container col-sm-12 col-lg-6 col-md-6">
+                                        <div class="wpb_column vc_column_container col-lg-6 col-md-6">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <div class="wpb_single_image wpb_content_element vc_align_left">
@@ -963,7 +963,7 @@ get_header();
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="wpb_column vc_column_container col-sm-12 col-lg-6 col-md-6">
+                                        <div class="wpb_column vc_column_container col-lg-6 col-md-6">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <div class="vc_empty_space"  style="height: 100px" >
@@ -1004,7 +1004,7 @@ get_header();
 
                             <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1446108194203 qodef-content-aligment-left" style="">
                                 <div class="clearfix qodef-full-section-inner">
-                                    <div class="wpb_column vc_column_container col-sm-12">
+                                    <div class="wpb_column vc_column_container">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
                                                 <div class="qodef-call-to-action normal">
@@ -1038,7 +1038,7 @@ get_header();
 
                             <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="team">
                                 <div class="clearfix qodef-full-section-inner">
-                                    <div class="wpb_column vc_column_container col-sm-12">
+                                    <div class="wpb_column vc_column_container">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
                                                 <div class="wpb_text_column wpb_content_element ">

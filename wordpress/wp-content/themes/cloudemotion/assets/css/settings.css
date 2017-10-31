@@ -1540,3 +1540,6 @@ Screen Stylesheet
 
     }
     .qodef-main-menu.opened{height: 100%;}
+    .vc_column_container>.vc_column-inner-350{
+      height: 350px;
+    }
