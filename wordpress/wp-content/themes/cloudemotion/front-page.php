@@ -21,9 +21,9 @@ get_header();
                     <div class="qodef-full-width">
                         <div class="qodef-full-width-inner">
                             <div class="vc_row wpb_row vc_row-fluid qodef-section custom-color-row vc_custom_1447693588968 qodef-content-aligment-center qodef-grid-section" id="general">
-                                <div class="clearfix qodef-section-inner">
+                                <div class="container">
                                     <div class="qodef-section-inner-margin clearfix">
-                                        <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
+                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <span class="qodef-icon-animation-holder" >
@@ -53,7 +53,7 @@ get_header();
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
+                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <span class="qodef-icon-animation-holder" style="transition-delay: 200ms;-webkit-transition-delay: 200ms;-moz-transition-delay: 200ms;-ms-transition-delay: 200ms">
@@ -85,7 +85,7 @@ get_header();
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
+                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <span class="qodef-icon-animation-holder" style="transition-delay: 400ms;-webkit-transition-delay: 400ms;-moz-transition-delay: 400ms;-ms-transition-delay: 400ms">
@@ -115,7 +115,7 @@ get_header();
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
+                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <span class="qodef-icon-animation-holder" style="transition-delay: 600ms;-webkit-transition-delay: 600ms;-moz-transition-delay: 600ms;-ms-transition-delay: 600ms">
@@ -150,7 +150,7 @@ get_header();
                             </div>
                             <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left"  id="creative">
                                 <div class="clearfix qodef-full-section-inner">
-                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="wpb_column vc_column_container col-sm-12">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
                                                 <div id="qodef-particles" class="auto" style="background-color: #f8f8f8;" data-particles-density="high" data-particles-color="#c1c1c1" data-particles-opacity="1" data-particles-size="3" data-speed="2" data-show-lines="yes" data-line-length="100" >
@@ -221,9 +221,9 @@ get_header();
                                     </div>
                                 </div>
                                 <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1462539692373 qodef-content-aligment-center qodef-grid-section" style="padding: 0;">
-                                    <div class="clearfix qodef-section-inner">
+                                    <div class="container">
                                         <div class="qodef-section-inner-margin clearfix">
-                                            <div class="wpb_column vc_column_container vc_col-sm-12">
+                                            <div class="wpb_column vc_column_container col-sm-12">
                                                 <div class="vc_column-inner ">
 
                                                     <div class="wpb_wrapper">
@@ -232,7 +232,7 @@ get_header();
 
                                                         <div class="qodef-process-holder columns-4">
                                                             <div class="qodef-process-holder-inner">
-                                                                <div class="qodef-process-item">
+                                                                <div class="qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
                                                                         <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/planing.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
@@ -251,7 +251,7 @@ get_header();
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="qodef-process-item">
+                                                                <div class="qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
                                                                         <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/design.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
@@ -270,7 +270,7 @@ get_header();
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="qodef-process-item">
+                                                                <div class="qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
                                                                         <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/backlog.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
@@ -291,7 +291,7 @@ get_header();
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="qodef-process-item">
+                                                                <div class="qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
                                                                         <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/testing.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
@@ -335,165 +335,33 @@ get_header();
                             
                             <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left">
                                 <div class="clearfix qodef-full-section-inner">
-                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="wpb_column vc_column_container col-sm-12">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
                                                 <div class = "qodef-portfolio-list-holder-outer qodef-ptf-gallery qodef-ptf-four-columns" data-next-page= 2 data-type= gallery data-columns= four data-order-by= date data-order= ASC data-number= 8 data-filter= no data-filter-order-by= name data-category= all data-show-load-more= no data-title-tag= h5 data-max-num-pages = 3>
                                                     <div class = "qodef-portfolio-list-holder clearfix" >
 
 
+                                                        <article ng-repeat="portfolio in vm.portfolios" class="qodef-portfolio-item" >
+                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
+                                                            <div class = "qodef-item-image-holder">
+                                                                <div class="qodef-portfolio-shader"></div>
+                                                                <img  setDefault ng-src="{{portfolio.image}}" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" />
+                                                            </div>
+                                                            <div class="qodef-item-text-overlay">
+                                                                <div class="qodef-item-text-overlay-inner">
+                                                                    <div class="qodef-item-text-holder">
+                                                                        <h5 class="qodef-item-title" ng-bind="portfolio.name"></h5>
+                                                                        <div class="qodef-ptf-category-holder">
+                                                                            <span>Start up</span>
+                                                                            <span>/</span>
+                                                                            <span>Innovation</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </article>
 
-
-
-
-
-                                                        <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
-                                                            <div class = "qodef-item-image-holder">
-                                                                <div class="qodef-portfolio-shader"></div>
-                                                                <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" />
-                                                            </div>
-                                                            <div class="qodef-item-text-overlay">
-                                                                <div class="qodef-item-text-overlay-inner">
-                                                                    <div class="qodef-item-text-holder">
-                                                                        <h5 class="qodef-item-title">
-                                                                            New Trends In SEO &#038; Analytics           
-                                                                        </h5>
-                                                                        <div class="qodef-ptf-category-holder">
-                                                                            <span>Media</span>
-                                                                            <span>/</span>
-                                                                            <span>Platform</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-                                                        <article class="qodef-portfolio-item mix portfolio_category_8 portfolio_category_9" >
-                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
-                                                            <div class = "qodef-item-image-holder">
-                                                                <div class="qodef-portfolio-shader"></div>
-                                                                <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
-                                                            </div>
-                                                            <div class="qodef-item-text-overlay">
-                                                                <div class="qodef-item-text-overlay-inner">
-                                                                    <div class="qodef-item-text-holder">
-                                                                        <h5 class="qodef-item-title">
-                                                                            App Update &#038; Rebrand           
-                                                                        </h5>
-                                                                        <div class="qodef-ptf-category-holder">
-                                                                            <span>Research</span>
-                                                                            <span>/</span>
-                                                                            <span>Startup</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-                                                        <article class="qodef-portfolio-item mix portfolio_category_10 portfolio_category_7" >
-                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
-                                                            <div class = "qodef-item-image-holder">
-                                                                <div class="qodef-portfolio-shader"></div>
-                                                                <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
-                                                            </div>
-                                                            <div class="qodef-item-text-overlay">
-                                                                <div class="qodef-item-text-overlay-inner">
-                                                                    <div class="qodef-item-text-holder">
-                                                                        <h5 class="qodef-item-title">
-                                                                            The Tablet App Of The Future           
-                                                                        </h5>
-                                                                        <div class="qodef-ptf-category-holder">
-                                                                            <span>Business</span>
-                                                                            <span>/</span>
-                                                                            <span>Marketing</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-                                                        <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
-                                                            <div class = "qodef-item-image-holder">
-                                                                <div class="qodef-portfolio-shader"></div>
-                                                                <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
-                                                            </div>
-                                                            <div class="qodef-item-text-overlay">
-                                                                <div class="qodef-item-text-overlay-inner">
-                                                                    <div class="qodef-item-text-holder">
-                                                                        <h5 class="qodef-item-title">
-                                                                            Big Data Goes Global          
-                                                                        </h5>
-                                                                        <div class="qodef-ptf-category-holder">
-                                                                            <span>Media</span>
-                                                                            <span>/</span>
-                                                                            <span>Platform</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-                                                        <article class="qodef-portfolio-item mix portfolio_category_10 portfolio_category_7" >
-                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
-                                                            <div class = "qodef-item-image-holder">
-                                                                <div class="qodef-portfolio-shader"></div>
-                                                                <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image"/>
-                                                            </div>
-                                                            <div class="qodef-item-text-overlay">
-                                                                <div class="qodef-item-text-overlay-inner">
-                                                                    <div class="qodef-item-text-holder">
-                                                                        <h5 class="qodef-item-title">
-                                                                            New Findings In Testing          
-                                                                        </h5>
-                                                                        <div class="qodef-ptf-category-holder">
-                                                                            <span>Business</span>
-                                                                            <span>/</span>
-                                                                            <span>Marketing</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-                                                        <article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
-                                                            <div class = "qodef-item-image-holder">
-                                                                <div class="qodef-portfolio-shader"></div>
-                                                                <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
-                                                            </div>
-                                                            <div class="qodef-item-text-overlay">
-                                                                <div class="qodef-item-text-overlay-inner">
-                                                                    <div class="qodef-item-text-holder">
-                                                                        <h5 class="qodef-item-title">
-                                                                            Millenials Research 2015            
-                                                                        </h5>
-                                                                        <div class="qodef-ptf-category-holder">
-                                                                            <span>Media</span>
-                                                                            <span>/</span>
-                                                                            <span>Platform</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </article>
-                                                        <article class="qodef-portfolio-item mix portfolio_category_8 portfolio_category_9" >
-                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com/" target="_self"></a>
-                                                            <div class = "qodef-item-image-holder">
-                                                                <div class="qodef-portfolio-shader"></div>
-                                                                <img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" />
-                                                            </div>
-                                                            <div class="qodef-item-text-overlay">
-                                                                <div class="qodef-item-text-overlay-inner">
-                                                                    <div class="qodef-item-text-holder">
-                                                                        <h5 class="qodef-item-title">
-                                                                            New Trends In Social Media          
-                                                                        </h5>
-                                                                        <div class="qodef-ptf-category-holder">
-                                                                            <span>Research</span>
-                                                                            <span>/</span>
-                                                                            <span>Startup</span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </article>
                                                     </div>
                                                 </div>
                                             </div>
@@ -503,9 +371,9 @@ get_header();
                             </div>
 
                             <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445420473166 qodef-content-aligment-left qodef-grid-section" >
-                                <div class="clearfix qodef-section-inner">
+                                <div class="container">
                                     <div class="qodef-section-inner-margin clearfix">
-                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="wpb_column vc_column_container col-sm-12">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <div class="wpb_text_column wpb_content_element ">
@@ -524,7 +392,7 @@ get_header();
                                                     </div>
                                                     <div class="vc_row wpb_row vc_inner vc_row-fluid qodef-section qodef-content-aligment-left" style="">
                                                         <div class="qodef-full-section-inner">
-                                                            <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-12">
+                                                            <div class="wpb_column vc_column_container col-sm-12 col-lg-4 col-md-12">
                                                                 <div class="vc_column-inner ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="mobilec wpb_single_image wpb_content_element vc_align_left">
@@ -540,7 +408,7 @@ get_header();
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-8 vc_col-md-12">
+                                                            <div class="wpb_column vc_column_container col-sm-12 col-lg-8 col-md-12">
                                                                 <div class="vc_column-inner ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="vc_empty_space"  style="height: 34px" >
@@ -607,7 +475,7 @@ get_header();
 
                                 <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left" id="howWeWorks">
                                     <div class="clearfix qodef-full-section-inner">
-                                        <div class="wpb_column vc_column_container vc_col-sm-12">
+                                        <div class="wpb_column vc_column_container col-sm-12">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <div class="qodef-fullwidth-slider-holder">
@@ -785,9 +653,9 @@ get_header();
                                 </div>
                             </div>
                             <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-grid-section" id="planing">
-                                <div class="clearfix qodef-section-inner">
+                                <div class="container">
                                     <div class="qodef-section-inner-margin clearfix">
-                                        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12">
+                                        <div class="wpb_column vc_column_container col-sm-12 col-lg-6 col-md-12">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <div class="vc_empty_space"  style="height: 78px" >
@@ -813,7 +681,7 @@ get_header();
                                                     </div>
                                                     <div class="vc_row wpb_row vc_inner vc_row-fluid qodef-section qodef-content-aligment-left" style="">
                                                         <div class="qodef-full-section-inner">
-                                                            <div class="wpb_column vc_column_container vc_col-sm-6">
+                                                            <div class="wpb_column vc_column_container col-sm-6">
                                                                 <div class="vc_column-inner ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="qodef-icon-list-item">
@@ -843,7 +711,7 @@ get_header();
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="wpb_column vc_column_container vc_col-sm-6">
+                                                            <div class="wpb_column vc_column_container col-sm-6">
                                                                 <div class="vc_column-inner ">
                                                                     <div class="wpb_wrapper">
                                                                         <div class="qodef-icon-list-item">
@@ -874,7 +742,7 @@ get_header();
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="wpb_column vc_column_container vc_col-sm-4">
+                                                            <div class="wpb_column vc_column_container col-sm-4">
                                                                 <div class="vc_column-inner ">
                                                                     <div class="wpb_wrapper"></div>
                                                                 </div>
@@ -888,7 +756,7 @@ get_header();
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12">
+                                        <div class="wpb_column vc_column_container col-sm-12 col-lg-6 col-md-12">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <div class="wpb_single_image wpb_content_element vc_align_left">
@@ -907,7 +775,7 @@ get_header();
 
                             <div data-qodef-parallax-speed="0.5" class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445345084553 qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(./wp-content/themes/cloudemotion/assets/img/parallax-2-home-main.jpg);">
                                 <div class="clearfix qodef-full-section-inner">
-                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="wpb_column vc_column_container col-sm-12">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
                                                 <div class="wpb_text_column wpb_content_element ">
@@ -1080,9 +948,9 @@ get_header();
                                 </div>
                             </div>
                             <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-grid-section" id="design">
-                                <div class="clearfix qodef-section-inner">
+                                <div class="container">
                                     <div class="qodef-section-inner-margin clearfix">
-                                        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6">
+                                        <div class="wpb_column vc_column_container col-sm-12 col-lg-6 col-md-6">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <div class="wpb_single_image wpb_content_element vc_align_left">
@@ -1095,7 +963,7 @@ get_header();
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6">
+                                        <div class="wpb_column vc_column_container col-sm-12 col-lg-6 col-md-6">
                                             <div class="vc_column-inner ">
                                                 <div class="wpb_wrapper">
                                                     <div class="vc_empty_space"  style="height: 100px" >
@@ -1136,7 +1004,7 @@ get_header();
 
                             <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1446108194203 qodef-content-aligment-left" style="">
                                 <div class="clearfix qodef-full-section-inner">
-                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="wpb_column vc_column_container col-sm-12">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
                                                 <div class="qodef-call-to-action normal">
@@ -1170,7 +1038,7 @@ get_header();
 
                             <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="team">
                                 <div class="clearfix qodef-full-section-inner">
-                                    <div class="wpb_column vc_column_container vc_col-sm-12">
+                                    <div class="wpb_column vc_column_container col-sm-12">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
                                                 <div class="wpb_text_column wpb_content_element ">
@@ -1193,14 +1061,14 @@ get_header();
                             </div>
 
                             <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414638610 qodef-content-aligment-center qodef-grid-section" style="">
-                                <div class="clearfix qodef-section-inner">
+                                <div class="container">
                                     <div class="qodef-section-inner-margin clearfix">
 
                                         <div ng-repeat="team in vm.team" class="col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-6 col-sm-offset-1  col-lg-3 text-center ng-scope" style="margin-top:1em;margin-bottom:1em;">
                                             <div class="contenido">
                                                 <div class="team-box box-4">
                                                     <div class="team-img main-bg">
-                                                        <img ng-src="https://cloudemotionteam.com/api/v0/tmp_media/luis.png" alt="1" sizes="(max-width: 443px) 100vw, 443px" src="https://cloudemotionteam.com/api/v0/tmp_media/luis.png">
+                                                        <img ng-src="{{team.image}}" sizes="(max-width: 443px) 100vw, 443px">
                                                     </div>
                                                     <div class="team-details main-bg">
                                                         <h3 class="team-name" ng-bind="team.first_name+' '+team.last_name">Luis García</h3>
