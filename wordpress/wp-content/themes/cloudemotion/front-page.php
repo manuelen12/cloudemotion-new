@@ -153,11 +153,11 @@ get_header();
                                     <div class="wpb_column vc_column_container col-sm-12">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
-                                                <div id="qodef-particles" class="auto" style="background-color: #f8f8f8;" data-particles-density="high" data-particles-color="#c1c1c1" data-particles-opacity="1" data-particles-size="3" data-speed="2" data-show-lines="yes" data-line-length="100" >
+                                                <div id="qodef-particles" class="auto" style="background-color: #f8f8f8;" >
                                                     <div id="qodef-p-particles-container"></div>
-                                                    <div class="qodef-p-content">
-                                                        <div class="qodef-elements-holder qodef-two-columns qodef-responsive-mode-1024 qodef-one-column-alignment-left" >
-                                                            <div class="qodef-elements-holder-item qodef-vertical-alignment-top qodef-horizontal-alignment-left" >
+                                                    <div class="container-fluid">
+                                                        <div class="qodef-elements-holder " >
+                                                            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 qodef-elements-holder-item qodef-vertical-alignment-top qodef-horizontal-alignment-left" >
                                                                 <div class="qodef-elements-holder-item-inner">
                                                                     <div class="qodef-elements-holder-item-content qodef-elements-holder-custom-361605" style="padding: 90px 0px 50px 0px">
 
@@ -186,7 +186,7 @@ get_header();
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="qodef-elements-holder-item qodef-vertical-alignment-middle qodef-horizontal-alignment-right" >
+                                                            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 qodef-elements-holder-item " >
                                                                 <div class="qodef-elements-holder-item-inner">
                                                                     <div class="qodef-elements-holder-item-content qodef-elements-holder-custom-328163" style="padding: 48px 0px 0px 0px">
                                                                         <div class="wpb_single_image wpb_content_element vc_align_right wpb_bottom-to-top">
@@ -223,7 +223,7 @@ get_header();
                                 <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1462539692373 qodef-content-aligment-center qodef-grid-section" style="padding: 0;">
                                     <div class="container">
                                         <div class="qodef-section-inner-margin clearfix">
-                                            <div class="wpb_column vc_column_container col-sm-12">
+                                            <div class="wpb_column vc_column_container">
                                                 <div class="vc_column-inner ">
 
                                                     <div class="wpb_wrapper">

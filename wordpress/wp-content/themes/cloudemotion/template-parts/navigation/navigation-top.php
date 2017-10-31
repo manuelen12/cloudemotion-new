@@ -15,7 +15,7 @@
             <header class="qodef-page-header">
                 <div class="qodef-menu-area" style="background-color:rgba(255, 255, 255, 0)">
                     <div class="qodef-vertical-align-containers">
-                        <div class="qodef-position-left">
+                        <div class="qodef-position-left col-md-2 ">
                             <div class="qodef-position-left-inner">
                                 <div class="qodef-logo-wrapper">
                                     <a href="http://startit.select-themes.com/">
@@ -24,12 +24,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="qodef-position-right">
+                        <div class="qodef-position-right col-md-10 col-sm-10">
                             <div class="qodef-position-right-inner">
                                 <nav class="qodef-main-menu qodef-drop-down qodef-default-nav">
                                     <?php     get_template_part( 'template-parts/navigation/menu', null ); ?>
+                                    <span class="hamburger-menu fa show-small"></span>
                                 </nav>
-                                <a        data-icon-close-same-position="yes"                        class="qodef-search-opener" href="javascript:void(0)"></a>
                             </div>
                         </div>
                     </div>

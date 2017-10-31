@@ -1465,7 +1465,78 @@ Screen Stylesheet
     .helpgrid 					   { 	border:2px dashed #c0392b;position:absolute;top:0px;left:0px;z-index:0 }
     #revsliderlogloglog				{	padding:15px;color:#fff;position:fixed; top:0px;left:0px;width:200px;height:150px;background:rgba(0,0,0,0.7); z-index:100000; font-size:10px; overflow:scroll;}
 
+    .show-small{display: none;}
+
+    .hamburger-menu:before{
+      content: "\f03a";
+    }
+    .hamburger-menu{
+      position: fixed;
+      right: 40px;
+      line-height: 35px;
+      top: 30px;
+      width: 35px;
+      height: 35px;
+      background: #25cbf5;
+      border-radius: 5px;
+      cursor: pointer;
+      text-align: center;
+      color: white;
+    }
 
 
+    @media all and (min-width:830px){
+      .qodef-main-menu ul > li:first-child{
+        display: none;
+      }
+      
+    }
+    @media all and (max-width:830px){
+      .qodef-position-left{display: block !important;}
+      .qodef-main-menu{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: white;
+        height: 0;
+        overflow: hidden;
+        transition: all 2s ease-in-out;
+      }
+      .show-small{display: inline-block;}
+      .qodef-main-menu ul > li:first-child{margin-bottom: 1em;}
+      .qodef-main-menu ul li{
+        float: initial;
+        height: auto;
+        margin-bottom: 2px;
+      }
+      .qodef-main-menu ul li a{
+        width: 100%;
+      }
+      .qodef-main-menu ul li a > *{
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+      .qodef-logo-wrapper a, .qodef-main-menu, .qodef-main-menu ul li, .qodef-main-menu>ul{
+        display: block;
+      }
 
+    }
+    @media all and (max-width:990px){
+      .qodef-position-left{
+        display: none;
+      }
+      .qodef-vertical-align-containers .qodef-position-right{
+        float: initial;
+        width: 100%;
+        text-align: center;
+      }
+    }
+    @media all and (max-width:1200px){
+      .qodef-main-menu ul li a{
+        font-size: 14px;
+      }
 
+    }
+    .qodef-main-menu.opened{height: 100%;}

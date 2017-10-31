@@ -25,6 +25,7 @@
 	menuTop = 0,
 	resizeTimer;
 
+
 	// Ensure the sticky navigation doesn't cover current focused links.
 	$( 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex], [contenteditable]', '.site-content-contain' ).filter( ':visible' ).focus( function() {
 		if ( $navigation.hasClass( 'site-navigation-fixed' ) ) {
@@ -55,7 +56,7 @@
 	}
 
 	function setTestimonial() {
-		if (($(document).width())<769) {$(".qodef-testimonials-slider-item").css("width","100%"); console.log("mierda");}
+		if (($(document).width())<769) {$(".qodef-testimonials-slider-item").css("width","100%");}
 	}
 
 	// Make navigation 'stick'.
@@ -176,9 +177,9 @@
 
 
 	 function triggerParallaxCl(target) {
-		 	$target=$(target);
-		 	if ($target.length) {	
-		 		$('html,body').animate({
+	 	$target=$(target);
+	 	if ($target.length) {	
+	 		$('html,body').animate({
 	 			scrollTop: ($target.offset().top-100)+"px"
 	 		}, 2000);
 	 	}
@@ -198,6 +199,17 @@
 
 	// Fire on document ready.
 	$( document ).ready( function() {
+		var hamburger= $(".hamburger-menu"),
+		smallMenu= $(".qodef-main-menu");
+		console.log($body);
+		console.log(hamburger);
+
+		hamburger.on("click",function(ev) {
+			console.log("open");
+			smallMenu.toggleClass("opened");
+		})
+
+
 
 		$(".loader").removeClass("in");
 		triggerParallaxCl(window.location.hash)
