@@ -1465,7 +1465,7 @@ Screen Stylesheet
     .helpgrid 					   { 	border:2px dashed #c0392b;position:absolute;top:0px;left:0px;z-index:0 }
     #revsliderlogloglog				{	padding:15px;color:#fff;position:fixed; top:0px;left:0px;width:200px;height:150px;background:rgba(0,0,0,0.7); z-index:100000; font-size:10px; overflow:scroll;}
 
-    .show-small{display: none;}
+    .show-small{display: none !important;}
 
     .hamburger-menu:before{
       content: "\f03a";
