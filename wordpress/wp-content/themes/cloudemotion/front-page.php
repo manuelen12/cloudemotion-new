@@ -24,7 +24,7 @@ get_header();
                                 <div class="container">
                                     <div class="qodef-section-inner-margin clearfix">
                                         <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
-                                            <div class="vc_column-inner-350 ">
+                                            <div class="vc_column-inner-350350 ">
                                                 <div class="wpb_wrapper">
                                                     <span class="qodef-icon-animation-holder" >
                                                         <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-color="#25cbf5">
@@ -54,7 +54,7 @@ get_header();
                                             </div>
                                         </div>
                                         <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
-                                            <div class="vc_column-inner ">
+                                            <div class="vc_column-inner-350">
                                                 <div class="wpb_wrapper">
                                                     <span class="qodef-icon-animation-holder" style="transition-delay: 200ms;-webkit-transition-delay: 200ms;-moz-transition-delay: 200ms;-ms-transition-delay: 200ms">
                                                         <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="200" data-color="#25cbf5">
@@ -86,7 +86,7 @@ get_header();
                                             </div>
                                         </div>
                                         <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
-                                            <div class="vc_column-inner ">
+                                            <div class="vc_column-inner-350">
                                                 <div class="wpb_wrapper">
                                                     <span class="qodef-icon-animation-holder" style="transition-delay: 400ms;-webkit-transition-delay: 400ms;-moz-transition-delay: 400ms;-ms-transition-delay: 400ms">
                                                         <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="400" data-color="#25cbf5">
@@ -116,7 +116,7 @@ get_header();
                                             </div>
                                         </div>
                                         <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
-                                            <div class="vc_column-inner ">
+                                            <div class="vc_column-inner-350">
                                                 <div class="wpb_wrapper">
                                                     <span class="qodef-icon-animation-holder" style="transition-delay: 600ms;-webkit-transition-delay: 600ms;-moz-transition-delay: 600ms;-ms-transition-delay: 600ms">
                                                         <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="600" data-color="#25cbf5">
