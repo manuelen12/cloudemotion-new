@@ -22,7 +22,7 @@
 								<span class="custom-text-color-1 text-uppercase" ng-hide="!vm.last_exp_name">
 									<div class="col-md-9">
 										<strong class="custom-text-color-1" ng-bind="'Previous' | translate ">Previous: </strong>
-										<text ng-bind="vm.last_exp_name+' '+vm.last_exp_comp "></text>				
+										<text ng-bind="vm.last_exp_name+' '+vm.last_exp_comp "></text>			
 									</div>
 									<div class="col-md-3">
 										<a data-hash="" href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm" ng-bind="'View More' | translate" ng-click="vm.click1('#experience')"></a>
@@ -243,6 +243,7 @@
 
 		<section id="skills" class="section section-no-border background-color-light m-none" ng-hide="vm.showSki">
 			<div class="container">
+				<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none" ng-bind="'Skills' | translate">Skill</h2>
 				<div class="row custom-sm-flex-order">
 					<div class="col-md-6 col-sm-6 col-xs-12">
 					<div class="progress-bars custom-progress-bars" ng-repeat="skill in vm.users.user_skill" data-appear-top-offset="1400">

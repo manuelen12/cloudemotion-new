@@ -22,15 +22,7 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
       initOwl('.owl-education');
       initOwlCourse('.owl-carousel1');
   })
-  function message(message,type,title) {
-    return swal({
-      title: (title?title:'¡Lo sentimos!'),
-      text: message,
-      type: type,
-      confirmButtonColor: '#3085d6',
-      confirmButtonText: 'Aceptar'
-    })
-  }
+   
   console.log($stateParams);
   var id = $stateParams.id;
       //var params = {filters:{language:$stateParams.lang}};
@@ -67,6 +59,7 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
         if(vm.users.user_nationality.length == 0){ vm.showNat=true; }
         if(vm.users.user_experience.length == 0){ vm.showExp=true; }
         console.log(vm.users);
+        $rootScope.users=vm.users;
       },function(error){
         console.log(error);
       })
