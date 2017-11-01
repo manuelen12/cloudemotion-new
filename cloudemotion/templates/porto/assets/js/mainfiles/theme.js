@@ -70,7 +70,7 @@ function initOwl(selector) {
 function initOwlCourse(selector) {
 	setTimeout(function() {
 		$(selector).owlCarousel({
-	          loop: true,
+	          loop: false,
 	          margin: 3,
 	          nav: true,
 	          navText: [
@@ -81,11 +81,11 @@ function initOwlCourse(selector) {
 	            0: {
 	              items: 1
 	            },
-	            600: {
-	              items: 3
+	            500: {
+	              items: 2
 	            },
 	            1000: {
-	              items: 3
+	              items: 2
 	            }
 	          }
 	        })
