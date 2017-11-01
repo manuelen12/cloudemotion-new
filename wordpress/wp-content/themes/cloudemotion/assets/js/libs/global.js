@@ -178,7 +178,10 @@
 
 	 function triggerParallaxCl(target) {
 	 	$target=$(target);
+	 	console.log("cierrate sesamoº");
 	 	if ($target.length) {	
+	 		console.log("cierrate sesamo");
+	 		$(".qodef-main-menu").removeClass("opened");
 	 		$('html,body').animate({
 	 			scrollTop: ($target.offset().top-100)+"px"
 	 		}, 2000);
@@ -186,19 +189,22 @@
 	 }
 
 
-	 $("*[parallax-cl]").on("click",function(e) {
-	 	var id=$(this).attr("href"),
-	 	parentTarget=$(this).parent();
-	 	if (parentTarget.is(':last-child')) return false;
-	 	$(".menu-item").removeClass("qodef-active-item");	
-	 	parentTarget.addClass("qodef-active-item");
-	 	console.log(parentTarget);
-	 	event.preventDefault();
-	 	triggerParallaxCl(id);
-	 })
 
 	// Fire on document ready.
 	$( document ).ready( function() {
+
+		$("*[parallax-cl]").on("click",function(e) {
+			var id=$(this).attr("href"),
+			parentTarget=$(this).parent();
+			console.log(parentTarget.is(':last-child'));
+			if (parentTarget.is(':last-child')) return false;
+			$(".menu-item").removeClass("qodef-active-item");	
+			parentTarget.addClass("qodef-active-item");
+			console.log(parentTarget);
+			event.preventDefault();
+			triggerParallaxCl(id);
+		})
+		
 		var hamburger= $(".hamburger-menu"),
 		smallMenu= $(".qodef-main-menu");
 		console.log($body);

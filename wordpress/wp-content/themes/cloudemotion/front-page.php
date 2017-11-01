@@ -232,7 +232,7 @@ get_header();
 
                                                         <div class="qodef-process-holder columns-4">
                                                             <div class="qodef-process-holder-inner">
-                                                                <div class="qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
+                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
                                                                         <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/planing.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
@@ -251,7 +251,7 @@ get_header();
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
+                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
                                                                         <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/design.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
@@ -270,7 +270,7 @@ get_header();
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
+                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
                                                                         <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/backlog.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
@@ -291,7 +291,7 @@ get_header();
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
+                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
                                                                         <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/testing.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
