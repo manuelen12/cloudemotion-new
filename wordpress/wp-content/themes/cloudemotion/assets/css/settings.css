@@ -1487,7 +1487,7 @@ Screen Stylesheet
 
     @media all and (min-width:830px){
       .qodef-main-menu ul > li:first-child{
-        display: none;
+        display: none !important;
       }
       
     }
@@ -1525,7 +1525,7 @@ Screen Stylesheet
     }
     @media all and (max-width:990px){
       .qodef-position-left{
-        display: none;
+        display: none !important;
       }
       .qodef-vertical-align-containers .qodef-position-right{
         float: initial;
