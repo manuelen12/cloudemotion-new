@@ -37,7 +37,6 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
       function click1(link) {
         var body =   $("html, body");
         var top  =   $(link).offset().top;
-        
         body.stop().animate({scrollTop:top},1000,'swing',function(){});
       }
       //GET LANG
@@ -73,7 +72,7 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
       })
 
       function sendMessage() {
-        vm.contact.user_id = $stateParams.id;
+       vm.contact.user_id = $stateParams.id;
        if(ValidatorHelper.validContact(vm.contact)){
           PortfolioService.postContact(vm.contact).then(function(response){
             $('.form-control').css('border-bottom','1px solid #d8b113');
@@ -85,7 +84,5 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
       
       this.$onInit=function(){ 
         particlesJS("particles-js",particles);       
-
-
       }
     }
