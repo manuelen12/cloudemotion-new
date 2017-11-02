@@ -7,8 +7,8 @@
 			suffix: '.json'
 		});
 		$translateProvider.useSanitizeValueStrategy('escape');
-		
-		
+
+
 	}
 	cloudemotion.controller("MainCtrl", MainCtrl)
 
@@ -23,10 +23,15 @@
 			changeLanguage:changeLanguage,
 			getTeam:urlHelpers.get("users"),
 			getPorfolios:urlHelpers.get("portfolios"),
+			setBackground:setBackground,
 		});
 		function changeLanguage() {
 			vm.country = (vm.country=='es'?'en':'es');
 			$translate.use(vm.country);		
+		}
+		function setBackground(image) {
+			console.log(('background-image:url("'+image+'")'));
+			return 'background-image:url("'+image+'")';
 		}
 		this.$onInit=function() {
 			particlesJS("qodef-p-particles-container",particles)
@@ -44,8 +49,8 @@
 				console.log(error);
 			})
 			vm.getPorfolios.then(function(response) {
-				console.log(response);
 				vm.portfolios=response.data;
+				console.log(response);
 			},function(error) {
 				console.log(error);
 			})

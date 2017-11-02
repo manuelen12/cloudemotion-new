@@ -181,7 +181,7 @@
 	 	console.log("cierrate sesamoº");
 	 	if ($target.length) {	
 	 		console.log("cierrate sesamo");
-	 		$(".qodef-main-menu").removeClass("opened");
+	 		$(".qodef-page-header").removeClass("opened");
 	 		$('html,body').animate({
 	 			scrollTop: ($target.offset().top-100)+"px"
 	 		}, 2000);
@@ -204,9 +204,9 @@
 			event.preventDefault();
 			triggerParallaxCl(id);
 		})
-		
+
 		var hamburger= $(".hamburger-menu"),
-		smallMenu= $(".qodef-main-menu");
+		smallMenu= $(".qodef-page-header");
 		console.log($body);
 		console.log(hamburger);
 

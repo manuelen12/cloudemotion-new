@@ -1,12 +1,5 @@
 
 <ul id="menu-main-menu" class="clearfix">
-    <li>
-        <div class="qodef-logo-wrapper">
-            <a href="http://startit.select-themes.com/">
-                <img width="250" class="qodef-normal-logo" src="./wp-content/themes/cloudemotion/assets/img/logo_header.jpg" alt="logo">
-            </a>
-        </div>
-    </li>
     <li class="menu-item qodef-active-item ">
         <a href="#general" parallax-cl class=" current ">
             <span class="item_outer">

@@ -1465,17 +1465,17 @@ Screen Stylesheet
     .helpgrid 					   { 	border:2px dashed #c0392b;position:absolute;top:0px;left:0px;z-index:0 }
     #revsliderlogloglog				{	padding:15px;color:#fff;position:fixed; top:0px;left:0px;width:200px;height:150px;background:rgba(0,0,0,0.7); z-index:100000; font-size:10px; overflow:scroll;}
 
-    .show-small{display: none !important;}
+    .show-small{display: none;}
 
     .hamburger-menu:before{
       content: "\f03a";
     }
     .hamburger-menu{
-      position: fixed;
-      right: 40px;
+      position: absolute;
+      right: 48px;
       line-height: 35px;
-      top: 30px;
-      width: 35px;
+      top: 35px;
+      width: 35px;    
       height: 35px;
       background: #25cbf5;
       border-radius: 5px;
@@ -1484,28 +1484,83 @@ Screen Stylesheet
       color: white;
     }
 
-
-    @media all and (min-width:830px){
-      .qodef-main-menu ul > li:first-child{
-        display: none !important;
-      }
-      
+    .qodef-portfolio-list-holder .qodef-portfolio-item{
+      float:left;
     }
-    @media all and (max-width:830px){
+
+
+
+    @media all and (min-width:961px) and (max-width:1200px){
+
+      .qodef-logo-wrapper{width: 30px;}
+      .qodef-logo-wrapper img{max-width: initial;}
+      .qodef-position-left{
+        width: 60px;
+        overflow: hidden;
+      }
+
+      .qodef-main-menu ul li a{
+        font-size: 14px;
+      }
+
+      .qodef-portfolio-list-holder .qodef-portfolio-item{
+        width: 33%;
+      }
+
+      .qodef-portfolio-list-holder-outer.qodef-ptf-gallery article .qodef-item-image-holder {
+        height: 225px;
+        width: 100%;
+        margin: 20px auto;
+      }
+
+    }
+    @media all and (min-width:861px) and (max-width:960px){
+
+      ..qodef-main-menu ul li a{font-size: 12px;}
+      .qodef-logo-wrapper{width: 30px;}
+      .qodef-logo-wrapper img{max-width: initial;}
+      .qodef-position-left{
+        width: 60px;
+        overflow: hidden;
+      }
+
+      body{
+        background-color: blue;
+      }
+      .qodef-portfolio-list-holder .qodef-portfolio-item{
+        width: 33.3%;
+      }
+      .qodef-vertical-align-containers .qodef-position-right{
+        float: right;
+        width: 90%;
+        text-align: center;
+      }
+    }
+    @media all and (max-width:860px){
+      .qodef-portfolio-list-holder .qodef-portfolio-item{
+        width: 33.3%;
+      }
+
+
       .qodef-position-left{display: block !important;}
       .qodef-main-menu{
-        position: fixed;
+        position: relative;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
         background: white;
-        height: 0;
         overflow: hidden;
         transition: all 2s ease-in-out;
       }
+      .qodef-position-right-inner{
+        position: relative;
+        right: 0px;
+        left: 0;
+        width: 100%;
+      }
       .show-small{display: inline-block;}
-      .qodef-main-menu ul > li:first-child{margin-bottom: 1em;}
+
       .qodef-main-menu ul li{
         float: initial;
         height: auto;
@@ -1513,36 +1568,31 @@ Screen Stylesheet
       }
       .qodef-main-menu ul li a{
         width: 100%;
-      }
-      .qodef-main-menu ul li a > *{
-        margin-left: 40px;
-        margin-right: 40px;
+        font-size: 14px;
       }
       .qodef-logo-wrapper a, .qodef-main-menu, .qodef-main-menu ul li, .qodef-main-menu>ul{
         display: block;
       }
-
     }
-    @media all and (max-width:990px){
-      .qodef-position-left{
-        display: none !important;
-      }
-      .qodef-vertical-align-containers .qodef-position-right{
-        float: initial;
+
+    @media all and (max-width:460px){
+      .qodef-portfolio-list-holder .qodef-portfolio-item{
         width: 100%;
-        text-align: center;
+      }
+      .col-xs-6{
+        width: 100% !important;
       }
     }
-    @media all and (max-width:1200px){
-      .qodef-main-menu ul li a{
-        font-size: 14px;
-      }
 
-    }
-    .qodef-main-menu.opened{height: 100%;}
+    .qodef-page-header.opened{height: 100vh;}
     .vc_column-inner-350{
       height: 350px;
     }
-.mobilec{
-  text-align: center !important; 
-}
+    .mobilec{
+      text-align: center !important; 
+    }
+
+    .col-no-p{
+      padding: 0px !important; 
+    }
+

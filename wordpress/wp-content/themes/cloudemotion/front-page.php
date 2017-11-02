@@ -232,7 +232,7 @@ get_header();
 
                                                         <div class="qodef-process-holder columns-4">
                                                             <div class="qodef-process-holder-inner">
-                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
+                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 col-xs-6 ">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
                                                                         <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/planing.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
@@ -251,7 +251,7 @@ get_header();
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
+                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 col-xs-6 ">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
                                                                         <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/design.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
@@ -270,7 +270,7 @@ get_header();
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
+                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 col-xs-6 ">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
                                                                         <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/backlog.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
@@ -291,7 +291,7 @@ get_header();
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 ">
+                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 col-xs-6 ">
                                                                     <div class="qodef-process-item-icon-holder-wrapper">
                                                                         <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/testing.jpg)">
                                                                             <span class="qodef-process-item-background-holder">
@@ -338,15 +338,14 @@ get_header();
                                     <div class="wpb_column vc_column_container">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
-                                                <div class = "qodef-portfolio-list-holder-outer qodef-ptf-gallery qodef-ptf-four-columns" data-next-page= 2 data-type= gallery data-columns= four data-order-by= date data-order= ASC data-number= 8 data-filter= no data-filter-order-by= name data-category= all data-show-load-more= no data-title-tag= h5 data-max-num-pages = 3>
+                                                <div class = "qodef-portfolio-list-holder-outer qodef-ptf-gallery qodef-ptf-four-columns" >
                                                     <div class = "qodef-portfolio-list-holder clearfix" >
 
 
-                                                        <article ng-repeat="portfolio in vm.portfolios" class="qodef-portfolio-item" >
+                                                        <article ng-repeat="portfolio in vm.portfolios" class="qodef-portfolio-item col-no-p" >
                                                             <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
-                                                            <div class = "qodef-item-image-holder">
+                                                            <div class = "qodef-item-image-holder" style="{{vm.setBackground(portfolio.image)}}">
                                                                 <div class="qodef-portfolio-shader"></div>
-                                                                <img  setDefault ng-src="{{portfolio.image}}" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" />
                                                             </div>
                                                             <div class="qodef-item-text-overlay">
                                                                 <div class="qodef-item-text-overlay-inner">
@@ -1064,7 +1063,7 @@ get_header();
                                 <div class="container">
                                     <div class="qodef-section-inner-margin clearfix">
 
-                                        <div ng-repeat="team in vm.team" class="col-md-3 col-md-offset-0 col-lg-offset-0 col-sm-6 col-sm-offset-1  col-lg-3 text-center ng-scope" style="margin-top:1em;margin-bottom:1em;">
+                                        <div ng-repeat="team in vm.team" class="col-md-3 col-sm-6 col-xs-6 col-lg-3 text-center" style="margin-top:1em;margin-bottom:1em;">
                                             <div class="contenido">
                                                 <div class="team-box box-4">
                                                     <div class="team-img main-bg">
