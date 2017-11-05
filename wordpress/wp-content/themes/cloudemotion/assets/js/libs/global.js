@@ -25,6 +25,7 @@
 	menuTop = 0,
 	resizeTimer;
 
+
 	// Ensure the sticky navigation doesn't cover current focused links.
 	$( 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex], [contenteditable]', '.site-content-contain' ).filter( ':visible' ).focus( function() {
 		if ( $navigation.hasClass( 'site-navigation-fixed' ) ) {
@@ -52,6 +53,10 @@
 		navMenuItemHeight     = $navMenuItem.outerHeight() * 2;
 		idealNavHeight        = navPadding + navMenuItemHeight;
 		navIsNotTooTall       = navigationHeight <= idealNavHeight;
+	}
+
+	function setTestimonial() {
+		if (($(document).width())<769) {$(".qodef-testimonials-slider-item").css("width","100%");}
 	}
 
 	// Make navigation 'stick'.
@@ -106,7 +111,6 @@
 	// Add 'below-entry-meta' class to elements.
 	function belowEntryMetaClass( param ) {
 		var sidebarPos, sidebarPosBottom;
-
 		if ( ! $body.hasClass( 'has-sidebar' ) || (
 			$body.hasClass( 'search' ) ||
 			$body.hasClass( 'single-attachment' ) ||
@@ -171,9 +175,50 @@
 	 	}
 	 }
 
+
+	 function triggerParallaxCl(target) {
+	 	$target=$(target);
+	 	console.log("cierrate sesamoº");
+	 	if ($target.length) {	
+	 		console.log("cierrate sesamo");
+	 		$(".qodef-page-header").removeClass("opened");
+	 		$('html,body').animate({
+	 			scrollTop: ($target.offset().top-100)+"px"
+	 		}, 2000);
+	 	}
+	 }
+
+
+
 	// Fire on document ready.
 	$( document ).ready( function() {
 
+		$("*[parallax-cl]").on("click",function(e) {
+			var id=$(this).attr("href"),
+			parentTarget=$(this).parent();
+			console.log(parentTarget.is(':last-child'));
+			if (parentTarget.is(':last-child')) return false;
+			$(".menu-item").removeClass("qodef-active-item");	
+			parentTarget.addClass("qodef-active-item");
+			console.log(parentTarget);
+			event.preventDefault();
+			triggerParallaxCl(id);
+		})
+
+		var hamburger= $(".hamburger-menu"),
+		smallMenu= $(".qodef-page-header");
+		console.log($body);
+		console.log(hamburger);
+
+		hamburger.on("click",function(ev) {
+			console.log("open");
+			smallMenu.toggleClass("opened");
+		})
+
+
+
+		$(".loader").removeClass("in");
+		triggerParallaxCl(window.location.hash)
 		// If navigation menu is present on page, setNavProps and adjustScrollClass.
 		if ( $navigation.length ) {
 			setNavProps();
@@ -222,17 +267,18 @@
 		});
 
 		// Also want to make sure the navigation is where it should be on resize.
-		$( window ).resize( function() {
+		$( window ).on("resize", function() {
 			setNavProps();
 			setTimeout( adjustScrollClass, 500 );
 		});
 	}
 
-	$( window ).resize( function() {
+	$( window ).on("resize", function() {
 		clearTimeout( resizeTimer );
 		resizeTimer = setTimeout( function() {
 			belowEntryMetaClass( 'blockquote.alignleft, blockquote.alignright' );
 		}, 300 );
+		setTestimonial();
 		setTimeout( adjustHeaderHeight, 1000 );
 	});
 
@@ -244,7 +290,7 @@
 	function setCarousel(parentElement,options,add) {
 		setTimeout(function() {
 			var options=options?options:{
-				loop:true,
+				loop:false,
 				margin:10,
 				nav:true,
 				autoplay:true,
@@ -254,35 +300,15 @@
 				animateIn: 'fadeIn',
 
 			}
-
 			if (add) {
 				options=Object.assign(options,add);
 			}
+			console.log(options);
 			$(parentElement).owlCarousel(options)
 
 		},1000)
 	}	
-	var arrows={navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]},
-	optionArticle={
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    responsive:{
-        0:{
-            items:1,
-            nav:true
-        },
-        600:{
-            items:3,
-            nav:false
-        },
-        1000:{
-            items:5,
-            nav:true,
-            loop:false
-        }
-    }
-}
+	var arrows={navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]};
 
 	setCarousel(".qodef-fullwidth-slider-slides");
 	setCarousel(".qodef-testimonials",null,arrows);

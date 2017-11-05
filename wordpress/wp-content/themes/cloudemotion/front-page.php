@@ -1,3877 +1,1105 @@
 <?php
-wp_head();
+get_header();
 ?>
+
+
+
 <body ng-controller="MainCtrl as vm">
-<section class="qodef-side-menu right">
-<div class="qodef-close-side-menu-holder">
-<div class="qodef-close-side-menu-holder-inner">
-<a href="#" target="_self" class="qodef-close-side-menu">
-<span aria-hidden="true" class="icon_close"></span>
-</a>
-</div>
-</div>
-<div id="text-15" class="widget qodef-sidearea widget_text">
-<div class="textwidget">
-<a href="http://startit.select-themes.com/">
-<img src="./wp-content/themes/cloudemotion/assets/img/logo-sidearea.png" alt="logo">
-</a>
-<div class="vc_empty_space"  style="height: 38px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<h3>Select Sidearea</h3>
-<div class="vc_empty_space"  style="height: 18px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-Populate the sidearea with useful widgets. It’s simple to add images, categories, latest post, social media icon links, tag clouds, and more.
 
-<div class="vc_empty_space"  style="height: 31px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="qodef-image-gallery">
-<div class="qodef-image-gallery-grid qodef-gallery-columns-3 " >
-<div class="qodef-gallery-image">
-<img src="./wp-content/themes/cloudemotion/assets/img/side-area-image-11.jpg" alt="side-area-image-1" width="150" height="150">
-</div>
-<div class="qodef-gallery-image">
-<img src="./wp-content/themes/cloudemotion/assets/img/side-area-image-21.jpg" alt="side-area-image-2" width="150" height="150">
-</div>
-<div class="qodef-gallery-image">
-<img src="./wp-content/themes/cloudemotion/assets/img/side-area-image-31.jpg" alt="side-area-image-3" width="150" height="150">
-</div>
-<div class="qodef-gallery-image">
-<img src="./wp-content/themes/cloudemotion/assets/img/side-area-image-41.jpg" alt="side-area-image-4" width="150" height="150">
-</div>
-<div class="qodef-gallery-image">
-<img src="./wp-content/themes/cloudemotion/assets/img/side-area-image-51.jpg" alt="side-area-image-5" width="150" height="150">
-</div>
-<div class="qodef-gallery-image">
-<img src="./wp-content/themes/cloudemotion/assets/img/side-area-image-61.jpg" alt="side-area-image-6" width="150" height="150">
-</div>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 26px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="custom-color-row-changer">
-<span style="color: #b2dd4c; line-height: 20px; font-weight: 700;">hello@youremail.com</span>
-<br />
-<span style="color: #b2dd4c; line-height: 20px; font-weight: 700;">+1234567890</span>
-</div>
-</div>
-</div>
-</section>
-<div class="qodef-wrapper">
-<div class="qodef-wrapper-inner">
-<header class="qodef-page-header">
-<div class="qodef-menu-area" style="background-color:rgba(255, 255, 255, 0)">
-<form role="search" action="http://startit.select-themes.com/" class="qodef-search-cover" method="get">
-<div class="qodef-form-holder-outer">
-<div class="qodef-form-holder">
-<div class="qodef-form-holder-inner">
-<input type="text" placeholder="Search" name="s" class="qode_search_field" autocomplete="off" />
-<div class="qodef-search-close">
-<a href="#">
-<i class="qodef-icon-ion-icon ion-close " ></i>
-</a>
-</div>
-</div>
-</div>
-</div>
-</form>
-<div class="qodef-vertical-align-containers">
-<div class="qodef-position-left">
-<div class="qodef-position-left-inner">
-<div class="qodef-logo-wrapper">
-<a href="http://cloudemotion.com.ve/" style="height: 90px;">
-<img class="qodef-normal-logo" src="./wp-content/themes/cloudemotion/assets/img/logo-light.png" alt="logo"/>
-<img class="qodef-dark-logo" src="./wp-content/themes/cloudemotion/assets/img/logo-light.png" alt="dark logo"/>
-<img class="qodef-light-logo" src="./wp-content/themes/cloudemotion/assets/img/logo-light.png" alt="light logo"/>
-</a>
-</div>
-</div>
-</div>
-<div class="qodef-position-right">
-<div class="qodef-position-right-inner">
-<nav class="qodef-main-menu qodef-drop-down qodef-default-nav">
-<ul id="menu-main-menu" class="clearfix">
-<li id="nav-menu-item-634" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item current-menu-ancestor current_page_ancestor menu-item-has-children qodef-active-item has_sub wide wide_background">
-<a href="http://startit.select-themes.com/" class=" current ">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Inicio</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-<div class="second">
-<div class="inner">
-<ul>
-<li id="nav-menu-item-4743" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-ancestor current-menu-parent menu-item-has-children sub">
-<a href="#" class=" no_link" style="cursor: default;" onclick="JavaScript: return false;">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Multipurpose</span>
-</span>
-<span class="plus"></span>
-<i class="q_menu_arrow fa fa-angle-right"></i>
-</span>
-</a>
-<ul>
-<li id="nav-menu-item-145" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4 current_page_item ">
-<a href="http://startit.select-themes.com/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Main Home</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-262" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/simple-home/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Simple Home</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-2938" class="menu-item menu-item-type-custom menu-item-object-custom ">
-<a target="_blank" href="http://startit.select-themes.com/startit1/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Onepage</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-5181" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/blog-gallery/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Blog Gallery</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-5157" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/animated-whiteboard/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Animated Whiteboard</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-5168" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/landing/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Landing</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-</ul>
-</li>
-<li id="nav-menu-item-4744" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub">
-<a href="#" class=" no_link" style="cursor: default;" onclick="JavaScript: return false;">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Presentational</span>
-</span>
-<span class="plus"></span>
-<i class="q_menu_arrow fa fa-angle-right"></i>
-</span>
-</a>
-<ul>
-<li id="nav-menu-item-492" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/app-presentation/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">App Presentation</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-3745" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/app-presentation-ii/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">App Presentation II</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-2856" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/product-landing-page/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Product Landing Page</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-3314" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/product-landing-page-ii/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Product Landing Page II</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-4141" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/video-slider/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Video Slider</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-</ul>
-</li>
-<li id="nav-menu-item-4745" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub">
-<a href="#" class=" no_link" style="cursor: default;" onclick="JavaScript: return false;">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Business</span>
-</span>
-<span class="plus"></span>
-<i class="q_menu_arrow fa fa-angle-right"></i>
-</span>
-</a>
-<ul>
-<li id="nav-menu-item-144" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/startup-business/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Startup Business</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1157" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/online-shop/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Online Shop</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-3486" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/seo/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">SEO</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-4280" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/web-agency-home/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Web Agency Home</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-3746" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/support-center/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Support Center</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-4278" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/creative-startup/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Creative Startup</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-3747" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/tech-business/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Tech Business</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-</ul>
-</li>
-<li id="nav-menu-item-4746" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub">
-<a href="#" class=" no_link" style="cursor: default;" onclick="JavaScript: return false;">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Bonus Homepages</span>
-</span>
-<span class="plus"></span>
-<i class="q_menu_arrow fa fa-angle-right"></i>
-</span>
-</a>
-<ul>
-<li id="nav-menu-item-2855" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/conference-home/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Conference Home</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-3315" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/conference-home-ii/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Conference Home II</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-3744" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/under-maintenance/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Under Maintenance</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-2854" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/coming-soon/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Coming Soon</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</li>
-<li id="nav-menu-item-314" class="menu-item">
-<a href="#" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Páginas</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-<div class="second">
-<div class="inner">
-<ul>
-<li id="nav-menu-item-316" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/about-me/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">About Me</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-382" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/about-us/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">About Us</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-2053" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/parallax/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Parallax</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-381" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/process/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Process</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-315" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/services/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Services</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-493" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/pricing/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Pricing</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-527" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/clients/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Clients</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-597" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/faq/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">FAQ</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-601" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/contact/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Contact</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</li>
-<li id="nav-menu-item-629" class="menu-item">
-<a href="#" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Portfolio</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-<div class="second">
-<div class="inner">
-<ul>
-<li id="nav-menu-item-839" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sub">
-<a href="http://startit.select-themes.com/gallery-style/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Gallery Style</span>
-</span>
-<span class="plus"></span>
-<i class="q_menu_arrow fa fa-angle-right"></i>
-</span>
-</a>
-<ul>
-<li id="nav-menu-item-845" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/gallery-style/three-columns-grid/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Three Columns Grid</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-843" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/gallery-style/four-columns-grid/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Four Columns Grid</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-842" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/gallery-style/four-columns-wide/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Four Columns Wide</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-841" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/gallery-style/five-columns-wide/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Five Columns Wide</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-840" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/gallery-style/six-columns-wide/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Six Columns Wide</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-</ul>
-</li>
-<li id="nav-menu-item-812" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sub">
-<a href="http://startit.select-themes.com/gallery-style-with-space/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Gallery With Space</span>
-</span>
-<span class="plus"></span>
-<i class="q_menu_arrow fa fa-angle-right"></i>
-</span>
-</a>
-<ul>
-<li id="nav-menu-item-818" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/gallery-style-with-space/two-columns-grid/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Two Columns Grid</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-817" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/gallery-style-with-space/three-columns-grid/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Three Columns Grid</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-816" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/gallery-style-with-space/four-columns-grid/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Four Columns Grid</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-815" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/gallery-style-with-space/four-columns-wide/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Four Columns Wide</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-814" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/gallery-style-with-space/five-columns-wide/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Five Columns Wide</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-813" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/gallery-style-with-space/six-columns-wide/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Six Columns Wide</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-</ul>
-</li>
-<li id="nav-menu-item-789" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children sub">
-<a href="http://startit.select-themes.com/standard-style/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Standard Style</span>
-</span>
-<span class="plus"></span>
-<i class="q_menu_arrow fa fa-angle-right"></i>
-</span>
-</a>
-<ul>
-<li id="nav-menu-item-795" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/standard-style/two-columns-grid/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Two Columns Grid</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-794" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/standard-style/three-columns-grid/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Three Columns Grid</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-793" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/standard-style/four-columns-grid/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Four Columns Grid</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-792" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/standard-style/four-columns-wide/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Four Columns Wide</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-791" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/standard-style/five-columns-wide/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Five Columns Wide</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-790" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/standard-style/six-columns-wide/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Six Columns Wide</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-</ul>
-</li>
-<li id="nav-menu-item-758" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub">
-<a href="#" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Single Portfolio</span>
-</span>
-<span class="plus"></span>
-<i class="q_menu_arrow fa fa-angle-right"></i>
-</span>
-</a>
-<ul>
-<li id="nav-menu-item-760" class="menu-item menu-item-type-post_type menu-item-object-portfolio-item ">
-<a href="http://startit.select-themes.com/portfolio-item/office-management-systems/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Portfolio Big Slider</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-762" class="menu-item menu-item-type-post_type menu-item-object-portfolio-item ">
-<a href="http://startit.select-themes.com/portfolio-item/new-trends-in-seo-analytics/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Portfolio Big Images</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-763" class="menu-item menu-item-type-post_type menu-item-object-portfolio-item ">
-<a href="http://startit.select-themes.com/portfolio-item/app-update-rebrand/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Portfolio Small Slider</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-764" class="menu-item menu-item-type-post_type menu-item-object-portfolio-item ">
-<a href="http://startit.select-themes.com/portfolio-item/the-tablet-app-of-the-future/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Portfolio Small Images</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-765" class="menu-item menu-item-type-post_type menu-item-object-portfolio-item ">
-<a href="http://startit.select-themes.com/portfolio-item/big-data-goes-global/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Portfolio Gallery</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</li>
-<li id="nav-menu-item-630" class="menu-item">
-<a href="#" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Blog</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-<div class="second">
-<div class="inner">
-<ul>
-<li id="nav-menu-item-910" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/blog-standard/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Blog Standard</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-909" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/blog-masonry/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Blog Masonry</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1190" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/blog-masonry-full-width/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Masonry Full Width</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-936" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub">
-<a href="#" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Single Post</span>
-</span>
-<span class="plus"></span>
-<i class="q_menu_arrow fa fa-angle-right"></i>
-</span>
-</a>
-<ul>
-<li id="nav-menu-item-942" class="menu-item menu-item-type-post_type menu-item-object-post ">
-<a href="http://startit.select-themes.com/ux-design-aimed-at-millenials/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Standard Post</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-937" class="menu-item menu-item-type-post_type menu-item-object-post ">
-<a href="http://startit.select-themes.com/apps-update-reaches-more-customers/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Gallery Post</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-939" class="menu-item menu-item-type-post_type menu-item-object-post ">
-<a href="http://startit.select-themes.com/joseph-turner/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Quote Post</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-940" class="menu-item menu-item-type-post_type menu-item-object-post ">
-<a href="http://startit.select-themes.com/managing-office-culture/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Link Post</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-938" class="menu-item menu-item-type-post_type menu-item-object-post ">
-<a href="http://startit.select-themes.com/interview-with-cfo-of-fashion-startup/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Audio Post</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-941" class="menu-item menu-item-type-post_type menu-item-object-post ">
-<a href="http://startit.select-themes.com/new-trends-in-responsive-design/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Video Post</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</li>
-<li id="nav-menu-item-1211" class="menu-item">
-<a href="#" class=" no_link" style="cursor: default;" onclick="JavaScript: return false;">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Paquetes</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-<div class="second">
-<div class="inner">
-<ul>
-<li id="nav-menu-item-1128" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/shop/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Shop With Sidebar</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1192" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/two-columns/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Two Columns</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1191" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/three-columns/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Three Columns</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1209" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/three-columns-wide/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Three Columns Wide</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1208" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/four-columns/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Four Columns</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1207" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/four-columns-wide/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Four Columns Wide</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1206" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/five-columns-wide/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Five Columns Wide</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1216" class="menu-item menu-item-type-custom menu-item-object-custom ">
-<a href="http://startit.select-themes.com/product/tech-digital-camera/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Single Product</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</li>
-<li id="nav-menu-item-632" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children  has_sub wide icons wide_background">
-<a href="#" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Tecnologías</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-<div class="second">
-<div class="inner">
-<ul>
-<li id="nav-menu-item-1286" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub">
-<a href="#" class=" no_link" style="cursor: default;" onclick="JavaScript: return false;">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Interactive Elements</span>
-</span>
-<span class="plus"></span>
-<i class="q_menu_arrow fa fa-angle-right"></i>
-</span>
-</a>
-<ul>
-<li id="nav-menu-item-1822" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/fullwidth-image-slider/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-handbag fa"></i>
-</span>
-<span class="item_text">Fullwidth Image Slider</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon icon_star" aria-hidden="true"></span>
-</a>
-</li>
-<li id="nav-menu-item-2068" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/particles-animation/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-doc fa"></i>
-</span>
-<span class="item_text">Particles Animation</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon icon_star" aria-hidden="true"></span>
-</a>
-</li>
-<li id="nav-menu-item-1817" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/animated-info-box/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-globe-alt fa"></i>
-</span>
-<span class="item_text">Animated Info Box</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon icon_star" aria-hidden="true"></span>
-</a>
-</li>
-<li id="nav-menu-item-1290" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/testimonials/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-game-controller fa"></i>
-</span>
-<span class="item_text">Testimonials</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1539" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/underline-icon-box/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-briefcase fa"></i>
-</span>
-<span class="item_text">Underline Icon Box</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon icon_star" aria-hidden="true"></span>
-</a>
-</li>
-<li id="nav-menu-item-2079" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/video-presentation/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-volume-2 fa"></i>
-</span>
-<span class="item_text">Video Presentation</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1829" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/portfolio-slider/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-action-redo fa"></i>
-</span>
-<span class="item_text">Portfolio Slider</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1528" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/flex-slider/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-credit-card fa"></i>
-</span>
-<span class="item_text">Flex Slider</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1669" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/image-gallery/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-docs fa"></i>
-</span>
-<span class="item_text">Image Gallery</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1538" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/carousel/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-book-open fa"></i>
-</span>
-<span class="item_text">Carousel</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-4580" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/pricing-slider/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-magic-wand fa"></i>
-</span>
-<span class="item_text">Pricing Slider</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-4582" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/info-box/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-people fa"></i>
-</span>
-<span class="item_text">Info Box</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-5273" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/3d-mobile-showcase/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-layers fa"></i>
-</span>
-<span class="item_text">3D Mobile Showcase</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-</ul>
-</li>
-<li id="nav-menu-item-1287" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub">
-<a href="#" class=" no_link" style="cursor: default;" onclick="JavaScript: return false;">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Standard Elements</span>
-</span>
-<span class="plus"></span>
-<i class="q_menu_arrow fa fa-angle-right"></i>
-</span>
-</a>
-<ul>
-<li id="nav-menu-item-1292" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/team/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-fire fa"></i>
-</span>
-<span class="item_text">Team</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1628" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/pricing-shortcode/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-compass fa"></i>
-</span>
-<span class="item_text">Pricing</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-5274" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/pricing-info/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-grid fa"></i>
-</span>
-<span class="item_text">Pricing Info</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-1534" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/call-to-action/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-magnet fa"></i>
-</span>
-<span class="item_text">Call To Action</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1535" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/buttons/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-hourglass fa"></i>
-</span>
-<span class="item_text">Buttons</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1293" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/tabs/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-energy fa"></i>
-</span>
-<span class="item_text">Tabs</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1291" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/accordions/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-envelope-open fa"></i>
-</span>
-<span class="item_text">Accordions</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1536" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/blog-posts/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-graduation fa"></i>
-</span>
-<span class="item_text">Blog Posts</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1532" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/contact-form-7/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-bell fa"></i>
-</span>
-<span class="item_text">Contact Form 7</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1527" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/google-maps/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-plane fa"></i>
-</span>
-<span class="item_text">Google Maps</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1777" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/clients-shortcode/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-earphones fa"></i>
-</span>
-<span class="item_text">Clients</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-4583" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/clients-2/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-wallet fa"></i>
-</span>
-<span class="item_text">Clients 2</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-4581" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/service-table/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-screen-tablet fa"></i>
-</span>
-<span class="item_text">Service Table</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-</ul>
-</li>
-<li id="nav-menu-item-1288" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub">
-<a href="#" class=" no_link" style="cursor: default;" onclick="JavaScript: return false;">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Infographics / Icons</span>
-</span>
-<span class="plus"></span>
-<i class="q_menu_arrow fa fa-angle-right"></i>
-</span>
-</a>
-<ul>
-<li id="nav-menu-item-1586" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/process-shortcode/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-call-end fa"></i>
-</span>
-<span class="item_text">Process</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1582" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/icon-checked/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-bubbles fa"></i>
-</span>
-<span class="item_text">Icon Checked</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon icon_star" aria-hidden="true"></span>
-</a>
-</li>
-<li id="nav-menu-item-1766" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/image-with-icon/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-drop fa"></i>
-</span>
-<span class="item_text">Image with Icon</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon icon_star" aria-hidden="true"></span>
-</a>
-</li>
-<li id="nav-menu-item-1583" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/icon-with-text/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-calculator fa"></i>
-</span>
-<span class="item_text">Icon with Text</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1529" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/custom-icon-with-text/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-chemistry fa"></i>
-</span>
-<span class="item_text">Custom Icon with Text</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon icon_star" aria-hidden="true"></span>
-</a>
-</li>
-<li id="nav-menu-item-1531" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/counters/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-notebook fa"></i>
-</span>
-<span class="item_text">Counters</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-4584" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/countdown/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-chart fa"></i>
-</span>
-<span class="item_text">Countdown</span>
-</span>
-<span class="plus"></span>
-</span>
-<span class=" qodef-featured-icon text " aria-hidden="true">New</span>
-</a>
-</li>
-<li id="nav-menu-item-1759" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/pie-charts/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-drawar fa"></i>
-</span>
-<span class="item_text">Pie Charts</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1883" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/doughnut-pie-charts/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-map fa"></i>
-</span>
-<span class="item_text">Doughnut Pie Charts</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1884" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/full-pie-charts/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-picture fa"></i>
-</span>
-<span class="item_text">Full Pie Charts</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1847" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/progress-bars/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-bag fa"></i>
-</span>
-<span class="item_text">Progress Bars</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-</ul>
-</li>
-<li id="nav-menu-item-1289" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children sub">
-<a href="#" class=" no_link" style="cursor: default;" onclick="JavaScript: return false;">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon null fa"></i>
-</span>
-<span class="item_text">Typography / Misc.</span>
-</span>
-<span class="plus"></span>
-<i class="q_menu_arrow fa fa-angle-right"></i>
-</span>
-</a>
-<ul>
-<li id="nav-menu-item-1786" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/dropcaps/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-film fa"></i>
-</span>
-<span class="item_text">Dropcaps</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1537" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/blockquotes/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-basket fa"></i>
-</span>
-<span class="item_text">Blockquotes</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1862" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/message-boxes/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-diamond fa"></i>
-</span>
-<span class="item_text">Message Boxes</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1630" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/lists-with-icon/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-cup fa"></i>
-</span>
-<span class="item_text">Lists with Icon</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1526" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/headings/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-trophy fa"></i>
-</span>
-<span class="item_text">Headings</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1530" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/custom-fonts/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-mouse fa"></i>
-</span>
-<span class="item_text">Custom Fonts</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1807" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/highlights/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-folder-alt fa"></i>
-</span>
-<span class="item_text">Highlights</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1533" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/columns/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-badge fa"></i>
-</span>
-<span class="item_text">Columns</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1525" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/separators/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-user fa"></i>
-</span>
-<span class="item_text">Separators</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-<li id="nav-menu-item-1905" class="menu-item menu-item-type-post_type menu-item-object-page ">
-<a href="http://startit.select-themes.com/social-icons/" class="">
-<span class="item_outer">
-<span class="item_inner">
-<span class="menu_icon_wrapper">
-<i class="menu_icon icon-social-twitter fa"></i>
-</span>
-<span class="item_text">Social Icons</span>
-</span>
-<span class="plus"></span>
-</span>
-</a>
-</li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
-</li>
-</ul>
-</nav>
-<div class="qodef-shopping-cart-outer">
-<div class="qodef-shopping-cart-inner">
-<div class="qodef-shopping-cart-header">
-<a class="qodef-header-cart" href="http://startit.select-themes.com/cart/">
-<i class="icon_cart_alt"></i>
-<span class="qodef-cart-label">0</span>
-</a>
-<div class="qodef-shopping-cart-dropdown">
-<div class="qodef-dropdown-top-stripe-holder"></div>
-<ul>
-<li class="qodef-empty-cart">No products in the cart.</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<a        data-icon-close-same-position="yes"                        class="qodef-search-opener" href="javascript:void(0)">
-<i class="qodef-icon-ion-icon ion-ios-search-strong " ></i>
-</a>
-<a class="qodef-side-menu-button-opener "  href="javascript:void(0)">
-<span aria-hidden="true" class="qodef-icon-font-elegant icon_menu " ></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</header>
-<!-- close .qodef-mobile-header -->
-<a id='qodef-back-to-top'  href='#'>
-<span class="qodef-icon-stack">
-<i class="qodef-icon-font-awesome fa fa-chevron-up " ></i>
-</span>
-</a>
-<div class="qodef-content" style="margin-top: -100px">
-<div class="qodef-content-inner">
-<div class="qodef-full-width">
-<div class="qodef-full-width-inner">
-<div class="vc_row wpb_row vc_row-fluid qodef-section custom-color-row vc_custom_1447693588968 qodef-content-aligment-center qodef-grid-section" style="">
-<div class="clearfix qodef-section-inner">
-<div class="qodef-section-inner-margin clearfix">
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<span class="qodef-icon-animation-holder" >
-<span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-color="#b2dd4c">
-<i class="qodef-icon-font-awesome fa fa-bookmark-o qodef-icon-element" style="color: #b2dd4c;font-size:72px" ></i>
-</span>
-</span>
-<div class="vc_empty_space"  style="height: 30px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h5>Desarrollo Web de Alta Calidad</h5>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 19px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<p>Desarrollamos aplicaciones profesionales para diferentes entornos: web, móvil o de escritorio usando la más moderna tecnología y asegurando un excelente producto</p>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 50px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-</div>
-</div>
-</div>
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<span class="qodef-icon-animation-holder" style="transition-delay: 200ms;-webkit-transition-delay: 200ms;-moz-transition-delay: 200ms;-ms-transition-delay: 200ms">
-<span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="200" data-color="#b2dd4c">
-<i class="qodef-icon-font-awesome fa fa-commenting-o qodef-icon-element" style="color: #b2dd4c;font-size:72px" ></i>
-</span>
-</span>
-<div class="vc_empty_space"  style="height: 30px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h5>Consultoría y Servicios IT</h5>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 19px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<p>Asesorías, Capacitación y Gestión de Proyectos IT que responden a las necesidades de los clientes y se adaptan a sus necesidades de información</p>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 50px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-</div>
-</div>
-</div>
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<span class="qodef-icon-animation-holder" style="transition-delay: 400ms;-webkit-transition-delay: 400ms;-moz-transition-delay: 400ms;-ms-transition-delay: 400ms">
-<span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="400" data-color="#b2dd4c">
-<i class="qodef-icon-font-awesome fa fa-hdd-o qodef-icon-element" style="color: #b2dd4c;font-size:72px" ></i>
-</span>
-</span>
-<div class="vc_empty_space"  style="height: 30px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h5>Diversidad de Plataformas</h5>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 19px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<p>Gestionamos todos tus requerimientos de hardware y software que permitirán soportar tus aplicaciones y servicios de IT en plataformas de software libre (Linux) o privativa (Windows)</p>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 50px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-</div>
-</div>
-</div>
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<span class="qodef-icon-animation-holder" style="transition-delay: 600ms;-webkit-transition-delay: 600ms;-moz-transition-delay: 600ms;-ms-transition-delay: 600ms">
-<span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="600" data-color="#b2dd4c">
-<i class="qodef-icon-font-awesome fa fa-folder-open-o qodef-icon-element" style="color: #b2dd4c;font-size:72px" ></i>
-</span>
-</span>
-<div class="vc_empty_space"  style="height: 30px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h5>Portafolio de Proyectos</h5>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 19px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<p>Conoce nuestra forma de trabajo que se adaptada por completo al modelo de tu negocio y se parte de nuestros clientes satisfechos.</p>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 50px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left" style="">
-<div class="clearfix qodef-full-section-inner">
-<div class="wpb_column vc_column_container vc_col-sm-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div id="qodef-particles" class="auto" style="background-color: #f8f8f8;" data-particles-density="high" data-particles-color="#c1c1c1" data-particles-opacity="1" data-particles-size="3" data-speed="2" data-show-lines="yes" data-line-length="100" >
-<div id="qodef-p-particles-container"></div>
-<div class="qodef-p-content">
-<div class="qodef-elements-holder qodef-two-columns qodef-responsive-mode-1024 qodef-one-column-alignment-left" >
-<div class="qodef-elements-holder-item qodef-vertical-alignment-top qodef-horizontal-alignment-left" >
-<div class="qodef-elements-holder-item-inner">
-<div class="qodef-elements-holder-item-content qodef-elements-holder-custom-361605" style="padding: 90px 0px 50px 0px">
-<style type="text/css" data-type="qodef-elements-custom-padding">
-@media only screen and (min-width: 1280px) and (max-width: 1600px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-361605 {
-padding:  !important;
-}
-}
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-361605 {
-padding:  !important;
-}
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-361605 {
-padding:  !important;
-}
-}
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-361605 {
-padding:  !important;
-}
-}
-@media only screen and (min-width: 480px) and (max-width: 600px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-361605 {
-padding:  !important;
-}
-}
-@media only screen and (max-width: 480px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-361605 {
-padding: 90px 0px 50px 0px !important;
-}
-}
-</style>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h2>Te Ayudamos a Crear tu Imagen Corporativa en la Web</h2>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 20px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h4>Usamos tecnología de punta para asegurarnos que el diseño de tu web corporativo sea una experiencia extraordinaria, innovadora y atractiva que permita potenciar tu marca en Internet</h4>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 43px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-<span class="qodef-btn-text">Conoce más</span>
-<span class="qodef-btn-text-icon">
-<i class="qodef-icon-simple-line-icon icon-rocket " ></i>
-</span>
-</a>
-</div>
-</div>
-</div>
-<div class="qodef-elements-holder-item qodef-vertical-alignment-middle qodef-horizontal-alignment-right" >
-<div class="qodef-elements-holder-item-inner">
-<div class="qodef-elements-holder-item-content qodef-elements-holder-custom-328163" style="padding: 48px 0px 0px 0px">
-<div class="wpb_single_image wpb_content_element vc_align_right wpb_bottom-to-top">
-<figure class="wpb_wrapper vc_figure">
-<div class="vc_single_image-wrapper   vc_box_border_grey">
-<img width="504" height="457" src="./wp-content/themes/cloudemotion/assets/img/graphic-1-home-main.png" class="vc_single_image-img attachment-full" alt="a" srcset="./wp-content/themes/cloudemotion/assets/img/graphic-1-home-main.png 504w, ./wp-content/themes/cloudemotion/assets/img/graphic-1-home-main-300x272.png 300w" sizes="(max-width: 504px) 100vw, 504px" />
-</div>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div data-qodef-parallax-speed="0.5" class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445345084553 qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(./wp-content/themes/cloudemotion/assets/img/parallax-2-home-main.jpg);">
-<div class="clearfix qodef-full-section-inner">
-<div class="wpb_column vc_column_container vc_col-sm-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h2 style="text-align: center;">
-<span style="color: #ffffff;">Innovamos y Garantizamos un Producto de Calidad Profesional</span>
-</h2>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 16px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h4 style="text-align: center;">
-<span style="color: #dbdbdb;"> Conoce algunas de las opiniones de nuestros clientes satisfechos</span>
-</h4>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 76px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="qodef-testimonials-holder qodef-grid-section clearfix">
-<div class="qodef-testimonials owl-carousel owl-theme qodef-section-inner transparent cards_carousel"  data-layout ="cards_carousel">
-<div class="qod itemef-testimonials-slider-item">
-<div id="qodef-testimonials71" class="qodef-testimonial-content">
-<div class="qodef-testimonial-content-inner">
-<div class="qodef-testimonial-text-holder">
-<div class="qodef-testimonial-text-inner">
-<p class="qodef-testimonial-title">
-&quot;Soporte Permanente&quot;             
-</p>
-<p class="qodef-testimonial-text">Siempre están presentes cuando los he necesitado, su trato familiar y amable facilita la interacción con su extraordinario equipo de trabajo</p>
-</div>
-</div>
-<div class="qodef-testimonial-info-holder">
-<div class="qodef-testimonial-image-holder">
-<img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-1.png" class="attachment-71 size-71 wp-post-image" alt="a" />
-</div>
-<div class = "qodef-testimonial-author">
-<p class="qodef-testimonial-author-text">
-<span>
-Gustavo Ovalles </span>
-<span class="qodef-testimonials-job">Manager at TechDream</span>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="qodef-testimonials79" class="qodef-testimonial-content">
-<div class="qodef-testimonial-content-inner">
-<div class="qodef-testimonial-text-holder">
-<div class="qodef-testimonial-text-inner">
-<p class="qodef-testimonial-title">
-&quot;Diseño Asombroso.&quot;               
-</p>
-<p class="qodef-testimonial-text">Se lucieron con el diseño y entendieron a la perfección el modelo de negocios de mi empresa. Gracias a su ingenio hoy me siento más que satisfecho!.</p>
-</div>
-</div>
-<div class="qodef-testimonial-info-holder">
-<div class="qodef-testimonial-image-holder">
-<img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-2.png" class="attachment-79 size-79 wp-post-image" alt="a" />
-</div>
-<div class = "qodef-testimonial-author">
-<p class="qodef-testimonial-author-text">
-<span>
-Scarlett Johansson  </span>
-<span class="qodef-testimonials-job">CEO at SNAP</span>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="qodef-testimonials81" class="qodef-testimonial-content">
-<div class="qodef-testimonial-content-inner">
-<div class="qodef-testimonial-text-holder">
-<div class="qodef-testimonial-text-inner">
-<p class="qodef-testimonial-title">
-&quot;Flexibilidad Total&quot;               
-</p>
-<p class="qodef-testimonial-text">Nuestra aplicación se adapta a cualquier dispositivo: Teléfono Móvil, Tablet o PC lo que sin distorcionar su contenido y manteniendo una impecable interfaz para los usuarios</p>
-</div>
-</div>
-<div class="qodef-testimonial-info-holder">
-<div class="qodef-testimonial-image-holder">
-<img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-3.png" class="attachment-81 size-81 wp-post-image" alt="a" />
-</div>
-<div class = "qodef-testimonial-author">
-<p class="qodef-testimonial-author-text">
-<span>
-Melvin Mora </span>
-<span class="qodef-testimonials-job">PR at CTA</span>
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="qodef-testimonials-slider-item item">
-<div id="qodef-testimonials88" class="qodef-testimonial-content">
-<div class="qodef-testimonial-content-inner">
-<div class="qodef-testimonial-text-holder">
-<div class="qodef-testimonial-text-inner">
-<p class="qodef-testimonial-title">
-&quot;Capacitación Profesional.&quot;             
-</p>
-<p class="qodef-testimonial-text"> Es muy gratificante encontrar instructores con tanto dominio del tema y con tanta facilidad para transmitir sus conocimientos, de verdad son extraordinarios, los Felicito.</p>
-</div>
-</div>
-<div class="qodef-testimonial-info-holder">
-<div class="qodef-testimonial-image-holder">
-<img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-4.png" class="attachment-88 size-88 wp-post-image" alt="a" />
-</div>
-<div class = "qodef-testimonial-author">
-<p class="qodef-testimonial-author-text">
-<span>
-Albert Einstein </span>
-<span class="qodef-testimonials-job">PR at CTA</span>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="qodef-testimonials89" class="qodef-testimonial-content">
-<div class="qodef-testimonial-content-inner">
-<div class="qodef-testimonial-text-holder">
-<div class="qodef-testimonial-text-inner">
-<p class="qodef-testimonial-title">
-&quot;Excelentes &amp; Rápidos.&quot;               
-</p>
-<p class="qodef-testimonial-text">Gracias a las metodologías ágiles que utilizan, el desarrollo se realiza de manera rápida y sin sacrificar la calidad de la aplicación</p>
-</div>
-</div>
-<div class="qodef-testimonial-info-holder">
-<div class="qodef-testimonial-image-holder">
-<img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-5.png" class="attachment-89 size-89 wp-post-image" alt="a" />
-</div>
-<div class = "qodef-testimonial-author">
-<p class="qodef-testimonial-author-text">
-<span>
-Katniss Everdeen </span>
-<span class="qodef-testimonials-job">Architect at CUBE</span>
-</p>
-</div>
-</div>
-</div>
-</div>
-<div id="qodef-testimonials90" class="qodef-testimonial-content">
-<div class="qodef-testimonial-content-inner">
-<div class="qodef-testimonial-text-holder">
-<div class="qodef-testimonial-text-inner">
-<p class="qodef-testimonial-title">
-&quot;Todo en un solo lugar!&quot;               
-</p>
-<p class="qodef-testimonial-text"> Me asesoraron, diseñaron mi Sitio Web y se encargaron hasta del Hospedaje, tienen todo lo que se pueda necesitar en IT, lo que les da un valor agregado a sus servicios</p>
-</div>
-</div>
-<div class="qodef-testimonial-info-holder">
-<div class="qodef-testimonial-image-holder">
-<img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-6.png" class="attachment-90 size-90 wp-post-image" alt="a" />
-</div>
-<div class = "qodef-testimonial-author">
-<p class="qodef-testimonial-author-text">
-<span>
-Bruce Holt </span>
-<span class="qodef-testimonials-job">Manager at TechDream</span>
-</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-grid-section" style="">
-<div class="clearfix qodef-section-inner">
-<div class="qodef-section-inner-margin clearfix">
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="wpb_single_image wpb_content_element vc_align_left">
-<figure class="wpb_wrapper vc_figure">
-<div class="vc_single_image-wrapper   vc_box_border_grey">
-<img width="525" height="477" src="./wp-content/themes/cloudemotion/assets/img/image-1-home-main.jpg" class="vc_single_image-img attachment-full" alt="a" srcset="./wp-content/themes/cloudemotion/assets/img/image-1-home-main.jpg 525w, ./wp-content/themes/cloudemotion/assets/img/image-1-home-main-300x273.jpg 300w" sizes="(max-width: 525px) 100vw, 525px" />
-</div>
-</figure>
-</div>
-</div>
-</div>
-</div>
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-6">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="vc_empty_space"  style="height: 100px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h2>Más que un Diseño es una Obra de Arte</h2>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 20px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h4>Para nosotros es importante resaltar tu estilo y dejar en claro tu esencia en el diseño, es por esto que tenemos un equipo de profesionales especialistas en dotar a tu sitio web de una interfaz genuina y atractiva que te haga destacar!</h4>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 43px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-<span class="qodef-btn-text">Ver más</span>
-<span class="qodef-btn-text-icon">
-<i class="qodef-icon-simple-line-icon icon-rocket " ></i>
-</span>
-</a>
-<div class="vc_empty_space"  style="height: 40px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left" style="">
-<div class="clearfix qodef-full-section-inner">
-<div class="wpb_column vc_column_container vc_col-sm-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="qodef-fullwidth-slider-holder">
-<div class="qodef-fullwidth-slider-slides owl-carousel owl-theme">
-<div class="qodef-fullwidth-slider-item item" style="background-image: url(./wp-content/themes/cloudemotion/assets/img/image-slider-1-home-main.jpg)">
-<div class="qodef-fullwidth-slider-item-image-holder-wrapper">
-<span class="qodef-fullwidth-slider-item-image-holder">
-<img src="./wp-content/themes/cloudemotion/assets/img/image-slider-1-home-main.jpg" alt="qodef-fullwidth-slider"/>
-</span>
-</div>
-<div class="qodef-fullwidth-slider-item-content-holder">
-<div class="qodef-fullwidth-slider-item-content-holder-inner">
-<div class="qodef-fullwidth-slider-item-content-wrapper">
-<div class="qodef-fullwidth-slider-item-wrapper-inner">
-<div class="qodef-fullwidth-slider-item-elements-holder">
-<div class="qodef-fullwidth-slider-item-title">
-<h2>Consultoría IT</h2>
-</div>
-<div class="qodef-fullwidth-slider-item-subtitle">
-<h4>Las empresas de hoy están revisando y adaptando la forma en que gestionan y prestan los servicios de IT</h4>
-</div>
-<div class="qodef-fullwidth-slider-item-text">
-<p>Los nuevos paradigmas y retos del futuro asociados a la prestación de servicios están siendo condicionados por cambios tecnológicos, aumento del flujo de datos disponibles y sin duda alguna temas como la seguridad. Por tal razón, te ofrecemos un equipo de excelentes profesionales para gestionar su información y afrontar sus retos empresariales, proporcionando orientación, mejores prácticas y un extenso repertorio de conocimientos tecnológicos</p>
-</div>
-<div class="qodef-fullwidth-slider-item-button">
-<a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-<span class="qodef-btn-text">Solicitar Consultoría</span>
-<span class="qodef-btn-text-icon">
-<i class="qodef-icon-simple-line-icon icon-basket " ></i>
-</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="qodef-fullwidth-slider-item item" style="background-image: url(./wp-content/themes/cloudemotion/assets/img/image-slider-2-home-main.jpg)">
-<div class="qodef-fullwidth-slider-item-image-holder-wrapper">
-<span class="qodef-fullwidth-slider-item-image-holder">
-<img src="./wp-content/themes/cloudemotion/assets/img/image-slider-2-home-main.jpg" alt="qodef-fullwidth-slider"/>
-</span>
-</div>
-<div class="qodef-fullwidth-slider-item-content-holder">
-<div class="qodef-fullwidth-slider-item-content-holder-inner">
-<div class="qodef-fullwidth-slider-item-content-wrapper">
-<div class="qodef-fullwidth-slider-item-wrapper-inner">
-<div class="qodef-fullwidth-slider-item-elements-holder">
-<div class="qodef-fullwidth-slider-item-title">
-<h2>Capacitación Tecnológica</h2>
-</div>
-<div class="qodef-fullwidth-slider-item-subtitle">
-<h4>Actualiza los conocimientos de tu recurso humano en el manejo de nuevas tecnologías</h4>
-</div>
-<div class="qodef-fullwidth-slider-item-text">
-<p>Nos enorgullece presentar un amplio repertorio de opciones para tu mejoramiento profesional en herramientas tecnológicas como: Phyton – PHP-  HTML5 – CSS3 – JQuery – Angular – Android – Visual Studio – SQL Server – My SQL – Postgret SQL – NodeJS – Git – Google Maps – Asterik – RequireJs -  Bootstrap – GitHub – Fedora – API Development – Nginx – oAuth – SSH – Celery – Mercadopago - Mailchimp – Mailrelay – Facebook Ads – Google Adwords – Hootsuite – SocialGuets – Wordpress – SEO</p>
-</div>
-<div class="qodef-fullwidth-slider-item-button">
-<a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-<span class="qodef-btn-text">Quiero Capacitarme</span>
-<span class="qodef-btn-text-icon">
-<i class="qodef-icon-simple-line-icon icon-basket " ></i>
-</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="qodef-fullwidth-slider-item item" style="background-image: url(./wp-content/themes/cloudemotion/assets/img/image-slider-3-home-main.jpg)">
-<div class="qodef-fullwidth-slider-item-image-holder-wrapper">
-<span class="qodef-fullwidth-slider-item-image-holder">
-<img src="./wp-content/themes/cloudemotion/assets/img/image-slider-3-home-main.jpg" alt="qodef-fullwidth-slider"/>
-</span>
-</div>
-<div class="qodef-fullwidth-slider-item-content-holder">
-<div class="qodef-fullwidth-slider-item-content-holder-inner">
-<div class="qodef-fullwidth-slider-item-content-wrapper">
-<div class="qodef-fullwidth-slider-item-wrapper-inner">
-<div class="qodef-fullwidth-slider-item-elements-holder">
-<div class="qodef-fullwidth-slider-item-title">
-<h2>Gestión de Proyectos Tecnológicos</h2>
-</div>
-<div class="qodef-fullwidth-slider-item-subtitle">
-<h4>Si quieres asegurar el éxito de tu proyecto dejalo en manos de profesionales!</h4>
-</div>
-<div class="qodef-fullwidth-slider-item-text">
-<p>Usamos las más modernas y ágiles metodologías como SCRUM y Increasing Marketing para la administración de proyectos tecnológicos de cualquier tamaño. Ahorrate los dolores de cabeza, costos de personal y pérdida de tiempo que puede implicar la gestión de proyectos y dejalo en manos del equipo Clouemotion para garantizar su éxito</p>
-</div>
-<div class="qodef-fullwidth-slider-item-button">
-<a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-<span class="qodef-btn-text">Gestiona mi Proyecto</span>
-<span class="qodef-btn-text-icon">
-<i class="qodef-icon-simple-line-icon icon-basket " ></i>
-</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="qodef-fullwidth-slider-item item" style="background-image: url(./wp-content/themes/cloudemotion/assets/img/image-slider-4-home-main.jpg)">
-<div class="qodef-fullwidth-slider-item-image-holder-wrapper">
-<span class="qodef-fullwidth-slider-item-image-holder">
-<img src="./wp-content/themes/cloudemotion/assets/img/image-slider-4-home-main.jpg" alt="qodef-fullwidth-slider"/>
-</span>
-</div>
-<div class="qodef-fullwidth-slider-item-content-holder">
-<div class="qodef-fullwidth-slider-item-content-holder-inner">
-<div class="qodef-fullwidth-slider-item-content-wrapper">
-<div class="qodef-fullwidth-slider-item-wrapper-inner">
-<div class="qodef-fullwidth-slider-item-elements-holder">
-<div class="qodef-fullwidth-slider-item-title">
-<h2>Marketing Digital</h2>
-</div>
-<div class="qodef-fullwidth-slider-item-subtitle">
-<h4>Combina y utiliza estrategias de comercialización en tus medios digitales</h4>
-</div>
-<div class="qodef-fullwidth-slider-item-text">
-<p>Si estás buscando un servicio que te permita crear o potenciar la Marca de tu empresa aplicando las más modernas técnicas digitales, has llegado al sitio adecuado. El equipo Clouemotion emplea para ello técnicas de CEO, SMO, SEM, manejo de redes sociales, diseño de infografías, Métricas y estrategias de email Marketing, entre otras que permitan generar contenidos atractivos que capten completamente la atención de los usuarios</p>
-</div>
-<div class="qodef-fullwidth-slider-item-button">
-<a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-<span class="qodef-btn-text">Dirige mi Campaña</span>
-<span class="qodef-btn-text-icon">
-<i class="qodef-icon-simple-line-icon icon-basket " ></i>
-</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445420473166 qodef-content-aligment-left qodef-grid-section" style="">
-<div class="clearfix qodef-section-inner">
-<div class="qodef-section-inner-margin clearfix">
-<div class="wpb_column vc_column_container vc_col-sm-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h2 style="text-align: center;">Cuatro Pasos para un Desarrollo Web o Móvil</h2>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 22px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h4 style="text-align: center;">Porque planificamos y somos metódicos en nuestro trabajo! 
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 47px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="vc_row wpb_row vc_inner vc_row-fluid qodef-section qodef-content-aligment-left" style="">
-<div class="qodef-full-section-inner">
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="wpb_single_image wpb_content_element vc_align_left">
-<figure class="wpb_wrapper vc_figure">
-<div class="vc_single_image-wrapper   vc_box_border_grey">
-<img width="288" height="272" src="./wp-content/themes/cloudemotion/assets/img/graphic-2-home-main.png" class="vc_single_image-img attachment-full" alt="a" />
-</div>
-</figure>
-</div>
-<div class="vc_empty_space"  style="height: 30px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-</div>
-</div>
-</div>
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-8 vc_col-md-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="vc_empty_space"  style="height: 34px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="qodef-tabs qodef-horizontal qodef-tab-text clearfix">
-<ul class="qodef-tabs-nav">
-<li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==1}">
-<a ng-click="vm.tabs=1">Definición y Requisitos</a>
-</li>
-<li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==2}">
-<a ng-click="vm.tabs=2">Flujo de Trabajo</a>
-</li>
-<li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==3}">
-<a ng-click="vm.tabs=3">Diseño Gráfico</a>
-</li>
-<li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==4}">
-<a ng-click="vm.tabs=4">Desarrollo</a>
-</li>
-</ul>
-<div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==1" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<p>Durante esta fase, el modelo de negocios, la funcionalidad y usabilidad de la aplicación se establecen, dando como resultado el concepto y las expectativas que deberá satisfacer el diseño de acuerdo a los requerimientos del cliente.</p>
-</div>
-</div>
-</div>
-<div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==2" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<p>Definimos los flujos de trabajo, una correcta arquitectura de la información y el contenido que se desea compartir, así como las interacciones que tendrá la aplicación de acuerdo a la lógica del tipo de usuario final, dando como resultado el Wireframe o estructura formal que tendrá nuestra aplicación.</p>
-</div>
-</div>
-</div>
-<div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==3" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<p>En esta etapa, los wireframes se entregan al diseñador gráfico, que es responsable de la creación de cada activo de diseño individual que define la tipografía, colores y los gráficos que se usarán, dando como resultado los activos de imagen y guías de estilo del diseño visual.</p>
-</div>
-</div>
-</div>
-<div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==4" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<p>Durante este paso, la guía de estilo se le da a los programadores Frondend para que desarrollen la interfaz de usuario que se adapte a todas las formas posibles de visualización disponibles (Responsive Web Design) y también a los desarrolladores Backend para que permitan su interacción con el servidor, con bases de datos u otras aplicaciones.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left" style="">
-<div class="clearfix qodef-full-section-inner">
-<div class="wpb_column vc_column_container vc_col-sm-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class = "qodef-portfolio-list-holder-outer qodef-ptf-gallery qodef-ptf-four-columns" data-next-page= 2 data-type= gallery data-columns= four data-order-by= date data-order= ASC data-number= 8 data-filter= no data-filter-order-by= name data-category= all data-show-load-more= no data-title-tag= h5 data-max-num-pages = 3>
-<div class = "qodef-portfolio-list-holder clearfix" >
-<article class="qodef-portfolio-item mix portfolio_category_10 portfolio_category_7" >
-<a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/office-management-systems/" target="_self"></a>
-<div class = "qodef-item-image-holder">
-<div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems-800*600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-office-management-systems.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
-</div>
-<div class="qodef-item-text-overlay">
-<div class="qodef-item-text-overlay-inner">
-<div class="qodef-item-text-holder">
-<h5 class="qodef-item-title">
-Office Management Systems           
-</h5>
-<div class="qodef-ptf-category-holder">
-<span>Business</span>
-<span>/</span>
-<span>Marketing</span>
-</div>
-</div>
-</div>
-</div>
-</article>
-<article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-<a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-trends-in-seo-analytics/" target="_self"></a>
-<div class = "qodef-item-image-holder">
-<div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-seo-and-analytics.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
-</div>
-<div class="qodef-item-text-overlay">
-<div class="qodef-item-text-overlay-inner">
-<div class="qodef-item-text-holder">
-<h5 class="qodef-item-title">
-New Trends In SEO &#038; Analytics           
-</h5>
-<div class="qodef-ptf-category-holder">
-<span>Media</span>
-<span>/</span>
-<span>Platform</span>
-</div>
-</div>
-</div>
-</div>
-</article>
-<article class="qodef-portfolio-item mix portfolio_category_8 portfolio_category_9" >
-<a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/app-update-rebrand/" target="_self"></a>
-<div class = "qodef-item-image-holder">
-<div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-app-update-and-rebrand.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
-</div>
-<div class="qodef-item-text-overlay">
-<div class="qodef-item-text-overlay-inner">
-<div class="qodef-item-text-holder">
-<h5 class="qodef-item-title">
-App Update &#038; Rebrand           
-</h5>
-<div class="qodef-ptf-category-holder">
-<span>Research</span>
-<span>/</span>
-<span>Startup</span>
-</div>
-</div>
-</div>
-</div>
-</article>
-<article class="qodef-portfolio-item mix portfolio_category_10 portfolio_category_7" >
-<a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/the-tablet-app-of-the-future/" target="_self"></a>
-<div class = "qodef-item-image-holder">
-<div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-the-tablet-app-of-the-future.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
-</div>
-<div class="qodef-item-text-overlay">
-<div class="qodef-item-text-overlay-inner">
-<div class="qodef-item-text-holder">
-<h5 class="qodef-item-title">
-The Tablet App Of The Future           
-</h5>
-<div class="qodef-ptf-category-holder">
-<span>Business</span>
-<span>/</span>
-<span>Marketing</span>
-</div>
-</div>
-</div>
-</div>
-</article>
-<article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-<a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/big-data-goes-global/" target="_self"></a>
-<div class = "qodef-item-image-holder">
-<div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-big-data-goes-global.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
-</div>
-<div class="qodef-item-text-overlay">
-<div class="qodef-item-text-overlay-inner">
-<div class="qodef-item-text-holder">
-<h5 class="qodef-item-title">
-Big Data Goes Global          
-</h5>
-<div class="qodef-ptf-category-holder">
-<span>Media</span>
-<span>/</span>
-<span>Platform</span>
-</div>
-</div>
-</div>
-</div>
-</article>
-<article class="qodef-portfolio-item mix portfolio_category_10 portfolio_category_7" >
-<a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-findings-in-responsive-testing/" target="_self"></a>
-<div class = "qodef-item-image-holder">
-<div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-findings-in-responsive-testing.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
-</div>
-<div class="qodef-item-text-overlay">
-<div class="qodef-item-text-overlay-inner">
-<div class="qodef-item-text-holder">
-<h5 class="qodef-item-title">
-New Findings In Testing          
-</h5>
-<div class="qodef-ptf-category-holder">
-<span>Business</span>
-<span>/</span>
-<span>Marketing</span>
-</div>
-</div>
-</div>
-</div>
-</article>
-<article class="qodef-portfolio-item mix portfolio_category_12 portfolio_category_11" >
-<a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/millenials-research-2015/" target="_self"></a>
-<div class = "qodef-item-image-holder">
-<div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-millenials-research-2015.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
-</div>
-<div class="qodef-item-text-overlay">
-<div class="qodef-item-text-overlay-inner">
-<div class="qodef-item-text-holder">
-<h5 class="qodef-item-title">
-Millenials Research 2015            
-</h5>
-<div class="qodef-ptf-category-holder">
-<span>Media</span>
-<span>/</span>
-<span>Platform</span>
-</div>
-</div>
-</div>
-</div>
-</article>
-<article class="qodef-portfolio-item mix portfolio_category_8 portfolio_category_9" >
-<a class ="qodef-portfolio-link" href="http://startit.select-themes.com/portfolio-item/new-trends-in-social-media/" target="_self"></a>
-<div class = "qodef-item-image-holder">
-<div class="qodef-portfolio-shader"></div>
-<img width="800" height="600" src="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg" class="attachment-qode_startit_landscape size-qode_startit_landscape wp-post-image" alt="image" srcset="./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg 800w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-300x224.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media-800x600.jpg 768w, ./wp-content/themes/cloudemotion/assets/img/p-new-trends-in-social-media.jpg 1100w" sizes="(max-width: 800px) 100vw, 800px" />
-</div>
-<div class="qodef-item-text-overlay">
-<div class="qodef-item-text-overlay-inner">
-<div class="qodef-item-text-holder">
-<h5 class="qodef-item-title">
-New Trends In Social Media          
-</h5>
-<div class="qodef-ptf-category-holder">
-<span>Research</span>
-<span>/</span>
-<span>Startup</span>
-</div>
-</div>
-</div>
-</div>
-</article>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1446108194203 qodef-content-aligment-left" style="">
-<div class="clearfix qodef-full-section-inner">
-<div class="wpb_column vc_column_container vc_col-sm-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="qodef-call-to-action normal">
-<div class="qodef-container-inner">
-<div class="qodef-call-to-action-row-75-25 clearfix" style="padding: 54px 0px;">
-<div class="qodef-text-wrapper qodef-call-to-action-column1 qodef-call-to-action-cell">
-<div class="qodef-call-to-action-text" >
-<h4>
-<span style="color: #ffffff;">Trabajamos con la Tecnologia Más Potente y Confiable de la Industria del Software Libre y Privativo</span>
-</h4>
-</div>
-</div>
-<div class="qodef-button-wrapper qodef-call-to-action-column2 qodef-call-to-action-cell" style ="text-align: right ;">
-<a href="#" target="_self" style="color: #ffffff;border-color: rgba(255,255,255,0.5)" class="qodef-btn qodef-btn-medium qodef-btn-outline qodef-btn-custom-border-hover qodef-btn-custom-hover-color qodef-btn-icon" data-hover-color="#ffffff" data-hover-border-color="rgba(255,255,255,0.5)" >
-<span class="qodef-btn-text">Conocer más</span>
-<span class="qodef-btn-text-icon">
-<i class="qodef-icon-simple-line-icon icon-arrow-right-circle " ></i>
-</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" style="">
-<div class="clearfix qodef-full-section-inner">
-<div class="wpb_column vc_column_container vc_col-sm-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h2>Conoce Nuestro Equipo de Trabajo</h2>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 22px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h4>Somos una red de jóvenes profesionales que con estrategias innovadoras que damos respaldo a tus proyectos digitales.<br>Estamos apasionados por el espíritu tecnológico y empresarial de nuestros clientes, por eso, siempre estamos en constante capacitación.</h4>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414638610 qodef-content-aligment-center qodef-grid-section" style="">
-<div class="clearfix qodef-section-inner">
-<div class="qodef-section-inner-margin clearfix">
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="qodef-team main-info-below-image">
-<div class="qodef-team-inner">
-<div class="qodef-team-image">
-<img src="./wp-content/themes/cloudemotion/assets/img/team-1-home-main.jpg" alt="qodef-team-image"/>
-<div class="qodef-team-position-holder">
-<div class="qodef-circle-animate"></div>
-<div class="qodef-team-position-icon">
-<span class="qodef-icon-shortcode circle "  >
-<i class="qodef-icon-simple-line-icon icon-settings qodef-icon-element" style="" ></i>
-</span>
-</div>
-<h6 class="q_team_position">Programador Front-End</h6>
-</div>
-</div>
-<div class="qodef-team-info">
-<div class="qodef-team-title-holder">
-<h5 class="qodef-team-name">
-Luis Garcia                   
-</h5>
-</div>
-<div class='qodef-team-text'>
-<div class='qodef-team-text-inner'>
-<div class='qodef-team-description'>
-<p>Responsable por convertir el diseño visual e interactivo en el código de FrontEnd.Aunque es un perfil muy cercano al diseñador, el desarrollador FrontEnd traduce las interfaces visuales, es decir, las trabaja en código. Tiene habilidades técnicas y de programación de interfaz para cumplir con estas tareas.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 40px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-</div>
-</div>
-</div>
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="qodef-team main-info-below-image">
-<div class="qodef-team-inner">
-<div class="qodef-team-image">
-<img src="./wp-content/themes/cloudemotion/assets/img/team-2-home-main.jpg" alt="qodef-team-image"/>
-<div class="qodef-team-position-holder">
-<div class="qodef-circle-animate"></div>
-<div class="qodef-team-position-icon">
-<span class="qodef-icon-shortcode circle "  >
-<i class="qodef-icon-simple-line-icon icon-settings qodef-icon-element" style="" ></i>
-</span>
-</div>
-<h6 class="q_team_position">Programador Back-End</h6>
-</div>
-</div>
-<div class="qodef-team-info">
-<div class="qodef-team-title-holder">
-<h5 class="qodef-team-name">
-Manuel Sotomayor                    
-</h5>
-</div>
-<div class='qodef-team-text'>
-<div class='qodef-team-text-inner'>
-<div class='qodef-team-description'>
-<p>Responsable por la programación del sitio en todos sus componentes dinámicas. La programación de los diferentes componentes del sitio (páginas, formularios, funcionalidades, bases de datos) y la estructuración de documentos, que deberá enmarcarse a diferentes estándares</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 40px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-</div>
-</div>
-</div>
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="qodef-team main-info-below-image">
-<div class="qodef-team-inner">
-<div class="qodef-team-image">
-<img src="./wp-content/themes/cloudemotion/assets/img/team-3-home-main.jpg" alt="qodef-team-image"/>
-<div class="qodef-team-position-holder">
-<div class="qodef-circle-animate"></div>
-<div class="qodef-team-position-icon">
-<span class="qodef-icon-shortcode circle "  >
-<i class="qodef-icon-simple-line-icon icon-settings qodef-icon-element" style="" ></i>
-</span>
-</div>
-<h6 class="q_team_position">Programador Back-End</h6>
-</div>
-</div>
-<div class="qodef-team-info">
-<div class="qodef-team-title-holder">
-<h5 class="qodef-team-name">
-Yubeitdy Cástro                   
-</h5>
-</div>
-<div class='qodef-team-text'>
-<div class='qodef-team-text-inner'>
-<div class='qodef-team-description'>
-<p>Responsable por convertir el diseño visual e interactivo en el código de FrontEnd.Aunque es un perfil muy cercano al diseñador, el desarrollador FrontEnd traduce las interfaces visuales, es decir, las trabaja en código. Tiene habilidades técnicas y de programación de interfaz para cumplir con estas tareas.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 40px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-</div>
-</div>
-</div>
-<div class="wpb_column vc_column_container vc_col-sm-6 vc_col-lg-3 vc_col-md-6">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="qodef-team main-info-below-image">
-<div class="qodef-team-inner">
-<div class="qodef-team-image">
-<img src="./wp-content/themes/cloudemotion/assets/img/team-4-home-main.jpg" alt="qodef-team-image"/>
-<div class="qodef-team-position-holder">
-<div class="qodef-circle-animate"></div>
-<div class="qodef-team-position-icon">
-<span class="qodef-icon-shortcode circle "  >
-<i class="qodef-icon-simple-line-icon icon-settings qodef-icon-element" style="" ></i>
-</span>
-</div>
-<h6 class="q_team_position">Programador Back-End Móvil</h6>
-</div>
-</div>
-<div class="qodef-team-info">
-<div class="qodef-team-title-holder">
-<h5 class="qodef-team-name">
-Christian Linares                    
-</h5>
-</div>
-<div class='qodef-team-text'>
-<div class='qodef-team-text-inner'>
-<div class='qodef-team-description'>
-<p>Responsable por la programación del sitio en todos sus componentes dinámicas. La programación de los diferentes componentes del sitio (páginas, formularios, funcionalidades, bases de datos) y la estructuración de documentos, que deberá enmarcarse a diferentes estándares (Dispositivos Moviles)</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 40px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_row wpb_row vc_row-fluid qodef-section row-custom-color qodef-content-aligment-center" style="">
-<div class="clearfix qodef-full-section-inner">
-<div class="wpb_column vc_column_container vc_col-sm-12">
-<div class="vc_column-inner vc_custom_1445413182400">
-<div class="wpb_wrapper">
-<span class="qodef-icon-shortcode circle" style="width: 102px;height: 102px;line-height: 102px;background-color: #b2dd4c;border-style: solid;border-width: 0px" data-hover-background-color="#b2dd4c" data-hover-color="#ffffff" data-color="#ffffff">
-<i class="qodef-icon-simple-line-icon icon-settings qodef-icon-element" style="color: #ffffff;font-size:42px" ></i>
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div data-qodef-parallax-speed="0.5" class="vc_row wpb_row vc_row-fluid qodef-section custom-row-color vc_custom_1447693994418 qodef-content-aligment-center qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled qodef-grid-section" style="background-image:url(./wp-content/themes/cloudemotion/assets/img/parallax-3-home-main.jpg);">
-<div class="clearfix qodef-section-inner">
-<div class="qodef-section-inner-margin clearfix">
-<div class="wpb_column vc_column_container vc_col-sm-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="qodef-custom-font-holder" style="font-family: Raleway;font-size: 52px;line-height: 60px;font-weight: 700;letter-spacing: 0px;text-transform: Capitalize;text-align: center;color: #ffffff" data-font-size= 52 data-line-height= 60>
-Desarrollo Web &amp; Móvil Profesional
-</div>
-<div class="vc_empty_space"  style="height: 18px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element  vc_custom_1445414812892">
-<div class="wpb_wrapper">
-<h4>
-<span style="color: #ffffff;">No esperes más y aprovecha nuestros desarrollos personalizados, con diseños interactivos de última generación que se benefician de la integración con otras plataformas y se adaptan a cualquier dispositivo</span>
-</h4>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 35px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<a href="#" target="_self" style="margin: 10px 7px" class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-custom-hover-bg qodef-btn-custom-border-hover qodef-btn-custom-hover-color qodef-btn-hover-animation" data-hover-color="#212121" data-hover-border-color="#ffffff" >
-<span  style="background-color: #ffffff"  class="qodef-animation-overlay"></span>
-<span class="qodef-btn-text">Conocer Más</span>
-<span class="qodef-btn-text-icon"></span>
-</a>
-<a href="#" target="_self" style="color: #ffffff;border-color: rgba(255,255,255,0.5);margin: 10px 7px" class="qodef-btn qodef-btn-medium qodef-btn-default qodef-btn-hover-animation"  >
-<span    class="qodef-animation-overlay"></span>
-<span class="qodef-btn-text">Contratar</span>
-<span class="qodef-btn-text-icon"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left" style="">
-<div class="clearfix qodef-full-section-inner">
-<div class="wpb_column vc_column_container vc_col-sm-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="qodef-elements-holder qodef-three-columns qodef-responsive-mode-1024 qodef-one-column-alignment-left" >
-<div class="qodef-elements-holder-item qodef-vertical-alignment-middle qodef-horizontal-alignment-left" style="background-image: url(./wp-content/themes/cloudemotion/assets/img/cover-box-1-home-main.png)">
-<div class="qodef-elements-holder-item-inner">
-<div class="qodef-elements-holder-item-content qodef-elements-holder-custom-523022" style="padding: 63px 120px 58px 80px">
-<style type="text/css" data-type="qodef-elements-custom-padding">
-@media only screen and (min-width: 1280px) and (max-width: 1600px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-523022 {
-padding:  !important;
-}
-}
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-523022 {
-padding: 60px 30px 60px 40px !important;
-}
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-523022 {
-padding:  !important;
-}
-}
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-523022 {
-padding:  !important;
-}
-}
-@media only screen and (min-width: 480px) and (max-width: 600px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-523022 {
-padding:  !important;
-}
-}
-@media only screen and (max-width: 480px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-523022 {
-padding: 60px 20px 60px 30px !important;
-}
-}
-</style>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h3>
-<span style="color: #ffffff;">Gerencia IT</span>
-</h3>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 18px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="qodef-custom-font-holder" style="font-family: Raleway;font-size: 15px;line-height: 23px;font-weight: 400;color: #ffffff" data-font-size= 15 data-line-height= 23>
-  	Identificamos y evaluamos los servicios informáticos para que fortalezcan su continuidad y seguridad operacional y hacemos propuestas inteligentes que permitan optimizarlos con el empleo de las nuevas tecnologías
-</div>
-<div class="vc_empty_space"  style="height: 60px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<a href="#" target="_self" style="color: #ffffff;border-color: rgba(255,255,255,0.5)" class="qodef-btn qodef-btn-medium qodef-btn-outline qodef-btn-custom-border-hover qodef-btn-custom-hover-color qodef-btn-icon" data-hover-color="#ffffff" data-hover-border-color="rgba(255,255,255,0.5)" >
-<span class="qodef-btn-text">Contratar</span>
-<span class="qodef-btn-text-icon">
-<i class="qodef-icon-simple-line-icon icon-bulb " ></i>
-</span>
-</a>
-</div>
-</div>
-</div>
-<div class="qodef-elements-holder-item qodef-vertical-alignment-middle qodef-horizontal-alignment-left" style="background-image: url(./wp-content/themes/cloudemotion/assets/img/cover-box-2-home-main.png)">
-<div class="qodef-elements-holder-item-inner">
-<div class="qodef-elements-holder-item-content qodef-elements-holder-custom-767784" style="padding: 63px 120px 58px 80px">
-<style type="text/css" data-type="qodef-elements-custom-padding">
-@media only screen and (min-width: 1280px) and (max-width: 1600px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-767784 {
-padding:  !important;
-}
-}
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-767784 {
-padding: 60px 30px 60px 40px !important;
-}
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-767784 {
-padding:  !important;
-}
-}
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-767784 {
-padding:  !important;
-}
-}
-@media only screen and (min-width: 480px) and (max-width: 600px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-767784 {
-padding:  !important;
-}
-}
-@media only screen and (max-width: 480px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-767784 {
-padding: 60px 20px 60px 30px !important;
-}
-}
-</style>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h3>Marketing y Diseño</h3>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 18px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="qodef-custom-font-holder" style="font-family: Raleway;font-size: 15px;line-height: 23px;font-weight: 400;color: #797979" data-font-size= 15 data-line-height= 23>
-	El Posicionamiento Web, SEO, SMO, estrategias de atracción y las infografías de alto impacto son solo parte de los recursos que usamos para que te destaques!  
-</div>
-<div class="vc_empty_space"  style="height: 60px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<a href="#" target="_self" style="color: #212121;border-color: rgba(33,33,33,0.5)" class="qodef-btn qodef-btn-medium qodef-btn-outline qodef-btn-custom-border-hover qodef-btn-custom-hover-color qodef-btn-icon" data-hover-color="#212121" data-hover-border-color="rgba(33,33,33,0.5)" >
-<span class="qodef-btn-text">Contratar</span>
-<span class="qodef-btn-text-icon">
-<i class="qodef-icon-simple-line-icon icon-layers " ></i>
-</span>
-</a>
-</div>
-</div>
-</div>
-<div class="qodef-elements-holder-item qodef-vertical-alignment-middle qodef-horizontal-alignment-left" style="background-image: url(./wp-content/themes/cloudemotion/assets/img/cover-box-3-home-main.png)">
-<div class="qodef-elements-holder-item-inner">
-<div class="qodef-elements-holder-item-content qodef-elements-holder-custom-866678" style="padding: 63px 120px 58px 80px">
-<style type="text/css" data-type="qodef-elements-custom-padding">
-@media only screen and (min-width: 1280px) and (max-width: 1600px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-866678 {
-padding:  !important;
-}
-}
-@media only screen and (min-width: 1024px) and (max-width: 1280px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-866678 {
-padding: 60px 30px 60px 40px !important;
-}
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-866678 {
-padding:  !important;
-}
-}
-@media only screen and (min-width: 600px) and (max-width: 768px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-866678 {
-padding:  !important;
-}
-}
-@media only screen and (min-width: 480px) and (max-width: 600px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-866678 {
-padding:  !important;
-}
-}
-@media only screen and (max-width: 480px) {
-.qodef-elements-holder .qodef-elements-holder-item-content.qodef-elements-holder-custom-866678 {
-padding: 60px 20px 60px 30px !important;
-}
-}
-</style>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h3>
-<span style="color: #ffffff;">Asesorías en Tecnologías</span>
-</h3>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 18px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="qodef-custom-font-holder" style="font-family: Raleway;font-size: 15px;line-height: 23px;font-weight: 400;color: #ffffff" data-font-size= 15 data-line-height= 23>
-	Te brindamos asistencia presencial o remota para el control y manejo de proyectos tecnológicos y la Capacitación del Recurso Humano.
-</div>
-<div class="vc_empty_space"  style="height: 60px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<a href="#" target="_self" style="color: #ffffff;border-color: rgba(255,255,255,0.5)" class="qodef-btn qodef-btn-medium qodef-btn-outline qodef-btn-custom-border-hover qodef-btn-custom-hover-color qodef-btn-icon" data-hover-color="#ffffff" data-hover-border-color="rgba(255,255,255,0.5)" >
-<span class="qodef-btn-text">Contratar</span>
-<span class="qodef-btn-text-icon">
-<i class="qodef-icon-simple-line-icon icon-settings " ></i>
-</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-grid-section" style="">
-<div class="clearfix qodef-section-inner">
-<div class="qodef-section-inner-margin clearfix">
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="vc_empty_space"  style="height: 78px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element  vc_custom_1446567667184">
-<div class="wpb_wrapper">
-<h2>¿Por qué contratar nuestros servicios?</h2>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 18px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element ">
-<div class="wpb_wrapper">
-<h4>Porque somos un equipo genial de profesionales, entusiastas e innovadores que sabemos transformar tus sueños en realidad utilizando las últimas herramientas tecnológicas y tenemos:</h4>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 29px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="vc_row wpb_row vc_inner vc_row-fluid qodef-section qodef-content-aligment-left" style="">
-<div class="qodef-full-section-inner">
-<div class="wpb_column vc_column_container vc_col-sm-4">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="qodef-icon-list-item">
-<div class="qodef-icon-list-icon-holder">
-<div class="qodef-icon-list-icon-holder-inner clearfix">
-<i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#b2dd4c;font-size:14px" ></i>
-</div>
-</div>
-<p class="qodef-icon-list-text"  > Conocimiento</p>
-</div>
-<div class="qodef-icon-list-item">
-<div class="qodef-icon-list-icon-holder">
-<div class="qodef-icon-list-icon-holder-inner clearfix">
-<i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#b2dd4c;font-size:14px" ></i>
-</div>
-</div>
-<p class="qodef-icon-list-text"  > Creatividad</p>
-</div>
-<div class="qodef-icon-list-item">
-<div class="qodef-icon-list-icon-holder">
-<div class="qodef-icon-list-icon-holder-inner clearfix">
-<i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#b2dd4c;font-size:14px" ></i>
-</div>
-</div>
-<p class="qodef-icon-list-text"  > Liderazgo</p>
-</div>
-</div>
-</div>
-</div>
-<div class="wpb_column vc_column_container vc_col-sm-4">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="qodef-icon-list-item">
-<div class="qodef-icon-list-icon-holder">
-<div class="qodef-icon-list-icon-holder-inner clearfix">
-<i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#b2dd4c;font-size:14px" ></i>
-</div>
-</div>
-<p class="qodef-icon-list-text"  > Motivación</p>
-</div>
-<div class="qodef-icon-list-item">
-<div class="qodef-icon-list-icon-holder">
-<div class="qodef-icon-list-icon-holder-inner clearfix">
-<i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#b2dd4c;font-size:14px" ></i>
-</div>
-</div>
-<p class="qodef-icon-list-text"  > Organización</p>
-</div>
-<div class="qodef-icon-list-item">
-<div class="qodef-icon-list-icon-holder">
-<div class="qodef-icon-list-icon-holder-inner clearfix">
-<i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#b2dd4c;font-size:14px" ></i>
-</div>
-</div>
-<p class="qodef-icon-list-text"  > Responsabilidad</p>
-</div>
-</div>
-</div>
-</div>
-<div class="wpb_column vc_column_container vc_col-sm-4">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper"></div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 50px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-</div>
-</div>
-</div>
-<div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="wpb_single_image wpb_content_element vc_align_left">
-<figure class="wpb_wrapper vc_figure">
-<div class="vc_single_image-wrapper   vc_box_border_grey">
-<img width="551" height="497" src="./wp-content/themes/cloudemotion/assets/img/image-2-home-main.jpg" class="vc_single_image-img attachment-full" alt="a" srcset="./wp-content/themes/cloudemotion/assets/img/image-2-home-main.jpg 551w, ./wp-content/themes/cloudemotion/assets/img/image-2-home-main-300x271.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/image-2-home-main-550x497.jpg 550w" sizes="(max-width: 551px) 100vw, 551px" />
-</div>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1462539692373 qodef-content-aligment-center qodef-grid-section" style="">
-<div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1462539692373 qodef-content-aligment-center qodef-grid-section" style="">
-<div class="clearfix qodef-section-inner">
-<div class="qodef-section-inner-margin clearfix">
-<div class="wpb_column vc_column_container vc_col-sm-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="qodef-process-holder columns-4">
-<div class="qodef-process-holder-inner">
-<div class="qodef-process-item">
-<div class="qodef-process-item-icon-holder-wrapper">
-<div class="qodef-process-item-icon-holder">
-<span class="qodef-process-item-background-holder">
-<span class="qodef-icon-shortcode circle ">
-<i class="qodef-icon-simple-line-icon icon-pencil qodef-icon-element" style=""></i>
-</span>
-</span>
-</div>
-</div>
-<div class="qodef-process-item-content-holder">
-<div class="qodef-process-item-title-holder">
-<h5>Diseño</h5>
-</div>
-<div class="qodef-process-item-text-holder">
-<p> 100% Responsive, interactivo y con la más alta usabilidad para cautivar al usuario final, por lo que diseñamos en nuestros proyectos respetando los estándares y usando los principales framewares </p>
-</div>
-</div>
-</div>
-<div class="qodef-process-item">
-<div class="qodef-process-item-icon-holder-wrapper">
-<div class="qodef-process-item-icon-holder">
-<span class="qodef-process-item-background-holder">
-<span class="qodef-icon-shortcode circle ">
-<i class="qodef-icon-simple-line-icon icon-screen-desktop qodef-icon-element" style=""></i>
-</span>
-</span>
-</div>
-</div>
-<div class="qodef-process-item-content-holder">
-<div class="qodef-process-item-title-holder">
-<h5>Recursos IT</h5>
-</div>
-<div class="qodef-process-item-text-holder">
-<p> Ofrecemos el mejor hospedaje, administración del sitio web, gestión de bases de datos y métricas como parte de nuestros servicios integrales y puedas encontrarlo todo en un mismo sitio.</p>
-</div>
-</div>
-</div>
-<div class="qodef-process-item">
-<div class="qodef-process-item-icon-holder-wrapper">
-<div class="qodef-process-item-icon-holder">
-<span class="qodef-process-item-background-holder">
-<span class="qodef-icon-shortcode circle ">
-<i class="qodef-icon-simple-line-icon icon-wrench qodef-icon-element" style=""></i>
-</span>
-</span>
-</div>
-</div>
-<div class="qodef-process-item-content-holder">
-<div class="qodef-process-item-title-holder">
-<h5>Herramientas</h5>
-</div>
-<div class="qodef-process-item-text-holder">
-<p>Usamos las más novedosas herramientas tecnológicas para que tus proyectos cobren vida evitando una desactualización prematura, es por esto que nuestras librerías, CMS y plantillas están realizadas con tecnología de punta. </p>
-</div>
-</div>
-</div>
-<div class="qodef-process-item">
-<div class="qodef-process-item-icon-holder-wrapper">
-<div class="qodef-process-item-icon-holder">
-<span class="qodef-process-item-background-holder">
-<span class="qodef-icon-shortcode circle ">
-<i class="qodef-icon-simple-line-icon icon-settings qodef-icon-element" style=""></i>
-</span>
-</span>
-</div>
-</div>
-<div class="qodef-process-item-content-holder">
-<div class="qodef-process-item-title-holder">
-<h5>Web 3.0</h5>
-</div>
-<div class="qodef-process-item-text-holder">
-<p>No te quedes en el pasado y actualiza tu imagen corporativa en la web mediante elegantes aplicaciones integradas con Socialmedia y las principales APIs de Google, Facebook y Twitter entre otras.</p>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div data-qodef-parallax-speed="0.5" class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1446732069941 qodef-content-aligment-center qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled qodef-grid-section" style="background-image:url(./wp-content/themes/cloudemotion/assets/img/parallax-4-home-main.jpg);">
-<div class="clearfix qodef-section-inner">
-<div class="qodef-section-inner-margin clearfix">
-<div class="wpb_column vc_column_container vc_col-sm-12">
-<div class="vc_column-inner ">
-<div class="wpb_wrapper">
-<div class="qodef-custom-font-holder" style="font-family: Raleway;font-size: 52px;line-height: 60px;font-weight: 700;letter-spacing: 0px;text-transform: Capitalize;text-align: center;color: #ffffff" data-font-size= 52 data-line-height= 60>
-Sé Parte Ya de Nuestro <br> Selecto Grupo de Clientes
-</div>
-<div class="vc_empty_space"  style="height: 26px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="wpb_text_column wpb_content_element  vc_custom_1445414812892">
-<div class="wpb_wrapper">
-<h4>
-<span style="color: #ffffff;"> Contáctanos y describenos tus requerimientos tecnológicos y en tiempo record te presentaremos las opciones más novedosas del mercado</span>
-</h4>
-</div>
-</div>
-<div class="vc_empty_space"  style="height: 36px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<a href="#" target="_self" style="margin: 10px 7px" class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-custom-hover-bg qodef-btn-custom-border-hover qodef-btn-custom-hover-color qodef-btn-hover-animation" data-hover-color="#212121" data-hover-border-color="#ffffff" >
-<span  style="background-color: #ffffff"  class="qodef-animation-overlay"></span>
-<span class="qodef-btn-text">Contactar</span>
-<span class="qodef-btn-text-icon"></span>
-</a>
-<a href="#" target="_self" style="color: #ffffff;border-color: rgba(255,255,255,0.5);margin: 10px 7px" class="qodef-btn qodef-btn-medium qodef-btn-default qodef-btn-hover-animation"  >
-<span    class="qodef-animation-overlay"></span>
-<span class="qodef-btn-text">Contratar</span>
-<span class="qodef-btn-text-icon"></span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- close div.content_inner -->
-</div>
-<!-- close div.content -->
-<footer >
-<div class="qodef-footer-inner clearfix">
-<div class="qodef-footer-top-holder">
-<div class="qodef-footer-top  qodef-footer-top-full">
-<div class="qodef-four-columns clearfix">
-<div class="qodef-four-columns-inner">
-<div class="qodef-column">
-<div class="qodef-column-inner">
-<div id="text-2" class="widget qodef-footer-column-1 widget_text">
-<div class="textwidget">
-<div class="vc_empty_space"  style="height: 24px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<a href="http://cloudemotion.com.ve/">
-<img src="./wp-content/themes/cloudemotion/assets/img/logo-footer.png" alt="logo">
-</a>
-<div class="vc_empty_space"  style="height: 24px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<p>Ubanización Valle lindo,  Turmero Estado Aragua, Venezuela Sector 3, Calle 3, Casa 7</p>
-<p>Email: Cloudemotioninfo@gmail.com</p>
-<p>Phone: +58 (0) 414 053 95 99 </p>
-<div class="vc_empty_space"  style="height: 28px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="custom-color-row-changer">
-<span class="qodef-icon-shortcode square" style="margin: 0px -5px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#b2dd4c" data-hover-background-color="#b2dd4c" data-hover-color="#ffffff" data-color="#ffffff">
-<a class=""  href="https://www.facebook.com/" target="_blank">
-<i class="qodef-icon-font-awesome fa fa-facebook qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-</a>
-</span>
-<span class="qodef-icon-shortcode square" style="margin: 0px -4px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#b2dd4c" data-hover-background-color="#b2dd4c" data-hover-color="#ffffff" data-color="#ffffff">
-<a class=""  href="https://twitter.com/" target="_blank">
-<i class="qodef-icon-font-awesome fa fa-twitter qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-</a>
-</span>
-<span class="qodef-icon-shortcode square" style="margin: 0px -5px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#b2dd4c" data-hover-background-color="#b2dd4c" data-hover-color="#ffffff" data-color="#ffffff">
-<a class=""  href="https://vine.co/" target="_blank">
-<i class="qodef-icon-font-awesome fa fa-vine qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-</a>
-</span>
-<span class="qodef-icon-shortcode square" style="margin: 0px -4px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#b2dd4c" data-hover-background-color="#b2dd4c" data-hover-color="#ffffff" data-color="#ffffff">
-<a class=""  href="https://www.linkedin.com/" target="_blank">
-<i class="qodef-icon-font-awesome fa fa-linkedin qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-</a>
-</span>
-<span class="qodef-icon-shortcode square" style="margin: 0px -4px 0px 0px;width: 36px;height: 36px;line-height: 36px;background-color: rgba(255,255,255,0.01);border-style: solid;border-color: #b4b4b4;border-width: 1px" data-hover-border-color="#b2dd4c" data-hover-background-color="#b2dd4c" data-hover-color="#ffffff" data-color="#ffffff">
-<a class=""  href="https://instagram.com/" target="_blank">
-<i class="qodef-icon-font-awesome fa fa-instagram qodef-icon-element" style="color: #ffffff;font-size:18px" ></i>
-</a>
-</span>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="qodef-column">
-<div class="qodef-column-inner">
-<div id="recent-posts-2" class="widget qodef-footer-column-2 widget_recent_entries">
-<h4 class="qodef-footer-widget-title">Ultimas Publicaciones</h4>
-<ul>
-<li>
-<a href="http://startit.select-themes.com/schools-to-hold-programming-courses-in-2016/">Schools to Hold Programming Courses In 2016</a>
-</li>
-<li>
-<a href="http://startit.select-themes.com/the-future-of-online-and-mobile-banking/">The Future Of Online And Mobile Banking</a>
-</li>
-<li>
-<a href="http://startit.select-themes.com/new-limited-edition-line-of-quality-headphones/">New Limited Edition Line Of Quality Headphones</a>
-</li>
-<li>
-<a href="http://startit.select-themes.com/changing-the-way-we-look-at-telecomunication/">Changing The Way We Look  At Telecomunication</a>
-</li>
-<li>
-<a href="http://startit.select-themes.com/news-from-the-2016-technology-expo/">New Workout App Promises Great Results</a>
-</li>
-<li>
-<a href="http://startit.select-themes.com/news-from-the-2016-technology-expo-2/">News From The 2016 Technology Expo</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="qodef-column">
-<div class="qodef-column-inner">
-<div id="qodef_twitter_widget-3" class="widget qodef-footer-column-3 widget_qodef_twitter_widget">
-<h4 class="qodef-footer-widget-title">Ultimos Tweets</h4>
-<ul class="qodef_twitter_widget">
-<li>
-<div class="tweet_icon_holder">
-<span class="social_twitter"></span>
-</div>
-<div class="tweet_content_holder">
-<div class="qodef_tweet_text">
-Don't forget to check out Capri - The Hot New 
-<a target="_blank" href="http://twitter.com/search?q=WordPress">#WordPress</a> Theme You've Been Waiting For ;) 
-<a target="_blank" href="http://t.co/RrBK5W8VsN">http://t.co/RrBK5W8VsN</a>
-<a target="_blank" href="http://t.co/OGnBMeczUI">http://t.co/OGnBMeczUI</a>
-</div>
-<div class="qodef_tweet_time">
-<a target="_blank" href="https://twitter.com/SelectThemes/statuses/609347124896120832">
-2 years ago                                            </a>
-</div>
-</div>
-</li>
-<li>
-<div class="tweet_icon_holder">
-<span class="social_twitter"></span>
-</div>
-<div class="tweet_content_holder">
-<div class="qodef_tweet_text">
-<a target="_blank" href="http://twitter.com/ggserge">@ggserge</a> Please send us your ticket ID, so we can forward your ticket to our support team. Thanks.                                    
+    <div class="loader in"></div>
+    <div class="qodef-wrapper">
+        <div class="qodef-wrapper-inner">
+            <?php     get_template_part( 'template-parts/navigation/navigation-top', null ); ?>
+            <!-- close .qodef-mobile-header -->
+            <a id='qodef-back-to-top'  href='#'>
+                <span class="qodef-icon-stack">
+                    <i class="qodef-icon-font-awesome fa fa-chevron-up " ></i>
+                </span>
+            </a>
+            <div class="qodef-content">
+                <div class="qodef-content-inner">
+                    <div class="qodef-full-width">
+                        <div class="qodef-full-width-inner">
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section custom-color-row vc_custom_1447693588968 qodef-content-aligment-center qodef-grid-section" id="general">
+                                <div class="container">
+                                    <div class="qodef-section-inner-margin clearfix">
+                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
+                                            <div class="vc_column-inner-350350 ">
+                                                <div class="wpb_wrapper">
+                                                    <span class="qodef-icon-animation-holder" >
+                                                        <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-color="#25cbf5">
+                                                            <i class="qodef-icon-font-awesome fa fa-bookmark-o qodef-icon-element" style="color: #25cbf5;font-size:72px" ></i>
+                                                        </span>
+                                                    </span>
+                                                    <div class="vc_empty_space"  style="height: 30px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h3><strong ng-bind="'High quality on web develop' | translate"></strong></h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 19px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <p align="justify" ng-bind="'We develop Pro apps for various platform: web, mobile or desktop; we use the newest technology and you can trust on our quality'| translate"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 50px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
+                                            <div class="vc_column-inner-350">
+                                                <div class="wpb_wrapper">
+                                                    <span class="qodef-icon-animation-holder" style="transition-delay: 200ms;-webkit-transition-delay: 200ms;-moz-transition-delay: 200ms;-ms-transition-delay: 200ms">
+                                                        <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="200" data-color="#25cbf5">
+                                                            <i class="qodef-icon-font-awesome fa fa-commenting-o qodef-icon-element" style="color: #25cbf5;font-size:72px" ></i>
+                                                        </span>
+                                                    </span>
+                                                    <div class="vc_empty_space"  style="height: 30px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h3><strong ng-bind="'Supporting and Services IT'|translate"></strong></h3>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 19px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <p align="justify" ng-bind="'IT training, tutorials and project management which help the clients according to their needs and suit to their information requirements'| translate"></p>
+                                                        </div>
+                                                    </div>
 
-</div>
-<div class="qodef_tweet_time">
-<a target="_blank" href="https://twitter.com/SelectThemes/statuses/609293800289251330">
-2 years ago                                            </a>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="qodef-column">
-<div class="qodef-column-inner">
-<div id="text-3" class="widget qodef-footer-column-4 widget_text">
-<h4 class="qodef-footer-widget-title">Ultimas Publicaciones</h4>
-<div class="textwidget"></div>
-</div>
-<div class="widget qodef-latest-posts-widget">
-<div class="qodef-blog-list-holder qodef-image-in-box ">
-<ul class="qodef-blog-list">
-<li class="qodef-blog-list-item clearfix">
-<div class="qodef-blog-list-item-inner">
-<div class="qodef-item-image clearfix">
-<a href="http://startit.select-themes.com/managing-office-culture-2/">
-<img width="150" height="150" src="./wp-content/themes/cloudemotion/assets/img/b-image-1a.jpg" class="attachment-full size-full wp-post-image" alt="b-image-1a" />
-</a>
-</div>
-<div class="qodef-item-text-holder">
-<h6 class="qodef-item-title ">
-<a href="http://startit.select-themes.com/managing-office-culture-2/" >
-Managing Office Culture          </a>
-</h6>
-<div class="qodef-item-info-section">
-<div class="qodef-post-info-date">
-29th April 2015
-</div>
-</div>
-</div>
-</div>
-</li>
-<li class="qodef-blog-list-item clearfix">
-<div class="qodef-blog-list-item-inner">
-<div class="qodef-item-image clearfix">
-<a href="http://startit.select-themes.com/amanda-mills/">
-<img width="150" height="150" src="./wp-content/themes/cloudemotion/assets/img/b-image-2b.jpg" class="attachment-full size-full wp-post-image" alt="b-image-2b" />
-</a>
-</div>
-<div class="qodef-item-text-holder">
-<h6 class="qodef-item-title ">
-<a href="http://startit.select-themes.com/amanda-mills/" >
-Amanda Mills            </a>
-</h6>
-<div class="qodef-item-info-section">
-<div class="qodef-post-info-date">
-29th April 2015
-</div>
-</div>
-</div>
-</div>
-</li>
-<li class="qodef-blog-list-item clearfix">
-<div class="qodef-blog-list-item-inner">
-<div class="qodef-item-image clearfix">
-<a href="http://startit.select-themes.com/justin-pearson/">
-<img width="150" height="150" src="./wp-content/themes/cloudemotion/assets/img/b-image-4a.jpg" class="attachment-full size-full wp-post-image" alt="b-image-4a" />
-</a>
-</div>
-<div class="qodef-item-text-holder">
-<h6 class="qodef-item-title ">
-<a href="http://startit.select-themes.com/justin-pearson/" >
-Justin Pearson          </a>
-</h6>
-<div class="qodef-item-info-section">
-<div class="qodef-post-info-date">
-29th April 2015
-</div>
-</div>
-</div>
-</div>
-</li>
-<li class="qodef-blog-list-item clearfix">
-<div class="qodef-blog-list-item-inner">
-<div class="qodef-item-image clearfix">
-<a href="http://startit.select-themes.com/tech-conference-2017/">
-<img width="150" height="150" src="./wp-content/themes/cloudemotion/assets/img/b-image-3a.jpg" class="attachment-full size-full wp-post-image" alt="b-image-3a" />
-</a>
-</div>
-<div class="qodef-item-text-holder">
-<h6 class="qodef-item-title ">
-<a href="http://startit.select-themes.com/tech-conference-2017/" >
-Tech Conference 2017          </a>
-</h6>
-<div class="qodef-item-info-section">
-<div class="qodef-post-info-date">
-29th April 2015
-</div>
-</div>
-</div>
-</div>
-</li>
-</ul>
-</div>
-</div>
-<div id="text-4" class="widget qodef-footer-column-4 widget_text">
-<div class="textwidget">
-<div class="vc_empty_space"  style="height: 12px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div class="qodef-custom-font-holder" style="font-family: Raleway;font-size: 22px;line-height: 22px;font-weight: 700;letter-spacing: 0px;text-align: left;color: #ffffff" data-font-size= 22 data-line-height= 22>
-Recibe Noticias
-</div>
-<div class="vc_empty_space"  style="height: 7px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-Te escribiremos pronto
+                                                    <div class="vc_empty_space"  style="height: 50px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
+                                            <div class="vc_column-inner-350">
+                                                <div class="wpb_wrapper">
+                                                    <span class="qodef-icon-animation-holder" style="transition-delay: 400ms;-webkit-transition-delay: 400ms;-moz-transition-delay: 400ms;-ms-transition-delay: 400ms">
+                                                        <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="400" data-color="#25cbf5">
+                                                            <i class="qodef-icon-font-awesome fa fa-hdd-o qodef-icon-element" style="color: #25cbf5;font-size:72px" ></i>
+                                                        </span>
+                                                    </span>
+                                                    <div class="vc_empty_space"  style="height: 30px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h3><strong ng-bind="'Variety Platforms' | translate"></strong></h3><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 19px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <p align="justify" ng-bind="'We manage all of your hardware and software requirements what help you support your IT apps and services on free (Linux) or private (Windows) platform'| translate"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 50px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
+                                            <div class="vc_column-inner-350">
+                                                <div class="wpb_wrapper">
+                                                    <span class="qodef-icon-animation-holder" style="transition-delay: 600ms;-webkit-transition-delay: 600ms;-moz-transition-delay: 600ms;-ms-transition-delay: 600ms">
+                                                        <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="600" data-color="#25cbf5">
+                                                            <i class="qodef-icon-font-awesome fa fa-folder-open-o qodef-icon-element" style="color: #25cbf5;font-size:72px" ></i>
+                                                        </span>
+                                                    </span>
+                                                    <div class="vc_empty_space"  style="height: 30px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h3><strong ng-bind="'Projects Portfolio'| translate"></strong></h3><br>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 19px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <p align="justify" ng-bind="'Meet our adaptable works high quality, made for various business models. Be part of our pleased customers list'|translate"></p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 50px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left"  id="creative">
+                                <div class="clearfix qodef-full-section-inner">
+                                    <div class="wpb_column vc_column_container">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div id="qodef-particles" class="auto" style="background-color: #f8f8f8;" >
+                                                    <div id="qodef-p-particles-container"></div>
+                                                    <div class="container-fluid">
+                                                        <div class="qodef-elements-holder " >
+                                                            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 qodef-elements-holder-item qodef-vertical-alignment-top qodef-horizontal-alignment-left" >
+                                                                <div class="qodef-elements-holder-item-inner">
+                                                                    <div class="qodef-elements-holder-item-content qodef-elements-holder-custom-361605" style="padding: 90px 0px 50px 0px">
 
-<div class="vc_empty_space"  style="height: 20px" >
-<span class="vc_empty_space_inner"></span>
-</div>
-<div role="form" class="wpcf7" id="wpcf7-f1334-o1" lang="en-US" dir="ltr">
-<div class="screen-reader-response"></div>
-<form action="/#wpcf7-f1334-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-<div style="display: none;">
-<input type="hidden" name="_wpcf7" value="1334" />
-<input type="hidden" name="_wpcf7_version" value="4.4.2" />
-<input type="hidden" name="_wpcf7_locale" value="en_US" />
-<input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1334-o1" />
-<input type="hidden" name="_wpnonce" value="b1b2b2e095" />
-</div>
-<div class="qodef-subscription-form">
-<span class="wpcf7-form-control-wrap your-email">
-<input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your E-Mail" />
-</span>
-<input type="submit" value="&#xe079;" class="wpcf7-form-control wpcf7-submit" />
-</div>
-<div class="wpcf7-response-output wpcf7-display-none"></div>
-</form>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="qodef-footer-bottom-holder">
-<div class="qodef-footer-bottom-holder-inner">
-<div class="qodef-column-inner">
-<div id="text-5" class="widget qodef-footer-text widget_text">
-<div class="textwidget">© Copyright 2017 by Cloudemotion. All Rights Reserved.</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-</footer>
-</div>
-<!-- close div.qodef-wrapper-inner  -->
-</div>
-<!-- close div.qodef-wrapper -->
-</body>
-</html>
-<?php wp_footer();
+                                                                        <div class="wpb_text_column wpb_content_element ">
+                                                                            <div class="wpb_wrapper">
+                                                                                <h2><strong ng-bind="'We help you to design your business image on web' | translate"></strong></h2>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="vc_empty_space"  style="height: 20px" >
+                                                                            <span class="vc_empty_space_inner"></span>
+                                                                        </div>
+                                                                        <div class="wpb_text_column wpb_content_element ">
+                                                                            <div class="wpb_wrapper">
+                                                                                <h4 align="justify" ng-bind="'We use the newest technology and tools while your business page is designed. Thus we guarantee you an extraordinary, innovative and catching experience. This one will give you the oportunity to boots your brand on internet'| translate"></h4>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="vc_empty_space"  style="height: 43px" >
+                                                                            <span class="vc_empty_space_inner"></span>
+                                                                        </div>
+                                                                        <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
+                                                                            <span class="qodef-btn-text" ng-bind="'Know More' | translate"></span>
+                                                                            <span class="qodef-btn-text-icon">
+                                                                                <i class="qodef-icon-simple-line-icon icon-rocket " ></i>
+                                                                            </span>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 qodef-elements-holder-item " >
+                                                                <div class="qodef-elements-holder-item-inner">
+                                                                    <div class="qodef-elements-holder-item-content qodef-elements-holder-custom-328163" style="padding: 48px 0px 0px 0px">
+                                                                        <div class="wpb_single_image wpb_content_element vc_align_right wpb_bottom-to-top">
+                                                                            <figure class="wpb_wrapper vc_figure">
+                                                                                <div class="vc_single_image-wrapper   vc_box_border_grey">
+                                                                                    <img width="504" height="457" src="./wp-content/themes/cloudemotion/assets/img/graphic-1-home-main.png" class="vc_single_image-img attachment-full" alt="a" srcset="./wp-content/themes/cloudemotion/assets/img/graphic-1-home-main.png 504w, ./wp-content/themes/cloudemotion/assets/img/graphic-1-home-main-300x272.png 300w" sizes="(max-width: 504px) 100vw, 504px" />
+                                                                                </div>
+                                                                            </figure>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1462539692373 qodef-content-aligment-center qodef-grid-section" id="portfolios">
+
+                                <div class="wpb_wrapper">
+                                    <div class="wpb_text_column wpb_content_element ">
+                                        <div class="wpb_wrapper">
+                                            <h2><strong ng-bind="'Working with us is as simple as...' | translate"></strong></h2>
+                                        </div>
+                                    </div>
+                                    <div class="vc_empty_space" style="height: 22px">
+                                        <span class="vc_empty_space_inner"></span>
+                                    </div>
+                                </div>
+                                <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1462539692373 qodef-content-aligment-center qodef-grid-section" style="padding: 0;">
+                                    <div class="container">
+                                        <div class="qodef-section-inner-margin clearfix">
+                                            <div class="wpb_column vc_column_container">
+                                                <div class="vc_column-inner ">
+
+                                                    <div class="wpb_wrapper">
+
+
+
+                                                        <div class="qodef-process-holder columns-4">
+                                                            <div class="qodef-process-holder-inner">
+                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 col-xs-6 ">
+                                                                    <div class="qodef-process-item-icon-holder-wrapper">
+                                                                        <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/planing.jpg)">
+                                                                            <span class="qodef-process-item-background-holder">
+                                                                                <span class="qodef-icon-shortcode circle ">
+                                                                                    <i class="qodef-icon-simple-line-icon icon-pencil qodef-icon-element" style=""></i>
+                                                                                </span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qodef-process-item-content-holder">
+                                                                        <div class="qodef-process-item-title-holder">
+                                                                            <h4 ng-bind="'Plane' | translate"></h4>
+                                                                        </div>
+                                                                        <div class="qodef-process-item-text-holder">
+                                                                            <p>Te haremos llegar un cuestionario con el cual identificaremos cuales son tus prioridades, modelo de negocios y objetivos y asi agilizar el proceso</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 col-xs-6 ">
+                                                                    <div class="qodef-process-item-icon-holder-wrapper">
+                                                                        <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/design.jpg)">
+                                                                            <span class="qodef-process-item-background-holder">
+                                                                                <span class="qodef-icon-shortcode circle ">
+                                                                                    <i class="qodef-icon-simple-line-icon icon-screen-desktop qodef-icon-element" style=""></i>
+                                                                                </span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qodef-process-item-content-holder">
+                                                                        <div class="qodef-process-item-title-holder">
+                                                                            <h4 ng-bind="'Design' | translate"></h4>
+                                                                        </div>
+                                                                        <div class="qodef-process-item-text-holder">
+                                                                            <p>Te haremos llegar un listado de posibles diseños bajo los estandares actuales, para que seas participe en el proceso en todo momento</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 col-xs-6 ">
+                                                                    <div class="qodef-process-item-icon-holder-wrapper">
+                                                                        <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/backlog.jpg)">
+                                                                            <span class="qodef-process-item-background-holder">
+                                                                                <span class="qodef-icon-shortcode circle ">
+                                                                                    <i class="qodef-icon-simple-line-icon icon-settings qodef-icon-element" style=""></i>
+                                                                                </span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qodef-process-item-content-holder">
+                                                                        <div class="qodef-process-item-title-holder">
+                                                                            <h4 ng-bind="'Develop' | translate"></h4>
+                                                                        </div>
+                                                                        <div class="qodef-process-item-text-holder">
+                                                                            <p>
+                                                                                Etapa en la cual se realizaran pruebas de stress para determinar la funcionalidad del producto en cualquier ambito antes de la entrega final
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 col-xs-6 ">
+                                                                    <div class="qodef-process-item-icon-holder-wrapper">
+                                                                        <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/testing.jpg)">
+                                                                            <span class="qodef-process-item-background-holder">
+                                                                                <span class="qodef-icon-shortcode circle ">
+                                                                                    <i class="qodef-icon-simple-line-icon icon-wrench qodef-icon-element" style=""></i>
+                                                                                </span>
+                                                                            </span>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qodef-process-item-content-holder">
+                                                                        <div class="qodef-process-item-title-holder">
+                                                                            <h4 ng-bind="'Test' | translate"></h4>
+                                                                        </div>
+                                                                        <div class="qodef-process-item-text-holder">
+                                                                            <p>Existen tres estapas principales de prueba(Etapa de diseño, Etapa Alfa y Etapa beta) en la cual podras ver el avance progresivo de tu Producto</p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <h2 style="text-align: center;"><strong ng-bind="'Our Portfolio' | translate"></strong></h2>
+                                </div>
+                            </div>
+                            <div class="wpb_text_column wpb_content_element ">
+                                <div class="wpb_wrapper">
+                                    <h4 style="text-align: center;" ng-bind="'Know our work and discover the quality with which we work' | translate"></h4>
+                                </div>
+                            </div>
+                            <div class="vc_empty_space"  style="height: 22px" >
+                                <span class="vc_empty_space_inner"></span>
+                            </div>
+                            
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left">
+                                <div class="clearfix qodef-full-section-inner">
+                                    <div class="wpb_column vc_column_container">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class = "qodef-portfolio-list-holder-outer qodef-ptf-gallery qodef-ptf-four-columns" >
+                                                    <div class = "qodef-portfolio-list-holder clearfix" >
+
+
+                                                        <article ng-repeat="portfolio in vm.portfolios" class="qodef-portfolio-item col-no-p" >
+                                                            <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
+                                                            <div class = "qodef-item-image-holder" style="{{vm.setBackground(portfolio.image)}}">
+                                                                <div class="qodef-portfolio-shader"></div>
+                                                            </div>
+                                                            <div class="qodef-item-text-overlay">
+                                                                <div class="qodef-item-text-overlay-inner">
+                                                                    <div class="qodef-item-text-holder">
+                                                                        <h5 class="qodef-item-title" ng-bind="portfolio.name"></h5>
+                                                                        <div class="qodef-ptf-category-holder">
+                                                                            <span>Start up</span>
+                                                                            <span>/</span>
+                                                                            <span>Innovation</span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </article>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445420473166 qodef-content-aligment-left qodef-grid-section" >
+                                <div class="container">
+                                    <div class="qodef-section-inner-margin clearfix">
+                                        <div class="wpb_column vc_column_container">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h2 style="text-align: center;"><strong ng-bind="'Unity gives strength' | translate "></strong></h2>
+                                                        </div>
+                                                    </div>
+                                                    
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h4 style="text-align: center;" ng-bind="'Planning, developing  projects and Marketing cannot be boarded separately...' | translate"></h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 47px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="vc_row wpb_row vc_inner vc_row-fluid qodef-section qodef-content-aligment-left" style="">
+                                                        <div class="qodef-full-section-inner">
+                                                            <div class="wpb_column vc_column_container col-lg-4 col-md-12">
+                                                                <div class="vc_column-inner ">
+                                                                    <div class="wpb_wrapper">
+                                                                        <div class="mobilec wpb_single_image wpb_content_element vc_align_left">
+                                                                            <figure class="wpb_wrapper vc_figure">
+                                                                                <div class="vc_single_image-wrapper   vc_box_border_grey">
+                                                                                    <img width="288" height="272" src="./wp-content/themes/cloudemotion/assets/img/graphic-2-home-main.png" class="vc_single_image-img attachment-full" alt="a" />
+                                                                                </div>
+                                                                            </figure>
+                                                                        </div>
+                                                                        <div class="vc_empty_space"  style="height: 30px" >
+                                                                            <span class="vc_empty_space_inner"></span>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="wpb_column vc_column_container col-lg-8 col-md-12">
+                                                                <div class="vc_column-inner ">
+                                                                    <div class="wpb_wrapper">
+                                                                        <div class="vc_empty_space"  style="height: 34px" >
+                                                                            <span class="vc_empty_space_inner"></span>
+                                                                        </div>
+                                                                        <div class="qodef-tabs qodef-horizontal qodef-tab-text clearfix">
+                                                                            <ul class="qodef-tabs-nav">
+                                                                                <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==1}">
+                                                                                    <a ng-click="vm.tabs=1" ng-bind="'Project\'s Start' | translate"></a>
+                                                                                </li>
+                                                                                <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==2}">
+                                                                                    <a ng-click="vm.tabs=2" ng-bind="'Project\'s Management' | translate"></a>
+                                                                                </li>
+                                                                                <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==3}">
+                                                                                    <a ng-click="vm.tabs=3" ng-bind="'Marketing' | translate"></a>
+                                                                                </li>
+                                                                                <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==4}">
+                                                                                    <a ng-click="vm.tabs=4" ng-bind="'Development' | translate"></a>
+                                                                                </li>
+                                                                            </ul>
+                                                                            <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==1" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
+                                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                                    <div class="wpb_wrapper">
+                                                                                        <p align="justify" ng-bind="'The key for a successful project is the Client - Developer communication. While we show weekly progresses, we can develop quality products and delivery them in less time. That is how we have a larger chance to success than our competition, and additionally to a stunning start  on the mart we will earn a Successful Project.' | translate"></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==2" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
+                                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                                    <div class="wpb_wrapper">
+                                                                                        <p align="justify" ng-bind="'When starting a project it is very important to know what your target audience is, how strong the competition is and how feasible the proposal will be in terms of time and cost. What results in obtaining the best result to be able to Connect and Plan the following strategies to reach your goals.
+                                                                                        '| translate"></p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==3" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
+                                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                                    <div class="wpb_wrapper">
+                                                                                        <p align="justify" ng-bind="'Once the Target Public and the Goals can be determined, we can start working on social networks or advertising. Because What is not displayed, not sold, it is time to introduce your product to the market and with our analysis we can begin to apply the strategies to promote your project in the digital media you want. Managing your social networks to increase the visibility of your business, advertise on Facebook Ads and Google Adwords to attract potential customers to your business from before the project culminates.'| translate">
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==4" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
+                                                                                <div class="wpb_text_column wpb_content_element ">
+                                                                                    <div class="wpb_wrapper">
+                                                                                        <p align="justify" ng-bind="'The success of a project is based on Client - Developer communication. As we show weekly progress, we can create quality products in the shortest delivery time, thus achieving a margin of success superior to the competition and if we incorporate an exit to the market shocking we will get a successful project.'| translate">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left" id="howWeWorks">
+                                    <div class="clearfix qodef-full-section-inner">
+                                        <div class="wpb_column vc_column_container">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="qodef-fullwidth-slider-holder">
+                                                        <div class="qodef-fullwidth-slider-slides owl-carousel owl-theme">
+                                                            <div class="qodef-fullwidth-slider-item item" style="background-image: url(./wp-content/themes/cloudemotion/assets/img/image-slider-1-home-main.jpg)">
+                                                                <div class="qodef-fullwidth-slider-item-image-holder-wrapper">
+                                                                    <span class="qodef-fullwidth-slider-item-image-holder">
+                                                                        <img src="./wp-content/themes/cloudemotion/assets/img/iniciar_proyecto.jpg" alt="qodef-fullwidth-slider"/>
+                                                                    </span>
+                                                                </div>
+                                                                <div class="qodef-fullwidth-slider-item-content-holder">
+                                                                    <div class="qodef-fullwidth-slider-item-content-holder-inner">
+                                                                        <div class="qodef-fullwidth-slider-item-content-wrapper">
+                                                                            <div class="qodef-fullwidth-slider-item-wrapper-inner">
+                                                                                <div class="qodef-fullwidth-slider-item-elements-holder">
+                                                                                    <div class="qodef-fullwidth-slider-item-title">
+                                                                                        <h2 ng-bind="'Do you want to start your Digital Project?' | translate"></h2>
+                                                                                    </div>
+                                                                                    <div class="qodef-fullwidth-slider-item-subtitle">
+                                                                                        <h4 ng-bind="'At Cloudemotion we are concerned that we are prepared to attend any technological solution' | translate"></h4>
+                                                                                    </div>
+                                                                                    <div class="qodef-fullwidth-slider-item-text">
+                                                                                        <p ng-bind="'Because your priorities are ours'| translate"></p>
+                                                                                    </div>
+                                                                                    <div class="qodef-fullwidth-slider-item-button">
+                                                                                        <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>                                                        <div class="qodef-fullwidth-slider-item item" style="background-image: url(./wp-content/themes/cloudemotion/assets/img/image-slider-1-home-main.jpg)">
+                                                            <div class="qodef-fullwidth-slider-item-image-holder-wrapper">
+                                                                <span class="qodef-fullwidth-slider-item-image-holder">
+                                                                    <img src="./wp-content/themes/cloudemotion/assets/img/image-slider-1-home-main.jpg" alt="qodef-fullwidth-slider"/>
+                                                                </span>
+                                                            </div>
+                                                            <div class="qodef-fullwidth-slider-item-content-holder">
+                                                                <div class="qodef-fullwidth-slider-item-content-holder-inner">
+                                                                    <div class="qodef-fullwidth-slider-item-content-wrapper">
+                                                                        <div class="qodef-fullwidth-slider-item-wrapper-inner">
+                                                                            <div class="qodef-fullwidth-slider-item-elements-holder">
+                                                                                <div class="qodef-fullwidth-slider-item-title">
+                                                                                    <h2 ng-bind="'IT Consulting'| translate"></h2>
+                                                                                </div>
+                                                                                <div class="qodef-fullwidth-slider-item-subtitle">
+                                                                                    <h4 ng-bind="'Today\'s businesses are reviewing and adapting how they manage and deliver IT services' | translate"></h4>
+                                                                                </div>
+                                                                                <div class="qodef-fullwidth-slider-item-text">
+                                                                                    <p align="justify" ng-bind="'The new paradigms and future challenges associated with the provision of services are being conditioned by technological changes, increasing the flow of available data and certainly issues such as security. For this reason, we offer you a team of excellent professionals to manage your information and meet your business challenges, providing guidance, best practices and an extensive repertoire of technological knowledge'| translate"></p>
+                                                                                </div>
+                                                                                <div class="qodef-fullwidth-slider-item-button">
+                                                                                    <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
+                                                                                        <span class="qodef-btn-text" ng-bind="'Request Consulting' | translate"></span>
+                                                                                        <span class="qodef-btn-text-icon">
+                                                                                            <i class="qodef-icon-simple-line-icon icon-basket " ></i>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="qodef-fullwidth-slider-item item" style="background-image: url(./wp-content/themes/cloudemotion/assets/img/image-slider-2-home-main.jpg)">
+                                                            <div class="qodef-fullwidth-slider-item-image-holder-wrapper">
+                                                                <span class="qodef-fullwidth-slider-item-image-holder">
+                                                                    <img src="./wp-content/themes/cloudemotion/assets/img/image-slider-2-home-main.jpg" alt="qodef-fullwidth-slider"/>
+                                                                </span>
+                                                            </div>
+                                                            <div class="qodef-fullwidth-slider-item-content-holder">
+                                                                <div class="qodef-fullwidth-slider-item-content-holder-inner">
+                                                                    <div class="qodef-fullwidth-slider-item-content-wrapper">
+                                                                        <div class="qodef-fullwidth-slider-item-wrapper-inner">
+                                                                            <div class="qodef-fullwidth-slider-item-elements-holder">
+                                                                                <div class="qodef-fullwidth-slider-item-title">
+                                                                                    <h2 ng-bind="'Technology Training'| translate"></h2>
+                                                                                </div>
+                                                                                <div class="qodef-fullwidth-slider-item-subtitle">
+                                                                                    <h4 ng-bind="'Updates the knowledge of your human resource in the management of new technologies' | translate"></h4>
+                                                                                </div>
+                                                                                <div class="qodef-fullwidth-slider-item-text">
+                                                                                    <p align="justify" ng-bind="'We are proud to present a wide repertoire of options for your professional improvement in technological tools like'  | translate"></p>
+                                                                                </div>
+                                                                                <div class="qodef-fullwidth-slider-item-button">
+                                                                                    <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
+                                                                                        <span class="qodef-btn-text" ng-bind="'I want to train myself' | translate"></span>
+                                                                                        <span class="qodef-btn-text-icon">
+                                                                                            <i class="qodef-icon-simple-line-icon icon-basket " ></i>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="qodef-fullwidth-slider-item item" style="background-image: url(./wp-content/themes/cloudemotion/assets/img/image-slider-3-home-main.jpg)">
+                                                            <div class="qodef-fullwidth-slider-item-image-holder-wrapper">
+                                                                <span class="qodef-fullwidth-slider-item-image-holder">
+                                                                    <img src="./wp-content/themes/cloudemotion/assets/img/image-slider-3-home-main.jpg" alt="qodef-fullwidth-slider"/>
+                                                                </span>
+                                                            </div>
+                                                            <div class="qodef-fullwidth-slider-item-content-holder">
+                                                                <div class="qodef-fullwidth-slider-item-content-holder-inner">
+                                                                    <div class="qodef-fullwidth-slider-item-content-wrapper">
+                                                                        <div class="qodef-fullwidth-slider-item-wrapper-inner">
+                                                                            <div class="qodef-fullwidth-slider-item-elements-holder">
+                                                                                <div class="qodef-fullwidth-slider-item-title">
+                                                                                    <h2 ng-bind="'Technology Project Management'| translate"></h2>
+                                                                                </div>
+                                                                                <div class="qodef-fullwidth-slider-item-subtitle">
+                                                                                    <h4 ng-bind="'If you want to ensure the success of your project leave it in the hands of professionals!'| translate"></h4>
+                                                                                </div>
+                                                                                <div class="qodef-fullwidth-slider-item-text">
+                                                                                    <p align="justify" ng-bind="'We use the most modern and agile methodologies such as SCRUM and Increasing Marketing for the management of technological projects of any size. Save yourself the headaches, personnel costs and waste of time that may involve project management leave it to our team that we will guarantee your success' | translate"></p>
+                                                                                </div>
+                                                                                <div class="qodef-fullwidth-slider-item-button">
+                                                                                    <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
+                                                                                        <span class="qodef-btn-text" ng-bind="'Manage My Project' | translate"></span>
+                                                                                        <span class="qodef-btn-text-icon">
+                                                                                            <i class="qodef-icon-simple-line-icon icon-basket " ></i>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="qodef-fullwidth-slider-item item" style="background-image: url(./wp-content/themes/cloudemotion/assets/img/image-slider-4-home-main.jpg)">
+                                                            <div class="qodef-fullwidth-slider-item-image-holder-wrapper">
+                                                                <span class="qodef-fullwidth-slider-item-image-holder">
+                                                                    <img src="./wp-content/themes/cloudemotion/assets/img/image-slider-4-home-main.jpg" alt="qodef-fullwidth-slider"/>
+                                                                </span>
+                                                            </div>
+                                                            <div class="qodef-fullwidth-slider-item-content-holder">
+                                                                <div class="qodef-fullwidth-slider-item-content-holder-inner">
+                                                                    <div class="qodef-fullwidth-slider-item-content-wrapper">
+                                                                        <div class="qodef-fullwidth-slider-item-wrapper-inner">
+                                                                            <div class="qodef-fullwidth-slider-item-elements-holder">
+                                                                                <div class="qodef-fullwidth-slider-item-title">
+                                                                                    <h2 ng-bind="'Digital marketing' | translate"></h2>
+                                                                                </div>
+                                                                                <div class="qodef-fullwidth-slider-item-subtitle">
+                                                                                    <h4 ng-bind="'Combines and uses marketing strategies in your digital media' | translate"></h4>
+                                                                                </div>
+                                                                                <div class="qodef-fullwidth-slider-item-text">
+                                                                                    <p align="justify" ng-bind="'If you are looking for a service that allows you to create or enhance the brand of your company using the latest digital technologies, you have arrived at the right site. The Cloudemotion team uses SEO, SMO, SEM, SMM, PPC techniques, as well as social network management, infographics design and email Marketing strategies that will allow the generation of attractive content that fully captures users\' attention.' | translate"></p>
+                                                                                </div>
+                                                                                <div class="qodef-fullwidth-slider-item-button">
+                                                                                    <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
+                                                                                        <span class="qodef-btn-text" ng-bind="'Manage my Campaing' | translate"></span>
+                                                                                        <span class="qodef-btn-text-icon">
+                                                                                            <i class="qodef-icon-simple-line-icon icon-basket " ></i>
+                                                                                        </span>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-grid-section" id="planing">
+                                <div class="container">
+                                    <div class="qodef-section-inner-margin clearfix">
+                                        <div class="wpb_column vc_column_container col-lg-6 col-md-12">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="vc_empty_space"  style="height: 78px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element  vc_custom_1446567667184">
+                                                        <div class="wpb_wrapper">
+                                                            <h2 ng-bind="'Planning is everything...'|translate"></h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 18px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h4 align="justify" ng-bind="'Check out your requirements, manage them into a document, discuss about them with your crew and plan a comfortable model so that you can tell us about your ideas. This way your project will be successful from the beginning.' | translate"></h4>
+                                                            <br>
+                                                            <h4 ng-bind="'Be aware of this when you\'re planning:' | translate"></h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 29px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="vc_row wpb_row vc_inner vc_row-fluid qodef-section qodef-content-aligment-left" style="">
+                                                        <div class="qodef-full-section-inner">
+                                                            <div class="wpb_column vc_column_container col-sm-6">
+                                                                <div class="vc_column-inner ">
+                                                                    <div class="wpb_wrapper">
+                                                                        <div class="qodef-icon-list-item">
+                                                                            <div class="qodef-icon-list-icon-holder">
+                                                                                <div class="qodef-icon-list-icon-holder-inner clearfix">
+                                                                                    <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <p class="qodef-icon-list-text" ng-bind="'How many ideas like yours are there?' | translate"></p>
+                                                                        </div>
+                                                                        <div class="qodef-icon-list-item">
+                                                                            <div class="qodef-icon-list-icon-holder">
+                                                                                <div class="qodef-icon-list-icon-holder-inner clearfix">
+                                                                                    <i class="qodef-iczc-nfont-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <p class="qodef-icon-list-text" ng-bind="'Does that solution have weakness?' | translate"></p>
+                                                                        </div>
+                                                                        <div class="qodef-icon-list-item">
+                                                                            <div class="qodef-icon-list-icon-holder">
+                                                                                <div class="qodef-icon-list-icon-holder-inner clearfix">
+                                                                                    <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <p class="qodef-icon-list-text" ng-bind="'If you are a Startup: Have you anticipated to the possible impact your idea would have?' | translate"></p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="wpb_column vc_column_container col-sm-6">
+                                                                <div class="vc_column-inner ">
+                                                                    <div class="wpb_wrapper">
+                                                                        <div class="qodef-icon-list-item">
+                                                                            <div class="qodef-icon-list-icon-holder">
+                                                                                <div class="qodef-icon-list-icon-holder-inner clearfix">
+                                                                                    <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <p class="qodef-icon-list-text" ng-bind="'Do you know well where is your idea helpful?' | translate"></p>
+                                                                        </div>
+                                                                        <div class="qodef-icon-list-item">
+                                                                            <div class="qodef-icon-list-icon-holder">
+                                                                                <div class="qodef-icon-list-icon-holder-inner clearfix">
+                                                                                    <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <p class="qodef-icon-list-text" ng-bind="'Do you have any sketch about how you want your solution looks?' | translate"></p>
+                                                                        </div>
+                                                                        <div class="qodef-icon-list-item">
+                                                                            <div class="qodef-icon-list-icon-holder">
+                                                                                <div class="qodef-icon-list-icon-holder-inner clearfix">
+                                                                                    <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
+                                                                                </div>
+                                                                            </div>
+                                                                            <p class="qodef-icon-list-text" ng-bind="'Does your competition have any weakness you can take advantage of?'| translate">
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="wpb_column vc_column_container col-sm-4">
+                                                                <div class="vc_column-inner ">
+                                                                    <div class="wpb_wrapper"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <h5 style="margin-top: 1em" ng-bind="'Remember: It\'s not about your service\'s quantity, but your service\'s quality.' | translate"></h5>
+                                                    <div class="vc_empty_space"  style="height: 50px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container col-lg-6 col-md-12">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_left">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper   vc_box_border_grey">
+                                                                <img width="551" height="497" src="./wp-content/themes/cloudemotion/assets/img/image-2-home-main.jpg" class="vc_single_image-img attachment-full" alt="a" srcset="./wp-content/themes/cloudemotion/assets/img/image-2-home-main.jpg 551w, ./wp-content/themes/cloudemotion/assets/img/image-2-home-main-300x271.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/image-2-home-main-550x497.jpg 550w" sizes="(max-width: 551px) 100vw, 551px" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div data-qodef-parallax-speed="0.5" class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445345084553 qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(./wp-content/themes/cloudemotion/assets/img/parallax-2-home-main.jpg);">
+                                <div class="clearfix qodef-full-section-inner">
+                                    <div class="wpb_column vc_column_container">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <h2 style="text-align: center;">
+                                                            <span style="color: #ffffff;" ng-bind="'We Innovate and Guarantee a Professional Quality Product' | translate"></span>
+                                                        </h2>
+                                                    </div>
+                                                </div>
+                                                <div class="vc_empty_space"  style="height: 16px" >
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <h4 style="text-align: center;">
+                                                            <span style="color: #dbdbdb;" ng-bind="'Meet some of the opinions of our satisfied customers' | translate"></span>
+                                                        </h4>
+                                                    </div>
+                                                </div>
+                                                <div class="vc_empty_space"  style="height: 76px" >
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                                <div class="qodef-testimonials-holder qodef-grid-section clearfix">
+                                                    <div class="qodef-testimonials owl-carousel owl-theme qodef-section-inner transparent cards_carousel"  data-layout ="cards_carousel">
+                                                        <div class="qodef-testimonials-slider-item item">
+                                                            <div id="qodef-testimonials71" class="qodef-testimonial-content">
+                                                                <div class="qodef-testimonial-content-inner">
+                                                                    <div class="qodef-testimonial-text-holder">
+                                                                        <div class="qodef-testimonial-text-inner">
+                                                                            <p class="qodef-testimonial-title" ng-bind="'Permanent Support' | translate"></p>
+                                                                            <p class="qodef-testimonial-text" ng-bind="'They are always present when I have needed them, their familiar and friendly treatment facilitates the interaction with their extraordinary work team' | translate"></p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qodef-testimonial-info-holder">
+                                                                        <div class="qodef-testimonial-image-holder">
+                                                                            <img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-1.png" class="attachment-71 size-71 wp-post-image" alt="a" />
+                                                                        </div>
+                                                                        <div class = "qodef-testimonial-author">
+                                                                            <p class="qodef-testimonial-author-text">
+                                                                                <span>Gustavo Ovalles </span>
+                                                                                <span class="qodef-testimonials-job">Manager at TechDream</span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="qodef-testimonials79" class="qodef-testimonial-content">
+                                                                <div class="qodef-testimonial-content-inner">
+                                                                    <div class="qodef-testimonial-text-holder">
+                                                                        <div class="qodef-testimonial-text-inner">
+                                                                            <p class="qodef-testimonial-title">
+                                                                                Diseño Asombroso.               
+                                                                            </p>
+                                                                            <p class="qodef-testimonial-text">Se lucieron con el diseño y entendieron a la perfección el modelo de negocios de mi empresa. Gracias a su ingenio hoy me siento más que satisfecho!.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qodef-testimonial-info-holder">
+                                                                        <div class="qodef-testimonial-image-holder">
+                                                                            <img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-2.png" class="attachment-79 size-79 wp-post-image" alt="a" />
+                                                                        </div>
+                                                                        <div class = "qodef-testimonial-author">
+                                                                            <p class="qodef-testimonial-author-text">
+                                                                                <span>Scarlett Johansson </span>
+                                                                                <span class="qodef-testimonials-job">CEO at SNAP</span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="qodef-testimonials81" class="qodef-testimonial-content">
+                                                                <div class="qodef-testimonial-content-inner">
+                                                                    <div class="qodef-testimonial-text-holder">
+                                                                        <div class="qodef-testimonial-text-inner">
+                                                                            <p class="qodef-testimonial-title">
+                                                                                Flexibilidad Total               
+                                                                            </p>
+                                                                            <p class="qodef-testimonial-text">Nuestra aplicación se adapta a cualquier dispositivo: Teléfono Móvil, Tablet o PC lo que sin distorcionar su contenido y manteniendo una impecable interfaz para los usuarios</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qodef-testimonial-info-holder">
+                                                                        <div class="qodef-testimonial-image-holder">
+                                                                            <img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-3.png" class="attachment-81 size-81 wp-post-image" alt="a" />
+                                                                        </div>
+                                                                        <div class = "qodef-testimonial-author">
+                                                                            <p class="qodef-testimonial-author-text">
+                                                                                <span>Melvin Mora</span>
+                                                                                <span class="qodef-testimonials-job">PR at CTA</span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="qodef-testimonials-slider-item item">
+                                                            <div id="qodef-testimonials88" class="qodef-testimonial-content">
+                                                                <div class="qodef-testimonial-content-inner">
+                                                                    <div class="qodef-testimonial-text-holder">
+                                                                        <div class="qodef-testimonial-text-inner">
+                                                                            <p class="qodef-testimonial-title">
+                                                                                Capacitación Profesional.             
+                                                                            </p>
+                                                                            <p class="qodef-testimonial-text"> Es muy gratificante encontrar instructores con tanto dominio del tema y con tanta facilidad para transmitir sus conocimientos, de verdad son extraordinarios, los Felicito.</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qodef-testimonial-info-holder">
+                                                                        <div class="qodef-testimonial-image-holder">
+                                                                            <img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-4.png" class="attachment-88 size-88 wp-post-image" alt="a" />
+                                                                        </div>
+                                                                        <div class = "qodef-testimonial-author">
+                                                                            <p class="qodef-testimonial-author-text">
+                                                                                <span>Albert Einstein </span>
+                                                                                <span class="qodef-testimonials-job">PR at CTA</span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="qodef-testimonials89" class="qodef-testimonial-content">
+                                                                <div class="qodef-testimonial-content-inner">
+                                                                    <div class="qodef-testimonial-text-holder">
+                                                                        <div class="qodef-testimonial-text-inner">
+                                                                            <p class="qodef-testimonial-title">
+                                                                                Excelentes &amp; Rápidos.               
+                                                                            </p>
+                                                                            <p class="qodef-testimonial-text">Gracias a las metodologías ágiles que utilizan, el desarrollo se realiza de manera rápida y sin sacrificar la calidad de la aplicación</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qodef-testimonial-info-holder">
+                                                                        <div class="qodef-testimonial-image-holder">
+                                                                            <img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-5.png" class="attachment-89 size-89 wp-post-image" alt="a" />
+                                                                        </div>
+                                                                        <div class = "qodef-testimonial-author">
+                                                                            <p class="qodef-testimonial-author-text">
+                                                                                <span>Katniss Everdeen </span>
+                                                                                <span class="qodef-testimonials-job">Architect at CUBE</span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="qodef-testimonials90" class="qodef-testimonial-content">
+                                                                <div class="qodef-testimonial-content-inner">
+                                                                    <div class="qodef-testimonial-text-holder">
+                                                                        <div class="qodef-testimonial-text-inner">
+                                                                            <p class="qodef-testimonial-title">
+                                                                                Todo en un solo lugar!               
+                                                                            </p>
+                                                                            <p class="qodef-testimonial-text"> Me asesoraron, diseñaron mi Sitio Web y se encargaron hasta del Hospedaje, tienen todo lo que se pueda necesitar en IT, lo que les da un valor agregado a sus servicios</p>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="qodef-testimonial-info-holder">
+                                                                        <div class="qodef-testimonial-image-holder">
+                                                                            <img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-6.png" class="attachment-90 size-90 wp-post-image" alt="a" />
+                                                                        </div>
+                                                                        <div class = "qodef-testimonial-author">
+                                                                            <p class="qodef-testimonial-author-text">
+                                                                                <span>Bruce Holt </span>
+                                                                                <span class="qodef-testimonials-job">Manager at TechDream</span>
+                                                                            </p>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-grid-section" id="design">
+                                <div class="container" >
+                                    <div class="qodef-section-inner-margin clearfix">
+                                        <div class="wpb_column vc_column_container col-lg-6 col-md-6">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="wpb_single_image wpb_content_element vc_align_left">
+                                                        <figure class="wpb_wrapper vc_figure">
+                                                            <div class="vc_single_image-wrapper   vc_box_border_grey">
+                                                                <img width="525" height="477" src="./wp-content/themes/cloudemotion/assets/img/marketing1.jpg" class="vc_single_image-img attachment-full" />
+                                                            </div>
+                                                        </figure>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="wpb_column vc_column_container col-lg-6 col-md-6">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="vc_empty_space"  style="height: 100px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h2 ng-bind="'More than a Design. It is an Artwork' | translate"></h2>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 20px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_wrapper">
+                                                            <h4 align="justify" ng-bind="'We care about highlighting your style keeping your being in the design . We have a  specialized professionals team to achieve this goal. We will give an unique and catching interface to your website to make it stands out.'|translate"></h4>
+                                                        </div>
+                                                    </div>
+                                                    <div class="vc_empty_space"  style="height: 43px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                    <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
+                                                        <span class="qodef-btn-text" ng-bind="'See More' | translate"></span>
+                                                        <span class="qodef-btn-text-icon">
+                                                            <i class="qodef-icon-simple-line-icon icon-rocket " ></i>
+                                                        </span>
+                                                    </a>
+                                                    <div class="vc_empty_space"  style="height: 40px" >
+                                                        <span class="vc_empty_space_inner"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1446108194203 qodef-content-aligment-left" style="">
+                                <div class="clearfix qodef-full-section-inner">
+                                    <div class="wpb_column vc_column_container">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="qodef-call-to-action normal">
+                                                    <div class="qodef-container-inner">
+                                                        <div class="qodef-call-to-action-row-75-25 clearfix" style="padding: 54px 0px;">
+                                                            <div class="qodef-text-wrapper qodef-call-to-action-column1 qodef-call-to-action-cell">
+                                                                <div class="qodef-call-to-action-text" >
+                                                                    <h4>
+                                                                        <span style="color: #ffffff;">StarIt is filled with a variety of shortcodes and elements, made especially for you.</span>
+                                                                    </h4>
+                                                                </div>
+                                                            </div>
+                                                            <div class="qodef-button-wrapper qodef-call-to-action-column2 qodef-call-to-action-cell" style ="text-align: right ;">
+                                                                <a href="#" target="_self" style="color: #ffffff;border-color: rgba(255,255,255,0.5)" class="qodef-btn qodef-btn-medium qodef-btn-outline qodef-btn-custom-border-hover qodef-btn-custom-hover-color qodef-btn-icon" data-hover-color="#ffffff" data-hover-border-color="rgba(255,255,255,0.5)" >
+                                                                    <span class="qodef-btn-text">Check It Out Now</span>
+                                                                    <span class="qodef-btn-text-icon">
+                                                                        <i class="qodef-icon-simple-line-icon icon-arrow-right-circle " ></i>
+                                                                    </span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="team">
+                                <div class="clearfix qodef-full-section-inner">
+                                    <div class="wpb_column vc_column_container">
+                                        <div class="vc_column-inner ">
+                                            <div class="wpb_wrapper">
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <h2 ng-bind="'Meet the professionals behind your projects' | translate"></h2>
+                                                    </div>
+                                                </div>
+                                                <div class="vc_empty_space"  style="height: 22px" >
+                                                    <span class="vc_empty_space_inner"></span>
+                                                </div>
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <h4 ng-bind="'Take a look and certify the knowledge of our developers' | translate"></h4>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414638610 qodef-content-aligment-center qodef-grid-section" style="">
+                                <div class="container">
+                                    <div class="qodef-section-inner-margin clearfix">
+
+                                        <div ng-repeat="team in vm.team" class="col-md-3 col-sm-6 col-xs-6 col-lg-3 text-center" style="margin-top:1em;margin-bottom:1em;">
+                                            <div class="contenido">
+                                                <div class="team-box box-4">
+                                                    <div class="team-img main-bg">
+                                                        <img ng-src="{{team.image}}" sizes="(max-width: 443px) 100vw, 443px">
+                                                    </div>
+                                                    <div class="team-details main-bg">
+                                                        <h3 class="team-name" ng-bind="team.first_name+' '+team.last_name">Luis García</h3>
+                                                        <h5 class="team-pos white" ng-bind="team.position.name">Programador Front-End</h5>
+                                                        <strong>Especialidades</strong>
+
+                                                        <div class="social-buttons">
+                                                            <a ng-href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110" target="_blank" class="social-button google" href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110">
+                                                                <i class="fa fa-linkedin"></i>    
+                                                            </a>
+                                                            <a ng-click="copylink('@rexuzsystems')" class="social-button skype">
+                                                                <i class="fa fa-skype"></i>
+                                                            </a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+                                        </div>
+
+                                    </div>
+                                    <!-- close div.content_inner -->
+                                </div>
+                                <!-- close div.content -->
+                                <footer >
+                                    <?php get_footer();?>
+                                </footer>
+                            </div>
+                            <!-- close div.qodef-wrapper-inner  -->
+                        </div>
+                        <!-- close div.qodef-wrapper -->
+                    </body>
+                    </html>

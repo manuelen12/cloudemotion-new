@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html ng-app="mainapp" ng-controller="MainCtrl as vm">
+<head>
+	<base href="/">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" >
+	<!-- Basic -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">	
+	<title>Cloudemotion Team | CV</title>
+	<meta name="keywords" content="CV- technology CV - technology proffesionals - technology freelancers - freelancers development - marketing freelancers - desing ">
+	<meta name="description" content="Cloudemotion - Web and mobile development company">
+	<meta name="author" content="Gerardo Filitto (cloudemotion)">
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="./assets/img/png/cloud.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="./assets/img/png/cloud.png">
+	<!-- Mobile Metas -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!-- Web Fonts  -->
+	<link href="./assets/css/css" rel="stylesheet" type="text/css">
+	<link href="./assets/production/dev_css/main.min.css" rel="stylesheet">
+</head>
+	<body data-spy="scroll" data-target=".wrapper-spy">
+	<span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=ht8IzQr9MxAYkUG5PcoGQyueY3byXGPbsnPxvyVh1QnislLE9xmKediaTUXP"></script></span>
+		<data ui-view></data>
+	
+	<script src="./assets/production/dev_js/scripts.js"></script>
+
+<!-- ANGULAR FILES -->
+<script src="./core/app.js"></script>
+<script src="./core/main.controller.js"></script>
+<!--HELPER  -->
+<script src="./components/commons/helpers/validator.helper.js"></script>
+<script src="./components/commons/helpers/url.helper.js"></script>
+<!-- DIRECTIVE -->
+<script src="./components/commons/directives/header.directive.js"></script>
+<script src="./components/commons/directives/menu.directive.js"></script>
+<script src="./components/commons/directives/footer.directive.js"></script>
+<!--SERVICES   -->
+<script src="./components/commons/services/portfolio.service.js"></script>
+<!-- CONTROLLER -->
+<script src="./components/cv/cv.controller.js"></script>
+<!-- CORE -->
+<script src="./core/routes.js"></script>
+</body>
+</html>

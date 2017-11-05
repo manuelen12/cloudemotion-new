@@ -1,4 +1,4 @@
-koomper.controller('MainCtrl', MainCtrl)
+mainApp.controller('MainCtrl', MainCtrl)
 MainCtrl.$inject=["$scope","$state","$stateParams","$rootScope","DashboardService"]
 function MainCtrl($scope,$state,$stateParams,$rootScope,DashboardService) {
 	var mv = this;
@@ -7,6 +7,7 @@ function MainCtrl($scope,$state,$stateParams,$rootScope,DashboardService) {
 		dashboard:angular.copy($scope.dashboard)
 	});
 	console.log(mv.menuSmall);
+	console.log('hola');
 	
 
 }

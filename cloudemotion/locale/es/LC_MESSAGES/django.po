@@ -1,0 +1,116 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-20 23:13+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: cloudemotion/users/v0/api.py:233
+#: config/settings/base.py:175
+msgid "English"
+msgstr "Inglés"
+
+#: cloudemotion/users/v0/api.py:233
+#: config/settings/base.py:176
+msgid "Spanish"
+msgstr "Español"
+
+#: cloudemotion/users/v0/api.py:233
+#: config/settings/base.py:176
+msgid "Portuguese"
+msgstr "Portugués"
+
+#: cloudemotion/users/v0/api.py:233
+#: config/settings/base.py:176
+msgid "French"
+msgstr "Francés"
+
+#: cloudemotion/common/views.py:41
+msgid "Not found"
+msgstr "No Encontrado"
+
+#: cloudemotion/common/views.py:48
+msgid "Permission denied"
+msgstr "Permiso Denegado"
+
+#: cloudemotion/users/v0/api.py:189
+msgid "Venezuelan"
+msgstr "Venezuelana"
+
+#: cloudemotion/users/v0/api.py:195
+msgid "Computing Engineer"
+msgstr "Ingeniero en Informática"
+
+#: cloudemotion/users/v0/api.py:195
+msgid "Mechanical Engineer"
+msgstr "Ingeniero en Mecánica"
+
+#: cloudemotion/users/v0/api.py:195
+msgid "Telecommunications Engineer"
+msgstr "Ingeniero en Telecomunicaciones"
+
+#: cloudemotion/users/v0/api.py:195
+msgid "Electronics Engineer"
+msgstr "Ingeniero en Electrónica"
+
+#: cloudemotion/users/v0/api.py:195
+msgid "Civil Engineer"
+msgstr "Ingeniero Civil"
+
+#: cloudemotion/users/v0/api.py:195
+msgid "Designer"
+msgstr "Diseñador"
+
+#: cloudemotion/users/v0/api.py:195
+msgid "Student"
+msgstr "Estudiante"
+
+#: cloudemotion/users/v0/api.py:273
+msgid "Development"
+msgstr "Desarrollo"
+
+#: cloudemotion/curriculum/models.py:78
+#: cloudemotion/curriculum/models.py:148
+msgid "Basic"
+msgstr "Básico"
+
+#: cloudemotion/curriculum/models.py:79
+msgid "Diversified"
+msgstr "Diversificado"
+
+#: cloudemotion/curriculum/models.py:80
+msgid "Academic"
+msgstr "Universitario"
+
+#: cloudemotion/curriculum/models.py:80
+msgid "Medium"
+msgstr "Medio"
+
+#: cloudemotion/curriculum/models.py:80
+msgid "Advanced"
+msgstr "Advanzado"
+
+msgid "Backend Developer"
+msgstr "Desarrollador Backend"
+
+msgid "Frontend Developer"
+msgstr "Desarrollador Frontend"
+
+msgid "Department Manager"
+msgstr "Gerente de departamento"
+
+msgid "Product Manager"
+msgstr "Gerente de producto"
