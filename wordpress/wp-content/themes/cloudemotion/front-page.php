@@ -10,7 +10,8 @@ get_header();
     <div class="qodef-wrapper">
         <div class="qodef-wrapper-inner">
             <?php     get_template_part( 'template-parts/navigation/navigation-top', null ); ?>
-            <!-- close .qodef-mobile-header -->
+<?php putRevSlider('prueba1', 'homepage'); ?>
+ <!-- close .qodef-mobile-header -->
             <a id='qodef-back-to-top'  href='#'>
                 <span class="qodef-icon-stack">
                     <i class="qodef-icon-font-awesome fa fa-chevron-up " ></i>

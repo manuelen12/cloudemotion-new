@@ -6,3 +6,8 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /cloudemotion-new/wordpress/index.php [L]
 </IfModule>
+#set max upload file size
+php_value upload_max_filesize 32M
+#set max post size
+php_value post_max_size 32M
+
