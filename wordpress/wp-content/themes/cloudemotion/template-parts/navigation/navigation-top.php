@@ -24,7 +24,7 @@
                     </div>
                 </div>
             </div>
-            <div class="qodef-position-right col-md-10 col-sm-11">
+            <div class="qodef-position-right col-md-10 col-sm-11 col-xs-12">
                 <div class="qodef-position-right-inner">
                     <nav class="qodef-main-menu qodef-drop-down qodef-default-nav">
                         <?php     get_template_part( 'template-parts/navigation/menu', null ); ?>
