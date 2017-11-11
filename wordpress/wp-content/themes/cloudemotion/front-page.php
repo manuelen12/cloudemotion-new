@@ -1001,41 +1001,6 @@ get_header();
                                 </div>
                             </div>
 
-
-                            <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1446108194203 qodef-content-aligment-left" style="">
-                                <div class="clearfix qodef-full-section-inner">
-                                    <div class="wpb_column vc_column_container">
-                                        <div class="vc_column-inner ">
-                                            <div class="wpb_wrapper">
-                                                <div class="qodef-call-to-action normal">
-                                                    <div class="qodef-container-inner">
-                                                        <div class="qodef-call-to-action-row-75-25 clearfix" style="padding: 54px 0px;">
-                                                            <div class="qodef-text-wrapper qodef-call-to-action-column1 qodef-call-to-action-cell">
-                                                                <div class="qodef-call-to-action-text" >
-                                                                    <h4>
-                                                                        <span style="color: #ffffff;">StarIt is filled with a variety of shortcodes and elements, made especially for you.</span>
-                                                                    </h4>
-                                                                </div>
-                                                            </div>
-                                                            <div class="qodef-button-wrapper qodef-call-to-action-column2 qodef-call-to-action-cell" style ="text-align: right ;">
-                                                                <a href="#" target="_self" style="color: #ffffff;border-color: rgba(255,255,255,0.5)" class="qodef-btn qodef-btn-medium qodef-btn-outline qodef-btn-custom-border-hover qodef-btn-custom-hover-color qodef-btn-icon" data-hover-color="#ffffff" data-hover-border-color="rgba(255,255,255,0.5)" >
-                                                                    <span class="qodef-btn-text">Check It Out Now</span>
-                                                                    <span class="qodef-btn-text-icon">
-                                                                        <i class="qodef-icon-simple-line-icon icon-arrow-right-circle " ></i>
-                                                                    </span>
-                                                                </a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-
                             <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="team">
                                 <div class="clearfix qodef-full-section-inner">
                                     <div class="wpb_column vc_column_container">
