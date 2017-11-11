@@ -128,36 +128,7 @@
                                     <div class="vc_empty_space"  style="height: 12px" >
                                         <span class="vc_empty_space_inner"></span>
                                     </div>
-                                    <div class="qodef-custom-font-holder" style="font-family: Raleway;font-size: 22px;line-height: 22px;font-weight: 700;letter-spacing: 0px;text-align: left;color: #ffffff" data-font-size= 22 data-line-height= 22>
-                                        Newsletter
-                                    </div>
-                                    <div class="vc_empty_space"  style="height: 7px" >
-                                        <span class="vc_empty_space_inner"></span>
-                                    </div>
-                                    Lorem ipsum dolor sit amet
-
-                                    <div class="vc_empty_space"  style="height: 20px" >
-                                        <span class="vc_empty_space_inner"></span>
-                                    </div>
-                                    <div role="form" class="wpcf7" id="wpcf7-f1334-o1" lang="en-US" dir="ltr">
-                                        <div class="screen-reader-response"></div>
-                                        <form action="/#wpcf7-f1334-o1" method="post" class="wpcf7-form" novalidate="novalidate">
-                                            <div style="display: none;">
-                                                <input type="hidden" name="_wpcf7" value="1334" />
-                                                <input type="hidden" name="_wpcf7_version" value="4.4.2" />
-                                                <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                                                <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1334-o1" />
-                                                <input type="hidden" name="_wpnonce" value="b1b2b2e095" />
-                                            </div>
-                                            <div class="qodef-subscription-form">
-                                                <span class="wpcf7-form-control-wrap your-email">
-                                                    <input type="email" name="your-email" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Your E-Mail" />
-                                                </span>
-                                                <input type="submit" value="&#xe079;" class="wpcf7-form-control wpcf7-submit" />
-                                            </div>
-                                            <div class="wpcf7-response-output wpcf7-display-none"></div>
-                                        </form>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -170,9 +141,11 @@
         <div class="qodef-footer-bottom-holder-inner">
             <div class="qodef-column-inner">
                 <div id="text-5" class="widget qodef-footer-text widget_text">
-                    <div class="textwidget">CloudEmotion © Una Red Un Universo| 2017 </div>
-                    <span id="siteseal"><script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=ht8IzQr9MxAYkUG5PcoGQyueY3byXGPbsnPxvyVh1QnislLE9xmKediaTUXP"></script></span>
-
+                    <div class="textwidget">CloudEmotion © Una Red Un Universo | 2017 </div>
+                    <span id="siteseal">
+                        <script async type="text/javascript" src="https://seal.godaddy.com/getSeal?sealID=ht8IzQr9MxAYkUG5PcoGQyueY3byXGPbsnPxvyVh1QnislLE9xmKediaTUXP">
+                        </script>
+                    </span>
                 </div>
             </div>
         </div>
