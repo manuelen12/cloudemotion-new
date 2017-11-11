@@ -320,6 +320,7 @@ get_header();
                                     </div>
                                 </div>
                             </div>
+
                             <div class="wpb_text_column wpb_content_element ">
                                 <div class="wpb_wrapper">
                                     <h2 style="text-align: center;"><strong ng-bind="'Our Portfolio' | translate"></strong></h2>
@@ -1060,6 +1061,11 @@ get_header();
                                     <!-- close div.content_inner -->
                                 </div>
                                 <!-- close div.content -->
+                            
+                            <div id="portfolios">
+                                
+                            </div>
+                            
                                 <footer >
                                     <?php get_footer();?>
                                 </footer>

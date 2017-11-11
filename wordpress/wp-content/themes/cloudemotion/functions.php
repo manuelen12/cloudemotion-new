@@ -32,7 +32,7 @@ if(!is_admin()){
 		);
 
 	$scripts = array(
-		'jquery',
+		'jquery-3.2.1.min',
 		'jquery-migrate.min',
 		'scrolltoplugin.min',
 		'greensock',
@@ -57,7 +57,6 @@ if(!is_admin()){
 		'wp-mediaelement.min',
 		'mouse.min',
 		'slider.min',
-		'third-party.min',
 		'isotope.pkgd.min',
 		'smoothPageScroll',
 		'comment-reply.min',
