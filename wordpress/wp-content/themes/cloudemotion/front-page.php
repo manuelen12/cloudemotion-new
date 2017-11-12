@@ -842,8 +842,9 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
-
+                                
                                 <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="team">
+                                
                                     <div class="clearfix qodef-full-section-inner">
                                         <div class="wpb_column vc_column_container">
                                             <div class="vc_column-inner ">
@@ -866,7 +867,7 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
-
+<?php echo do_shortcode('[amo_member id="12,20" item-width="250" align="left" item-margin="20" full-width="yes" panel="right"]'); ?>
                                 <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414638610 qodef-content-aligment-center qodef-grid-section" style="">
                                     <div class="container">
                                         <div class="qodef-section-inner-margin qodef-team2 owl-theme owl-carousel clearfix">
