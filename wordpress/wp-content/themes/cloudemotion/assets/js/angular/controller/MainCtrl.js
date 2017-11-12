@@ -50,7 +50,17 @@
 			})
 			vm.getPorfolios.then(function(response) {
 				vm.portfolios=response.data;
-				console.log(response);
+				var opt={	
+					loop:false,
+					margin:10,
+					nav:true,
+					autoplay:true,
+					responsiveClass:true,
+					items:4,
+					animateOut: 'fadeOut',
+					animateIn: 'fadeIn',
+				}
+				setCarousel(".qodef-team2",opt,arrows);
 			},function(error) {
 				console.log(error);
 			})

@@ -255,6 +255,9 @@
 		if ( true === supportsFixedBackground() ) {
 			document.documentElement.className += ' background-fixed';
 		}
+	
+	setCarousel(".qodef-testimonials",null,arrows);
+
 	});
 
 	// If navigation menu is present on page, adjust it on scroll and screen resize.
@@ -287,8 +290,13 @@
 		$body.addClass( 'has-header-video' );
 	});
 
+
+})( jQuery );
+	var arrows={navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]};
+
 	function setCarousel(parentElement,options,add) {
 		setTimeout(function() {
+		console.log(options);
 			var options=options?options:{
 				loop:false,
 				margin:10,
@@ -308,10 +316,3 @@
 
 		},1000)
 	}	
-	var arrows={navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]};
-
-	setCarousel(".qodef-fullwidth-slider-slides");
-	setCarousel(".qodef-testimonials",null,arrows);
-
-})( jQuery );
-
