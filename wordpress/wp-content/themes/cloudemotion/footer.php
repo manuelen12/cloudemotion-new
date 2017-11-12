@@ -83,7 +83,12 @@
                     </div>
                     <div class="qodef-column">
                         <div class="qodef-column-inner">
-                            <?php echo do_shortcode("[custom-facebook-feed]"); ?>
+                            <div id="recent-posts-2" class="widget qodef-footer-column-2 widget_recent_entries">
+                            <h4 class="qodef-footer-widget-title">Facebook Feed</h4>
+                                <div class="textwidget">
+                                    <?php echo do_shortcode("[custom-facebook-feed]"); ?>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="qodef-column">
