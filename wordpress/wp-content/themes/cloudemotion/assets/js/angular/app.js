@@ -9,7 +9,7 @@ var cloudemotion = angular.module("mainApp",[
 	
 	"particles": {
 		"number": {
-			"value": 428,
+			"value": 228,
 			"density": {
 				"enable": true,
 				"value_area": 1843.9238699953512

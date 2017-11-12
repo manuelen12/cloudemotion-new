@@ -1490,6 +1490,86 @@ Screen Stylesheet
 
 
 
+
+    .qodef-page-header.opened{height: 100vh;}
+    .vc_column-inner-350{
+      height: 350px;
+    }
+    .mobilec{
+      text-align: center !important; 
+    }
+
+    .col-no-p{
+      padding: 0px !important; 
+    }
+
+
+    .jumbotron.home h1{
+      font-size: 23px;
+    }
+    .jumbotron.home p{
+      font-size: 14px;
+    }
+
+
+    .contentTeam{display: inline-block;position: relative;}
+    .contentTeam:before{
+      content: "";
+      animation: fadeTeam 10s ease-in-out infinite;
+      background-image: url(../img/testimonials-2.png);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      background-repeat: no-repeat;
+      background-position: 119px 117px;
+      background-size: 180px;
+      border-radius: 50%;    
+    }
+    .teamR{
+      animation: rotateTeam 10s ease-in-out infinite;
+      border-radius: 50%;
+      padding: 2em;
+      width: 410px;
+      height: 420px !important;
+    }
+
+    .contentHand{display: inline-block;position: relative;}
+    .contentHand:after{
+      content: "";
+      /*      animation: topBottom 1s linear infinite;*/
+      background-image: url(../img/hand.png);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 35%;
+      top: 60px;
+      background-repeat: no-repeat;
+      background-position: 50% 0;
+      background-size: 240px;
+      animation: topBottom 4s linear infinite; 
+    }
+    .contentHand:before{
+      content: "";
+      background: white;
+      position: absolute;
+      width: 165px;
+      height: 193px;
+      left: 155px;
+      top: 60px;
+    }
+    .handR{
+      padding: 2em;
+      width: 410px;
+      height: 420px !important;
+    }
+
+    .jumbotron .qodef-normal-logo{
+      border-radius: 10px;
+      margin-bottom: 1em;
+    }
+
+
     @media all and (min-width:961px) and (max-width:1200px){
 
       .qodef-logo-wrapper{width: 30px;}
@@ -1576,6 +1656,29 @@ Screen Stylesheet
     }
 
     @media all and (max-width:460px){
+      .contentTeam:before{
+        background-size: 125px;
+        background-position: 115px 120px;
+      }
+      .contentHand:before{
+        width: 115px;
+        height: 160px;
+        left: 114px;
+        top: 55px;
+      }
+      .contentHand:after{
+        background-size: 200px;
+      }
+      .teamR{
+        max-width: initial !important;
+        width: 350px;
+        height: 360px !important;
+      }
+      .handR{
+        max-width: initial !important;
+        width: 300px;
+        height: 360px !important;
+      }
       .qodef-portfolio-list-holder .qodef-portfolio-item{
         width: 100%;
       }
@@ -1584,53 +1687,6 @@ Screen Stylesheet
       }
     }
 
-    .qodef-page-header.opened{height: 100vh;}
-    .vc_column-inner-350{
-      height: 350px;
-    }
-    .mobilec{
-      text-align: center !important; 
-    }
-
-    .col-no-p{
-      padding: 0px !important; 
-    }
-
-
-    .jumbotron.home h1{
-      font-size: 23px;
-    }
-    .jumbotron.home p{
-      font-size: 14px;
-    }
-
-
-    .contentTeam{display: inline-block;position: relative;}
-    .contentTeam:before{
-      content: "";
-      animation: fadeTeam 10s ease-in-out infinite;
-      background-image: url(../img/testimonials-2.png);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      left: 0;
-      background-repeat: no-repeat;
-      background-position: 119px 117px;
-      background-size: 180px;
-      border-radius: 50%;    
-    }
-    .teamR{
-      animation: rotateTeam 10s ease-in-out infinite;
-      border-radius: 50%;
-      padding: 2em;
-      width: 410px;
-      height: 420px !important;
-    }
-
-    .jumbotron .qodef-normal-logo{
-      border-radius: 10px;
-      margin-bottom: 1em;
-    }
 
     @keyframes rotateTeam{
       from{ transform: rotate(0deg);}
@@ -1640,4 +1696,9 @@ Screen Stylesheet
       from{ opacity: 0}
       80%{opacity: 1}
       to{opacity: 0}
+    }
+    @keyframes topBottom{
+      0%{top: 60px}
+      50%{top: 200px}
+      100%{top: 60px}
     }
