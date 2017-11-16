@@ -21,30 +21,7 @@ get_header();
                 <div class="qodef-content-inner">
                     <div class="qodef-full-width">
                         <div class="qodef-full-width-inner">
-                            <div class=" qodef-content-aligment-center qodef-grid-section" id="home">
-                                <div class="container">
-                                    <div class="qodef-section-inner-margin clearfix">
-                                        <div class="col-md-6">
-                                            <div class="jumbotron home">
-                                                <div class="container">
-                                                    <img class="qodef-normal-logo" src="./wp-content/themes/cloudemotion/assets/img/logo_header.jpg" alt="logo">
-                                                    <p>
-                                                        Somos una empresa de tecnologia dedicada a solucionar las dificultades tecnologicas de nuestros clientes abarcando distintos tipos de areas tales como Desarrollo de aplicaciones(Web, Moviles), Gestion de Proyectos, Marketing Web entre otros..
-                                                    </p>
-                                                    <p>
-                                                        A diario nuevas tecnologias salen al mercado y cada vez mas a los negocios los alejan de la actualidad. Cloudemotion tiene un compromiso total con el continuo aprendizaje y ejecuciones de las buenas practicas para mantener a tu negocio en la vanguardia tecnologica...
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="contentTeam">
-                                                <img src="./wp-content/themes/cloudemotion/assets/img/teamwork.png" class="img-responsive teamR" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             <div class=" qodef-content-aligment-center qodef-grid-section" id="general">
                                 <div class="container">
                                 <h2><strong ng-bind="'We garantice you' | translate" class="ng-binding"></strong></h2>
