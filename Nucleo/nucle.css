@@ -9,7 +9,7 @@ body {
 	position: absolute;
 	top:50%;
 	left: 50%;
-	transform: translate(-50%,-50%) scale(.3);
+	transform: translate(-50%,-50%) scale(.4);
 	-webkit-animation: subeybaja 1s ease-in-out infinite alternate;	
 }
 
@@ -26,8 +26,8 @@ body {
 }
 
 #nucleo {
-	height: 400px ;
-	width: 400px;
+	height: 300px ;
+	width: 300px;
 	background-image: url('images/CLOUD.png');
 	/*border-radius: 2000px;*/
 	position: absolute;
@@ -37,13 +37,13 @@ body {
 }
 
 .electron{
-	width: 80px;
-	height:80px;
+	width: 100px;
+	height:100px;
 	position: absolute;
 	/*background-image: url('images/emoji4.png');*/
 	margin: -20px 0 0 -20px;
 	left:-300px;
-	border-radius: 2000px;
+	/*border-radius: 2000px;*/
 	-webkit-animation: movimiento 2s ease-in-out infinite,
 					   agrandar 2s linear infinite;
 	z-index: 1;
@@ -51,28 +51,32 @@ body {
 
 
 .electron.b {
-	background-image: url('images/ANDROID80.png');
+	background-image: url('images/ANDROID100.png');
 }
 
 .electron.c {
-	background-image: url('images/WORDPRESS80.png');
+	background-image: url('images/IOS100.png');
 }
 
 .electron.d {
-	background-image: url('images/MAILCHIMP80.png');
+	background-image: url('images/MAILCHIMP100.png');
 }
 
 .electron.e {
-	background-image: url('images/SEO80.png');
+	background-image: url('images/SEO100.png');
 }
 
 .electron.f {
-	background-image: url('images/DJANGO80.png');
+	background-image: url('images/WORDPRESS100.png');
 }
 
 .electron.g {
-	background-image: url('images/IOS80.png');
+	background-image: url('images/DJANGO100.png');
 }
+
+/*.electron.h {
+	background-image: url('images/emoji10.png');
+}*/
 
 
 
@@ -96,7 +100,7 @@ body {
 	
 	
 	25% {
-		transform: scale(2.5);
+		transform: scale(1.8);
 	}
 	
 	
@@ -107,10 +111,11 @@ body {
 }
 
 .electron:nth-child(2) {display: none;}
+
 .electron:nth-child(3), .electron:nth-child(6){
-	-webkit-animation: movimiento 3.9s ease-in-out infinite,
+	-webkit-animation: movimiento 3.5s ease-in-out infinite,
 					   agrandar 1.7s linear infinite ,
-					   movimiento2 2.2s ease-in-out infinite;
+					   movimiento2 1.8s ease-in-out infinite;
 	top: -200px;
 }
 
@@ -123,9 +128,9 @@ body {
 
 .electron:nth-child(4), .electron:nth-child(7) {
 	-webkit-animation: agrandar 1.7s linear infinite ,
-					   movimiento2 3.9s ease-in-out infinite,
-					   movimiento3 2.3s ease-in-out infinite;
-	left: 450px;
+					   movimiento2 3.5s ease-in-out infinite,
+					   movimiento3 1.7s ease-in-out infinite;
+	left: 300px;
 	top: -200px;
 	z-index: 1;
 }
@@ -136,7 +141,7 @@ body {
 		z-index: 1;
 	}
 	50% {
-		left: -250px;
+		left: -300px;
 		z-index: -1;
 	}
 	
@@ -148,10 +153,10 @@ body {
 .electron:nth-child(5), .electron:nth-child(8) {
 	
 	top: 200px;
-	left: 450px;
-	-webkit-animation:movimiento3 3.9s ease-in-out infinite,
+	left: 300px;
+	-webkit-animation:movimiento3 3s ease-in-out infinite,
 					  agrandar 1.7s linear infinite ,
-					  movimiento4 2.3s ease-in-out infinite;
+					  movimiento4 1.7s ease-in-out infinite;
 	
 }
 
