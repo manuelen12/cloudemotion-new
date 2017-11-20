@@ -43,7 +43,7 @@ class Experiences(models.Model):
         db_table = 'experiences'
 
     def __str__(self):
-        return self.company.name+ "/" +self.position.name
+        return self.user.username + "/" + self.company.name+ "/" +self.position.name
 
 
 class Institutes(models.Model):
@@ -98,7 +98,7 @@ class EducationsUser(models.Model):
         db_table = 'educations_user'
 
     def __str__(self):
-        return self.education.name+ "/" +self.institute.name
+        return self.user.username + "/" + self.education.name+ "/" +self.institute.name
 
 
 class Courses(models.Model):
@@ -131,7 +131,7 @@ class CoursesUser(models.Model):
         db_table = 'courses_user'
 
     def __str__(self):
-        return self.course.name+ "/" +self.institute.name
+        return  self.user.username + "/" + self.course.name+ "/" +self.institute.name
 
 
 class Skills(models.Model):
@@ -170,7 +170,7 @@ class SkillsUser(models.Model):
         db_table = 'skills_user'
 
     def __str__(self):
-        return self.skill.name
+        return self.user.username + "/" + self.skill.name
 
 
 class LanguajesUser(models.Model):
@@ -194,7 +194,7 @@ class LanguajesUser(models.Model):
         db_table = 'languajes_user'
 
     def __str__(self):
-        return self.languaje.name
+        return self.user.username + "/" + self.languaje.name
 
 
 class Classifications(models.Model):
