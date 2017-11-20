@@ -245,7 +245,9 @@ get_header();
                                                                             <h4 ng-bind="'Plane' | translate"></h4>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
-                                                                            <p>Te haremos llegar un cuestionario con el cual identificaremos cuales son tus prioridades, modelo de negocios y objetivos y asi agilizar el proceso</p>
+                                                                            
+                                                                            <p ng-bind="'We will send you a questionnaire with which we will identify your priorities, business model and objectives and thus expedite the process' | translate"></p>
+                                                                            
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -264,7 +266,7 @@ get_header();
                                                                             <h4 ng-bind="'Design' | translate"></h4>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
-                                                                            <p>Te haremos llegar un listado de posibles diseños bajo los estandares actuales, para que seas participe en el proceso en todo momento</p>
+                                                                            <p ng-bind="'We will send you a list of possible designs under the current standards, so that you are involved in the process at all times' | translate"></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -283,8 +285,7 @@ get_header();
                                                                             <h4 ng-bind="'Develop' | translate"></h4>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
-                                                                            <p>
-                                                                                Etapa en la cual se realizaran pruebas de stress para determinar la funcionalidad del producto en cualquier ambito antes de la entrega final
+                                                                            <p ng-bind="'Stage in which stress tests will be carried out to determine the functionality of the product in any field before the final delivery' | translate">   
                                                                             </p>
                                                                         </div>
                                                                     </div>
@@ -304,7 +305,7 @@ get_header();
                                                                             <h4 ng-bind="'Test' | translate"></h4>
                                                                         </div>
                                                                         <div class="qodef-process-item-text-holder">
-                                                                            <p>Existen tres estapas principales de prueba(Etapa de diseño, Etapa Alfa y Etapa beta) en la cual podras ver el avance progresivo de tu Producto</p>
+                                                                            <p ng-bind="'There are three main stages of testing (Design Stage, Alpha Stage and Beta Stage) in which you can see the progressive progress of your Product' | translate"></p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
