@@ -53,6 +53,19 @@
         </a>
     </li>
     <li class="menu-item">
+        <a href="#testimonials" parallax-cl class=" no_link">
+            <span class="item_outer">
+                <span class="item_inner">
+                    <span class="menu_icon_wrapper">
+                        <i class="menu_icon null fa"></i>
+                    </span>
+                    <span class="item_text" ng-bind="'Testimonials' | translate">Testimonios</span>
+                </span>
+                <span class="plus"></span>
+            </span>
+        </a>
+    </li>
+    <li class="menu-item">
         <a href="#design" parallax-cl class="">
             <span class="item_outer">
                 <span class="item_inner">

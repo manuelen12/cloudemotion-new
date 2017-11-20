@@ -593,7 +593,8 @@ get_header();
                                     </div>
                                 </div>
 
-                                <div data-qodef-parallax-speed="0.5" class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445345084553 qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(./wp-content/themes/cloudemotion/assets/img/parallax-2-home-main.jpg);">
+
+                                <div data-qodef-parallax-speed="0.5" id="testimonials" class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445345084553 qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(./wp-content/themes/cloudemotion/assets/img/parallax-2-home-main.jpg);">
                                     <div class="clearfix qodef-full-section-inner">
                                         <div class="wpb_column vc_column_container">
                                             <div class="vc_column-inner ">
@@ -618,6 +619,7 @@ get_header();
                                                     <div class="vc_empty_space"  style="height: 76px" >
                                                         <span class="vc_empty_space_inner"></span>
                                                     </div>
+
                                                     <div class="qodef-testimonials-holder container">
                                                         <div class="qodef-testimonials owl-carousel owl-theme qodef-section-inner transparent cards_carousel"  data-layout ="cards_carousel">
                                                             <div class="qodef-testimonials-slider-item item">
