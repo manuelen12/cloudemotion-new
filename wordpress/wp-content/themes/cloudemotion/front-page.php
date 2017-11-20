@@ -845,45 +845,13 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
-<?php echo do_shortcode('[amo_member id="12,20" item-width="250" align="left" item-margin="20" full-width="yes" panel="right"]'); ?>
+                               
+
+                                <?php echo do_shortcode('[amo_member id="12,20,32,33" item-width="250" align="left" item-margin="20" full-width="no" panel="center"]'); ?>
+                                   
+                               
                                 <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414638610 qodef-content-aligment-center qodef-grid-section" style="">
                                     <div class="container">
-                                        <div class="qodef-section-inner-margin qodef-team2 owl-theme owl-carousel clearfix">
-
-                                            <div ng-repeat="team in vm.team" class="col-md-3 col-sm-6 col-xs-6 col-lg-3 item text-center" style="margin-top:1em;margin-bottom:1em;">
-                                                <div class="contenido">
-                                                    <div class="team-box box-4">
-                                                        <div class="team-img main-bg">
-                                                            <img ng-src="{{team.image}}" sizes="(max-width: 443px) 100vw, 443px">
-                                                        </div>
-                                                        <div class="team-details main-bg">
-                                                            <h3 class="team-name" ng-bind="team.first_name+' '+team.last_name">Luis García</h3>
-                                                            <h5 class="team-pos white" ng-bind="team.position.name">Programador Front-End</h5>
-                                                            <strong>Especialidades</strong>
-
-                                                            <div class="social-buttons">
-                                                                <a ng-href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110" target="_blank" class="social-button google" href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110">
-                                                                    <i class="fa fa-linkedin"></i>    
-                                                                </a>
-                                                                <a ng-click="copylink('@rexuzsystems')" class="social-button skype">
-                                                                    <i class="fa fa-skype"></i>
-                                                                </a>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-                                        <!-- close div.content_inner -->
-                                    </div>
-                                    <!-- close div.content -->
-
-                                    <div id="portfolios">
-
                                     </div>
 
                                     <footer >
