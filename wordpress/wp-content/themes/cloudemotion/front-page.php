@@ -9,6 +9,7 @@ get_header();
     <div class="loader in"></div>
     <div class="qodef-wrapper">
         <div class="qodef-wrapper-inner">
+            <?php     get_template_part( 'template-parts/navigation/navigation-top', null ); ?>
             <?php putRevSlider("cloud") ?>
             
             <!-- close .qodef-mobile-header -->
