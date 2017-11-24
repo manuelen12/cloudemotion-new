@@ -191,18 +191,24 @@ get_header();
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 qodef-elements-holder-item " >
-                                                                
-                                            <div class="contentHand">
-                                                <img src="./wp-content/themes/cloudemotion/assets/img/handTable.png" class="img-responsive handR" alt="Image">
-                                            </div>
-                                        
+                                                                <div class="qodef-elements-holder-item-inner">
+                                                                    <div class="qodef-elements-holder-item-content qodef-elements-holder-custom-328163" style="padding: 48px 0px 0px 0px">
+                                                                        <div class="wpb_single_image wpb_content_element vc_align_right wpb_bottom-to-top">
+                                                                            <figure class="wpb_wrapper vc_figure">
+                                                                                <div class="vc_single_image-wrapper   vc_box_border_grey">
+                                                                                    <img width="504" height="457" src="./wp-content/themes/cloudemotion/assets/img/graphic-1-home-main.png" class="vc_single_image-img attachment-full" alt="a" srcset="./wp-content/themes/cloudemotion/assets/img/graphic-1-home-main.png 504w, ./wp-content/themes/cloudemotion/assets/img/graphic-1-home-main-300x272.png 300w" sizes="(max-width: 504px) 100vw, 504px" />
+                                                                                </div>
+                                                                            </figure>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    </div>./wp-content/themes/cloudemotion/assets/img/handTable.png
                                 </div>
                             </div>
 
