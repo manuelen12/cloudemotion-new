@@ -23,135 +23,7 @@ get_header();
                     <div class="qodef-full-width">
                         <div class="qodef-full-width-inner">
                             
-                            <div class=" qodef-content-aligment-center qodef-grid-section" id="general">
-                                <div class="container">
-                                <h2><strong ng-bind="'We garantice you' | translate" class="ng-binding"></strong></h2>
-                                    <div class="qodef-section-inner-margin clearfix">
-                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
-                                            <div class="vc_column-inner-350350 ">
-                                                <div class="wpb_wrapper">
-                                                    <span class="qodef-icon-animation-holder" >
-                                                        <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-color="#25cbf5">
-                                                            <i class="qodef-icon-font-awesome fa fa-bookmark-o qodef-icon-element" style="color: #25cbf5;font-size:72px" ></i>
-                                                        </span>
-                                                    </span>
-                                                    <div class="vc_empty_space"  style="height: 30px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <h3><strong ng-bind="'High quality on web develop' | translate"></strong></h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 19px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <p align="justify" ng-bind="'We develop Pro apps for various platform: web, mobile or desktop; we use the newest technology and you can trust on our quality'| translate"></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 50px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
-                                            <div class="vc_column-inner-350">
-                                                <div class="wpb_wrapper">
-                                                    <span class="qodef-icon-animation-holder" style="transition-delay: 200ms;-webkit-transition-delay: 200ms;-moz-transition-delay: 200ms;-ms-transition-delay: 200ms">
-                                                        <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="200" data-color="#25cbf5">
-                                                            <i class="qodef-icon-font-awesome fa fa-commenting-o qodef-icon-element" style="color: #25cbf5;font-size:72px" ></i>
-                                                        </span>
-                                                    </span>
-                                                    <div class="vc_empty_space"  style="height: 30px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <h3><strong ng-bind="'Supporting and Services IT'|translate"></strong></h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 19px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <p align="justify" ng-bind="'IT training, tutorials and project management which help the clients according to their needs and suit to their information requirements'| translate"></p>
-                                                        </div>
-                                                    </div>
 
-                                                    <div class="vc_empty_space"  style="height: 50px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
-                                            <div class="vc_column-inner-350">
-                                                <div class="wpb_wrapper">
-                                                    <span class="qodef-icon-animation-holder" style="transition-delay: 400ms;-webkit-transition-delay: 400ms;-moz-transition-delay: 400ms;-ms-transition-delay: 400ms">
-                                                        <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="400" data-color="#25cbf5">
-                                                            <i class="qodef-icon-font-awesome fa fa-hdd-o qodef-icon-element" style="color: #25cbf5;font-size:72px" ></i>
-                                                        </span>
-                                                    </span>
-                                                    <div class="vc_empty_space"  style="height: 30px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <h3><strong ng-bind="'Variety Platforms' | translate"></strong></h3><br>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 19px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <p align="justify" ng-bind="'We manage all of your hardware and software requirements what help you support your IT apps and services on free (Linux) or private (Windows) platform'| translate"></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 50px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
-                                            <div class="vc_column-inner-350">
-                                                <div class="wpb_wrapper">
-                                                    <span class="qodef-icon-animation-holder" style="transition-delay: 600ms;-webkit-transition-delay: 600ms;-moz-transition-delay: 600ms;-ms-transition-delay: 600ms">
-                                                        <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="600" data-color="#25cbf5">
-                                                            <i class="qodef-icon-font-awesome fa fa-folder-open-o qodef-icon-element" style="color: #25cbf5;font-size:72px" ></i>
-                                                        </span>
-                                                    </span>
-                                                    <div class="vc_empty_space"  style="height: 30px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <h3><strong ng-bind="'Projects Portfolio'| translate"></strong></h3><br>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 19px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <p align="justify" ng-bind="'Meet our adaptable works high quality, made for various business models. Be part of our pleased customers list'|translate"></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 50px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                             <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left"  id="creative">
                                 <div class="clearfix qodef-full-section-inner">
                                     <div class="wpb_column vc_column_container">
@@ -208,7 +80,7 @@ get_header();
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>./wp-content/themes/cloudemotion/assets/img/handTable.png
+                                    </div>
                                 </div>
                             </div>
 
