@@ -1,3 +1,5 @@
+wordpress/wp-content/plugins/
+cloudemotion/*/migrations/*
 wordpress/wp-content/uploads/
 *.pyc
 *.orig
