@@ -39,7 +39,7 @@ get_header();
 
                                                                         <div class="wpb_text_column wpb_content_element ">
                                                                             <div class="wpb_wrapper">
-                                                                                <h2><strong ng-bind="'We help you to design your business image on web' | translate"></strong></h2>
+                                                                                <h2><strong ng-bind="'We help to create your corporate image' | translate"></strong></h2>
                                                                             </div>
                                                                         </div>
                                                                         <div class="vc_empty_space"  style="height: 20px" >
@@ -47,7 +47,10 @@ get_header();
                                                                         </div>
                                                                         <div class="wpb_text_column wpb_content_element ">
                                                                             <div class="wpb_wrapper">
-                                                                                <h4 align="justify" ng-bind="'We use the newest technology and tools while your business page is designed. Thus we guarantee you an extraordinary, innovative and catching experience. This one will give you the oportunity to boots your brand on internet'| translate"></h4>
+                                                                                <h4 align="justify" ng-bind="'We are a team of professionals specialized in Marketing Strategies, Creation of mobile applications, and Web Development, We offer innovative strategies for the growth of your company.'| translate"></h4>.
+                                                                                <br>
+
+                                                                                <h4 align="justify" ng-bind="'We analyze your ideas and implement the appropriate methodologies to become your products in the best on the market.'| translate"></h4>.
                                                                             </div>
                                                                         </div>
                                                                         <div class="vc_empty_space"  style="height: 43px" >
@@ -68,7 +71,7 @@ get_header();
                                                                         <div class="wpb_single_image wpb_content_element vc_align_right wpb_bottom-to-top">
                                                                             <figure class="wpb_wrapper vc_figure">
                                                                                 <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                                                    <img width="504" height="457" src="./wp-content/themes/cloudemotion/assets/img/graphic-1-home-main.png" class="vc_single_image-img attachment-full" alt="a" srcset="./wp-content/themes/cloudemotion/assets/img/graphic-1-home-main.png 504w, ./wp-content/themes/cloudemotion/assets/img/graphic-1-home-main-300x272.png 300w" sizes="(max-width: 504px) 100vw, 504px" />
+                                                                                    <img width="504" height="457" src="./wp-content/themes/cloudemotion/assets/img/programadores.png" class="vc_single_image-img attachment-full" alt="a" srcset="./wp-content/themes/cloudemotion/assets/img/programadores.png 504w, ./wp-content/themes/cloudemotion/assets/img/graphic-1-home-main-300x272.png 300w" sizes="(max-width: 504px) 100vw, 504px" />
                                                                                 </div>
                                                                             </figure>
                                                                         </div>
