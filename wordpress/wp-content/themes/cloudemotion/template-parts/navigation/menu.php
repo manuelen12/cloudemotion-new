@@ -14,7 +14,7 @@
         </a>
     </li>
     <li class="menu-item">
-        <a href="#creative" parallax-cl class="">
+        <a href="#about_us" parallax-cl class="">
             <span class="item_outer">
                 <span class="item_inner">
                     <span class="menu_icon_wrapper">
@@ -27,7 +27,7 @@
         </a>
     </li>
     <li class="menu-item">
-        <a href="#portfolios" parallax-cl class="">
+        <a href="#services" parallax-cl class="">
             <span class="item_outer">
                 <span class="item_inner">
                     <span class="menu_icon_wrapper">
@@ -46,7 +46,7 @@
                     <span class="menu_icon_wrapper">
                         <i class="menu_icon null fa"></i>
                     </span>
-                    <span class="item_text" ng-bind="'Portfolio' | translate">Portafolio</span>
+                    <span class="item_text" ng-bind="'Portafolio' | translate">Portafolio</span>
                 </span>
                 <span class="plus"></span>
             </span>

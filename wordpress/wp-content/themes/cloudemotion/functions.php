@@ -24,6 +24,7 @@ if(!is_admin()){
 		'style_dynamic',
 		'style_dynamic_responsive',
 		'styles',
+		'abacosystems',
 		//'toolbar',
 		'bootstrap.min',
 		'woocommerce-responsive.min',
