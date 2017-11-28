@@ -58,6 +58,19 @@
 	function setTestimonial() {
 		if (($(document).width())<769) {$(".qodef-testimonials-slider-item").css("width","100%");}
 	}
+	console.log(Waypoint);
+
+	var waypoint = new Waypoint({
+		element: document.getElementById('basic-waypoint'),
+		handler: function() {
+			notify('Basic waypoint triggered')
+		}
+	})
+	
+
+	function handlerAnimation(){
+
+	}
 
 	// Make navigation 'stick'.
 	function adjustScrollClass() {
@@ -255,8 +268,8 @@
 		if ( true === supportsFixedBackground() ) {
 			document.documentElement.className += ' background-fixed';
 		}
-	
-	setCarousel(".qodef-testimonials",null,arrows);
+		
+		setCarousel(".qodef-testimonials",null,arrows);
 
 	});
 
@@ -292,27 +305,27 @@
 
 
 })( jQuery );
-	var arrows={navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]};
+var arrows={navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]};
 
-	function setCarousel(parentElement,options,add) {
-		setTimeout(function() {
+function setCarousel(parentElement,options,add) {
+	setTimeout(function() {
 		console.log(options);
-			var options=options?options:{
-				loop:false,
-				margin:10,
-				nav:true,
-				autoplay:true,
-				responsiveClass:true,
-				items:1,
-				animateOut: 'fadeOut',
-				animateIn: 'fadeIn',
+		var options=options?options:{
+			loop:false,
+			margin:10,
+			nav:true,
+			autoplay:true,
+			responsiveClass:true,
+			items:1,
+			animateOut: 'fadeOut',
+			animateIn: 'fadeIn',
 
-			}
-			if (add) {
-				options=Object.assign(options,add);
-			}
-			console.log(options);
-			$(parentElement).owlCarousel(options)
+		}
+		if (add) {
+			options=Object.assign(options,add);
+		}
+		console.log(options);
+		$(parentElement).owlCarousel(options)
 
-		},1000)
-	}	
+	},1000)
+}	

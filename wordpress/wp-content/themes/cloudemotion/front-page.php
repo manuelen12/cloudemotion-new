@@ -47,7 +47,7 @@ get_header();
                             </div>
                             <div class=" qodef-content-aligment-center qodef-grid-section" id="general">
                                 <div class="container">
-                                <h2><strong ng-bind="'We garantice you' | translate" class="ng-binding"></strong></h2>
+                                <h2 style="margin-bottom: 3em;"><strong ng-bind="'We garantice you' | translate" class="ng-binding"></strong></h2>
                                     <div class="qodef-section-inner-margin clearfix">
                                         <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
                                             <div class="vc_column-inner-350350 ">
@@ -240,7 +240,7 @@ get_header();
                                         <span class="vc_empty_space_inner"></span>
                                     </div>
                                 </div>
-                                <div class="qodef-section vc_custom_1462539692373 qodef-content-aligment-center qodef-grid-section" style="padding: 0;">
+                                <div class="qodef-section qodef-content-aligment-center qodef-grid-section" style="padding: 0;">
                                     <div class="container">
                                         <div class="qodef-section-inner-margin clearfix">
                                             <div class="wpb_column vc_column_container">
@@ -391,7 +391,7 @@ get_header();
                                 </div>
                             </div>
 
-                            <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445420473166 qodef-content-aligment-left qodef-grid-section" >
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-grid-section" >
                                 <div class="container">
                                     <div class="qodef-section-inner-margin clearfix">
                                         <div class="wpb_column vc_column_container">
@@ -503,7 +503,7 @@ get_header();
                                                         <div class="vc_empty_space"  style="height: 78px" >
                                                             <span class="vc_empty_space_inner"></span>
                                                         </div>
-                                                        <div class="wpb_text_column wpb_content_element  vc_custom_1446567667184">
+                                                        <div class="wpb_text_column wpb_content_element ">
                                                             <div class="wpb_wrapper">
                                                                 <h2 ng-bind="'Planning is everything...'|translate"></h2>
                                                             </div>
@@ -615,7 +615,7 @@ get_header();
                                     </div>
                                 </div>
 
-                                <div data-qodef-parallax-speed="0.5" class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445345084553 qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(./wp-content/themes/cloudemotion/assets/img/parallax-2-home-main.jpg);">
+                                <div data-qodef-parallax-speed="0.5" class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(./wp-content/themes/cloudemotion/assets/img/parallax-2-home-main.jpg);">
                                     <div class="clearfix qodef-full-section-inner">
                                         <div class="wpb_column vc_column_container">
                                             <div class="vc_column-inner ">
@@ -843,7 +843,7 @@ get_header();
                                     </div>
                                 </div>
 
-                                <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="team">
+                                <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom qodef-content-aligment-center" id="team">
                                     <div class="clearfix qodef-full-section-inner">
                                         <div class="wpb_column vc_column_container">
                                             <div class="vc_column-inner ">
@@ -867,7 +867,7 @@ get_header();
                                     </div>
                                 </div>
 
-                                <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414638610 qodef-content-aligment-center qodef-grid-section" style="">
+                                <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-center qodef-grid-section" style="">
                                     <div class="container">
                                         <div class="qodef-section-inner-margin qodef-team2 owl-theme owl-carousel clearfix">
 
