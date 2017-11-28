@@ -1511,6 +1511,9 @@ Screen Stylesheet
       font-size: 14px;
     }
 
+    .qodef-content-aligment-center,.qodef-content-aligment-left,.qodef-content-aligment-right{
+      padding: 3em 0;
+    }
 
     .contentTeam{display: inline-block;position: relative;}
     .contentTeam:before{

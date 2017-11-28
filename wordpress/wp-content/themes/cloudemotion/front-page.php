@@ -854,7 +854,7 @@ get_header();
                                 </div>
                                
 
-                                <?php echo do_shortcode('[amo_member id="12,20,32,33" item-width="250" align="left" item-margin="20" full-width="no" panel="center"]'); ?>
+                                <?php echo do_shortcode('[amo_member id="50,52,51,53" item-width="250" align="left" item-margin="20" full-width="no" panel="center"]'); ?>
                                    
                                
                                 <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414638610 qodef-content-aligment-center qodef-grid-section" style="">
