@@ -20,13 +20,13 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'cloudemotion');
+define('DB_NAME', 'wordpress');
 
 /** MySQL database username */
-define('DB_USER', 'root');
+define('DB_USER', 'wordpress');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'sector379.aA');
+define('DB_PASSWORD', '12111201');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
@@ -54,11 +54,7 @@ define('AUTH_SALT',        '+k0?_0R(@@)&I/H)s6QTnA2uZ`e<(PGFvLO=#n!qaDyyM:e9B?*,
 define('SECURE_AUTH_SALT', '&GcxNQcR}EC<O;IiGK5da-h|s%1./^&UlAg#gK@7&+q-.C?YJhmbtV[K_N2kU(q;');
 define('LOGGED_IN_SALT',   ' /M %|m!/SiLxE6r:ciySOi}VBoFpY:[+zdNKIU#TMcykxHb63W`z_nQt:+HN TX');
 define('NONCE_SALT',       'F8uy1}>Yooh9]v]>GcQN2bW+E9okD2UsNO&@gt!c0OcyS_Q5h@Rv6R8@xUXi$vC6');
-define('FTP_BASE', '/var/www/html/cloudemotion/wordpress/');
-define('FTP_CONTENT_DIR', '/var/www/html/cloudemotion/wordpress/wp-content/');
-define('FTP_USER', 'ftp_cloud');
-define('FTP_PASS', 'sector379');
-define('FTP_HOST', '190.38.63.129');
+
 /**#@-*/
 
 /**
