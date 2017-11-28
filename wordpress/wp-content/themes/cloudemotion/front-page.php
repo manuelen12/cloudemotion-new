@@ -99,10 +99,10 @@ get_header();
                                             <div class="tab" role="tabpanel">
                                                 <!-- Nav tabs -->
                                                 <ul class="nav nav-tabs" role="tablist" id="myTab1" style="text-align:center;">
-                                                    <li role="presentation" ng-class="{'active':vm.service_t==1}"><a ng-click="vm.service_t=1" aria-controls="home" role="tab" data-toggle="tab">
-                                                        <i><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icomarketing.png" width="50px" height="50px" alt="Marketing"></i> Marketing</a></li>
                                                     <li role="presentation" ng-class="{'active':vm.service_t==2}"><a ng-click="vm.service_t=2" aria-controls="home" role="tab" data-toggle="tab">
                                                         <i><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icomobile.png" width="50px" height="50px" alt="Mobile"></i> Mobile</a></li>
+                                                    <li role="presentation" ng-class="{'active':vm.service_t==1}"><a ng-click="vm.service_t=1" aria-controls="home" role="tab" data-toggle="tab">
+                                                        <i><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icomarketing.png" width="50px" height="50px" alt="Marketing"></i> Marketing</a></li>
                                                     <li role="presentation" ng-class="{'active':vm.service_t==3}"><a ng-click="vm.service_t=3" aria-controls="home" role="tab" data-toggle="tab">
                                                         <i><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icoweb.png" width="50px" height="50px" alt="Web"></i> Web</a></li>
                                                 </ul>
@@ -112,7 +112,9 @@ get_header();
                                                     <div role="tabpanel" class="tab-pane fade in active" id="Section1">
                                                         <div class="row">
                                                             <div class="col-md-5">
-                                                                <img src="./marketing_digital.gif" alt="Marketing Digital" class="img-responsive text-center">
+                                                                <br>
+                                                                <br>
+                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing_digital.jpg" alt="Marketing Digital" class="img-responsive text-center">
                                                             </div>
                                                             <div class="col-md-7">
                                                                 <div class="row">
