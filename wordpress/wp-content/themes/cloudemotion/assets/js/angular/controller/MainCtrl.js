@@ -24,6 +24,7 @@
 			getTeam:urlHelpers.get("users"),
 			getPorfolios:urlHelpers.get("portfolios"),
 			setBackground:setBackground,
+			service_t: 2
 		});
 		function changeLanguage() {
 			vm.country = (vm.country=='es'?'en':'es');

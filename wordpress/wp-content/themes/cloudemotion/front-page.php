@@ -109,7 +109,7 @@ get_header();
                                                 <!-- Tab panes -->
                                                 <div class="tab-content tabs">
                                                     <!-- Tab 1 Marketing -->
-                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                                                    <div role="tabpanel" class="tab-pane animated fadeIn" ng-class="{'active':vm.service_t==1}" id="Section1">
                                                         <div class="row">
                                                             <div class="col-md-5">
                                                                 <br>
@@ -176,393 +176,140 @@ get_header();
                                                         </div>
                                                     </div>
                                                     <!-- Tab 2 Landing Page -->
-                                                    <div role="tabpanel" class="tab-pane fade" id="Section2">
-                                                        <!-- SLIDER -->
-                                                        <div id="landing-slider" class="owl-carousel owl-theme" style="opacity: 0; display: block;">
-                                                            <div class="owl-wrapper-outer autoHeight" style="height: 0px;"><div class="owl-wrapper" style="width: 600px; left: 0px; display: block;"><div class="owl-item" style="width: 100px;"><div class="testimonial" style="height:200px;">
+                                                    <div role="tabpanel" class="tab-pane animated fadeIn" ng-class="{'active':vm.service_t==2}" id="Section1">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <br>
+                                                                <br>
+                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile_phone.jpg" alt="Marketing Digital" class="img-responsive text-center">
+                                                            </div>
+                                                            <div class="col-md-7">
                                                                 <div class="row">
-                                                                    <div class="col-md-8 col-xs-12">
-                                                                        <div class="row">
-                                                                            <div class="col-md-4 col-sm-6">
-                                                                                <div class="serviceBox">
-                                                                                    <div class="service-icon">
-                                                                                        <img width="90" src="./landing1.jpg" alt="Marketing Digital" class="text-center">
-                                                                                    </div>
-                                                                                    <div class="service-content">
-                                                                                        <h4>Contenido Relevante</h4>
-                                                                                        <p style="line-height:20px; font-size:16px;">
-                                                                                            Diseño y contenido en contexto a los enlaces y campañas correspondientes.
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-4 col-sm-6">
-                                                                                <div class="serviceBox" style="border-right:0px;">
-                                                                                    <div class="service-icon">
-                                                                                        <img width="90" src="./landing2.jpg" alt="Marketing Digital" class="text-center">
-                                                                                    </div>
-                                                                                    <div class="service-content">
-                                                                                        <h4>Impacto en la llamada</h4>
-                                                                                        <p style="line-height:20px; font-size:16px;">
-                                                                                            Obtener respuesta y comentarios de los usuarios a través de llamadas adecuadas a la acción.
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-4 col-sm-6">
-                                                                                <div class="serviceBox" style="border-right:0px;">
-                                                                                    <div class="service-icon">
-                                                                                        <img width="90" src="./landing3.jpg" alt="Marketing Digital" class="text-center">
-                                                                                    </div>
-                                                                                    <div class="service-content">
-                                                                                        <h4>Integración Multimedia</h4>
-                                                                                        <p style="line-height:20px; font-size:16px;">
-                                                                                            Videos, imágenes HD y audio para atraer a los usuarios de manera interactiva.
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="row">
-                                                                            <div class="col-md-4 col-sm-6">
-                                                                                <div class="serviceBox">
-                                                                                    <div class="service-icon">
-                                                                                        <img width="90" src="./landing4.jpg" alt="Marketing Digital" class="text-center">
-                                                                                    </div>
-                                                                                    <div class="service-content">
-                                                                                        <h4>Diseño fácil de usar</h4>
-                                                                                        <p style="line-height:20px; font-size:16px;">
-                                                                                            Permitir que los usuarios naveguen fácilmente para obtener la información que buscan.
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-4 col-sm-6">
-                                                                                <div class="serviceBox" style="border-right:0px;">
-                                                                                    <div class="service-icon">
-                                                                                        <img width="90" src="./landing5.jpg" alt="Marketing Digital" class="text-center">
-                                                                                    </div>
-                                                                                    <div class="service-content">
-                                                                                        <h4>Arquitectura Planificada</h4>
-                                                                                        <p style="line-height:20px; font-size:16px;">
-                                                                                            Diseño de página web basado en marketing completo y datos de usuario.
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-md-4 col-sm-6">
-                                                                                <div class="serviceBox" style="border-right:0px;">
-                                                                                    <div class="service-icon">
-                                                                                        <img width="90" src="./landing6.jpg" alt="Marketing Digital" class="text-center">
-                                                                                    </div>
-                                                                                    <div class="service-content">
-                                                                                        <h4>Diseños Flexibles</h4>
-                                                                                        <p style="line-height:20px; font-size:16px;">
-                                                                                            Páginas Web que son fáciles de actualizar o modificar para diferentes estrategias.
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-4 col-xs-12">
-                                                                        <h4>Produciremos una página de aterrizaje que impactará a sus usuarios a primera vista.</h4>
-                                                                        <br>
-                                                                        <p>Nuestros objetivos son:</p>
-                                                                        <ul style="text-align:left">
-                                                                            <li>Convertir los visitantes en asociados o fidelizar los ya vinculados.</li>
-                                                                            <li>Desplegar contenido destacado y relevante de los productos y servicios.</li>
-                                                                            <li>Recoger información o actualizar datos de los asociados o nuevos prospectos.</li>
-                                                                            <li>Promocionar las ventajas de adquirir el portafolio de productos y servicios de la compañía.</li>
-                                                                            <li>Informar sobre concursos o premios.</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div></div><div class="owl-item" style="width: 100px;"><div class="testimonial">
-                                                                <h3>Portafolio</h3>
-                                                                <hr>
-                                                                <div class="row">
-                                                                    <div class="col-xs-6 col-md-3">
-                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
-                                                                            <img src="./template1.jpg">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="col-xs-6 col-md-3">
-                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
-                                                                            <img src="./template2.jpg">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="col-xs-6 col-md-3">
-                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
-                                                                            <img src="./template3.jpg">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="col-xs-6 col-md-3">
-                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
-                                                                            <img src="./template4.jpg">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="row">
-                                                                    <div class="col-xs-6 col-md-3">
-                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
-                                                                            <img src="./template5.jpg">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="col-xs-6 col-md-3">
-                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
-                                                                            <img src="./template6.jpg">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="col-xs-6 col-md-3">
-                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
-                                                                            <img src="./template7.jpg">
-                                                                        </a>
-                                                                    </div>
-                                                                    <div class="col-xs-6 col-md-3">
-                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
-                                                                            <img src="./template8.jpg">
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div></div><div class="owl-item" style="width: 100px;"><div class="testimonial">
-                                                                <h4 style="font-size:18px">Características y Servicios Landing Page</h4>
-                                                                <hr>
-                                                                <div class="row">
-                                                                    <div class="col-md-3 col-sm-6">
-                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                    <div class="col-md-6 col-sm-6">
+                                                                        <div class="serviceBox">
                                                                             <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/pay_advertising.png" alt="Marketing Digital" class="text-center">
                                                                             </div>
                                                                             <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    Más de 500 paltillas 100% responsivas.
+                                                                                <h3 ng-bind="'Personalized Design' | translate">Personalized Design</h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'We develop an impact interface with animations to make your applications visually impressive for users.' | translate">
                                                                                 </p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-3 col-sm-6">
+                                                                    <div class="col-md-6 col-sm-6">
                                                                         <div class="serviceBox" style="border-right:0px;">
                                                                             <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/email_marketing.png" alt="Marketing Digital" class="text-center">
                                                                             </div>
                                                                             <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    Formas diversas para encuentas o captura de información.
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-3 col-sm-6">
-                                                                        <div class="serviceBox" style="border-right:0px;">
-                                                                            <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
-                                                                            </div>
-                                                                            <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    Optimización avanzada para móviles.
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-3 col-sm-6">
-                                                                        <div class="serviceBox" style="border-right:0px;">
-                                                                            <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
-                                                                            </div>
-                                                                            <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    informes gráficos de reportes analíticos sobre las gestiones realizadas.
+                                                                                <h3 ng-bind="'Android and Apple' | translate">Android and Apple</h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'We have experience in converting simple ideas into a complex reality for both mobile platforms.' | translate">
+                                                                                    We have experience in converting simple ideas into a complex reality for both mobile platforms.
                                                                                 </p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row">
-                                                                    <div class="col-md-3 col-sm-6">
-                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                    <div class="col-md-4 col-sm-4">
+                                                                        <div class="serviceBox">
                                                                             <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/social_media.png" alt="Marketing Digital" class="text-center">
                                                                             </div>
                                                                             <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    Implementación de SEO en Landing Pages.
+                                                                                <h3 ng-bind="'Updates' | translate">Updates</h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'We ensure that the components of your application will always be in their latest version and available in Appstore and Playstore.' | translate">
+                                                                                    We ensure that the components of your application will always be in their latest version and available in Appstore and Playstore.
                                                                                 </p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-3 col-sm-6">
-                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                    <div class="col-md-4 col-sm-4">
+                                                                        <div class="serviceBox">
                                                                             <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/social_media.png" alt="Marketing Digital" class="text-center">
                                                                             </div>
                                                                             <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    Servicios de Desarrollo y Soporte.
+                                                                                <h3 ng-bind="'Artificial intelligence' | translate">Artificial intelligence</h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'We innovate solutions using automated systems that integrate GPS geolocation, device management by Bluethooth, among others.' | translate">
+                                                                                    We innovate solutions using automated systems that integrate GPS geolocation, device management by Bluethooth, among others.
                                                                                 </p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-3 col-sm-6">
+                                                                    <div class="col-md-4 col-sm-4">
                                                                         <div class="serviceBox" style="border-right:0px;">
                                                                             <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/brand_generation.png" alt="Marketing Digital" class="text-center">
                                                                             </div>
                                                                             <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    Hosting en servidores propios hasta 200Mb. por Landing Page.
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-3 col-sm-6">
-                                                                        <div class="serviceBox" style="border-right:0px;">
-                                                                            <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
-                                                                            </div>
-                                                                            <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    Hasta cuatro (4) Landing Pages mensuales.
+                                                                                <h3 ng-bind="'Security' | translate">Security</h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'We integrate the best encryption methods to ensure the confidentiality of your data. A vital function for any application.' | translate">
+                                                                                    We integrate the best encryption methods to ensure the confidentiality of your data. A vital function for any application.
+                                                                                    
                                                                                 </p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div></div></div></div>
-                                                            
-                                                            
-                                                        <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                     <!-- Tab 3 Community -->
-                                                    <div role="tabpanel" class="tab-pane fade" id="Section3">
-                                                        <div id="community-slider" class="owl-carousel owl-theme" style="opacity: 0; display: block;">
-                                                            <div class="owl-wrapper-outer autoHeight" style="height: 0px;"><div class="owl-wrapper" style="width: 400px; left: 0px; display: block;"><div class="owl-item" style="width: 100px;"><div class="testimonial">
+                                                    <div role="tabpanel" class="tab-pane animated fadeIn" ng-class="{'active':vm.service_t==3}" id="Section1">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <br>
+                                                                <br>
+                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/web_page_1.jpg" alt="Web Page" class="img-responsive text-center">
+                                                            </div>
+                                                            <div class="col-md-7">
                                                                 <div class="row">
-                                                                    <div class="col-md-5">
-                                                                        <img src="./communitymanager.jpg" alt="Marketing Digital" class="text-center img-responsive">
-                                                                    </div>
-                                                                    <div class="col-md-7">
-                                                                        <h4>Nuestra Gestión de Community Manager integra el mensaje que se desea dar al asociado con la tecnología para:</h4>
-                                                                        <br>
-                                                                        <hr>
-                                                                        <ul style="text-align:left">
-                                                                            <li>Hacer la captación de nuevos seguidores.</li>
-                                                                            <li>Interactuar, escuchar, fidelizar e impulsar la marca.</li>
-                                                                            <li>Publicar y actualizar información de interés general y promover la filosofía organizacional por medio de la misma.</li>
-                                                                            <li>Recoger inquietudes, sugerencias y peticiones para dar respuesta correcta y oportuna.</li>
-                                                                            <li>Recolectar y actualizar los datos de los asociados.</li>
-                                                                            <li>Programar contenido nuevo en fines de semana, en eventos promocionales, concursos o fechas de acontecimientos importantes.</li>
-                                                                            <li>Publicación de preguntas o cuestionarios para atraer la atención de los asociados o aquellos que no lo son.</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div></div><div class="owl-item" style="width: 100px;"><div class="testimonial">
-                                                                <h4 style="font-size:18px">Servicios Community Manager</h4>
-                                                                <p style="font-size:16px">Profesional experto con gestión de redes sociales y marketing digital.</p>
-                                                                <hr>
-                                                                <div class="row">
-                                                                    <div class="col-md-3 col-sm-6">
+                                                                    <div class="col-md-12 col-sm-12">
                                                                         <div class="serviceBox" style="border-right:0px;">
                                                                             <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/simple_creative_1.png" alt="Web Page" class="text-center">
                                                                             </div>
                                                                             <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    (10) post mensuales en las redes con diseño especial (Facebook, Twitter, linkedIn, blog).
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-3 col-sm-6">
-                                                                        <div class="serviceBox" style="border-right:0px;">
-                                                                            <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
-                                                                            </div>
-                                                                            <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    Creación de contenido, redacción de mensajes adaptados según el contenido que usted envía al contratarnos.
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-3 col-sm-6">
-                                                                        <div class="serviceBox" style="border-right:0px;">
-                                                                            <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
-                                                                            </div>
-                                                                            <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    (1) post diario de contenido relacionado a (tema de elección por el cliente) (noticias)(Twitter, Facebook, LinkedIn).
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-3 col-sm-6">
-                                                                        <div class="serviceBox" style="border-right:0px;">
-                                                                            <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
-                                                                            </div>
-                                                                            <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    Diseño personalizado de portada Box / (Fondos de redes sociales).
+                                                                                <h3 ng-bind="'Simple and Creative' | translate">Simple and Creative</h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'Defer from others with our original and innovative designs. We reflect your identity with the latest technologies.' | translate">
+                                                                                    Defer from others with our original and innovative designs. We reflect your identity with the latest technologies.
                                                                                 </p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="row">
-                                                                    <div class="col-md-3 col-sm-6">
-                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                    <div class="col-md-6 col-sm-6">
+                                                                        <div class="serviceBox">
                                                                             <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/customizable_1.png" alt="Web Page" class="text-center">
                                                                             </div>
                                                                             <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    Moderación de contenidos en Blog.
+                                                                                <h3 ng-bind="'Customizable' | translate">Customizable</h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'We work so that your design is visually impressive and captures the immediate attention of your clients.' | translate">
+                                                                                    We work so that your design is visually impressive and captures the immediate attention of your clients.
                                                                                 </p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-3 col-sm-6">
+                                                                    <div class="col-md-6 col-sm-6">
                                                                         <div class="serviceBox" style="border-right:0px;">
                                                                             <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/fast_adaptive.png" alt="Web Page" class="text-center">
                                                                             </div>
                                                                             <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    Analíticos y listado de posibles clientes mensuales.
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-3 col-sm-6">
-                                                                        <div class="serviceBox" style="border-right:0px;">
-                                                                            <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
-                                                                            </div>
-                                                                            <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    Creación de perfiles Twitter, Facebook, Instagram.
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col-md-3 col-sm-6">
-                                                                        <div class="serviceBox" style="border-right:0px;">
-                                                                            <div class="service-icon">
-                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
-                                                                            </div>
-                                                                            <div class="service-content">
-                                                                                <p style="font-size:18px">
-                                                                                    Moderación de comentarios, depurar y contestar comentarios malintencionados hacia la empresa o perfiles profesionales.
+                                                                                <h3 ng-bind="'Fast and adaptive' | translate">Fast and adaptive</h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'We think about performance, we design pages that load fast and adapt to the resolution of the device.' | translate">
+                                                                                    We think about performance, we design pages that load fast and adapt to the resolution of the device.
                                                                                 </p>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                            </div></div></div></div>
-                                                            
-                                                        <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div><div class="owl-buttons"><div class="owl-prev"></div><div class="owl-next"></div></div></div></div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
