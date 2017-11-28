@@ -131,12 +131,12 @@ get_header();
                                                                     <div class="col-md-6 col-sm-6">
                                                                         <div class="serviceBox" style="border-right:0px;">
                                                                             <div class="service-icon">
-                                                                                <img width="80" src="./social.png" alt="Marketing Digital" class="text-center">
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/email_marketing.png" alt="Marketing Digital" class="text-center">
                                                                             </div>
                                                                             <div class="service-content">
-                                                                                <h3>Contenido Social</h3>
-                                                                                <p style="line-height:20px; font-size:16px;">
-                                                                                    Dejamos atrás el contenido estático y proveemos contenido de valor que obliga a las personas a interactuar.
+                                                                                <h3 ng-bind="'Email Marketing' | translate">Email Marketing</h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'Loyalty your subscribers with regular emails, we take care of cleaning your database, design templates and much more.' | translate">
+                                                                                    Loyalty your subscribers with regular emails, we take care of cleaning your database, design templates and much more.
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -146,12 +146,12 @@ get_header();
                                                                     <div class="col-md-6 col-sm-6">
                                                                         <div class="serviceBox">
                                                                             <div class="service-icon">
-                                                                                <img width="80" src="./megaphone.png" alt="Marketing Digital" class="text-center">
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/social_media.png" alt="Marketing Digital" class="text-center">
                                                                             </div>
                                                                             <div class="service-content">
-                                                                                <h3>Publicidad Paga</h3>
-                                                                                <p style="line-height:20px; font-size:16px;">
-                                                                                    Por menos de lo que usted se imagina, puede pautar en las principales redes sociales y lograr un gran incremento de tráfico.
+                                                                                <h3 ng-bind="'Social Media Marketing' | translate">Social Media Marketing</h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'We use social networks to boost your brand, capture, retain and then convert your followers into potential customers.' | translate">
+                                                                                    We use social networks to boost your brand, capture, retain and then convert your followers into potential customers.
                                                                                 </p>
                                                                             </div>
                                                                         </div>
@@ -159,12 +159,12 @@ get_header();
                                                                     <div class="col-md-6 col-sm-6">
                                                                         <div class="serviceBox" style="border-right:0px;">
                                                                             <div class="service-icon">
-                                                                                <img width="80" src="./stats.png" alt="Marketing Digital" class="text-center">
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/brand_generation.png" alt="Marketing Digital" class="text-center">
                                                                             </div>
                                                                             <div class="service-content">
-                                                                                <h3>Community Manager</h3>
-                                                                                <p style="line-height:20px; font-size:16px;">
-                                                                                    Construir su base de seguidores y mantenerlos comprometidos puede impulsar su negocio hacia adelante.
+                                                                                <h3 ng-bind="'Brand Generation' | translate">Brand Generation</h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'We provide the best advice to define your corporate identity and the communicative values that connect you with your possible clients.' | translate">
+                                                                                    
                                                                                 </p>
                                                                             </div>
                                                                         </div>
