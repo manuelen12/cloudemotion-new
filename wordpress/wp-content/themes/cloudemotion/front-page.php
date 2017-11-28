@@ -10,7 +10,8 @@ get_header();
     <div class="qodef-wrapper">
         <div class="qodef-wrapper-inner">
             <?php     get_template_part( 'template-parts/navigation/navigation-top', null ); ?>
-            <?php putRevSlider('prueba1', 'homepage'); ?>
+            <?php putRevSlider("cloud") ?>
+            
             <!-- close .qodef-mobile-header -->
             <a id='qodef-back-to-top'  href='#'>
                 <span class="qodef-icon-stack">
@@ -21,160 +22,9 @@ get_header();
                 <div class="qodef-content-inner">
                     <div class="qodef-full-width">
                         <div class="qodef-full-width-inner">
-                            <div class=" qodef-content-aligment-center qodef-grid-section" id="home">
-                                <div class="container">
-                                    <div class="qodef-section-inner-margin clearfix">
-                                        <div class="col-md-6">
-                                            <div class="jumbotron home">
-                                                <div class="container">
-                                                    <img class="qodef-normal-logo" src="./wp-content/themes/cloudemotion/assets/img/logo_header.jpg" alt="logo">
-                                                    <p>
-                                                        Somos una empresa de tecnologia dedicada a solucionar las dificultades tecnologicas de nuestros clientes abarcando distintos tipos de areas tales como Desarrollo de aplicaciones(Web, Moviles), Gestion de Proyectos, Marketing Web entre otros..
-                                                    </p>
-                                                    <p>
-                                                        A diario nuevas tecnologias salen al mercado y cada vez mas a los negocios los alejan de la actualidad. Cloudemotion tiene un compromiso total con el continuo aprendizaje y ejecuciones de las buenas practicas para mantener a tu negocio en la vanguardia tecnologica...
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="contentTeam">
-                                                <img src="./wp-content/themes/cloudemotion/assets/img/teamwork.png" class="img-responsive teamR" alt="Image">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class=" qodef-content-aligment-center qodef-grid-section" id="general">
-                                <div class="container">
-                                <h2 style="margin-bottom: 3em;"><strong ng-bind="'We garantice you' | translate" class="ng-binding"></strong></h2>
-                                    <div class="qodef-section-inner-margin clearfix">
-                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
-                                            <div class="vc_column-inner-350350 ">
-                                                <div class="wpb_wrapper">
-                                                    <span class="qodef-icon-animation-holder" >
-                                                        <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-color="#25cbf5">
-                                                            <i class="qodef-icon-font-awesome fa fa-bookmark-o qodef-icon-element" style="color: #25cbf5;font-size:72px" ></i>
-                                                        </span>
-                                                    </span>
-                                                    <div class="vc_empty_space"  style="height: 30px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <h3><strong ng-bind="'High quality on web develop' | translate"></strong></h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 19px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <p align="justify" ng-bind="'We develop Pro apps for various platform: web, mobile or desktop; we use the newest technology and you can trust on our quality'| translate"></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 50px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
-                                            <div class="vc_column-inner-350">
-                                                <div class="wpb_wrapper">
-                                                    <span class="qodef-icon-animation-holder" style="transition-delay: 200ms;-webkit-transition-delay: 200ms;-moz-transition-delay: 200ms;-ms-transition-delay: 200ms">
-                                                        <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="200" data-color="#25cbf5">
-                                                            <i class="qodef-icon-font-awesome fa fa-commenting-o qodef-icon-element" style="color: #25cbf5;font-size:72px" ></i>
-                                                        </span>
-                                                    </span>
-                                                    <div class="vc_empty_space"  style="height: 30px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <h3><strong ng-bind="'Supporting and Services IT'|translate"></strong></h3>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 19px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <p align="justify" ng-bind="'IT training, tutorials and project management which help the clients according to their needs and suit to their information requirements'| translate"></p>
-                                                        </div>
-                                                    </div>
+                            
 
-                                                    <div class="vc_empty_space"  style="height: 50px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
-                                            <div class="vc_column-inner-350">
-                                                <div class="wpb_wrapper">
-                                                    <span class="qodef-icon-animation-holder" style="transition-delay: 400ms;-webkit-transition-delay: 400ms;-moz-transition-delay: 400ms;-ms-transition-delay: 400ms">
-                                                        <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="400" data-color="#25cbf5">
-                                                            <i class="qodef-icon-font-awesome fa fa-hdd-o qodef-icon-element" style="color: #25cbf5;font-size:72px" ></i>
-                                                        </span>
-                                                    </span>
-                                                    <div class="vc_empty_space"  style="height: 30px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <h3><strong ng-bind="'Variety Platforms' | translate"></strong></h3><br>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 19px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <p align="justify" ng-bind="'We manage all of your hardware and software requirements what help you support your IT apps and services on free (Linux) or private (Windows) platform'| translate"></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 50px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="wpb_column vc_column_container col-sm-6 col-lg-3 col-md-6">
-                                            <div class="vc_column-inner-350">
-                                                <div class="wpb_wrapper">
-                                                    <span class="qodef-icon-animation-holder" style="transition-delay: 600ms;-webkit-transition-delay: 600ms;-moz-transition-delay: 600ms;-ms-transition-delay: 600ms">
-                                                        <span class="qodef-icon-shortcode normal qodef-icon-animation" style="width: 72px;height: 72px;line-height: 72px" data-animation-delay="600" data-color="#25cbf5">
-                                                            <i class="qodef-icon-font-awesome fa fa-folder-open-o qodef-icon-element" style="color: #25cbf5;font-size:72px" ></i>
-                                                        </span>
-                                                    </span>
-                                                    <div class="vc_empty_space"  style="height: 30px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <h3><strong ng-bind="'Projects Portfolio'| translate"></strong></h3><br>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 19px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <p align="justify" ng-bind="'Meet our adaptable works high quality, made for various business models. Be part of our pleased customers list'|translate"></p>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 50px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left"  id="creative">
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left"  id="about_us">
                                 <div class="clearfix qodef-full-section-inner">
                                     <div class="wpb_column vc_column_container">
                                         <div class="vc_column-inner ">
@@ -189,7 +39,7 @@ get_header();
 
                                                                         <div class="wpb_text_column wpb_content_element ">
                                                                             <div class="wpb_wrapper">
-                                                                                <h2><strong ng-bind="'We help you to design your business image on web' | translate"></strong></h2>
+                                                                                <h2><strong ng-bind="'We help to create your corporate image' | translate"></strong></h2>
                                                                             </div>
                                                                         </div>
                                                                         <div class="vc_empty_space"  style="height: 20px" >
@@ -197,14 +47,17 @@ get_header();
                                                                         </div>
                                                                         <div class="wpb_text_column wpb_content_element ">
                                                                             <div class="wpb_wrapper">
-                                                                                <h4 align="justify" ng-bind="'We use the newest technology and tools while your business page is designed. Thus we guarantee you an extraordinary, innovative and catching experience. This one will give you the oportunity to boots your brand on internet'| translate"></h4>
+                                                                                <h4 align="justify" ng-bind="'We are a team of professionals specialized in Marketing Strategies, Creation of mobile applications, and Web Development, We offer innovative strategies for the growth of your company.'| translate"></h4>.
+                                                                                <br>
+
+                                                                                <h4 align="justify" ng-bind="'We analyze your ideas and implement the appropriate methodologies to become your products in the best on the market.'| translate"></h4>.
                                                                             </div>
                                                                         </div>
                                                                         <div class="vc_empty_space"  style="height: 43px" >
                                                                             <span class="vc_empty_space_inner"></span>
                                                                         </div>
-                                                                        <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-                                                                            <span class="qodef-btn-text" ng-bind="'Know More' | translate"></span>
+                                                                        <a href="#design" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
+                                                                            <span class="qodef-btn-text" ng-bind="'Contact us' | translate"></span>
                                                                             <span class="qodef-btn-text-icon">
                                                                                 <i class="qodef-icon-simple-line-icon icon-rocket " ></i>
                                                                             </span>
@@ -213,11 +66,17 @@ get_header();
                                                                 </div>
                                                             </div>
                                                             <div class="col-md-6 col-lg-6 col-sm-12 col-xs-12 qodef-elements-holder-item " >
-                                                                
-                                            <div class="contentHand">
-                                                <img src="./wp-content/themes/cloudemotion/assets/img/handTable.png" class="img-responsive handR" alt="Image">
-                                            </div>
-                                        
+                                                                <div class="qodef-elements-holder-item-inner">
+                                                                    <div class="qodef-elements-holder-item-content qodef-elements-holder-custom-328163" style="padding: 48px 0px 0px 0px">
+                                                                        <div class="wpb_single_image wpb_content_element vc_align_right wpb_bottom-to-top">
+                                                                            <figure class="wpb_wrapper vc_figure">
+                                                                                <div class="vc_single_image-wrapper   vc_box_border_grey">
+                                                                                    <img width="504" height="457" src="<?php echo get_template_directory_uri(); ?>/assets/img/programadores.png" class="vc_single_image-img attachment-full" alt="a" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/programadores.png 504w, <?php echo get_template_directory_uri(); ?>/assets/img/graphic-1-home-main-300x272.png 300w" sizes="(max-width: 504px) 100vw, 504px" />
+                                                                                </div>
+                                                                            </figure>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -228,117 +87,494 @@ get_header();
                                 </div>
                             </div>
 
-                            <div class="qodef-section qodef-content-aligment-center qodef-grid-section" id="portfolios">
-
-                                <div class="wpb_wrapper">
-                                    <div class="wpb_text_column wpb_content_element ">
-                                        <div class="wpb_wrapper">
-                                            <h2><strong ng-bind="'Working with us is as simple as...' | translate"></strong></h2>
-                                        </div>
+                            <div class="qodef-section qodef-content-aligment-center qodef-grid-section" id="services">
+                                <div class="container">
+                                    <br>
+                                    <div >
+                                        <h1 ng-bind="'Services' | translate"></h1>
+                                        <p ng-bind="'With an idea we offer you many solutions' | translate"></p>
                                     </div>
-                                    <div class="vc_empty_space" style="height: 22px">
-                                        <span class="vc_empty_space_inner"></span>
-                                    </div>
-                                </div>
-                                <div class="qodef-section qodef-content-aligment-center qodef-grid-section" style="padding: 0;">
-                                    <div class="container">
-                                        <div class="qodef-section-inner-margin clearfix">
-                                            <div class="wpb_column vc_column_container">
-                                            
-                                                <div class="vc_column-inner ">
-
-                                                    <div class="wpb_wrapper">
-
-
-
-                                                        <div class="qodef-process-holder columns-4">
-                                                            <div class="qodef-process-holder-inner">
-                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 col-xs-6 ">
-                                                                    <div class="qodef-process-item-icon-holder-wrapper">
-                                                                        <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/planing.jpg)">
-                                                                            <span class="qodef-process-item-background-holder">
-                                                                                <span class="qodef-icon-shortcode circle ">
-                                                                                    <i class="qodef-icon-simple-line-icon icon-pencil qodef-icon-element" style=""></i>
-                                                                                </span>
-                                                                            </span>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="tab" role="tabpanel">
+                                                <!-- Nav tabs -->
+                                                <ul class="nav nav-tabs" role="tablist" id="myTab1" style="text-align:center;">
+                                                    <li role="presentation" ng-class="{'active':vm.service_t==2}"><a ng-click="vm.service_t=2" aria-controls="home" role="tab" data-toggle="tab">
+                                                        <i><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icomobile.png" width="50px" height="50px" alt="Mobile"></i> Mobile</a></li>
+                                                    <li role="presentation" ng-class="{'active':vm.service_t==1}"><a ng-click="vm.service_t=1" aria-controls="home" role="tab" data-toggle="tab">
+                                                        <i><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icomarketing.png" width="50px" height="50px" alt="Marketing"></i> Marketing</a></li>
+                                                    <li role="presentation" ng-class="{'active':vm.service_t==3}"><a ng-click="vm.service_t=3" aria-controls="home" role="tab" data-toggle="tab">
+                                                        <i><img src="<?php echo get_template_directory_uri(); ?>/assets/img/icoweb.png" width="50px" height="50px" alt="Web"></i> Web</a></li>
+                                                </ul>
+                                                <!-- Tab panes -->
+                                                <div class="tab-content tabs">
+                                                    <!-- Tab 1 Marketing -->
+                                                    <div role="tabpanel" class="tab-pane fade in active" id="Section1">
+                                                        <div class="row">
+                                                            <div class="col-md-5">
+                                                                <br>
+                                                                <br>
+                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing_digital.jpg" alt="Marketing Digital" class="img-responsive text-center">
+                                                            </div>
+                                                            <div class="col-md-7">
+                                                                <div class="row">
+                                                                    <div class="col-md-6 col-sm-6">
+                                                                        <div class="serviceBox">
+                                                                            <div class="service-icon">
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/pay_advertising.png" alt="Marketing Digital" class="text-center">
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <h3 ng-bind="'Pay Advertising' | translate"></h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'Advertise your products or services in the main digital media with Facebook Ads or Google Adwords with a budget adapted to your needs.' | translate">
+                                                                                </p>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="qodef-process-item-content-holder">
-                                                                        <div class="qodef-process-item-title-holder">
-                                                                            <h4 ng-bind="'Plane' | translate"></h4>
-                                                                        </div>
-                                                                        <div class="qodef-process-item-text-holder">
-                                                                            <p>Te haremos llegar un cuestionario con el cual identificaremos cuales son tus prioridades, modelo de negocios y objetivos y asi agilizar el proceso</p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 col-xs-6 ">
-                                                                    <div class="qodef-process-item-icon-holder-wrapper">
-                                                                        <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/design.jpg)">
-                                                                            <span class="qodef-process-item-background-holder">
-                                                                                <span class="qodef-icon-shortcode circle ">
-                                                                                    <i class="qodef-icon-simple-line-icon icon-screen-desktop qodef-icon-element" style=""></i>
-                                                                                </span>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="qodef-process-item-content-holder">
-                                                                        <div class="qodef-process-item-title-holder">
-                                                                            <h4 ng-bind="'Design' | translate"></h4>
-                                                                        </div>
-                                                                        <div class="qodef-process-item-text-holder">
-                                                                            <p>Te haremos llegar un listado de posibles diseños bajo los estandares actuales, para que seas participe en el proceso en todo momento</p>
+                                                                    <div class="col-md-6 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/email_marketing.png" alt="Marketing Digital" class="text-center">
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <h3 ng-bind="'Email Marketing' | translate">Email Marketing</h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'Loyalty your subscribers with regular emails, we take care of cleaning your database, design templates and much more.' | translate">
+                                                                                    Loyalty your subscribers with regular emails, we take care of cleaning your database, design templates and much more.
+                                                                                </p>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 col-xs-6 ">
-                                                                    <div class="qodef-process-item-icon-holder-wrapper">
-                                                                        <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/backlog.jpg)">
-                                                                            <span class="qodef-process-item-background-holder">
-                                                                                <span class="qodef-icon-shortcode circle ">
-                                                                                    <i class="qodef-icon-simple-line-icon icon-settings qodef-icon-element" style=""></i>
-                                                                                </span>
-                                                                            </span>
+                                                                <div class="row">
+                                                                    <div class="col-md-6 col-sm-6">
+                                                                        <div class="serviceBox">
+                                                                            <div class="service-icon">
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/social_media.png" alt="Marketing Digital" class="text-center">
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <h3 ng-bind="'Social Media Marketing' | translate">Social Media Marketing</h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'We use social networks to boost your brand, capture, retain and then convert your followers into potential customers.' | translate">
+                                                                                    We use social networks to boost your brand, capture, retain and then convert your followers into potential customers.
+                                                                                </p>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="qodef-process-item-content-holder">
-                                                                        <div class="qodef-process-item-title-holder">
-                                                                            <h4 ng-bind="'Develop' | translate"></h4>
-                                                                        </div>
-                                                                        <div class="qodef-process-item-text-holder">
-                                                                            <p>
-                                                                                Etapa en la cual se realizaran pruebas de stress para determinar la funcionalidad del producto en cualquier ambito antes de la entrega final
-                                                                            </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="vc_column-inner-350 qodef-process-item col-md-3 col-lg-3 col-sm-6 col-xs-6 ">
-                                                                    <div class="qodef-process-item-icon-holder-wrapper">
-                                                                        <div class="qodef-process-item-icon-holder" style="background: url(./wp-content/themes/cloudemotion/assets/img/testing.jpg)">
-                                                                            <span class="qodef-process-item-background-holder">
-                                                                                <span class="qodef-icon-shortcode circle ">
-                                                                                    <i class="qodef-icon-simple-line-icon icon-wrench qodef-icon-element" style=""></i>
-                                                                                </span>
-                                                                            </span>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="qodef-process-item-content-holder">
-                                                                        <div class="qodef-process-item-title-holder">
-                                                                            <h4 ng-bind="'Test' | translate"></h4>
-                                                                        </div>
-                                                                        <div class="qodef-process-item-text-holder">
-                                                                            <p>Existen tres estapas principales de prueba(Etapa de diseño, Etapa Alfa y Etapa beta) en la cual podras ver el avance progresivo de tu Producto</p>
+                                                                    <div class="col-md-6 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/brand_generation.png" alt="Marketing Digital" class="text-center">
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <h3 ng-bind="'Brand Generation' | translate">Brand Generation</h3>
+                                                                                <p style="line-height:20px; font-size:16px;" ng-bind="'We provide the best advice to define your corporate identity and the communicative values that connect you with your possible clients.' | translate">
+                                                                                    
+                                                                                </p>
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
+                                                    <!-- Tab 2 Landing Page -->
+                                                    <div role="tabpanel" class="tab-pane fade" id="Section2">
+                                                        <!-- SLIDER -->
+                                                        <div id="landing-slider" class="owl-carousel owl-theme" style="opacity: 0; display: block;">
+                                                            <div class="owl-wrapper-outer autoHeight" style="height: 0px;"><div class="owl-wrapper" style="width: 600px; left: 0px; display: block;"><div class="owl-item" style="width: 100px;"><div class="testimonial" style="height:200px;">
+                                                                <div class="row">
+                                                                    <div class="col-md-8 col-xs-12">
+                                                                        <div class="row">
+                                                                            <div class="col-md-4 col-sm-6">
+                                                                                <div class="serviceBox">
+                                                                                    <div class="service-icon">
+                                                                                        <img width="90" src="./landing1.jpg" alt="Marketing Digital" class="text-center">
+                                                                                    </div>
+                                                                                    <div class="service-content">
+                                                                                        <h4>Contenido Relevante</h4>
+                                                                                        <p style="line-height:20px; font-size:16px;">
+                                                                                            Diseño y contenido en contexto a los enlaces y campañas correspondientes.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4 col-sm-6">
+                                                                                <div class="serviceBox" style="border-right:0px;">
+                                                                                    <div class="service-icon">
+                                                                                        <img width="90" src="./landing2.jpg" alt="Marketing Digital" class="text-center">
+                                                                                    </div>
+                                                                                    <div class="service-content">
+                                                                                        <h4>Impacto en la llamada</h4>
+                                                                                        <p style="line-height:20px; font-size:16px;">
+                                                                                            Obtener respuesta y comentarios de los usuarios a través de llamadas adecuadas a la acción.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4 col-sm-6">
+                                                                                <div class="serviceBox" style="border-right:0px;">
+                                                                                    <div class="service-icon">
+                                                                                        <img width="90" src="./landing3.jpg" alt="Marketing Digital" class="text-center">
+                                                                                    </div>
+                                                                                    <div class="service-content">
+                                                                                        <h4>Integración Multimedia</h4>
+                                                                                        <p style="line-height:20px; font-size:16px;">
+                                                                                            Videos, imágenes HD y audio para atraer a los usuarios de manera interactiva.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row">
+                                                                            <div class="col-md-4 col-sm-6">
+                                                                                <div class="serviceBox">
+                                                                                    <div class="service-icon">
+                                                                                        <img width="90" src="./landing4.jpg" alt="Marketing Digital" class="text-center">
+                                                                                    </div>
+                                                                                    <div class="service-content">
+                                                                                        <h4>Diseño fácil de usar</h4>
+                                                                                        <p style="line-height:20px; font-size:16px;">
+                                                                                            Permitir que los usuarios naveguen fácilmente para obtener la información que buscan.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4 col-sm-6">
+                                                                                <div class="serviceBox" style="border-right:0px;">
+                                                                                    <div class="service-icon">
+                                                                                        <img width="90" src="./landing5.jpg" alt="Marketing Digital" class="text-center">
+                                                                                    </div>
+                                                                                    <div class="service-content">
+                                                                                        <h4>Arquitectura Planificada</h4>
+                                                                                        <p style="line-height:20px; font-size:16px;">
+                                                                                            Diseño de página web basado en marketing completo y datos de usuario.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col-md-4 col-sm-6">
+                                                                                <div class="serviceBox" style="border-right:0px;">
+                                                                                    <div class="service-icon">
+                                                                                        <img width="90" src="./landing6.jpg" alt="Marketing Digital" class="text-center">
+                                                                                    </div>
+                                                                                    <div class="service-content">
+                                                                                        <h4>Diseños Flexibles</h4>
+                                                                                        <p style="line-height:20px; font-size:16px;">
+                                                                                            Páginas Web que son fáciles de actualizar o modificar para diferentes estrategias.
+                                                                                        </p>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-4 col-xs-12">
+                                                                        <h4>Produciremos una página de aterrizaje que impactará a sus usuarios a primera vista.</h4>
+                                                                        <br>
+                                                                        <p>Nuestros objetivos son:</p>
+                                                                        <ul style="text-align:left">
+                                                                            <li>Convertir los visitantes en asociados o fidelizar los ya vinculados.</li>
+                                                                            <li>Desplegar contenido destacado y relevante de los productos y servicios.</li>
+                                                                            <li>Recoger información o actualizar datos de los asociados o nuevos prospectos.</li>
+                                                                            <li>Promocionar las ventajas de adquirir el portafolio de productos y servicios de la compañía.</li>
+                                                                            <li>Informar sobre concursos o premios.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item" style="width: 100px;"><div class="testimonial">
+                                                                <h3>Portafolio</h3>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-xs-6 col-md-3">
+                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
+                                                                            <img src="./template1.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-xs-6 col-md-3">
+                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
+                                                                            <img src="./template2.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-xs-6 col-md-3">
+                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
+                                                                            <img src="./template3.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-xs-6 col-md-3">
+                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
+                                                                            <img src="./template4.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-xs-6 col-md-3">
+                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
+                                                                            <img src="./template5.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-xs-6 col-md-3">
+                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
+                                                                            <img src="./template6.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-xs-6 col-md-3">
+                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
+                                                                            <img src="./template7.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                    <div class="col-xs-6 col-md-3">
+                                                                        <a href="http://132.148.131.58/abacoweb/#" class="thumbnail">
+                                                                            <img src="./template8.jpg">
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item" style="width: 100px;"><div class="testimonial">
+                                                                <h4 style="font-size:18px">Características y Servicios Landing Page</h4>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    Más de 500 paltillas 100% responsivas.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    Formas diversas para encuentas o captura de información.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    Optimización avanzada para móviles.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    informes gráficos de reportes analíticos sobre las gestiones realizadas.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    Implementación de SEO en Landing Pages.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    Servicios de Desarrollo y Soporte.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    Hosting en servidores propios hasta 200Mb. por Landing Page.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    Hasta cuatro (4) Landing Pages mensuales.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div></div></div>
+                                                            
+                                                            
+                                                        <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div></div></div>
+                                                    </div>
+                                                    <!-- Tab 3 Community -->
+                                                    <div role="tabpanel" class="tab-pane fade" id="Section3">
+                                                        <div id="community-slider" class="owl-carousel owl-theme" style="opacity: 0; display: block;">
+                                                            <div class="owl-wrapper-outer autoHeight" style="height: 0px;"><div class="owl-wrapper" style="width: 400px; left: 0px; display: block;"><div class="owl-item" style="width: 100px;"><div class="testimonial">
+                                                                <div class="row">
+                                                                    <div class="col-md-5">
+                                                                        <img src="./communitymanager.jpg" alt="Marketing Digital" class="text-center img-responsive">
+                                                                    </div>
+                                                                    <div class="col-md-7">
+                                                                        <h4>Nuestra Gestión de Community Manager integra el mensaje que se desea dar al asociado con la tecnología para:</h4>
+                                                                        <br>
+                                                                        <hr>
+                                                                        <ul style="text-align:left">
+                                                                            <li>Hacer la captación de nuevos seguidores.</li>
+                                                                            <li>Interactuar, escuchar, fidelizar e impulsar la marca.</li>
+                                                                            <li>Publicar y actualizar información de interés general y promover la filosofía organizacional por medio de la misma.</li>
+                                                                            <li>Recoger inquietudes, sugerencias y peticiones para dar respuesta correcta y oportuna.</li>
+                                                                            <li>Recolectar y actualizar los datos de los asociados.</li>
+                                                                            <li>Programar contenido nuevo en fines de semana, en eventos promocionales, concursos o fechas de acontecimientos importantes.</li>
+                                                                            <li>Publicación de preguntas o cuestionarios para atraer la atención de los asociados o aquellos que no lo son.</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div><div class="owl-item" style="width: 100px;"><div class="testimonial">
+                                                                <h4 style="font-size:18px">Servicios Community Manager</h4>
+                                                                <p style="font-size:16px">Profesional experto con gestión de redes sociales y marketing digital.</p>
+                                                                <hr>
+                                                                <div class="row">
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    (10) post mensuales en las redes con diseño especial (Facebook, Twitter, linkedIn, blog).
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    Creación de contenido, redacción de mensajes adaptados según el contenido que usted envía al contratarnos.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    (1) post diario de contenido relacionado a (tema de elección por el cliente) (noticias)(Twitter, Facebook, LinkedIn).
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    Diseño personalizado de portada Box / (Fondos de redes sociales).
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    Moderación de contenidos en Blog.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    Analíticos y listado de posibles clientes mensuales.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    Creación de perfiles Twitter, Facebook, Instagram.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-3 col-sm-6">
+                                                                        <div class="serviceBox" style="border-right:0px;">
+                                                                            <div class="service-icon">
+                                                                                <i class="fa fa-check" style="color:limegreen" aria-hidden="true"></i>
+                                                                            </div>
+                                                                            <div class="service-content">
+                                                                                <p style="font-size:18px">
+                                                                                    Moderación de comentarios, depurar y contestar comentarios malintencionados hacia la empresa o perfiles profesionales.
+                                                                                </p>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div></div></div></div>
+                                                            
+                                                        <div class="owl-controls clickable"><div class="owl-pagination"><div class="owl-page active"><span class=""></span></div><div class="owl-page"><span class=""></span></div></div><div class="owl-buttons"><div class="owl-prev"></div><div class="owl-next"></div></div></div></div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
+
+
+
+
+
                             </div>
 
                             <div class="wpb_text_column wpb_content_element ">
@@ -391,7 +627,7 @@ get_header();
                                 </div>
                             </div>
 
-                            <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-grid-section" >
+                            <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445420473166 qodef-content-aligment-left qodef-grid-section" >
                                 <div class="container">
                                     <div class="qodef-section-inner-margin clearfix">
                                         <div class="wpb_column vc_column_container">
@@ -419,7 +655,7 @@ get_header();
                                                                         <div class="mobilec wpb_single_image wpb_content_element vc_align_left">
                                                                             <figure class="wpb_wrapper vc_figure">
                                                                                 <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                                                    <img width="288" height="272" src="./wp-content/themes/cloudemotion/assets/img/graphic-2-home-main.png" class="vc_single_image-img attachment-full" alt="a" />
+                                                                                    <img width="288" height="272" src="<?php echo get_template_directory_uri(); ?>/assets/img/graphic-2-home-main.png" class="vc_single_image-img attachment-full" alt="a" />
                                                                                 </div>
                                                                             </figure>
                                                                         </div>
@@ -503,7 +739,7 @@ get_header();
                                                         <div class="vc_empty_space"  style="height: 78px" >
                                                             <span class="vc_empty_space_inner"></span>
                                                         </div>
-                                                        <div class="wpb_text_column wpb_content_element ">
+                                                        <div class="wpb_text_column wpb_content_element  vc_custom_1446567667184">
                                                             <div class="wpb_wrapper">
                                                                 <h2 ng-bind="'Planning is everything...'|translate"></h2>
                                                             </div>
@@ -604,7 +840,7 @@ get_header();
                                                         <div class="wpb_single_image wpb_content_element vc_align_left">
                                                             <figure class="wpb_wrapper vc_figure">
                                                                 <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                                    <img width="551" height="497" src="./wp-content/themes/cloudemotion/assets/img/image-2-home-main.jpg" class="vc_single_image-img attachment-full" alt="a" srcset="./wp-content/themes/cloudemotion/assets/img/image-2-home-main.jpg 551w, ./wp-content/themes/cloudemotion/assets/img/image-2-home-main-300x271.jpg 300w, ./wp-content/themes/cloudemotion/assets/img/image-2-home-main-550x497.jpg 550w" sizes="(max-width: 551px) 100vw, 551px" />
+                                                                    <img width="551" height="497" src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2-home-main.jpg" class="vc_single_image-img attachment-full" alt="a" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/image-2-home-main.jpg 551w, <?php echo get_template_directory_uri(); ?>/assets/img/image-2-home-main-300x271.jpg 300w, <?php echo get_template_directory_uri(); ?>/assets/img/image-2-home-main-550x497.jpg 550w" sizes="(max-width: 551px) 100vw, 551px" />
                                                                 </div>
                                                             </figure>
                                                         </div>
@@ -615,7 +851,8 @@ get_header();
                                     </div>
                                 </div>
 
-                                <div data-qodef-parallax-speed="0.5" class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(./wp-content/themes/cloudemotion/assets/img/parallax-2-home-main.jpg);">
+
+                                <div data-qodef-parallax-speed="0.5" id="testimonials" class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445345084553 qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/parallax-2-home-main.jpg);">
                                     <div class="clearfix qodef-full-section-inner">
                                         <div class="wpb_column vc_column_container">
                                             <div class="vc_column-inner ">
@@ -640,6 +877,7 @@ get_header();
                                                     <div class="vc_empty_space"  style="height: 76px" >
                                                         <span class="vc_empty_space_inner"></span>
                                                     </div>
+
                                                     <div class="qodef-testimonials-holder container">
                                                         <div class="qodef-testimonials owl-carousel owl-theme qodef-section-inner transparent cards_carousel"  data-layout ="cards_carousel">
                                                             <div class="qodef-testimonials-slider-item item">
@@ -653,7 +891,7 @@ get_header();
                                                                         </div>
                                                                         <div class="qodef-testimonial-info-holder">
                                                                             <div class="qodef-testimonial-image-holder">
-                                                                                <img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-1.png" class="attachment-71 size-71 wp-post-image" alt="a" />
+                                                                                <img width="56" height="56" src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-1.png" class="attachment-71 size-71 wp-post-image" alt="a" />
                                                                             </div>
                                                                             <div class = "qodef-testimonial-author">
                                                                                 <p class="qodef-testimonial-author-text">
@@ -676,7 +914,7 @@ get_header();
                                                                         </div>
                                                                         <div class="qodef-testimonial-info-holder">
                                                                             <div class="qodef-testimonial-image-holder">
-                                                                                <img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-2.png" class="attachment-79 size-79 wp-post-image" alt="a" />
+                                                                                <img width="56" height="56" src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-2.png" class="attachment-79 size-79 wp-post-image" alt="a" />
                                                                             </div>
                                                                             <div class = "qodef-testimonial-author">
                                                                                 <p class="qodef-testimonial-author-text">
@@ -699,7 +937,7 @@ get_header();
                                                                         </div>
                                                                         <div class="qodef-testimonial-info-holder">
                                                                             <div class="qodef-testimonial-image-holder">
-                                                                                <img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-3.png" class="attachment-81 size-81 wp-post-image" alt="a" />
+                                                                                <img width="56" height="56" src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-3.png" class="attachment-81 size-81 wp-post-image" alt="a" />
                                                                             </div>
                                                                             <div class = "qodef-testimonial-author">
                                                                                 <p class="qodef-testimonial-author-text">
@@ -724,7 +962,7 @@ get_header();
                                                                         </div>
                                                                         <div class="qodef-testimonial-info-holder">
                                                                             <div class="qodef-testimonial-image-holder">
-                                                                                <img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-4.png" class="attachment-88 size-88 wp-post-image" alt="a" />
+                                                                                <img width="56" height="56" src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-4.png" class="attachment-88 size-88 wp-post-image" alt="a" />
                                                                             </div>
                                                                             <div class = "qodef-testimonial-author">
                                                                                 <p class="qodef-testimonial-author-text">
@@ -747,7 +985,7 @@ get_header();
                                                                         </div>
                                                                         <div class="qodef-testimonial-info-holder">
                                                                             <div class="qodef-testimonial-image-holder">
-                                                                                <img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-5.png" class="attachment-89 size-89 wp-post-image" alt="a" />
+                                                                                <img width="56" height="56" src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-5.png" class="attachment-89 size-89 wp-post-image" alt="a" />
                                                                             </div>
                                                                             <div class = "qodef-testimonial-author">
                                                                                 <p class="qodef-testimonial-author-text">
@@ -770,7 +1008,7 @@ get_header();
                                                                         </div>
                                                                         <div class="qodef-testimonial-info-holder">
                                                                             <div class="qodef-testimonial-image-holder">
-                                                                                <img width="56" height="56" src="./wp-content/themes/cloudemotion/assets/img/testimonials-6.png" class="attachment-90 size-90 wp-post-image" alt="a" />
+                                                                                <img width="56" height="56" src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-6.png" class="attachment-90 size-90 wp-post-image" alt="a" />
                                                                             </div>
                                                                             <div class = "qodef-testimonial-author">
                                                                                 <p class="qodef-testimonial-author-text">
@@ -798,7 +1036,7 @@ get_header();
                                                         <div class="wpb_single_image wpb_content_element vc_align_left">
                                                             <figure class="wpb_wrapper vc_figure">
                                                                 <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                                    <img width="525" height="477" src="./wp-content/themes/cloudemotion/assets/img/marketing1.jpg" class="vc_single_image-img attachment-full" />
+                                                                    <img width="525" height="477" src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing1.jpg" class="vc_single_image-img attachment-full" />
                                                                 </div>
                                                             </figure>
                                                         </div>
@@ -842,8 +1080,9 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
-
-                                <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom qodef-content-aligment-center" id="team">
+                                
+                                <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="team">
+                                
                                     <div class="clearfix qodef-full-section-inner">
                                         <div class="wpb_column vc_column_container">
                                             <div class="vc_column-inner ">
@@ -866,45 +1105,13 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
+                               
 
-                                <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-center qodef-grid-section" style="">
+                                <?php echo do_shortcode('[amo_member id="50,52,51,53" item-width="250" align="left" item-margin="20" full-width="no" panel="center"]'); ?>
+                                   
+                               
+                                <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414638610 qodef-content-aligment-center qodef-grid-section" style="">
                                     <div class="container">
-                                        <div class="qodef-section-inner-margin qodef-team2 owl-theme owl-carousel clearfix">
-
-                                            <div ng-repeat="team in vm.team" class="col-md-3 col-sm-6 col-xs-6 col-lg-3 item text-center" style="margin-top:1em;margin-bottom:1em;">
-                                                <div class="contenido">
-                                                    <div class="team-box box-4">
-                                                        <div class="team-img main-bg">
-                                                            <img ng-src="{{team.image}}" sizes="(max-width: 443px) 100vw, 443px">
-                                                        </div>
-                                                        <div class="team-details main-bg">
-                                                            <h3 class="team-name" ng-bind="team.first_name+' '+team.last_name">Luis García</h3>
-                                                            <h5 class="team-pos white" ng-bind="team.position.name">Programador Front-End</h5>
-                                                            <strong>Especialidades</strong>
-
-                                                            <div class="social-buttons">
-                                                                <a ng-href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110" target="_blank" class="social-button google" href="www.linkedin.com/in/luis-garcía-rodriguez-a51998110">
-                                                                    <i class="fa fa-linkedin"></i>    
-                                                                </a>
-                                                                <a ng-click="copylink('@rexuzsystems')" class="social-button skype">
-                                                                    <i class="fa fa-skype"></i>
-                                                                </a>
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                            </div>
-
-                                        </div>
-                                        <!-- close div.content_inner -->
-                                    </div>
-                                    <!-- close div.content -->
-
-                                    <div id="portfolios">
-
                                     </div>
 
                                     <footer >

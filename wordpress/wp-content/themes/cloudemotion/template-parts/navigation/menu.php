@@ -14,26 +14,26 @@
         </a>
     </li>
     <li class="menu-item">
-        <a href="#creative" parallax-cl class="">
+        <a href="#about_us" parallax-cl class="">
             <span class="item_outer">
                 <span class="item_inner">
                     <span class="menu_icon_wrapper">
                         <i class="menu_icon null fa"></i>
                     </span>
-                    <span class="item_text" ng-bind="'Creative' | translate">Creativo</span>
+                    <span class="item_text" ng-bind="'About us' | translate">About Us</span>
                 </span>
                 <span class="plus"></span>
             </span>
         </a>
     </li>
     <li class="menu-item">
-        <a href="#portfolios" parallax-cl class="">
+        <a href="#services" parallax-cl class="">
             <span class="item_outer">
                 <span class="item_inner">
                     <span class="menu_icon_wrapper">
                         <i class="menu_icon null fa"></i>
                     </span>
-                    <span class="item_text" ng-bind="'Portfolio' | translate">Portafolio</span>
+                    <span class="item_text" ng-bind="'Services' | translate">Servicios</span>
                 </span>
                 <span class="plus"></span>
             </span>
@@ -46,20 +46,20 @@
                     <span class="menu_icon_wrapper">
                         <i class="menu_icon null fa"></i>
                     </span>
-                    <span class="item_text" ng-bind="'Planning' | translate">Planificacion</span>
+                    <span class="item_text" ng-bind="'Portafolio' | translate">Portafolio</span>
                 </span>
                 <span class="plus"></span>
             </span>
         </a>
     </li>
     <li class="menu-item">
-        <a href="#design" parallax-cl class="">
+        <a href="#testimonials" parallax-cl class=" no_link">
             <span class="item_outer">
                 <span class="item_inner">
                     <span class="menu_icon_wrapper">
                         <i class="menu_icon null fa"></i>
                     </span>
-                    <span class="item_text" ng-bind="'Desing/Marketing' | translate ">Diseño&Marketing</span>
+                    <span class="item_text" ng-bind="'Blog' | translate">Blog</span>
                 </span>
                 <span class="plus"></span>
             </span>
@@ -73,6 +73,19 @@
                         <i class="menu_icon null fa"></i>
                     </span>
                     <span class="item_text" ng-bind="'Team' | translate">Equipo</span>
+                </span>
+                <span class="plus"></span>
+            </span>
+        </a>
+    </li>
+    <li class="menu-item">
+        <a href="#design" parallax-cl class="">
+            <span class="item_outer">
+                <span class="item_inner">
+                    <span class="menu_icon_wrapper">
+                        <i class="menu_icon null fa"></i>
+                    </span>
+                    <span class="item_text" ng-bind="'Contact us' | translate ">Contactanos</span>
                 </span>
                 <span class="plus"></span>
             </span>
