@@ -58,15 +58,15 @@
 	function setTestimonial() {
 		if (($(document).width())<769) {$(".qodef-testimonials-slider-item").css("width","100%");}
 	}
-/*	console.log(Waypoint);
+	/*	console.log(Waypoint);
 
-	var waypoint = new Waypoint({
-		element: document.getElementById('basic-waypoint'),
-		handler: function() {
-			notify('Basic waypoint triggered')
-		}
-	})
-	*/
+		var waypoint = new Waypoint({
+			element: document.getElementById('basic-waypoint'),
+			handler: function() {
+				notify('Basic waypoint triggered')
+			}
+		})
+		*/
 
 	function handlerAnimation(){
 

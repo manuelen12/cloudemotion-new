@@ -9,8 +9,9 @@ body {
 	position: absolute;
 	top:50%;
 	left: 50%;
-	transform: translate(-50%,-50%) scale(.4);
+	transform: translate(-50%,-50%) scale(.5);
 	-webkit-animation: subeybaja 1s ease-in-out infinite alternate;	
+	margin-top: 200px;
 }
 
 @-webkit-keyframes subeybaja {
@@ -28,7 +29,7 @@ body {
 #nucleo {
 	height: 300px ;
 	width: 300px;
-	background-image: url('images/CLOUD300.png');
+	background-image: url('../img/CLOUD300.png');
 	/*border-radius: 2000px;*/
 	position: absolute;
 	margin: -100px 0 0 -100px;
@@ -51,27 +52,27 @@ body {
 
 
 .electron.b {
-	background-image: url('images/ANDROID100.png');
+	background-image: url('../img/ANDROID100.png');
 }
 
 .electron.c {
-	background-image: url('images/IOS100.png');
+	background-image: url('../img/IOS100.png');
 }
 
 .electron.d {
-	background-image: url('images/MAILCHIMP100.png');
+	background-image: url('../img/MAILCHIMP100.png');
 }
 
 .electron.e {
-	background-image: url('images/SEO100.png');
+	background-image: url('../img/SEO100.png');
 }
 
 .electron.f {
-	background-image: url('images/WORDPRESS100.png');
+	background-image: url('../img/WORDPRESS100.png');
 }
 
 .electron.g {
-	background-image: url('images/DJANGO100.png');
+	background-image: url('../img/DJANGO100.png');
 }
 
 /*.electron.h {

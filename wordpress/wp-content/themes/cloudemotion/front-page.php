@@ -39,7 +39,7 @@ get_header();
 
                                                                         <div class="wpb_text_column wpb_content_element ">
                                                                             <div class="wpb_wrapper">
-                                                                                <h2 style="font-size: 55px;"><strong ng-bind="'About Us' | translate"></strong></h2>
+                                                                                <h2 style="font-size: 55px;"><strong ng-bind="'About us' | translate">About Us</strong></h2>
                                                                                 <h2 style="font-size: 25px; color:grey"><strong ng-bind="'We help to create your corporate image' | translate"></strong></h2>
                                                                             </div>
                                                                         </div>
@@ -92,7 +92,7 @@ get_header();
                                 <div class="container">
                                     <div >
                                         <h1 style="font-size: 55px" ng-bind="'Services' | translate"></h1>
-                                        <p style="color:grey; font-size: 25px" ng-bind="'With many ideas we can offer you many solutions' | translate"></p>
+                                        <p style="color:grey; font-size: 25px" ng-bind="'With an idea we offer you many solutions' | translate"></p>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-12">
@@ -263,13 +263,31 @@ get_header();
                                                             <div class="col-md-5">
                                                                 <br>
                                                                 <br>
-                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/web_page_1.jpg" alt="Web Page" class="img-responsive text-center">
+                                                                <div id="atomo" ng-show="vm.image_web==1">
+                                                                    <div id="nucleo"></div>
+                                                                    <div class="electron a"></div>
+                                                                    <div class="electron b"></div>
+                                                                    <div class="electron c"></div>
+                                                                    <div class="electron d"></div>
+                                                                    <div class="electron e"></div>
+                                                                    <div class="electron f"></div>
+                                                                    <div class="electron g"></div>
+                                                                 </div>
+
+                                                                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/web_page_1.jpg" alt="Web Page" class="img-responsive text-center animated fadeIn" ng-show="vm.image_web==1"> -->
+
+                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST5.png" alt="Simple and Creative" class="img-responsive text-center animated bounceInDown" ng-show="vm.image_web==2">
+                                                                
+                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST3.png" alt="Customizable" class="img-responsive text-center animated bounceInLeft" ng-show="vm.image_web==3">
+                                                                
+                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST.png" alt="Fast and Adaptive" class="img-responsive text-center animated bounceInUp" ng-show="vm.image_web==4">
+                                                                
                                                             </div>
                                                             <div class="col-md-7">
-                                                                <div class="row">
-                                                                    <div class="col-md-12 col-sm-12">
-                                                                        <div class="serviceBox" style="border-right:0px;">
-                                                                            <div class="service-icon">
+                                                                <div class="row" ng-mouseenter="vm.image_web=2">
+                                                                    <div class="col-md-12 col-sm-12" >
+                                                                        <div class="serviceBox" style="border-right:0px;" >
+                                                                            <div class="service-icon" >
                                                                                 <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/simple_creative_1.png" alt="Web Page" class="text-center">
                                                                             </div>
                                                                             <div class="service-content">
@@ -281,8 +299,10 @@ get_header();
                                                                         </div>
                                                                     </div>
                                                                 </div>
+                                                          
                                                                 <div class="row">
-                                                                    <div class="col-md-6 col-sm-6">
+
+                                                                    <div class="col-md-6 col-sm-6" ng-mouseenter="vm.image_web=3">
                                                                         <div class="serviceBox">
                                                                             <div class="service-icon">
                                                                                 <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/customizable_1.png" alt="Web Page" class="text-center">
@@ -295,7 +315,7 @@ get_header();
                                                                             </div>
                                                                         </div>
                                                                     </div>
-                                                                    <div class="col-md-6 col-sm-6">
+                                                                    <div class="col-md-6 col-sm-6" ng-mouseenter="vm.image_web=4">
                                                                         <div class="serviceBox" style="border-right:0px;">
                                                                             <div class="service-icon">
                                                                                 <img width="80" src="<?php echo get_template_directory_uri(); ?>/assets/img/fast_adaptive.png" alt="Web Page" class="text-center">
@@ -317,12 +337,6 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
-
-
-
-
-
-
                             </div>
 
                             <div class="wpb_text_column wpb_content_element ">

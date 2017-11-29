@@ -23,16 +23,17 @@
 			changeLanguage:changeLanguage,
 			getTeam:urlHelpers.get("users"),
 			getPorfolios:urlHelpers.get("portfolios"),
-			setBackground:setBackground,
-			service_t: 2
+			setImage:setImage,
+			service_t: 2,
+			image_web: 1
 		});
 		function changeLanguage() {
 			vm.country = (vm.country=='es'?'en':'es');
 			$translate.use(vm.country);		
 		}
-		function setBackground(image) {
-			console.log(('background-image:url("'+image+'")'));
-			return 'background-image:url("'+image+'")';
+
+		function setImage() {
+			console.log("hello world")
 		}
 		this.$onInit=function() {
 			particlesJS("qodef-p-particles-container",particles)

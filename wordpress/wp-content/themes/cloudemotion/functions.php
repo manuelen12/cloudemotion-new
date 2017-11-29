@@ -184,7 +184,8 @@ if(!is_admin()){
 		'bootstrap.min',
 		'woocommerce-responsive.min',
 		'woocommerce.min',
-		'flag'
+		'flag',
+		'nucle'
 		);
 
 	$scripts = array(
