@@ -24,9 +24,14 @@
 			getTeam:urlHelpers.get("users"),
 			getPorfolios:urlHelpers.get("portfolios"),
 			setImage:setImage,
+			setBackground:setBackground,
 			service_t: 2,
 			image_web: 1
 		});
+		function setBackground(image) {
+			console.log(('background-image:url("'+image+'")'));
+			return 'background-image:url("'+image+'")';
+		}
 		function changeLanguage() {
 			vm.country = (vm.country=='es'?'en':'es');
 			$translate.use(vm.country);		
@@ -47,11 +52,29 @@
 						vm.team[ind].image="./assets/img/default_p.png";
 					}
 				})
+				$('.portfolio').owlCarousel({
+				    loop:true,
+				    margin:10,
+				    nav:true,
+				    responsive:{
+				        0:{
+				            items:1
+				        },
+				        600:{
+				            items:3
+				        },
+				        1000:{
+				            items:3
+				        }
+				    }
+				})
 			},function(error) {
 				console.log(error);
 			})
+
 			vm.getPorfolios.then(function(response) {
 				vm.portfolios=response.data;
+				
 				var opt={	
 					loop:false,
 					margin:10,
@@ -63,6 +86,8 @@
 					animateIn: 'fadeIn',
 				}
 				setCarousel(".qodef-team2",opt,arrows);
+				
+				console.log(vm.portfolios)
 			},function(error) {
 				console.log(error);
 			})

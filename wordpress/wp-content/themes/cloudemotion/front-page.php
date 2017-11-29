@@ -10,7 +10,12 @@ get_header();
     <div class="qodef-wrapper">
         <div class="qodef-wrapper-inner">
             <?php     get_template_part( 'template-parts/navigation/navigation-top', null ); ?>
-            <?php putRevSlider("cloud") ?>
+            <div ng-show="vm.country=='en'">
+                <?php putRevSlider("cloud") ?>
+            </div>
+            <div ng-show="vm.country=='es'">
+                <?php putRevSlider("cloud_es") ?>
+            </div>
             
             <!-- close .qodef-mobile-header -->
             <a id='qodef-back-to-top'  href='#'>
@@ -358,13 +363,11 @@ get_header();
                                     <div class="wpb_column vc_column_container">
                                         <div class="vc_column-inner ">
                                             <div class="wpb_wrapper">
-                                                <div class = "qodef-portfolio-list-holder-outer qodef-ptf-gallery qodef-ptf-four-columns" >
-                                                    <div class = "qodef-portfolio-list-holder clearfix" >
-
-
-                                                        <article ng-repeat="portfolio in vm.portfolios" class="qodef-portfolio-item col-no-p" >
+                                                <div class="owl-carousel owl-theme portfolio">
+                                                      <article ng-repeat="portfolio in vm.portfolios" class="qodef-portfolio-item col-no-p item" >
                                                             <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
-                                                            <div class = "qodef-item-image-holder" style="{{vm.setBackground(portfolio.image)}}">
+                                                            <div class = "qodef-item-image-holder" style="background-image:'http://cloudemotion.com.ve:8561/api/v0/tmp_media/Email-Uk-Trending.jpg'">
+                                                                <img src="{{portfolio.image}}" alt="">
                                                                 <div class="qodef-portfolio-shader"></div>
                                                             </div>
                                                             <div class="qodef-item-text-overlay">
@@ -381,7 +384,7 @@ get_header();
                                                             </div>
                                                         </article>
 
-                                                    </div>
+                                                    
                                                 </div>
                                             </div>
                                         </div>
@@ -389,230 +392,8 @@ get_header();
                                 </div>
                             </div>
 
-                            <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445420473166 qodef-content-aligment-left qodef-grid-section" >
-                                <div class="container">
-                                    <div class="qodef-section-inner-margin clearfix">
-                                        <div class="wpb_column vc_column_container">
-                                            <div class="vc_column-inner ">
-                                                <div class="wpb_wrapper">
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <h2 style="text-align: center;"><strong ng-bind="'Unity gives strength' | translate "></strong></h2>
-                                                        </div>
-                                                    </div>
-                                                    
-                                                    <div class="wpb_text_column wpb_content_element ">
-                                                        <div class="wpb_wrapper">
-                                                            <h4 style="text-align: center;" ng-bind="'Planning, developing  projects and Marketing cannot be boarded separately...' | translate"></h4>
-                                                        </div>
-                                                    </div>
-                                                    <div class="vc_empty_space"  style="height: 47px" >
-                                                        <span class="vc_empty_space_inner"></span>
-                                                    </div>
-                                                    <div class="vc_row wpb_row vc_inner vc_row-fluid qodef-section qodef-content-aligment-left" style="">
-                                                        <div class="qodef-full-section-inner">
-                                                            <div class="wpb_column vc_column_container col-lg-4 col-md-12">
-                                                                <div class="vc_column-inner ">
-                                                                    <div class="wpb_wrapper">
-                                                                        <div class="mobilec wpb_single_image wpb_content_element vc_align_left">
-                                                                            <figure class="wpb_wrapper vc_figure">
-                                                                                <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                                                    <img width="288" height="272" src="<?php echo get_template_directory_uri(); ?>/assets/img/graphic-2-home-main.png" class="vc_single_image-img attachment-full" alt="a" />
-                                                                                </div>
-                                                                            </figure>
-                                                                        </div>
-                                                                        <div class="vc_empty_space"  style="height: 30px" >
-                                                                            <span class="vc_empty_space_inner"></span>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="wpb_column vc_column_container col-lg-8 col-md-12">
-                                                                <div class="vc_column-inner ">
-                                                                    <div class="wpb_wrapper">
-                                                                        <div class="vc_empty_space"  style="height: 34px" >
-                                                                            <span class="vc_empty_space_inner"></span>
-                                                                        </div>
-                                                                        <div class="qodef-tabs qodef-horizontal qodef-tab-text clearfix">
-                                                                            <ul class="qodef-tabs-nav">
-                                                                                <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==1}">
-                                                                                    <a ng-click="vm.tabs=1" ng-bind="'Project\'s Start' | translate"></a>
-                                                                                </li>
-                                                                                <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==2}">
-                                                                                    <a ng-click="vm.tabs=2" ng-bind="'Project\'s Management' | translate"></a>
-                                                                                </li>
-                                                                                <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==3}">
-                                                                                    <a ng-click="vm.tabs=3" ng-bind="'Marketing' | translate"></a>
-                                                                                </li>
-                                                                                <li class="ui-state-default ui-corner-top " ng-class="{'ui-state-hover':vm.tabs==4}">
-                                                                                    <a ng-click="vm.tabs=4" ng-bind="'Development' | translate"></a>
-                                                                                </li>
-                                                                            </ul>
-                                                                            <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==1" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
-                                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                                    <div class="wpb_wrapper">
-                                                                                        <p align="justify" ng-bind="'The key for a successful project is the Client - Developer communication. While we show weekly progresses, we can develop quality products and delivery them in less time. That is how we have a larger chance to success than our competition, and additionally to a stunning start  on the mart we will earn a Successful Project.' | translate"></p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==2" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
-                                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                                    <div class="wpb_wrapper">
-                                                                                        <p align="justify" ng-bind="'When starting a project it is very important to know what your target audience is, how strong the competition is and how feasible the proposal will be in terms of time and cost. What results in obtaining the best result to be able to Connect and Plan the following strategies to reach your goals.
-                                                                                        '| translate"></p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==3" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
-                                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                                    <div class="wpb_wrapper">
-                                                                                        <p align="justify" ng-bind="'Once the Target Public and the Goals can be determined, we can start working on social networks or advertising. Because What is not displayed, not sold, it is time to introduce your product to the market and with our analysis we can begin to apply the strategies to promote your project in the digital media you want. Managing your social networks to increase the visibility of your business, advertise on Facebook Ads and Google Adwords to attract potential customers to your business from before the project culminates.'| translate">
-                                                                                        </p>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div  class="qodef-tab-container animated fadeIn" ng-show="vm.tabs==4" data-icon-pack="font_awesome" data-icon-html="&lt;i class=qodef-icon-font-awesome fa   &gt;&lt;/i&gt;">
-                                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                                    <div class="wpb_wrapper">
-                                                                                        <p align="justify" ng-bind="'The success of a project is based on Client - Developer communication. As we show weekly progress, we can create quality products in the shortest delivery time, thus achieving a margin of success superior to the competition and if we incorporate an exit to the market shocking we will get a successful project.'| translate">
-                                                                                        </div>
-                                                                                    </div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-grid-section" id="planing">
-                                    <div class="container">
-                                        <div class="qodef-section-inner-margin clearfix">
-                                            <div class="wpb_column vc_column_container col-lg-6 col-md-12">
-                                                <div class="vc_column-inner ">
-                                                    <div class="wpb_wrapper">
-                                                        <div class="vc_empty_space"  style="height: 78px" >
-                                                            <span class="vc_empty_space_inner"></span>
-                                                        </div>
-                                                        <div class="wpb_text_column wpb_content_element  vc_custom_1446567667184">
-                                                            <div class="wpb_wrapper">
-                                                                <h2 ng-bind="'Planning is everything...'|translate"></h2>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vc_empty_space"  style="height: 18px" >
-                                                            <span class="vc_empty_space_inner"></span>
-                                                        </div>
-                                                        <div class="wpb_text_column wpb_content_element ">
-                                                            <div class="wpb_wrapper">
-                                                                <h4 align="justify" ng-bind="'Check out your requirements, manage them into a document, discuss about them with your crew and plan a comfortable model so that you can tell us about your ideas. This way your project will be successful from the beginning.' | translate"></h4>
-                                                                <br>
-                                                                <h4 ng-bind="'Be aware of this when you\'re planning:' | translate"></h4>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vc_empty_space"  style="height: 29px" >
-                                                            <span class="vc_empty_space_inner"></span>
-                                                        </div>
-                                                        <div class="vc_row wpb_row vc_inner vc_row-fluid qodef-section qodef-content-aligment-left" style="">
-                                                            <div class="qodef-full-section-inner">
-                                                                <div class="wpb_column vc_column_container col-sm-6">
-                                                                    <div class="vc_column-inner ">
-                                                                        <div class="wpb_wrapper">
-                                                                            <div class="qodef-icon-list-item">
-                                                                                <div class="qodef-icon-list-icon-holder">
-                                                                                    <div class="qodef-icon-list-icon-holder-inner clearfix">
-                                                                                        <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <p class="qodef-icon-list-text" ng-bind="'How many ideas like yours are there?' | translate"></p>
-                                                                            </div>
-                                                                            <div class="qodef-icon-list-item">
-                                                                                <div class="qodef-icon-list-icon-holder">
-                                                                                    <div class="qodef-icon-list-icon-holder-inner clearfix">
-                                                                                        <i class="qodef-iczc-nfont-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <p class="qodef-icon-list-text" ng-bind="'Does that solution have weakness?' | translate"></p>
-                                                                            </div>
-                                                                            <div class="qodef-icon-list-item">
-                                                                                <div class="qodef-icon-list-icon-holder">
-                                                                                    <div class="qodef-icon-list-icon-holder-inner clearfix">
-                                                                                        <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <p class="qodef-icon-list-text" ng-bind="'If you are a Startup: Have you anticipated to the possible impact your idea would have?' | translate"></p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="wpb_column vc_column_container col-sm-6">
-                                                                    <div class="vc_column-inner ">
-                                                                        <div class="wpb_wrapper">
-                                                                            <div class="qodef-icon-list-item">
-                                                                                <div class="qodef-icon-list-icon-holder">
-                                                                                    <div class="qodef-icon-list-icon-holder-inner clearfix">
-                                                                                        <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <p class="qodef-icon-list-text" ng-bind="'Do you know well where is your idea helpful?' | translate"></p>
-                                                                            </div>
-                                                                            <div class="qodef-icon-list-item">
-                                                                                <div class="qodef-icon-list-icon-holder">
-                                                                                    <div class="qodef-icon-list-icon-holder-inner clearfix">
-                                                                                        <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <p class="qodef-icon-list-text" ng-bind="'Do you have any sketch about how you want your solution looks?' | translate"></p>
-                                                                            </div>
-                                                                            <div class="qodef-icon-list-item">
-                                                                                <div class="qodef-icon-list-icon-holder">
-                                                                                    <div class="qodef-icon-list-icon-holder-inner clearfix">
-                                                                                        <i class="qodef-icon-font-awesome fa fa-check-circle " style="color:#25cbf5;font-size:14px" ></i>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <p class="qodef-icon-list-text" ng-bind="'Does your competition have any weakness you can take advantage of?'| translate">
-                                                                                </p>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="wpb_column vc_column_container col-sm-4">
-                                                                    <div class="vc_column-inner ">
-                                                                        <div class="wpb_wrapper"></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <h5 style="margin-top: 1em" ng-bind="'Remember: It\'s not about your service\'s quantity, but your service\'s quality.' | translate"></h5>
-                                                        <div class="vc_empty_space"  style="height: 50px" >
-                                                            <span class="vc_empty_space_inner"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wpb_column vc_column_container col-lg-6 col-md-12">
-                                                <div class="vc_column-inner ">
-                                                    <div class="wpb_wrapper">
-                                                        <div class="wpb_single_image wpb_content_element vc_align_left">
-                                                            <figure class="wpb_wrapper vc_figure">
-                                                                <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                                    <img width="551" height="497" src="<?php echo get_template_directory_uri(); ?>/assets/img/image-2-home-main.jpg" class="vc_single_image-img attachment-full" alt="a" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/image-2-home-main.jpg 551w, <?php echo get_template_directory_uri(); ?>/assets/img/image-2-home-main-300x271.jpg 300w, <?php echo get_template_directory_uri(); ?>/assets/img/image-2-home-main-550x497.jpg 550w" sizes="(max-width: 551px) 100vw, 551px" />
-                                                                </div>
-                                                            </figure>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
+                            
+                                
 
                                 <div data-qodef-parallax-speed="0.5" id="testimonials" class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445345084553 qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/parallax-2-home-main.jpg);">
                                     <div class="clearfix qodef-full-section-inner">
@@ -789,59 +570,7 @@ get_header();
                                         </div>
                                     </div>
                                 </div>
-                                <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left qodef-grid-section" id="design">
-                                    <div class="container" >
-                                        <div class="qodef-section-inner-margin clearfix">
-                                            <div class="wpb_column vc_column_container col-lg-6 col-md-6">
-                                                <div class="vc_column-inner ">
-                                                    <div class="wpb_wrapper">
-                                                        <div class="wpb_single_image wpb_content_element vc_align_left">
-                                                            <figure class="wpb_wrapper vc_figure">
-                                                                <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                                    <img width="525" height="477" src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing1.jpg" class="vc_single_image-img attachment-full" />
-                                                                </div>
-                                                            </figure>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="wpb_column vc_column_container col-lg-6 col-md-6">
-                                                <div class="vc_column-inner ">
-                                                    <div class="wpb_wrapper">
-                                                        <div class="vc_empty_space"  style="height: 100px" >
-                                                            <span class="vc_empty_space_inner"></span>
-                                                        </div>
-                                                        <div class="wpb_text_column wpb_content_element ">
-                                                            <div class="wpb_wrapper">
-                                                                <h2 ng-bind="'More than a Design. It is an Artwork' | translate"></h2>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vc_empty_space"  style="height: 20px" >
-                                                            <span class="vc_empty_space_inner"></span>
-                                                        </div>
-                                                        <div class="wpb_text_column wpb_content_element ">
-                                                            <div class="wpb_wrapper">
-                                                                <h4 align="justify" ng-bind="'We care about highlighting your style keeping your being in the design . We have a  specialized professionals team to achieve this goal. We will give an unique and catching interface to your website to make it stands out.'|translate"></h4>
-                                                            </div>
-                                                        </div>
-                                                        <div class="vc_empty_space"  style="height: 43px" >
-                                                            <span class="vc_empty_space_inner"></span>
-                                                        </div>
-                                                        <a href="#" target="_self"  class="qodef-btn qodef-btn-medium qodef-btn-solid qodef-btn-icon"  >
-                                                            <span class="qodef-btn-text" ng-bind="'See More' | translate"></span>
-                                                            <span class="qodef-btn-text-icon">
-                                                                <i class="qodef-icon-simple-line-icon icon-rocket " ></i>
-                                                            </span>
-                                                        </a>
-                                                        <div class="vc_empty_space"  style="height: 40px" >
-                                                            <span class="vc_empty_space_inner"></span>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                                
                                 
                                 <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="team">
                                 
