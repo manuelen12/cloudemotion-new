@@ -23,6 +23,7 @@
 			changeLanguage:changeLanguage,
 			getTeam:urlHelpers.get("users"),
 			getPorfolios:urlHelpers.get("portfolios"),
+			getCategory:urlHelpers.get("classifications"),
 			setImage:setImage,
 			setBackground:setBackground,
 			service_t: 2,
@@ -72,7 +73,23 @@
 				console.log(error);
 			})
 
+
+			vm.getCategory.then(function(response) {
+				response.data.map(function(data,ind) {
+					console.log(data);
+					console.log(ind);
+					data.class=data.name.split(" ").join("-");
+				})
+				console.log(response.data);
+				vm.category=response.data;
+			},function(error) {
+				console.log(error);
+			})
+
 			vm.getPorfolios.then(function(response) {
+				response.data.map(function(data,ind) {
+					data.class=data.classification.name.split(" ").join("-");
+				})
 				vm.portfolios=response.data;
 				
 				var opt={	

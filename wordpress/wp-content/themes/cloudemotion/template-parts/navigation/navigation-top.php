@@ -19,7 +19,7 @@
                 <div class="qodef-position-left-inner">
                     <div class="qodef-logo-wrapper">
                         <a href="http://startit.select-themes.com/">
-                            <img width="250" class="qodef-normal-logo" src="./wp-content/themes/cloudemotion/assets/img/logo_header.jpg" alt="logo"/>
+                            <img width="200" class="qodef-normal-logo" src="./wp-content/themes/cloudemotion/assets/img/logo_header.jpg" alt="logo"/>
                         </a>
                     </div>
                 </div>
