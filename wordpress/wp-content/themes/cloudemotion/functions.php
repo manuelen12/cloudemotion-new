@@ -185,6 +185,7 @@ if(!is_admin()){
 		'woocommerce.min',
 		'flag',
 		'nucleoo',
+		'cloud-animation',
 		'style_dynamic_responsive',
 		'menu.min'
 		);

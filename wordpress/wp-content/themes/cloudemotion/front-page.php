@@ -175,9 +175,92 @@ get_header();
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-md-5">
-                                                                            <br>
-                                                                            <br>
-                                                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/marketing_digital.png" alt="Marketing Digital" class="img-responsive text-center">
+                                                                            <article style="zoom:.6;" class="general-cont"> 
+                                                                                <div class="animation-content cloud-cont active">
+                                                                                    <div class="marketing cloud-1" textAnimation>
+                                                                                        <div class="line" data-count="2" data-sizes='["big","small"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["medium","small","small"]'></div>
+                                                                                        <div class="line" data-count="2" data-sizes='["small","big"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["small","small","medium"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["medium","small","small"]'></div>
+                                                                                    </div>
+                                                                                    <div class="marketing cloud-3" textAnimation>
+                                                                                        <div class="line" data-count="2" data-sizes='["big","small"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["medium","small","small"]'></div>
+                                                                                        <div class="line" data-count="2" data-sizes='["small","big"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["small","small","medium"]'></div>
+                                                                                        <div class="line" data-count="2" data-sizes='["big","small"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["medium","small","small"]'></div>
+                                                                                        <div class="line" data-count="2" data-sizes='["small","big"]'></div>
+
+                                                                                    </div>
+                                                                                    <div class="marketing cloud-2" textAnimation>
+                                                                                        <div class="line" data-count="3" data-sizes='["small","big"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["small","small","medium"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["medium","small","small"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["small","big"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["small","small","medium"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["medium","small","small"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["small","big"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["small","small","medium"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["medium","small","small"]'></div>
+                                                                                        <div class="line" data-count="3" data-sizes='["medium","small","small"]'></div>
+                                                                                    </div>
+                                                                                    <div class="marketing count" autoIncrement data-min="0" data-max="10"></div>
+                                                                                </div>
+
+                                                                                <div class="animation-content click-cont active">
+                                                                                    <div class="marketing count" autoIncrement data-min="0" data-max="10"></div>
+                                                                                    <div class="marketing cursor spin">
+                                                                                        <div class="marketing blink"></div>
+                                                                                    </div>
+
+                                                                                </div>
+
+
+                                                                                <div class="animation-content barra-cont active">
+                                                                                    <div class="barra-base">
+                                                                                        <div class="marketing barra"></div>                                     
+                                                                                        <div class="marketing barra"></div>                                     
+                                                                                        <div class="marketing barra"></div>                                     
+                                                                                    </div>
+                                                                                </div>
+
+
+                                                                                <div class="animation-content bomb-cont active">
+                                                                                    <div class="light">
+                                                                                        <div class="marketing bombilla"></div>                                      
+                                                                                    </div>                                      
+                                                                                </div>
+
+
+                                                                                <div class="animation-content coin-cont active">
+                                                                                    <div class="marketing coin"></div>                                          
+                                                                                    <div class="marketing coin"></div>                                          
+                                                                                    <div class="marketing coin"></div>                                          
+                                                                                    <div class="marketing coin"></div>                                          
+                                                                                </div>
+
+
+                                                                                <div class="animation-content simple-cont active">
+                                                                                    <div class="marketing spined spin"></div>           
+                                                                                    <div class="row">
+                                                                                        <div class="marketing count" style="position:initial;float:left;" autoIncrement data-min="0" data-max="200"></div>
+                                                                                        <div style="position:relative;">
+                                                                                            <div class="marketing graph"></div>                                         
+                                                                                            <div class="marketing graph"></div>                                         
+                                                                                            <div class="marketing graph"></div>                                         
+                                                                                        </div>
+                                                                                    </div>                              
+                                                                                </div>
+
+
+                                                                                <div class="animation-content blanco-cont active">
+                                                                                    <div class="marketing blanco"></div>            
+                                                                                </div>
+
+
+                                                                            </article>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -185,9 +268,38 @@ get_header();
                                                                 <div role="tabpanel" class="tab-pane animated fadeIn" ng-class="{'active':vm.service_t==2}" id="Section1">
                                                                     <div class="row">
                                                                         <div class="col-md-5">
-                                                                            <br>
-                                                                            <br>
-                                                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/mobile_phone.png" alt="Marketing Digital" class="img-responsive text-center">
+                                                                            <article class="general-cont">
+
+                                                                                <div class="mobil1 screen">
+                                                                                    <div class="float">
+                                                                                        <div class="mobil1 network"></div>
+                                                                                    </div>
+                                                                                    <div class="float msg">
+                                                                                        <div class="mobil1 message"></div>
+                                                                                    </div>
+                                                                                    <div class="mobil1 screenData"></div>
+                                                                                    <div class="mobil1 gear spin"></div>
+                                                                                    <div class="mobil1 mobile">
+
+                                                                                        <div class="micas">
+                                                                                            <div class="mobil2 mica"></div>         
+                                                                                            <div class="mobil2 mica"></div>         
+                                                                                            <div class="mobil2 mica">
+                                                                                                <div class="mobil1 icon"></div>
+                                                                                                <div class="mobil1 icon"></div>
+                                                                                                <div class="mobil1 icon"></div>
+                                                                                                <div class="mobil1 icon"></div>
+                                                                                                <div class="mobil1 icon"></div>
+                                                                                                <div class="mobil1 icon"></div>
+                                                                                                <div class="mobil1 icon"></div>
+                                                                                                <div class="mobil1 icon"></div>
+                                                                                            </div>          
+                                                                                        </div>          
+                                                                                        <div class="mobil2 hand"></div>         
+                                                                                    </div>          
+                                                                                </div>          
+
+                                                                            </article>
                                                                         </div>
                                                                         <div class="col-md-7">
                                                                             <div class="row">
@@ -266,8 +378,8 @@ get_header();
                                                                 <div role="tabpanel" class="tab-pane animated fadeIn" ng-class="{'active':vm.service_t==3}" id="Section1">
                                                                     <div class="row">
                                                                         <div class="col-md-5">
-                                                                            <br>
-                                                                            <br>
+                                                                            <article class="logo-cont">
+                                                                                
                                                                             <div id="atomo" ng-show="vm.image_web==1">
                                                                                 <div id="nucleo"></div>
                                                                                 <div class="electron a"></div>
@@ -281,12 +393,23 @@ get_header();
 
                                                                             <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/web_page_1.jpg" alt="Web Page" class="img-responsive text-center animated fadeIn" ng-show="vm.image_web==1"> -->
 
-                                                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST5.png" alt="Simple and Creative" class="img-responsive text-center animated bounceInDown" ng-show="vm.image_web==2">
+                                                                            <article class="web-cont animated bounceInDown" ng-show="vm.image_web==2">
+                                                                                <div class="web2 pc">
+                                                                                    <div class="draw-base">
+                                                                                        <div class="web3 draw"></div>
+                                                                                        <div class="web3 draw"></div>
+                                                                                        <div class="web3 draw"></div>
+                                                                                    </div>
+                                                                                </div>
+
+                                                                            </article>
 
                                                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST3.png" alt="Customizable" class="img-responsive text-center animated bounceInLeft" ng-show="vm.image_web==3">
 
                                                                             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST.png" alt="Fast and Adaptive" class="img-responsive text-center animated bounceInUp" ng-show="vm.image_web==4">
 
+                                                                        
+                                                                            </article>
                                                                         </div>
                                                                         <div class="col-md-7">
                                                                             <div class="row" ng-mouseenter="vm.image_web=2">
@@ -365,15 +488,10 @@ get_header();
                                                         <ul class="filter nav nav-tabs" data-filter-list="#works-list">
 
                                                             <li class="active">
-                                                                <a href="" data-filter="*">Todos</a>
+                                                                <a href="" data-filter="*" ng-bind="'Todos'"></a>
                                                             </li>
-
-                                                            <li>
-                                                                <a href="" data-filter=".gratuitos">Gratuitos</a>
-                                                            </li>
-
-                                                            <li>
-                                                                <a href="" data-filter=".pagos">Pagos</a>
+                                                            <li ng-repeat="categ in vm.category">
+                                                                <a href="" data-filter="{{'.'+categ.class | lowercase}}" ng-bind="categ.name"></a>
                                                             </li>
 
                                                         </ul>
@@ -382,7 +500,7 @@ get_header();
                                                 </nav>
 
                                                 <div id="works-list" class="filter-list row masonry no-spaces" >
-                                                    <div ng-repeat="portfolio in vm.portfolios" class="{{portfolio.name}} masonry-item col-md-4 col-sm-6 col-xs-12" >           
+                                                    <div ng-repeat="portfolio in vm.portfolios" class="{{portfolio.class | lowercase}} masonry-item col-md-4 col-sm-6 col-xs-12" >           
                                                         <div class="image-box">
                                                             <div class="image" >
                                                                 <img ng-src="{{portfolio.image}}" style="background-size: cover; height: 350px;" />
