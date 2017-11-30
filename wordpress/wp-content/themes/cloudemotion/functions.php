@@ -177,7 +177,6 @@ if(!is_admin()){
 		'animate.min',
 		'simple-line-icons',
 		'style_dynamic',
-		'style_dynamic_responsive',
 		'styles',
 		'abacosystems',
 		//'toolbar',
@@ -185,7 +184,8 @@ if(!is_admin()){
 		'woocommerce-responsive.min',
 		'woocommerce.min',
 		'flag',
-		'nucleoo'
+		'nucleoo',
+		'style_dynamic_responsive'
 		);
 
 	$scripts = array(
