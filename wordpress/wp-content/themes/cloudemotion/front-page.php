@@ -487,10 +487,10 @@ get_header();
                                                     <div class="tabs-wrapper">
                                                         <ul class="filter nav nav-tabs" data-filter-list="#works-list">
 
-                                                            <li class="active">
+                                                            <li ng-class="{'active':vm.selected==''}" ng-click="vm.selected=''">
                                                                 <a href="" data-filter="*" ng-bind="'Todos'"></a>
                                                             </li>
-                                                            <li ng-repeat="categ in vm.category">
+                                                            <li ng-repeat="categ in vm.category" ng-class="{'active':vm.selected==categ.id}" ng-click="vm.selected=cated.id">
                                                                 <a href="" data-filter="{{'.'+categ.class | lowercase}}" ng-bind="categ.name"></a>
                                                             </li>
 
@@ -508,23 +508,13 @@ get_header();
                                                             </div>
                                                             <div class="hover">
                                                                 <a href="">
-                                                                    <h4 class="mb-0">{{titulo}}</h4>
-                                                                    <span class="text-muted">{{categorycontent}}</span>
+                                                                    <h4 class="mb-0" ng-bind="portfolio.company.name"></h4>
+                                                                    <span class="text-muted" ng-bind="portfolio.name"></span>
                                                                 </a>
                                                             </div>
                                                         </div>
                                                     </div>                
                                                     <p ng-hide="true">Sorry, no posts matched your criteria.</p>
-                                                </div>
-                                                <div class="portfolio-content">
-                                                    <div class="container">
-                                                        <div class="pull-right" style="margin:80px;">
-                                                            <button class="close" ng-click="mv.closePortfolio()">X</button>
-                                                        </div>
-                                                        <img src="{{mv.img}}" alt="" width="500" height="500" style="margin:10px;">
-                                                        <h2 ng-bind="mv.title"></h2>
-                                                        <p ng-bind="mv.content"></p>
-                                                    </div>         
                                                 </div>
                                             </section>
                                         </div>
