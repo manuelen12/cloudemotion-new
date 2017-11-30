@@ -366,8 +366,7 @@ get_header();
                                                 <div class="owl-carousel owl-theme portfolio">
                                                       <article ng-repeat="portfolio in vm.portfolios" class="qodef-portfolio-item col-no-p item" >
                                                             <a class ="qodef-portfolio-link" href="https://cloudemotionteam.com" target="_self"></a>
-                                                            <div class = "qodef-item-image-holder" style="background-image:'http://cloudemotion.com.ve:8561/api/v0/tmp_media/Email-Uk-Trending.jpg'">
-                                                                <img src="{{portfolio.image}}" alt="">
+                                                            <div class = "qodef-item-image-holder item" style="background-image:'http://cloudemotion.com.ve:8561/api/v0/tmp_media/Email-Uk-Trending.jpg'; height: 100px; width: 100px">
                                                                 <div class="qodef-portfolio-shader"></div>
                                                             </div>
                                                             <div class="qodef-item-text-overlay">
