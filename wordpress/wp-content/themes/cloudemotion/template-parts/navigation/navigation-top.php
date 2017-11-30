@@ -11,7 +11,6 @@
 ?>
 
 
-
 <header class="qodef-page-header">
     <div class="qodef-menu-area" style="background-color:rgba(255, 255, 255, 0)">
         <div class="qodef-vertical-align-containers">
@@ -35,5 +34,6 @@
         </div>
     </div>
 </header>
+<?php     get_template_part( 'template-parts/navigation/menu-side', null ); ?>
 
 

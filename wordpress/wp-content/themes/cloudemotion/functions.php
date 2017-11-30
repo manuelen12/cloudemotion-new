@@ -186,7 +186,8 @@ if(!is_admin()){
 		'flag',
 		'nucleoo',
 		'cloud-animation',
-		'style_dynamic_responsive'
+		'style_dynamic_responsive',
+		'menu.min'
 		);
 
 	$scripts = array(
