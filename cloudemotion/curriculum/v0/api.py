@@ -101,7 +101,7 @@ class API(Base):
             "skill", "portfolio")
 
         __portfolio = Portfolios.objects.select_related(
-            "company"
+            "company", "classification"
             ).prefetch_related(
 
              Prefetch(
@@ -116,6 +116,10 @@ class API(Base):
                     "id": i.company.id,
                     "name": i.company.name,
                     "responsable": i.company.responsable,
+                },
+                "classification": {
+                    "name": i.classification.name,
+                    "category": i.classification.category,
                 },
                 "image": i.image,
                 "url": i.url,
