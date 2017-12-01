@@ -160,8 +160,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'wordpress',
-        'USER': 'wordpress',
-        'PASSWORD': '12111201',
+        'USER': 'root',
+        'PASSWORD': 'sector379',
         'HOST': 'localhost',
         'PORT': '3306',
     }
