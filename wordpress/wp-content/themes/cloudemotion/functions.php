@@ -223,6 +223,7 @@ if(!is_admin()){
 		'like.min',
 		'wp-embed.min',
 		'waypoints.min',
+		'bootstrap.min',
 		'global',
 		'angular.min',
 		'angular-translate',
