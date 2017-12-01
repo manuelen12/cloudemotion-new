@@ -14,7 +14,7 @@ li {
 
 #header {
     position: relative;
-    z-index: 100
+    /* z-index: 100 */
 }
 
 #header .header-body {
@@ -31817,7 +31817,7 @@ section.section {
     }
     #header.header-floating .header-body {
         position: fixed;
-        top: 0;
+        top: 106px;
         background: 0 0;
         min-height: 0;
         padding: 0;
