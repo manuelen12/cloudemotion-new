@@ -1,4 +1,5 @@
 /* global twentyseventeenScreenReaderText */
+var Sukces;
 (function( $ ) {
 
 	// Variables and DOM Caching.
@@ -362,7 +363,7 @@ var setHeader = function() {
     }
 }
 
-var Sukces = {
+Sukces = {
     init: function() {
 
         this.Basic.init();
@@ -431,7 +432,8 @@ var Sukces = {
 
                 $list = $($(this).parents('.filter').data('filter-list'));
                 filterValue = $(this).attr('data-filter');
-
+console.log($list.children());
+console.log($list.children().not(filterValue));
                 $list.children().filter('.not-matched').removeClass('not-matched');
                 if(filterValue!="*") $list.children().not(filterValue).addClass('not-matched');
 
@@ -810,22 +812,22 @@ var Sukces = {
         tabs: function() {
             window.setTabs = function() {
                 $('.tabs-wrapper').each(function(){
-
                     var $selector = $(this).children('.selector'),
                     $elActive = $(this).find('.active'),
                     navOffset = $(this).offset().left,
                     thisOffset = $elActive.offset().left,
                     offset = thisOffset - navOffset,
                     width = $elActive .outerWidth();
-
+                    console.log(width);
+                    console.log(offset);
                     $selector.css({
                         'width': width+'px',
                         'left': offset+'px'
                     });
                 });
             }
-
-            $('.tabs-wrapper > .nav-tabs > li > a').on('click', function(){
+            console.log($('.tabs-wrapper .nav-tabs li a'));
+            $('.tabs-wrapper .nav-tabs li a').on('click', function(){
                 var $selector = $(this).parents('.tabs-wrapper').children('.selector'),
                 navOffset = $(this).parents('.tabs-wrapper').offset().left,
                 thisOffset = $(this).offset().left,
@@ -873,7 +875,8 @@ $(window).load(function(){
 var arrows={navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]};
 
 function setCarousel(parentElement,options,add) {
-	setTimeout(function() {
+		console.log(options);
+
 		console.log(options);
 		var options=options?options:{
 			loop:false,
@@ -892,5 +895,5 @@ function setCarousel(parentElement,options,add) {
 		console.log(options);
 		$(parentElement).owlCarousel(options)
 
-	},1000)
+	
 }	

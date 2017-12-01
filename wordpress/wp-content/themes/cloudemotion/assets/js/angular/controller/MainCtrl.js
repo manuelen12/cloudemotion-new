@@ -12,8 +12,8 @@
 	}
 	cloudemotion.controller("MainCtrl", MainCtrl)
 
-	MainCtrl.$inject = ["$scope","$http","particles","$translate","ValidatorHelper","urlHelpers"];
-	function MainCtrl($scope,$http,particles,$translate,ValidatorHelper,urlHelpers) {
+	MainCtrl.$inject = ["$scope","$timeout","$http","particles","$translate","ValidatorHelper","urlHelpers"];
+	function MainCtrl($scope,$timeout,$http,particles,$translate,ValidatorHelper,urlHelpers) {
 		console.log("maincontroller");
 		var vm=this;
 		console.log(urlHelpers);
@@ -54,20 +54,20 @@
 					}
 				})
 				$('.portfolio').owlCarousel({
-				    loop:true,
-				    margin:10,
-				    nav:true,
-				    responsive:{
-				        0:{
-				            items:1
-				        },
-				        600:{
-				            items:3
-				        },
-				        1000:{
-				            items:3
-				        }
-				    }
+					loop:true,
+					margin:10,
+					nav:true,
+					responsive:{
+						0:{
+							items:1
+						},
+						600:{
+							items:3
+						},
+						1000:{
+							items:3
+						}
+					}
 				})
 			},function(error) {
 				console.log(error);
@@ -82,6 +82,25 @@
 				})
 				console.log(response.data);
 				vm.category=response.data;
+
+				$timeout(function() {
+					var opt={	
+						loop:false,
+						margin:10,
+						nav:true,
+						autoplay:false,
+						responsiveClass:true,
+						items:4,
+						animateOut: 'fadeOut',
+						animateIn: 'fadeIn',
+						autoWidth:true,
+
+					}
+					setCarousel(".category",opt);
+
+					Sukces.Component.tabs(); 
+
+				},1000)
 			},function(error) {
 				console.log(error);
 			})
@@ -91,18 +110,6 @@
 					data.class=data.classification.name.split(" ").join("-");
 				})
 				vm.portfolios=response.data;
-				
-				var opt={	
-					loop:false,
-					margin:10,
-					nav:true,
-					autoplay:true,
-					responsiveClass:true,
-					items:4,
-					animateOut: 'fadeOut',
-					animateIn: 'fadeIn',
-				}
-				setCarousel(".qodef-team2",opt,arrows);
 				
 				console.log(vm.portfolios)
 			},function(error) {
