@@ -26,9 +26,17 @@
 			getCategory:urlHelpers.get("classifications"),
 			setImage:setImage,
 			setBackground:setBackground,
+			openModal:openModal,
 			service_t: 2,
 			image_web: 1
 		});
+
+		function openModal(portfolio) {
+			vm.seeData=angular.copy(portfolio);
+			console.log($);
+			$('#modalportfolio').modal('show');
+		}
+
 		function setBackground(image) {
 			console.log(('background-image:url("'+image+'")'));
 			return 'background-image:url("'+image+'")';
