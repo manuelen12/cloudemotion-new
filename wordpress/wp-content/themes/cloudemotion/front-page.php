@@ -500,7 +500,7 @@ get_header();
                                                 </nav>
 
                                                 <div id="works-list" class="filter-list row masonry no-spaces" >
-                                                    <div ng-repeat="portfolio in vm.portfolios" class="{{portfolio.class | lowercase}} masonry-item col-md-4 col-sm-6 col-xs-12" >           
+                                                    <div ng-repeat="portfolio in vm.portfolios" ng-show="portfolio.classification.id==cated.id" class="{{portfolio.class | lowercase}} masonry-item col-md-4 col-sm-6 col-xs-12" >           
                                                         <div class="image-box">
                                                             <div class="image" >
                                                                 <img ng-src="{{portfolio.image}}" style="background-size: cover; height: 350px;" />
@@ -510,7 +510,7 @@ get_header();
                                                                 <img src="{{portfolio.company.image}}" class="img-responsive img-circle img-thumbnail" style="background: none; border: none; width: auto" alt="Image">
                                                                 <a href="">
                                                                     <h4 class="mb-0" ng-bind="portfolio.company.name"></h4>
-                                                                    <span style="color:white !important" class="text-muted" ng-bind="portfolio.name"></span>
+                                                                    <span style="color:white !important" class="text-muted" ng-bind="portfolio.classification.id"></span>
                                                                 </a>
                                                             </div>
                                                         </div>

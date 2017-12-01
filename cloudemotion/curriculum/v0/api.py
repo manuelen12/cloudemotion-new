@@ -119,6 +119,7 @@ class API(Base):
                     "image": i.company.image,
                 },
                 "classification": {
+                    "id": i.classification.id,
                     "name": i.classification.name,
                     "category": i.classification.category,
                 },
