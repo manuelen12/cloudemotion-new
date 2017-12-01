@@ -488,7 +488,7 @@ get_header();
                                                         <ul class="filter nav nav-tabs" data-filter-list="#works-list">
 
                                                             <li ng-class="{'active':vm.selected==''}" ng-click="vm.selected=''">
-                                                                <a href="" data-filter="*" ng-bind="'Todos'"></a>
+                                                                <a style="color:white;opacity: 1" href="" data-filter="*" ng-bind="'Todos'"></a>
                                                             </li>
                                                             <li ng-repeat="categ in vm.category" ng-class="{'active':vm.selected==categ.id}" ng-click="vm.selected=cated.id">
                                                                 <a href="" data-filter="{{'.'+categ.class | lowercase}}" ng-bind="categ.name"></a>
@@ -507,10 +507,10 @@ get_header();
                                                                 <a href="" data-toggle="ajax-modal"></a>
                                                             </div>
                                                             <div class="hover">
-                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-1.png" class="img-responsive img-circle img-thumbnail" alt="Image">
+                                                                <img src="{{portfolio.company.image}}" class="img-responsive img-circle img-thumbnail" style="background: none; border: none;" alt="Image">
                                                                 <a href="">
                                                                     <h4 class="mb-0" ng-bind="portfolio.company.name"></h4>
-                                                                    <span class="text-muted" ng-bind="portfolio.name"></span>
+                                                                    <span style="color:white !important" class="text-muted" ng-bind="portfolio.name"></span>
                                                                 </a>
                                                             </div>
                                                         </div>
