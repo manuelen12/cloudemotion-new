@@ -8,6 +8,7 @@ from django.utils.translation import ugettext_lazy as _
 class Companies(models.Model):
     name = models.CharField(max_length=50)
     phone = models.CharField(max_length=50, null=True, blank=True)
+    image = models.CharField(max_length=200, null=True, blank=True)
     email = models.EmailField(max_length=50, null=True, blank=True)
     address = models.TextField(null=True, blank=True)
     responsable = models.CharField(max_length=100, null=True, blank=True)

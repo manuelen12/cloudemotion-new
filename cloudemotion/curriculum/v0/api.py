@@ -116,6 +116,7 @@ class API(Base):
                     "id": i.company.id,
                     "name": i.company.name,
                     "responsable": i.company.responsable,
+                    "image": i.company.image,
                 },
                 "classification": {
                     "name": i.classification.name,
