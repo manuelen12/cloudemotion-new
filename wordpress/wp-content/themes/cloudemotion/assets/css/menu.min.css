@@ -31813,7 +31813,7 @@ section.section {
     #header.header-floating .header-row {
         position: absolute;
         top: 18px;
-        left: -40px
+        /* left: -40px */
     }
     #header.header-floating .header-body {
         position: fixed;

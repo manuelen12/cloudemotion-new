@@ -2,7 +2,7 @@
     <header id="header" class="header-floating " data-plugin-options="{'stickyEnabled': false, 'stickyEnableOnBoxed': false, 'stickyEnableOnMobile': false, 'stickyStartAt': 0, 'stickySetTop': '60px', 'stickyChangeLogo': false}">
     <div class="header-body">
         <div class="header-container container">
-            <div class="header-row">
+            <div class="header-row" style="margin-left: 99%">
                 <div class="header-column">
                     <div class="header-row">
                         <div class="header-nav pt-xs">
