@@ -506,7 +506,7 @@ get_header();
                                                                 <img ng-src="{{portfolio.image}}" />
                                                                 <a href="" data-toggle="ajax-modal"></a>
                                                             </div>
-                                                            <div class="hover"  data-toggle="modal" href='#modalportfolio'>
+                                                            <div class="hover"  ng-click="vm.openModal(portfolio)" >
                                                                 <img src="{{portfolio.company.image}}" class="img-responsive" alt="Image">
                                                                 <a class="text-center">
                                                                     <h4 class="mb-0" ng-bind="portfolio.company.name"></h4>
@@ -739,25 +739,29 @@ get_header();
                                         </div>
                                         <!-- close div.qodef-wrapper-inner  -->
                                     </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
 
                                     <div class="modal fade" id="modalportfolio">
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                                    <h4 class="modal-title" >Portafolio</h4>
+                                                    <h4 class="modal-title" >Portafolio View</h4>
                                                 </div>
                                                 <div class="modal-body">
-                                                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-1.png" class="img-responsive" alt="Image">
+                                                    <img ng-src="{{vm.seeData.image}}" width="400" height="400" style="margin:0 auto;" class="img-responsive" alt="Image">
                                                 </div>
                                                 <div class="modal-footer">
                                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                    <button type="button" class="btn btn-primary">Save changes</button>
+                                                    <a ng-href="{{vm.seeData.url}}"  class="btn btn-primary"  target="_blank">Go to Proyect</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <!-- close div.qodef-wrapper -->
                                 </body>
                                 </html>
