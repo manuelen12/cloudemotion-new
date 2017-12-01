@@ -97,7 +97,6 @@
 
 					}
 					setCarousel(".category",opt);
-
 					Sukces.Component.tabs(); 
 
 				},1000)
@@ -111,6 +110,19 @@
 				})
 				vm.portfolios=response.data;
 				
+				var opt={	
+					loop:false,
+					margin:10,
+					nav:true,
+					autoplay:true,
+					responsiveClass:true,
+					items:4,
+					animateOut: 'fadeOut',
+					animateIn: 'fadeIn',
+				}
+				setCarousel(".qodef-team2",opt,arrows);
+				
+				console.log(vm.portfolios)
 				console.log(vm.portfolios)
 			},function(error) {
 				console.log(error);

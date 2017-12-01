@@ -379,35 +379,34 @@ get_header();
                                                                     <div class="row">
                                                                         <div class="col-md-5">
                                                                             <article class="logo-cont">
+                                                                                
+                                                                            <div id="atomo" ng-show="vm.image_web==1">
+                                                                                <div id="nucleo"></div>
+                                                                                <div class="electron a"></div>
+                                                                                <div class="electron b"></div>
+                                                                                <div class="electron c"></div>
+                                                                                <div class="electron d"></div>
+                                                                                <div class="electron e"></div>
+                                                                                <div class="electron f"></div>
+                                                                                <div class="electron g"></div>
+                                                                            </div>
 
-                                                                                <div id="atomo" ng-show="vm.image_web==1">
-                                                                                    <div id="nucleo"></div>
-                                                                                    <div class="electron a"></div>
-                                                                                    <div class="electron b"></div>
-                                                                                    <div class="electron c"></div>
-                                                                                    <div class="electron d"></div>
-                                                                                    <div class="electron e"></div>
-                                                                                    <div class="electron f"></div>
-                                                                                    <div class="electron g"></div>
+                                                                            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/web_page_1.jpg" alt="Web Page" class="img-responsive text-center animated fadeIn" ng-show="vm.image_web==1"> -->
+
+                                                                            <article class="web-cont animated bounceInDown" ng-show="vm.image_web==2">
+                                                                                <div class="web2 pc">
+                                                                                    <div class="draw-base">
+                                                                                        <div class="web3 draw"></div>
+                                                                                        <div class="web3 draw"></div>
+                                                                                        <div class="web3 draw"></div>
+                                                                                    </div>
                                                                                 </div>
 
-                                                                                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/web_page_1.jpg" alt="Web Page" class="img-responsive text-center animated fadeIn" ng-show="vm.image_web==1"> -->
+                                                                            </article>
 
-                                                                                <article class="web-cont animated bounceInDown" ng-show="vm.image_web==2">
-                                                                                    <div class="web2 pc">
-                                                                                        <div class="draw-base">
-                                                                                            <div class="web3 draw"></div>
-                                                                                            <div class="web3 draw"></div>
-                                                                                            <div class="web3 draw"></div>
-                                                                                        </div>
-                                                                                    </div>
+                                                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST3.png" alt="Customizable" class="img-responsive text-center animated bounceInLeft" ng-show="vm.image_web==3">
 
-                                                                                </article>
-
-                                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST3.png" alt="Customizable" class="img-responsive text-center animated bounceInLeft" ng-show="vm.image_web==3">
-
-                                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST.png" alt="Fast and Adaptive" class="img-responsive text-center animated bounceInUp" ng-show="vm.image_web==4">
-
+                                                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST.png" alt="Fast and Adaptive" class="img-responsive text-center animated bounceInUp" ng-show="vm.image_web==4">
 
                                                                             </article>
                                                                         </div>
@@ -500,22 +499,22 @@ get_header();
                                                 </nav>
 
                                                 <div id="works-list" class="filter-list row masonry no-spaces" >
-                                                    <div ng-repeat="portfolio in vm.portfolios" class="{{portfolio.class | lowercase}} masonry-item col-md-4 col-sm-6 col-xs-12" >           
+                                                    <div ng-repeat="portfolio in vm.portfolios" ng-show="portfolio.classification.id==vm.selected || !vm.selected" class="{{portfolio.class | lowercase}} masonry-item col-md-4 col-sm-6 col-xs-12 animated fadeIn" >           
                                                         <div class="image-box">
                                                             <div class="image" >
-                                                                <img ng-src="{{portfolio.image}}" style="background-size: cover; height: 350px;" />
+                                                                <img ng-src="{{portfolio.image}}" />
                                                                 <a href="" data-toggle="ajax-modal"></a>
                                                             </div>
-                                                            <div class="hover" data-toggle="modal" href='#modalportfolio'>
-                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-1.png" class="img-responsive img-circle img-thumbnail" alt="Image">
-                                                                <a href="">
+                                                            <div class="hover"  data-toggle="modal" href='#modalportfolio'>
+                                                                <img src="{{portfolio.company.image}}" class="img-responsive" alt="Image">
+                                                                <a class="text-center">
                                                                     <h4 class="mb-0" ng-bind="portfolio.company.name"></h4>
                                                                     <span class="text-muted" ng-bind="portfolio.name"></span>
                                                                 </a>
                                                             </div>
                                                         </div>
                                                     </div>                
-                                                    <p ng-hide="true">Sorry, no posts matched your criteria.</p>
+                                                    <p >Sorry, no posts matched your criteria.</p>
                                                 </div>
                                             </section>
                                         </div>

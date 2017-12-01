@@ -432,11 +432,11 @@ Sukces = {
 
                 $list = $($(this).parents('.filter').data('filter-list'));
                 filterValue = $(this).attr('data-filter');
-console.log($list.children());
-console.log($list.children().not(filterValue));
                 $list.children().filter('.not-matched').removeClass('not-matched');
                 if(filterValue!="*") $list.children().not(filterValue).addClass('not-matched');
-
+				if ($list.children().length == $list.children().not(filterValue).length) {$("#works-list p").removeClass('no-data');	}
+				else{ $("#works-list p").addClass('no-data');	}
+				$("#works-list p").removeClass('no-matched');
                 $(this).parents('ul').find('.active').removeClass('active');
                 $(this).parent('li').addClass('active');
 

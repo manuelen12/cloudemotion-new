@@ -69,6 +69,7 @@ class API(Base):
             **filters).order_by(*ordening)
         for i in __classification:
             __dict = {
+                "id": i.id,
                 "name": i.name,
                 "status": i.status,
                 "create_at": i.create_at,
@@ -116,8 +117,10 @@ class API(Base):
                     "id": i.company.id,
                     "name": i.company.name,
                     "responsable": i.company.responsable,
+                    "image": i.company.image,
                 },
                 "classification": {
+                    "id": i.classification.id,
                     "name": i.classification.name,
                     "category": i.classification.category,
                 },
