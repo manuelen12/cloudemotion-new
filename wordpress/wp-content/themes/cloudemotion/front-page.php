@@ -491,7 +491,7 @@ get_header();
                                                                 <a style="color:white;opacity: 1" href="" data-filter="*" ng-bind="'Todos'"></a>
                                                             </li>
                                                             <li ng-repeat="categ in vm.category" ng-class="{'active':vm.selected==categ.id}" ng-click="vm.selected=categ.id">
-                                                                <a href="" data-filter="{{'.'+categ.class | lowercase}}" ng-bind="categ.id"></a>
+                                                                <a href="" data-filter="{{'.'+categ.class | lowercase}}" ng-bind="categ.name" style="color:white; opacity:1"></a>
                                                             </li>
 
                                                         </ul>
@@ -500,7 +500,7 @@ get_header();
                                                 </nav>
 
                                                 <div id="works-list" class="filter-list row masonry no-spaces" >
-                                                    <div ng-repeat="portfolio in vm.portfolios" ng-hide="portfolio.classification.id==vm.selected" class="{{portfolio.class | lowercase}} masonry-item col-md-4 col-sm-6 col-xs-12" >           
+                                                    <div ng-repeat="portfolio in vm.portfolios" ng-show="portfolio.classification.id==vm.selected || !vm.selected" class="{{portfolio.class | lowercase}} masonry-item col-md-4 col-sm-6 col-xs-12 animated fadeIn" >           
                                                         <div class="image-box">
                                                             <div class="image" >
                                                                 <img ng-src="{{portfolio.image}}" style="background-size: cover; height: 350px;" />
@@ -510,8 +510,7 @@ get_header();
                                                                 <img src="{{portfolio.company.image}}" class="img-responsive img-circle img-thumbnail" style="background: none; border: none; width: auto" alt="Image">
                                                                 <a href="">
                                                                     <h4 class="mb-0" ng-bind="portfolio.company.name"></h4>
-                                                                    <span style="color:white !important" class="text-muted" ng-bind="portfolio.classification.id"></span>
-                                                                    <span style="color:white !important" class="text-muted" >{{vm.selected}}</span>
+                                                                    <span style="color:white !important" class="text-muted" ng-bind="portfolio.name"></span>
                                                                 </a>
                                                             </div>
                                                         </div>
