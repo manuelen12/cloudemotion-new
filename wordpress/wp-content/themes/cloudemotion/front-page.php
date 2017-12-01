@@ -507,6 +507,7 @@ get_header();
                                                                 <a href="" data-toggle="ajax-modal"></a>
                                                             </div>
                                                             <div class="hover">
+                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-1.png" class="img-responsive img-circle img-thumbnail" alt="Image">
                                                                 <a href="">
                                                                     <h4 class="mb-0" ng-bind="portfolio.company.name"></h4>
                                                                     <span class="text-muted" ng-bind="portfolio.name"></span>
