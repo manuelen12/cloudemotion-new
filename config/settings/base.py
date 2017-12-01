@@ -157,9 +157,20 @@ MANAGERS = ADMINS
 # Uses django-environ to accept uri format
 # See: https://django-environ.readthedocs.io/en/latest/#supported-types
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres:///cloudemotion'),
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'wordpress',
+        'USER': 'wordpress',
+        'PASSWORD': '12111201',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
 }
-DATABASES['default']['ATOMIC_REQUESTS'] = True
+
+# DATABASES = {
+#     'default': env.db('DATABASE_URL', default='postgres:///cloudemotion'),
+# }
+# DATABASES['default']['ATOMIC_REQUESTS'] = True
 
 
 # GENERAL CONFIGURATION
