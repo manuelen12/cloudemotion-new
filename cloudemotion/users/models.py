@@ -22,6 +22,10 @@ class WpUsers(models.Model):
         app_label = 'users'
         db_table = 'wp_users'
 
+    def __str__(self):
+        return self.user_login + "/" + self.display_name
+
+
 
 @python_2_unicode_compatible
 class User(AbstractUser):
