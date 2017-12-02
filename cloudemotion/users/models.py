@@ -20,7 +20,6 @@ class WpUsers(models.Model):
 
     class Meta:
         app_label = 'users'
-        managed = False
         db_table = 'wp_users'
 
 
