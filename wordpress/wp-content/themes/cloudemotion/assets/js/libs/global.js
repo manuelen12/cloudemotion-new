@@ -817,7 +817,6 @@ Sukces = {
                     });
                 });
             }
-            console.log($('.tabs-wrapper .nav-tabs li a'));
             $('.tabs-wrapper .nav-tabs li a').on('click', function(){
                 var $selector = $(this).parents('.tabs-wrapper').children('.selector'),
                 navOffset = $(this).parents('.tabs-wrapper').offset().left,
@@ -866,9 +865,6 @@ $(window).load(function(){
 var arrows={navText : ["<i class='fa fa-chevron-left'></i>","<i class='fa fa-chevron-right'></i>"]};
 
 function setCarousel(parentElement,options,add) {
-		console.log(options);
-
-		console.log(options);
 		var options=options?options:{
 			loop:false,
 			margin:10,
@@ -883,7 +879,6 @@ function setCarousel(parentElement,options,add) {
 		if (add) {
 			options=Object.assign(options,add);
 		}
-		console.log(options);
 		$(parentElement).owlCarousel(options)
 
 	

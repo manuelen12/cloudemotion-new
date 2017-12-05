@@ -318,6 +318,11 @@
 	transform: rotateY( 180deg );
 }
 
+.main.flipped .front{
+	opacity: 0;
+	visibility: hidden;
+}
+
 .main article {
 	margin: 0;
 	text-align: center;
@@ -325,12 +330,12 @@
 	position: absolute;
 	width: 360px;
 	height: 100%;
+	transition: all 1s ease-in-out;
 	backface-visibility: hidden;
 }
 
 .main .back{
 	transform: rotateY( 180deg );
-
 }
 
 input[type=checkbox]{
@@ -342,6 +347,7 @@ input[type=checkbox] + label{
 	line-height: 25px;
 	opacity: 1;
 	position: relative;
+	margin: 0 15px;
 }
 
 input[type=checkbox] + label:before, input[type=checkbox]:checked + label:after, input[type=checkbox] + label:after{
@@ -388,258 +394,275 @@ input[type=checkbox]:checked + label:after{
 
 .card
 {
-    z-index: 1;
-    position: relative;
-    width: 300px;
-    height:400px;
-    margin: 0 auto;
-    margin-top:100px;
-    background-color: white;
-    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	position: relative;
+	width: 300px;
+	margin: 1em auto;
+	background-color: white;
+	-webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    -webkit-transition: all 0.7s ease-in-out;
-    -moz-transition:    all 0.7s ease-in-out;
-    -o-transition:      all 0.7s ease-in-out;
-    -ms-transition:     all 0.7s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition:    all 0.7s ease-in-out;
+	-o-transition:      all 0.7s ease-in-out;
+	-ms-transition:     all 0.7s ease-in-out;
 /*
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 	-moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.1);
 	box-shadow: 0 0 15px rgba(0, 0, 0, 0.2), inset 0 0 50px rgba(0, 0, 0, 0.2);
-*/
+	*/
 }
 .card.active
 {
-    height:490px;
-}
-.banner
-{
-    z-index: 2;
-    position: relative;
-    margin-top: -154px;
-    width:100%;
-    height:150px;
-    background-image: url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/RQ2Z75PQIN.jpg");
-    background-size: cover;
-    border-bottom: solid 1px lightgrey;
-  
-    -webkit-transition: all 0.7s ease-in-out;
-    -moz-transition:    all 0.7s ease-in-out;
-    -o-transition:      all 0.7s ease-in-out;
-    -ms-transition:     all 0.7s ease-in-out;
+	height:auto;
 }
 
-.banner.active
+.banner
 {
-    height: 0;
-  
+	z-index: 2;
+	position: relative;
+	margin-top: -154px;
+	width:100%;
+	height:150px;
+	background-image: url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/RQ2Z75PQIN.jpg");
+	background-size: cover;
+	border-bottom: solid 1px lightgrey;
+
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition:    all 0.7s ease-in-out;
+	-o-transition:      all 0.7s ease-in-out;
+	-ms-transition:     all 0.7s ease-in-out;
+}
+
+.card.active .banner
+{
+	height: 0;
+
 }
 
 .photo
 {
-    position: relative;
-    overflow:hidden;
-    z-index: 3;
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-    background-color: white;
-    margin: 0 auto;
-    background-position: 50% 50%;
-    top:75px;
-    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
-    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
-    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
-    -webkit-transition: top 0.7s ease-in-out, background 0.15s ease;
-    -moz-transition:    top 0.7s ease-in-out, background 0.15s ease;
-    -o-transition:      top 0.7s ease-in-out, background 0.15s ease;
-    -ms-transition:     top 0.7s ease-in-out, background 0.15s ease;
+	position: relative;
+	overflow:hidden;
+	z-index: 3;
+	border-radius: 50%;
+	height: 150px;
+	width: 150px;
+	background-color: white;
+	margin: 0 auto;
+	background-position: 50% 50%;
+	top:75px;
+	-webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+	-moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+	box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+	-webkit-transition: top 0.7s ease-in-out, background 0.15s ease;
+	-moz-transition:    top 0.7s ease-in-out, background 0.15s ease;
+	-o-transition:      top 0.7s ease-in-out, background 0.15s ease;
+	-ms-transition:     top 0.7s ease-in-out, background 0.15s ease;
 }
 
-.photo.active
+.card.active .photo
 {
-    top:-80px;
+	top:20px;
 }
-.card ul
+.card .title-team
 {
-    list-style: none;
-    text-align: center;
-    padding-left: 0;
-    margin-top:87px;
-    margin-bottom:30px;
-    font-size: 20px;
-    -webkit-transition: all 0.7s ease-in-out;
-    -moz-transition:    all 0.7s ease-in-out;
-    -o-transition:      all 0.7s ease-in-out;
-    -ms-transition:     all 0.7s ease-in-out;
+	list-style: none;
+	text-align: center;
+	padding-left: 0;
+	margin-top:87px;
+	margin-bottom:30px;
+	font-size: 20px;
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition:    all 0.7s ease-in-out;
+	-o-transition:      all 0.7s ease-in-out;
+	-ms-transition:     all 0.7s ease-in-out;
 }
 
-.card ul.active
+.card.active .title-team
 {
-    opacity:0;
-    visibility: hidden;
+	margin-top: 190px;
 }
 
 .card i
 {
-    font-size: 25px;
-    display: inline-block;
-    margin-top:10px;
-    margin-left: 40px;
-    margin-right: 150px;
-    width: 300px;;
-    text-align: left;
-    color: #C7D0E1;
+	font-size: 25px;
+	display: inline-block;
+	margin-top:10px;
+	margin-left: 40px;
+	margin-right: 150px;
+	width: 300px;;
+	text-align: left;
+	color: #C7D0E1;
 }
 
 button.contact
 {
-    margin: 0 auto;
-    text-align: center;
-    margin-top: -15px;
-    width: 100%;
-    height: 35px;
-    display: block;    
-    border:none;
-    background-color: transparent;
-    font-family: inherit;
-    color: white;
-    background-color: #C7D0E1;
-    font-size:12px;
-    text-transform: uppercase;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition:    all 0.3s ease-in-out;
-    -o-transition:      all 0.3s ease-in-out;
-    -ms-transition:     all 0.3s ease-in-out;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: -15px;
+	width: 100%;
+	height: 35px;
+	display: block;    
+	border:none;
+	background-color: transparent;
+	font-family: inherit;
+	color: white;
+	background-color: #C7D0E1;
+	font-size:12px;
+	text-transform: uppercase;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition:    all 0.3s ease-in-out;
+	-o-transition:      all 0.3s ease-in-out;
+	-ms-transition:     all 0.3s ease-in-out;
 }
 
 button.contact:hover
 {
-    cursor: pointer;
-    background-color:#979da8;
+	cursor: pointer;
+	background-color:#979da8;
 }
 
 button.contact:focus
 {
-    outline: 0;
+	outline: 0;
 }
 
+.card.active .social-media-banner{
+	display: none;
+}
 .social-media-banner
 {
-    width: 300px;
-    height: 50px;
-    margin-top: 25px;
-    text-align: center;
-    position: absolute;
-    -webkit-transition: all 1.5s ease-in-out;
-    -moz-transition:    all 1.5s ease-in-out;
-    -o-transition:      all 1.5s ease-in-out;
-    -ms-transition:     all 1.5 ease-in-out;
+	width: 300px;
+	height: 50px;
+	margin-top: 25px;
+	text-align: center;
+	position: relative;
+	-webkit-transition: all 1.5s ease-in-out;
+	-moz-transition:    all 1.5s ease-in-out;
+	-o-transition:      all 1.5s ease-in-out;
+	-ms-transition:     all 1.5 ease-in-out;
 }
 
-.social-media-banner.active
+.card.active .social-media-banner
 {
-    opacity:0;
-    visibility: hidden;
-        -webkit-transition: all 0.1s ease-in-out;
-    -moz-transition:    all 0.1s ease-in-out;
-    -o-transition:      all 0.1s ease-in-out;
-    -ms-transition:     all 0.1s ease-in-out;
+	opacity:0;
+	visibility: hidden;
+	-webkit-transition: all 0.1s ease-in-out;
+	-moz-transition:    all 0.1s ease-in-out;
+	-o-transition:      all 0.1s ease-in-out;
+	-ms-transition:     all 0.1s ease-in-out;
 }
 
 .social-media-banner a i
 {
-    display: inline;
-    
-    width: auto;
-    margin-right:15px;
-    margin-left: 10px;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition:    all 0.3s ease-in-out;
-    -o-transition:      all 0.3s ease-in-out;
-    -ms-transition:     all 0.3s ease-in-out;
+	display: inline;
+
+	width: auto;
+	margin-right:15px;
+	margin-left: 10px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition:    all 0.3s ease-in-out;
+	-o-transition:      all 0.3s ease-in-out;
+	-ms-transition:     all 0.3s ease-in-out;
 }
 
-.social-media-banner a i:hover
-{
-    color:#979da8;
+
+.social-media-banner a .fa-linkedin:hover{color: blue}
+.social-media-banner a .fa-twitter:hover{color: lightgreen}
+.social-media-banner a .fa-skype:hover{color: lightblue}
+.social-media-banner a .fa-youtube:hover{color: red}
+
+.email-form p{
+	padding: 2em;
+	text-align: justify;
+}
+
+.email-form ul{
+	padding:2em;
+	margin:0;
+
+}
+
+.email-form ul li{
+	display: inline;
 }
 
 .email-form
 {
-    height: 0;
-    overflow: hidden;
-/*    background-color: #C7D0E1;*/
-    width: 300px;
-     z-index:-1;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition:    all 0.5s ease-in-out;
-    -o-transition:      all 0.5s ease-in-out;
-    -ms-transition:     all 0.5s ease-in-out;
-     transition: all 0.5s ease-in-out;
+	height: 0;
+	overflow: hidden;
+	/*    background-color: #C7D0E1;*/
+	width: 300px;
+	z-index:-1;
+	-webkit-transition: all 0.5s ease-in-out;
+	-moz-transition:    all 0.5s ease-in-out;
+	-o-transition:      all 0.5s ease-in-out;
+	-ms-transition:     all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
-.email-form.active
+.card.active .email-form
 {
-    height: 310px;
-    z-index: 3;
-    -webkit-transition: all 1s ease-in-out;
-    -moz-transition:    all 1s ease-in-out;
-    -o-transition:      all 1s ease-in-out;
-    -ms-transition:     all 1s ease-in-out;
-     transition: all 1s ease-in-out;
+	height: auto;
+	z-index: 3;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition:    all 1s ease-in-out;
+	-o-transition:      all 1s ease-in-out;
+	-ms-transition:     all 1s ease-in-out;
+	transition: all 1s ease-in-out;
 }
 
 .email-form input
 {
-    width: 200px;
-    text-transform: capitalize;
-/*    background-color: #a4acbc;*/
-    margin: 0 auto;
-    font-family: inherit;
-    border: 1px solid #dadee5;
-/*    border: 1px solid black;*/
-    margin-top: 35px;
-    height: 30px;
-    display: block;
-        -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition:    all 0.2s ease-in-out;
-    -o-transition:      all 0.2s ease-in-out;
-    -ms-transition:     all 0.2s ease-in-out;
+	width: 200px;
+	text-transform: capitalize;
+	/*    background-color: #a4acbc;*/
+	margin: 0 auto;
+	font-family: inherit;
+	border: 1px solid #dadee5;
+	/*    border: 1px solid black;*/
+	margin-top: 35px;
+	height: 30px;
+	display: block;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition:    all 0.2s ease-in-out;
+	-o-transition:      all 0.2s ease-in-out;
+	-ms-transition:     all 0.2s ease-in-out;
 }
 .email-form input:focus,.email-form textarea:focus
 {
-/*    border: none;*/
-    border: 1px solid grey;
-    outline: none;
-    
+	/*    border: none;*/
+	border: 1px solid grey;
+	outline: none;
+
 }
 ::-webkit-input-placeholder 
 {
- font-size: 12px;
- text-transform: uppercase;
- text-align: center;
-/*    color: black;*/
+	font-size: 12px;
+	text-transform: uppercase;
+	text-align: center;
+	/*    color: black;*/
 }
 .email-form textarea
 {
-    width: 200px;
-    text-transform: capitalize;
-    background-color: white;
-    margin: 0 auto;
-    display: block;
-    margin-top:40px;
-    border: 1px solid #dadee5;
-    font-family: inherit;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition:    all 0.3s ease-in-out;
-    -o-transition:      all 0.3s ease-in-out;
-    -ms-transition:     all 0.3s ease-in-out;
+	width: 200px;
+	text-transform: capitalize;
+	background-color: white;
+	margin: 0 auto;
+	display: block;
+	margin-top:40px;
+	border: 1px solid #dadee5;
+	font-family: inherit;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition:    all 0.3s ease-in-out;
+	-o-transition:      all 0.3s ease-in-out;
+	-ms-transition:     all 0.3s ease-in-out;
 }
 
 .email-form button
 {
-    margin-top: 60px;
+	margin-top: 60px;
 }
 
 
@@ -648,6 +671,16 @@ button.contact:focus
 	margin: 0 auto;
 }
 
+.banner .ttl{
+	width: 100%;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+
+.contact-us input, .contact-us .form-group{
+	position: static !important;
+}
 
 @keyframes floatCloud{
 	0%{left: -300%;}

@@ -59,6 +59,7 @@
 				console.log($('.team'));
 				$timeout(function() {
 					setCarousel(".team",{
+						navText:["",""],
 						loop:false,
 						margin:10,
 						nav:true,

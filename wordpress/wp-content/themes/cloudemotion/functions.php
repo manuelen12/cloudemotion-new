@@ -234,6 +234,7 @@ if(!is_admin()){
 		'pnotify.min',
 		'../angular/services/pnotify.service',
 		'../angular/app',
+		'../angular/directives/js/upload-error.directive',
 		'../angular/helper/validator.helper',
 		'../angular/helper/method.helper',
 		'../angular/services/employee.service',

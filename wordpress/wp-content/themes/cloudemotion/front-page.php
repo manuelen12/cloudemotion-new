@@ -717,31 +717,35 @@ get_header();
                                                                 </div>
                                                             </div>
                                                             <div class="team owl-carousel owl-theme">
-                                                                
-                                                            <div class="card item" ng-repeat="team in vm.team">
-                                                                <div class="photo">
-                                                                    <img ng-src="{{team.image}}" class="img-responsive" alt="Image">
-                                                                </div>
-                                                                <div class="banner"></div>
-                                                                <ul>
-                                                                    <li><b ng-bind="team.first_name+' '+team.last_name"></b></li>
-                                                                    <li ng-bind="team.position.name"></li>
 
-                                                                </ul>
-                                                                <button class="contact" id="main-button">click to get in touch</button>
-                                                                <div class="social-media-banner">
-                                                                    <a href=""><i class="fa fa-twitter"></i></a>
-                                                                    <a href=""><i class="fa fa-facebook"></i></a>
-                                                                    <a href=""><i class="fa fa-instagram"></i></a>
-                                                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                                                <div class="card item" ng-class="{'active' : team.active}" ng-repeat="team in vm.team">
+                                                                    <div class="photo">
+                                                                        <img on-error-src="./wp-content/themes/cloudemotion/assets/img/default_p.png" ng-src="{{team.image}}" class="img-responsive" alt="Image">
+                                                                    </div>
+                                                                    <div class="banner"></div>
+                                                                    <ul class="title-team">
+                                                                        <li><label ng-bind="team.first_name+' '+team.last_name" class="ttl"></label></li>
+                                                                        <li ng-bind="team.position.name"></li>
+
+                                                                    </ul>
+                                                                    <button class="contact" id="main-button" ng-click="team.active=!team.active">Skills</button>
+                                                                    <div class="social-media-banner">
+                                                                        <a ng-if="team.linkedin" ng-href="team.linkedin"><i class="fa fa-linkedin"></i></a>
+                                                                        <a ng-if="team.twitter" ng-href="team.twitter"><i class="fa fa-twitter"></i></a>
+                                                                        <a ng-if="team.skype" title="{{team.skype}}"><i class="fa fa-skype"></i></a>
+                                                                        <a ng-if="team.youtube" ng-href="team.youtube"><i class="fa fa-youtube"></i></a>
+                                                                    </div>
+                                                                    <form class="email-form">
+                                                                        <div class="row">
+                                                                            <ul>
+                                                                                <li ng-if="!team.user_skill.length"><label class="label label-default">No skills registered yet</label></li>
+                                                                                <li ng-if="team.user_skill.length" ng-repeat="skill in team.user_skill">
+                                                                                    <label class="label label-primary" ng-bind="skill.name"></label>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </form>
                                                                 </div>
-                                                                <form class="email-form">
-                                                                    <input id="name" type="text" placeholder="name">
-                                                                    <input id="email" type="text" placeholder="email">
-                                                                    <textarea id="comment" type="text" placeholder="comment"></textarea>
-                                                                    <button class="contact">send</button>
-                                                                </form>
-                                                            </div>
 
                                                             </div>
 
