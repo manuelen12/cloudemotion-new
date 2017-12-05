@@ -40,13 +40,13 @@
         </a>
     </li>
     <li class="menu-item">
-        <a href="#planing" parallax-cl class=" no_link">
+        <a href="#portfolio" parallax-cl class=" no_link">
             <span class="item_outer">
                 <span class="item_inner">
                     <span class="menu_icon_wrapper">
                         <i class="menu_icon null fa"></i>
                     </span>
-                    <span class="item_text" ng-bind="'Portafolio' | translate">Portafolio</span>
+                    <span class="item_text" ng-bind="'Portfolio' | translate">Portafolio</span>
                 </span>
                 <span class="plus"></span>
             </span>

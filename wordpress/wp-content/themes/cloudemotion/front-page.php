@@ -467,22 +467,19 @@ get_header();
                                             </div>
                                         </div>
 
-                                        <div class="wpb_text_column wpb_content_element ">
-                                            <div class="wpb_wrapper">
-                                                <h2 style="text-align: center;"><strong ng-bind="'Our Portfolio' | translate"></strong></h2>
-                                            </div>
-                                        </div>
-                                        <div class="wpb_text_column wpb_content_element ">
-                                            <div class="wpb_wrapper">
-                                                <h4 style="text-align: center;" ng-bind="'Know our work and discover the quality with which we work' | translate"></h4>
-                                            </div>
-                                        </div>
-                                        <div class="vc_empty_space"  style="height: 22px" >
-                                            <span class="vc_empty_space_inner"></span>
-                                        </div>
-
                                         <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left">
                                             <section id="portfolio" class="section cover bg-black">
+
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <h2 style="text-align: center;"><strong ng-bind="'Our Portfolio' | translate"></strong></h2>
+                                                    </div>
+                                                </div>
+                                                <div class="wpb_text_column wpb_content_element ">
+                                                    <div class="wpb_wrapper">
+                                                        <h4 style="text-align: center;" ng-bind="'Know our work and discover the quality with which we work' | translate"></h4>
+                                                    </div>
+                                                </div>
                                                 <nav class="filter-bar bg-primary dark">
                                                     <div class="tabs-wrapper">
                                                         <ul class="filter nav nav-tabs owl-carousel category" data-filter-list="#works-list">
