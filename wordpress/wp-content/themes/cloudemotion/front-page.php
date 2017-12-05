@@ -380,34 +380,34 @@ get_header();
                                                                     <div class="row">
                                                                         <div class="col-md-5">
                                                                             <article class="logo-cont">
-                                                                                
-                                                                            <div id="atomo" ng-show="vm.image_web==1">
-                                                                                <div id="nucleo"></div>
-                                                                                <div class="electron a"></div>
-                                                                                <div class="electron b"></div>
-                                                                                <div class="electron c"></div>
-                                                                                <div class="electron d"></div>
-                                                                                <div class="electron e"></div>
-                                                                                <div class="electron f"></div>
-                                                                                <div class="electron g"></div>
-                                                                            </div>
 
-                                                                            <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/web_page_1.jpg" alt="Web Page" class="img-responsive text-center animated fadeIn" ng-show="vm.image_web==1"> -->
-
-                                                                            <article class="web-cont animated bounceInDown" ng-show="vm.image_web==2">
-                                                                                <div class="web2 pc">
-                                                                                    <div class="draw-base">
-                                                                                        <div class="web3 draw"></div>
-                                                                                        <div class="web3 draw"></div>
-                                                                                        <div class="web3 draw"></div>
-                                                                                    </div>
+                                                                                <div id="atomo" ng-show="vm.image_web==1">
+                                                                                    <div id="nucleo"></div>
+                                                                                    <div class="electron a"></div>
+                                                                                    <div class="electron b"></div>
+                                                                                    <div class="electron c"></div>
+                                                                                    <div class="electron d"></div>
+                                                                                    <div class="electron e"></div>
+                                                                                    <div class="electron f"></div>
+                                                                                    <div class="electron g"></div>
                                                                                 </div>
 
-                                                                            </article>
+                                                                                <!-- <img src="<?php echo get_template_directory_uri(); ?>/assets/img/web_page_1.jpg" alt="Web Page" class="img-responsive text-center animated fadeIn" ng-show="vm.image_web==1"> -->
 
-                                                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST3.png" alt="Customizable" class="img-responsive text-center animated bounceInLeft" ng-show="vm.image_web==3">
+                                                                                <article class="web-cont animated bounceInDown" ng-show="vm.image_web==2">
+                                                                                    <div class="web2 pc">
+                                                                                        <div class="draw-base">
+                                                                                            <div class="web3 draw"></div>
+                                                                                            <div class="web3 draw"></div>
+                                                                                            <div class="web3 draw"></div>
+                                                                                        </div>
+                                                                                    </div>
 
-                                                                            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST.png" alt="Fast and Adaptive" class="img-responsive text-center animated bounceInUp" ng-show="vm.image_web==4">
+                                                                                </article>
+
+                                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST3.png" alt="Customizable" class="img-responsive text-center animated bounceInLeft" ng-show="vm.image_web==3">
+
+                                                                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST.png" alt="Fast and Adaptive" class="img-responsive text-center animated bounceInUp" ng-show="vm.image_web==4">
 
                                                                             </article>
                                                                         </div>
@@ -719,6 +719,36 @@ get_header();
                                                                     <h4 ng-bind="'Take a look and certify the knowledge of our developers' | translate"></h4>
                                                                 </div>
                                                             </div>
+                                                            <div class="team owl-carousel owl-theme">
+                                                                
+                                                            <div class="card item" ng-repeat="team in vm.team">
+                                                                <div class="photo">
+                                                                    <img ng-src="{{team.image}}" class="img-responsive" alt="Image">
+                                                                </div>
+                                                                <div class="banner"></div>
+                                                                <ul>
+                                                                    <li><b ng-bind="team.first_name+' '+team.last_name"></b></li>
+                                                                    <li ng-bind="team.position.name"></li>
+
+                                                                </ul>
+                                                                <button class="contact" id="main-button">click to get in touch</button>
+                                                                <div class="social-media-banner">
+                                                                    <a href=""><i class="fa fa-twitter"></i></a>
+                                                                    <a href=""><i class="fa fa-facebook"></i></a>
+                                                                    <a href=""><i class="fa fa-instagram"></i></a>
+                                                                    <a href=""><i class="fa fa-linkedin"></i></a>
+                                                                </div>
+                                                                <form class="email-form">
+                                                                    <input id="name" type="text" placeholder="name">
+                                                                    <input id="email" type="text" placeholder="email">
+                                                                    <textarea id="comment" type="text" placeholder="comment"></textarea>
+                                                                    <button class="contact">send</button>
+                                                                </form>
+                                                            </div>
+
+                                                            </div>
+
+
                                                         </div>
                                                     </div>
                                                 </div>
@@ -726,42 +756,40 @@ get_header();
                                         </div>
 
 
-                                        <?php echo do_shortcode('[amo_member id="50,52,51,53" item-width="250" align="left" item-margin="20" full-width="no" panel="center"]'); ?>
-
 
                                         <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414638610 qodef-content-aligment-center qodef-grid-section" style="">
                                             <div class="container">
                                             </div>
 
-                                            <footer >
+                                            <footer class="foot" >
                                                 <?php get_footer();?>
                                             </footer>
                                         </div>
                                         <!-- close div.qodef-wrapper-inner  -->
                                     </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    </div>
-                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                    <div class="modal fade" id="modalportfolio">
-                                        <div class="modal-dialog">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                                    <h4 class="modal-title" >Portafolio View</h4>
-                                                </div>
-                                                <div class="modal-body">
-                                                    <img ng-src="{{vm.seeData.image}}" width="400" height="400" style="margin:0 auto;" class="img-responsive" alt="Image">
-                                                </div>
-                                                <div class="modal-footer">
-                                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                                    <a ng-href="{{vm.seeData.url}}"  class="btn btn-primary"  target="_blank">Go to Proyect</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                <div class="modal fade" id="modalportfolio">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" >Portafolio View</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img ng-src="{{vm.seeData.image}}" width="400" height="400" style="margin:0 auto;" class="img-responsive" alt="Image">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <a ng-href="{{vm.seeData.url}}"  class="btn btn-primary"  target="_blank">Go to Proyect</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-                                </body>
-                                </html>
+            </body>
+            </html>

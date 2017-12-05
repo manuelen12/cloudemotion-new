@@ -14,16 +14,16 @@
 
 	MainCtrl.$inject = ["$scope","$timeout","$http","particles","$translate","ValidatorHelper","urlHelpers"];
 	function MainCtrl($scope,$timeout,$http,particles,$translate,ValidatorHelper,urlHelpers) {
-		console.log("maincontroller");
 		var vm=this;
-		console.log(urlHelpers);
 		angular.extend(vm,{
 			tabs:1,
+			flip:false,
 			country:'es',
 			changeLanguage:changeLanguage,
 			getTeam:urlHelpers.get("users"),
 			getPorfolios:urlHelpers.get("portfolios"),
 			getCategory:urlHelpers.get("classifications"),
+			getTeam:urlHelpers.get("users"),
 			setImage:setImage,
 			setBackground:setBackground,
 			openModal:openModal,
@@ -33,12 +33,10 @@
 
 		function openModal(portfolio) {
 			vm.seeData=angular.copy(portfolio);
-			console.log($);
 			$('#modalportfolio').modal('show');
 		}
 
 		function setBackground(image) {
-			console.log(('background-image:url("'+image+'")'));
 			return 'background-image:url("'+image+'")';
 		}
 		function changeLanguage() {
@@ -47,48 +45,44 @@
 		}
 
 		function setImage() {
-			console.log("hello world")
 		}
 		this.$onInit=function() {
 			particlesJS("qodef-p-particles-container",particles)
 			changeLanguage();
-			console.log(vm.getTeam);
 			vm.getTeam.then(function(response) {
-				console.log(response);
 				vm.team=response.data;
 				$.map(vm.team,function(val,ind) {
 					if (!val.image) {
 						vm.team[ind].image="./assets/img/default_p.png";
 					}
 				})
-				$('.portfolio').owlCarousel({
-					loop:true,
-					margin:10,
-					nav:true,
-					responsive:{
-						0:{
-							items:1
-						},
-						600:{
-							items:3
-						},
-						1000:{
-							items:3
+				console.log($('.team'));
+				$timeout(function() {
+					setCarousel(".team",{
+						loop:false,
+						margin:10,
+						nav:true,
+						responsive:{
+							0:{
+								items:1
+							},
+							600:{
+								items:3
+							},
+							1000:{
+								items:3
+							}
 						}
-					}
-				})
+					})
+				},1000)
 			},function(error) {
-				console.log(error);
 			})
 
 
 			vm.getCategory.then(function(response) {
 				response.data.map(function(data,ind) {
-					console.log(data);
-					console.log(ind);
 					data.class=data.name.split(" ").join("-");
 				})
-				console.log(response.data);
 				vm.category=response.data;
 
 				$timeout(function() {
@@ -109,7 +103,6 @@
 
 				},1000)
 			},function(error) {
-				console.log(error);
 			})
 
 			vm.getPorfolios.then(function(response) {
@@ -130,10 +123,7 @@
 				}
 				setCarousel(".qodef-team2",opt,arrows);
 				
-				console.log(vm.portfolios)
-				console.log(vm.portfolios)
 			},function(error) {
-				console.log(error);
 			})
 
 		}

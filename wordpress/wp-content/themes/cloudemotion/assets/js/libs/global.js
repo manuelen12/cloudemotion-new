@@ -192,9 +192,7 @@ var Sukces;
 
 	 function triggerParallaxCl(target) {
 	 	$target=$(target);
-	 	console.log("cierrate sesamoº");
 	 	if ($target.length) {	
-	 		console.log("cierrate sesamo");
 	 		$(".qodef-page-header").removeClass("opened");
 	 		$('html,body').animate({
 	 			scrollTop: ($target.offset().top-100)+"px"
@@ -210,22 +208,17 @@ var Sukces;
 		$("*[parallax-cl]").on("click",function(e) {
 			var id=$(this).attr("href"),
 			parentTarget=$(this).parent();
-			console.log(parentTarget.is(':last-child'));
 			if (parentTarget.is(':last-child')) return false;
 			$(".menu-item").removeClass("qodef-active-item");	
 			parentTarget.addClass("qodef-active-item");
-			console.log(parentTarget);
 			event.preventDefault();
 			triggerParallaxCl(id);
 		})
 
 		var hamburger= $(".hamburger-menu"),
 		smallMenu= $(".qodef-page-header");
-		console.log($body);
-		console.log(hamburger);
 
 		hamburger.on("click",function(ev) {
-			console.log("open");
 			smallMenu.toggleClass("opened");
 		})
 
@@ -818,8 +811,6 @@ Sukces = {
                     thisOffset = $elActive.offset().left,
                     offset = thisOffset - navOffset,
                     width = $elActive .outerWidth();
-                    console.log(width);
-                    console.log(offset);
                     $selector.css({
                         'width': width+'px',
                         'left': offset+'px'
