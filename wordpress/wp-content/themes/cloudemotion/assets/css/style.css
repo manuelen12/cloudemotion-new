@@ -343,14 +343,14 @@ input[type=checkbox]{
 	visibility: hidden;
 }
 
-input[type=checkbox] + span{
+input[type=checkbox] + label{
 	line-height: 25px;
 	opacity: 1;
 	position: relative;
 	margin: 0 15px;
 }
 
-input[type=checkbox] + span:before, input[type=checkbox]:checked + label:after, input[type=checkbox] + span:after{
+input[type=checkbox] + label:before, input[type=checkbox]:checked + label:after, input[type=checkbox] + label:after{
 	left: -35px; 
 	position: absolute;
 	width: 25px;
@@ -368,14 +368,14 @@ input[type=checkbox] + span:before, input[type=checkbox]:checked + label:after, 
 	color: white;
 }
 
-input[type=checkbox] + span:before{
+input[type=checkbox] + label:before{
 	content: "";
 }
 input[type=checkbox]:checked + label:before{
 	opacity: 0;
 }
 
-input[type=checkbox] + span:after{
+input[type=checkbox] + label:after{
 	content: "";
 	opacity: 0;
 	transition: all 2s ease-in-out;
