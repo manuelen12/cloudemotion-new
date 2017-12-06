@@ -682,6 +682,11 @@ button.contact:focus
 	position: static !important;
 }
 
+.textarea{
+	height: auto !important;
+	
+}
+
 @keyframes floatCloud{
 	0%{left: -300%;}
 	100%{left: 300%;}
