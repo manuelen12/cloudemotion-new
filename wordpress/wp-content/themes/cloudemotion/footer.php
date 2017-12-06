@@ -15,32 +15,9 @@
 
                 <div >
 
-                    <div class="form-horizontal contact-us">
-                        <div class="input-group form-group">
-                            <div class="input-group-addon">
-                                <i class="fa fa-user"></i>
-                            </div>
-                            <input type="text" name="data-1" class="form-control" placeholder="Nombre Completo">
-                        </div>
-                        <div class="input-group form-group">
-                            <div class="input-group-addon">
-                                <i class="fa fa-envelope"></i>
-                            </div>
-                            <input type="text" name="data-1" class="form-control" placeholder="Correo Electronico">
-                        </div>
-                        <div class="input-group form-group">
-                            <div class="input-group-addon">
-                                <i class="fa fa-file"></i>
-                            </div>
-                            <input type="text" name="data-1" class="form-control" placeholder="Asunto">
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" style="min-width: 100%" placeholder="Mensaje"></textarea>
-                        </div>
-                        <div class="form-group text-center">
-                            <button id="trigger" ng-click="vm.flip=true;" class="btn btn-primary">Enviar</button>
-                        </div>
-                    </div>
+                <div class="form-horizontal contact-us">
+                    <?php echo do_shortcode( '[contact-form-7 id="80" title="Formulario de contactos"]' ); ?>
+                </div>
                 </div>
                 <div >
 
