@@ -250,39 +250,13 @@
 
 .top-content{
 	height: 500px;
-	background: skyblue;
 	overflow: hidden;
 	padding: 4em 0;
 }
 }
 
-.main-content:before{
-	content: "";
-	position: absolute;
-	width: 150px;
-	height: 95px;
-	background-size: 100% 100%;
-	background-image: url(../img/cloud-1.png);
-	z-index: 1;
-	top: 250px;
-	left: -300%;
-	animation: floatCloud 40s ease-in-out 4s infinite, bounceCl 10s ease-in 3s infinite;
-}
 
-.main-content:after{
-	content: "";
-	position: absolute;
-	width: 100px;
-	height: 50px;
-	background-size: 100% 100%;
-	background-image: url(../img/cloud-1.png);
-	z-index: 1;
-	left: -300%;
-	top: 100px;
-	margin-left: 250px;
-	animation: floatCloud 45s ease-in-out 2s infinite, bounceCl 10s ease-in 1s infinite;
 
-}
 
 .main-content{
 	width: 360px;
@@ -685,14 +659,4 @@ button.contact:focus
 .textarea{
 	height: auto !important;
 	
-}
-
-@keyframes floatCloud{
-	0%{left: -300%;}
-	100%{left: 300%;}
-}
-@keyframes bounceCl{
-	30%{transform: translateY(10px);}
-	60%{transform: translateY(-10px);}
-	90%{transform: translateY(10px);}
 }

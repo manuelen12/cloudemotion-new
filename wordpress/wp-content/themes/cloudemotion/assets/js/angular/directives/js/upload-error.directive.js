@@ -1,3 +1,32 @@
+function Nucleo() {
+    return {
+        restrict: 'E',
+        template:`    
+        <div class="loaderN">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+        <div class="nucleus"></div>
+        </div>
+        <div class="loaderN">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+        <div class="nucleus"></div>
+        </div>
+        <div class="loaderN">
+        <div class="inner one"></div>
+        <div class="inner two"></div>
+        <div class="inner three"></div>
+        <div class="nucleus"></div>
+        </div>
+        `,
+        link: function (scope, iElement, iAttrs) {
+            
+        }
+    }
+}
+
 cloudemotion.directive('onErrorSrc', function() {
     return {
         link: function(scope, element, attrs) {
@@ -13,4 +42,4 @@ cloudemotion.directive('onErrorSrc', function() {
             });
         }
     }
-});
+}).directive('nucleo', Nucleo);
