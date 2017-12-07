@@ -30,7 +30,7 @@ get_header();
                         <div class="qodef-full-width-inner">
 
 
-                            <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left"  id="about_us">
+                            <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-left"  id="about_us">
                                 <div class="clearfix qodef-full-section-inner">
                                     <div class="wpb_column vc_column_container">
                                         <div class="vc_column-inner ">
@@ -467,7 +467,7 @@ get_header();
                                             </div>
                                         </div>
 
-                                        <div class="vc_row wpb_row vc_row-fluid qodef-section qodef-content-aligment-left">
+                                        <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-left">
                                             <section id="portfolio" class="section cover bg-black">
 
                                                 <div class="wpb_text_column wpb_content_element ">
@@ -520,7 +520,7 @@ get_header();
 
 
 
-                                        <div data-qodef-parallax-speed="0.5" id="testimonials" class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445345084553 qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/parallax-2-home-main.jpg);">
+                                        <div data-qodef-parallax-speed="0.5" id="testimonials" class="wpb_row vc_row-fluid qodef-section vc_custom_1445345084553 qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/parallax-2-home-main.jpg);">
                                             <div class="clearfix qodef-full-section-inner">
                                                 <div class="wpb_column vc_column_container">
                                                     <div class="vc_column-inner ">
@@ -697,7 +697,7 @@ get_header();
                                         </div>
 
 
-                                        <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="team">
+                                        <div class="wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="team">
 
                                             <div class="clearfix qodef-full-section-inner">
                                                 <div class="wpb_column vc_column_container">
