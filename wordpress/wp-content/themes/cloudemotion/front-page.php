@@ -95,7 +95,7 @@ get_header();
                             </div>
 
                             <div class="qodef-section qodef-content-aligment-center qodef-grid-section" id="services">
-                                <div class="container">
+                                <div >
                                     <div >
                                         <h1 style="font-size: 55px" ng-bind="'Services' | translate"></h1>
                                         <p style="color:grey; font-size: 25px" ng-bind="'With an idea we offer you many solutions' | translate"></p>
@@ -546,7 +546,7 @@ get_header();
                                                                 <span class="vc_empty_space_inner"></span>
                                                             </div>
 
-                                                            <div class="qodef-testimonials-holder container">
+                                                            <div class="qodef-testimonials-holder">
                                                                 <div class="qodef-testimonials owl-carousel owl-theme qodef-section-inner transparent cards_carousel"  data-layout ="cards_carousel">
                                                                     <div class="qodef-testimonials-slider-item item">
                                                                         <div id="qodef-testimonials71" class="qodef-testimonial-content">
@@ -758,9 +758,7 @@ get_header();
 
 
 
-                                        <div class="vc_row wpb_row vc_row-fluid qodef-section vc_custom_1445414638610 qodef-content-aligment-center qodef-grid-section" style="">
-                                            <div class="container">
-                                            </div>
+                                        <div class="" style="">
 
                                             <footer class="foot" >
                                                 <?php get_footer();?>

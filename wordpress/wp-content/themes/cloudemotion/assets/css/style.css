@@ -255,6 +255,7 @@
 }
 
 .main-content{
+	margin: 0 auto;
 	width: 360px;
 	height: 100%;
 	margin:0 auto;
@@ -296,7 +297,7 @@
 .main article {
 	margin: 0;
 	text-align: center;
-	display: block;
+	display: inline-block;
 	position: absolute;
 	width: 360px;
 	height: 100%;
