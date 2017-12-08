@@ -37,7 +37,7 @@ while ( have_posts() ) : the_post();
 
 ?>
 <div class="qodef-container">
-    <div class="qodef-container-inner">
+    <div class="qodef-container-inner single-container">
         <div class="qodef-blog-holder qodef-blog-type-standard">
             <div class="qodef-two-columns-75-25 qodef-content-has-sidebar  clearfix">
                 <div class="qodef-column1 qodef-content-left-from-sidebar">
