@@ -9,7 +9,7 @@
 
         <article class=" front">
             <div class="form-horizontal contact-us">
-                <?php echo do_shortcode( '[contact-form-7 id="80" title="Formulario de contactos"]' ); ?>
+                <?php echo do_shortcode( '[contact-form-7 id="83" title="Formulario de contactos"]' ); ?>
             </div>
 
         </article>          

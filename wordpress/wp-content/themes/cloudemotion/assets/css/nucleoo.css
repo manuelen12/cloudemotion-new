@@ -239,7 +239,7 @@ body {
 }
 
 @keyframes translX{
-	50%{top:calc(100% - 33px);transform: rotate(360deg);}
+	50%{top:calc(100% - 33px);}
 }
 
 
