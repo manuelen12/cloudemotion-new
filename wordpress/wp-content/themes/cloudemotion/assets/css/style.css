@@ -419,12 +419,11 @@ input[type=checkbox]:checked + span:after{
 	overflow:hidden;
 	z-index: 3;
 	border-radius: 50%;
-	height: 150px;
-	width: 150px;
+	height: 100px;
+	width: 100px;
 	background-color: white;
 	margin: 0 auto;
 	background-position: 50% 50%;
-	top:75px;
 	-webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
 	-moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
 	box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
@@ -432,6 +431,10 @@ input[type=checkbox]:checked + span:after{
 	-moz-transition:    top 0.7s ease-in-out, background 0.15s ease;
 	-o-transition:      top 0.7s ease-in-out, background 0.15s ease;
 	-ms-transition:     top 0.7s ease-in-out, background 0.15s ease;
+}
+
+.comment-author.vcard{
+	position: relative;
 }
 
 .card.active .photo
@@ -685,8 +688,8 @@ button.contact:focus
 	padding: 0 3em;
 }
 
-.qodef-blog-holder.qodef-blog-type-standard article{
-	padding: 3em;
-}
 
 .single_post{margin-top: 100px;padding-left: 6em;}
+
+.single-container{padding: 0 3em;}
+

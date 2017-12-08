@@ -1,7 +1,7 @@
 <div class="qodef-author-description">
 	<div class="qodef-author-description-inner">
 		<div class="qodef-author-description-image">
-			<?php echo get_avatar( get_the_author_meta( 'ID' ) , 32 ); ?>
+			<?php echo get_avatar( get_the_author_meta( 'ID' ) , 24 ); ?>
 		</div>
 		<div class="qodef-author-description-text-holder">
 			<h5 class="qodef-author-name"><?php the_author(); ?></h5>
