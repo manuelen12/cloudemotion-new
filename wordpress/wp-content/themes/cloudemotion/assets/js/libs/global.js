@@ -200,17 +200,9 @@ var Sukces;
 	 	}
 	 }
 
-	 function checkInput(e) {
-	 	$target=this;
-	 	console.log($target.closest("input"));
-	 }
-
-
-
 	// Fire on document ready.
 	$( document ).ready( function() {
 
-		$("[checking-box]").on("click",checkInput);
 
 		$("*[parallax-cl]").on("click",function(e) {
 			var id=$(this).attr("href"),
