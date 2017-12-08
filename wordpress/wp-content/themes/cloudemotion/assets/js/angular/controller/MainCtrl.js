@@ -14,7 +14,23 @@
 
 	MainCtrl.$inject = ["$scope","$timeout","$http","particles","$translate","ValidatorHelper","urlHelpers"];
 	function MainCtrl($scope,$timeout,$http,particles,$translate,ValidatorHelper,urlHelpers) {
-		var vm=this;
+		var vm=this,owlResponsive={
+			480 : {
+				items:1
+			},
+			768 : {
+				items:2
+			},
+			960 : {
+				items:3
+			},
+			1500 : {
+				items:4
+			}
+		};
+
+
+
 		angular.extend(vm,{
 			tabs:1,
 			flip:false,
@@ -63,17 +79,7 @@
 						loop:false,
 						margin:10,
 						nav:true,
-						responsive:{
-							0:{
-								items:1
-							},
-							600:{
-								items:3
-							},
-							1000:{
-								items:3
-							}
-						}
+						responsive:owlResponsive
 					})
 				},1000)
 			},function(error) {
@@ -93,10 +99,11 @@
 						nav:true,
 						autoplay:false,
 						responsiveClass:true,
-						items:4,
+						responsive:owlResponsive,
 						animateOut: 'fadeOut',
 						animateIn: 'fadeIn',
 						autoWidth:true,
+						navText:["",""],
 
 					}
 					setCarousel(".category",opt);
@@ -118,11 +125,13 @@
 					nav:true,
 					autoplay:true,
 					responsiveClass:true,
-					items:4,
+					response:owlResponsive,
 					animateOut: 'fadeOut',
 					animateIn: 'fadeIn',
+					navText:["",""],
+
 				}
-				setCarousel(".qodef-team2",opt,arrows);
+				setCarousel(".qodef-team2",opt);
 				
 			},function(error) {
 			})

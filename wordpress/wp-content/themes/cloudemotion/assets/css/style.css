@@ -296,6 +296,7 @@
 
 .main article {
 	margin: 0;
+	left: 0;
 	text-align: center;
 	display: inline-block;
 	position: absolute;
