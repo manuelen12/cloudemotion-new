@@ -1,4 +1,8 @@
 <div class="container-fluid top-content">
+    <div class="mainTitle">
+        <h1 ng-bind="'Contact Us' | translate"></h1>
+        <p ng-bind="'Choose your preferences and make a question' | translate"></p>
+    </div>
 
     <nucleo></nucleo>
 
