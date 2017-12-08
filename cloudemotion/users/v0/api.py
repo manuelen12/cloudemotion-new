@@ -140,7 +140,7 @@ class API(Base):
                 Prefetch(
                     "lan_user", queryset=__about, to_attr="about2"),
             ).filter(
-            **filters).order_by(*ordening)
+            **filters)
         for i in user:
             __dict = {
                 "id": i.id,
