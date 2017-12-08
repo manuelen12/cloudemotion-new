@@ -40,7 +40,6 @@
 			getPorfolios:urlHelpers.get("portfolios"),
 			getCategory:urlHelpers.get("classifications"),
 			getTeam:urlHelpers.get("users"),
-			setImage:setImage,
 			setBackground:setBackground,
 			openModal:openModal,
 			service_t: 2,
@@ -60,8 +59,6 @@
 			$translate.use(vm.country);		
 		}
 
-		function setImage() {
-		}
 		this.$onInit=function() {
 			particlesJS("qodef-p-particles-container",particles)
 			changeLanguage();
@@ -74,13 +71,25 @@
 				})
 				console.log($('.team'));
 				$timeout(function() {
-					setCarousel(".team",{
+					var opt={
 						navText:["",""],
 						loop:false,
 						margin:10,
 						nav:true,
-						responsive:owlResponsive
-					})
+					};
+					setCarousel(".team",opt)
+					var blog= angular.copy(opt);
+					blog.responsive={
+						480 : {
+							items:1
+						},
+						800 : {
+							items:2
+						}
+					}
+					setCarousel(".owl-blog",blog);
+					opt.items=1;
+					setCarousel(".qodef-testimonials",opt);
 				},1000)
 			},function(error) {
 			})

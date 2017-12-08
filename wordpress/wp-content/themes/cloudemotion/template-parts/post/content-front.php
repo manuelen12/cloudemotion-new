@@ -42,7 +42,6 @@
         </div>
     </article>
     <?php  
-    echo var_dump($home);
     if (!isset($home)) {
     get_template_part( 'template-parts/comments/comment-box', null );
     }

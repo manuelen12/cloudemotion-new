@@ -7,7 +7,7 @@ get_header();
 <body ng-controller="MainCtrl as vm">
 
     <div class="loader in"></div>
-    
+
     <div class="qodef-wrapper">
         <div class="qodef-wrapper-inner">
             <?php     get_template_part( 'template-parts/navigation/navigation-top', null ); ?>
@@ -697,6 +697,73 @@ get_header();
                                         </div>
 
 
+                                        <div class="wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="blog">
+
+                                            <div class="mainTitle">
+                                                <h1 ng-bind="'Blogs' | translate"></h1>
+                                                <p ng-bind="'Keep in touch with the latest technologie post' | translate"></p>
+                                            </div>
+
+
+                                            <div class="row owl-carousel owl-blog owl-theme">
+                                                <?php
+                                                $args = array(
+                                                    'numberposts' => 10,
+                                                    'offset' => 0,
+                                                    'category' => 0,
+                                                    'orderby' => 'post_date',
+                                                    'order' => 'DESC',
+                                                    'include' => '',
+                                                    'exclude' => '',
+                                                    'meta_key' => '',
+                                                    'meta_value' =>'',
+                                                    'post_type' => 'post',
+                                                    'post_status' => 'draft, publish, future, pending, private',
+                                                    'suppress_filters' => true
+                                                    );
+
+                                                $recent_posts = wp_get_recent_posts( $args, ARRAY_A );
+                                                foreach ($recent_posts as $recent) { 
+                                                    $img = get_the_post_thumbnail_url($recent["ID"],'full'); 
+                                                    ?>
+
+                                                    <article id="post-" class="tag-post item">
+                                                        <?php if ($img) {?>
+                                                        <div class="qodef-post-content">
+                                                            <div class="qodef-post-image">
+
+                                                                <?php echo '<a href="' . get_permalink($recent["ID"]) . '" title="'.$recent["post_title"].'">  '; ?>
+
+                                                                <img  height="447" src="<?php echo $img; ?>" class="m_center img-responsive" alt="image" />    
+                                                            </a>
+                                                        </div>
+                                                        <?php }; ?>
+                                                        <div class="qodef-post-text">
+                                                            <div class="qodef-post-text-inner">
+                                                                <h2 class="qodef-post-title">
+                                                                    <a href="http://startit.select-themes.com/news-app-deliveres-fresh-ideas/" title="New Apps &#8211; Fresh Ideas"><?php echo $recent["post_title"]; ?></a>
+                                                                </h2>               
+                                                                <div class="qodef-post-info">
+                                                                    <div class="qodef-post-info-date">
+                                                                        <?php echo date('n-j-Y', strtotime($recent['post_date'])); ?>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="qodef-post-excerpt"><?php echo $recent["post_content"]; ?></p>
+                                                                <a href="<?php echo get_permalink($recent["ID"]); ?>" target="_self"  class="qodef-btn qodef-btn-small qodef-btn-default"  >
+                                                                    <span class="qodef-btn-text" ng-bind="'Read More' | translate"></span>   
+                                                                    <span class="qodef-btn-text-icon"></span>
+                                                                </a>       
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </article>
+                                                <?php } ?>
+
+
+                                            </div>
+
+
+                                        </div>
                                         <div class="wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="team">
 
                                             <div class="clearfix qodef-full-section-inner">

@@ -13,7 +13,10 @@ get_header(); ?>
 <link href="<?php echo get_bloginfo( 'template_directory' );?>/assets/css/style.css" rel="stylesheet">
 
 
-<div class="qodef-title-holder">
+            <?php     get_template_part( 'template-parts/navigation/navigation-top', null ); ?>
+
+
+<div class="qodef-title-holder single_post">
     <div class="qodef-container clearfix">
         <div class="qodef-container-inner">
             <div class="qodef-title-subtitle-holder" style="">
@@ -164,7 +167,7 @@ while ( have_posts() ) : the_post();
 </div>
 
 <?php  
-                        // If comments are open or we have at least one comment, load up the comment template.
+/*                        // If comments are open or we have at least one comment, load up the comment template.
 
             // Previous/next post navigation.
 the_post_navigation( array(
@@ -176,7 +179,7 @@ the_post_navigation( array(
     '<span class="post-title">%title</span>',
     ) );
 
-
+*/
 endwhile;
 ?>
 
