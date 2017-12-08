@@ -1,3 +1,4 @@
+import random
 # Stdlib imports
 # from os import mkdir, path
 from json import loads, dumps
@@ -138,7 +139,7 @@ class API(Base):
                 __dict["developed"].append(__dict2)
             print(__dict)
             __array.append(__dict)
-
+            random.shuffle(__array)
         if not filters.get('pk'):
             self.paginator(__array, paginator)
         else:
