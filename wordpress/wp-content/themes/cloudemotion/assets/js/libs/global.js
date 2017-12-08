@@ -262,7 +262,6 @@ var Sukces;
 			document.documentElement.className += ' background-fixed';
 		}
 		
-		setCarousel(".qodef-testimonials",null,arrows);
 
 	});
 

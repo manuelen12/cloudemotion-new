@@ -324,7 +324,7 @@ input[type=checkbox] + span{
 
 input[type=checkbox] + span:before, input[type=checkbox]:checked + span:after, input[type=checkbox] + span:after{
 	position: absolute;
-    border: 1px solid lightgray;
+	border: 1px solid lightgray;
 	left: -35px; 
 	width: 25px;
 	height: 25px;
@@ -650,6 +650,9 @@ button.contact:focus
 	overflow: hidden;
 }
 
+.m_center{
+	margin:0 auto;
+}
 
 .contact-us input, .contact-us .form-group{
 	position: static !important;
@@ -667,3 +670,23 @@ button.contact:focus
 	color:grey; 
 	font-size: 25px;
 }
+
+.tag-post{
+	float: left;
+	padding:1em;
+}
+
+.tag-post img{
+	margin: 0 auto;
+	max-height: 400px;
+}
+
+.qodef-blog-type-standard .qodef-content-left-from-sidebar{
+	padding: 0 3em;
+}
+
+.qodef-blog-holder.qodef-blog-type-standard article{
+	padding: 3em;
+}
+
+.single_post{margin-top: 100px;padding-left: 6em;}

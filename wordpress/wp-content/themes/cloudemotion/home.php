@@ -14,6 +14,9 @@ get_header(); ?>
 <link href="<?php echo get_bloginfo( 'template_directory' );?>/assets/css/bootstrap.min.css" rel="stylesheet">
 
 
+<?php     get_template_part( 'template-parts/navigation/navigation-top', null ); ?>
+
+
 <div class="qodef-title-holder">
     <div class="qodef-container clearfix">
         <div class="qodef-container-inner">
@@ -79,13 +82,15 @@ get_header(); ?>
 
                                 $recent_posts = wp_get_recent_posts( $args, ARRAY_A );
                                 foreach ($recent_posts as $recent) { 
+                                    $img = wp_get_attachment_image_src(get_post_thumbnail_id(),'full'); 
+
                                     ?>
 
                                     <li class="qodef-blog-list-item clearfix">
                                         <div class="qodef-blog-list-item-inner">
                                             <div class="qodef-item-image clearfix">
                                                 <a href="http://startit.select-themes.com/managing-office-culture-2/">
-                                                    <img width="150" height="150" src="http://startit.select-themes.com/wp-content/uploads/2015/04/b-image-1a.jpg" class="attachment-full size-full wp-post-image" alt="b-image-1a">                
+                                                    <img width="150" height="150" src="<?php echo $img; ?>" class="attachment-full size-full wp-post-image" alt="b-image-1a">                
                                                 </a>
                                             </div>
                                             <div class="qodef-item-text-holder">            

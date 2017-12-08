@@ -699,7 +699,7 @@ function post_comments_feed_link( $link_text = '', $post_id = '', $feed = '' ) {
 		$link_text = __('Comments Feed');
 	}
 
-	$link = '<a href="' . esc_url( $url ) . '">' . $link_text . '</a>';
+	$link = '<a class="qodef-btn qodef-btn-small qodef-btn-default" href="' . esc_url( $url ) . '">' . $link_text . '</a>';
 	/**
 	 * Filters the post comment feed link anchor tag.
 	 *
