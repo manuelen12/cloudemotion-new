@@ -290,16 +290,15 @@ class API(Base):
                     __dict2["developed"].append(__dict3)
                 __dict["user_portfolio"].append(__dict2)
 
-            random.shuffle(__dict)
             print(__dict)
             __array.append(__dict)
-
+        random.shuffle(__array)
         if not filters.get('pk'):
             self.paginator(__array, paginator)
         else:
             if not __array:
                 self.result = {"result": "empty"}
-                return random.shuffle(__dict)
+                return
             self.result = __array[0]
 
 
