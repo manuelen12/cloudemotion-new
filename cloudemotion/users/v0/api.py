@@ -75,7 +75,6 @@ class API(Base):
         __search = self.request.GET.get('search')
 
         self.get_users(__filters, __paginator, __ordening, __search)
-        random.random(self.get_users)
 
     def get_users(self, filters={}, paginator={}, ordening=(), search=None):
         # language de la cokkie
@@ -291,6 +290,7 @@ class API(Base):
                     __dict2["developed"].append(__dict3)
                 __dict["user_portfolio"].append(__dict2)
 
+            random.shuffle(__dict)
             print(__dict)
             __array.append(__dict)
 
