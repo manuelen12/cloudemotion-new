@@ -75,7 +75,8 @@ class API(Base):
         __search = self.request.GET.get('search')
 
         self.get_users(__filters, __paginator, __ordening, __search)
-        random.random(self.get_users)
+        random.shuffle(self.get_users)
+        print (self.get_users)
 
     def get_users(self, filters={}, paginator={}, ordening=(), search=None):
         # language de la cokkie
