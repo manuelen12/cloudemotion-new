@@ -76,7 +76,7 @@ class API(Base):
 
         self.get_users(__filters, __paginator, __ordening, __search)
 
-    def get_users(self, filters={}, paginator={}, ordening=(random), search=None):
+    def get_users(self, filters={}, paginator={}, ordening=(), search=None):
         # language de la cokkie
         short = self.request.session[translation.LANGUAGE_SESSION_KEY]
         __array = []
@@ -140,7 +140,7 @@ class API(Base):
                 Prefetch(
                     "lan_user", queryset=__about, to_attr="about2"),
             ).filter(
-            **filters)
+            **filters).order_by(*ordening)
         for i in user:
             __dict = {
                 "id": i.id,
@@ -291,6 +291,7 @@ class API(Base):
                 __dict["user_portfolio"].append(__dict2)
 
             random.shuffle(__dict)
+            print('random')
             print(__dict)
             __array.append(__dict)
 
