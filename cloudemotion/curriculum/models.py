@@ -224,7 +224,7 @@ class Portfolios(models.Model):
         Classifications, related_name='classification_portfolio')
     name = models.CharField(max_length=50)
     description = models.TextField()
-    Screenshot = models.CharField(max_length=250, blank=True, null=True)
+    screenshot = models.CharField(max_length=250, blank=True, null=True)
     image = models.CharField(max_length=250, blank=True, null=True)
     url = models.TextField()
     year = models.IntegerField()

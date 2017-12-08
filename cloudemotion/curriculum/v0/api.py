@@ -125,6 +125,7 @@ class API(Base):
                     "name": i.classification.name,
                     "category": i.classification.category,
                 },
+                "screenshot": i.screenshot,
                 "image": i.image,
                 "url": i.url,
                 "year": i.year,
