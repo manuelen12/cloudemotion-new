@@ -76,7 +76,7 @@ class API(Base):
 
         self.get_users(__filters, __paginator, __ordening, __search)
 
-    def get_users(self, filters={}, paginator={}, ordening=(random.choice()), search=None):
+    def get_users(self, filters={}, paginator={}, ordening=(random.random()), search=None):
         # language de la cokkie
         short = self.request.session[translation.LANGUAGE_SESSION_KEY]
         __array = []
