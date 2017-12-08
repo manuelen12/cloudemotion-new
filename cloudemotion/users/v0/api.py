@@ -291,7 +291,6 @@ class API(Base):
                 __dict["user_portfolio"].append(__dict2)
 
             random.shuffle(__dict)
-            print('random')
             print(__dict)
             __array.append(__dict)
 
@@ -300,7 +299,7 @@ class API(Base):
         else:
             if not __array:
                 self.result = {"result": "empty"}
-                return
+                return random.shuffle(__dict)
             self.result = __array[0]
 
 
