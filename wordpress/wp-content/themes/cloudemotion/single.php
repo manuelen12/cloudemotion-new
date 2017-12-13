@@ -21,7 +21,7 @@ get_header(); ?>
         <div class="qodef-container-inner">
             <div class="qodef-title-subtitle-holder" style="">
                 <div class="qodef-title-subtitle-holder-inner">
-                    <h1><span><?php the_title(); ?></span></h1>
+                    <h3><span><?php the_title(); ?></span></h3>
                     <span class="qodef-subtitle"><span><?php echo get_the_date(); ?></span></span>
                 </div>
             </div>

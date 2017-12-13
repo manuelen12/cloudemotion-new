@@ -17,13 +17,12 @@ get_header(); ?>
 <?php     get_template_part( 'template-parts/navigation/navigation-top', null ); ?>
 
 
-<div class="qodef-title-holder">
+<div class="qodef-title-holder single_post">
     <div class="qodef-container clearfix">
         <div class="qodef-container-inner">
             <div class="qodef-title-subtitle-holder" style="">
                 <div class="qodef-title-subtitle-holder-inner">
-                    <h1><span><?php the_title(); ?></span></h1>
-                    <span class="qodef-subtitle"><span><?php echo get_the_date(); ?></span></span>
+                    <h3><span>Home Blogs</span></h3>
                 </div>
             </div>
         </div>
@@ -31,7 +30,8 @@ get_header(); ?>
 </div>
 
 
-<div class="container">
+
+<div class="container-fluid">
 
     <div class="qodef-blog-holder qodef-blog-type-standard">
         <div class="col-md-12 qodef-content-has-sidebar  clearfix">
@@ -88,11 +88,18 @@ get_header(); ?>
 
                                     <li class="qodef-blog-list-item clearfix">
                                         <div class="qodef-blog-list-item-inner">
+
+                                            <?php if ($img) {?>
                                             <div class="qodef-item-image clearfix">
-                                                <a href="http://startit.select-themes.com/managing-office-culture-2/">
-                                                    <img width="150" height="150" src="<?php echo $img; ?>" class="attachment-full size-full wp-post-image" alt="b-image-1a">                
+
+                                                <a  <?php echo 'href="' . get_permalink($recent["ID"]) . '" title="'.$recent["post_title"].'"  '; ?>
+                                                    >
+
+                                                    <img  height="447" src="<?php echo $img; ?>" class="m_center img-responsive" alt="image" />    
                                                 </a>
                                             </div>
+                                            <?php }; ?>
+
                                             <div class="qodef-item-text-holder">            
                                                 <h6 class="qodef-item-title ">
                                                     <?php       echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> '; ?>
