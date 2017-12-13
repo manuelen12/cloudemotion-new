@@ -244,14 +244,9 @@
 
 .ui-pnotify-closer,.ui-pnotify-sticker{float:right;margin-left:.2em; display: none;}
 
-.foot{
-	padding:0; 
-}
-
 .top-content{
 	height: 500px;
-	overflow: hidden;
-	padding: 4em 0;
+	padding: 1em 0;
 }
 
 .main-content{
@@ -757,6 +752,11 @@ content: "";
 
 #culero.collapsing[aria-expanded="false"] {
     height: 250px !important;
+}
+
+.mainTitle{
+	padding: 2em 0;
+	text-align: center;
 }
 
 .qodef-post-text-inner .qodef-post-title{

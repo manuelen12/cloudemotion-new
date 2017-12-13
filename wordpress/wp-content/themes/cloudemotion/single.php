@@ -13,7 +13,7 @@ get_header(); ?>
 <link href="<?php echo get_bloginfo( 'template_directory' );?>/assets/css/style.css" rel="stylesheet">
 
 
-            <?php     get_template_part( 'template-parts/navigation/navigation-top', null ); ?>
+<?php     get_template_part( 'template-parts/navigation/navigation-top', null ); ?>
 
 
 <div class="qodef-title-holder single_post">
@@ -73,6 +73,8 @@ while ( have_posts() ) : the_post();
 
                                     $recent_posts = wp_get_recent_posts( $args, ARRAY_A );
                                     foreach ($recent_posts as $recent) { 
+                                        $img = get_the_post_thumbnail_url($recent["ID"],'full'); 
+
                                         ?>
 
                                         <li class="qodef-blog-list-item clearfix">
@@ -138,7 +140,7 @@ while ( have_posts() ) : the_post();
                                         );
                                     $comments = get_comments($args);
                                     foreach($comments as $comment) :
-                                    ?>
+                                        ?>
                                     <li class="recentcomments">
                                         <span class="comment-author-link"><?php echo $comment->comment_author; ?></span> on 
                                         <a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo $comment->post_name; ?></a>
@@ -180,6 +182,6 @@ the_post_navigation( array(
     ) );
 
 */
-endwhile;
-?>
+    endwhile;
+    ?>
 

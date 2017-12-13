@@ -191,7 +191,9 @@ var Sukces;
 
 
 	 function triggerParallaxCl(target) {
+	 	console.log("entrooooo");
 	 	$target=$(target);
+	 	console.log($target);
 	 	if ($target.length) {	
 	 		$(".qodef-page-header").removeClass("opened");
 	 		$('html,body').animate({

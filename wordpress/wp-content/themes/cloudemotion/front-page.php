@@ -43,11 +43,9 @@ get_header();
                                                                 <div class="qodef-elements-holder-item-inner">
                                                                     <div class="qodef-elements-holder-item-content qodef-elements-holder-custom-361605" style="padding: 40px 0px 50px 0px">
 
-                                                                        <div class="wpb_text_column wpb_content_element ">
-                                                                            <div class="wpb_wrapper">
-                                                                                <h2 style="font-size: 55px;"><strong ng-bind="'About us' | translate">About Us</strong></h2>
-                                                                                <h2 style="font-size: 25px; color:grey"><strong ng-bind="'We help to create your corporate image' | translate"></strong></h2>
-                                                                            </div>
+                                                                        <div class="mainTitle">
+                                                                            <h1 ng-bind="'About Us' | translate"></h1>
+                                                                            <p ng-bind="'We help to create your corporate image' | translate" ></p>
                                                                         </div>
                                                                         <div class="vc_empty_space"  style="height: 20px" >
                                                                             <span class="vc_empty_space_inner"></span>
@@ -96,10 +94,12 @@ get_header();
 
                             <div class="qodef-section qodef-content-aligment-center qodef-grid-section" id="services">
                                 <div >
-                                    <div >
-                                        <h1 style="font-size: 55px" ng-bind="'Services' | translate"></h1>
-                                        <p style="color:grey; font-size: 25px" ng-bind="'With an idea we offer you many solutions' | translate"></p>
+                                    <div class="mainTitle">
+                                        <h1 ng-bind="'Services' | translate"></h1>
+                                        <p  ng-bind="'With an idea we offer you many solutions' | translate"></p>
                                     </div>
+
+
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="tab" role="tabpanel">
@@ -470,19 +470,13 @@ get_header();
                                         <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-left">
                                             <section id="portfolio" class="section cover bg-black">
 
-                                                <div class="wpb_text_column wpb_content_element ">
-                                                    <div class="wpb_wrapper">
-                                                        <h2 style="text-align: center;"><strong ng-bind="'Our Portfolio' | translate"></strong></h2>
-                                                    </div>
+                                                <div class="mainTitle">
+                                                    <h1 ng-bind="'Our Portfolio' | translate"></h1>
+                                                    <p ng-bind="'Know our work and discover the quality with which we work' | translate" ></p>
                                                 </div>
-                                                <div class="wpb_text_column wpb_content_element ">
-                                                    <div class="wpb_wrapper">
-                                                        <h4 style="text-align: center;" ng-bind="'Know our work and discover the quality with which we work' | translate"></h4>
-                                                    </div>
-                                                </div>
+
                                                 <nav class="filter-bar bg-primary dark">
                                                     <div class="tabs-wrapper">
-                                                        <button type="button" data-toggle="collapse" data-target="#culero" class="btn btn-default">open culero</button>
                                                         <ul class="filter nav nav-tabs owl-carousel category" data-filter-list="#works-list">
 
                                                             <li class="item active" ng-class="{'active':vm.selected==''}" ng-click="vm.selected=''">
@@ -699,7 +693,7 @@ get_header();
                                         </div>
 
 
-                                        <div class="wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="blog">
+                                        <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-center" id="blog">
 
                                             <div class="mainTitle">
                                                 <h1 ng-bind="'Blogs' | translate"></h1>
@@ -731,7 +725,7 @@ get_header();
 
                                                     <article id="post-" class="tag-post item">
                                                         <div class="qodef-post-content">
-                                                        <?php if ($img) {?>
+                                                            <?php if ($img) {?>
                                                             <div class="qodef-post-image">
 
                                                                 <a  <?php echo 'href="' . get_permalink($recent["ID"]) . '" title="'.$recent["post_title"].'"  '; ?>
@@ -767,24 +761,15 @@ get_header();
 
 
                                             </div>
-                                            <div class="wpb_row vc_row-fluid qodef-section vc_custom_1445414169321 qodef-content-aligment-center" id="team">
+                                            <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-center" id="team">
 
                                                 <div class="clearfix qodef-full-section-inner">
                                                     <div class="wpb_column vc_column_container">
                                                         <div class="vc_column-inner ">
                                                             <div class="wpb_wrapper">
-                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                    <div class="wpb_wrapper">
-                                                                        <h2 ng-bind="'Meet the professionals behind your projects' | translate"></h2>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="vc_empty_space"  style="height: 22px" >
-                                                                    <span class="vc_empty_space_inner"></span>
-                                                                </div>
-                                                                <div class="wpb_text_column wpb_content_element ">
-                                                                    <div class="wpb_wrapper">
-                                                                        <h4 ng-bind="'Take a look and certify the knowledge of our developers' | translate"></h4>
-                                                                    </div>
+                                                                <div class="mainTitle">
+                                                                        <h1 ng-bind="'Team' | translate"></h1>
+                                                                        <p ng-bind="'Take a look and certify the knowledge of our developers' | translate"></p>
                                                                 </div>
                                                                 <div class="team owl-carousel owl-theme">
 
@@ -828,7 +813,7 @@ get_header();
 
 
 
-                                            <div class="" style="">
+                                            <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-center" id="contact-us">
 
                                                 <footer class="foot" >
                                                     <?php get_footer();?>

@@ -1,7 +1,10 @@
-
+<?php 
+    $baseurl=(is_home() || is_single())?get_site_url()."/":""; 
+    $parallax=(is_home() || is_single())?"":"parallax-cl"; 
+?>
 <ul id="menu-main-menu" class="clearfix">
     <li class="menu-item qodef-active-item ">
-        <a href="#general" parallax-cl class=" current ">
+        <a href="<?php echo $baseurl;  ?>#general" <?php echo $parallax; ?> class=" current ">
             <span class="item_outer">
                 <span class="item_inner">
                     <span class="menu_icon_wrapper">
@@ -14,7 +17,7 @@
         </a>
     </li>
     <li class="menu-item">
-        <a href="#about_us" parallax-cl class="">
+        <a href="<?php echo $baseurl;  ?>#about_us" <?php echo $parallax; ?> class="">
             <span class="item_outer">
                 <span class="item_inner">
                     <span class="menu_icon_wrapper">
@@ -27,7 +30,7 @@
         </a>
     </li>
     <li class="menu-item">
-        <a href="#services" parallax-cl class="">
+        <a href="<?php echo $baseurl;  ?>#services" <?php echo $parallax; ?> class="">
             <span class="item_outer">
                 <span class="item_inner">
                     <span class="menu_icon_wrapper">
@@ -40,7 +43,7 @@
         </a>
     </li>
     <li class="menu-item">
-        <a href="#portfolio" parallax-cl class=" no_link">
+        <a href="<?php echo $baseurl;  ?>#portfolio" <?php echo $parallax; ?> class=" no_link">
             <span class="item_outer">
                 <span class="item_inner">
                     <span class="menu_icon_wrapper">
@@ -53,7 +56,7 @@
         </a>
     </li>
     <li class="menu-item">
-        <a href="#testimonials" parallax-cl class=" no_link">
+        <a href="<?php echo $baseurl;  ?>#blog" <?php echo $parallax; ?> class=" no_link">
             <span class="item_outer">
                 <span class="item_inner">
                     <span class="menu_icon_wrapper">
@@ -66,7 +69,7 @@
         </a>
     </li>
     <li class="menu-item">
-        <a href="#team" parallax-cl class="">
+        <a href="<?php echo $baseurl;  ?>#team" <?php echo $parallax; ?> class="">
             <span class="item_outer">
                 <span class="item_inner">
                     <span class="menu_icon_wrapper">
@@ -79,7 +82,7 @@
         </a>
     </li>
     <li class="menu-item">
-        <a href="#design" parallax-cl class="">
+        <a href="<?php echo $baseurl;  ?>#contact-us" <?php echo $parallax; ?> class="">
             <span class="item_outer">
                 <span class="item_inner">
                     <span class="menu_icon_wrapper">
@@ -92,7 +95,7 @@
         </a>
     </li>
     <li>
-        <a parallax-cl class="" ng-click="vm.changeLanguage(vm.country)">
+        <a <?php echo $parallax; ?> class="" ng-click="vm.changeLanguage(vm.country)">
             <span class="item_outer">
                 <span class="item_inner">
                 <span class="item_text show-small" ng-bind="vm.country"></span>
