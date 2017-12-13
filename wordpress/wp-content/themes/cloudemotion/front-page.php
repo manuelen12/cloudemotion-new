@@ -491,7 +491,7 @@ get_header();
                                                     </div>
                                                 </nav>
 
-                                                <div id="culero" class="filter-list row masonry no-spaces collapse" aria-expanded="false">
+                                                <div id="hiddenCollapse" class="filter-list row masonry no-spaces collapse" aria-expanded="false">
                                                     <span class="collopen">Collapse</span>
                                                     <div ng-repeat="portfolio in vm.portfolios" ng-show="portfolio.classification.id==vm.selected || !vm.selected" class="{{portfolio.class | lowercase}} masonry-item col-md-4 col-sm-6 col-xs-12 animated fadeIn" >           
                                                         <div class="image-box">

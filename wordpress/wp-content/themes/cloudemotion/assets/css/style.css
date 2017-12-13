@@ -712,13 +712,13 @@ button.contact:focus
 }
 
 
-#culero.collapse[aria-expanded="false"] {
+#hiddenCollapse.collapse[aria-expanded="false"] {
     display: block;
     height: 250px !important;
     overflow: hidden;
 }
 
-#culero.collapse[aria-expanded="false"]:before {
+#hiddenCollapse.collapse[aria-expanded="false"]:before {
 content: "";
     position: absolute;
     width: 102%;
@@ -729,11 +729,11 @@ content: "";
 
 .collopen{display: none;}
 
-#culero.collapse[aria-expanded="false"] .collopen:hover {
+#hiddenCollapse.collapse[aria-expanded="false"] .collopen:hover {
 	background: #25cbf5;
 	cursor: pointer;
 }
-#culero.collapse[aria-expanded="false"] .collopen {
+#hiddenCollapse.collapse[aria-expanded="false"] .collopen {
 	position: absolute;
     width: auto;
     text-align: center;
@@ -750,7 +750,7 @@ content: "";
     left: calc( 50% - 15px);
 }
 
-#culero.collapsing[aria-expanded="false"] {
+#hiddenCollapse.collapsing[aria-expanded="false"] {
     height: 250px !important;
 }
 
