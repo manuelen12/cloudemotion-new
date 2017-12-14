@@ -477,7 +477,7 @@ get_header();
 
                                                 <nav class="filter-bar bg-primary dark">
                                                     <div class="tabs-wrapper">
-                                                        <ul class="filter nav nav-tabs owl-carousel category" data-filter-list="#works-list">
+                                                        <ul class="filter nav nav-tabs owl-carousel category" data-filter-list="#hiddenCollapse">
 
                                                             <li class="item active" ng-class="{'active':vm.selected==''}" ng-click="vm.selected=''">
                                                                 <a href="" data-filter="*" ng-bind="'Todos'"></a>
@@ -492,8 +492,9 @@ get_header();
                                                 </nav>
 
                                                 <div id="hiddenCollapse" class="filter-list row masonry no-spaces collapse" aria-expanded="false">
-                                                    <span class="collopen">Collapse</span>
-                                                    <div ng-repeat="portfolio in vm.portfolios" ng-show="portfolio.classification.id==vm.selected || !vm.selected" class="{{portfolio.class | lowercase}} masonry-item col-md-4 col-sm-6 col-xs-12 animated fadeIn" >           
+                                                    <span class="collopen" data-toggle="collapse" data-target="#hiddenCollapse">Collapse</span>
+                                                    <span class="collclose" data-toggle="collapse" data-target="#hiddenCollapse">Close collapse</span>
+                                                    <div ng-repeat="portfolio in vm.portfolios"  style="padding: 0;" ng-show="portfolio.classification.id==vm.selected || !vm.selected" class="{{portfolio.class | lowercase}} col-md-4 col-sm-6 col-xs-12 animated fadeIn" >           
                                                         <div class="image-box">
                                                             <div class="image" >
                                                                 <img ng-src="{{portfolio.image}}" />
@@ -508,7 +509,7 @@ get_header();
                                                             </div>
                                                         </div>
                                                     </div>                
-                                                    <p >Sorry, no posts matched your criteria.</p>
+<!--                                                     <p >Sorry, no posts matched your criteria.</p> -->
                                                 </div>
                                             </section>
                                         </div>

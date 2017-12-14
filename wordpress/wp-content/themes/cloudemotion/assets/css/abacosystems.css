@@ -489,7 +489,6 @@ section#consultancy {
             }
 /* footer section */
 footer {
-  padding: 80px 0;
   text-align: center;
 }
 footer a > img {
@@ -1888,6 +1887,7 @@ a:hover, a:focus {
     text-align: center;
     transition: all 0.3s ease 0s;
     margin: 0 -15px;
+    cursor: pointer;
 }
 
     .serviceBox.last {

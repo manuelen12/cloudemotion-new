@@ -3,9 +3,35 @@
 	/* generated in /www/sites/startit.select-themes.com/files/html/wp-content/themes/startit/assets/custom-styles/general-custom-styles-responsive.php qode_startit_design_responsive_styles function */
 .qodef-section.qodef-parallax-section-holder { height: auto !important;min-height: 400px;}
 
+
+
+}
+
+@media only screen and (max-width: 768px){
+	.qodef-testimonials.cards_carousel .qodef-testimonial-content{width: initial;}
 }
 
 @media only screen and (max-width: 480px){
+
+	.qodef-elements-holder-item-content {
+		text-align: center;
+	}
+
+	.qodef-elements-holder-item-content button{
+		padding-bottom: 2em;
+	}
+
+	.wpb_wrapper h4{
+		font-size: 14px;
+	}
+
+	.mainTitle h1{
+		font-size: 35px;
+	}
+	.mainTitle p{
+		color:grey; 
+		font-size: 15px;
+	}
 	/* generated in /www/sites/startit.select-themes.com/files/html/wp-content/themes/startit/assets/custom-styles/general-custom-styles-responsive.php qode_startit_design_responsive_styles function */
 .qodef-section.qodef-parallax-section-holder { height: auto !important;min-height: 400px;}
 

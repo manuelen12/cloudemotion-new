@@ -156,6 +156,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+
 	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(1) .qodef-slider-content,
 	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(3) .qodef-slider-content{
 		padding-left: 80px;
@@ -690,9 +691,9 @@ button.contact:focus
 	margin-top: 100px;
 	padding: 2em 2em 2em 6em;
 	background: #f7f7f7;
-    border-bottom: 1px solid lightgray;
-    border-top: 1px solid lightgray;
-    margin-bottom: 2em;
+	border-bottom: 1px solid lightgray;
+	border-top: 1px solid lightgray;
+	margin-bottom: 2em;
 }
 
 .single_post .qodef-container{background: transparent;}
@@ -713,45 +714,49 @@ button.contact:focus
 
 
 #hiddenCollapse.collapse[aria-expanded="false"] {
-    display: block;
-    height: 250px !important;
-    overflow: hidden;
+	display: block;
+	height: 250px !important;
+	overflow: hidden;
 }
 
 #hiddenCollapse.collapse[aria-expanded="false"]:before {
-content: "";
-    position: absolute;
-    width: 102%;
-    height: 250px;
-    z-index: 1;
-    background: rgba(0,0,0,0.3);
+	content: "";
+	position: absolute;
+	width: 102%;
+	height: 250px;
+	z-index: 1;
+	background: rgba(0,0,0,0.3);
 }
 
 .collopen{display: none;}
 
-#hiddenCollapse.collapse[aria-expanded="false"] .collopen:hover {
+#hiddenCollapse.collapse[aria-expanded="false"] .collopen:hover,.collclose:hover {
 	background: #25cbf5;
 	cursor: pointer;
 }
-#hiddenCollapse.collapse[aria-expanded="false"] .collopen {
+#hiddenCollapse.collapse[aria-expanded="false"] .collopen, .collclose{
 	position: absolute;
-    width: auto;
-    text-align: center;
-    z-index: 1;
-    padding: .5em;
-    border: 2px solid lightgray;
-    -o-border-radius: 10px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    display: inline-block;
-    margin: 0 auto;
-    bottom: 30px;
-    left: calc( 50% - 15px);
+	width: auto;
+	text-align: center;
+	z-index: 1;
+	padding: .5em;
+	border: 2px solid lightgray;
+	-o-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 0 auto;
+	bottom: 30px;
+	left: calc( 50% - 15px);
 }
 
+.collclose{display: block; position: fixed;}
+
+#hiddenCollapse.collapse[aria-expanded="false"] .collclose{display:none;}
+
 #hiddenCollapse.collapsing[aria-expanded="false"] {
-    height: 250px !important;
+	height: 250px !important;
 }
 
 .mainTitle{
@@ -760,5 +765,5 @@ content: "";
 }
 
 .qodef-post-text-inner .qodef-post-title{
-border-bottom: 2px solid lightgray;
+	border-bottom: 2px solid lightgray;
 }

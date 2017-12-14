@@ -77,17 +77,18 @@
 						margin:10,
 						nav:true,
 					};
-					setCarousel(".team",opt)
-					var blog= angular.copy(opt);
-					blog.responsive={
-						480 : {
-							items:1
-						},
+					opt.responsive={
+						0 : {items:1},
 						800 : {
 							items:2
+						},
+						1200 : {
+							items:3
 						}
 					}
-					setCarousel(".owl-blog",blog);
+					console.log(opt);
+					setCarousel(".team",opt)
+					setCarousel(".owl-blog",opt);
 					opt.items=1;
 					setCarousel(".qodef-testimonials",opt);
 				},1000)
