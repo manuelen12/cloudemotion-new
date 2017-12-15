@@ -307,4 +307,4 @@ class PortfolioUser(models.Model):
         db_table = "portfolio_user"
 
     def __str__(self):
-        return
+        return self.user.username + " " + self.portfolio.name
