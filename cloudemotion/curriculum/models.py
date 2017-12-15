@@ -301,10 +301,12 @@ class PortfolioUser(models.Model):
        on_delete=models.CASCADE,
        related_name='port_us')
     portfolio = models.ForeignKey(Portfolios, related_name="port_p")
+    description_es = models.TextField()
+    description_en = models.TextField()
 
     class Meta:
         app_label = "curriculum"
         db_table = "portfolio_user"
 
     def __str__(self):
-        return
+        return self.user.username + " " + self.portfolio.name
