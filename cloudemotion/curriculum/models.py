@@ -293,3 +293,18 @@ class PortfolioSkill(models.Model):
 
     def __str__(self):
         return self.description
+
+
+class PortfolioUser(models.Model):
+    user = models.ForeignKey(
+       settings.AUTH_USER_MODEL,
+       on_delete=models.CASCADE,
+       related_name='port_us')
+    portfolio = models.ForeignKey(Portfolios, related_name="port_p")
+
+    class Meta:
+        app_label = "curriculum"
+        db_table = "portfolio_user"
+
+    def __str__(self):
+        return
