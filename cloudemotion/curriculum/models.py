@@ -301,6 +301,8 @@ class PortfolioUser(models.Model):
        on_delete=models.CASCADE,
        related_name='port_us')
     portfolio = models.ForeignKey(Portfolios, related_name="port_p")
+    description_es = models.TextField()
+    description_en = models.TextField()
 
     class Meta:
         app_label = "curriculum"
