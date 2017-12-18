@@ -23,6 +23,7 @@ from cloudemotion.curriculum.models import (CoursesUser,
                                             Portfolios,
                                             UserLanguage,
                                             ExperienceLanguage,
+                                            PortfolioUser,
                                             PortfolioLanguage)
 from django.utils import translation
 # from django.core.cache import cache
@@ -366,3 +367,124 @@ class API(Base):
                               "Contactanos de CloudEmotion", html])
         __start.start()
         self.result = {"result": "good"}
+
+    def get_portf_user(self, pk=None):
+        __filters = loads(self.request.GET.get('filters', "{}"))
+        __paginator = loads(self.request.GET.get('paginator', "{}"))
+        __ordening = loads(self.request.GET.get('ordening', "[]"))
+        if pk:
+            __filters.update({"pk": pk})
+        __search = self.request.GET.get('search')
+
+        self.get_portf_users(__filters, __paginator, __ordening, __search)
+
+    def get_portf_users(self, filters={}, paginator={}, ordening=(), search=None):
+        # language de la cokkie
+        short = self.request.session[translation.LANGUAGE_SESSION_KEY]
+        __array = []
+        # consulta a la base de datos
+        # __about = UserLanguage.objects.select_related(
+        #     "language").filter(language__short=short)
+
+        # __observatione = ExperienceLanguage.objects.select_related(
+        #     "language").filter(language__short=short)
+
+        __observationp = PortfolioLanguage.objects.select_related(
+            "language").filter(language__short=short)
+
+        # __languaje = LanguajesUser.objects.select_related(
+        #     "languaje")
+
+        __portfolio = Portfolios.objects.select_related(
+            "classification", "company").prefetch_related(Prefetch(
+                    "port_p", queryset=__observationp, to_attr="port_p2"),
+                    "s_por", "port_p"
+            )
+
+        __portfoliouser = PortfolioUser.objects.select_related(
+            "user").prefetch_related(Prefetch(
+                    "port_p", queryset=__observationp, to_attr="port_p2"),
+            )
+
+        # x = __portfolio
+        # import ipdb; ipdb.set_trace()
+        user = Users.objects.select_related(
+            "city", "city__state", "city__state__country",
+            "position").prefetch_related(
+
+                # Prefetch(
+                #     "l_user", queryset=__languaje, to_attr="l_user2"),
+                Prefetch(
+                    "p_user", queryset=__portfolio, to_attr="p_user2"),
+                # Prefetch(
+                #     "lan_user", queryset=__about, to_attr="about2"),
+            ).filter(
+            **filters).order_by(*ordening)
+        for i in user:
+            __dict = {
+                "id": i.id,
+                "first_name": i.first_name,
+                "last_name": i.last_name,
+                "email": i.email,
+                "image": i.image,
+                "birthday": i.birthday,
+                "phone": i.phone,
+                "address": i.address,
+                # "about_me": i.about2[0].about_me if i.about2 else "",
+                "status": i.status,
+                "create_at": i.create_at,
+                "portf_user": [],
+                "user_portfolio": [],
+                "idiom": short,
+            }
+
+            for e in __portfoliouser:
+                __dict2 = {
+                    "port_p": {
+                        "id": e.id,
+                        "description_es": _(e.description_es)
+                        # "name": _(e.get_level_display())
+                    },
+                    "name": _(e.name)
+                }
+                __dict["portf_user"].append(__dict2)
+
+            for e in i.p_user2:
+                __dict2 = {
+                    "id": e.id,
+                    "name": e.name,
+                    "image": e.image,
+                    "url": e.url,
+                    "year": e.year,
+                    "developed": [],
+                    "classification": {
+                        "id": e.classification.id,
+                        "name": _(e.classification.name),
+                        "category": e.classification.category,
+                    },
+                    "company": {
+                        "id": e.company.id,
+                        "name": _(e.company.name),
+                        "responsable": e.company.responsable,
+                    },
+                }
+                # import ipdb; ipdb.set_trace()
+                # import ipdb; ipdb.set_trace()
+                for z in e.s_por.all():
+                    __dict3 = {
+                        "id": z.skill.id,
+                        "name": _(z.skill.name),
+                    }
+                    __dict2["developed"].append(__dict3)
+                __dict["user_portfolio"].append(__dict2)
+
+            print(__dict)
+            __array.append(__dict)
+        random.shuffle(__array)
+        if not filters.get('pk'):
+            self.paginator(__array, paginator)
+        else:
+            if not __array:
+                self.result = {"result": "empty"}
+                return
+            self.result = __array[0]
