@@ -731,8 +731,9 @@ button.contact:focus
 .collopen{display: none;}
 
 #hiddenCollapse.collapse[aria-expanded="false"] .collopen:hover,.collclose:hover {
-	background: #25cbf5;
+	border: 2px solid lightgray;
 	cursor: pointer;
+	background: #efefef;
 }
 #hiddenCollapse.collapse[aria-expanded="false"] .collopen, .collclose{
 	position: absolute;
@@ -741,6 +742,7 @@ button.contact:focus
 	z-index: 1;
 	padding: .5em;
 	border: 2px solid lightgray;
+	background: #25cbf5;
 	-o-border-radius: 10px;
 	-webkit-border-radius: 10px;
 	-moz-border-radius: 10px;
@@ -748,7 +750,7 @@ button.contact:focus
 	display: inline-block;
 	margin: 0 auto;
 	bottom: 30px;
-	left: calc( 50% - 15px);
+	left: calc( 50% - 35px);
 }
 
 .collclose{display: block; position: fixed;}
