@@ -102,6 +102,15 @@ class ContactsViewsets(viewsets.ViewSet):
 class PotfUserViews(viewsets.ViewSet):
     permission_classes = ()
 
+    def list(self, request, *args, **kwargs):
+        serializer = API(request)
+        serializer.get_portf_user()
+        if serializer.error:
+            print(serializer.error)
+            return default_responses(400, serializer.error)
+
+        return default_responses(200, serializer.result)
+
     def retrieve(self, request, pk, *args, **kwargs):
         # self.serializer_class = CreateUSerAdminSerializers
         serializer = API(request)
