@@ -232,3 +232,9 @@
   top:35%;
   left:35%;
 }
+.panel-primary>.panel-heading{
+  min-height: 80px;
+}
+.item-box{
+  min-height: 180px;
+}

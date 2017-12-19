@@ -492,8 +492,8 @@ get_header();
                                                 </nav>
 
                                                 <div id="hiddenCollapse" class="filter-list row masonry no-spaces collapse" aria-expanded="false">
-                                                    <span class="collopen" data-toggle="collapse" data-target="#hiddenCollapse">Collapse</span>
-                                                    <span class="collclose" data-toggle="collapse" data-target="#hiddenCollapse">Close collapse</span>
+                                                    <button class="collopen" data-toggle="collapse" data-target="#hiddenCollapse ">Collapse</button>
+                                                    <button class="collclose" data-toggle="collapse" data-target="#hiddenCollapse">Close collapse</button>
                                                     <div ng-repeat="portfolio in vm.portfolios"  style="padding: 0;" ng-show="portfolio.classification.id==vm.selected || !vm.selected" class="{{portfolio.class | lowercase}} col-md-4 col-sm-6 col-xs-12 animated fadeIn" >           
                                                         <div class="image-box">
                                                             <div class="image" >
@@ -836,7 +836,7 @@ get_header();
                                     <h4 class="modal-title" >Portafolio View</h4>
                                 </div>
                                 <div class="modal-body">
-                                    <img ng-src="{{vm.seeData.image}}" width="400" height="400" style="margin:0 auto;" class="img-responsive" alt="Image">
+                                    <img ng-src="{{vm.seeData.screenshot}}" width="400" height="400" style="margin:0 auto;" class="img-responsive" alt="Image">
                                 </div>
                                 <div class="modal-footer">
                                     <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

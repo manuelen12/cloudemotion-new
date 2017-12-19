@@ -23,6 +23,8 @@ from cloudemotion.curriculum.models import (CoursesUser,
                                             Portfolios,
                                             UserLanguage,
                                             ExperienceLanguage,
+                                            PortfolioUser,
+                                            PortfolioSkill,
                                             PortfolioLanguage)
 from django.utils import translation
 # from django.core.cache import cache
@@ -366,3 +368,71 @@ class API(Base):
                               "Contactanos de CloudEmotion", html])
         __start.start()
         self.result = {"result": "good"}
+
+    def get_portf_user(self, pk=None):
+        __filters = loads(self.request.GET.get('filters', "{}"))
+        __paginator = loads(self.request.GET.get('paginator', "{}"))
+        __ordening = loads(self.request.GET.get('ordening', "[]"))
+        if pk:
+            __filters.update({"pk": pk})
+        __search = self.request.GET.get('search')
+
+        self.get_portf_users(__filters, __paginator, __ordening, __search)
+
+    def get_portf_users(self, filters={}, paginator={}, ordening=(), search=None):
+        # language de la cokkie
+        short = self.request.session[translation.LANGUAGE_SESSION_KEY]
+        __array = []
+        # consulta a la base de datos
+
+        __portfuser = PortfolioUser.objects.select_related(
+            "user", "portfolio")
+
+        __portfolio = Users.objects.select_related(
+            ).prefetch_related(
+
+             Prefetch(
+                    "port_us", queryset=__portfuser, to_attr="port_us2"),
+            ).filter(
+            **filters).order_by(*ordening)
+        for i in __portfolio:
+            __dict = {
+                "id_user": i.id,
+                "first_name": i.first_name,
+                "last_name": i.last_name,
+                "email": i.email,
+                "portfuser": [],
+                "status": i.status,
+                "create_at": i.create_at,
+            }
+            for e in i.port_us2:
+                __dict2 = {
+                    "id_portf": e.portfolio.id,
+                    "name": _(e.portfolio.name),
+                    "company": {
+                        "id": e.portfolio.company.id,
+                        "name": e.portfolio.company.name,
+                        "responsable": e.portfolio.company.responsable,
+                        "image": e.portfolio.company.image,
+                    },
+                    "classification": {
+                        "id": e.portfolio.classification.id,
+                        "name": e.portfolio.classification.name,
+                        "category": e.portfolio.classification.category,
+                    },
+                    "screenshot": e.portfolio.screenshot,
+                    "image": e.portfolio.image,
+                    "url": e.portfolio.url,
+                    "year": e.portfolio.year,
+                }
+                __dict["portfuser"].append(__dict2)
+            print(__dict)
+            __array.append(__dict)
+            # random.shuffle(__array)
+        if not filters.get('pk'):
+            self.paginator(__array, paginator)
+        else:
+            if not __array:
+                self.result = {"result": "empty"}
+                return
+            self.result = __array[0]
