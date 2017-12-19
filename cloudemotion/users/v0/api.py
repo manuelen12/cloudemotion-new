@@ -384,7 +384,6 @@ class API(Base):
         short = self.request.session[translation.LANGUAGE_SESSION_KEY]
         __array = []
         # consulta a la base de datos
-        # user = Users.objects.select_related()
 
         __portfuser = PortfolioUser.objects.select_related(
             "user", "portfolio")
