@@ -17,7 +17,7 @@ Including another URLconf
 from rest_framework import routers
 from django.contrib import admin
 from .views import (UserAdminViews,
-					PotfUserViews,
+					# PotfUserViews,
 					ContactsViewsets,
                     )
 # from rest_framework.urlpatterns import format_suffix_patterns
@@ -25,5 +25,5 @@ from .views import (UserAdminViews,
 router = routers.SimpleRouter()
 
 router.register(r'users', UserAdminViews, base_name='users')
-router.register(r'potf_user', PotfUserViews, base_name='potf_user')
+# router.register(r'potf_user', PotfUserViews, base_name='potf_user')
 router.register(r'contacts', ContactsViewsets, base_name='contacts')
