@@ -74,6 +74,7 @@ class LanguajesView(viewsets.ModelViewSet):
     def get_queryset(self):
         return Languajes.objects.filter(status=True)
 
+
 class ChangeIdiomView(viewsets.ViewSet):
     permission_classes = (permissions.AllowAny,)
     serializer_class = ChangeIdiomSerializers

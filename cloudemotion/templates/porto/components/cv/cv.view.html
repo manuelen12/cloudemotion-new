@@ -13,28 +13,26 @@
 						<div class="col-md-4 col-sm-4 col-xs-10 col-sm-offset-0 col-xs-offset-1 custom-sm-margin-bottom-1">
 							<img src="{{(vm.users.image) ? vm.users.image : './assets/img/jpg/profile.jpg'}}" class="img-responsive custom-border custom-image-position-2 custom-box-shadow-4 img-about" style="height:300px;">
 						</div>
-						<div class="col-md-5 col-sm-8">
+						<div class="col-md-5 col-sm-8" style="text-align: center">
 							<h1 class="text-color-primary custom-font-size-1" ng-bind="vm.users.first_name+' '+vm.users.last_name"></h1>
-							<p class="custom-text" ng-bind="vm.users.position.name"></p>
+							<p class="custom-text position-dev" ng-bind="vm.users.position.name">Backend</p>
 							<span class="custom-about-me-infos">
 							<span class="custom-text-color-1 text-uppercase" ng-bind="vm.users.city.name+' '+vm.users.city.state.name+' '+vm.users.city.state.country.name"></span>
 								<span class="custom-text-color-1 text-uppercase mb-md" ng-bind="vm.users.position.resumen"></span>
-								<span class="custom-text-color-1 text-uppercase" ng-hide="!vm.last_exp_name">
-									<div class="col-md-9">
-										<strong class="custom-text-color-1" ng-bind="'Previous' | translate ">Previous: </strong>
-										<text ng-bind="vm.last_exp_name+' '+vm.last_exp_comp "></text>			
+								<!-- <span class="custom-text-color-1 text-uppercase">
+									<div class="col-md-12">
+										
 									</div>
-									<div class="col-md-3">
-										<a data-hash="" href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm" ng-bind="'View More' | translate" ng-click="vm.click1('#experience')"></a>
+								<div class="col-md-6" ng-repeat="lan in vm.users.user_language">
+
+								</div>	
+								</span> -->
+								<span class="custom-text-color-1 text-uppercase" >
+									<div class="col-md-6">
+										<a data-hash="" href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm" ng-bind="'About Me' | translate" ng-click="vm.click1('#other-about')"></a>
 									</div>
-								</span>
-								<span class="custom-text-color-1 text-uppercase" ng-hide="!vm.last_education">
-									<div class="col-md-9">
-										<strong class="custom-text-color-1" ng-bind="'Education' | translate">Education: </strong>
-										<text ng-bind="vm.last_education+' '+vm.last_institute"></text>						
-									</div>
-									<div class="col-md-3">
-										<a data-hash="" ng-click="vm.click1('#education')" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm">View More</a>						
+									<div class="col-md-6">
+										<a data-hash="" ng-click="vm.click1('#say-hello')" ng-bind="'Our Team' | translate" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm"></a>						
 									</div>
 								</span>
 							</span>
@@ -96,7 +94,7 @@
 			</div>
 		</div>
 
-		<section class="section section-no-border background-color-light m-none">
+		<section id="other-about" class="section section-no-border background-color-light m-none">
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -152,7 +150,7 @@
 
 							<p>Morbi tincidunt nunc non diam porta, at fermentum orci bibendum. Donec arcu nisi, ornare nec commodo vitae, sollicitudin sed magna. Cras sit amet justo et nulla pulvinar laoreet. Phasellus scelerisque, metus id posuere vulputate, diam tellus iaculis sapien, eget scelerisque ipsum libero convallis velit. Duis lorem ligula, faucibus quis tellus nec, fringilla ultricies leo. Etiam tempus congue magna. Suspendisse porta dictum tortor, eu volutpat ipsum eleifend nec. Aliquam dapibus lorem luctus, cursus libero imperdiet, mattis nunc. Sed in ipsum diam. Quisque efficitur metus purus, vitae fermentum lacus venenatis id.</p>
 						</div>
-						<!-- <a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs" ng-click="vm.show=!vm.show">View More</a> -->
+						<!-- <a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs" ng-click="vm.show=!vm.show">Contact me</a> -->
 					</div>
 				</div>
 			</div>

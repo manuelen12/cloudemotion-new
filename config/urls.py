@@ -7,6 +7,7 @@ from django.views import defaults as default_views
 from common.utils import DefaultRouter
 from common.v0.urls import router as common
 from curriculum.v0.urls import router as curriculum
+from curriculum.views import AboutView
 from users.v0.urls import router as users
 from rest_framework_jwt.views import (
     refresh_jwt_token, obtain_jwt_token, verify_jwt_token)
@@ -19,6 +20,9 @@ router.extend(users)
 
 
 urlpatterns = [
+    url(r'^translations/(?P<path>.*)$',
+        serve,
+        {'document_root': "cloudemotion/templates/porto/translations/", 'show_indexes': True}),
     url(r'^components/(?P<path>.*)$',
         serve,
         {'document_root': "cloudemotion/templates/porto/components/", 'show_indexes': True}),
@@ -32,8 +36,7 @@ urlpatterns = [
         serve,
         {'document_root': "cloudemotion/templates/porto/assets/", 'show_indexes': True}),
 
-    url(r'^curriculum/(?P<id>.*)$', TemplateView.as_view(
-        template_name='porto/index.html'), name='home'),
+    url(r'^curriculum/(?P<id>.*)/(?P<idiom>.*)$', AboutView.as_view(), name='home'),
 
     url(r'^about/$', TemplateView.as_view(
         template_name='pages/about.html'), name='about'),
