@@ -159,7 +159,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'wordpress',
+        'NAME': 'cloud',
         'USER': 'newadmin',
         'PASSWORD': 'pr0c3dur3',
         'HOST': 'localhost',
