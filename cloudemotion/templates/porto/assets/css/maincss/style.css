@@ -287,6 +287,8 @@ html .btn-primary {
   color: #fff;
   background-color: #25cbf5;
   border-color: #25cbf5 #25cbf5 #ffcf0b;
+    border-radius: 10px;
+    margin-left: 10px;
 }
 html .btn-primary:hover {
   border-color: #ffde58 #ffde58 #ffd424;
@@ -4056,4 +4058,10 @@ section.custom-timeline .timeline-box.right:after {
   border-color: rgba(119, 119, 119, 0.3);
 }
 
+.noMP{margin: 0 auto; padding: 0;}
 
+.title-lng{
+  font-size: 12px;
+  width: auto;
+  font-weight: bold;
+}
