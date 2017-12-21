@@ -26,6 +26,36 @@ class WpUsers(models.Model):
         return self.user_login + "/" + self.display_name
 
 
+class WpPosts(models.Model):
+    id = models.BigAutoField(db_column='ID', primary_key=True)
+    post_author = models.ForeignKey(
+        WpUsers, related_name="wpuser_wp_post", db_column='post_author')
+    post_date = models.DateTimeField()
+    post_date_gmt = models.DateTimeField()
+    post_content = models.TextField()
+    post_title = models.TextField()
+    post_excerpt = models.TextField()
+    post_status = models.CharField(max_length=20)
+    comment_status = models.CharField(max_length=20)
+    ping_status = models.CharField(max_length=20)
+    post_password = models.CharField(max_length=255)
+    post_name = models.CharField(max_length=200)
+    to_ping = models.TextField()
+    pinged = models.TextField()
+    post_modified = models.DateTimeField()
+    post_modified_gmt = models.DateTimeField()
+    post_content_filtered = models.TextField()
+    post_parent = models.ForeignKey('self', db_column='post_parent', related_name="wppost_post_paren")
+    guid = models.CharField(max_length=255)
+    menu_order = models.IntegerField()
+    post_type = models.CharField(max_length=20)
+    post_mime_type = models.CharField(max_length=100)
+    comment_count = models.BigIntegerField()
+
+    class Meta:
+        managed = False
+        db_table = 'wp_posts'
+
 
 @python_2_unicode_compatible
 class User(AbstractUser):
