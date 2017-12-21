@@ -318,6 +318,7 @@ class API(Base):
                         "id": e.portfolio.company.id,
                         "name": _(e.portfolio.company.name),
                         "responsable": e.portfolio.company.responsable,
+                        "image": e.portfolio.company.image,
                     },
                 }
                 # import ipdb; ipdb.set_trace()
