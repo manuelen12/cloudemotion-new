@@ -197,10 +197,10 @@
 				<div class="row">
 					<div class="col-md-12">
 						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none" ng-bind="'Education' | translate">Education</h2>
-						<div class="owl-carousel row owl-education" style="padding:40px;">
-							<div class="item" style="width: 420px;" ng-repeat="e in vm.users.user_education">
+						<div class="owl-carousel  owl-education">
+							<div class="item item-education" ng-repeat="e in vm.users.user_education">
 								<div class="panel panel-default item-box">
-									<div class="panel-body">
+									<div class="panel-body panel-education">
 										<p><i class="icon-graduation icons text-color-primary"></i><br>
 											<span ng-bind="e.education.name" class="title"></span><br>
 											<span ng-bind="e.institute.name"></span><br>
@@ -243,10 +243,9 @@
 			<div class="container">
 				<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none" ng-bind="'Skills' | translate">Skill</h2>
 				<div class="row custom-sm-flex-order">
-					<div class="col-md-6 col-sm-6 col-xs-12">
-					<div class="progress-bars custom-progress-bars" ng-repeat="skill in vm.users.user_skill" data-appear-top-offset="1400">
+					<div class="progress-bars custom-progress-bars col-md-4 col-sm-4 col-xs-2 col-lg-6" ng-repeat="skill in vm.users.user_skill" data-appear-top-offset="1400">
 						<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-							<span ng-bind="skill.name"></span>
+							<span class="ellipsis" ng-bind="skill.name"></span>
 						</div>
 						<div class="progress">
 							<div class="myBar" data-width-animation="{{skill.level.name}}"></div>
@@ -257,8 +256,7 @@
 							<div class="myBar progress-bar-tooltip" data-width-animation="{{skill.level.name}}" data="{{skill.level.name}}" style="width:{{skill.level.name}}%"></div>
 						</div> -->
 					</div>		
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12">
+<!-- 					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="custom-box-details background-color-light custom-box-shadow-1">
 							<h4 class="text-color-dark" ng-bind="'Languages' | translate"></h4>
 							<ul class="custom-list-style-1 p-none">
@@ -270,7 +268,7 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+ -->				</div>
 			</div>
 		</section>
 		<section id="portfolio" class="section section-no-border background-color-secondary m-none" ng-hide="vm.showPort">
@@ -288,7 +286,7 @@
 						</ul>
 						<div class="row">
 							<div class="sort-destination-loader sort-destination-loader-loaded">
-								<div class="col-md-4" ng-repeat="port in vm.users.user_portfolio | filter:vm.label ">
+								<div class="col-md-4" ng-repeat="port in vm.users.user_portfolio">
 								<div class="image-gallery-item animation-portf" >
 										<a class="lightbox-portfolio" style="height: 240px;">
 											<span class="thumb-info custom-thumb-info-1">
