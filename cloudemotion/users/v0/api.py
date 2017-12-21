@@ -221,7 +221,7 @@ class API(Base):
                         "post_type": e.post_type,
                         "post_mime_type": e.post_mime_type,
                         "comment_count": e.comment_count,
-                        "image": e.wppost_post_paren.filter(post_type='attachment')[0].guid,
+                        "image": e.wppost_post_paren.filter(post_type='attachment')[0].guid if e.wppost_post_paren.filter(post_type='attachment') else "",
                     }
                     __dict["post"].append(__dict2)
 

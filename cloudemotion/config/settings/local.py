@@ -70,3 +70,70 @@ CELERY_ALWAYS_EAGER = True
 
 # Your local stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'filters': {
+        'require_debug_false': {
+            '()': 'django.utils.log.RequireDebugFalse'
+        }
+    },
+    'formatters': {
+        'verbose': {
+            'format': '\nlevel:%(levelname)s \ndate:%(asctime)s  \nubicacion => module ->%(module)s function -> %(funcName)s in line  %(lineno)d \nprocess:%(processName)s \nthread:%(thread)d threadName:%(threadName)s \nmessage:%(message)s\n'
+            },
+        'simple': {
+            'format': '%(levelname)s %(message)s'
+            }
+    },
+    'handlers': {
+        'mail_admins': {
+            'level': 'ERROR',
+            'filters': ['require_debug_false'],
+            'class': 'django.utils.log.AdminEmailHandler',
+
+        },
+        'console': {
+            'level': 'DEBUG',
+            'class': 'logging.StreamHandler',
+            'formatter': 'simple'
+        },
+        'null': {
+            'level': 'DEBUG',
+            'class': 'logging.NullHandler',
+        },
+        'login_file': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': 'log.log',
+            'formatter': 'verbose'
+        },
+        'file': {
+            'level': 'ERROR',
+            'class': 'logging.FileHandler',
+            'filename': 'log.log',
+            'formatter': 'verbose'
+        }
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['null'],
+            'propagate': True,
+            'level': 'INFO',
+            },
+        'django.request': {
+            'handlers': ['mail_admins', 'file'],
+            'level': 'ERROR',
+            'propagate': True,
+        },
+        'member.views': {
+            'handlers': ['console', 'mail_admins', 'login_file'],
+            'level': 'ERROR',
+        },
+        'django.security.DisallowedHost': {
+            'handlers': ['mail_admins', 'file'],
+            'propagate': False,
+        }
+    }
+}
