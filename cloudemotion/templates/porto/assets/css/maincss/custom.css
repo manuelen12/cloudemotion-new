@@ -68,11 +68,29 @@
   font-size:12px;
   color:#25cbf5;      
 }
-.item.item-course{
-  
+.item.item-course,.item.item-education{
+
   min-height: 200px;  
+  margin: 0 20px;
 
 }
+
+.panel-education {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  min-height: 180px;
+}
+
+.ellipsis{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-right: 10px;
+}
+
 .item.item-course span{
   font-weight: bold;
   font-size: 18px;
@@ -84,11 +102,11 @@
   color:#FFF;
 }
 .item.item-course p{
-   margin:2%;
+ margin:2%;
 }
 .item.item-course .years{
-   color:#000;;
-   font-weight: bold;
+ color:#000;;
+ font-weight: bold;
 }
 .sha{
   box-shadow: 1px 3px 9px #999;
@@ -161,70 +179,70 @@
   color:#fff;
 }
 .owl-next{
-    border: 1px solid;
-    margin-right: -20px;
-    padding: 3px 0px 3px 8px;
+  border: 1px solid;
+  margin-right: -20px;
+  padding: 3px 0px 3px 8px;
 }
 .owl-prev{
-    border: 1px solid;
-    margin-left: -20px;
-    padding: 3px 0px 3px 8px;
+  border: 1px solid;
+  margin-left: -20px;
+  padding: 3px 0px 3px 8px;
 }
 .myProgress {
-    width: 100%;
-    background-color: #efefef;
-    border-radius: 40px;
+  width: 100%;
+  background-color: #efefef;
+  border-radius: 40px;
 }
 .myBar {
-    width: 0%;
-    height: 3px;
-    background-color: #25cbf5;
-    text-align: center; /* To center it horizontally (if you want) */
-    line-height: 30px; /* To center it vertically */
-    color: white; 
-    border-radius: 40px;
+  width: 0%;
+  height: 3px;
+  background-color: #25cbf5;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white; 
+  border-radius: 40px;
 }
 .animation-portf{
   animation:fadeIn 1s ease-in-out;
 }
 .word-portfolio:after{
-    opacity: 0;
+  opacity: 0;
 }
 .word-portfolio{
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    -webkit-transition: ease all .3s;
-    -moz-transition: ease all .3s;
-    transition: ease all .3s;
-    font-weight: bold;
-    font-style: italic;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transition: ease all .3s;
+  -moz-transition: ease all .3s;
+  transition: ease all .3s;
+  font-weight: bold;
+  font-style: italic;
 }
 .word-portfolio:hover{
-    opacity: 1;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 50%;
-    left: 50%;
-    z-index: 2;
-    -webkit-transform: translate(-50%,-50%);
-    -moz-transform: translate(-50%,-50%);
-    -ms-transform: translate(-50%,-50%);
-    -o-transform: translate(-50%,-50%);
-    transform: translate(-50%,-50%);
-    -webkit-transition: ease all .3s;
-    -moz-transition: ease all .3s;
-    transition: ease all .3s;
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-transition: ease all .3s;
+  -moz-transition: ease all .3s;
+  transition: ease all .3s;
 }
 .text-portfolio{
   position:absolute;
