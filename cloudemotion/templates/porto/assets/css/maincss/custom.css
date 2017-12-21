@@ -242,3 +242,9 @@
 .position-dev {
   font-size: 48px;
 }
+
+.not-active {
+  pointer-events: none;
+  cursor: default;
+  color: red !important;
+}

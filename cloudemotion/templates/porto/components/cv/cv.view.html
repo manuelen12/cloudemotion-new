@@ -44,18 +44,18 @@
 				</div>
 			</div>
 			<ul class="social-icons custom-social-icons">
-				<li class="social-icons-facebook">
-					<a href="http://www.facebook.com/" target="_blank" title="Facebook">
-						<i class="fa fa-facebook"></i>
+				<li class="social-icons-facebook" ng-if="vm.users.linkedin" >
+					<a ng-href="{{vm.users.linkedin}}" target="_blank" title="Linkedin">
+						<i class="fa fa-linkedin"></i>
 					</a>
 				</li>
-				<li class="social-icons-twitter">
-					<a href="http://www.twitter.com/" target="_blank" title="Twitter">
+				<li class="social-icons-twitter" ng-if="vm.users.twitter">
+					<a ng-href="{{vm.users.twitter}}" target="_blank" title="Twitter">
 						<i class="fa fa-twitter"></i>
 					</a>
 				</li>
-				<li class="social-icons-youtube">
-					<a href="http://www.youtube.com/" target="_blank" title="Youtube">
+				<li class="social-icons-youtube" ng-if="vm.users.youtube">
+					<a ng-href="{{vm.users.youtube}}" target="_blank" title="Youtube">
 						<i class="fa fa-youtube"></i>
 					</a>
 				</li>
@@ -83,9 +83,9 @@
 						</a>
 					</div>
 					<div class="col-md-3 col-sm-4 center p-none">
-						<a href="#" class="text-decoration-none" >
+						<a class="text-decoration-none" ng-class="{'not-active': !vm.users.curriculum}" ng-href="{{vm.users.curriculum}}">
 							<span class="custom-nav-button text-color-dark">
-								<i class="icon-cloud-download icons text-color-primary"></i>
+								<i class="icon-cloud-download icons " ng-class="{'not-active': !vm.users.curriculum, 'text-color-primary': vm.users.curriculum}"></i>
 								<text ng-bind="'Download Resume' | translate"></text>
 							</span>
 						</a>
