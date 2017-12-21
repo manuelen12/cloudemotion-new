@@ -89,8 +89,8 @@ class API(Base):
         __observatione = ExperienceLanguage.objects.select_related(
             "language").filter(language__short=short)
 
-        __observationp = PortfolioLanguage.objects.select_related(
-            "language").filter(language__short=short)
+        # __observationp = PortfolioLanguage.objects.select_related(
+        #     "language").filter(language__short=short)
 
         __nationality = UsersNationalities.objects.select_related(
             "nationality")
@@ -111,14 +111,15 @@ class API(Base):
         __skill = SkillsUser.objects.select_related(
             "skill")
 
-        __portfolio = Portfolios.objects.select_related(
-            "classification", "company").prefetch_related(Prefetch(
-                    "l_por", queryset=__observationp, to_attr="l_por2"),
-                    "s_por"
-            )
+        # __portfolio = Portfolios.objects.select_related(
+        #     "classification", "company").prefetch_related(Prefetch(
+        #             "l_por", queryset=__observationp, to_attr="l_por2"),
+        #             "s_por"
+        #     )
 
         __portfuser = PortfolioUser.objects.select_related(
-            "user", "portfolio")
+            "user", "portfolio", 'portfolio__company',
+            'portfolio__classification').prefetch_related("portfolio__s_por")
 
         # x = __portfolio
         # import ipdb; ipdb.set_trace()
@@ -140,8 +141,8 @@ class API(Base):
                     "ex_user", queryset=__experience, to_attr="ex_user2"),
                 Prefetch(
                     "s_user", queryset=__skill, to_attr="s_user2"),
-                Prefetch(
-                    "p_user", queryset=__portfolio, to_attr="p_user2"),
+                # Prefetch(
+                #     "p_user", queryset=__portfolio, to_attr="p_user2"),
                 Prefetch(
                     "lan_user", queryset=__about, to_attr="about2"),
                 Prefetch(
@@ -149,6 +150,7 @@ class API(Base):
             ).filter(
             **filters).order_by(*ordening)
         for i in user:
+            # import ipdb; ipdb.set_trace()
             __dict = {
                 "id": i.id,
                 "first_name": i.first_name,
@@ -192,8 +194,37 @@ class API(Base):
                 "user_skill": [],
                 "user_portfolio": [],
                 "portfolio_user": [],
+                "post": [],
                 "idiom": short,
+                "class": []
             }
+            if i.userwp:
+                for e in i.userwp.wpuser_wp_post.filter(post_type='post', post_status='publish'):
+                    __dict2 = {
+                        "post_date": e.post_date,
+                        "post_date_gmt": e.post_date_gmt,
+                        "post_content": e.post_content,
+                        "post_title": e.post_title,
+                        "post_excerpt": e.post_excerpt,
+                        "post_status": e.post_status,
+                        "comment_status": e.comment_status,
+                        "ping_status": e.ping_status,
+                        "post_password": e.post_password,
+                        "post_name": e.post_name,
+                        "to_ping": e.to_ping,
+                        "pinged": e.pinged,
+                        "post_modified": e.post_modified,
+                        "post_modified_gmt": e.post_modified_gmt,
+                        "post_content_filtered": e.post_content_filtered,
+                        "guid": e.guid,
+                        "menu_order": e.menu_order,
+                        "post_type": e.post_type,
+                        "post_mime_type": e.post_mime_type,
+                        "comment_count": e.comment_count,
+                        "image": e.wppost_post_paren.filter(post_type='attachment')[0].guid if e.wppost_post_paren.filter(post_type='attachment') else "",
+                    }
+                    __dict["post"].append(__dict2)
+
             for e in i.user_nat2:
                 __dict2 = {
                     "name": _(e.nationality.name)
@@ -269,57 +300,59 @@ class API(Base):
                 }
                 __dict["user_skill"].append(__dict2)
 
-            for e in i.p_user2:
+            for e in i.port_us2:
                 __dict2 = {
-                    "id": e.id,
-                    "name": e.name,
-                    "image": e.image,
-                    "url": e.url,
-                    "description": e.l_por2[0].description if e.l_por2 else "",
-                    "year": e.year,
+                    "id": e.portfolio.id,
+                    "name": e.portfolio.name,
+                    "image": e.portfolio.image,
+                    "url": e.portfolio.url,
+                    "description": e.description_en if (short == 'en') else e.description_es,
+                    "year": e.portfolio.year,
                     "developed": [],
                     "classification": {
-                        "id": e.classification.id,
-                        "name": _(e.classification.name),
-                        "category": e.classification.category,
+                        "id": e.portfolio.classification.id,
+                        "name": _(e.portfolio.classification.name),
+                        "category": e.portfolio.classification.category,
                     },
                     "company": {
-                        "id": e.company.id,
-                        "name": _(e.company.name),
-                        "responsable": e.company.responsable,
+                        "id": e.portfolio.company.id,
+                        "name": _(e.portfolio.company.name),
+                        "responsable": e.portfolio.company.responsable,
                     },
                 }
                 # import ipdb; ipdb.set_trace()
-                # import ipdb; ipdb.set_trace()
-                for z in e.s_por.all():
+                for z in e.portfolio.s_por.all():
                     __dict3 = {
                         "id": z.skill.id,
                         "name": _(z.skill.name),
                     }
                     __dict2["developed"].append(__dict3)
                 __dict["user_portfolio"].append(__dict2)
-
-                for e in i.port_us2:
-                    __dict2 = {
-                        "id_portf": e.portfolio.id,
-                        "name": _(e.portfolio.name),
-                        "company": {
-                            "id": e.portfolio.company.id,
-                            "name": e.portfolio.company.name,
-                            "responsable": e.portfolio.company.responsable,
-                            "image": e.portfolio.company.image,
-                        },
-                        "classification": {
-                            "id": e.portfolio.classification.id,
-                            "name": e.portfolio.classification.name,
-                            "category": e.portfolio.classification.category,
-                        },
-                        "screenshot": e.portfolio.screenshot,
-                        "image": e.portfolio.image,
-                        "url": e.portfolio.url,
-                        "year": e.portfolio.year,
-                    }
-                    __dict["portfolio_user"].append(__dict2)
+                if not __dict2["classification"] in __dict["class"]:
+                    __dict["class"].append(
+                        __dict2["classification"])
+            random.shuffle(__dict["user_portfolio"])
+            # for e in i.port_us2:
+            #     __dict2 = {
+            #         "id_portf": e.portfolio.id,
+            #         "name": _(e.portfolio.name),
+            #         "company": {
+            #             "id": e.portfolio.company.id,
+            #             "name": e.portfolio.company.name,
+            #             "responsable": e.portfolio.company.responsable,
+            #             "image": e.portfolio.company.image,
+            #         },
+            #         "classification": {
+            #             "id": e.portfolio.classification.id,
+            #             "name": e.portfolio.classification.name,
+            #             "category": e.portfolio.classification.category,
+            #         },
+            #         "screenshot": e.portfolio.screenshot,
+            #         "image": e.portfolio.image,
+            #         "url": e.portfolio.url,
+            #         "year": e.portfolio.year,
+            #     }
+            #     __dict["portfolio_user"].append(__dict2)
 
             print(__dict)
             __array.append(__dict)

@@ -3,7 +3,7 @@
 	<div role="main" class="main">
 		<div style="background: #999;">
 		</div>
-			<div class="index" style="color:white;position:fixed;">a</div>
+		<div class="index" style="color:white;position:fixed;">a</div>
 		<section id="about-me" class="section section-no-border section-parallax custom-section-padding-1 custom-position-1 custom-xs-bg-size-cover m-none" data-plugin-parallax="" >
 			<div class="parallax-background"></div>
 			<div id="particles-js" class="particle-cloud"></div>
@@ -17,8 +17,8 @@
 							<h1 class="text-color-primary custom-font-size-1" ng-bind="vm.users.first_name+' '+vm.users.last_name"></h1>
 							<p class="custom-text position-dev" ng-bind="vm.users.position.name">Backend</p>
 							<span class="custom-about-me-infos">
-							<span class="custom-text-color-1 text-uppercase" ng-bind="vm.users.city.name+' '+vm.users.city.state.name+' '+vm.users.city.state.country.name"></span>
-								<span class="label label-default text-uppercase mb-md" ng-bind="vm.users.position.resumen"></span>
+								<span class="custom-text-color-1 text-uppercase" ng-bind="vm.users.city.name+' '+vm.users.city.state.name+' '+vm.users.city.state.country.name"></span>
+								<span class="custom-text-color-1 text-uppercase mb-md" ng-bind="vm.users.position.resumen"></span>
 								<!-- <span class="custom-text-color-1 text-uppercase">
 									<div class="col-md-12">
 										
@@ -26,242 +26,239 @@
 								<div class="col-md-6" ng-repeat="lan in vm.users.user_language">
 
 								</div>	
-								</span> -->
-								<span class="form-group custom-text-color-1 text-uppercase" >
-										<span class="title-lng" ng-bind="'Language' | translate"></span>
-										<a data-hash="" href="#experience" class="label label-default noMP text-uppercase custom-btn-style-1 text-xs ml-sm" ng-bind="'About Me' | translate" ng-click="vm.click1('#other-about')"></a>
-										<a data-hash="" ng-click="vm.click1('#say-hello')" ng-bind="'Our Team' | translate" class="label label-default noMP text-uppercase custom-btn-style-1 text-xs ml-sm"></a>
-								</span>
-								<span class="row" >
-								<button class="btn btn-primary">About me</button>
-								<button class="btn btn-primary">Our team</button>
-								</span>
+							</span> -->
+							<span class="custom-text-color-1 text-uppercase" >
+								<div class="col-md-6">
+									<a data-hash="" href="#experience" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm" ng-bind="'About Me' | translate" ng-click="vm.click1('#other-about')"></a>
+								</div>
+								<div class="col-md-6">
+									<a data-hash="" ng-click="vm.click1('#say-hello')" ng-bind="'Our Team' | translate" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs ml-sm"></a>						
+								</div>
 							</span>
-						</div>
-						<div class="col-md-3 col-sm-8">
-							<img src="./assets/img/png/cloud.png" class="img-responsive img-cloud">
-						</div>							
+						</span>
 					</div>
-				</div>
-			</div>
-			<ul class="social-icons custom-social-icons">
-				<li class="social-icons-facebook" ng-if="vm.users.linkedin" >
-					<a ng-href="{{vm.users.linkedin}}" target="_blank" title="Linkedin">
-						<i class="fa fa-linkedin"></i>
-					</a>
-				</li>
-				<li class="social-icons-twitter" ng-if="vm.users.twitter">
-					<a ng-href="{{vm.users.twitter}}" target="_blank" title="Twitter">
-						<i class="fa fa-twitter"></i>
-					</a>
-				</li>
-				<li class="social-icons-youtube" ng-if="vm.users.youtube">
-					<a ng-href="{{vm.users.youtube}}" target="_blank" title="Youtube">
-						<i class="fa fa-youtube"></i>
-					</a>
-				</li>
-			</ul>
-		</section>
-
-
-		<div class="custom-about-me-links">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-3 col-md-offset-4 col-sm-4 center custom-xs-border-bottom p-none">
-						<a data-hash="" href="#" ng-click="vm.click1('#say-hello')" class="text-decoration-none">
-							<span class="custom-nav-button text-color-dark">
-								<i class="icon-earphones-alt icons text-color-primary"></i>
-								<text ng-bind="'Contact Information' | translate"></text>
-							</span>
-						</a>
-					</div>
-					<div class="col-md-2 col-sm-4 center custom-xs-border-bottom p-none">
-						<a data-hash="" href="#" class="text-decoration-none" ng-click="vm.click1('#say-hello')">
-							<span class="custom-nav-button custom-divisors text-color-dark">
-								<i class="icon-envelope-open icons text-color-primary"></i>
-								<text ng-bind="'Send Message' | translate"></text>
-							</span>
-						</a>
-					</div>
-					<div class="col-md-3 col-sm-4 center p-none">
-						<a class="text-decoration-none" ng-class="{'not-active': !vm.users.curriculum}" ng-href="{{vm.users.curriculum}}">
-							<span class="custom-nav-button text-color-dark">
-								<i class="icon-cloud-download icons " ng-class="{'not-active': !vm.users.curriculum, 'text-color-primary': vm.users.curriculum}"></i>
-								<text ng-bind="'Download Resume' | translate"></text>
-							</span>
-						</a>
-					</div>
+					<div class="col-md-3 col-sm-8">
+						<img src="./assets/img/png/cloud.png" class="img-responsive img-cloud">
+					</div>							
 				</div>
 			</div>
 		</div>
+		<ul class="social-icons custom-social-icons">
+			<li class="social-icons-facebook" ng-if="vm.users.linkedin" >
+				<a ng-href="{{vm.users.linkedin}}" target="_blank" title="Linkedin">
+					<i class="fa fa-linkedin"></i>
+				</a>
+			</li>
+			<li class="social-icons-twitter" ng-if="vm.users.twitter">
+				<a ng-href="{{vm.users.twitter}}" target="_blank" title="Twitter">
+					<i class="fa fa-twitter"></i>
+				</a>
+			</li>
+			<li class="social-icons-youtube" ng-if="vm.users.youtube">
+				<a ng-href="{{vm.users.youtube}}" target="_blank" title="Youtube">
+					<i class="fa fa-youtube"></i>
+				</a>
+			</li>
+		</ul>
+	</section>
 
-		<section id="other-about" class="section section-no-border background-color-light m-none">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
 
-						<div class="custom-box-details background-color-light custom-box-shadow-1 col-md-6 ml-xlg mb-xlg pull-right clearfix">
-							<h4 ng-bind="'Personal Details' | translate">Personal Details</h4>
-							<div class="col-md-6 col-sm-6 p-none">
-								<ul class="custom-list-style-1 p-none">
-									<li ng-hide="!vm.users.birthday">
-										<span class="text-color-dark"  ng-bind="'Birthday' | translate" ></span>
-										<span class="custom-text-color-2" ng-bind="vm.users.birthday"></span>
-									</li>
-									<li>
-										<span class="text-color-dark" ng-bind="'Marital' |  translate"></span>
-										<span class="custom-text-color-2" ng-bind="'Single' | translate"></span>
-									</li>
-									<li>
-										<span class="text-color-dark" ng-bind="'Nationality' | translate"></span>
-										<span class="custom-text-color-2" ng-repeat="nat in vm.users.user_nationality"><text ng-bind="nat.name"></text></span>
-									</li>
-								</ul>
-							</div>
-							<div class="col-md-6 col-sm-6 p-none">
-								<ul class="custom-list-style-1 p-none">
-									<li ng-hide="!vm.users.skype">
-										<span class="text-color-dark">Skype:</span>
-										<span class="custom-text-color-2"><a class="custom-text-color-2"><label ng-bind="vm.users.skype"></label></a></span>
-									</li>
-									<li ng-hide="!vm.users.phone">
-										<span class="text-color-dark" ng-bind="'Phone' | translate"></span>
-										<span class="custom-text-color-2" ng-bind="vm.users.phone"></span>
-									</li>										
-								</ul>
-							</div>
-							<div class="col-md-12 col-sm-12 p-none">
-								<ul class="custom-list-style-1 p-none">
-									<li ng-hide="!vm.users.email">
-										<span class="text-color-dark" ng-bind="'Email' | translate"></span>
-										<span class="custom-text-color-2"><a class="custom-text-color-2"><label ng-bind="vm.users.email"></label></a></span>
-									</li>
-								</ul>
-							</div>
-						</div>
-
-						<h2 class="text-color-quaternary font-weight-extra-bold text-uppercase" ng-bind="'about me' | translate" ng-hide="!vm.users.about_me"></h2>
-
-						<p class="custom-text-color-2" ng-bind="vm.users.about_me"></p>
-
-						<div class="about-me-more" id="aboutMeMore">
-							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu. Praesent aliquam velit vel libero dictum, non sollicitudin lectus mollis. Morbi sollicitudin auctor gravida. Vivamus vitae dui non lorem euismod pretium. Morbi congue sem sed ex iaculis, nec mattis felis pretium. Nullam molestie libero id odio blandit sodales. Suspendisse non mauris et felis molestie placerat aliquet a risus. Aliquam ac leo tempus, hendrerit eros mollis, gravida est.</p>
-
-							<p>Proin euismod ipsum a tellus condimentum dapibus. Integer porttitor felis elit, eget rutrum ligula commodo quis. Praesent ultricies neque eu mi congue blandit. Nulla feugiat feugiat aliquet. Morbi sed mattis erat. Nullam scelerisque molestie eros, id tristique felis iaculis non. Duis pellentesque neque eget iaculis varius. Donec at nisl semper, aliquam est id, tincidunt lacus. Donec at erat purus.</p>
-
-							<p>Morbi tincidunt nunc non diam porta, at fermentum orci bibendum. Donec arcu nisi, ornare nec commodo vitae, sollicitudin sed magna. Cras sit amet justo et nulla pulvinar laoreet. Phasellus scelerisque, metus id posuere vulputate, diam tellus iaculis sapien, eget scelerisque ipsum libero convallis velit. Duis lorem ligula, faucibus quis tellus nec, fringilla ultricies leo. Etiam tempus congue magna. Suspendisse porta dictum tortor, eu volutpat ipsum eleifend nec. Aliquam dapibus lorem luctus, cursus libero imperdiet, mattis nunc. Sed in ipsum diam. Quisque efficitur metus purus, vitae fermentum lacus venenatis id.</p>
-						</div>
-						<!-- <a id="aboutMeMoreBtn" class="label label-default text-uppercase custom-btn-style-1 text-xs" ng-click="vm.show=!vm.show">Contact me</a> -->
-					</div>
+	<div class="custom-about-me-links">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-3 col-md-offset-4 col-sm-4 center custom-xs-border-bottom p-none">
+					<a data-hash="" href="#" ng-click="vm.click1('#say-hello')" class="text-decoration-none">
+						<span class="custom-nav-button text-color-dark">
+							<i class="icon-earphones-alt icons text-color-primary"></i>
+							<text ng-bind="'Contact Information' | translate"></text>
+						</span>
+					</a>
+				</div>
+				<div class="col-md-2 col-sm-4 center custom-xs-border-bottom p-none">
+					<a data-hash="" href="#" class="text-decoration-none" ng-click="vm.click1('#say-hello')">
+						<span class="custom-nav-button custom-divisors text-color-dark">
+							<i class="icon-envelope-open icons text-color-primary"></i>
+							<text ng-bind="'Send Message' | translate"></text>
+						</span>
+					</a>
+				</div>
+				<div class="col-md-3 col-sm-4 center p-none">
+					<a class="text-decoration-none" ng-class="{'not-active': !vm.users.curriculum}" ng-href="{{vm.users.curriculum}}">
+						<span class="custom-nav-button text-color-dark">
+							<i class="icon-cloud-download icons " ng-class="{'not-active': !vm.users.curriculum, 'text-color-primary': vm.users.curriculum}"></i>
+							<text ng-bind="'Download Resume' | translate"></text>
+						</span>
+					</a>
 				</div>
 			</div>
-		</section>
+		</div>
+	</div>
 
-		<section id="experience" class="section section-secondary section-no-border m-none" ng-hide="vm.showExp">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold" ng-bind="'Experience' | translate"></h2>
-						<section class="timeline custom-timeline" id="timeline">
-							<div class="timeline-body">
+	<section id="other-about" class="section section-no-border background-color-light m-none">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
 
-								<!-- EXP -->
-								<article class="timeline-box right custom-box-shadow-2" ng-repeat="ex in vm.users.user_experience">
-									<div class="experience-info col-md-3 col-sm-5 background-color-primary">
-										<span class="from text-color-dark text-uppercase">
-											<text ng-bind="'From' | translate"></text>
-											<span class="font-weight-semibold" ng-bind="ex.start_date | date">Sep 2012</span>
-										</span>
-										<span class="to text-color-dark text-uppercase">
-											<text ng-bind="'To' | translate"></text>
-											<span class="font-weight-semibold" ng-bind="ex.ending_date | date">Present</span>
-										</span>
-										<p class="text-color-dark" ng-bind="ex.time"></p>
-										<span class="company text-color-dark font-weight-semibold"><label ng-bind="ex.company.name"></label>		
-											<span class="company-location text-color-dark font-weight-normal text-uppercase" ng-bind="ex.company.address"></span>
-										</span>
-									</div>
-									<div class="experience-description col-md-9 col-sm-7 match-height background-color-light" style="height: 244px;">
-										<h4 class="text-color-dark font-weight-semibold" ng-bind="ex.position.name"></h4>
-										<p class="custom-text-color-2" ng-bind="ex.description" style="word-wrap:break-word;"></p>
-									</div>
-								</article>									
-								<div class="timeline-bar" style="top: 137px; bottom: 137px;"></div>
-							</div>
-						</section>
-					</div>
-				</div>
-			</div>
-		</section>			
-		<section id="education" class="section section-no-border custom-background-color-1 m-none" ng-hide="vm.showEdu">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none" ng-bind="'Education' | translate">Education</h2>
-						<div class="owl-carousel row owl-education" style="padding:40px;">
-							<div class="item" style="width: 420px;" ng-repeat="e in vm.users.user_education">
-								<div class="panel panel-default item-box">
-									<div class="panel-body">
-										<p><i class="icon-graduation icons text-color-primary"></i><br>
-											<span ng-bind="e.education.name" class="title"></span><br>
-											<span ng-bind="e.institute.name"></span><br>
-											<span class="years" ng-bind="e.start_date | date"></span> - <span class="years" ng-bind="e.ending_date | date"></span>
-										</p>
-									</div>
-								</div>		    	
-							</div>												
+					<div class="custom-box-details background-color-light custom-box-shadow-1 col-md-6 ml-xlg mb-xlg pull-right clearfix">
+						<h4 ng-bind="'Personal Details' | translate">Personal Details</h4>
+						<div class="col-md-6 col-sm-6 p-none">
+							<ul class="custom-list-style-1 p-none">
+								<li ng-hide="!vm.users.birthday">
+									<span class="text-color-dark"  ng-bind="'Birthday' | translate" ></span>
+									<span class="custom-text-color-2" ng-bind="vm.users.birthday"></span>
+								</li>
+								<li>
+									<span class="text-color-dark" ng-bind="'Marital' |  translate"></span>
+									<span class="custom-text-color-2" ng-bind="'Single' | translate"></span>
+								</li>
+								<li>
+									<span class="text-color-dark" ng-bind="'Nationality' | translate"></span>
+									<span class="custom-text-color-2" ng-repeat="nat in vm.users.user_nationality"><text ng-bind="nat.name"></text></span>
+								</li>
+							</ul>
+						</div>
+						<div class="col-md-6 col-sm-6 p-none">
+							<ul class="custom-list-style-1 p-none">
+								<li ng-hide="!vm.users.skype">
+									<span class="text-color-dark">Skype:</span>
+									<span class="custom-text-color-2"><a class="custom-text-color-2"><label ng-bind="vm.users.skype"></label></a></span>
+								</li>
+								<li ng-hide="!vm.users.phone">
+									<span class="text-color-dark" ng-bind="'Phone' | translate"></span>
+									<span class="custom-text-color-2" ng-bind="vm.users.phone"></span>
+								</li>										
+							</ul>
+						</div>
+						<div class="col-md-12 col-sm-12 p-none">
+							<ul class="custom-list-style-1 p-none">
+								<li ng-hide="!vm.users.email">
+									<span class="text-color-dark" ng-bind="'Email' | translate"></span>
+									<span class="custom-text-color-2"><a class="custom-text-color-2"><label ng-bind="vm.users.email"></label></a></span>
+								</li>
+							</ul>
 						</div>
 					</div>
+
+					<h2 class="text-color-quaternary font-weight-extra-bold text-uppercase" ng-bind="'about me' | translate" ng-hide="!vm.users.about_me"></h2>
+
+					<p class="custom-text-color-2" ng-bind="vm.users.about_me"></p>
+
+					<div class="about-me-more" id="aboutMeMore">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt nulla tortor, a imperdiet enim tristique nec. Nulla lobortis leo eget metus dapibus sodales. Sed placerat vitae dui vitae vehicula. Quisque in tincidunt ligula, nec dignissim arcu. Praesent aliquam velit vel libero dictum, non sollicitudin lectus mollis. Morbi sollicitudin auctor gravida. Vivamus vitae dui non lorem euismod pretium. Morbi congue sem sed ex iaculis, nec mattis felis pretium. Nullam molestie libero id odio blandit sodales. Suspendisse non mauris et felis molestie placerat aliquet a risus. Aliquam ac leo tempus, hendrerit eros mollis, gravida est.</p>
+
+						<p>Proin euismod ipsum a tellus condimentum dapibus. Integer porttitor felis elit, eget rutrum ligula commodo quis. Praesent ultricies neque eu mi congue blandit. Nulla feugiat feugiat aliquet. Morbi sed mattis erat. Nullam scelerisque molestie eros, id tristique felis iaculis non. Duis pellentesque neque eget iaculis varius. Donec at nisl semper, aliquam est id, tincidunt lacus. Donec at erat purus.</p>
+
+						<p>Morbi tincidunt nunc non diam porta, at fermentum orci bibendum. Donec arcu nisi, ornare nec commodo vitae, sollicitudin sed magna. Cras sit amet justo et nulla pulvinar laoreet. Phasellus scelerisque, metus id posuere vulputate, diam tellus iaculis sapien, eget scelerisque ipsum libero convallis velit. Duis lorem ligula, faucibus quis tellus nec, fringilla ultricies leo. Etiam tempus congue magna. Suspendisse porta dictum tortor, eu volutpat ipsum eleifend nec. Aliquam dapibus lorem luctus, cursus libero imperdiet, mattis nunc. Sed in ipsum diam. Quisque efficitur metus purus, vitae fermentum lacus venenatis id.</p>
+					</div>
+					<!-- <a id="aboutMeMoreBtn" class="btn btn-tertiary text-uppercase custom-btn-style-1 text-xs" ng-click="vm.show=!vm.show">Contact me</a> -->
 				</div>
 			</div>
-		</section>
-		<section id="course" class="section section-no-border custom-background-color-1 m-none" ng-hide="vm.showCou">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none" ng-bind="'Course' | translate">Course</h2>
-						<div class="carousel-wrap">
-							<div class="owl-carousel owl-carousel1">
-								<div class="item item-course" ng-repeat="c in vm.users.user_course">
-									<div class="panel panel-primary sha">
-										<div class="panel-heading">
-											<i class="fa fa-book"></i><span ng-bind="c.course.name"></span>
-										</div>
-										<div class="panel-body" style="min-height:150px;">
-											<p ng-bind="c.institute.name+' '+c.institute.address"></p>	
-											<p ng-bind="c.start_date+' - '+c.ending_date" class="pull-right years"></p>			
-										</div>
-									</div>									
-								</div>									
-							</div>
+		</div>
+	</section>
+
+	<section id="experience" class="section section-secondary section-no-border m-none" ng-hide="vm.showExp">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold" ng-bind="'Experience' | translate"></h2>
+					<section class="timeline custom-timeline" id="timeline">
+						<div class="timeline-body">
+
+							<!-- EXP -->
+							<article class="timeline-box right custom-box-shadow-2" ng-repeat="ex in vm.users.user_experience">
+								<div class="experience-info col-md-3 col-sm-5 background-color-primary">
+									<span class="from text-color-dark text-uppercase">
+										<text ng-bind="'From' | translate"></text>
+										<span class="font-weight-semibold" ng-bind="ex.start_date | date">Sep 2012</span>
+									</span>
+									<span class="to text-color-dark text-uppercase">
+										<text ng-bind="'To' | translate"></text>
+										<span class="font-weight-semibold" ng-bind="ex.ending_date | date">Present</span>
+									</span>
+									<p class="text-color-dark" ng-bind="ex.time"></p>
+									<span class="company text-color-dark font-weight-semibold"><label ng-bind="ex.company.name"></label>		
+										<span class="company-location text-color-dark font-weight-normal text-uppercase" ng-bind="ex.company.address"></span>
+									</span>
+								</div>
+								<div class="experience-description col-md-9 col-sm-7 match-height background-color-light" style="height: 244px;">
+									<h4 class="text-color-dark font-weight-semibold" ng-bind="ex.position.name"></h4>
+									<p class="custom-text-color-2" ng-bind="ex.description" style="word-wrap:break-word;"></p>
+								</div>
+							</article>									
+							<div class="timeline-bar" style="top: 137px; bottom: 137px;"></div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</section>			
+	<section id="education" class="section section-no-border custom-background-color-1 m-none" ng-hide="vm.showEdu">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none" ng-bind="'Education' | translate">Education</h2>
+					<div class="owl-carousel  owl-education">
+						<div class="item item-education" ng-repeat="e in vm.users.user_education">
+							<div class="panel panel-default item-box">
+								<div class="panel-body panel-education">
+									<p><i class="icon-graduation icons text-color-primary"></i><br>
+										<span ng-bind="e.education.name" class="title"></span><br>
+										<span ng-bind="e.institute.name"></span><br>
+										<span class="years" ng-bind="e.start_date | date"></span> - <span class="years" ng-bind="e.ending_date | date"></span>
+									</p>
+								</div>
+							</div>		    	
 						</div>												
 					</div>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
+	<section id="course" class="section section-no-border custom-background-color-1 m-none" ng-hide="vm.showCou">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none" ng-bind="'Course' | translate">Course</h2>
+					<div class="carousel-wrap">
+						<div class="owl-carousel owl-carousel1">
+							<div class="item item-course" ng-repeat="c in vm.users.user_course">
+								<div class="panel panel-primary sha">
+									<div class="panel-heading">
+										<i class="fa fa-book"></i><span ng-bind="c.course.name"></span>
+									</div>
+									<div class="panel-body" style="min-height:150px;">
+										<p ng-bind="c.institute.name+' '+c.institute.address"></p>	
+										<p ng-bind="c.start_date+' - '+c.ending_date" class="pull-right years"></p>			
+									</div>
+								</div>									
+							</div>									
+						</div>
+					</div>												
+				</div>
+			</div>
+		</div>
+	</section>
 
-		<section id="skills" class="section section-no-border background-color-light m-none" ng-hide="vm.showSki">
-			<div class="container">
-				<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none" ng-bind="'Skills' | translate">Skill</h2>
-				<div class="row custom-sm-flex-order">
-					<div class="col-md-6 col-sm-6 col-xs-12">
-					<div class="progress-bars custom-progress-bars" ng-repeat="skill in vm.users.user_skill" data-appear-top-offset="1400">
-						<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
-							<span ng-bind="skill.name"></span>
-						</div>
-						<div class="progress">
-							<div class="myBar" data-width-animation="{{skill.level.name}}"></div>
-						</div>
+	<section id="skills" class="section section-no-border background-color-light m-none" ng-hide="vm.showSki">
+		<div class="container">
+			<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none" ng-bind="'Skills' | translate">Skill</h2>
+			<div class="row custom-sm-flex-order">
+				<div class="progress-bars custom-progress-bars col-md-4 col-sm-4 col-xs-2 col-lg-6" ng-repeat="skill in vm.users.user_skill" data-appear-top-offset="1400">
+					<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
+						<span class="ellipsis" ng-bind="skill.name"></span>
+					</div>
+					<div class="progress">
+						<div class="myBar" data-width-animation="{{skill.level.name}}"></div>
+					</div>
 					<!--  <div class="col-md-6" ng-repeat="skill in vm.users.user_skill">
 						<label ng-bind="skill.name"></label>
 						<div class="myProgress">
 							<div class="myBar progress-bar-tooltip" data-width-animation="{{skill.level.name}}" data="{{skill.level.name}}" style="width:{{skill.level.name}}%"></div>
 						</div> -->
 					</div>		
-					</div>
-					<div class="col-md-4 col-sm-6 col-xs-12">
+<!-- 					<div class="col-md-4 col-sm-6 col-xs-12">
 						<div class="custom-box-details background-color-light custom-box-shadow-1">
-							<h4 class="text-color-dark " ng-bind="'Languages' | translate"></h4>
+							<h4 class="text-color-dark" ng-bind="'Languages' | translate"></h4>
 							<ul class="custom-list-style-1 p-none">
 								<li ng-repeat="lan in vm.users.user_language">
 									<span class="font-weight-semibold custom-max-width-1 text-color-dark"><img src="./assets/img/gif/blank.gif" class="flag-icon flag-icon-us" alt="English" ><label ng-bind="lan.name"></label></span>
@@ -271,7 +268,7 @@
 							</ul>
 						</div>
 					</div>
-				</div>
+				-->				</div>
 			</div>
 		</section>
 		<section id="portfolio" class="section section-no-border background-color-secondary m-none" ng-hide="vm.showPort">
@@ -289,8 +286,26 @@
 						</ul>
 						<div class="row">
 							<div class="sort-destination-loader sort-destination-loader-loaded">
-								<div class="col-md-4" ng-repeat="port in vm.users.user_portfolio | filter:vm.label ">
-								<div class="image-gallery-item animation-portf" >
+								<div class="col-md-4"  ng-repeat="portfolio in vm.users.user_portfolio">
+
+
+
+									<div class="image-box">
+										<div class="image">
+											<img ng-src="{{portfolio.image}}" >
+											<a href="" data-toggle="ajax-modal"></a>
+										</div>
+										<div class="hover" >
+											<img ng-src="{{}}" class="img-responsive" alt="Image">
+											<a class="text-center">
+												<h4 class="mb-0 ng-binding" ng-bind="portfolio.company.name">Tradhislud</h4>
+												<span class="text-muted ng-binding" ng-bind="portfolio.name">Tradhislud</span>
+											</a>
+										</div>
+									</div>
+
+
+<!-- 								<div class="image-gallery-item animation-portf" >
 										<a class="lightbox-portfolio" style="height: 240px;">
 											<span class="thumb-info custom-thumb-info-1">
 												<span class="thumb-info-wrapper">
@@ -302,7 +317,7 @@
 											</span>
 										</a>
 									</div>
-								</div>
+								-->								</div>
 							</div>
 						</div>
 					</div>

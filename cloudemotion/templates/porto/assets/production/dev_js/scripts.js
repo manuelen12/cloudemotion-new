@@ -29156,17 +29156,26 @@ function InitProgressBar(selector) {
 }
 //Owl-
 function initOwl(selector) {
+
+console.log($(selector));
 	setTimeout(function() {
 		$(selector).owlCarousel({
           loop:false,
           margin:0,
-          nav:false,    
+          nav:true,
+           navText: [
+	          "<i class='fa fa-left'></i>",
+	          "<i class='fa fa-right'></i>"
+	          ],     
           responsive:{
             0:{
               items:1,                                                                    
-            },500:{
+            },460:{
              items:2,
+           },900:{
+             items:3,
            }
+
          }
    		});
    	},1000);

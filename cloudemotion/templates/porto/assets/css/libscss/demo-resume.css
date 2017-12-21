@@ -615,6 +615,7 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 .custom-progress-bars .progress-label {
   float: left;
   width: 30%;
+  display: flex;
 }
 .custom-progress-bars .progress {
   float: left;
@@ -882,14 +883,14 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 }
 
 .custom-form-style .form-control-custom .form-control {
-  background: transparent;
-  border: none;
-  border-bottom: 1px solid #d8b113;
-  color: #2e353e;
-  font-size: 12px;
-  padding: 6px 0;
-  margin-bottom: 15px;
-  box-shadow: none;
+    background: 0 0;
+    border: none;
+    border-bottom: 1px solid white;
+    color: black;
+    font-size: 14px;
+    padding: 6px 0;
+    margin-bottom: 15px;
+    box-shadow: none;
 }
 .custom-form-style .form-control-custom .form-control::-webkit-input-placeholder {
   color: #2e353e;
@@ -929,7 +930,7 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 }
 .custom-feature-box .custom-feature-box-icon {
   position: absolute;
-  border: 1px solid #454441;
+  border: 1px solid #ffffff;
   line-height: 0.9;
   padding: 10px;
   top: 2px;
@@ -951,9 +952,10 @@ section.custom-timeline .timeline-box .experience-info .company > span {
   display: block;
   line-height: 1;
   font-size: 0.8em;
-  color: #bdbdbd;
+  color: #bdbdbd !important;
   position: relative;
   top: 5px;
+  margin-bottom: 10px;
 }
 .custom-feature-box .feature-box-info > strong {
   font-size: 1.7em;

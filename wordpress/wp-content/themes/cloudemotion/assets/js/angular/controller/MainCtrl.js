@@ -80,10 +80,10 @@
 					var blog=angular.copy(opt);
 					blog.responsive={
 						0 : {items:1},
-						800 : {
+						460 : {
 							items:2
 						},
-						1500 : {
+						900 : {
 							items:3
 						}
 					}

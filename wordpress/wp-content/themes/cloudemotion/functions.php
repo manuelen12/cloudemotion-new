@@ -192,9 +192,6 @@ if(!is_admin()){
 
 	$scripts = array(
 		'jquery-3.2.1.min',
-		'jquery-migrate.min',
-		'scrolltoplugin.min',
-		'greensock',
 		'layerslider.kreaturamedia.jquery',
 		'layerslider.transitions',
 		'jquery.themepunch.tools.min',
