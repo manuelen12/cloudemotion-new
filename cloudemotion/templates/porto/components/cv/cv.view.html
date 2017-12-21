@@ -277,17 +277,17 @@
 					<div class="col-md-12">
 						<h2 class="text-color-quaternary font-weight-extra-bold text-uppercase" ng-bind="'Portfolio' | translate"></h2>
 						<ul class="nav nav-pills sort-source custom-nav-sort mb-xlg" data-sort-id="portfolio" data-option-key="filter">
-							<li data-option-value="*" class=""><a href="" ng-click="vm.label=$" ng-bind="'Show All' | translate"></a></li>
-							<li ng-repeat="c in vm.classi" ng-click="vm.label=c.name"><a href="" ng-bind="c.name"></a></li>
+							<li ng-click="vm.label=false"><a href="" ng-click="vm.label=$" ng-bind="'Show All' | translate"></a></li>
+							<li ng-repeat="c in vm.classi" ng-click="vm.label=c"><a href="" ng-bind="c.name"></a></li>
 							
 							<!--<li data-option-value=".websites" ng-click="vm.test =! vm.test"><a href="">Websites</a></li>
 							<li data-option-value=".logos"><a href="">Logos</a></li>
 							<li data-option-value=".brands"><a href="">Brands</a></li> -->
 						</ul>
 						<div class="row">
-							<div class="sort-destination-loader sort-destination-loader-loaded">
-								<div class="col-md-4"  ng-repeat="portfolio in vm.users.user_portfolio">
 
+							<div class="sort-destination-loader sort-destination-loader-loaded">
+								<div class="col-md-4 image-container" ng-class="{'not-matched':vm.label && vm.label.id!=portfolio.classification.id}" ng-repeat="portfolio in vm.users.user_portfolio">
 
 
 									<div class="image-box">

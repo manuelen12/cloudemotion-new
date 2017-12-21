@@ -9,7 +9,7 @@ function CurriculumCtrl($rootScope,$scope,PortfolioService,$stateParams,particle
     test:true,
     params:'',
     sendMessage:sendMessage,
-    label:'ejemplo',
+    label:'',
     contact:{},    
   });
 
