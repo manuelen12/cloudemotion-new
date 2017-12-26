@@ -1658,37 +1658,7 @@ Screen Stylesheet
       }
     }
 
-    @media all and (max-width:460px){
-      .contentTeam:before{
-        background-size: 125px;
-        background-position: 115px 120px;
-      }
-      .contentHand:before{
-        width: 115px;
-        height: 160px;
-        left: 114px;
-        top: 55px;
-      }
-      .contentHand:after{
-        background-size: 200px;
-      }
-      .teamR{
-        max-width: initial !important;
-        width: 350px;
-        height: 360px !important;
-      }
-      .handR{
-        max-width: initial !important;
-        width: 300px;
-        height: 360px !important;
-      }
-      .qodef-portfolio-list-holder .qodef-portfolio-item{
-        width: 100%;
-      }
-      .col-xs-6{
-        width: 100% !important;
-      }
-    }
+    @media all and (max-width:460px){}
 
 
     @keyframes rotateTeam{

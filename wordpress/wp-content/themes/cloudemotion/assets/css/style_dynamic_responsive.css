@@ -2,9 +2,6 @@
 @media only screen and (min-width: 480px) and (max-width: 768px){
 	/* generated in /www/sites/startit.select-themes.com/files/html/wp-content/themes/startit/assets/custom-styles/general-custom-styles-responsive.php qode_startit_design_responsive_styles function */
 .qodef-section.qodef-parallax-section-holder { height: auto !important;min-height: 400px;}
-
-
-
 }
 
 @media only screen and (max-width: 768px){
@@ -110,7 +107,9 @@ section.cover, .section.cover { padding-top: 0; padding-bottom: 0; }
 .tabs-wrapper { position: relative; padding-right: 14px; }
 .tabs-wrapper .owl-stage { margin:0 auto; }
 .tabs-wrapper .selector { position: absolute; bottom: 0; height: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; background: #7fb840; -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
+
 @media only screen and (max-width: 360px) { .tabs-wrapper .selector { display: none; } }
+
 
 .dark .tabs-wrapper .selector, .dark.tabs-wrapper .selector { background: #fff; }
 
@@ -132,3 +131,5 @@ html[dir="rtl"] .nav-tabs > li:last-child { margin-left: 0; }
 .nav-icons > li > a i { font-size: 130%; }
 .nav-icons > li > a:hover, .nav-icons > li > a:focus { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; }
 .nav-icons.nav-sm > li { font-size: 90%; }
+
+

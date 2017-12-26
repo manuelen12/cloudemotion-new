@@ -722,7 +722,9 @@ button.contact:focus
 #hiddenCollapse.collapse[aria-expanded="false"]:before {
 	content: "";
 	position: absolute;
-	width: 102%;
+	width: 100vw;
+	left: 0;
+	right: 0;
 	height: 250px;
 	z-index: 1;
 	background: rgba(0,0,0,0.3);
