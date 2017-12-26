@@ -509,7 +509,7 @@ get_header();
                                                             </div>
                                                         </div>
                                                     </div>                
-<!--                                                     <p >Sorry, no posts matched your criteria.</p> -->
+                                                    <!--                                                     <p >Sorry, no posts matched your criteria.</p> -->
                                                 </div>
                                             </section>
                                         </div>
@@ -717,134 +717,155 @@ get_header();
                                                     'post_type' => 'post',
                                                     'post_status' => 'draft, publish, future, pending, private',
                                                     'suppress_filters' => true
-                                                    );
+                                                );
 
                                                 $recent_posts = wp_get_recent_posts( $args, ARRAY_A );
                                                 foreach ($recent_posts as $recent) { 
                                                     $img = get_the_post_thumbnail_url($recent["ID"],'full'); 
-                                                    ?>
+                                                    
+                                                    if ($img) {
+                                                        $activeBlog=true;
 
-                                                    <article id="post-" class="tag-post item">
-                                                        <div class="qodef-post-content">
-                                                            <?php if ($img) {?>
-                                                            <div class="qodef-post-image">
+                                                        ?>
+                                                        <article id="post-" class="tag-post item">
+                                                            <div class="qodef-post-content">
+                                                                <?php if ($img) {?>
+                                                                <div class="qodef-post-image">
 
-                                                                <a  <?php echo 'href="' . get_permalink($recent["ID"]) . '" title="'.$recent["post_title"].'"  '; ?>
-                                                                    >
+                                                                    <a  <?php echo 'href="' . get_permalink($recent["ID"]) . '" title="'.$recent["post_title"].'"  '; ?>
+                                                                        >
 
-                                                                    <img  height="447" src="<?php echo $img; ?>" class="m_center img-responsive" alt="image" />    
-                                                                </a>
-                                                            </div>
-                                                            <?php }; ?>
-                                                            <div class="qodef-post-text">
-                                                                <div class="qodef-post-text-inner">
-                                                                    <h2 class="qodef-post-title">
-                                                                        <a href="http://startit.select-themes.com/news-app-deliveres-fresh-ideas/" title="New Apps &#8211; Fresh Ideas"><?php echo $recent["post_title"]; ?></a>
-                                                                    </h2>               
-                                                                    <div class="qodef-post-info">
-                                                                        <div class="qodef-post-info-date">
-                                                                            <?php echo date('n-j-Y', strtotime($recent['post_date'])); ?>
-                                                                        </div>
-                                                                    </div>
-                                                                    <p class="qodef-post-excerpt"><?php echo wp_trim_words($recent["post_content"]); ?></p>
-                                                                    <a href="<?php echo get_permalink($recent["ID"]); ?>" target="_self"  class="qodef-btn qodef-btn-small qodef-btn-default"  >
-                                                                        <span class="qodef-btn-text" ng-bind="'Read More' | translate"></span>   
-                                                                        <span class="qodef-btn-text-icon"></span>
-                                                                    </a>       
+                                                                        <img  height="447" src="<?php echo $img; ?>" class="m_center img-responsive" alt="image" />    
+                                                                    </a>
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                    </article>
-                                                    <?php } ?>
-
-
-                                                </div>
-
-
-                                            </div>
-                                            <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-center" id="team">
-
-                                                <div class="clearfix qodef-full-section-inner">
-                                                    <div class="wpb_column vc_column_container">
-                                                        <div class="vc_column-inner ">
-                                                            <div class="wpb_wrapper">
-                                                                <div class="mainTitle">
-                                                                        <h1 ng-bind="'Team' | translate"></h1>
-                                                                        <p ng-bind="'Take a look and certify the knowledge of our developers' | translate"></p>
-                                                                </div>
-                                                                <div class="team owl-carousel owl-theme">
-
-                                                                    <div class="card item" ng-class="{'active' : team.active}" ng-repeat="team in vm.team">
-                                                                        <div class="photo">
-                                                                            <img on-error-src="./wp-content/themes/cloudemotion/assets/img/default_p.png" ng-src="{{team.image}}" class="img-responsive" alt="Image">
-                                                                        </div>
-                                                                        <div class="banner"></div>
-                                                                        <ul class="title-team">
-                                                                            <li><label ng-bind="team.first_name+' '+team.last_name" class="ttl"></label></li>
-                                                                            <li ng-bind="team.position.name"></li>
-
-                                                                        </ul>
-                                                                        <button class="contact" id="main-button" ng-click="team.active=!team.active">Skills</button>
-                                                                        <div class="social-media-banner">
-                                                                            <a ng-if="team.linkedin" ng-href="team.linkedin"><i class="fa fa-linkedin"></i></a>
-                                                                            <a ng-if="team.twitter" ng-href="team.twitter"><i class="fa fa-twitter"></i></a>
-                                                                            <a ng-if="team.skype" title="{{team.skype}}"><i class="fa fa-skype"></i></a>
-                                                                            <a ng-if="team.youtube" ng-href="team.youtube"><i class="fa fa-youtube"></i></a>
-                                                                        </div>
-                                                                        <form class="email-form">
-                                                                            <div class="row">
-                                                                                <ul>
-                                                                                    <li ng-if="!team.user_skill.length"><label class="label label-default">No skills registered yet</label></li>
-                                                                                    <li ng-if="team.user_skill.length" ng-repeat="skill in team.user_skill">
-                                                                                        <label class="label label-primary" ng-bind="skill.name"></label>
-                                                                                    </li>
-                                                                                </ul>
+                                                                <?php }; ?>
+                                                                <div class="qodef-post-text">
+                                                                    <div class="qodef-post-text-inner">
+                                                                        <h2 class="qodef-post-title">
+                                                                            <a href="http://startit.select-themes.com/news-app-deliveres-fresh-ideas/" title="New Apps &#8211; Fresh Ideas"><?php echo $recent["post_title"]; ?></a>
+                                                                        </h2>               
+                                                                        <div class="qodef-post-info">
+                                                                            <div class="qodef-post-info-date">
+                                                                                <?php echo date('n-j-Y', strtotime($recent['post_date'])); ?>
                                                                             </div>
-                                                                        </form>
+                                                                        </div>
+                                                                        <p class="qodef-post-excerpt"><?php echo wp_trim_words($recent["post_content"]); ?></p>
+                                                                        <a href="<?php echo get_permalink($recent["ID"]); ?>" target="_self"  class="qodef-btn qodef-btn-small qodef-btn-default"  >
+                                                                            <span class="qodef-btn-text" ng-bind="'Read More' | translate"></span>   
+                                                                            <span class="qodef-btn-text-icon"></span>
+                                                                        </a>       
                                                                     </div>
-
                                                                 </div>
-
-
                                                             </div>
-                                                        </div>
+                                                        </article>
+                                                        <?php 
+                                                    
+                                                }
+                                            }
+                                            ?>
+
+                                        </div>
+                                        <?php   
+                                        if (!$activeBlog) {
+                                           ?>
+
+                                           <div class="jumbotron">
+                                            <div class="container">
+                                                <h1 ng-bind="'We are sorry but...' | translate"></h1>
+                                                <p ng-bind="'In this moment we dont have any blog active for you' | translate"></p>
+                                            </div>
+                                        </div>
+
+                                        <?php   
+                                    }
+                                    ?>
+
+
+
+                                </div>
+                                <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-center" id="team">
+
+                                    <div class="clearfix qodef-full-section-inner">
+                                        <div class="wpb_column vc_column_container">
+                                            <div class="vc_column-inner ">
+                                                <div class="wpb_wrapper">
+                                                    <div class="mainTitle">
+                                                        <h1 ng-bind="'Team' | translate"></h1>
+                                                        <p ng-bind="'Take a look and certify the knowledge of our developers' | translate"></p>
                                                     </div>
+                                                    <div class="team owl-carousel owl-theme">
+
+                                                        <div class="card item" ng-class="{'active' : team.active}" ng-repeat="team in vm.team">
+                                                            <div class="photo">
+                                                                <img on-error-src="./wp-content/themes/cloudemotion/assets/img/default_p.png" ng-src="{{team.image}}" class="img-responsive" alt="Image">
+                                                            </div>
+                                                            <div class="banner"></div>
+                                                            <ul class="title-team">
+                                                                <li><label ng-bind="team.first_name+' '+team.last_name" class="ttl"></label></li>
+                                                                <li ng-bind="team.position.name"></li>
+
+                                                            </ul>
+                                                            <button class="contact" id="main-button" ng-click="team.active=!team.active">Skills</button>
+                                                            <div class="social-media-banner">
+                                                                <a ng-if="team.linkedin" ng-href="team.linkedin"><i class="fa fa-linkedin"></i></a>
+                                                                <a ng-if="team.twitter" ng-href="team.twitter"><i class="fa fa-twitter"></i></a>
+                                                                <a ng-if="team.skype" title="{{team.skype}}"><i class="fa fa-skype"></i></a>
+                                                                <a ng-if="team.youtube" ng-href="team.youtube"><i class="fa fa-youtube"></i></a>
+                                                            </div>
+                                                            <form class="email-form">
+                                                                <div class="row">
+                                                                    <ul>
+                                                                        <li ng-if="!team.user_skill.length"><label class="label label-default">No skills registered yet</label></li>
+                                                                        <li ng-if="team.user_skill.length" ng-repeat="skill in team.user_skill">
+                                                                            <label class="label label-primary" ng-bind="skill.name"></label>
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+
+                                                    </div>
+
+
                                                 </div>
                                             </div>
-
-
-
-                                            <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-center" id="contact-us">
-
-                                                <footer class="foot" >
-                                                    <?php get_footer();?>
-                                                </footer>
-                                            </div>
-                                            <!-- close div.qodef-wrapper-inner  -->
                                         </div>
                                     </div>
                                 </div>
+
+
+
+                                <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-center" id="contact-us">
+
+                                    <footer class="foot" >
+                                        <?php get_footer();?>
+                                    </footer>
+                                </div>
+                                <!-- close div.qodef-wrapper-inner  -->
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
 
-                    <div class="modal fade" id="modalportfolio">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                                    <h4 class="modal-title" >Portafolio View</h4>
-                                </div>
-                                <div class="modal-body">
-                                    <img ng-src="{{vm.seeData.screenshot}}" width="400" height="400" style="margin:0 auto;" class="img-responsive" alt="Image">
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                                    <a ng-href="{{vm.seeData.url}}"  class="btn btn-primary"  target="_blank">Go to Proyect</a>
-                                </div>
-                            </div>
-                        </div>
+        <div class="modal fade" id="modalportfolio">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title" >Portafolio View</h4>
                     </div>
+                    <div class="modal-body">
+                        <img ng-src="{{vm.seeData.screenshot}}" width="400" height="400" style="margin:0 auto;" class="img-responsive" alt="Image">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <a ng-href="{{vm.seeData.url}}"  class="btn btn-primary"  target="_blank">Go to Proyect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-                </body>
-                </html>
+    </body>
+    </html>

@@ -771,3 +771,7 @@ button.contact:focus
 .qodef-post-text-inner .qodef-post-title{
 	border-bottom: 2px solid lightgray;
 }
+
+.qodef-testimonials-slider-item{
+	padding: 0 3em;
+}
