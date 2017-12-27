@@ -102,3 +102,15 @@ msgstr "Medium"
 #: cloudemotion/curriculum/models.py:80
 msgid "Advanced"
 msgstr "Advanced"
+
+msgid "Bachelor of Science"
+msgstr "Bachelor of Science"
+
+msgid "Senior University Technician in Informatic"
+msgstr "Senior University Technician in Informatic"
+
+msgid "Medium Industrial Technician in Civil Construction."
+msgstr "Medium Industrial Technician in Civil Construction."
+
+msgid "System Engineer"
+msgstr "System Engineer"

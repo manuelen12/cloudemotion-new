@@ -241,7 +241,7 @@ class API(Base):
                         "address": e.company.address,
                     },
                     "position": {
-                        "name": e.position.name,
+                        "name": _(e.position.name),
                     },
                     "description": e.l_exp2[0].description if e.l_exp2 else "",
                     "start_date": e.start_date,
@@ -253,7 +253,7 @@ class API(Base):
                 __dict2 = {
                     "level": {
                         "id": e.level,
-                        "name": e.get_level_display()
+                        "name": _(e.get_level_display())
                     },
                     "name": _(e.skill.name)
                 }
