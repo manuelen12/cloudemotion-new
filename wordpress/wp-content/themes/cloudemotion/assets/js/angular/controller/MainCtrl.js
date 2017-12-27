@@ -69,7 +69,6 @@
 						vm.team[ind].image="./assets/img/default_p.png";
 					}
 				})
-				console.log($('.team'));
 				$timeout(function() {
 					var opt={
 						navText:["",""],
@@ -87,7 +86,6 @@
 							items:3
 						}
 					}
-					console.log(opt);
 					setCarousel(".team",blog)
 					setCarousel(".owl-blog",blog);
 					opt.items=1;
@@ -131,7 +129,6 @@
 					data.class=data.classification.name.split(" ").join("-");
 				})
 				vm.portfolios=response.data;
-				Sukces.Basic.blazy();
 				var opt={	
 					loop:false,
 					margin:10,
@@ -144,6 +141,10 @@
 					navText:["",""],
 
 				}
+
+				$timeout(function() {
+					Sukces.Basic.blazy();
+				},1000)
 				setCarousel(".qodef-team2",opt);
 				
 			},function(error) {

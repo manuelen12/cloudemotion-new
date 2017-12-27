@@ -76,7 +76,7 @@ get_header();
                                                                         <div class="wpb_single_image wpb_content_element vc_align_right wpb_bottom-to-top">
                                                                             <figure class="wpb_wrapper vc_figure">
                                                                                 <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                                                    <img width="504" height="457" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/programadores.png" class="vc_single_image-img attachment-full" alt="a" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/programadores.png 504w, <?php echo get_template_directory_uri(); ?>/assets/img/graphic-1-home-main-300x272.png 300w" sizes="(max-width: 504px) 100vw, 504px" />
+                                                                                    <img width="504" height="457" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/programadores.png" class="vc_single_image-img b-lazy attachment-full" alt="a" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/programadores.png 504w, <?php echo get_template_directory_uri(); ?>/assets/img/graphic-1-home-main-300x272.png 300w" sizes="(max-width: 504px) 100vw, 504px" />
                                                                                 </div>
                                                                             </figure>
                                                                         </div>
@@ -106,11 +106,17 @@ get_header();
                                                 <!-- Nav tabs -->
                                                 <ul class="nav nav-tabs" role="tablist" id="myTab1" style="text-align:center;">
                                                     <li role="presentation" ng-class="{'active':vm.service_t==2}"><a ng-click="vm.service_t=2" aria-controls="home" role="tab" data-toggle="tab">
-                                                        <i><img data-src="<?php echo get_template_directory_uri(); ?>/assets/img/icomobile.png" width="50px" height="50px" alt="Mobile"></i> Mobile</a></li>
+                                                        <i>
+                                                            <img data-src="<?php echo get_template_directory_uri(); ?>/assets/img/icomobile.png" width="50px" height="50px" alt="Mobile" class="b-lazy">
+                                                        </i> Mobile</a></li>
                                                         <li role="presentation" ng-class="{'active':vm.service_t==1}"><a ng-click="vm.service_t=1" aria-controls="home" role="tab" data-toggle="tab">
-                                                            <i><img data-src="<?php echo get_template_directory_uri(); ?>/assets/img/icomarketing.png" width="50px" height="50px" alt="Marketing"></i> Marketing</a></li>
+                                                            <i>
+                                                                <img class="b-lazy" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/icomarketing.png" width="50px" height="50px" alt="Marketing">
+                                                            </i> Marketing</a></li>
                                                             <li role="presentation" ng-class="{'active':vm.service_t==3}"><a ng-click="vm.service_t=3" aria-controls="home" role="tab" data-toggle="tab">
-                                                                <i><img data-src="<?php echo get_template_directory_uri(); ?>/assets/img/icoweb.png" width="50px" height="50px" alt="Web"></i> Web</a></li>
+                                                                <i>
+                                                                    <img class="b-lazy" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/icoweb.png" width="50px" height="50px" alt="Web">
+                                                                </i> Web</a></li>
                                                             </ul>
                                                             <!-- Tab panes -->
                                                             <div class="tab-content tabs">
@@ -392,7 +398,7 @@ get_header();
                                                                                     <div class="electron g"></div>
                                                                                 </div>
 
-                                                                                <!-- <img data-src="<?php echo get_template_directory_uri(); ?>/assets/img/web_page_1.jpg" alt="Web Page" class="img-responsive text-center animated fadeIn" ng-show="vm.image_web==1"> -->
+                                                                                <!-- <img data-src="<?php echo get_template_directory_uri(); ?>/assets/img/web_page_1.jpg" alt="Web Page" class="img-responsive text-center b-lazy animated fadeIn" ng-show="vm.image_web==1"> -->
 
                                                                                 <article class="web-cont animated bounceInDown" ng-show="vm.image_web==2">
                                                                                     <div class="web2 pc">
@@ -405,9 +411,9 @@ get_header();
 
                                                                                 </article>
 
-                                                                                <img data-src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST3.png" alt="Customizable" class="img-responsive text-center animated bounceInLeft" ng-show="vm.image_web==3">
+                                                                                <img data-src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST3.png" alt="Customizable" class="img-responsive text-center b-lazy animated bounceInLeft" ng-show="vm.image_web==3">
 
-                                                                                <img data-src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST.png" alt="Fast and Adaptive" class="img-responsive text-center animated bounceInUp" ng-show="vm.image_web==4">
+                                                                                <img data-src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST.png" alt="Fast and Adaptive" class="img-responsive text-center b-lazy animated bounceInUp" ng-show="vm.image_web==4">
 
                                                                             </article>
                                                                         </div>
@@ -497,11 +503,10 @@ get_header();
                                                     <div ng-repeat="portfolio in vm.portfolios"  style="padding: 0;" ng-show="portfolio.classification.id==vm.selected || !vm.selected" class="{{portfolio.class | lowercase}} col-md-4 col-sm-6 col-xs-12 animated fadeIn" >           
                                                         <div class="image-box">
                                                             <div class="image" >
-                                                                <img data-src="{{portfolio.image}}" />
-                                                                <a href="" data-toggle="ajax-modal"></a>
+                                                                <img data-src="{{portfolio.image}} " class="b-lazy" alt="Imagemain">
                                                             </div>
                                                             <div class="hover"  ng-click="vm.openModal(portfolio)" >
-                                                                <img data-src="{{portfolio.company.image}}" class="img-responsive" alt="Image">
+                                                                <img data-src="{{portfolio.company.image}}" class="b-lazy img-responsive" alt="Image">
                                                                 <a class="text-center">
                                                                     <h4 class="mb-0" ng-bind="portfolio.company.name"></h4>
                                                                     <span class="text-muted" ng-bind="portfolio.name"></span>
@@ -556,7 +561,7 @@ get_header();
                                                                                 </div>
                                                                                 <div class="qodef-testimonial-info-holder">
                                                                                     <div class="qodef-testimonial-image-holder">
-                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-1.png" class="attachment-71 size-71 wp-post-image" alt="a" />
+                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-1.png" class="attachment-71 size-71 wp-post-image b-lazy" alt="a" />
                                                                                     </div>
                                                                                     <div class = "qodef-testimonial-author">
                                                                                         <p class="qodef-testimonial-author-text">
@@ -579,7 +584,7 @@ get_header();
                                                                                 </div>
                                                                                 <div class="qodef-testimonial-info-holder">
                                                                                     <div class="qodef-testimonial-image-holder">
-                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-2.png" class="attachment-79 size-79 wp-post-image" alt="a" />
+                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-2.png" class="attachment-79 size-79 wp-post-image b-lazy" alt="a" />
                                                                                     </div>
                                                                                     <div class = "qodef-testimonial-author">
                                                                                         <p class="qodef-testimonial-author-text">
@@ -602,7 +607,7 @@ get_header();
                                                                                 </div>
                                                                                 <div class="qodef-testimonial-info-holder">
                                                                                     <div class="qodef-testimonial-image-holder">
-                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-3.png" class="attachment-81 size-81 wp-post-image" alt="a" />
+                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-3.png" class="attachment-81 size-81 wp-post-image b-lazy" alt="a" />
                                                                                     </div>
                                                                                     <div class = "qodef-testimonial-author">
                                                                                         <p class="qodef-testimonial-author-text">
@@ -627,7 +632,7 @@ get_header();
                                                                                 </div>
                                                                                 <div class="qodef-testimonial-info-holder">
                                                                                     <div class="qodef-testimonial-image-holder">
-                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-4.png" class="attachment-88 size-88 wp-post-image" alt="a" />
+                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-4.png" class="attachment-88 size-88 wp-post-image b-lazy" alt="a" />
                                                                                     </div>
                                                                                     <div class = "qodef-testimonial-author">
                                                                                         <p class="qodef-testimonial-author-text">
@@ -650,7 +655,7 @@ get_header();
                                                                                 </div>
                                                                                 <div class="qodef-testimonial-info-holder">
                                                                                     <div class="qodef-testimonial-image-holder">
-                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-5.png" class="attachment-89 size-89 wp-post-image" alt="a" />
+                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-5.png" class="attachment-89 size-89 wp-post-image b-lazy" alt="a" />
                                                                                     </div>
                                                                                     <div class = "qodef-testimonial-author">
                                                                                         <p class="qodef-testimonial-author-text">
@@ -673,7 +678,7 @@ get_header();
                                                                                 </div>
                                                                                 <div class="qodef-testimonial-info-holder">
                                                                                     <div class="qodef-testimonial-image-holder">
-                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-6.png" class="attachment-90 size-90 wp-post-image" alt="a" />
+                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-6.png" class="attachment-90 size-90 wp-post-image b-lazy" alt="a" />
                                                                                     </div>
                                                                                     <div class = "qodef-testimonial-author">
                                                                                         <p class="qodef-testimonial-author-text">
@@ -722,7 +727,7 @@ get_header();
                                                 $recent_posts = wp_get_recent_posts( $args, ARRAY_A );
                                                 foreach ($recent_posts as $recent) { 
                                                     $img = get_the_post_thumbnail_url($recent["ID"],'full'); 
-                                                    
+
                                                     if ($img) {
                                                         $activeBlog=true;
 
@@ -759,113 +764,121 @@ get_header();
                                                             </div>
                                                         </article>
                                                         <?php 
-                                                    
+
+                                                    }
                                                 }
+                                                ?>
+
+                                            </div>
+                                            <?php   
+                                            if (!$activeBlog) {
+                                                ?>
+
+                                                <div class="jumbotron">
+                                                    <div class="container">
+                                                        <h1 ng-bind="'We are sorry but...' | translate"></h1>
+                                                        <p ng-bind="'In this moment we dont have any blog active for you' | translate"></p>
+                                                    </div>
+                                                </div>
+
+                                                <?php   
                                             }
                                             ?>
 
+
+
                                         </div>
-                                        <?php   
-                                        if (!$activeBlog) {
-                                           ?>
+                                        <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-center" id="team">
 
-                                           <div class="jumbotron">
-                                            <div class="container">
-                                                <h1 ng-bind="'We are sorry but...' | translate"></h1>
-                                                <p ng-bind="'In this moment we dont have any blog active for you' | translate"></p>
-                                            </div>
-                                        </div>
-
-                                        <?php   
-                                    }
-                                    ?>
-
-
-
-                                </div>
-                                <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-center" id="team">
-
-                                    <div class="clearfix qodef-full-section-inner">
-                                        <div class="wpb_column vc_column_container">
-                                            <div class="vc_column-inner ">
-                                                <div class="wpb_wrapper">
-                                                    <div class="mainTitle">
-                                                        <h1 ng-bind="'Team' | translate"></h1>
-                                                        <p ng-bind="'Take a look and certify the knowledge of our developers' | translate"></p>
-                                                    </div>
-                                                    <div class="team owl-carousel owl-theme">
-
-                                                        <div class="card item" ng-class="{'active' : team.active}" ng-repeat="team in vm.team">
-                                                            <div class="photo">
-                                                                <img on-error-src="./wp-content/themes/cloudemotion/assets/img/default_p.png" data-src="{{team.image}}" class="img-responsive" alt="Image">
+                                            <div class="clearfix qodef-full-section-inner">
+                                                <div class="wpb_column vc_column_container">
+                                                    <div class="vc_column-inner ">
+                                                        <div class="wpb_wrapper">
+                                                            <div class="mainTitle">
+                                                                <h1 ng-bind="'Team' | translate"></h1>
+                                                                <p ng-bind="'Take a look and certify the knowledge of our developers' | translate"></p>
                                                             </div>
-                                                            <div class="banner"></div>
-                                                            <ul class="title-team">
-                                                                <li><label ng-bind="team.first_name+' '+team.last_name" class="ttl"></label></li>
-                                                                <li ng-bind="team.position.name"></li>
+                                                            <div class="team owl-carousel owl-lazy owl-theme">
 
-                                                            </ul>
-                                                            <button class="contact" id="main-button" ng-click="team.active=!team.active">Skills</button>
-                                                            <div class="social-media-banner">
-                                                                <a ng-if="team.linkedin" ng-href="team.linkedin"><i class="fa fa-linkedin"></i></a>
-                                                                <a ng-if="team.twitter" ng-href="team.twitter"><i class="fa fa-twitter"></i></a>
-                                                                <a ng-if="team.skype" title="{{team.skype}}"><i class="fa fa-skype"></i></a>
-                                                                <a ng-if="team.youtube" ng-href="team.youtube"><i class="fa fa-youtube"></i></a>
-                                                            </div>
-                                                            <form class="email-form">
-                                                                <div class="row">
-                                                                    <ul>
-                                                                        <li ng-if="!team.user_skill.length"><label class="label label-default">No skills registered yet</label></li>
-                                                                        <li ng-if="team.user_skill.length" ng-repeat="skill in team.user_skill">
-                                                                            <label class="label label-primary" ng-bind="skill.name"></label>
-                                                                        </li>
+                                                                <div class="card item" ng-class="{'active' : team.active}" ng-repeat="team in vm.team">
+                                                                    <div class="photo">
+                                                                        <img on-error-src="./wp-content/themes/cloudemotion/assets/img/default_p.png" data-src="{{team.image}}" class="img-responsive b-lazy" alt="Image">
+                                                                    </div>
+                                                                    <div class="banner"></div>
+                                                                    <ul class="title-team">
+                                                                        <li><label ng-bind="team.first_name+' '+team.last_name" class="ttl"></label></li>
+                                                                        <li ng-bind="team.position.name"></li>
+
                                                                     </ul>
+                                                                    <button class="contact" id="main-button" ng-click="team.active=!team.active">Skills</button>
+                                                                    <div class="social-media-banner">
+                                                                        <a ng-if="team.linkedin" ng-href="team.linkedin">
+                                                                            <i class="fa fa-linkedin"></i>
+                                                                        </a>
+                                                                        <a ng-if="team.twitter" ng-href="team.twitter">
+                                                                            <i class="fa fa-twitter"></i>
+                                                                        </a>
+                                                                        <a ng-if="team.skype" title="{{team.skype}}">
+                                                                            <i class="fa fa-skype"></i>
+                                                                        </a>
+                                                                        <a ng-if="team.youtube" ng-href="team.youtube">
+                                                                            <i class="fa fa-youtube"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                    <form class="email-form">
+                                                                        <div class="row">
+                                                                            <ul>
+                                                                                <li ng-if="!team.user_skill.length"><label class="label label-default">No skills registered yet</label></li>
+                                                                                <li ng-if="team.user_skill.length" ng-repeat="skill in team.user_skill">
+                                                                                    <label class="label label-primary" ng-bind="skill.name"></label>
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </form>
                                                                 </div>
-                                                            </form>
+
+                                                            </div>
+
+
                                                         </div>
-
                                                     </div>
-
-
                                                 </div>
                                             </div>
                                         </div>
+
+
+
+                                        <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-center" id="contact-us">
+
+                                            <footer class="foot" >
+                                                <?php get_footer();?>
+                                            </footer>
+                                        </div>
+                                        <!-- close div.qodef-wrapper-inner  -->
                                     </div>
                                 </div>
-
-
-
-                                <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-center" id="contact-us">
-
-                                    <footer class="foot" >
-                                        <?php get_footer();?>
-                                    </footer>
-                                </div>
-                                <!-- close div.qodef-wrapper-inner  -->
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-        <div class="modal fade" id="modalportfolio">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                        <h4 class="modal-title" >Portafolio View</h4>
-                    </div>
-                    <div class="modal-body">
-                        <img data-src="{{vm.seeData.screenshot}}" width="400" height="400" style="margin:0 auto;" class="img-responsive" alt="Image">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                        <a ng-href="{{vm.seeData.url}}"  class="btn btn-primary"  target="_blank">Go to Proyect</a>
+                <div class="modal fade" id="modalportfolio">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                <h4 class="modal-title" >Portafolio View</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img data-src="{{vm.seeData.screenshot}}" width="400" height="400" style="margin:0 auto;" class="img-responsive b-lazy" alt="Image">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                <a ng-href="{{vm.seeData.url}}"  class="btn btn-primary"  target="_blank">Go to Proyect</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </div>
 
-    </body>
-    </html>
+            </body>
+            </html>

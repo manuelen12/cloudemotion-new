@@ -20,6 +20,7 @@ var Sukces;
 	navigationOuterHeight,
 	navPadding,
 	blazy,
+	blazyTeam,
 	navMenuItemHeight,
 	idealNavHeight,
 	navIsNotTooTall,
@@ -372,7 +373,12 @@ Sukces = {
 		},
 		blazy:function() {
 			blazy= new Blazy({
-				selector:"img"
+				selector:"img.b-lazy",
+				success: function(ele){
+					console.log("cpoono");
+					$(ele).animate({opacity : 1});
+				}
+
 			})
 		},
 		mobileDetector: function () {
@@ -428,7 +434,6 @@ Sukces = {
 			$filter.on('click', 'a', function(){
 				selector=$(this).parents('.filter').data('filter-list');
 				$list = $(selector);
-				console.log($list);
 				filterValue = $(this).attr('data-filter');
 				$list.children().filter('.not-matched').removeClass('not-matched');
 				if(filterValue!="*") $list.children().not(filterValue).addClass('not-matched');
@@ -878,7 +883,10 @@ function setCarousel(parentElement,options,add) {
 		items:1,
 		animateOut: 'fadeOut',
 		animateIn: 'fadeIn',
-
+		lazyLoad: true,
+		onDragged:function() {
+			console.log("moviendome");
+		}
 	}
 	if (add) {
 		options=Object.assign(options,add);
