@@ -740,7 +740,7 @@ get_header();
                                                                     <a  <?php echo 'href="' . get_permalink($recent["ID"]) . '" title="'.$recent["post_title"].'"  '; ?>
                                                                         >
 
-                                                                        <img  height="447" data-src="<?php echo $img; ?>" class="m_center img-responsive" alt="image" />    
+                                                                        <img  height="447" data-src="<?php echo $img; ?>" class="m_center img-responsive b-lazy" alt="image" />    
                                                                     </a>
                                                                 </div>
                                                                 <?php }; ?>
