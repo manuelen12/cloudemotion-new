@@ -3,7 +3,7 @@
 	Config.$inject=["$translateProvider"]
 	function Config($translateProvider) {
 		$translateProvider.useStaticFilesLoader({
-			prefix: 'wp-content/themes/cloudemotion/translations/locale-',
+			prefix: 'cloudemotion/translations/locale-',
 			suffix: '.json'
 		});
 		$translateProvider.useSanitizeValueStrategy('escape');
