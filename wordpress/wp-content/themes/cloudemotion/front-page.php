@@ -467,8 +467,8 @@ get_header();
                                             </div>
                                         </div>
 
-                                        <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-left">
-                                            <section id="portfolio" class="section cover bg-black">
+                                        <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-left" id="portfolio">
+                                            <section  class="section cover bg-black">
 
                                                 <div class="mainTitle">
                                                     <h1 ng-bind="'Our Portfolio' | translate"></h1>

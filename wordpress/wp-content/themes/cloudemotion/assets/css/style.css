@@ -775,3 +775,24 @@ button.contact:focus
 .qodef-testimonials-slider-item{
 	padding: 0 3em;
 }
+.qodef-post-text{
+	border: 2px solid #e6e6e6 !important;
+}
+
+.qodef-post-image + .qodef-post-text{
+	border-top: initial !important;
+}
+
+.commentlist{list-style: none;}
+
+.comment-author.vcard img{
+    margin: 1em 1em 1em 0;
+}
+
+.title-blog{
+	display: flex ;
+}
+.title-blog .blog-standard-title{
+	width: 100%;
+	padding: 0 1em;
+}

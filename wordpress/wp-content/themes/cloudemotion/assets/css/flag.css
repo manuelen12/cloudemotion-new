@@ -2,17 +2,18 @@
 
 .flag, .f32{
 
-    background-size: 448px 320px;
-    width: 32px;
-    height: 20px;
+	background-size: 448px 320px;
+	width: 32px;
+	height: 20px;
 }
 .f32{
-    text-indent: 99999px;
+	text-indent: 99999px;
 }
+
 .flag{
     background-image:url(../../assets/img/flags_32.png);
-    text-indent: 99999px;
-    display: inline-block;
+	text-indent: 99999px;
+	display: inline-block;
 }
 .f32 .af{background-position:-32px 0px;}
 .f32 .ax{background-position:-64px 0px;}

@@ -1,6 +1,6 @@
 <?php 
-    $baseurl=(is_home() || is_single())?get_site_url()."/":""; 
-    $parallax=(is_home() || is_single())?"":"parallax-cl"; 
+$baseurl=(is_home() || is_single())?get_site_url()."/":""; 
+$parallax=(is_home() || is_single())?"":"parallax-cl"; 
 ?>
 <ul id="menu-main-menu" class="clearfix">
     <li class="menu-item qodef-active-item ">
@@ -94,16 +94,10 @@
             </span>
         </a>
     </li>
-    <li>
-        <a <?php echo $parallax; ?> class="" ng-click="vm.changeLanguage(vm.country)">
-            <span class="item_outer">
-                <span class="item_inner">
-                <span class="item_text show-small" ng-bind="vm.country"></span>
-                    <flag country="vm.country"  size="32"></flag>
-                </span>
-                <span class="plus"></span>
-            </span>
+    <li class="menu-item content-flag">
+        <a href>
+        <flag country="vm.country" ng-click="vm.changeLanguage(vm.country)" size="32"></flag>
         </a>
-    </li>                            
+    </li>
 
 </ul>

@@ -1470,11 +1470,14 @@ Screen Stylesheet
     .hamburger-menu:before{
       content: "\f03a";
     }
-    .hamburger-menu{
-      position: absolute;
-      right: 48px;
+    .content-flag{
+      width: 30px;
       line-height: 35px;
-      top: 35px;
+      margin: 0 10px !important;
+    }
+    .hamburger-menu{
+      position: relative;
+      line-height: 35px !important;
       width: 35px;    
       height: 35px;
       background: #25cbf5;
@@ -1482,6 +1485,7 @@ Screen Stylesheet
       cursor: pointer;
       text-align: center;
       color: white;
+      margin: 0 10px;
     }
 
     .qodef-portfolio-list-holder .qodef-portfolio-item{
@@ -1658,20 +1662,61 @@ Screen Stylesheet
       }
     }
 
-    @media all and (max-width:460px){}
+
+    .qodef-vertical-align-containers,#home-nav{
+      display: flex;
+    }
+
+    .qodef-position-left{width: 100%;}
+
+    .qodef-vertical-align-containers{
+      padding: 2em;
+    }
+
+    .middle-menu{flex-grow: 2;}
+    .qodef-position-right-inner{float: right;}
 
 
-    @keyframes rotateTeam{
-      from{ transform: rotate(0deg);}
-      to{transform: rotate(360deg);}
+
+
+   @media(max-width:460px){
+    .burger-u{
+      position: absolute;
+      right: 0;
+      top: 30px;
     }
-    @keyframes fadeTeam{
-      from{ opacity: 0}
-      80%{opacity: 1}
-      to{opacity: 0}
+    .qodef-drop-down ul{
+     margin-top: 50px;
+   }
+
+   .qodef-drop-down ul li{
+     width: 100%;
+   }
+
+    .qodef-vertical-align-containers,#home-nav{
+      flex-direction: column;
     }
-    @keyframes topBottom{
-      0%{top: 60px}
-      50%{top: 200px}
-      100%{top: 60px}
+    .qodef-blog-standard-post-date{
+      width: 50px;
+      margin: 1em auto;
     }
+    .title-blog{
+      flex-direction: column; 
+    }
+  }
+
+
+  @keyframes rotateTeam{
+    from{ transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+  }
+  @keyframes fadeTeam{
+    from{ opacity: 0}
+    80%{opacity: 1}
+    to{opacity: 0}
+  }
+  @keyframes topBottom{
+    0%{top: 60px}
+    50%{top: 200px}
+    100%{top: 60px}
+  }
