@@ -1,3 +1,4 @@
+import random
 # Stdlib imports
 # from os import mkdir, path
 from json import loads, dumps
@@ -69,6 +70,7 @@ class API(Base):
             **filters).order_by(*ordening)
         for i in __classification:
             __dict = {
+                "id": i.id,
                 "name": i.name,
                 "status": i.status,
                 "create_at": i.create_at,
@@ -101,7 +103,7 @@ class API(Base):
             "skill", "portfolio")
 
         __portfolio = Portfolios.objects.select_related(
-            "company"
+            "company", "classification"
             ).prefetch_related(
 
              Prefetch(
@@ -116,7 +118,14 @@ class API(Base):
                     "id": i.company.id,
                     "name": i.company.name,
                     "responsable": i.company.responsable,
+                    "image": i.company.image,
                 },
+                "classification": {
+                    "id": i.classification.id,
+                    "name": i.classification.name,
+                    "category": i.classification.category,
+                },
+                "screenshot": i.screenshot,
                 "image": i.image,
                 "url": i.url,
                 "year": i.year,
@@ -131,7 +140,7 @@ class API(Base):
                 __dict["developed"].append(__dict2)
             print(__dict)
             __array.append(__dict)
-
+            random.shuffle(__array)
         if not filters.get('pk'):
             self.paginator(__array, paginator)
         else:

@@ -13,12 +13,15 @@ get_header(); ?>
 <link href="<?php echo get_bloginfo( 'template_directory' );?>/assets/css/style.css" rel="stylesheet">
 
 
-<div class="qodef-title-holder">
+<?php     get_template_part( 'template-parts/navigation/navigation-top', null ); ?>
+
+
+<div class="qodef-title-holder single_post">
     <div class="qodef-container clearfix">
         <div class="qodef-container-inner">
             <div class="qodef-title-subtitle-holder" style="">
                 <div class="qodef-title-subtitle-holder-inner">
-                    <h1><span><?php the_title(); ?></span></h1>
+                    <h3><span><?php the_title(); ?></span></h3>
                     <span class="qodef-subtitle"><span><?php echo get_the_date(); ?></span></span>
                 </div>
             </div>
@@ -34,10 +37,10 @@ while ( have_posts() ) : the_post();
 
 ?>
 <div class="qodef-container">
-    <div class="qodef-container-inner">
+    <div class="qodef-container-inner single-container">
         <div class="qodef-blog-holder qodef-blog-type-standard">
             <div class="qodef-two-columns-75-25 qodef-content-has-sidebar  clearfix">
-                <div class="qodef-column1 qodef-content-left-from-sidebar">
+                <div class="col-md-8 col-lg-8 ">
                     <div class="qodef-column-inner">
 
                         <?php  
@@ -47,7 +50,7 @@ while ( have_posts() ) : the_post();
                     </div>
                 </div>
 
-                <div class="qodef-column2">
+                <div class="col-md-4 col-lg-4">
                     <div class="qodef-column-inner">
                         <aside class="qodef-sidebar">
                             <div class="widget qodef-latest-posts-widget"><div class="qodef-blog-list-holder qodef-image-in-box ">
@@ -70,15 +73,12 @@ while ( have_posts() ) : the_post();
 
                                     $recent_posts = wp_get_recent_posts( $args, ARRAY_A );
                                     foreach ($recent_posts as $recent) { 
+                                        $img = get_the_post_thumbnail_url($recent["ID"],'full'); 
+
                                         ?>
 
                                         <li class="qodef-blog-list-item clearfix">
                                             <div class="qodef-blog-list-item-inner">
-                                                <div class="qodef-item-image clearfix">
-                                                    <a href="http://startit.select-themes.com/managing-office-culture-2/">
-                                                        <img width="150" height="150" src="http://startit.select-themes.com/wp-content/uploads/2015/04/b-image-1a.jpg" class="attachment-full size-full wp-post-image" alt="b-image-1a">                
-                                                    </a>
-                                                </div>
                                                 <div class="qodef-item-text-holder">            
                                                     <h6 class="qodef-item-title ">
                                                         <?php       echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> '; ?>
@@ -135,7 +135,7 @@ while ( have_posts() ) : the_post();
                                         );
                                     $comments = get_comments($args);
                                     foreach($comments as $comment) :
-                                    ?>
+                                        ?>
                                     <li class="recentcomments">
                                         <span class="comment-author-link"><?php echo $comment->comment_author; ?></span> on 
                                         <a href="<?php echo get_permalink($comment->comment_post_ID); ?>"><?php echo $comment->post_name; ?></a>
@@ -164,7 +164,7 @@ while ( have_posts() ) : the_post();
 </div>
 
 <?php  
-                        // If comments are open or we have at least one comment, load up the comment template.
+/*                        // If comments are open or we have at least one comment, load up the comment template.
 
             // Previous/next post navigation.
 the_post_navigation( array(
@@ -176,7 +176,7 @@ the_post_navigation( array(
     '<span class="post-title">%title</span>',
     ) );
 
-
-endwhile;
-?>
+*/
+    endwhile;
+    ?>
 

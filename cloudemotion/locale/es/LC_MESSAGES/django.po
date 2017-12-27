@@ -114,3 +114,15 @@ msgstr "Técnico Medio Industrial en Construcción Civil."
 
 msgid "System Engineer"
 msgstr "Ingeniero en Sistemas"
+
+msgid "Backend Developer"
+msgstr "Desarrollador Backend"
+
+msgid "Frontend Developer"
+msgstr "Desarrollador Frontend"
+
+msgid "Department Manager"
+msgstr "Gerente de departamento"
+
+msgid "Product Manager"
+msgstr "Gerente de producto"

@@ -157,9 +157,20 @@ MANAGERS = ADMINS
 # Uses django-environ to accept uri format
 # See: https://django-environ.readthedocs.io/en/latest/#supported-types
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres:///cloudemotion'),
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'cloud',
+        'USER': 'root',
+        'PASSWORD': 'sector379',
+        'HOST': 'localhost',
+        'PORT': '3306',
+    }
 }
-DATABASES['default']['ATOMIC_REQUESTS'] = True
+
+# DATABASES = {
+#     'default': env.db('DATABASE_URL', default='postgres:///cloudemotion'),
+# }
+# DATABASES['default']['ATOMIC_REQUESTS'] = True
 
 
 # GENERAL CONFIGURATION
@@ -334,7 +345,7 @@ else:
 
 
 # Location of root django.contrib.admin URL, use {% url 'admin:index' %}
-ADMIN_URL = r'^admin/'
+ADMIN_URL = r'^manage/'
 
 # Your common stuff: Below this line define 3rd party library settings
 # ------------------------------------------------------------------------------

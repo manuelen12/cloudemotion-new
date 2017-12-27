@@ -17,7 +17,7 @@
 	"Course":"Cursos",
 	"Languages":"Lenguaje",
 	"Show All":"Ver más",
-	"Say Hello":"Dí Hola",
+	"Say Hello":"Contacto",
 	"Your Name":"Tu nombre",
 	"Subject":"Asunto",
 	"Message":"Mensaje",
@@ -25,5 +25,9 @@
 	"From":"Desde",
 	"To": "Hasta",
 	"Follow me":"Sigueme",
-	"Phone":"Teléfono"
+	"Phone":"Teléfono",
+	"Skills":"Habilidades",
+	"View More":"Ver Más",
+	"About Me":"Conoceme",
+	"Our Team":"Nuestro Equipo"
 }

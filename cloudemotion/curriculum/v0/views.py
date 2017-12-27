@@ -11,10 +11,12 @@ from .api import API
 # from .api import Controller
 from .serializers import (
         ClassificationSerializer,
+        CompaniesSerializer,
         PortfolioSerializer
 )
 from cloudemotion.curriculum.models import (
         Classifications,
+        Companies,
         Portfolios
     )
 from django.contrib.auth import get_user_model
@@ -100,6 +102,30 @@ class ClassificationsViewsets(viewsets.ModelViewSet):
 
     def get_queryset(self):
         return Classifications.objects.filter(status=True)
+
+
+class CompaniesViewsets(viewsets.ModelViewSet):
+    permission_classes = ()
+    # permission_classes = (permissions.AllowAny,)
+    # permission_classes = (UserDispensor2,)
+    """
+    A simple ViewSet for viewing and editing the accounts
+    associated with the user.
+    """
+    serializer_class = CompaniesSerializer
+    # permission_classes = [IsAccountAdminOrReadOnly]
+
+    def list(self, request, *args, **kwargs):
+        serializer = API(request)
+        serializer.get_classification()
+        if serializer.error:
+            print(serializer.error)
+            return default_responses(400, serializer.error)
+
+        return default_responses(200, serializer.result)
+
+    def get_queryset(self):
+        return Companies.objects.filter(status=True)
 
 
 class PortfoliosViewsets(viewsets.ModelViewSet):

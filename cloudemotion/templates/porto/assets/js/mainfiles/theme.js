@@ -52,17 +52,26 @@ function InitProgressBar(selector) {
 }
 //Owl-
 function initOwl(selector) {
+
+console.log($(selector));
 	setTimeout(function() {
 		$(selector).owlCarousel({
           loop:false,
           margin:0,
-          nav:false,    
+          nav:true,
+           navText: [
+	          "<i class='fa fa-left'></i>",
+	          "<i class='fa fa-right'></i>"
+	          ],     
           responsive:{
             0:{
               items:1,                                                                    
-            },500:{
+            },460:{
              items:2,
+           },900:{
+             items:3,
            }
+
          }
    		});
    	},1000);
@@ -70,7 +79,7 @@ function initOwl(selector) {
 function initOwlCourse(selector) {
 	setTimeout(function() {
 		$(selector).owlCarousel({
-	          loop: true,
+	          loop: false,
 	          margin: 3,
 	          nav: true,
 	          navText: [
@@ -81,11 +90,11 @@ function initOwlCourse(selector) {
 	            0: {
 	              items: 1
 	            },
-	            600: {
-	              items: 3
+	            500: {
+	              items: 2
 	            },
 	            1000: {
-	              items: 3
+	              items: 2
 	            }
 	          }
 	        })

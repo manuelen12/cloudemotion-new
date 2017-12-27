@@ -103,6 +103,18 @@ msgstr "Medium"
 msgid "Advanced"
 msgstr "Advanced"
 
+msgid "Backend Developer"
+msgstr "Backend Developer"
+
+msgid "Frontend Developer"
+msgstr "Frontend Developer"
+
+msgid "Department Manager"
+msgstr "Department Manager"
+
+msgid "Product Manager"
+msgstr "Product Manager"
+
 msgid "Bachelor of Science"
 msgstr "Bachelor of Science"
 

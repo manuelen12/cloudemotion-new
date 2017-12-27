@@ -10,6 +10,7 @@ from rest_framework import serializers
 # from django.contrib.auth.models import User
 from cloudemotion.curriculum.models import (
                                         Classifications,
+                                        Companies,
                                         Portfolios,
                                         )
 
@@ -23,4 +24,10 @@ class PortfolioSerializer(serializers.ModelSerializer):
 class ClassificationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Classifications
+        fields = '__all__'
+
+
+class CompaniesSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Companies
         fields = '__all__'

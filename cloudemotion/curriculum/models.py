@@ -8,6 +8,7 @@ from django.utils.translation import ugettext_lazy as _
 class Companies(models.Model):
     name = models.CharField(max_length=50)
     phone = models.CharField(max_length=50, null=True, blank=True)
+    image = models.CharField(max_length=200, null=True, blank=True)
     email = models.EmailField(max_length=50, null=True, blank=True)
     address = models.TextField(null=True, blank=True)
     responsable = models.CharField(max_length=100, null=True, blank=True)
@@ -43,7 +44,7 @@ class Experiences(models.Model):
         db_table = 'experiences'
 
     def __str__(self):
-        return self.company.name+ "/" +self.position.name
+        return self.user.username + "/" + self.company.name+ "/" +self.position.name
 
 
 class Institutes(models.Model):
@@ -98,7 +99,7 @@ class EducationsUser(models.Model):
         db_table = 'educations_user'
 
     def __str__(self):
-        return self.education.name+ "/" +self.institute.name
+        return self.user.username + "/" + self.education.name+ "/" +self.institute.name
 
 
 class Courses(models.Model):
@@ -131,7 +132,7 @@ class CoursesUser(models.Model):
         db_table = 'courses_user'
 
     def __str__(self):
-        return self.course.name+ "/" +self.institute.name
+        return  self.user.username + "/" + self.course.name+ "/" +self.institute.name
 
 
 class Skills(models.Model):
@@ -170,7 +171,7 @@ class SkillsUser(models.Model):
         db_table = 'skills_user'
 
     def __str__(self):
-        return self.skill.name
+        return self.user.username + "/" + self.skill.name
 
 
 class LanguajesUser(models.Model):
@@ -194,7 +195,7 @@ class LanguajesUser(models.Model):
         db_table = 'languajes_user'
 
     def __str__(self):
-        return self.languaje.name
+        return self.user.username + "/" + self.languaje.name
 
 
 class Classifications(models.Model):
@@ -223,6 +224,7 @@ class Portfolios(models.Model):
         Classifications, related_name='classification_portfolio')
     name = models.CharField(max_length=50)
     description = models.TextField()
+    screenshot = models.CharField(max_length=250, blank=True, null=True)
     image = models.CharField(max_length=250, blank=True, null=True)
     url = models.TextField()
     year = models.IntegerField()
@@ -291,3 +293,20 @@ class PortfolioSkill(models.Model):
 
     def __str__(self):
         return self.description
+
+
+class PortfolioUser(models.Model):
+    user = models.ForeignKey(
+       settings.AUTH_USER_MODEL,
+       on_delete=models.CASCADE,
+       related_name='port_us')
+    portfolio = models.ForeignKey(Portfolios, related_name="port_p")
+    description_es = models.TextField()
+    description_en = models.TextField()
+
+    class Meta:
+        app_label = "curriculum"
+        db_table = "portfolio_user"
+
+    def __str__(self):
+        return self.user.username + " " + self.portfolio.name

@@ -17,6 +17,7 @@ Including another URLconf
 from rest_framework import routers
 from cloudemotion.curriculum.v0.views import (
     ClassificationsViewsets,
+    CompaniesViewsets,
     PortfoliosViewsets,
     )
 # from rest_framework.urlpatterns import format_suffix_patterns
@@ -24,4 +25,5 @@ from cloudemotion.curriculum.v0.views import (
 router = routers.DefaultRouter()
 
 router.register(r'classifications', ClassificationsViewsets,base_name='classifications')
+router.register(r'company', CompaniesViewsets,base_name='company')
 router.register(r'portfolios', PortfoliosViewsets, base_name='portfolios')

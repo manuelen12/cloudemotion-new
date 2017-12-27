@@ -2,7 +2,8 @@
 
 <!DOCTYPE html>
 <html lang="en-GB" >
-<head>       
+<head>      
+	<meta name="google-site-verification" content="TX0pA9o6vX5Tu3-wYfFthj7w1IYZTHFl95ZBeWMhjBw" /> 
 	<link rel="shortcut icon" href="./assets/img/png/cloud.png" type="image/x-icon">
 	<link rel="apple-touch-icon" href="./assets/img/png/cloud.png">
 	<script id="getdata">

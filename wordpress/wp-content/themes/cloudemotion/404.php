@@ -47,6 +47,9 @@
 		-webkit-transition-delay: 0.5s;
 	}
 
+	.cont_aura_1, .cont_aura_2 {
+		box-shadow: 0px 0px 130px 15px rgba(31, 203, 245, 0.3);
+	}
 	.cont_aura_1 {
 		position:absolute;
 		width:300px;
@@ -54,7 +57,6 @@
 		top:25px;
 		right: -340px;
 		background-color: #24cbf5;
-		box-shadow: 0px 0px  60px  20px  rgba(31, 203, 245, 0.3);
 		-webkit-transition: all 0.5s;
 		transition: all 0.5s;
 	}
@@ -66,7 +68,6 @@
 		right:-10%;
 		bottom:-301px;
 		background-color: #25cbf5;
-		box-shadow: 0px 0px 60px 10px rgba(36, 203, 245, 0.3),0px 0px  20px  0px  rgba(0,0,0,0.1);
 		z-index:5;
 		transition: all 0.5s;
 		-webkit-transition: all 0.5s;

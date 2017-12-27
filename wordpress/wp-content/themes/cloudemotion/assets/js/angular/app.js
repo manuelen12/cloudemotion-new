@@ -1,15 +1,16 @@
-
+console.log(static);
 var cloudemotion = angular.module("mainApp",[
 	"pascalprecht.translate",
 	"pnotify",
 	"ngFlag"
 	])
 .constant('ENDPOINT', 'https://cloudemotionteam.com/api/v0/')
+.constant('static', static)
 .constant('particles',{
 	
 	"particles": {
 		"number": {
-			"value": 428,
+			"value": 228,
 			"density": {
 				"enable": true,
 				"value_area": 1843.9238699953512
