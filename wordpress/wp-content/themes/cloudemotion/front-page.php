@@ -802,7 +802,7 @@ get_header();
 
                                                                 <div class="card item" ng-class="{'active' : team.active}" ng-repeat="team in vm.team">
                                                                     <div class="photo">
-                                                                        <img on-error-src="./wp-content/themes/cloudemotion/assets/img/default_p.png" data-src="{{team.image}}" class="img-responsive b-lazy" alt="Image">
+                                                                        <img data-src="{{team.image}}" class="img-responsive b-lazy team-img" alt="Image">
                                                                     </div>
                                                                     <div class="banner"></div>
                                                                     <ul class="title-team">

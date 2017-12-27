@@ -20,7 +20,6 @@ var Sukces;
 	navigationOuterHeight,
 	navPadding,
 	blazy,
-	blazyTeam,
 	navMenuItemHeight,
 	idealNavHeight,
 	navIsNotTooTall,
@@ -374,9 +373,17 @@ Sukces = {
 		blazy:function() {
 			blazy= new Blazy({
 				selector:"img.b-lazy",
+				loadInvisible:true,
 				success: function(ele){
 					console.log("cpoono");
 					$(ele).animate({opacity : 1});
+				},error:function(ele,msg) {
+					console.log($(ele));
+					console.log($(ele).hasClass("team-img"));
+					if ($(ele).hasClass("team-img")) {
+						console.log("cloudemotion/assets/img/default_p.png");
+					$(ele).attr("src","cloudemotion/assets/img/default_p.png");
+					}
 				}
 
 			})
