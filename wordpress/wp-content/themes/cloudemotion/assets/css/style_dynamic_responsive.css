@@ -104,7 +104,7 @@ section.cover, .section.cover { padding-top: 0; padding-bottom: 0; }
 
 
 /* Tabs */
-.tabs-wrapper { position: relative; padding-right: 14px; }
+.tabs-wrapper { position: relative; padding: 0 1em; }
 .tabs-wrapper .owl-stage { margin:0 auto; }
 .tabs-wrapper .selector { position: absolute; bottom: 0; height: 2px; -moz-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px; background: #7fb840; -moz-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; -webkit-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
 
