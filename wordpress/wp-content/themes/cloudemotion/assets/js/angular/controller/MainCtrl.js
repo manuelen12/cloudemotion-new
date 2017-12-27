@@ -3,7 +3,7 @@
 	Config.$inject=["$translateProvider"]
 	function Config($translateProvider) {
 		$translateProvider.useStaticFilesLoader({
-			prefix: 'wp-content/themes/cloudemotion/translations/locale-',
+			prefix: 'cloudemotion/translations/locale-',
 			suffix: '.json'
 		});
 		$translateProvider.useSanitizeValueStrategy('escape');
@@ -60,6 +60,7 @@
 		}
 
 		this.$onInit=function() {
+			var teamBlazy;
 			particlesJS("qodef-p-particles-container",particles)
 			changeLanguage();
 			vm.getTeam.then(function(response) {
@@ -75,6 +76,11 @@
 						loop:false,
 						margin:10,
 						nav:true,
+						onTranslate:function() {
+							console.log(teamBlazy);
+							teamBlazy.revalidate()
+						}
+
 					};
 					var blog=angular.copy(opt);
 					blog.responsive={
@@ -90,7 +96,7 @@
 					setCarousel(".owl-blog",blog);
 					opt.items=1;
 					setCarousel(".qodef-testimonials",opt);
-					Sukces.Basic.blazy();
+					teamBlazy=Sukces.Basic.blazy();
 
 				},1000)
 			},function(error) {

@@ -7,14 +7,14 @@ Screen Stylesheet
 -----------------------------------------------------------------------------*/
 
 /* - bLazy  - */
-    .b-lazy {
-        -webkit-transition: all 1s ease-in-out;
-           -moz-transition: all 1s ease-in-out;
-             -o-transition: all 1s ease-in-out;
-                transition: all 1s ease-in-out;
-                 max-width: 100%;
-                   opacity: 0;
-    }
+.b-lazy {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  max-width: 100%;
+  opacity: 0;
+}
 /* -	bLazy  - */
 
 .team-box{
@@ -30,6 +30,10 @@ Screen Stylesheet
   -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
   z-index:1;
 }
+.b-lazy.team-img{
+  height: 100%;
+}
+
 .team-box .team-img,.team-box .team-details{
   text-align:center;
 }
@@ -1691,21 +1695,21 @@ Screen Stylesheet
 
 
 
-   @media(max-width:460px){
-    .burger-u{
-      position: absolute;
-      right: 0;
-      top: 30px;
-    }
-    .qodef-drop-down ul{
-     margin-top: 50px;
-   }
+    @media(max-width:460px){
+      .burger-u{
+        position: absolute;
+        right: 0;
+        top: 30px;
+      }
+      .qodef-drop-down ul{
+       margin-top: 50px;
+     }
 
-   .qodef-drop-down ul li{
-     width: 100%;
-   }
+     .qodef-drop-down ul li{
+       width: 100%;
+     }
 
-    .qodef-vertical-align-containers,#home-nav{
+     .qodef-vertical-align-containers,#home-nav{
       flex-direction: column;
     }
     .qodef-blog-standard-post-date{

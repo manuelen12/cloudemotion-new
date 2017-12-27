@@ -371,7 +371,7 @@ Sukces = {
 			this.filter();
 		},
 		blazy:function() {
-			blazy= new Blazy({
+			return new Blazy({
 				selector:"img.b-lazy",
 				loadInvisible:true,
 				success: function(ele){
@@ -381,12 +381,14 @@ Sukces = {
 					console.log($(ele));
 					console.log($(ele).hasClass("team-img"));
 					if ($(ele).hasClass("team-img")) {
-						console.log("cloudemotion/assets/img/default_p.png");
-					$(ele).attr("src","cloudemotion/assets/img/default_p.png");
+						console.log(static+"/assets/img/default_p.png");
+					$(ele).animate({opacity : 1});
+					$(ele).attr("src",static+"/assets/img/default_p.png");
 					}
 				}
 
 			})
+
 		},
 		mobileDetector: function () {
 
@@ -890,8 +892,7 @@ function setCarousel(parentElement,options,add) {
 		items:1,
 		animateOut: 'fadeOut',
 		animateIn: 'fadeIn',
-		lazyLoad: true,
-		onDragged:function() {
+		onTranslate:function() {
 			console.log("moviendome");
 		}
 	}
