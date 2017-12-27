@@ -92,6 +92,8 @@
 					setCarousel(".owl-blog",blog);
 					opt.items=1;
 					setCarousel(".qodef-testimonials",opt);
+					Sukces.Basic.blazy();
+
 				},1000)
 			},function(error) {
 			})
@@ -129,7 +131,7 @@
 					data.class=data.classification.name.split(" ").join("-");
 				})
 				vm.portfolios=response.data;
-				
+				Sukces.Basic.blazy();
 				var opt={	
 					loop:false,
 					margin:10,

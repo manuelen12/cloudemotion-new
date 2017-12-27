@@ -19,8 +19,8 @@
         </article>          
         <article class=" back">
             <div id="logo-cl" class="form-group">
-                <img class="img-responsive" width="200" src="./wp-content/themes/cloudemotion/assets/img/cloud.png">
-                <img class="img-responsive" width="200" src="./wp-content/themes/cloudemotion/assets/img/logo_header.jpg">
+                <img class="img-responsive" width="200" data-src="./wp-content/themes/cloudemotion/assets/img/cloud.png">
+                <img class="img-responsive" width="200" data-src="./wp-content/themes/cloudemotion/assets/img/logo_header.jpg">
             </div>
             <button id="trigger" ng-click="vm.flip=false;" class="btn btn-primary">Solicitar informacion</button>
 

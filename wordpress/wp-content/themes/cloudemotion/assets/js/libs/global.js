@@ -19,6 +19,7 @@ var Sukces;
 	navigationHeight,
 	navigationOuterHeight,
 	navPadding,
+	blazy,
 	navMenuItemHeight,
 	idealNavHeight,
 	navIsNotTooTall,
@@ -368,7 +369,11 @@ Sukces = {
 			this.masonry();
 			this.map();
 			this.filter();
-
+		},
+		blazy:function() {
+			blazy= new Blazy({
+				selector:"img"
+			})
 		},
 		mobileDetector: function () {
 

@@ -30,12 +30,14 @@ function Nucleo() {
 cloudemotion.directive('onErrorSrc', function() {
     return {
         link: function(scope, element, attrs) {
-            console.log("upload image");
+            console.log(element);
             element.on('error', function() {
+                console.log("attrs.onErrorSrc");
                 if (attrs.src != attrs.onErrorSrc) {
                     attrs.$set('src', attrs.onErrorSrc);
                 }
             }).on('load', function() {
+                console.log("attrs.onErrorSrc");
                 if (!attrs.src) {
                     attrs.$set('src', attrs.onErrorSrc);
                 }

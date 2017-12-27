@@ -188,6 +188,7 @@ if(!is_admin()){
 
 	$scripts = array(
 		'jquery-3.2.1.min',
+		'blazy',
 		'particles.min',
 		'spinners.min',
 		'jquery.form.min',
