@@ -126,3 +126,36 @@ msgstr "Medium Industrial Technician in Civil Construction."
 
 msgid "System Engineer"
 msgstr "System Engineer"
+
+msgid "Informatics Engineer"
+msgstr "Informatics Engineer"
+
+msgid "Informatic Engineering"
+msgstr "Informatic Engineering"
+
+msgid "Programmer"
+msgstr "Programmer"
+
+msgid "Graphic Designer / Telemarketing Analyst / Digital Marketing"
+msgstr "Graphic Designer / Telemarketing Analyst / Digital Marketing"
+
+msgid "Technical Support Analyst."
+msgstr "Technical Support Analyst."
+
+msgid "Marketing and web content analyst"
+msgstr "Marketing and web content analyst"
+
+msgid "Digital marketing advisor"
+msgstr "Digital marketing advisor"
+
+msgid "Seller/Analyst"
+msgstr "Seller/Analyst"
+
+msgid "Mechanic's Helper"
+msgstr "Mechanic's Helper"
+
+msgid "Assistant Engineer"
+msgstr "Assistant Engineer"
+
+msgid "Saleswoman"
+msgstr "Saleswoman"

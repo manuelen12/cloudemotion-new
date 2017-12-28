@@ -126,3 +126,36 @@ msgstr "Gerente de departamento"
 
 msgid "Product Manager"
 msgstr "Gerente de producto"
+
+msgid "Informatics Engineer"
+msgstr "Ingeniero en Informática"
+
+msgid "Informatic Engineering"
+msgstr "Ingeniería Informática"
+
+msgid "Programmer"
+msgstr "Programador"
+
+msgid "Graphic Designer / Telemarketing Analyst / Digital Marketing"
+msgstr "Programador"
+
+msgid "Technical Support Analyst."
+msgstr "Analista de Soporte Técnico."
+
+msgid "Marketing and web content analyst"
+msgstr "Analista de mercadeo y contenidos web"
+
+msgid "Digital marketing advisor"
+msgstr "Asesor de marketing digital"
+
+msgid "Seller/Analyst"
+msgstr "Vendedor/Analista"
+
+msgid "Mechanic's Helper"
+msgstr "Ayudante de Mecanica"
+
+msgid "Assistant Engineer"
+msgstr "Ingeniero Asistente"
+
+msgid "Saleswoman"
+msgstr "Vendedora"

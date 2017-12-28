@@ -158,7 +158,7 @@ class API(Base):
                 "email": i.email,
                 "position": {
                     "id": i.position.id,
-                    "name": i.position.name,
+                    "name": _(i.position.name),
                 } if i.position_id else {},
                 "city": {
                     "id": i.city.id,
@@ -294,7 +294,7 @@ class API(Base):
                 __dict2 = {
                     "level": {
                         "id": e.level,
-                        "name": _(e.get_level_display())
+                        "name": e.get_level_display()
                     },
                     "name": _(e.skill.name)
                 }
