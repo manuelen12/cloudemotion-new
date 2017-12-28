@@ -51,23 +51,23 @@ msgid "Venezuelan"
 msgstr "Venezuelana"
 
 #: cloudemotion/users/v0/api.py:195
-msgid "Computing Engineer"
+msgid "Computing Engineering"
 msgstr "Ingeniero en Informática"
 
 #: cloudemotion/users/v0/api.py:195
-msgid "Mechanical Engineer"
+msgid "Mechanical Engineering"
 msgstr "Ingeniero en Mecánica"
 
 #: cloudemotion/users/v0/api.py:195
-msgid "Telecommunications Engineer"
+msgid "Telecommunications Engineering"
 msgstr "Ingeniero en Telecomunicaciones"
 
 #: cloudemotion/users/v0/api.py:195
-msgid "Electronics Engineer"
+msgid "Electronics Engineering"
 msgstr "Ingeniero en Electrónica"
 
 #: cloudemotion/users/v0/api.py:195
-msgid "Civil Engineer"
+msgid "Civil Engineering" 
 msgstr "Ingeniero Civil"
 
 #: cloudemotion/users/v0/api.py:195
@@ -112,7 +112,7 @@ msgstr "Técnico Superior Universitario en Informática"
 msgid "Medium Industrial Technician in Civil Construction."
 msgstr "Técnico Medio Industrial en Construcción Civil."
 
-msgid "System Engineer"
+msgid "System Engineering"
 msgstr "Ingeniero en Sistemas"
 
 msgid "Backend Developer"
@@ -127,7 +127,7 @@ msgstr "Gerente de departamento"
 msgid "Product Manager"
 msgstr "Gerente de producto"
 
-msgid "Informatics Engineer"
+msgid "Informatics Engineering"
 msgstr "Ingeniero en Informática"
 
 msgid "Informatic Engineering"
@@ -137,7 +137,7 @@ msgid "Programmer"
 msgstr "Programador"
 
 msgid "Graphic Designer / Telemarketing Analyst / Digital Marketing"
-msgstr "Programador"
+msgstr "Diseñador Gráfico / Analista de telemercadeo / Marketing Digital"
 
 msgid "Technical Support Analyst."
 msgstr "Analista de Soporte Técnico."
@@ -159,3 +159,9 @@ msgstr "Ingeniero Asistente"
 
 msgid "Saleswoman"
 msgstr "Vendedora"
+
+msgid "Marketing"
+msgstr "Mercadeo"
+
+msgid "Senior University Technician in Graphic Design"
+msgstr "Técnico Superior Universitario en Diseño Gráfico"
