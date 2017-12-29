@@ -287,6 +287,7 @@ class API(Base):
                     "description": e.l_exp2[0].description if e.l_exp2 else "",
                     "start_date": e.start_date,
                     "ending_date": e.ending_date,
+                    "currently": e.currently,
                 }
                 __dict["user_experience"].append(__dict2)
 
