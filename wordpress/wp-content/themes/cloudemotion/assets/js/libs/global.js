@@ -19,6 +19,7 @@ var Sukces;
 	navigationHeight,
 	navigationOuterHeight,
 	navPadding,
+	blazy,
 	navMenuItemHeight,
 	idealNavHeight,
 	navIsNotTooTall,
@@ -368,6 +369,25 @@ Sukces = {
 			this.masonry();
 			this.map();
 			this.filter();
+		},
+		blazy:function() {
+			return new Blazy({
+				selector:"img.b-lazy",
+				loadInvisible:true,
+				success: function(ele){
+					console.log("cpoono");
+					$(ele).animate({opacity : 1});
+				},error:function(ele,msg) {
+					console.log($(ele));
+					console.log($(ele).hasClass("team-img"));
+					if ($(ele).hasClass("team-img")) {
+						console.log(static+"/assets/img/default_p.png");
+					$(ele).animate({opacity : 1});
+					$(ele).attr("src",static+"/assets/img/default_p.png");
+					}
+				}
+
+			})
 
 		},
 		mobileDetector: function () {
@@ -423,7 +443,6 @@ Sukces = {
 			$filter.on('click', 'a', function(){
 				selector=$(this).parents('.filter').data('filter-list');
 				$list = $(selector);
-				console.log($list);
 				filterValue = $(this).attr('data-filter');
 				$list.children().filter('.not-matched').removeClass('not-matched');
 				if(filterValue!="*") $list.children().not(filterValue).addClass('not-matched');
@@ -873,7 +892,9 @@ function setCarousel(parentElement,options,add) {
 		items:1,
 		animateOut: 'fadeOut',
 		animateIn: 'fadeIn',
-
+		onTranslate:function() {
+			console.log("moviendome");
+		}
 	}
 	if (add) {
 		options=Object.assign(options,add);

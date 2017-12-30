@@ -40,7 +40,7 @@ while ( have_posts() ) : the_post();
     <div class="qodef-container-inner single-container">
         <div class="qodef-blog-holder qodef-blog-type-standard">
             <div class="qodef-two-columns-75-25 qodef-content-has-sidebar  clearfix">
-                <div class="qodef-column1 qodef-content-left-from-sidebar">
+                <div class="col-md-8 col-lg-8 ">
                     <div class="qodef-column-inner">
 
                         <?php  
@@ -50,7 +50,7 @@ while ( have_posts() ) : the_post();
                     </div>
                 </div>
 
-                <div class="qodef-column2">
+                <div class="col-md-4 col-lg-4">
                     <div class="qodef-column-inner">
                         <aside class="qodef-sidebar">
                             <div class="widget qodef-latest-posts-widget"><div class="qodef-blog-list-holder qodef-image-in-box ">
@@ -79,11 +79,6 @@ while ( have_posts() ) : the_post();
 
                                         <li class="qodef-blog-list-item clearfix">
                                             <div class="qodef-blog-list-item-inner">
-                                                <div class="qodef-item-image clearfix">
-                                                    <a href="http://startit.select-themes.com/managing-office-culture-2/">
-                                                        <img width="150" height="150" src="http://startit.select-themes.com/wp-content/uploads/2015/04/b-image-1a.jpg" class="attachment-full size-full wp-post-image" alt="b-image-1a">                
-                                                    </a>
-                                                </div>
                                                 <div class="qodef-item-text-holder">            
                                                     <h6 class="qodef-item-title ">
                                                         <?php       echo '<li><a href="' . get_permalink($recent["ID"]) . '">' .   $recent["post_title"].'</a> </li> '; ?>

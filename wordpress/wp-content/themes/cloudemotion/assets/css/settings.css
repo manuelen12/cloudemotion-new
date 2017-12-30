@@ -1,9 +1,21 @@
 /*-----------------------------------------------------------------------------
 
--	Team Cards  -
+
+
 
 Screen Stylesheet
 -----------------------------------------------------------------------------*/
+
+/* - bLazy  - */
+.b-lazy {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  max-width: 100%;
+  opacity: 0;
+}
+/* -	bLazy  - */
 
 .team-box{
   margin-left:1em;
@@ -18,6 +30,10 @@ Screen Stylesheet
   -webkit-mask-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAIAAACQd1PeAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA5JREFUeNpiYGBgAAgwAAAEAAGbA+oJAAAAAElFTkSuQmCC);
   z-index:1;
 }
+.b-lazy.team-img{
+  height: 100%;
+}
+
 .team-box .team-img,.team-box .team-details{
   text-align:center;
 }
@@ -1470,11 +1486,14 @@ Screen Stylesheet
     .hamburger-menu:before{
       content: "\f03a";
     }
-    .hamburger-menu{
-      position: absolute;
-      right: 48px;
+    .content-flag{
+      width: 30px;
       line-height: 35px;
-      top: 35px;
+      margin: 0 10px !important;
+    }
+    .hamburger-menu{
+      position: relative;
+      line-height: 35px !important;
       width: 35px;    
       height: 35px;
       background: #25cbf5;
@@ -1482,6 +1501,7 @@ Screen Stylesheet
       cursor: pointer;
       text-align: center;
       color: white;
+      margin: 0 10px;
     }
 
     .qodef-portfolio-list-holder .qodef-portfolio-item{
@@ -1658,50 +1678,61 @@ Screen Stylesheet
       }
     }
 
-    @media all and (max-width:460px){
-      .contentTeam:before{
-        background-size: 125px;
-        background-position: 115px 120px;
-      }
-      .contentHand:before{
-        width: 115px;
-        height: 160px;
-        left: 114px;
-        top: 55px;
-      }
-      .contentHand:after{
-        background-size: 200px;
-      }
-      .teamR{
-        max-width: initial !important;
-        width: 350px;
-        height: 360px !important;
-      }
-      .handR{
-        max-width: initial !important;
-        width: 300px;
-        height: 360px !important;
-      }
-      .qodef-portfolio-list-holder .qodef-portfolio-item{
-        width: 100%;
-      }
-      .col-xs-6{
-        width: 100% !important;
-      }
+
+    .qodef-vertical-align-containers,#home-nav{
+      display: flex;
     }
 
+    .qodef-position-left{width: 100%;}
 
-    @keyframes rotateTeam{
-      from{ transform: rotate(0deg);}
-      to{transform: rotate(360deg);}
+    .qodef-vertical-align-containers{
+      padding: 2em;
     }
-    @keyframes fadeTeam{
-      from{ opacity: 0}
-      80%{opacity: 1}
-      to{opacity: 0}
+
+    .middle-menu{flex-grow: 2;}
+    .qodef-position-right-inner{float: right;}
+
+
+
+
+    @media(max-width:460px){
+      .burger-u{
+        position: absolute;
+        right: 0;
+        top: 30px;
+      }
+      .qodef-drop-down ul{
+       margin-top: 50px;
+     }
+
+     .qodef-drop-down ul li{
+       width: 100%;
+     }
+
+     .qodef-vertical-align-containers,#home-nav{
+      flex-direction: column;
     }
-    @keyframes topBottom{
-      0%{top: 60px}
-      50%{top: 200px}
-      100%{top: 60px}
+    .qodef-blog-standard-post-date{
+      width: 50px;
+      margin: 1em auto;
     }
+    .title-blog{
+      flex-direction: column; 
+    }
+  }
+
+
+  @keyframes rotateTeam{
+    from{ transform: rotate(0deg);}
+    to{transform: rotate(360deg);}
+  }
+  @keyframes fadeTeam{
+    from{ opacity: 0}
+    80%{opacity: 1}
+    to{opacity: 0}
+  }
+  @keyframes topBottom{
+    0%{top: 60px}
+    50%{top: 200px}
+    100%{top: 60px}
+  }

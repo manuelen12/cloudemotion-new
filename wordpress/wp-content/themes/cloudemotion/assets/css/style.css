@@ -722,7 +722,9 @@ button.contact:focus
 #hiddenCollapse.collapse[aria-expanded="false"]:before {
 	content: "";
 	position: absolute;
-	width: 102%;
+	width: 100vw;
+	left: 0;
+	right: 0;
 	height: 250px;
 	z-index: 1;
 	background: rgba(0,0,0,0.3);
@@ -768,4 +770,29 @@ button.contact:focus
 
 .qodef-post-text-inner .qodef-post-title{
 	border-bottom: 2px solid lightgray;
+}
+
+.qodef-testimonials-slider-item{
+	padding: 0 3em;
+}
+.qodef-post-text{
+	border: 2px solid #e6e6e6 !important;
+}
+
+.qodef-post-image + .qodef-post-text{
+	border-top: initial !important;
+}
+
+.commentlist{list-style: none;}
+
+.comment-author.vcard img{
+    margin: 1em 1em 1em 0;
+}
+
+.title-blog{
+	display: flex ;
+}
+.title-blog .blog-standard-title{
+	width: 100%;
+	padding: 0 1em;
 }

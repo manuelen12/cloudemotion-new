@@ -1012,3 +1012,14 @@ section.custom-timeline .timeline-box .experience-info .company > span {
 .image-box:hover .image:after { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; visibility: visible; }
 .image-box:hover .hover { filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false); opacity: 1; -moz-transform: translateX(0); -ms-transform: translateX(0); -webkit-transform: translateX(0); transform: translateX(0); visibility: visible; }
 .image-box:not(.no-zooming):hover .image img { -moz-transform: scale(1.05, 1.05); -ms-transform: scale(1.05, 1.05); -webkit-transform: scale(1.05, 1.05); transform: scale(1.05, 1.05); }
+
+.image-container{
+  padding: 0;
+  transition: all 1s ease-in-out;
+}
+
+.not-matched{
+  width: 0;
+  height: 0;
+  opacity: 0;
+}

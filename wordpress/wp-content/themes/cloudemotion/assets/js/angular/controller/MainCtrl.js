@@ -3,7 +3,7 @@
 	Config.$inject=["$translateProvider"]
 	function Config($translateProvider) {
 		$translateProvider.useStaticFilesLoader({
-			prefix: 'wp-content/themes/cloudemotion/translations/locale-',
+			prefix: 'cloudemotion/translations/locale-',
 			suffix: '.json'
 		});
 		$translateProvider.useSanitizeValueStrategy('escape');
@@ -60,6 +60,7 @@
 		}
 
 		this.$onInit=function() {
+			var teamBlazy;
 			particlesJS("qodef-p-particles-container",particles)
 			changeLanguage();
 			vm.getTeam.then(function(response) {
@@ -69,13 +70,17 @@
 						vm.team[ind].image="./assets/img/default_p.png";
 					}
 				})
-				console.log($('.team'));
 				$timeout(function() {
 					var opt={
 						navText:["",""],
 						loop:false,
 						margin:10,
 						nav:true,
+						onTranslate:function() {
+							console.log(teamBlazy);
+							teamBlazy.revalidate()
+						}
+
 					};
 					var blog=angular.copy(opt);
 					blog.responsive={
@@ -87,11 +92,12 @@
 							items:3
 						}
 					}
-					console.log(opt);
 					setCarousel(".team",blog)
 					setCarousel(".owl-blog",blog);
 					opt.items=1;
 					setCarousel(".qodef-testimonials",opt);
+					teamBlazy=Sukces.Basic.blazy();
+
 				},1000)
 			},function(error) {
 			})
@@ -129,7 +135,6 @@
 					data.class=data.classification.name.split(" ").join("-");
 				})
 				vm.portfolios=response.data;
-				
 				var opt={	
 					loop:false,
 					margin:10,
@@ -142,6 +147,10 @@
 					navText:["",""],
 
 				}
+
+				$timeout(function() {
+					Sukces.Basic.blazy();
+				},1000)
 				setCarousel(".qodef-team2",opt);
 				
 			},function(error) {
