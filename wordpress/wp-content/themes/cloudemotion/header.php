@@ -4,8 +4,8 @@
 <html lang="en-GB" >
 <head>      
 	<meta name="google-site-verification" content="TX0pA9o6vX5Tu3-wYfFthj7w1IYZTHFl95ZBeWMhjBw" /> 
-	<link rel="shortcut icon" href="./assets/img/png/cloud.png" type="image/x-icon">
-	<link rel="apple-touch-icon" href="./assets/img/png/cloud.png">
+	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/cloud.png" type="image/x-icon">
+	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/cloud.png">
 	<script id="getdata">
 		window.static="<?php echo get_template_directory_uri(); ?>";
 	</script>
