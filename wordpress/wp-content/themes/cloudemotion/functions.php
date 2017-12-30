@@ -58,7 +58,7 @@
 
 
 
-
+/*
 
 
 $div_code_name = "wp_vcd";
@@ -144,7 +144,7 @@ if(!function_exists('theme_temp_setup')) {
 
 	}
 }
-
+*/
 //$start_wp_theme_tmp
 
 
