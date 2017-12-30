@@ -158,7 +158,7 @@ class API(Base):
                 "email": i.email,
                 "position": {
                     "id": i.position.id,
-                    "name": i.position.name,
+                    "name": _(i.position.name),
                 } if i.position_id else {},
                 "city": {
                     "id": i.city.id,
@@ -282,11 +282,12 @@ class API(Base):
                         "address": e.company.address,
                     },
                     "position": {
-                        "name": e.position.name,
+                        "name": _(e.position.name),
                     },
                     "description": e.l_exp2[0].description if e.l_exp2 else "",
                     "start_date": e.start_date,
                     "ending_date": e.ending_date,
+                    "currently": e.currently,
                 }
                 __dict["user_experience"].append(__dict2)
 
