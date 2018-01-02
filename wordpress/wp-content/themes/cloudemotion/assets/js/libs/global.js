@@ -378,11 +378,8 @@ Sukces = {
 				selector:"img.b-lazy",
 				loadInvisible:true,
 				success: function(ele){
-					console.log("cpoono");
 					$(ele).animate({opacity : 1});
 				},error:function(ele,msg) {
-					console.log($(ele));
-					console.log($(ele).hasClass("team-img"));
 					if ($(ele).hasClass("team-img")) {
 						console.log(static+"/assets/img/default_p.png");
 					$(ele).animate({opacity : 1});

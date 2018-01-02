@@ -29,7 +29,7 @@
 
 	.loader.in:before{
 		content: "";
-		background-image: url(wp-content/themes/cloudemotion/assets/img/logo1.jpg);
+		background-image: url(<?php echo get_template_directory_uri(); ?>/assets/img/logo1.jpg);
 		width: 300px;
 		height: 300px;
 		background-size:contain; 

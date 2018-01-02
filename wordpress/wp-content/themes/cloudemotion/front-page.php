@@ -76,7 +76,7 @@ get_header();
                                                                         <div class="wpb_single_image wpb_content_element vc_align_right wpb_bottom-to-top">
                                                                             <figure class="wpb_wrapper vc_figure">
                                                                                 <div class="vc_single_image-wrapper   vc_box_border_grey">
-                                                                                    <img width="504" height="457" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/programadores.png" class="vc_single_image-img b-lazy attachment-full" alt="a" srcset="<?php echo get_template_directory_uri(); ?>/assets/img/programadores.png 504w, <?php echo get_template_directory_uri(); ?>/assets/img/graphic-1-home-main-300x272.png 300w" sizes="(max-width: 504px) 100vw, 504px" />
+                                                                                    <img width="504" height="457" data-src="<?php echo get_template_directory_uri(); ?>/build/img/programadores.png" class="vc_single_image-img b-lazy attachment-full" alt="a" srcset="<?php echo get_template_directory_uri(); ?>/build/img/programadores.png 504w, <?php echo get_template_directory_uri(); ?>/build/img/graphic-1-home-main-300x272.png 300w" sizes="(max-width: 504px) 100vw, 504px" />
                                                                                 </div>
                                                                             </figure>
                                                                         </div>
@@ -107,15 +107,15 @@ get_header();
                                                 <ul class="nav nav-tabs" role="tablist" id="myTab1" style="text-align:center;">
                                                     <li role="presentation" ng-class="{'active':vm.service_t==2}"><a ng-click="vm.service_t=2" aria-controls="home" role="tab" data-toggle="tab">
                                                         <i>
-                                                            <img data-src="<?php echo get_template_directory_uri(); ?>/assets/img/icomobile.png" width="50px" height="50px" alt="Mobile" class="b-lazy">
+                                                            <img data-src="<?php echo get_template_directory_uri(); ?>/build/img/icomobile.png" width="50px" height="50px" alt="Mobile" class="b-lazy">
                                                         </i> Mobile</a></li>
                                                         <li role="presentation" ng-class="{'active':vm.service_t==1}"><a ng-click="vm.service_t=1" aria-controls="home" role="tab" data-toggle="tab">
                                                             <i>
-                                                                <img class="b-lazy" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/icomarketing.png" width="50px" height="50px" alt="Marketing">
+                                                                <img class="b-lazy" data-src="<?php echo get_template_directory_uri(); ?>/build/img/icomarketing.png" width="50px" height="50px" alt="Marketing">
                                                             </i> Marketing</a></li>
                                                             <li role="presentation" ng-class="{'active':vm.service_t==3}"><a ng-click="vm.service_t=3" aria-controls="home" role="tab" data-toggle="tab">
                                                                 <i>
-                                                                    <img class="b-lazy" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/icoweb.png" width="50px" height="50px" alt="Web">
+                                                                    <img class="b-lazy" data-src="<?php echo get_template_directory_uri(); ?>/build/img/icoweb.png" width="50px" height="50px" alt="Web">
                                                                 </i> Web</a></li>
                                                             </ul>
                                                             <!-- Tab panes -->
@@ -129,7 +129,7 @@ get_header();
                                                                                 <div class="col-md-6 col-sm-6">
                                                                                     <div class="serviceBox">
                                                                                         <div class="service-icon">
-                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/pay_advertising.png"  class="text-center b-lazy">
+                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/build/img/pay_advertising.png"  class="text-center b-lazy">
                                                                                         </div>
                                                                                         <div class="service-content">
                                                                                             <h3 ng-bind="'Pay Advertising' | translate"></h3>
@@ -141,7 +141,7 @@ get_header();
                                                                                 <div class="col-md-6 col-sm-6">
                                                                                     <div class="serviceBox" style="border-right:0px;">
                                                                                         <div class="service-icon">
-                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/email_marketing.png"  class="text-center b-lazy">
+                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/build/img/email_marketing.png"  class="text-center b-lazy">
                                                                                         </div>
                                                                                         <div class="service-content">
                                                                                             <h3 ng-bind="'Email Marketing' | translate">Email Marketing</h3>
@@ -156,7 +156,7 @@ get_header();
                                                                                 <div class="col-md-6 col-sm-6">
                                                                                     <div class="serviceBox">
                                                                                         <div class="service-icon">
-                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/social_media.png"  class="text-center b-lazy">
+                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/build/img/social_media.png"  class="text-center b-lazy">
                                                                                         </div>
                                                                                         <div class="service-content">
                                                                                             <h3 ng-bind="'Social Media Marketing' | translate">Social Media Marketing</h3>
@@ -169,7 +169,7 @@ get_header();
                                                                                 <div class="col-md-6 col-sm-6">
                                                                                     <div class="serviceBox" style="border-right:0px;">
                                                                                         <div class="service-icon">
-                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/brand_generation.png"  class="text-center b-lazy">
+                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/build/img/brand_generation.png"  class="text-center b-lazy">
                                                                                         </div>
                                                                                         <div class="service-content">
                                                                                             <h3 ng-bind="'Brand Generation' | translate">Brand Generation</h3>
@@ -313,7 +313,7 @@ get_header();
                                                                                 <div class="col-md-6 col-sm-6">
                                                                                     <div class="serviceBox">
                                                                                         <div class="service-icon">
-                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/personalized_design.png"  class="text-center b-lazy">
+                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/build/img/personalized_design.png"  class="text-center b-lazy">
                                                                                         </div>
                                                                                         <div class="service-content">
                                                                                             <h3 ng-bind="'Personalized Design' | translate">Personalized Design</h3>
@@ -325,7 +325,7 @@ get_header();
                                                                                 <div class="col-md-6 col-sm-6">
                                                                                     <div class="serviceBox" style="border-right:0px;">
                                                                                         <div class="service-icon">
-                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/android_apple.png"  class="text-center b-lazy">
+                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/build/img/android_apple.png"  class="text-center b-lazy">
                                                                                         </div>
                                                                                         <div class="service-content">
                                                                                             <h3 ng-bind="'Android and Apple' | translate">Android and Apple</h3>
@@ -340,7 +340,7 @@ get_header();
                                                                                 <div class="col-md-4 col-sm-4">
                                                                                     <div class="serviceBox">
                                                                                         <div class="service-icon">
-                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/updates.png"  class="text-center b-lazy">
+                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/build/img/updates.png"  class="text-center b-lazy">
                                                                                         </div>
                                                                                         <div class="service-content">
                                                                                             <h3 ng-bind="'Updates' | translate">Updates</h3>
@@ -353,7 +353,7 @@ get_header();
                                                                                 <div class="col-md-4 col-sm-4">
                                                                                     <div class="serviceBox">
                                                                                         <div class="service-icon">
-                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/artificial_intelligence.png"  class="text-center b-lazy">
+                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/build/img/artificial_intelligence.png"  class="text-center b-lazy">
                                                                                         </div>
                                                                                         <div class="service-content">
                                                                                             <h3 ng-bind="'Artificial intelligence' | translate">Artificial intelligence</h3>
@@ -366,7 +366,7 @@ get_header();
                                                                                 <div class="col-md-4 col-sm-4">
                                                                                     <div class="serviceBox" style="border-right:0px;">
                                                                                         <div class="service-icon">
-                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/segurity.png"  class="text-center b-lazy">
+                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/build/img/segurity.png"  class="text-center b-lazy">
                                                                                         </div>
                                                                                         <div class="service-content">
                                                                                             <h3 ng-bind="'Security' | translate">Security</h3>
@@ -398,7 +398,7 @@ get_header();
                                                                                     <div class="electron g"></div>
                                                                                 </div>
 
-                                                                                <!-- <img data-src="<?php echo get_template_directory_uri(); ?>/assets/img/web_page_1.jpg" alt="Web Page" class="img-responsive text-center b-lazy animated fadeIn" ng-show="vm.image_web==1"> -->
+                                                                                <!-- <img data-src="<?php echo get_template_directory_uri(); ?>/build/img/web_page_1.jpg" alt="Web Page" class="img-responsive text-center b-lazy animated fadeIn" ng-show="vm.image_web==1"> -->
 
                                                                                 <article class="web-cont animated bounceInDown" ng-show="vm.image_web==2">
                                                                                     <div class="web2 pc">
@@ -411,9 +411,9 @@ get_header();
 
                                                                                 </article>
 
-                                                                                <img data-src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST3.png" alt="Customizable" class="img-responsive text-center b-lazy animated bounceInLeft" ng-show="vm.image_web==3">
+                                                                                <img data-src="<?php echo get_template_directory_uri(); ?>/build/img/TEST3.png" alt="Customizable" class="img-responsive text-center b-lazy animated bounceInLeft" ng-show="vm.image_web==3">
 
-                                                                                <img data-src="<?php echo get_template_directory_uri(); ?>/assets/img/TEST.png" alt="Fast and Adaptive" class="img-responsive text-center b-lazy animated bounceInUp" ng-show="vm.image_web==4">
+                                                                                <img data-src="<?php echo get_template_directory_uri(); ?>/build/img/TEST.png" alt="Fast and Adaptive" class="img-responsive text-center b-lazy animated bounceInUp" ng-show="vm.image_web==4">
 
                                                                             </article>
                                                                         </div>
@@ -422,7 +422,7 @@ get_header();
                                                                                 <div class="col-md-12 col-sm-12" >
                                                                                     <div class="serviceBox" style="border-right:0px;" >
                                                                                         <div class="service-icon" >
-                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/simple_creative_1.png" alt="Web Page" class="text-center b-lazy">
+                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/build/img/simple_creative_1.png" alt="Web Page" class="text-center b-lazy">
                                                                                         </div>
                                                                                         <div class="service-content">
                                                                                             <h3 ng-bind="'Simple and Creative' | translate">Simple and Creative</h3>
@@ -439,7 +439,7 @@ get_header();
                                                                                 <div class="col-md-6 col-sm-6" ng-mouseenter="vm.image_web=3">
                                                                                     <div class="serviceBox">
                                                                                         <div class="service-icon">
-                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/customizable_1.png" alt="Web Page" class="text-center b-lazy">
+                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/build/img/customizable_1.png" alt="Web Page" class="text-center b-lazy">
                                                                                         </div>
                                                                                         <div class="service-content">
                                                                                             <h3 ng-bind="'Customizable' | translate">Customizable</h3>
@@ -452,7 +452,7 @@ get_header();
                                                                                 <div class="col-md-6 col-sm-6" ng-mouseenter="vm.image_web=4">
                                                                                     <div class="serviceBox" style="border-right:0px;">
                                                                                         <div class="service-icon">
-                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/fast_adaptive.png" alt="Web Page" class="text-center b-lazy">
+                                                                                            <img width="80" data-src="<?php echo get_template_directory_uri(); ?>/build/img/fast_adaptive.png" alt="Web Page" class="text-center b-lazy">
                                                                                         </div>
                                                                                         <div class="service-content">
                                                                                             <h3 ng-bind="'Fast and adaptive' | translate">Fast and adaptive</h3>
@@ -522,7 +522,7 @@ get_header();
 
 
 
-                                        <div data-qodef-parallax-speed="0.5" id="testimonials" class="wpb_row vc_row-fluid qodef-section vc_custom_1445345084553 qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(<?php echo get_template_directory_uri(); ?>/assets/img/parallax-2-home-main.jpg);">
+                                        <div data-qodef-parallax-speed="0.5" id="testimonials" class="wpb_row vc_row-fluid qodef-section vc_custom_1445345084553 qodef-content-aligment-left qodef-parallax-section-holder qodef-parallax-section-holder-touch-disabled" style="background-image:url(<?php echo get_template_directory_uri(); ?>/build/img/parallax-2-home-main.jpg);">
                                             <div class="clearfix qodef-full-section-inner">
                                                 <div class="wpb_column vc_column_container">
                                                     <div class="vc_column-inner ">
@@ -561,7 +561,7 @@ get_header();
                                                                                 </div>
                                                                                 <div class="qodef-testimonial-info-holder">
                                                                                     <div class="qodef-testimonial-image-holder">
-                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-1.png" class="attachment-71 size-71 wp-post-image b-lazy" alt="a" />
+                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/build/img/testimonials-1.png" class="attachment-71 size-71 wp-post-image b-lazy" alt="a" />
                                                                                     </div>
                                                                                     <div class = "qodef-testimonial-author">
                                                                                         <p class="qodef-testimonial-author-text">
@@ -584,7 +584,7 @@ get_header();
                                                                                 </div>
                                                                                 <div class="qodef-testimonial-info-holder">
                                                                                     <div class="qodef-testimonial-image-holder">
-                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-2.png" class="attachment-79 size-79 wp-post-image b-lazy" alt="a" />
+                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/build/img/testimonials-2.png" class="attachment-79 size-79 wp-post-image b-lazy" alt="a" />
                                                                                     </div>
                                                                                     <div class = "qodef-testimonial-author">
                                                                                         <p class="qodef-testimonial-author-text">
@@ -607,7 +607,7 @@ get_header();
                                                                                 </div>
                                                                                 <div class="qodef-testimonial-info-holder">
                                                                                     <div class="qodef-testimonial-image-holder">
-                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-3.png" class="attachment-81 size-81 wp-post-image b-lazy" alt="a" />
+                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/build/img/testimonials-3.png" class="attachment-81 size-81 wp-post-image b-lazy" alt="a" />
                                                                                     </div>
                                                                                     <div class = "qodef-testimonial-author">
                                                                                         <p class="qodef-testimonial-author-text">
@@ -632,7 +632,7 @@ get_header();
                                                                                 </div>
                                                                                 <div class="qodef-testimonial-info-holder">
                                                                                     <div class="qodef-testimonial-image-holder">
-                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-4.png" class="attachment-88 size-88 wp-post-image b-lazy" alt="a" />
+                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/build/img/testimonials-4.png" class="attachment-88 size-88 wp-post-image b-lazy" alt="a" />
                                                                                     </div>
                                                                                     <div class = "qodef-testimonial-author">
                                                                                         <p class="qodef-testimonial-author-text">
@@ -655,7 +655,7 @@ get_header();
                                                                                 </div>
                                                                                 <div class="qodef-testimonial-info-holder">
                                                                                     <div class="qodef-testimonial-image-holder">
-                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-5.png" class="attachment-89 size-89 wp-post-image b-lazy" alt="a" />
+                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/build/img/testimonials-5.png" class="attachment-89 size-89 wp-post-image b-lazy" alt="a" />
                                                                                     </div>
                                                                                     <div class = "qodef-testimonial-author">
                                                                                         <p class="qodef-testimonial-author-text">
@@ -678,7 +678,7 @@ get_header();
                                                                                 </div>
                                                                                 <div class="qodef-testimonial-info-holder">
                                                                                     <div class="qodef-testimonial-image-holder">
-                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/assets/img/testimonials-6.png" class="attachment-90 size-90 wp-post-image b-lazy" alt="a" />
+                                                                                        <img width="56" height="56" data-src="<?php echo get_template_directory_uri(); ?>/build/img/testimonials-6.png" class="attachment-90 size-90 wp-post-image b-lazy" alt="a" />
                                                                                     </div>
                                                                                     <div class = "qodef-testimonial-author">
                                                                                         <p class="qodef-testimonial-author-text">
@@ -802,7 +802,7 @@ get_header();
 
                                                                 <div class="card item" ng-class="{'active' : team.active}" ng-repeat="team in vm.team">
                                                                     <div class="photo">
-                                                                        <img data-src="{{team.image}}" class="img-responsive b-lazy team-img" alt="Image">
+                                                                        <img ng-src="{{team.image}}" class="img-responsiveteam-img" alt="Image">
                                                                     </div>
                                                                     <div class="banner"></div>
                                                                     <ul class="title-team">
