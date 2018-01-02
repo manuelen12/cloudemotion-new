@@ -14,7 +14,10 @@ if ( is_rtl() ) {
 wp_register_script( AMO_TEAM_SHOWCASE_CSS_PREFIX . 'Wookmark-jQuery', AMO_TEAM_SHOWCASE_PLUGIN_URL . 'public/js/wookmark.js', array( 'jquery' ), '2.1.2', true );
 
 # Magnific Popup CSS (jQuery plugin)
-wp_register_script( 'magnific-popup', AMO_TEAM_SHOWCASE_PLUGIN_URL . 'public/js/jquery.magnific-popup.min.js', array( 'jquery' ), '1.1.0', true );
+if ( ! $this->gpo->script_status_check( 'jquery.magnific-popup' ) ) {
+	wp_register_script( 'magnific-popup', AMO_TEAM_SHOWCASE_PLUGIN_URL . 'public/js/jquery.magnific-popup.min.js', array( 'jquery' ), '1.1.0', true );
+}
+
 
 # General public JS file
 wp_register_script( $this->gpo->get_plugin_name(), AMO_TEAM_SHOWCASE_PLUGIN_URL . 'public/js/amo-team-showcase-public.js', array( 'jquery' ), AMO_TEAM_SHOWCASE_VERSION, true );

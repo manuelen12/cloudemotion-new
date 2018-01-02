@@ -16,6 +16,10 @@ return array(
 	'thumb-overlay-color'      => '',
 	'thumb-overlay-opacity'    => '0.8',
 	'thumb-hover-icon-size'    => 32,
+	'thumb-overlay-icon-info'  => '',
+	'thumb-overlay-icon-link'  => '',
+	'thumb-custom-icon-size'   => '65px',
+	'thumb-hover'              => 1,
 	'panel-title-font-size'    => 26,
 	'panel-subtitle-font-size' => 20,
 	'panel-bg-color'           => '#fff',
@@ -30,4 +34,5 @@ return array(
 	'skill-b-line-opacity'     => '0.1',
 	'uninstall-settings'       => 1,
 	'uninstall-posts'          => 0,
+	'thumbs-clear-events'      => 1,
 );

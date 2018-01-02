@@ -1,5 +1,6 @@
+"use strict";
+
 (function( $ ) {
-	'use strict';
 
 	var $window = $( window );
 
@@ -37,7 +38,7 @@
 				type:            'inline',
 				midClick:        true, // Allow opening popup on middle mouse click.
 				mainClass:       "amoteam-modal" + (amoTeamVars['panel-alt-scroll'] ? ' amoteam-modal-alt-scroll' : ''),
-				fixedContentPos: (amoTeamVars['panel-alt-scroll'] ? false : true),
+				fixedContentPos: (! amoTeamVars[ 'panel-alt-scroll' ]),
 				fixedBgPos:      true,
 				overflowY:       "auto",
 				closeBtnInside:  false,
@@ -53,6 +54,7 @@
 				} // callbacks
 			} );
 		}, // FNC
+
 
 		
 		/**
@@ -93,7 +95,7 @@
 
 			// panel animation
 			$( document ).on( 'click', '.amoteam-popup-link', function() {
-				var panel = $( this.getAttribute( 'href' ) ),
+				var panel = $( this.getAttribute( 'data-mfp-src' ) ),
 				    subtitle;
 
 				infoPanel.panelAnimation( panel, true );
@@ -110,7 +112,7 @@
 
 			// load the panel image only on member thumbnail hover
 			$( document ).on( 'mouseover', '.amoteam-popup-link', function() {
-				var panel = $( this.getAttribute( 'href' ) );
+				var panel = $( this.getAttribute( 'data-mfp-src' ) );
 
 				// panel image is not loaded yet
 				if ( ! panel.data( 'img-loaded' ) ) {
@@ -165,6 +167,16 @@
 				//} // SWITCH
 
 				var grid = $( scArray.scID );
+
+				// A fix. Remove events and magnificPopup data (possibly from other plugins/scripts)
+				// already applied to the thumbnails' container (grid var) and all <a> links inside it.
+				var gridPlusLinks = grid.add( grid.find( 'a' ) ).removeData('magnificPopup');
+
+				// Clear/remove all jQuery events only if such option is enabled in the plugin options
+				if (amoTeamVars[ 'thumbs-clear-events' ]) {
+					gridPlusLinks.off();
+				} // IF
+
 				shortcodes.initWookmarkSC( grid, scArray );
 				infoPanel.initMagnificPopup( grid );
 			} ); // EACH
@@ -219,7 +231,7 @@
 			grid.find('li').each( function() {
 				var $this =  $(this );
 				if ( $this.hasClass('amoteam-js-round-fix') ) {
-					$this.find( '.amoteam-figure-img' ).css( {
+					$this.find( '.amoteam-member-img' ).css( {
 						width:  $this.width(),
 						height: $this.width()
 					} );

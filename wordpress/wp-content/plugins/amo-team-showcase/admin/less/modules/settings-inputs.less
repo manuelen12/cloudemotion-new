@@ -250,6 +250,122 @@ select.@{p}setting__input {
 
 
 
+/*  Grouped Fields | group field type
+----------------------------------*/
+.@{p}grouped-fields {
+	.@{p}btn--metabox-icon {
+		margin-top: 12px;
+	}
+} //.social-icons
+.@{p}grouped-fields__wrap {
+	margin: 0;
+}
+.@{p}grouped-fields__group {
+	margin-bottom: 10px;
+	background: #fff;
+
+	.@{p}grouped-fields__heading-wrap {
+		position: relative;
+
+		h4 {
+			.transition-main();
+			margin: 0;
+			padding: 10px @span-main;
+
+			font-size: 14px;
+			background: @color-main-dark-2;
+			color: @color-white;
+
+			cursor: move;
+
+			&:focus {
+				outline: none;
+				background-color: @color-main-dark;
+			}
+
+			&:hover {
+				background-color: @color-main-dark;
+			}
+
+		} //h4
+
+		.@{p}grouped-fields__collapse {
+			right: 0;
+			color: @color-main-green-2;
+			&:hover, &:focus {
+				color: @color-white;
+			}
+		} //.icon-angle-up
+
+		.@{p}grouped-fields__close {
+			right: 38px;
+		} //.social-icon__close
+
+
+		&.ui-accordion-header-active {
+			.@{p}grouped-fields__collapse-icon:before {
+				content: '\e804';
+			}
+		} //.ui-accordion-header-active
+
+	} //.social-icon__heading-wrap
+
+
+	.@{p}grouped-fields__content {
+		padding: 20px 25px 12px;
+		border: 1px solid @color-middle-grey;
+		border-top: none;
+		overflow: hidden;
+
+		> div + div {
+			margin-top: 30px;
+		}
+
+	} //.social-icon__content
+
+	.@{p}setting, .@{p}setting__desc {
+		float: none;
+		width: 100%;
+	}
+
+	.@{p}setting__desc {
+		padding-left: 0;
+		margin-top: 5px;
+		color: @color-dark-grey;
+	}
+
+	.@{p}setting__label {
+		display: none;
+	}
+
+} //.social-icon__group
+
+
+// Upload filed
+.@{p}grouped-fields__content {
+
+	.@{p}setting-group--upload {
+
+		img {
+			padding: 12px;
+			display: block;
+			margin: 0 auto;
+			max-width: 80px;
+		}
+
+		.@{p}setting-group--upload__img-wrap {
+			max-width: 100%;
+			background: @color-middle-grey;
+		}
+
+		.@{p}js-media-library-upload {
+			width: 100%;
+		}
+	}
+
+} //.social-icon__content
+
+
 /*  Social Icons | Special Block
 ----------------------------------*/
 .@{p}social-icons {

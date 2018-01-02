@@ -36,12 +36,13 @@ return array(
 		'id'    => 'social-icons',
 	),
 
-	array( // SPECIFIC BLOCK
-		'title'  => _x( 'Social Icon #', '# - it\'s a number sign', 'amo-team' ),
-		'desc'   => __( 'Add social or skype icons with links. If social icons are enabled, then they will be shown in team member\'s info panel. Max 12 icons.', 'amo-team' ),
-		'type'   => 'social-icons',
-		'id'     => 'social-icon-blocks',
-		'fields' => array(
+	array(
+		'title'   => _x( 'Social Icon #', '# - it\'s a number sign', 'amo-team' ),
+		'desc'    => __( 'Add social, skype or custom icons with links. If social icons are enabled, then they will be shown in team member\'s info panel. Max 12 icons.', 'amo-team' ),
+		'type'    => 'group',
+		'button_name'          => __( 'Add New Icon', 'amo-team' ),
+		'limit_reached_notice' => __( 'The limit is reached, you can have only 12 social icons in team member info panel.', 'amo-team' ),
+		'fields'  => array(
 			array(
 				'title'   => __( 'Select social icon', 'amo-team' ),
 //				'desc'    => sprintf( __( 'Select an icon (by its name). Colors and other parameters can be set at the plugin’s %s options page.%s', 'amo-team' ), '<a class="' . AMO_TEAM_SHOWCASE_CSS_PREFIX . 'link" href="' . admin_url( 'edit.php?post_type=amo-team&page=amo-team-options' ) . '" target="_blank">', '</a>' ),
@@ -80,8 +81,18 @@ return array(
 				'std'         => '',
 				'placeholder' => __( 'Enter a Link', 'amo-team' ),
 			),
+			array(
+				'title'       => __( 'Custom Icon', 'amo-team' ),
+				'desc'        => __( 'You can set custom icon. Use square, PNG image with transparency.', 'amo-team' ),
+				'type'        => 'upload',
+				'std'         => '',
+				'id'          => 'custom_icon',
+				//'placeholder' => __( 'Image URL', 'amo-team' ),
+				'class'       => '',
+			),
 		),
-	), // Social Icons block | // SPECIFIC BLOCK
+		'id'      => 'social-icon-blocks',
+	),
 
 	array( // End - General Settings tab
 		'comment' => 'End - General Settings tab',
@@ -116,12 +127,13 @@ return array(
 	),
 
 	array(
-		'title'       => __( 'Link URL', 'amo-team' ),
-		'desc'        => sprintf( __( 'Post Format — Link. %s Proper link format is http://website.com, with http:// or https://', 'amo-team' ), '<br>' ),
-		'type'        => 'text',
-		'id'          => 'link-url',
-		'placeholder' => __( 'Enter a URL', 'amo-team' ),
-		'class'       => AMO_TEAM_SHOWCASE_CSS_PREFIX . 'post-format-link hidden',
+		'title'        => __( 'Link URL', 'amo-team' ),
+		'desc'         => sprintf( __( 'Post Format — Link. %s Proper link format is http://website.com, with http:// or https://', 'amo-team' ), '<br>' ),
+		'type'         => 'text',
+		'id'           => 'link-url',
+		'placeholder'  => __( 'Enter a URL', 'amo-team' ),
+		'sanitization' => 'url',
+		'class'        => AMO_TEAM_SHOWCASE_CSS_PREFIX . 'post-format-link hidden',
 	),
 
 	array(

@@ -71,20 +71,20 @@
 		 * @since    1.0.0
 		 */
 		socialIconBlockInit: function( socialIcons ) {
-			var IconGroups = socialIcons.find( '.amoteam-social-icon__group' );
+			var IconGroups = socialIcons.find( '.amoteam-grouped-fields__group' );
 
 			// if there is only one icon block, disable close button
-			formElements.buttonOnOff( ( IconGroups.length === 1 ), '.amoteam-social-icon__close', true, IconGroups );
+			formElements.buttonOnOff( ( IconGroups.length === 1 ), '.amoteam-grouped-fields__close', true, IconGroups );
 
 			socialIcons.accordion( {
-				header: ".amoteam-social-icon__heading-wrap",
+				header: ".amoteam-grouped-fields__heading-wrap",
 				collapsible: true,
 				heightStyle: 'content'
 			} );
 
 			socialIcons.sortable({
 				placeholder: "widget-placeholder",
-				items: '> .amoteam-social-icon__group',
+				items: '> .amoteam-grouped-fields__group',
 				opacity : 0.5,
 				distance: 3,
 				//containment: 'parent',
@@ -99,7 +99,7 @@
 				}, // start
 				stop: function( event, ui ) {
 					// refresh icon blocks collection in the variable
-					IconGroups = socialIcons.find( '.amoteam-social-icon__group' );
+					IconGroups = socialIcons.find( '.amoteam-grouped-fields__group' );
 
 					// enumerate icon blocks
 					for ( var i = 0; i < IconGroups.length; i ++ ) {
@@ -112,10 +112,10 @@
 				$('#amoteam-js-add-icon-block').on( 'click', function() {
 
 					// get all social icon group blocks
-					var IconGroups = socialIcons.find( '.amoteam-social-icon__group' );
-
+					var IconGroups = socialIcons.find( '.amoteam-grouped-fields__group' );
+					console.log( socialIcons );
 					// remove button :disabled, before adding another icon block
-					formElements.buttonOnOff( ( IconGroups.length === 1 ), '.amoteam-social-icon__close', false, IconGroups );
+					formElements.buttonOnOff( ( IconGroups.length === 1 ), '.amoteam-grouped-fields__close', false, IconGroups );
 
 					// IF number of Icon Blocks is not more than 12
 					if ( IconGroups.length < 12 ) {
@@ -123,12 +123,18 @@
 						// clone 1st social icon block / panel
 						var socialIconGroup = IconGroups.eq( 0 ).clone();
 
+						// init upload button functionality (except opening of media library)
+						formElements.uploadInput( socialIconGroup.find( '.amoteam-js-media-library-upload' ) );
+
 						// clear select/input values in the icon block
 						socialIconGroup.find( 'option' ).removeAttr( 'selected' )
 							.end()
 							.find( 'input' ).val('')
 							.end()
+							.find( '.amoteam-js-upload-img-close' ).click()
+							.end()
 							.appendTo( socialIcons );
+
 
 						formElements.socialIconBlockEnumerate( socialIconGroup, IconGroups.length );
 
@@ -137,24 +143,24 @@
 
 					} else { // if the limit is reached, show the warning
 						// show the warning only if it's not present already
-						if ( ! $('#amoteam-social-icons__limit-warning' ).length ) {
-							formElements.formNotice( socialIcons, '.amoteam-js-social-icon-end', AmoTeamVarsAdmin.SocialIconsLimitNotice, 'amoteam-social-icons__limit-warning' );
+						if ( ! $('#amoteam-grouped-fields__limit-warning' ).length ) {
+							formElements.formNotice( socialIcons, '.amoteam-js-grouped-fields-end', socialIcons.parent().find('.amoteam-js-grouped-fields-end').text(), 'amoteam-grouped-fields__limit-warning' );
 						}
 					} // IF number of Icon Blocks is not more than 12
 
 				} ); // ON click add icon button
 
-			socialIcons.on( 'click', '.amoteam-social-icon__close', function(e) {
+			socialIcons.on( 'click', '.amoteam-grouped-fields__close', function(e) {
 				var currentIconBlock,
 				    isFirstIconBlockDesc;
 
 				e.preventDefault();
 
 				// get current soc icon block
-				currentIconBlock = $( this ).parents( '.amoteam-social-icon__group' );
+				currentIconBlock = $( this ).parents( '.amoteam-grouped-fields__group' );
 
 				// check if this is the first icon block and detach its description
-				if (currentIconBlock.find('.social-icon__num' ).text() == 1) {
+				if (currentIconBlock.find('.grouped-fields__num' ).text() == 1) {
 					isFirstIconBlockDesc = socialIcons.find('.amoteam-setting__desc' ).detach();
 
 				}
@@ -163,7 +169,7 @@
 				currentIconBlock.remove();
 
 				// refresh icon blocks collection in the variable
-				IconGroups = socialIcons.find( '.amoteam-social-icon__group' );
+				IconGroups = socialIcons.find( '.amoteam-grouped-fields__group' );
 
 				// attach the description to the first icon block
 				if (isFirstIconBlockDesc) {
@@ -176,7 +182,7 @@
 				} // FOR
 
 				// if there is only one icon block, disable close button
-				formElements.buttonOnOff( ( IconGroups.length === 1 ), '.amoteam-social-icon__close', true, IconGroups );
+				formElements.buttonOnOff( ( IconGroups.length === 1 ), '.amoteam-grouped-fields__close', true, IconGroups );
 
 				// Reset / Refresh the Accordion
 				socialIcons.accordion( 'refresh' );
@@ -196,11 +202,11 @@
 			if ( enumGroup ) {
 				headingNumber = (IconBlocksNumber + 1);
 			} else {
-				headingNumber = (~~ iconBlock.find( '.social-icon__num' ).text() ) + IconBlocksNumber;
+				headingNumber = (~~ iconBlock.find( '.grouped-fields__num' ).text() ) + IconBlocksNumber;
 			} // IF
 
 			// Enumerate icon block heading
-			iconBlock.find('.social-icon__num' ).text( headingNumber );
+			iconBlock.find('.grouped-fields__num' ).text( headingNumber );
 
 			// Enumerate icon block heading
 			iconBlock.find( '.amoteam-setting__input' ).each(function(){
@@ -219,36 +225,51 @@
 		 * @since    1.0.0
 		 */
 		uploadInput: function( btn, json ) {
-			var $btn = $( btn ),
-			    uploadBlock = $btn.parents( '.amoteam-setting-group--upload' ),
-			    uploadInputField = uploadBlock.find( 'input' );
+			var $btn = $( btn );
 
-			if ( json ) {
+			if ( json ) { // on media uploader
 				// First, make sure that we have the URL of an image to display
 				if ( 0 > $.trim( json.url.length ) ) {
 					return false;
 				} // IF
 
+
+				var uploadBlock = $btn.parents( '.amoteam-setting-group--upload' ),
+				    uploadInputField = uploadBlock.find( 'input' );
+
 				uploadInputField.val( (json.sizes['amoteam-general'] ? json.sizes['amoteam-general']['url'] : json.url ) );
 				uploadInputField.trigger( 'change' );
-			} else { // on
-				var img = uploadBlock.find( '.amoteam-setting-group--upload__img' );
 
-				// if URL is set in the input field
-				if ( uploadInputField.val() ) {
-					img.attr( 'src', uploadInputField.val() );
-				}
+			} else { // on page load
+				var uploadBlocks = $btn.parents( '.amoteam-setting-group--upload' );
 
-				uploadInputField.on( 'change', function() {
-					img.attr( 'src', $(this ).val() );
-					img.parent().slideDown( 500 );
-				} );
-				uploadBlock.on( 'click', '.amoteam-js-upload-img-close', function() {
-					uploadInputField.val( '' );
-					img.parent().slideUp(500, function() {
-						img.attr( 'src', '' );
-					} );
-				} );
+					uploadBlocks.each( function() {
+						var uploadBlock      = $( this ),
+						    uploadInputField = uploadBlock.find( 'input' ),
+						    img              = uploadBlock.find( '.amoteam-setting-group--upload__img' );
+
+						// if URL is set in the input field
+						if ( uploadInputField.val() ) {
+							img.attr( 'src', uploadInputField.val() );
+							img.parent().slideDown( 500 );
+						}
+
+						uploadInputField.on( 'change', function() {
+							console.log( $( this ) );
+							console.log( img );
+							img.attr( 'src', $( this ).val() );
+							img.parent().slideDown( 500 );
+						} );
+
+						uploadBlock.on( 'click', '.amoteam-js-upload-img-close', function() {
+							uploadInputField.val( '' );
+							img.parent().slideUp( 500, function() {
+								img.attr( 'src', '' );
+							} );
+						} );
+
+					} ); // EACH | images
+
 			} // IF json
 
 
@@ -289,6 +310,7 @@
 				//},
 				multiple: false
 			});
+
 
 			/**
 			 * Setup an event handler for what to do when an image has been
@@ -434,22 +456,9 @@
 
 		specialFuncs.featuredImgNotice();
 
-		formElements.socialIconBlockInit( $( "#amoteam-social-icons__wrap" ) );
+		formElements.socialIconBlockInit( $( "#amoteam-grouped-fields__wrap" ) );
 
 		specialFuncs.postFormatsDependingFieldsInit( postFormatsBlock );
-
-		// init upload input block
-		var uploadButton = $( '.amoteam-js-media-library-upload' );
-		formElements.uploadInput( uploadButton );
-
-		// Upload field button
-		uploadButton.on( 'click', function(e) {
-			e.preventDefault();
-
-			// Display the media uploader
-			formElements.renderMediaUploader(this);
-		} );
-
 
 	} // if Team Member Page
 
@@ -470,6 +479,21 @@
 			form.submit();
 		} );
 	} // IF | 'Team Member' or 'Options' page
+
+	/*  BOTH: Option and Member page
+	 --------------------------------------------------------------------*/
+	// init upload input block
+	var uploadButton = $( '.amoteam-js-media-library-upload' );
+	formElements.uploadInput( uploadButton );
+
+	// Upload field button
+	$('#amoteam-panel__content').on( 'click', '.amoteam-js-media-library-upload', function(e) {
+		e.preventDefault();
+
+		// Display the media uploader
+		formElements.renderMediaUploader(this);
+	} );
+
 
 
 

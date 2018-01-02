@@ -15,7 +15,7 @@
 						</div>
 						<div class="col-md-5 col-sm-8" style="text-align: center">
 							<h1 class="text-color-primary custom-font-size-1" ng-bind="vm.users.first_name+' '+vm.users.last_name"></h1>
-							<p class="custom-text position-dev" ng-bind="vm.users.position.name">Backend</p>
+							<p class="custom-text position-dev" style="line-height:40px" ng-bind="vm.users.position.name">Backend</p>
 							<span class="custom-about-me-infos">
 								<span class="custom-text-color-1 text-uppercase" ng-bind="vm.users.city.name+' '+vm.users.city.state.name+' '+vm.users.city.state.country.name"></span>
 								<span class="custom-text-color-1 text-uppercase mb-md" ng-bind="vm.users.position.resumen"></span>
@@ -83,7 +83,7 @@
 					</a>
 				</div>
 				<div class="col-md-3 col-sm-4 center p-none">
-					<a class="text-decoration-none" ng-class="{'not-active': !vm.users.curriculum}" ng-href="{{vm.users.curriculum}}">
+					<a class="text-decoration-none" target="_blank" ng-class="{'not-active': !vm.users.curriculum}" ng-href="{{vm.users.curriculum}}">
 						<span class="custom-nav-button text-color-dark">
 							<i class="icon-cloud-download icons " ng-class="{'not-active': !vm.users.curriculum, 'text-color-primary': vm.users.curriculum}"></i>
 							<text ng-bind="'Download Resume' | translate"></text>

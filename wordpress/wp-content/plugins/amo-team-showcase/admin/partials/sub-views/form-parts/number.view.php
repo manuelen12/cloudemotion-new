@@ -16,7 +16,7 @@
  */
 
 $a['id']    = Amo_Team_Showcase_AVH::get_id_from_title( $a['title'], $a['id'] );
-$a['value'] = Amo_Team_Showcase_AVH::get_standard_or_array_value( $opts, $a['id'], $a['std'] );
+$a['value'] = isset( $a['group_id'] ) ? Amo_Team_Showcase_AVH::get_group_field_standard_or_array_value( $opts, $a ) : Amo_Team_Showcase_AVH::get_standard_or_array_value( $opts, $a['id'], $a['std'] );
 $a['placeholder'] = Amo_Team_Showcase_AVH::get_standard_or_array_value( $a, 'placeholder', $a['title'] );
 $name = isset( $metabox ) ? Amo_Team_Showcase_AVH::metabox_or_normal_input_name( $metabox, $a ) : Amo_Team_Showcase_AVH::metabox_or_normal_input_name( false, $a );
 ?>
