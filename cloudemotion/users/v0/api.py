@@ -74,6 +74,7 @@ class API(Base):
         __ordening = loads(self.request.GET.get('ordening', "[]"))
         if pk:
             __filters.update({"pk": pk})
+        __filters.update({"is_active": True})
         __search = self.request.GET.get('search')
 
         self.get_users(__filters, __paginator, __ordening, __search)
