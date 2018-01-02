@@ -1,26 +1,7 @@
 function Nucleo() {
     return {
         restrict: 'E',
-        template:`    
-        <div class="loaderN">
-        <div class="inner one"></div>
-        <div class="inner two"></div>
-        <div class="inner three"></div>
-        <div class="nucleus"></div>
-        </div>
-        <div class="loaderN">
-        <div class="inner one"></div>
-        <div class="inner two"></div>
-        <div class="inner three"></div>
-        <div class="nucleus"></div>
-        </div>
-        <div class="loaderN">
-        <div class="inner one"></div>
-        <div class="inner two"></div>
-        <div class="inner three"></div>
-        <div class="nucleus"></div>
-        </div>
-        `,
+        templateUrl:"cloudemotion/assets/js/angular/directives/view/nucleo.view.html",
         link: function (scope, iElement, iAttrs) {
             
         }

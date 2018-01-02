@@ -216,6 +216,15 @@
   position: relative;
   top: -1px;
 }
+.amoteam-panel--options .amoteam-btn--panel-sign--2 {
+  background-color: #6d7e8f;
+  color: #c7f464;
+}
+.amoteam-panel--options .amoteam-btn--panel-sign--2:hover,
+.amoteam-panel--options .amoteam-btn--panel-sign--2:focus {
+  background: #556270;
+  color: #f77;
+}
 /*  Close button | Shortcodes Modal
 ----------------------------------*/
 .amoteam-btn--close-sc-modal {
@@ -536,6 +545,87 @@ select.amoteam-setting__input {
   max-width: 100%;
   margin-bottom: 15px;
 }
+/*  Grouped Fields | group field type
+----------------------------------*/
+.amoteam-grouped-fields .amoteam-btn--metabox-icon {
+  margin-top: 12px;
+}
+.amoteam-grouped-fields__wrap {
+  margin: 0;
+}
+.amoteam-grouped-fields__group {
+  margin-bottom: 10px;
+  background: #fff;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap {
+  position: relative;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap h4 {
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+  margin: 0;
+  padding: 10px 20px;
+  font-size: 14px;
+  background: #6d7e8f;
+  color: #fff;
+  cursor: move;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap h4:focus {
+  outline: none;
+  background-color: #556270;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap h4:hover {
+  background-color: #556270;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap .amoteam-grouped-fields__collapse {
+  right: 0;
+  color: #c7f464;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap .amoteam-grouped-fields__collapse:hover,
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap .amoteam-grouped-fields__collapse:focus {
+  color: #fff;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap .amoteam-grouped-fields__close {
+  right: 38px;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__heading-wrap.ui-accordion-header-active .amoteam-grouped-fields__collapse-icon:before {
+  content: '\e804';
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__content {
+  padding: 20px 25px 12px;
+  border: 1px solid #d5d8dc;
+  border-top: none;
+  overflow: hidden;
+}
+.amoteam-grouped-fields__group .amoteam-grouped-fields__content > div + div {
+  margin-top: 30px;
+}
+.amoteam-grouped-fields__group .amoteam-setting,
+.amoteam-grouped-fields__group .amoteam-setting__desc {
+  float: none;
+  width: 100%;
+}
+.amoteam-grouped-fields__group .amoteam-setting__desc {
+  padding-left: 0;
+  margin-top: 5px;
+  color: #9ca1a6;
+}
+.amoteam-grouped-fields__group .amoteam-setting__label {
+  display: none;
+}
+.amoteam-grouped-fields__content .amoteam-setting-group--upload img {
+  padding: 12px;
+  display: block;
+  margin: 0 auto;
+  max-width: 80px;
+}
+.amoteam-grouped-fields__content .amoteam-setting-group--upload .amoteam-setting-group--upload__img-wrap {
+  max-width: 100%;
+  background: #d5d8dc;
+}
+.amoteam-grouped-fields__content .amoteam-setting-group--upload .amoteam-js-media-library-upload {
+  width: 100%;
+}
 /*  Social Icons | Special Block
 ----------------------------------*/
 .amoteam-social-icons .amoteam-btn--metabox-icon {
@@ -615,13 +705,13 @@ select.amoteam-setting__input {
 }
 /* Metabox | Notice
 ----------------------------------*/
-.amoteam-social-icons__limit-warning {
+.amoteam-grouped-fields__limit-warning {
   padding: 10px 10px;
   background-color: #4ecdc4;
   margin-bottom: 20px;
 }
 @media (min-width: 700px) {
-  .amoteam-social-icons__limit-warning {
+  .amoteam-grouped-fields__limit-warning {
     float: left;
     width: 60%;
     clear: both;

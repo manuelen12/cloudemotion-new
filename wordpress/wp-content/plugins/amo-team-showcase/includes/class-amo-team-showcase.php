@@ -52,14 +52,26 @@ class Amo_Team_Showcase {
 	 */
 	protected $zone = array(
 		'is_admin' => false,
-		'is_admin_ajax' => false,
+		'is_ajax_request' => false,
 	);
+
+
+	/**
+	 * Array with boolean values on what screen is currently shown.
+	 * For example: Options page or Team Member Screen
+	 *
+	 * @since    1.0.0
+	 * @access   public
+	 * @var array Amo_Team_Showcase $what_screen
+	 */
+	public $what_screen = array();
+
 
 	/**
 	 * The renderer object, that's responsible rendering partials (view templates) of the plugin
 	 *
 	 * @since    1.0.0
-	 * @access   protected
+	 * @access   public
 	 * @var object Amo_Team_Showcase_Views_Renderer $renderer
 	 */
 	public $renderer;
@@ -80,7 +92,7 @@ class Amo_Team_Showcase {
 
 		if ( is_admin() ) {
 			if ( defined('DOING_AJAX') && DOING_AJAX )
-				$this->zone['is_admin'] = $this->zone['is_admin_ajax'] = true;
+				$this->zone['is_admin'] = $this->zone['is_ajax_request'] = true;
 			else {
 				$this->zone['is_admin'] = true;
 			} //IF
@@ -121,6 +133,7 @@ class Amo_Team_Showcase {
 				// The Renderer class is responsible for rendering views/partials in both public and admin parts of the plugin
 				$obj->renderer = $this->renderer = amo_team_showcase_renderer( $area );
 
+				$count++;
 			} // IF NOT renderer is an object
 
 			if ( ! $public && $helpers ) {
@@ -128,8 +141,33 @@ class Amo_Team_Showcase {
 				require_once AMO_TEAM_SHOWCASE_PLUGIN_PATH . $area .'/class-amo-team-showcase-'.$area.'-view-helpers.php';
 			}
 		} // IF count
-		$count++;
 	} // FNC
+
+
+	/**
+	 * Checks if certain JS file is already enqueued
+	 *
+	 * @param string $name – Script's file name before dot (e.g. - bootstrap, jquery-ui)
+	 * @param string $status – Status: enqueued, registered, etc.
+	 *
+	 * @since 1.1.2
+	 * @return bool
+	 */
+	public function script_status_check( $name, $status = array('enqueued') ) {
+		global $wp_scripts;
+
+		foreach( $wp_scripts->registered as $script ) {
+			if ( stristr( $script->src, $name . '.min.js' ) !== false || stristr( $script->src, $name . '.js' ) !== false  ) {
+				foreach ( $status as $s ) {
+					if ( wp_script_is( $script->handle, $s ) ) {
+						return true;
+						break 2;
+					}
+				} // FOREACH $status
+			} // IF
+		} // FOREACH $wp_scripts
+		return false;
+	} // enqueue_script_check | FNC
 
 
 	/**
@@ -217,7 +255,6 @@ class Amo_Team_Showcase {
 		// Register the plugin widgets
 		$this->loader->add_action_loader( 'widgets_init', $this, 'register_plugin_widgets' );
 
-
 		// Runs the activation function, which checks for plugin's update and if it exists, updates database
 		$this->loader->add_action_loader( 'plugins_loaded', $this, 'plugin_update' );
 	} // FNC
@@ -293,8 +330,9 @@ class Amo_Team_Showcase {
 		$this->loader->add_filter_loader( 'parse_tax_query', $plugin_admin, 'convert_id_to_term_in_query' );
 
 		/*-------------------------------------------------------------------
-		▐	5. ADD 'ID' COLUMN | Categories
+		▐	5. CATEGORIES | Admin screen
 		--------------------------------------------------------------------*/
+		# Add ID column
 		$this->loader->add_filter_loader( 'manage_edit-amo-team-category_columns' , $plugin_admin, 'categories_columns_header' );
 		$this->loader->add_filter_loader( 'manage_amo-team-category_custom_column' , $plugin_admin, 'categories_columns_row', 10, 3 );
 		$this->loader->add_action_loader( 'after-amo-team-category-table' , $plugin_admin, 'align_taxonomy_custom_id_column' );
@@ -305,10 +343,21 @@ class Amo_Team_Showcase {
 		// Shows admin notices of the plugin, if user have not disabled them yet
 		$this->loader->add_action_loader( 'admin_notices' , $plugin_admin, 'general_plugin_notices' );
 
-		// AJAX Function | Thumbnails Notice
-		if ( $this->zone['is_admin_ajax'] ) {
+		/*-------------------------------------------------------------------
+		▐	7. AJAX
+		--------------------------------------------------------------------*/
+		# Ajax loader - gif loading animation for ajax action in progress
+		$this->loader->add_action_loader( 'admin_footer', $plugin_admin, 'output_ajax_loader_animation' );
+
+		if ( $this->zone['is_ajax_request'] ) {
+			# Thumbnails Notice
 			$this->loader->add_action_loader( 'wp_ajax_hide_admin_notice', $plugin_admin, 'hide_admin_notice' );
-		} // IF is_admin_ajax
+			$this->loader->add_action_loader( 'wp_ajax_update_member_order', $plugin_admin, 'update_member_order' );
+
+
+			# Order update on Team Members
+
+		} // IF is_ajax_request
 
 	} //  define_admin_hooks | FNC
 
@@ -467,7 +516,7 @@ class Amo_Team_Showcase {
 
 		// Add new taxonomy, make it hierarchical (like categories)
 		$labels = array(
-			'name'              => _x( 'Categories', 'taxonomy general name', 'amo-team' ),
+			'name'              => _x( 'Team Categories', 'taxonomy general name', 'amo-team' ),
 			'singular_name'     => _x( 'Category', 'taxonomy singular name', 'amo-team' ),
 			'search_items'      => __( 'Search Categories', 'amo-team' ),
 			'all_items'         => __( 'All Categories', 'amo-team' ),

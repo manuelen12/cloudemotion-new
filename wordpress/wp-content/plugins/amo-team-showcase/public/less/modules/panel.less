@@ -10,8 +10,12 @@
 		height: 100% !important;
 	}
 
+	&.mfp-bg {
+		z-index: 99999 !important;
+	}
+
 	&.mfp-wrap {
-		z-index: 10900 !important;
+		z-index: 99999 !important;
 		overflow-x: hidden !important;
 		overflow-y: auto !important;
 	}
@@ -170,6 +174,30 @@
 	} // i
 
 } // .panel__icons
+
+.@{p}panel__custom-icons {
+	i {
+		text-shadow: none;
+	}
+
+	img {
+		max-width: 20px;
+		margin: 10px 13.5px;
+
+		@media (min-width: 551px) {
+			padding: 11.5px 0;
+			margin: auto;
+		}
+	} // img
+
+} // .panel__custom-icons
+
+.@{p}panel:not(.@{p}panel-pf-image) .@{p}panel__custom-icons {
+	img {
+		margin: 10px 13.5px;
+		padding: 0;
+	} // img
+}
 
 
 /*  Header | Post Format VARIATIONS

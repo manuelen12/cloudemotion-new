@@ -14,9 +14,9 @@
  */
 
 $a['id']    = Amo_Team_Showcase_AVH::get_id_from_title( $a['title'], $a['id'] );
-$a['value'] = Amo_Team_Showcase_AVH::get_standard_or_array_value( $opts, $a['id'], $a['std'] );
+$a['value'] = isset( $a['group_id'] ) ? Amo_Team_Showcase_AVH::get_group_field_standard_or_array_value( $opts, $a ) : Amo_Team_Showcase_AVH::get_standard_or_array_value( $opts, $a['id'], $a['std'] );
 //$a['placeholder'] = Amo_Team_Showcase_AVH::get_standard_or_array_value( $a, 'placeholder', $a['title'] );
-$name = isset( $metabox ) ? Amo_Team_Showcase_AVH::metabox_or_normal_input_name( $metabox, $a, 'text' ) : Amo_Team_Showcase_AVH::metabox_or_normal_input_name( false, $a );
+$name = isset( $metabox ) ? Amo_Team_Showcase_AVH::metabox_or_normal_input_name( $metabox, $a, 'url' ) : Amo_Team_Showcase_AVH::metabox_or_normal_input_name( false, $a, 'url' );
 ?>
 <div class="{p}setting-group {p}setting-group--upload<?php echo ' ', $a['class'] ?>">
 	<div class="{p}setting">
@@ -24,9 +24,9 @@ $name = isset( $metabox ) ? Amo_Team_Showcase_AVH::metabox_or_normal_input_name(
 		<input type="hidden" class="{p}setting__input {p}js-setting-text-field"
 		       id="{p}<?php echo $a['id'] ?>"
 		       name="<?php echo $name ?>"
-		       value="<?php echo esc_attr( $a['value'] ) ?>"
+		       value="<?php echo esc_url( $a['value'] ) ?>"
 		       placeholder="<?php //echo $a['placeholder'] ?>">
-		<div class="{p}setting-group--upload__img-wrap">
+		<div class="{p}setting-group--upload__img-wrap hidden">
 			<img class="{p}setting-group--upload__img" src="" />
 			<button type="button" class="amoteam-btn amoteam-btn--panel-sign {p}btn--panel-sign--2 {p}js-upload-img-close" aria-label="<?php _ex( 'Unset/Remove the image', 'button label', 'amo-team' ) ?>"><i class="amoteam-icon-close"></i></button>
 		</div>

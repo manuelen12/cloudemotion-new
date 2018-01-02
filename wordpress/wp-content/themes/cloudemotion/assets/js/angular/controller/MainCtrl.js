@@ -60,6 +60,10 @@
 		}
 
 		this.$onInit=function() {
+			Sukces.init();
+			$( 'body' ).addClass('loaded');
+			setTabs();
+
 			var teamBlazy;
 			particlesJS("qodef-p-particles-container",particles)
 			changeLanguage();
@@ -67,7 +71,7 @@
 				vm.team=response.data;
 				$.map(vm.team,function(val,ind) {
 					if (!val.image) {
-						vm.team[ind].image="./assets/img/default_p.png";
+						vm.team[ind].image=static+"/assets/img/default_p.png";
 					}
 				})
 				$timeout(function() {

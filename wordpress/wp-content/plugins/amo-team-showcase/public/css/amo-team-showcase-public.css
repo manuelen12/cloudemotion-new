@@ -153,6 +153,11 @@
 [class^="amoteam"] {
   box-sizing: border-box !important;
 }
+.amoteam-center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
 /*==================================================================
 ▐	3. MODULES
 ===================================================================*/
@@ -214,12 +219,10 @@
   cursor: progress; }
 
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-  cursor: -webkit-zoom-out;
   cursor: zoom-out; }
 
 .mfp-zoom {
   cursor: pointer;
-  cursor: -webkit-zoom-in;
   cursor: zoom-in; }
 
 .mfp-auto-cursor .mfp-content {
@@ -560,6 +563,7 @@ img.mfp-img {
   padding: 0 !important;
   margin: 0 !important;
   border: none !important;
+  list-style: none !important;
 }
 .amoteam-tiles__item:before {
   display: none;
@@ -568,10 +572,22 @@ img.mfp-img {
   outline: none !important;
   border: none !important;
 }
-.amoteam-tiles__item figure {
-  margin: 0;
+.amoteam-tiles__item img {
+  box-shadow: none !important;
 }
-.amoteam-tiles__item figure:before {
+.amoteam-tiles__item .amoteam-member-img {
+  width: 100%;
+  margin: 0 !important;
+  display: block;
+}
+.amoteam-tiles__item:hover .amoteam-member-hover-icon {
+  opacity: 1;
+}
+.amoteam-member {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.amoteam-member:before {
   -webkit-transition: opacity 0.4s ease-in-out;
   transition: opacity 0.4s ease-in-out;
   content: ' ';
@@ -582,17 +598,20 @@ img.mfp-img {
   background: #556270;
   opacity: 0;
 }
-.amoteam-tiles__item figure:hover:before {
+.amoteam-member:hover:before {
   opacity: 0.8;
 }
-.amoteam-tiles__item img {
-  width: 100%;
-  margin: 0 !important;
+.amoteam-member .amoteam-member-custom-hover-icon {
+  width: inherit;
+  height: auto;
+  background: inherit;
 }
-.amoteam-tiles__item:hover .amoteam-member-hover-icon {
-  opacity: 1;
+.amoteam-member .amoteam-member-custom-hover-icon img {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
-.amoteam-figure-img-wrap {
+.amoteam-member-img-wrap {
   line-height: 0 !important;
 }
 .amoteam-member-hover-icon {
@@ -657,8 +676,20 @@ img.mfp-img {
 }
 /*  BG Hover Off | When Panel Off
 ----------------------------------*/
-.amoteam-tile-bg-hover-off figure:before {
+.amoteam-tile-bg-hover-off .amoteam-member:before,
+.amoteam-tiles-hover-off .amoteam-member:before {
   background: transparent !important;
+}
+/*  Hover Off | Option
+----------------------------------*/
+.amoteam-tiles-hover-off .amoteam-member .amoteam-member-hover-icon {
+  display: none;
+}
+.amoteam-tiles-hover-off .amoteam-member .amoteam-member-info > div {
+  -webkit-transform: none !important;
+      -ms-transform: none !important;
+          transform: none !important;
+  opacity: 1 !important;
 }
 /*  Tile Style 1
 ----------------------------------*/
@@ -678,7 +709,7 @@ img.mfp-img {
   transition-property: opacity, transform;
   transition-property: opacity, transform, -webkit-transform;
 }
-.amoteam-tile-style-1 .amoteam-tiles__item:hover figcaption > div {
+.amoteam-tile-style-1 .amoteam-tiles__item:hover .amoteam-member-info > div {
   opacity: 0;
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
@@ -692,11 +723,11 @@ img.mfp-img {
 .amoteam-tile-style-1 .amoteam-member-info {
   width: 100%;
 }
-.amoteam-tile-style-1 figure:hover .amoteam-member-hover-icon {
+.amoteam-tile-style-1 .amoteam-member:hover .amoteam-member-hover-icon {
   -webkit-transform: translate(-50%, -50%) rotate3d(0, 1, 0, 0deg) rotate(45deg);
           transform: translate(-50%, -50%) rotate3d(0, 1, 0, 0deg) rotate(45deg);
 }
-.amoteam-tile-style-1 figure .amoteam-member-hover-icon {
+.amoteam-tile-style-1 .amoteam-member .amoteam-member-hover-icon {
   -webkit-transform: translate(-50%, -50%) rotate3d(0, 1, 0, -180deg);
           transform: translate(-50%, -50%) rotate3d(0, 1, 0, -180deg);
 }
@@ -713,7 +744,18 @@ img.mfp-img {
 }
 /*  Tile Style 2
 ----------------------------------*/
-.amoteam-tile-style-2 .amoteam-tiles__item figure:before {
+.amoteam-tile-style-2 .amoteam-tiles__item .amoteam-member-img {
+  border-radius: 50%;
+  border: 4px solid transparent;
+}
+.amoteam-tile-style-2 .amoteam-tiles__item .amoteam-member-info {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.amoteam-tile-style-2 .amoteam-tiles__item:hover .amoteam-member-info {
+  opacity: 0;
+}
+.amoteam-tile-style-2 .amoteam-member:before {
   -webkit-transition: opacity 0.7s ease-in-out;
   transition: opacity 0.7s ease-in-out;
   border-radius: 50%;
@@ -724,18 +766,7 @@ img.mfp-img {
   width: auto;
   height: auto;
 }
-.amoteam-tile-style-2 .amoteam-tiles__item img {
-  border-radius: 50%;
-  border: 4px solid transparent;
-}
-.amoteam-tile-style-2 .amoteam-tiles__item figcaption {
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
-}
-.amoteam-tile-style-2 .amoteam-tiles__item:hover figcaption {
-  opacity: 0;
-}
-.amoteam-tile-style-2 .amoteam-figure-img-wrap:before {
+.amoteam-tile-style-2 .amoteam-member-img-wrap:before {
   -webkit-transition: all 0.7s ease-in-out;
   transition: all 0.7s ease-in-out;
   content: ' ';
@@ -749,8 +780,8 @@ img.mfp-img {
   border-right-color: rgba(0, 0, 0, 0.05);
   border-bottom-color: rgba(0, 0, 0, 0.05);
 }
-.amoteam-tile-style-2 .amoteam-figure-img-wrap:hover:before,
-.amoteam-tile-style-2 .amoteam-figure-img-wrap:focus:before {
+.amoteam-tile-style-2 .amoteam-member-img-wrap:hover:before,
+.amoteam-tile-style-2 .amoteam-member-img-wrap:focus:before {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
@@ -761,17 +792,17 @@ img.mfp-img {
 }
 /*  Tile Style 2.1
 ----------------------------------*/
-.amoteam-tile-style-2_1 .amoteam-tiles__item figure:before {
+.amoteam-tile-style-2_1 .amoteam-tiles__item .amoteam-member-img-wrap:before {
+  border-width: 4px;
+}
+.amoteam-tile-style-2_1 .amoteam-tiles__item .amoteam-member-img {
+  border: 10px solid transparent;
+}
+.amoteam-tile-style-2_1 .amoteam-member:before {
   top: 10px;
   bottom: 10px;
   left: 10px;
   right: 10px;
-}
-.amoteam-tile-style-2_1 .amoteam-tiles__item .amoteam-figure-img-wrap:before {
-  border-width: 4px;
-}
-.amoteam-tile-style-2_1 .amoteam-tiles__item img {
-  border: 10px solid transparent;
 }
 /*  3.3 Panel
 -------------------------------------------------------------------*/
@@ -781,8 +812,11 @@ img.mfp-img {
 .amoteam-modal .mfp-content {
   height: 100% !important;
 }
+.amoteam-modal.mfp-bg {
+  z-index: 99999 !important;
+}
 .amoteam-modal.mfp-wrap {
-  z-index: 10900 !important;
+  z-index: 99999 !important;
   overflow-x: hidden !important;
   overflow-y: auto !important;
 }
@@ -908,6 +942,23 @@ img.mfp-img {
 }
 .amoteam-panel__icons i:before {
   line-height: 1.75;
+}
+.amoteam-panel__custom-icons i {
+  text-shadow: none;
+}
+.amoteam-panel__custom-icons img {
+  max-width: 20px;
+  margin: 10px 13.5px;
+}
+@media (min-width: 551px) {
+  .amoteam-panel__custom-icons img {
+    padding: 11.5px 0;
+    margin: auto;
+  }
+}
+.amoteam-panel:not(.amoteam-panel-pf-image) .amoteam-panel__custom-icons img {
+  margin: 10px 13.5px;
+  padding: 0;
 }
 /*  Header | Post Format VARIATIONS
 ----------------------------------*/

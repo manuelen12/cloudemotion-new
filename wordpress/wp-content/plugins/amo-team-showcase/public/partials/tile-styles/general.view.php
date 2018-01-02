@@ -22,21 +22,32 @@
 	<a <?php echo  $a['link_params'] // the link escaped in the shortcode function?>>
 	<?php endif; // panel_or_link  ?>
 
-		<figure>
-			<?php if ( $a['panel_or_link'] ) : // if panel or link is not off?>
-				<div class="{p}member-hover-icon"><i class="{p}<?php echo $a['hover-icon'] ?>"></i></div>
+		<div class="{p}member">
+			<?php if ( $a['panel_or_link'] ) : // if panel or link is not off ?>
+				<div class="{p}member-hover-icon <?php
+				if ( ( $a['post_format_link'] ? $a['opts']['thumb-overlay-icon-link'] : $a['opts']['thumb-overlay-icon-info'] ) )
+				echo '{p}member-custom-hover-icon'; ?>">
+
+				<?php # If is is set custom overlay icon
+				if ( ( $a['post_format_link'] ? $a['opts']['thumb-overlay-icon-link'] : $a['opts']['thumb-overlay-icon-info'] ) ) : ?>
+					<img src="<?php echo $a['post_format_link'] ? ( $a['opts']['thumb-overlay-icon-link'] ) : ( $a['opts']['thumb-overlay-icon-info'] ) ; ?>">
+			 	<?php else : ?>
+					<i class="{p}<?php echo $a['hover_icon'] ?>"></i>
+				<?php endif; // is is set custom overlay icon  ?>
+				</div>
 			<?php endif; // panel_or_link  ?>
 
-			<figcaption class="{p}member-info {p}member-info--al-<?php echo $a['opts']['thumb-info-align'] ?> <?php if ( ! $a['subtitle'] ) echo '{p}member-info--ns' ?>">
+			<div class="{p}member-info {p}member-info--al-<?php echo $a['opts']['thumb-info-align'] ?> <?php if ( ! $a['subtitle'] ) echo '{p}member-info--ns' ?>">
 				<div class="{p}member-name {p}member-info__item "><?php echo $a['title'] ?></div>
 				<?php if ( $a['subtitle'] ) : ?>
 				<div class="{p}member-subtitle {p}member-info__item"><?php echo $a['subtitle'] ?></div>
 				<?php endif; // subtitle  ?>
-			</figcaption>
-			<div class="{p}figure-img-wrap">
-				<img class="{p}figure-img" src="<?php echo $a['img_url'] ?>" alt="<?php echo esc_attr( $a['title'] ) ?>">
+			</div><!-- .member-info -->
+
+			<div class="{p}member-img-wrap">
+				<img class="{p}member-img" src="<?php echo $a['img_url'] ?>" alt="<?php echo esc_attr( $a['title'] ) ?>">
 			</div>
-		</figure>
+		</div><!-- .member -->
 
 	<?php if ( $a['panel_or_link'] ) : // if panel is not off or post format link?>
 		</a>

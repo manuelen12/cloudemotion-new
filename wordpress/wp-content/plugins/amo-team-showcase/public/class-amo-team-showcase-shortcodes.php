@@ -107,6 +107,11 @@ class Amo_Team_Showcase_Shortcodes {
 		if ( strpos( $a['style'], '_' ) ) {
 			$tile_classes .=  ' {p}tile-style-' . $a['style'][0];
 		}
+
+		// If hover effect is disabled
+		$tile_classes .= ( ! $plugin_options['thumb-hover'] ) ? ' {p}tiles-hover-off' : '';
+
+		// add extra classes
 		$tile_classes .= $sc_extra_class;
 
 		/*  LOOP AND OUTPUT
@@ -139,22 +144,24 @@ class Amo_Team_Showcase_Shortcodes {
 
 				// common arguments
 				$args = array(
-					'class'            => $tile_classes, // escaped earlier in code
-					'li_class'         => $li_class,
-					'img_url'          => $image[0],
-					'title'            => esc_html( $post_title ),
-					'title_attr'       => esc_attr( $post_title ),
-					'subtitle'         => esc_html( $metaboxes['subtitle'] ),
-					'opts'             => $plugin_options,
-					'sc_id'            => ( $first_post ?
+					'class'             => $tile_classes, // escaped earlier in code
+					'li_class'          => $li_class,
+					'img_url'           => $image[0],
+					'title'             => esc_html( $post_title ),
+					'title_attr'        => esc_attr( $post_title ),
+					'subtitle'          => esc_html( $metaboxes['subtitle'] ),
+					'opts'              => $plugin_options,
+					'sc_id'             => ( $first_post ?
 						// complete $sc_id
 						( $sc_id = AMO_TEAM_SHOWCASE_CSS_PREFIX . "sc-{$type}-" . $random_id ) : false ),
-					'last_post'        => $last_post,
-					'panel_or_link'    => ( $panel_is_on || $post_format_link ) ? true : false,
-					'hover-icon'       => $post_format_link ? 'icon-hover-link' : 'icon-hover-info',
-					'link_params'      => $post_format_link
-						? 'target="'. $link_target .'" href="' . esc_url( $metaboxes['link-url'] ) . '"'
-						: 'class="'.AMO_TEAM_SHOWCASE_CSS_PREFIX.'popup-link" href="#' . $panel_modal_id . '"',
+					'last_post'         => $last_post,
+					'panel_or_link'     => ( $panel_is_on || $post_format_link ) ? true : false,
+					'post_format_link'  => $post_format_link,
+					'custom_hover_icon' => ( $plugin_options['thumb-overlay-icon-link'] ) || ( $plugin_options['thumb-overlay-icon-info'] ),
+					'hover_icon'        => $post_format_link ? 'icon-hover-link' : 'icon-hover-info',
+					'link_params'       => $post_format_link
+						? 'target="' . $link_target . '" href="' . esc_url( $metaboxes['link-url'] ) . '"'
+						: 'class="' . AMO_TEAM_SHOWCASE_CSS_PREFIX . 'popup-link" href="javascript:void(0)" data-mfp-src="#' . $panel_modal_id . '"',
 				);
 
 				// render member thumbnails / tiles
@@ -245,16 +252,19 @@ class Amo_Team_Showcase_Shortcodes {
 				'full-width'  => 'yes',
 				'item-margin' => '20',
 				'panel'       => 'right',
+				'orderby'     => 'date',
 
 				'align'       => false, // not present in the SC
 				'style'       => false,   // not present in the SC
 				'class'       => '', // not present in the SC
 			), $atts );
 
+		$order_vals = $team_query_args = array();
+
 		/*  SANITIZATION
 		-------------------------------------------------------------------*/
-		// Prevent max number of members be more than 50
-		if ( $a['max'] > 50) { $a['max'] = 50; }
+		// Prevent max number of members be more than 200 per the shortcode
+		if ( $a['max'] > 200) { $a['max'] = 200; }
 
 		/*  PREPARATION
 		-------------------------------------------------------------------*/
@@ -272,16 +282,37 @@ class Amo_Team_Showcase_Shortcodes {
 			),
 		) : '';
 
+		// Divide the value to orderby and order values, needed for query
+		if ( strpos($a['orderby'], '-') !== false ) {
+			$order_vals = explode('-', strtolower( $a['orderby'] ) );
+
+			// check if orderby value was specified properly (only a few certain values possible)
+			if ( in_array($order_vals[0], array( 'date', 'title', 'modified', 'rand' ) ) ) {
+				$a['orderby'] = $order_vals[0];
+				// check if "order" query parameter was specified correctly
+				if ( in_array( $order_vals[1], array( 'asc', 'desc' ) ) ) {
+					$team_query_args['order'] = strtoupper( $order_vals[1] );
+				}
+			} else {
+				$a['orderby'] = 'date';
+			} // IF | 'date', 'title', 'modified', 'rand'
+		} elseif ( 'rand' == $a['orderby']) {
+		} else {
+			$a['orderby'] = 'date';
+		} // IF
+
+
 		// Team query arguments
-		$team_query_args = array(
-			'post_type' => 'amo-team',
+		$team_query_args += array(
+			'post_type'      => 'amo-team',
 			'posts_per_page' => $a['max'],
-			'tax_query' => $categories,
+			'tax_query'      => $categories,
+			'orderby'        => 'menu_order ' . $a['orderby'],
 		);
 
 		/*  LOOP AND OUTPUT
 		-------------------------------------------------------------------*/
-		return $this->team_or_member_loop('team', $a, $team_query_args );
+		return $this->team_or_member_loop('team', $a, apply_filters( 'amo_team_shortcode_wp_query_args', $team_query_args ) );
 	} // amoteam | SHORTCODE
 
 
@@ -297,8 +328,8 @@ class Amo_Team_Showcase_Shortcodes {
 				'item-margin' => '20',
 				'full-width'  => 'yes',
 				'panel'       => 'right',
-				'align'       => false,
 
+				'align'       => false,
 				'style'       => false,   // not present in the SC
 				'class'       => '', // not present in the SC
 			), $atts );
@@ -311,13 +342,6 @@ class Amo_Team_Showcase_Shortcodes {
 
 		// Prepare id/ids for WP query
 		$a['id'] = explode( ',', $a['id'] );
-
-		// Full-Width and item-margin parameters allowed only,
-		// when more than one member/post in the shortcode block
-//		if ( count( $a['id'] ) < 2 ) {
-//			$a['item-margin'] = 0;
-//			$a['full-width'] = 'no';
-//		}
 
 		/*  PREPARATION
 		-------------------------------------------------------------------*/

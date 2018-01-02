@@ -89,7 +89,7 @@ class Amo_Team_Showcase_Team_Members_Widget extends Amo_Team_Showcase_Widget {
 
 		parent::__construct(
 			AMO_TEAM_SHOWCASE_CSS_PREFIX . 'team-members', // ID
-			'ANO Team Members', // Name
+			_x('AMO Team Members', 'widget name', 'amo-team'), // Name
 			$widget_options );
 	} // FNC | __construct
 
@@ -131,8 +131,8 @@ class Amo_Team_Showcase_Team_Members_Widget extends Amo_Team_Showcase_Widget {
 			} # IF | "All Categories" option settings
 
 			echo do_shortcode( sprintf(
-				'[amoteam max="%s" categories="%s" item-width="%s" item-margin="%s" full-width="%s" panel="%s" align="%s" style="%s" class="%s"]',
-				$instance['max'], implode( ',', $instance['categories'] ), $instance['item-width'], $instance['item-margin'], $instance['full-width'], $instance['panel'], $instance['align'], $instance['style'], $instance['class']
+				'[amoteam max="%s" categories="%s" item-width="%s" item-margin="%s" full-width="%s" panel="%s" align="%s" style="%s" orderby="%s" class="%s"]',
+				$instance['max'], implode( ',', $instance['categories'] ), $instance['item-width'], $instance['item-margin'], $instance['full-width'], $instance['panel'], $instance['align'], $instance['style'], $instance['orderby'], $instance['class']
 			) );
 		}
 
@@ -155,6 +155,7 @@ class Amo_Team_Showcase_Team_Members_Widget extends Amo_Team_Showcase_Widget {
 			'item-margin' => '20',
 			'full-width'  => 'yes',
 			'panel'       => 'right',
+			'orderby'     => 'date-desc',
 			'align'       => false,
 			'style'       => false,
 			'class'       => '',
@@ -277,6 +278,23 @@ class Amo_Team_Showcase_Team_Members_Widget extends Amo_Team_Showcase_Widget {
 			'args'  => array( '1' => '1', '2' => '2', '2_1' => '2.1',  ),
 		), $instance );
 
+	   # Order by
+	   $this->form_field( array(
+		   'type'  => 'select',
+		   'id'    => 'orderby',
+		   'label' => _x( 'Order by', 'widget field backend', 'amo-team' ),
+		   'desc'  => __( 'Defines order of team members, works jointly with "Order" field of member.', 'amo-team' ),
+		   'args'  => array(
+			   'date-desc'     => __( 'Publication date', 'amo-team' ) . ' &darr;',
+			   'date-asc'      => __( 'Publication date', 'amo-team' ) . ' &uarr;',
+			   'modified-desc' => __( 'Modification date', 'amo-team' ) . ' &darr;',
+			   'modified-asc'  => __( 'Modification date', 'amo-team' ) . ' &uarr;',
+			   'title-desc'    => __( 'Title / Name', 'amo-team' ) . ' &darr;',
+			   'title-asc'     => __( 'Title / Name', 'amo-team' ) . ' &uarr;',
+			   'rand'          => __( 'Random', 'amo-team' ),
+		   ),
+	   ), $instance );
+
 		# Class
 		$this->form_field( array(
 			'type'  => 'text',
@@ -299,7 +317,7 @@ class Amo_Team_Showcase_Team_Members_Widget extends Amo_Team_Showcase_Widget {
 	public function update( $new_instance, $old_instance ) {
 
 		# text fields
-		$texts = array( 'title', 'id', 'full-width', 'panel', 'align', 'style', 'class', );
+		$texts = array( 'title', 'id', 'full-width', 'panel', 'align', 'style', 'orderby', 'class', );
 		# number fields
 		$numbers = array( 'max', 'item-width', 'item-margin', );
 		$instance = array();

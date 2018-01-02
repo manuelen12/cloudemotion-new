@@ -25,6 +25,9 @@ $thumb_title_font_size = absint( $a['options']['thumb-title-font-size'] );
 $thumb_subtitle_font_size = absint( $a['options']['thumb-subtitle-font-size'] );
 $thumb_hover_icon_size = absint( $a['options']['thumb-hover-icon-size'] );
 
+$thumb_custom_hover_icon = $a['options']['thumb-overlay-icon-info'] || $a['options']['thumb-overlay-icon-link'];
+$thumb_custom_icon_size = esc_attr( $a['options']['thumb-custom-icon-size'] );
+
 // Panel
 $panel_title_font_size = absint( $a['options']['panel-title-font-size'] );
 $panel_subtitle_font_size = absint( $a['options']['panel-subtitle-font-size'] );
@@ -83,20 +86,25 @@ $skill_bottom_line_opacity = esc_attr( $a['options']['skill-b-line-opacity'] );
 	background: <?php echo $main_color ?>;
 }
 
+.{p}member-hover-icon.{p}member-custom-hover-icon {
+<?php echo ($thumb_custom_hover_icon && $thumb_custom_icon_size) ? 'width:' . $thumb_custom_icon_size . ';' : ''?>;
+<?php echo ($thumb_custom_hover_icon && $thumb_custom_icon_size) ? 'height: auto;' : '' ?>;
+}
+
 .{p}member-hover-icon i {
 	font-size: <?php echo $thumb_hover_icon_size ?>px;
 }
 
-.{p}tiles__item figure:before {
+.{p}tiles__item .{p}member:before {
 	background: <?php echo ( $thumb_overlay_color ) ? $thumb_overlay_color : $secondary_color ?>;
 }
 
-.{p}tiles__item figure:hover:before {
+.{p}tiles__item .{p}member:hover:before {
 	opacity: <?php echo $thumb_overlay_opacity ?>;
 }
 
 <?php // Tile Style 2 ?>
-.{p}tile-style-2 .{p}figure-img-wrap:before {
+.{p}tile-style-2 .{p}member-img-wrap:before {
 	border-left-color: <?php echo $main_color ?>;
 	border-top-color: <?php echo $main_color ?>;
 }
@@ -150,7 +158,9 @@ $skill_bottom_line_opacity = esc_attr( $a['options']['skill-b-line-opacity'] );
 	}
 }
 
-.{p}panel__icons a:hover i, .{p}panel__icons a:focus i {
+.{p}panel__icons a:hover i,
+.{p}panel__icons a:focus i,
+.{p}panel__custom-icon:hover {
 	background: <?php echo $main_color ?>;
 }
 
