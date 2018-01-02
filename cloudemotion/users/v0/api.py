@@ -307,6 +307,7 @@ class API(Base):
                     "name": e.portfolio.name,
                     "image": e.portfolio.image,
                     "url": e.portfolio.url,
+                    "screenshot": e.portfolio.screenshot,
                     "description": e.description_en if (short == 'en') else e.description_es,
                     "year": e.portfolio.year,
                     "developed": [],
