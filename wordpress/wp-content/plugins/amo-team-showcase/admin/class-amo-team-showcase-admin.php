@@ -15,7 +15,7 @@ class Amo_Team_Showcase_Admin {
 	 * that's responsible for rendering partials (view templates) of the plugin
 	 *
 	 * @since    1.0.0
-	 * @access   private
+	 * @access   public
 	 * @var object Amo_Team_Showcase_Views_Renderer $renderer
 	 */
 	public $renderer;
@@ -29,17 +29,15 @@ class Amo_Team_Showcase_Admin {
 	 */
 	private $gpo;
 
-
-	private $main_subviews_folder = 'sub-views';
-
 	/**
-	 * Options page or Team Member Screen
+	 * Main folder for sub views of partials folder, i.e.: form fields, notices, etc.
 	 *
 	 * @since    1.0.0
 	 * @access   private
-	 * @var object Amo_Team_Showcase $options_or_member_screen
+	 * @var string Amo_Team_Showcase $main_subviews_folder
 	 */
-	private $options_or_member_screen;
+	private $main_subviews_folder = 'sub-views';
+
 
 	/**
 	 * Required WP version, on which the plugin is guaranteed to work properly.
@@ -68,8 +66,10 @@ class Amo_Team_Showcase_Admin {
 
 	} // __construct | FNC
 
-	/*  1. ENQUEUE ADMIN | styles and scripts
-	-------------------------------------------------------------------*/
+
+	/*-------------------------------------------------------------------
+	▐	1. ENQUEUE ADMIN | styles and scripts
+	--------------------------------------------------------------------*/
 	/**
 	 * Register the stylesheets and JavaScript files for the admin area.
 	 *
@@ -91,7 +91,6 @@ class Amo_Team_Showcase_Admin {
 	public function general_plugin_notices() {
 		$system_options = get_option( $this->gpo->get_plugin_name() . '-system' );
 
-		//var_dump($system_options);
 		# Displays a warning if WP version is less than required one.
 		if ( $system_options['notice-wp-version'] && version_compare( $GLOBALS['wp_version'], $this->required_wp_version, '<' ) ) {
 
@@ -130,12 +129,21 @@ class Amo_Team_Showcase_Admin {
 			} // FOREACH
 
 			// Render the "ajax-loader" modal
-			add_action( 'admin_footer', function () {
-				echo '<div id="'.AMO_TEAM_SHOWCASE_CSS_PREFIX.'ajax-loader-modal"></div>';
-			} ); // A-FNC
+			//add_action( 'admin_footer', array($this, 'output_ajax_loader_animation') ); // FNC
 		} # IF | one notice is loaded
 
 	} // FNC | general_plugin_notices
+
+
+	/**
+	 * Outputs ajax loader image, which shows loading animation when Ajax request is in progress
+	 *
+	 * @since    1.1.2
+	 */
+	public function output_ajax_loader_animation() {
+	   $this->gpo->render_dependencies( $this, false);
+	   echo $this->renderer->render( 'ajax-loader', 'specific' );
+   } // FNC
 
 
 	/**
@@ -153,7 +161,6 @@ class Amo_Team_Showcase_Admin {
 			$system_options[$_POST['id']] = false;
 		}
 		update_option( $this->gpo->get_plugin_name() . '-system', $system_options );
-		echo 'success';
 		wp_die();
 	} // FNC
 
@@ -193,6 +200,10 @@ class Amo_Team_Showcase_Admin {
 			if ( false !== strpos( $key, 'number__' ) ) { // number input type
 				// delete 'number__' from the input name ($key) and sanitize its value
 				$sanitized_vals[ ( substr( $key, strlen( 'number__' ) ) ) ] = $sanitize ? absint( $val ) : $val;
+
+			} elseif ( false !== strpos( $key, 'url__' ) ) { // text input type
+				// delete 'text__' from the input name ($key) and sanitize its value
+				$sanitized_vals[ ( substr( $key, strlen( 'url__' ) ) ) ] = $sanitize ? esc_url_raw( $val ) : trim( $val );
 
 			} elseif ( false !== strpos( $key, 'text__' ) ) { // text input type
 				// delete 'text__' from the input name ($key) and sanitize its value
@@ -446,7 +457,7 @@ class Amo_Team_Showcase_Admin {
 
 
 	/*-------------------------------------------------------------------
-	▐	6. ADD ID, THUMB COLUMNS | All Member screen
+	▐	6. COLUMNS | All Team Members screen
 	--------------------------------------------------------------------*/
 	/**
 	 * Adds 2 custom columns, on 'All Members' screen
@@ -454,6 +465,8 @@ class Amo_Team_Showcase_Admin {
 	 * @since    1.0.0
 	 */
 	public function set_custom_post_column_names( $defaults ) {
+		$defaults['amoteam_order'] = __( 'Order', 'amo-team' );
+		//$defaults['amoteam_format'] = __( 'Format', 'amo-team' );
 		$defaults['amoteam_id'] = __( 'Member Shortcode', 'amo-team' );
 		$defaults['amoteam_thumb'] = '';
 		return $defaults;
@@ -467,6 +480,13 @@ class Amo_Team_Showcase_Admin {
 	 */
 	public function render_custom_post_column_names( $column_title, $post_id ) {
 		switch ( $column_title ) {
+			case 'amoteam_order':
+				global $post;
+				printf('<input name="member_order" data-nonce="%3$s" data-action="" type="number" step="1" value="%1$d" class="small-text %2$smember-order">', $post->menu_order, AMO_TEAM_SHOWCASE_CSS_PREFIX, wp_create_nonce( 'update_member_order' )  );
+				break;
+//			case 'amoteam_format':
+//			 echo get_post_format_string(get_post_format( $post_id ));
+//				break;
 			case 'amoteam_id':
 				echo '[amo_member id="' . $post_id . '" item-width="250" align="left" item-margin="20" full-width="yes" panel="right"]';
 				break;
@@ -486,6 +506,25 @@ class Amo_Team_Showcase_Admin {
 				break;
 		} // SWITCH
 	} // render_custom_post_column_names | FNC
+
+
+	/**
+	 * AJAX function to update Order field of a team member from Team Members screen
+	 *
+	 * @since    1.1.2
+	 */
+	public function update_member_order() {
+	  check_ajax_referer( 'update_member_order', 'security' );
+
+	   $my_post = array(
+		   'ID'           => $_POST['postID'],
+		   'menu_order'   => $_POST['postOrder'],
+	   );
+		// Update the post into the database
+	   wp_update_post( $my_post );
+
+	   wp_die();
+	 } // FNC
 
 
 	/*-------------------------------------------------------------------
@@ -581,8 +620,9 @@ class Amo_Team_Showcase_Admin {
 	} // FNC
 
 
-	/*  9. SHORTCODES GENERATING BUTTON & MODAL | EDITOR
-	-------------------------------------------------------------------*/
+	/*-------------------------------------------------------------------
+	▐	9. SHORTCODES GENERATING BUTTON & MODAL | EDITOR
+	--------------------------------------------------------------------*/
 	/**
 	 * Renders shortcodes button, then shortcodes modal block; before and after WP editor
 	 *
@@ -622,8 +662,9 @@ class Amo_Team_Showcase_Admin {
 	} // add_amo_team_button_wp_editor | FNC
 
 
-	/*  10. PLUGIN "ACTION" LINKS
-	-------------------------------------------------------------------*/
+	/*-------------------------------------------------------------------
+	▐	10. PLUGIN "ACTION" LINKS
+	--------------------------------------------------------------------*/
 	/**
 	 * Add plugin action URL links | activate/deactivate plugins screen
 	 *
@@ -639,8 +680,9 @@ class Amo_Team_Showcase_Admin {
 	}
 
 
-	/*  11. IMAGE SIZES IN MEDIA LIBRARY
-	-------------------------------------------------------------------*/
+	/*-------------------------------------------------------------------
+	▐	11. IMAGE SIZES IN MEDIA LIBRARY
+	--------------------------------------------------------------------*/
 	/**
 	 * Add new image size to the media library
 	 *
@@ -657,8 +699,10 @@ class Amo_Team_Showcase_Admin {
 	} // FNC
 
 
-	/*  12. ADD REMOVABLE QUERY ARGS
-	-------------------------------------------------------------------*/
+	/*-------------------------------------------------------------------
+	▐	12. ADD REMOVABLE QUERY ARGS
+	--------------------------------------------------------------------*/
+
 	/**
 	 * Add certain plugin's query args to WP removable URL query arguments
 	 *
@@ -673,8 +717,10 @@ class Amo_Team_Showcase_Admin {
 	} // FNC
 	
 
-	/*  13. REMOVE VIEW LINK | All Members screen
-	-------------------------------------------------------------------*/
+	/*-------------------------------------------------------------------
+	▐	13. REMOVE VIEW LINK | All Members screen
+	--------------------------------------------------------------------*/
+
 	/**
 	 * Removes "view" link from available links/actions
 	 * for team member on All Members screen

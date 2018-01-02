@@ -20,6 +20,7 @@ $social_icons_array_name = isset( $metabox ) ? "{$metabox}[{$a['id']}]" : '';
 if ( ! isset( $opts[ $a['id'] ] ) ) {
 	( $opts[ $a['id'] ] = array( array( $a['fields'][0]['id'] => '', $a['fields'][1]['id'] => '' ) ) );
 }
+
 ?>
 
 

@@ -1,10 +1,11 @@
 === AMO Team Showcase ===
 Contributors: amothemo
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V493YB5DQ5HVW
-Tags: team, team widget, team member widget, teams, meet the team, meet the staff, team showcase, team grid, staff grid, team shortcode, about us, responsive team, team builder, team profile, members profile, members profiles, team members profile, our team, our staff, team member, team members, team member showcasing, team plugin, responsive team plugin, team member display, wordpress team, members, staff, employees, workers, people, cv, staff bio, member staff, команда, о компании, о нас, персонал, работники, профиль работника, участник команды, член команды, виджет команды
+Donate link: https://www.paypal.me/amothemo
+Tags: team, team widget, team member widget, teams, meet the team, meet the staff, team showcase, team grid, staff grid, team shortcode, about us, responsive team, team builder, team profile, members profile, members profiles, team members profile, our team, our staff, team member, team members, team member showcasing, team plugin, responsive team plugin, team member display, wordpress team, members, staff, employees, workers, people, cv, staff bio, member staff, info grid, команда, о компании, о нас, персонал, работники, профиль работника, участник команды, член команды, виджет команды
 Requires at least: 4.6
-Tested up to: 4.7.4
-Stable tag: 1.1.0
+Tested up to: 4.9.1
+Stable tag: 1.1.4
+Requires PHP: 5.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -16,17 +17,18 @@ Easily showcase members of your team/company and their info in sleek, responsive
 A powerful but an easy way to present your team/staff members and their profiles with beautifully styled descriptions, skills and links to social media.
 
 The plugin is fully responsive.
-Moreover, it is a highly customizable plugin. You can change colors, font sizes, spacings etc. from powerful, yet concise and super easy to use plugin options panel. Choose from 3 different styles for member thumbnails.
+Moreover, it is a highly customizable plugin. You can change colors, font sizes, spacings etc. from powerful, yet concise and super easy to use plugin options panel. Choose from 2 different styles for member thumbnails.
 
-The plugin adds an “AMO Team” menu section to the admin panel. There you can easily create team members, assign them to categories, add their images, position, bios, skills, social links, set info panel format (image, link, standard or quote) and display them on any post or page, with a simple but powerful “team” or “member” shortcodes. Also there is a widget to show members in a sidebar/widget are.
+The plugin adds “AMO Team” menu section to the admin panel. There you can easily create team members, assign them to categories, add their images, position, bios, skills, social links, set info panel format (image, link, standard or quote) and display them on any post or page, with a simple but powerful “team” or “member” shortcodes. Also there is a widget to show members in a sidebar/widget area.
 
 **Quick Start Video:** (RECORDED WITHOUT SOUND)
+
 https://www.youtube.com/watch?v=MtLALyZwluc
 
 = A few unique features of the plugin: =
 * Post formats for team member: image, quote, standard or link.
 * Member info panel with styled “text block” and “skills” shortcodes/blocks. Can be turned off.
-* 3 different styles for member thumbnails (more are coming).
+* 2 different styles for member thumbnails (more are coming).
 * Fully and very easily customizable look by options panel.
 * The plugin made with an accent on simplicity, and it is easy to use.
 * Has a widget to show members in any sidebar/widget area.
@@ -37,21 +39,19 @@ https://www.youtube.com/watch?v=MtLALyZwluc
 * RTL languages supported.
 * Russian translation included (PO/MO files).
 
-
 = Usage: =
 [**Plugin Documentation**]( http://amothemo.com/docs/amo-team-showcase-documentation/en/ "Plugin documentation, mostly for shortcodes, at the moment.")<br>
 The documentation implemented in languages: English and Russian.
 
+= Support the plugin if you like it =
+*If you like the plugin or it helped you someway, please leave a [**review**]( https://wordpress.org/support/plugin/amo-team-showcase/reviews/), or make a donation ( [**PayPal**](https://www.paypal.me/amothemo) or [**Yandex.Money**](https://money.yandex.ru/to/410012730758039) ). That will help to keep my interest in its further development and support. Thank you!*
+
 = Support for Users: =
-*If you have any questions, information about bugs, or maybe some suggestions. Please feel free to ask or tell about them on the [**support forum**]( https://wordpress.org/support/plugin/amo-team-showcase).*
+*If you have information about bugs, or maybe some suggestions. Please feel free to ask or tell about them on the [**support forum**]( https://wordpress.org/support/plugin/amo-team-showcase).*
 
 = Files, Sources and Credits =
 [**See the list**]( http://amothemo.com/amo-team-showcase-demo/files-and-credits/) of images, fonts, JavaScript / PHP libraries, etc., which are used in the plugin and in its demo.<br>
 The person icon in the banner is [designed by Freepik]( http://www.freepik.com ).
-
-= Support the plugin if you like it =
-If you like the plugin or it helped you someway, please leave a [**review**]( https://wordpress.org/support/plugin/amo-team-showcase/reviews/), or make a [**donation**](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=V493YB5DQ5HVW). That will also help to keep my interest in its further development and support. Thank you!
-
 
 == Installation ==
 1. Upload the entire `amo-team-showcase` folder to the `/wp-content/plugins/` directory
@@ -71,10 +71,17 @@ Yes, there is.
 You can try to enable alternative scrolling. Go to plugin Options -> Panel (tab) and turn on the Alternative Scrolling. Best looks with centered panel.
 
 = How to display team members in a certain order? =
-At the moment, there is only one way to do this. Use [Team Member]( http://amothemo.com/docs/amo-team-showcase-documentation/en/index.html#sc-member "Link to the plugin documentation, “Team Member” shortcode section.") shortcode. The order in which you specified members’ IDs in “id” attribute of the shortcode (for example, id=”31,10,241”), will be used to display the members.
+At the moment, there are two ways to do this:<br><br>
+**1.** Use "Order" column on All Members/Team Members screen, or use "Order" field on team member editing screen.<br><br> Default order value of a team member is 0, this means there is no special order and it will be sorted/ordered by publication date.<br><br> If we change order value to 1 (for example), the member will be shown before all other members with default order of 0. If we change its order to 3, the member will be shown before all members with order value of 2, 1, 0, -1, etc. Negative numbers are valid (-1). If both members have the same order value (e.g. 4 and 4), then their publication date will also determine their order.<br>
 
-= What themes or plugins don’t work with AMO Team Showcase? =
-The plugin doesn’t work with Divi theme (for example), the theme uses MagnificPopup JS too and there is a conflict. The same issue may arise with other plugins or themes, which use MagnificPopup (a js plugin/library). If you click on member thumbnail and info panel doesn't appear, that's most probably the MagnificPopup JS conflict.
+**2.** Use [Team Member](http://amothemo.com/docs/amo-team-showcase-documentation/en/#sc-member) shortcode. The order in which you specified members’ IDs in “id” attribute of the shortcode, for example <code class="code-grey">id="31,10,241"</code>, will be used to display the members.
+
+= When I click on member thumbnail nothing happens, the info panel doesn't appear. =
+Probably it's a conflict with some of your other plugins or even with the theme. Try to disable the plugins one by one to find the one that causes the problem.<br>If your theme or some other plugin on your site uses MagnificPopup JS (which AMO Team uses for info panel), there may be a probability (a small one) of MagnificPopup JS conflict.
+
+= The plugin doesn't work or doesn't work properly with my theme, set of plugins, or site, what to do? =
+First of all please make sure that you use current / the last version of the plugin.<br><br>
+Next, although the plugin has been tested on about 30 themes, I can't say that it will work with any possible theme, plugin, or site configuration, every little thing can not be envisaged.<br>So if it doesn't work for you, first please ask your question on [**support forum**]( https://wordpress.org/support/plugin/amo-team-showcase) (but please check first if such topic already exists there).
 
 == Screenshots ==
 1. Team members. Frontend view.
@@ -84,9 +91,31 @@ The plugin doesn’t work with Divi theme (for example), the theme uses Magnific
 5. List of all team members. Admin view.
 
 == Changelog ==
+= 1.1.4 =
+* FIXED – Increased CSS z-index value for info panel modal and MagnificPopup overlay. For websites with sticky menu, with big z-index values.
+* FIXED – Additional JS fix to prevent conflicts with MagnificPopup.
+* FEATURE/FIXED – Now plugin clears/removes all jQuery events for member &lt;a&gt; tags and &lt;ul&gt; container on thumbnail init, to prevent bugs. Can be disabled in plugin options.
+* FEATURE – Added new shortcode and widget parameter "orderby" to order members by: date (default), title, modification date, and random order. Works jointly with "Order" field of member.
+<br>*(13 Dec, 2017)*
+
+= 1.1.3 =
+* FIXED – Now the info panel will work if the site uses some "scroll-to" JS script / plugin or uses MagnificPopup.js (the latter should be fixed in most cases)
+<br>*(24 Nov, 2017)*
+
+= 1.1.2 =
+* FEATURE – Ability to use/set custom social icon (PNG image).
+* FEATURE – Ability to change info / link hover icon to a custom image icon.
+* FEATURE – "Order" column for Team Members list, to change order of the members. Order field on editing screen works too.
+* FEATURE – Basic support for Polylang and WPML plugins (wpml-config.xml).
+* FEATURE – Option to disable hover effect on member thumbnail.
+* FIXED – Bootstrap.js conflict (backend).
+* DEV – Some code refactoring.
+* DEV – Changed HTML structure and CSS classes of member thumbnails (frontend), to fix and prevent bugs.
+<br>*(19 Nov, 2017)*
+
 = 1.1.0 =
-* FEATURE – Open link in the same browser tab or in new one, for plugin's link post type.
-* FIXED – Hover animation form member thumbnails in current version of Chrome.
+* FEATURE – Ability to open link in the same browser tab or in new one, for the Link post type.
+* FIXED – Hover animation for member thumbnails (Style 1) in current version of Chrome.
 <br>*(10 May, 2017)*
 
 = 1.0.9 =

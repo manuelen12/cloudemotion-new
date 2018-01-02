@@ -19,14 +19,28 @@
 	<div class="{p}panel__header">
 
 		<?php if ( $a['metaboxes']['social-icons'] ) : // if social icons are enabled ?>
-			<ul class="{p}panel__icons">
-				<?php foreach ( $a['metaboxes']['social-icon-blocks'] as $icon ) :
-					$icon_name = esc_attr( $icon['select_icon'] );
-						// if social icon link is set
-						if ( $icon['social_link'] ) :?>
-							<li><a target="_blank" title="<?php echo ucfirst( $icon_name ) ?>" href="<?php echo $icon['social_link'] ?>"><i aria-hidden="true" class="{p}icon-<?php echo $icon_name ?>"></i></a></li>
-						<?php endif; // social_link ?>
-				<?php endforeach; ?>
+
+		  <?php
+		  $custom_icons_class = '';
+		  foreach ( $a['metaboxes']['social-icon-blocks'] as $icon ) {
+			  if ( ! empty ( $icon['custom_icon'] ) ) {
+			   $custom_icons_class = '{p}panel__custom-icons';
+			  }
+		  } // FOREACH	?>
+
+			<ul class="{p}panel__icons <?php echo $custom_icons_class ?>">
+			 <?php foreach ( $a['metaboxes']['social-icon-blocks'] as $icon ) :
+				 $icon_name = esc_attr( $icon['select_icon'] );
+				 // if social icon link is set
+				 if ( $icon['social_link'] ) :?>
+					 <?php if ( ! empty ( $icon['custom_icon'] ) ) : ?>
+							  <li class="{p}panel__custom-icon"><a target="_blank" title="<?php echo ucfirst( $icon_name ) ?>"
+										  href="<?php echo $icon['social_link'] ?>"><img class="{p}center-block" src="<?php echo $icon['custom_icon'] ?>" alt="icon"></a></li>
+					 <?php else : ?>
+							  <li><a target="_blank" title="<?php echo ucfirst( $icon_name ) ?>" href="<?php echo $icon['social_link'] ?>"><i aria-hidden="true" class="{p}icon-<?php echo $icon_name ?>"></i></a></li>
+					 <?php endif; // custom_icon ?>
+				 <?php endif; // social_link ?>
+			 <?php endforeach; ?>
 			</ul>
 		<?php elseif ( $a['std_post_formats'] ) : // if post format - standard/quote ?>
 			<div class="{p}panel__standard"></div>

@@ -7,12 +7,13 @@
 return array(
 
 	'text' => array(
-		'title'       => '',
-		'desc'        => '',
-		'std'         => '',
-		'id'          => '',
-		'class'       => '',
-		'placeholder' => '',
+		'title'        => '',
+		'desc'         => '',
+		'sanitization' => 'text',
+		'std'          => '',
+		'id'           => '',
+		'class'        => '',
+		'placeholder'  => '',
 	),
 
 	'textarea' => array(
@@ -68,14 +69,26 @@ return array(
 		'class'       => '',
 	),
 
+	'group' => array(
+		'title'                 => '',
+		'desc'                  => '',
+		'repeatable'            => true,
+		'row_limit'             => 12,
+		'button_name'           => __( 'Add New One', 'amo-team' ),
+		'remove_row_aria_label' => __( 'Remove this group.', 'amo-team' ),
+		'limit_reached_notice'  => __( 'The limit is reached, you can have only %LIMIT% groups.', 'amo-team' ),
+		'fields'                => array(),
+		'id'                    => '',
+	),
+
 	'section-heading' => array(
 		'heading' => '',
-		'desc' => '',
+		'desc'    => '',
 	),
 
 	'tab-pane-open' => array(
 		'heading' => '',
-		'desc' => '',
+		'desc'    => '',
 		'tab-id'  => '',
 		'active'  => false,
 	),

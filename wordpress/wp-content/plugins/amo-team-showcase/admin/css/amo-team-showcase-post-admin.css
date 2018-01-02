@@ -210,6 +210,15 @@
   position: relative;
   top: -1px;
 }
+.amoteam-panel--options .amoteam-btn--panel-sign--2 {
+  background-color: #6d7e8f;
+  color: #c7f464;
+}
+.amoteam-panel--options .amoteam-btn--panel-sign--2:hover,
+.amoteam-panel--options .amoteam-btn--panel-sign--2:focus {
+  background: #556270;
+  color: #f77;
+}
 /*  Close button | Shortcodes Modal
 ----------------------------------*/
 .amoteam-btn--close-sc-modal {
@@ -252,7 +261,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 1050;
+  z-index: 10050;
   outline: 0;
 }
 .amoteam-modal.in .modal-dialog {
@@ -272,6 +281,7 @@
   top: 50px;
   left: 50%;
   width: 250px;
+  margin: 0 !important;
 }
 @media (min-width: 601px) {
   .amoteam-modal > .modal-dialog {

@@ -9,7 +9,7 @@
  *
  * @since   1.0.0
  */
-$a['active'] = Amo_Team_Showcase_AVH::get_conditional_value( $a['active'], 'active' );
+$a['active'] = $a['active'] ? 'active' : '';
 
 ?>
 <div role="tabpanel" class="{p}tab__pane <?php echo $a['active'] ?>" id="{p}<?php echo $a['tab-id'] ?>">

@@ -79,7 +79,12 @@ class Amo_Team_Showcase_Views_Renderer {
 	 *
 	 * @since    1.0.0
 	 */
-	public function set_variables( $name, $value = false ) {
+	public function set_variables( $name, $value = false, $rewrite = false ) {
+
+		if ( $rewrite ) {
+			$this->variables = $name;
+			return;
+		}
 
 		if ( is_array( $name ) ) {
 			// adds new values to an existing array without overwriting it
@@ -182,8 +187,16 @@ class Amo_Team_Showcase_Views_Renderer {
 		$subview = ($subview ? $subview . '/' : '');
 		// set output var
 		$html = '';
-		// get parameters/arguments array
-		$args_array = $this->fetch_arguments( $params_file );
+		$group_field = false;
+
+		# if it's a group field
+		if ( is_array( $params_file ) ) {
+			$group_field = true;
+			$args_array = $params_file;
+		} else {
+			// get parameters/arguments array
+			$args_array = $this->fetch_arguments( $params_file );
+		} // end IF
 
 		// arguments array is fetched
 		if ( $args_array ) {
@@ -199,11 +212,20 @@ class Amo_Team_Showcase_Views_Renderer {
 				// set default values if they are missing
 				$args = $args + $defaults[ $args['type'] ];
 
-				// Pass the variables that will be used in the current sub view template
-				$this->set_variables( $args );
+				# if it's a group field
+				if ( $group_field ) {
+					// Pass the variables that will be used in the current sub view template
+					$this->set_variables( $args, false, true );
+
+				# normal field
+				} else {
+					// Pass the variables that will be used in the current sub view template
+					$this->set_variables( $args );
+				}
 
 				// render sub-view template
 				$html .= $this->render( $sub_folder . $args['type'], $subview, $extra_vars );
+
 			} // FOREACH
 			return $html;
 		} // IF $args_array

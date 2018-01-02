@@ -162,6 +162,37 @@ return array(
 		'placeholder' => $font_size_placeholder,
 	),
 
+	array(
+		'title'       => __('Custom Info Icon', 'amo-team' ),
+		'desc'        => __('You can set custom info (i) icon, which shows on hover. Use transparent PNG image.', 'amo-team' ),
+		'type'        => 'upload',
+		'id'          => 'thumb-overlay-icon-info',
+	),
+
+	array(
+		'title'       => __('Custom Link Icon', 'amo-team' ),
+		'desc'        => __('You can set custom link icon, which shows on hover. Use transparent PNG image.', 'amo-team' ),
+		'type'        => 'upload',
+		'id'          => 'thumb-overlay-icon-link',
+	),
+
+	array(
+		'title'       => __('Custom Icon Size', 'amo-team' ),
+		'desc'        => __('Visual size for custom overlay/hover icon in member thumbnail. Useful if you want to use, for example, 150x150 px image but show it as 75x75 px one. You can use any measurement units for example: 70px, 5em or 25%.', 'amo-team' ),
+		'type'        => 'text',
+		'std'         => '',
+		'id'          => 'thumb-custom-icon-size',
+		'placeholder' => __('Enter icon size', 'amo-team' ),
+	),
+
+	array(
+		'title' => __( 'Hover Effect', 'amo-team' ),
+		'desc'  => __( 'On / Off the effect on mouse hover over team member thumbnail.', 'amo-team' ),
+		'type'  => 'switcher',
+		'std'   => '1',
+		'id'    => 'thumb-hover',
+	),
+
 	array( // End - Info Panel tab
 		'comment' => 'End - Thumbnails tab',
 		'type'    => 'close-elem',
@@ -348,6 +379,19 @@ return array(
 		'type'  => 'switcher',
 		'std'   => '0',
 		'id'    => 'uninstall-posts',
+	),
+
+	array( // section heading
+		'heading' => _x( 'Different Fixes:', 'Options section title.',  'amo-team' ),
+		'type'    => 'section-heading',
+	),
+
+	array(
+		'title' => __( 'Clear jQuery events for thumbnails', 'amo-team' ),
+		'desc'  => htmlentities(__( 'Clear all jQuery events for member thumbnails (for their <a> tags and <ul> container), on their init. May help to prevent problems with other scripts, which may automatically apply some jQuery events to these elements.', 'amo-team' )),
+		'type'  => 'switcher',
+		'std'   => '1',
+		'id'    => 'thumbs-clear-events',
 	),
 
 

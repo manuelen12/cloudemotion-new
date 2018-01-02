@@ -388,4 +388,4 @@ SWAGGER_SETTINGS = {
 
 LANGUAGE_COOKIE_NAME = "language"
 
-HTTP = "http://"
+HTTP = "https://"

@@ -76,12 +76,18 @@ class Amo_Team_Showcase_Public {
 	 * Sets plugin's main and global JavaScript variable in website frontend
 	 *
 	 * @since    1.0.0
-	 */	public function set_amoteam_main_variable_script() {
+	 */
+	public function set_amoteam_main_variable_script() {
 		$options = get_option( $this->gpo->get_plugin_name() . '-options' );
-		?><script>
-		var amoTeamVars = {}; amoTeamVars.teamSC = []; amoTeamVars.memberSC = [];
-		amoTeamVars['panel-alt-scroll'] = <?php echo $options['panel-alt-scroll'] ?>;
-		</script><?php
+		?>
+		 <script>
+		   "use strict";
+		   var amoTeamVars                      = {};
+		   amoTeamVars.teamSC                   = [];
+		   amoTeamVars.memberSC                 = [];
+		   amoTeamVars[ 'panel-alt-scroll' ]    = <?php echo $options['panel-alt-scroll'] ?>;
+		   amoTeamVars[ 'thumbs-clear-events' ] = <?php echo $options['thumbs-clear-events'] ?>;
+		 </script><?php
 	} // FNC
 
 
