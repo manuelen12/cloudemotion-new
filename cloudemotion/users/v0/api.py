@@ -181,7 +181,7 @@ class API(Base):
                 "twitter": i.twitter,
                 "linkedin": i.linkedin,
                 "youtube": i.youtube,
-                "curriculum": i.curriculum,
+                "curriculum": e.curriculum_en if (short == 'en') else e.curriculum_es,
                 "about_me": i.about2[0].about_me if i.about2 else "",
                 "status": i.status,
                 "create_at": i.create_at,
