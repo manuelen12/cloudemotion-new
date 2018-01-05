@@ -17,6 +17,7 @@ class ContactSerializer(serializers.Serializer):
     email = serializers.EmailField()
     user_id = serializers.SlugRelatedField(
         queryset=User.objects.filter(status=True), slug_field='id')
+    subject = serializers.CharField()
     message = serializers.CharField()
 
 
