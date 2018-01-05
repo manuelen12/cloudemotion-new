@@ -169,11 +169,15 @@
 								<div class="experience-info col-md-3 col-sm-5 background-color-primary">
 									<span class="from text-color-dark text-uppercase">
 										<text ng-bind="'From' | translate"></text>
-										<span class="font-weight-semibold" ng-bind="ex.start_date | date">Sep 2012</span>
+										<span class="font-weight-semibold" ng-bind="ex.start_date | date"></span>
 									</span>
-									<span class="to text-color-dark text-uppercase">
+									<span class="to text-color-dark text-uppercase" ng-show="ex.ending_date">
 										<text ng-bind="'To' | translate"></text>
-										<span class="font-weight-semibold" ng-bind="ex.ending_date | date">Present</span>
+										<span class="font-weight-semibold" ng-bind="ex.ending_date | date"></span>
+									</span>
+									<span class="to text-color-dark text-uppercase" ng-hide="ex.ending_date">
+										<text ng-bind="'To' | translate"></text>
+										<span class="font-weight-semibold" ng-bind="'Current' | translate"></span>
 									</span>
 									<p class="text-color-dark" ng-bind="ex.time"></p>
 									<span class="company text-color-dark font-weight-semibold"><label ng-bind="ex.company.name"></label>		
@@ -196,7 +200,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none" ng-bind="'Education' | translate">Education</h2>
+					<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold" ng-bind="'Education' | translate">Education</h2>
 					<div class="owl-carousel  owl-education">
 						<div class="item item-education" ng-repeat="e in vm.users.user_education">
 							<div class="panel panel-default item-box">
@@ -204,7 +208,9 @@
 									<p><i class="icon-graduation icons text-color-primary"></i><br>
 										<span ng-bind="e.education.name" class="title"></span><br>
 										<span ng-bind="e.institute.name"></span><br>
-										<span class="years" ng-bind="e.start_date | date"></span> - <span class="years" ng-bind="e.ending_date | date"></span>
+										<span class="years" ng-bind="e.start_date | date"></span> - 
+										<span class="years" ng-show="e.ending_date" ng-bind="e.ending_date | date"></span>
+										<span class="years" ng-hide="e.ending_date" ng-bind="'Current' | translate"></span>
 									</p>
 								</div>
 							</div>		    	
@@ -218,13 +224,13 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12">
-					<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none" ng-bind="'Course' | translate">Course</h2>
+					<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold" ng-bind="'Course' | translate">Course</h2>
 					<div class="carousel-wrap">
 						<div class="owl-carousel owl-carousel1">
 							<div class="item item-course" ng-repeat="c in vm.users.user_course">
 								<div class="panel panel-primary sha">
 									<div class="panel-heading">
-										<i class="fa fa-book"></i><span ng-bind="c.course.name"></span>
+										<i class="fa fa-book" style="padding-right: 2%;"></i><span ng-bind="c.course.name"></span>
 									</div>
 									<div class="panel-body" style="min-height:150px;">
 										<p ng-bind="c.institute.name+' '+c.institute.address"></p>	
@@ -241,7 +247,7 @@
 
 	<section id="skills" class="section section-no-border background-color-light m-none" ng-hide="vm.showSki">
 		<div class="container">
-			<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold m-none" ng-bind="'Skills' | translate">Skill</h2>
+			<h2 class="text-color-quaternary text-uppercase font-weight-extra-bold" ng-bind="'Skills' | translate">Skill</h2>
 			<div class="row custom-sm-flex-order">
 				<div class="progress-bars custom-progress-bars col-md-4 col-sm-4 col-xs-2 col-lg-6" ng-repeat="skill in vm.users.user_skill" data-appear-top-offset="1400">
 					<div class="progress-label text-color-dark font-weight-semibold text-uppercase text-sm">
