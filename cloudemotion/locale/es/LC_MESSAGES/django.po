@@ -48,7 +48,7 @@ msgstr "Permiso Denegado"
 
 #: cloudemotion/users/v0/api.py:189
 msgid "Venezuelan"
-msgstr "Venezuelana"
+msgstr "Venezolana"
 
 #: cloudemotion/users/v0/api.py:195
 msgid "Computing Engineering"
