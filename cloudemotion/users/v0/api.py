@@ -408,7 +408,7 @@ class API(Base):
     #     self.result = create.id
 
     def valid_send_contact(self, kwargs):
-        if not self._list_basic_info(kwargs, ["name", "email", "user_id", "message"]):
+        if not self._list_basic_info(kwargs, ["name", "email", "user_id", "subject", "message"]):
             return
 
         if not self.list_only_string(kwargs, ["name"]):
@@ -427,6 +427,7 @@ class API(Base):
                 "name": self.data.get('name'),
                 "email": self.data.get('email'),
                 "user_id": self.data.get('user_id'),
+                "subject": self.data.get('subject'),
                 "message": self.data.get('message')})
 
         __start = ThreadDef(
