@@ -2239,7 +2239,7 @@ function comment_form( $args = array(), $post_id = null ) {
 		'id_form'              => 'commentform',
 		'id_submit'            => 'submit',
 		'class_form'           => 'comment-form',
-		'class_submit'         => 'submit',
+		'class_submit'         => 'qodef-btn qodef-btn-small qodef-btn-default m_center',
 		'name_submit'          => 'submit',
 		'title_reply'          => __( 'Leave a Reply' ),
 		'title_reply_to'       => __( 'Leave a Reply to %s' ),

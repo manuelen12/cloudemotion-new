@@ -1,6 +1,7 @@
 <?php 
 $baseurl=(is_home() || is_single())?get_site_url()."/":""; 
 $parallax=(is_home() || is_single())?"":"parallax-cl"; 
+$home=is_home()?true:false; 
 ?>
 <ul id="menu-main-menu" class="clearfix">
     <li class="menu-item qodef-active-item ">
