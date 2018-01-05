@@ -83,12 +83,13 @@
 <?php if (is_single()): 
 $author_id = get_the_author_meta('ID');
 $social=array(
+    "id-card-o" => get_the_author_meta('website', $author_id),
     "facebook" => get_the_author_meta('facebook', $author_id),
     "twitter" => get_the_author_meta('twitter', $author_id),
     "instagram" => get_the_author_meta('instagram', $author_id),
     "pinterest" => get_the_author_meta('pinterest', $author_id),
     "youtube" => get_the_author_meta('youtube', $author_id),
-    "google-plus" => get_the_author_meta('google-plus', $author_id),
+    "google-plus" => get_the_author_meta('googleplus', $author_id),
 );
 ?>
 <div class="author-box">
