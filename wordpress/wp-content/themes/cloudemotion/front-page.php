@@ -500,7 +500,7 @@ get_header();
                                                 <div id="hiddenCollapse" class="filter-list row masonry no-spaces collapse" aria-expanded="false">
                                                     <button class="collopen" data-toggle="collapse" data-target="#hiddenCollapse ">Collapse</button>
                                                     <button class="collclose" data-toggle="collapse" data-target="#hiddenCollapse">Close collapse</button>
-                                                    <div ng-repeat="portfolio in vm.portfolios"  style="padding: 0;" ng-show="portfolio.classification.id==vm.selected || !vm.selected" class="{{portfolio.class | lowercase}} col-md-4 col-sm-6 col-xs-12 animated fadeIn" >           
+                                                    <div ng-repeat="portfolio in vm.portfolios"  style="padding: 0;" ng-show="portfolio.classification.id==vm.selected || !vm.selected" class="{{portfolio.class | lowercase}} cnt col-md-4 col-sm-6 col-xs-12 animated fadeIn" >           
                                                         <div class="image-box">
                                                             <div class="image" >
                                                                 <img data-src="{{portfolio.image}} " class="b-lazy" alt="Imagemain">

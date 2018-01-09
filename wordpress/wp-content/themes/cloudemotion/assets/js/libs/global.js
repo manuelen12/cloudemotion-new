@@ -441,14 +441,13 @@ Sukces = {
 			selector;
 
 			$filter.on('click', 'a', function(){
+				console.log(this);
 				selector=$(this).parents('.filter').data('filter-list');
 				$list = $(selector);
 				filterValue = $(this).attr('data-filter');
-				$list.children().filter('.not-matched').removeClass('not-matched');
-				if(filterValue!="*") $list.children().not(filterValue).addClass('not-matched-other');
-				if ($list.children().length == $list.children().not(filterValue).length) {$(selector+" p").removeClass('no-data');	}
-				console.log('VALOR AQUI');
-				console.log($list.children().length);
+				$list.children(".cnt").filter('.not-matched').removeClass('not-matched');
+				if(filterValue!="*") $list.children(".cnt").not(filterValue).addClass('not-matched');
+				if ($list.children(".cnt").length == $list.children(".cnt").not(filterValue).length) {$(selector+" p").removeClass('no-data');	}
 				else{ $(selector+" p").addClass('no-data');	}
 				$(selector+" p").removeClass('not-matched');
 				$(this).parents('ul').find('.active').removeClass('active');
