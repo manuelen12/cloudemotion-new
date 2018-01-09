@@ -850,7 +850,7 @@ get_header();
 
                                         <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-center" id="contact-us">
 
-                                            <footer class="foot" >
+                                            <footer class="footer" >
                                                 <?php get_footer();?>
                                             </footer>
                                         </div>

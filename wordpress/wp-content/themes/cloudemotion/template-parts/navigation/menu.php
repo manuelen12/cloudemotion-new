@@ -97,7 +97,7 @@ $home=is_home()?true:false;
     </li>
     <li class="menu-item content-flag">
         <a href>
-        <flag country="vm.country" ng-click="vm.changeLanguage(vm.country)" size="32"></flag>
+        <flag country="vm.country" ng-click="vm.changeLanguage(vm.country)"></flag>
         </a>
     </li>
 

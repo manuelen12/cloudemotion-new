@@ -34,7 +34,7 @@
 		angular.extend(vm,{
 			tabs:1,
 			flip:false,
-			country:'es',
+			country:'en',
 			changeLanguage:changeLanguage,
 			getTeam:urlHelpers.get("users"),
 			getPorfolios:urlHelpers.get("portfolios"),
@@ -55,8 +55,9 @@
 			return 'background-image:url("'+image+'")';
 		}
 		function changeLanguage() {
-			vm.country = (vm.country=='es'?'en':'es');
-			$translate.use(vm.country);		
+			vm.country = (vm.country=='en'?'es':'en');
+			$translate.use(vm.country);
+			console.log(vm.category);	
 		}
 
 		this.$onInit=function() {

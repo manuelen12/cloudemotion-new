@@ -445,10 +445,12 @@ Sukces = {
 				$list = $(selector);
 				filterValue = $(this).attr('data-filter');
 				$list.children().filter('.not-matched').removeClass('not-matched');
-				if(filterValue!="*") $list.children().not(filterValue).addClass('not-matched');
+				if(filterValue!="*") $list.children().not(filterValue).addClass('not-matched-other');
 				if ($list.children().length == $list.children().not(filterValue).length) {$(selector+" p").removeClass('no-data');	}
+				console.log('VALOR AQUI');
+				console.log($list.children().length);
 				else{ $(selector+" p").addClass('no-data');	}
-				$(selector+" p").removeClass('no-matched');
+				$(selector+" p").removeClass('not-matched');
 				$(this).parents('ul').find('.active').removeClass('active');
 				$(this).parent('li').addClass('active');
 
