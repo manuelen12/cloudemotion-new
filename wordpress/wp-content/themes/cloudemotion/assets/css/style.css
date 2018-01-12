@@ -179,7 +179,20 @@
 	.page-id-2476 #qodef-meetup-slider.carousel .carousel-inner .item:nth-child(4) .qodef-slider-content {
 		padding-left: 20px;
 	}
+	
+	.qodef-page-header{
+		height: 50px !important;
+	}
+	.qodef-vertical-align-containers{
+		margin-top: -22px;
+	}
+	.qodef-logo-wrapper{
+		height: 60px;
+    	width: 180px;
+	}
 }
+
+
 
 
 .landing-new-custom .qodef-portfolio-item .qodef-portfolio-shader{
