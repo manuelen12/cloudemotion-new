@@ -88,7 +88,7 @@ section.cover, .section.cover { padding-top: 0; padding-bottom: 0; }
 .filter-list > *.not-matched { filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=25); opacity: 0.25; pointer-events: none; width: 0 !important; height: 0 !important;}
 
 /* Image */
-.image-box { position: relative; overflow: hidden; }
+.image-box { position: relative; overflow: hidden; min-height: 200px;}
 .image-box .image { position: relative; background: #efefef; overflow: hidden; border: 1px solid white; transition: 2s; background-size: cover; padding: 1em;}
 .image-box .image img { position: relative; -moz-transition: all 1.5s ease-out; -o-transition: all 1.5s ease-out; -webkit-transition: all 1.5s ease-out; transition: all 1.5s ease-out; width: 100%; z-index: 1; }
 .image-box > .label { position: absolute; top: 20px; right: 20px; z-index: 4; }
