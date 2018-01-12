@@ -8,10 +8,10 @@
 		<article class="main" ng-class="{'flipped':vm.flip}">
 			<article class=" front">
 				<div class="form-horizontal contact-us" ng-if="vm.country=='es'">
-					<?php echo do_shortcode( '[contact-form-7 id="5" title="form-es"]' ); ?>
+					<?php echo do_shortcode( '[contact-form-7 id="83" title="form-es"]' ); ?>
 				</div>
 				<div class="form-horizontal contact-us" ng-if="vm.country=='en'">
-					<?php echo do_shortcode( '[contact-form-7 id="6" title="form-en"]' ); ?>
+					<?php echo do_shortcode( '[contact-form-7 id="163" title="form-en"]' ); ?>
 				</div>
 			</article>          
 			<article class=" back">
