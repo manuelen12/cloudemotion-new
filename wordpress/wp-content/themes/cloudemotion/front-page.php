@@ -848,7 +848,7 @@ get_header();
 
 
 
-                                        <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-center" id="contact-us">
+                                        <div class="wpb_row vc_row-fluid qodef-section qodef-content-aligment-center" id="contact-us" style="padding-bottom:30%;">
 
                                             <footer class="footer" >
                                                 <?php get_footer();?>
@@ -868,9 +868,10 @@ get_header();
                             <div class="modal-header">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
                                 <h4 class="modal-title" >Portafolio View</h4>
+                                <i data-src="{{vm.seeData.company.image}}"></i>
                             </div>
                             <div class="modal-body">
-                                <img data-src="{{vm.seeData.screenshot}}" width="400" height="400" style="margin:0 auto;" class="img-responsive b-lazy" alt="Image">
+                                <img data-src="{{vm.seeData.descritption}}" width="400" height="400" style="margin:0 auto;" class="img-responsive b-lazy" alt="Image">
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
