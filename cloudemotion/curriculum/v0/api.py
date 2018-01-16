@@ -131,6 +131,7 @@ class API(Base):
                 "year": i.year,
                 "developed": [],
                 "status": i.status,
+                "description": i.description,
                 "create_at": i.create_at,
             }
             for e in i.s_por2:
